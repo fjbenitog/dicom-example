@@ -1,0 +1,23 @@
+{
+    "Logging": {
+        "SyslogLevel": "Info"
+    },
+    "Name": "DICOM Server",
+    "RemoteAccessAllowed": true,
+    "DicomServer": {
+        "Enabled": true,
+        "Port": 4242
+    },
+    "HttpServer": {
+        "Enabled": true,
+        "Port": 8042,
+        "SSL": false
+    },
+    "AuthenticationEnabled": true,
+    "RegisteredUsers": {
+        "admin": "password123"
+    },
+    "DicomAlwaysAllowFind": true,
+    "WebPlugins": true,
+    "SaveJobs": true
+}

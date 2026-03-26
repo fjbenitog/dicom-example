@@ -1,0 +1,18 @@
+services:
+  orthanc:
+    image: jodogne/orthanc:latest
+    container_name: dicom-server
+    ports:
+      - "8042:8042" # Web UI
+      - "4242:4242" # DICOM port
+    volumes:
+      - orthanc-data:/root/OrthancStorage
+      - ./orthanc.json:/etc/orthanc/orthanc.json
+      - ./dicom-files:/var/lib/orthanc/dicom-import
+    environment:
+      - ORTHANC_JSON_CONFIGURATION=/etc/orthanc/orthanc.json
+    restart: unless-stopped
+
+volumes:
+  orthanc-data:
+    driver: local

@@ -1,0 +1,12 @@
+# .gitignore for C#/.NET projects
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+*.dcm
+# macOS
+.DS_Store
+*.pdf
