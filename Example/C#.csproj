@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>JaviBenito</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EvilDICOM" Version="3.0.8998.340" />
+    <PackageReference Include="ESAPIX_16.1" Version="1.6.7845.354" />
+    <Reference Include="VMS.TPS.Common.Model.API">
+      <HintPath>../lib/16.1/VMS.TPS.Common.Model.API.dll</HintPath>
+    </Reference>
+    <Reference Include="VMS.TPS.Common.Model.Types">
+      <HintPath>../lib/16.1/VMS.TPS.Common.Model.Types.dll</HintPath>
+    </Reference>
+    <!-- Ensure no test files are included here -->
+    <Compile Remove="Tests/ExampleTests.cs" />
+  </ItemGroup>
+
+</Project>

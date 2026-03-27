@@ -2,7 +2,16 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"name": "ESAPIX",
+			"path": "../ESAPIX"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.watcherExclude": {
+			"**/target": true
+		},
+		"dotnet.defaultSolution": "dicom-example/Example/C#.sln"
+	}
 }

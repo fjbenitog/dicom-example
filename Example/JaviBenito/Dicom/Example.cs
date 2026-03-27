@@ -1,6 +1,9 @@
 using EvilDICOM.Network;
 using EvilDICOM.Network.DIMSE;
 using EvilDICOM.Network.DIMSE.IOD;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DICOMExample
 {
@@ -16,9 +19,6 @@ namespace DICOMExample
 
         public static void Main()
         {
-            // Ensure output directory exists
-            string outputDir = "dicom-copies";
-            Directory.CreateDirectory(outputDir);
 
             var localEntity = new Entity(LocalAeTitle, LocalHost, LocalPort);
             var remoteEntity = new Entity(RemoteAeTitle, RemoteHost, RemotePort);
@@ -29,11 +29,11 @@ namespace DICOMExample
             };
 
             ushort messageId = 1;
-            CEchoResponse? echoResponse = scu.GetResponse<CEchoResponse, CEchoRequest>(new CEchoRequest(messageId), remoteEntity, ref messageId);
-            bool echoSucceeded = echoResponse is not null;
+            CEchoResponse echoResponse = scu.GetResponse<CEchoResponse, CEchoRequest>(new CEchoRequest(messageId), remoteEntity, ref messageId);
+            bool echoSucceeded = echoResponse != null;
 
             Console.WriteLine($"C-ECHO to {RemoteAeTitle}@{RemoteHost}:{RemotePort}: {(echoSucceeded ? "OK" : "FAILED")}");
-            if (echoResponse is not null)
+            if (echoResponse != null)
             {
                 Console.WriteLine($"C-ECHO status: 0x{echoResponse.Status:X4}");
             }
