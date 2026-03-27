@@ -1,9 +1,10 @@
-using EvilDICOM.Network;
-using EvilDICOM.Network.DIMSE;
-using EvilDICOM.Network.DIMSE.IOD;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using EvilDICOM.Network;
+using EvilDICOM.Network.DIMSE;
+using EvilDICOM.Network.DIMSE.IOD;
+
 
 namespace DICOMExample
 {
@@ -19,7 +20,6 @@ namespace DICOMExample
 
         public static void Main()
         {
-
             var localEntity = new Entity(LocalAeTitle, LocalHost, LocalPort);
             var remoteEntity = new Entity(RemoteAeTitle, RemoteHost, RemotePort);
             var scu = new DICOMSCU(localEntity)
