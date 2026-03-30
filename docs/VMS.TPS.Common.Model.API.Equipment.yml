@@ -1,0 +1,499 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.API.Equipment
+  commentId: T:VMS.TPS.Common.Model.API.Equipment
+  id: Equipment
+  parent: VMS.TPS.Common.Model.API
+  children:
+  - VMS.TPS.Common.Model.API.Equipment.GetBrachyTreatmentUnits
+  - VMS.TPS.Common.Model.API.Equipment.GetExternalBeamTreatmentUnits
+  langs:
+  - csharp
+  - vb
+  name: Equipment
+  nameWithType: Equipment
+  fullName: VMS.TPS.Common.Model.API.Equipment
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Provides access to clinical devices and accessories.
+  example: []
+  syntax:
+    content: public sealed class Equipment
+    content.vb: Public NotInheritable Class Equipment
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: VMS.TPS.Common.Model.API.Equipment.GetBrachyTreatmentUnits
+  commentId: M:VMS.TPS.Common.Model.API.Equipment.GetBrachyTreatmentUnits
+  id: GetBrachyTreatmentUnits
+  parent: VMS.TPS.Common.Model.API.Equipment
+  langs:
+  - csharp
+  - vb
+  name: GetBrachyTreatmentUnits()
+  nameWithType: Equipment.GetBrachyTreatmentUnits()
+  fullName: VMS.TPS.Common.Model.API.Equipment.GetBrachyTreatmentUnits()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Returns the available brachy treatment units. Excludes virtual and deleted ones.
+  example: []
+  syntax:
+    content: public IEnumerable<BrachyTreatmentUnit> GetBrachyTreatmentUnits()
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.BrachyTreatmentUnit}
+      description: The available brachy treatment units.
+    content.vb: Public Function GetBrachyTreatmentUnits() As IEnumerable(Of BrachyTreatmentUnit)
+  overload: VMS.TPS.Common.Model.API.Equipment.GetBrachyTreatmentUnits*
+- uid: VMS.TPS.Common.Model.API.Equipment.GetExternalBeamTreatmentUnits
+  commentId: M:VMS.TPS.Common.Model.API.Equipment.GetExternalBeamTreatmentUnits
+  id: GetExternalBeamTreatmentUnits
+  parent: VMS.TPS.Common.Model.API.Equipment
+  langs:
+  - csharp
+  - vb
+  name: GetExternalBeamTreatmentUnits()
+  nameWithType: Equipment.GetExternalBeamTreatmentUnits()
+  fullName: VMS.TPS.Common.Model.API.Equipment.GetExternalBeamTreatmentUnits()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Returns the available External Beam treatment units. Excludes virtual and deleted ones.
+  example: []
+  syntax:
+    content: public IEnumerable<ExternalBeamTreatmentUnit> GetExternalBeamTreatmentUnits()
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ExternalBeamTreatmentUnit}
+      description: The available brachy treatment units.
+    content.vb: Public Function GetExternalBeamTreatmentUnits() As IEnumerable(Of ExternalBeamTreatmentUnit)
+  overload: VMS.TPS.Common.Model.API.Equipment.GetExternalBeamTreatmentUnits*
+references:
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.API.Equipment.GetBrachyTreatmentUnits*
+  commentId: Overload:VMS.TPS.Common.Model.API.Equipment.GetBrachyTreatmentUnits
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Equipment.html#VMS_TPS_Common_Model_API_Equipment_GetBrachyTreatmentUnits
+  name: GetBrachyTreatmentUnits
+  nameWithType: Equipment.GetBrachyTreatmentUnits
+  fullName: VMS.TPS.Common.Model.API.Equipment.GetBrachyTreatmentUnits
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.BrachyTreatmentUnit}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.BrachyTreatmentUnit}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<BrachyTreatmentUnit>
+  nameWithType: IEnumerable<BrachyTreatmentUnit>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.BrachyTreatmentUnit>
+  nameWithType.vb: IEnumerable(Of BrachyTreatmentUnit)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.BrachyTreatmentUnit)
+  name.vb: IEnumerable(Of BrachyTreatmentUnit)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.BrachyTreatmentUnit
+    name: BrachyTreatmentUnit
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.BrachyTreatmentUnit.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.BrachyTreatmentUnit
+    name: BrachyTreatmentUnit
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.BrachyTreatmentUnit.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: VMS.TPS.Common.Model.API.Equipment.GetExternalBeamTreatmentUnits*
+  commentId: Overload:VMS.TPS.Common.Model.API.Equipment.GetExternalBeamTreatmentUnits
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Equipment.html#VMS_TPS_Common_Model_API_Equipment_GetExternalBeamTreatmentUnits
+  name: GetExternalBeamTreatmentUnits
+  nameWithType: Equipment.GetExternalBeamTreatmentUnits
+  fullName: VMS.TPS.Common.Model.API.Equipment.GetExternalBeamTreatmentUnits
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ExternalBeamTreatmentUnit}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ExternalBeamTreatmentUnit}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ExternalBeamTreatmentUnit>
+  nameWithType: IEnumerable<ExternalBeamTreatmentUnit>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.ExternalBeamTreatmentUnit>
+  nameWithType.vb: IEnumerable(Of ExternalBeamTreatmentUnit)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.ExternalBeamTreatmentUnit)
+  name.vb: IEnumerable(Of ExternalBeamTreatmentUnit)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.ExternalBeamTreatmentUnit
+    name: ExternalBeamTreatmentUnit
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ExternalBeamTreatmentUnit.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.ExternalBeamTreatmentUnit
+    name: ExternalBeamTreatmentUnit
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ExternalBeamTreatmentUnit.html
+  - name: )

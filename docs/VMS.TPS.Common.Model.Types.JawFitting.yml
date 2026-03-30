@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.JawFitting
+  commentId: T:VMS.TPS.Common.Model.Types.JawFitting
+  id: JawFitting
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.JawFitting.FitToRecommended
+  - VMS.TPS.Common.Model.Types.JawFitting.FitToStructure
+  - VMS.TPS.Common.Model.Types.JawFitting.None
+  langs:
+  - csharp
+  - vb
+  name: JawFitting
+  nameWithType: JawFitting
+  fullName: VMS.TPS.Common.Model.Types.JawFitting
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Specifies where collimator jaws are positioned in an MLC leaf fit operation.
+  example: []
+  syntax:
+    content: public enum JawFitting
+    content.vb: Public Enum JawFitting
+- uid: VMS.TPS.Common.Model.Types.JawFitting.None
+  commentId: F:VMS.TPS.Common.Model.Types.JawFitting.None
+  id: None
+  parent: VMS.TPS.Common.Model.Types.JawFitting
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: JawFitting.None
+  fullName: VMS.TPS.Common.Model.Types.JawFitting.None
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Collimator jaws are not moved.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.JawFitting
+- uid: VMS.TPS.Common.Model.Types.JawFitting.FitToRecommended
+  commentId: F:VMS.TPS.Common.Model.Types.JawFitting.FitToRecommended
+  id: FitToRecommended
+  parent: VMS.TPS.Common.Model.Types.JawFitting
+  langs:
+  - csharp
+  - vb
+  name: FitToRecommended
+  nameWithType: JawFitting.FitToRecommended
+  fullName: VMS.TPS.Common.Model.Types.JawFitting.FitToRecommended
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Collimator jaws are positioned to the recommended setback away from the MLC leaves.
+  example: []
+  syntax:
+    content: FitToRecommended = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.JawFitting
+- uid: VMS.TPS.Common.Model.Types.JawFitting.FitToStructure
+  commentId: F:VMS.TPS.Common.Model.Types.JawFitting.FitToStructure
+  id: FitToStructure
+  parent: VMS.TPS.Common.Model.Types.JawFitting
+  langs:
+  - csharp
+  - vb
+  name: FitToStructure
+  nameWithType: JawFitting.FitToStructure
+  fullName: VMS.TPS.Common.Model.Types.JawFitting.FitToStructure
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Collimator jaws are positioned to MLC outline.
+  example: []
+  syntax:
+    content: FitToStructure = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.JawFitting
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.JawFitting
+  commentId: T:VMS.TPS.Common.Model.Types.JawFitting
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.JawFitting.html
+  name: JawFitting
+  nameWithType: JawFitting
+  fullName: VMS.TPS.Common.Model.Types.JawFitting

@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.DosimeterUnit
+  commentId: T:VMS.TPS.Common.Model.Types.DosimeterUnit
+  id: DosimeterUnit
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.DosimeterUnit.MU
+  - VMS.TPS.Common.Model.Types.DosimeterUnit.Minute
+  - VMS.TPS.Common.Model.Types.DosimeterUnit.Null
+  - VMS.TPS.Common.Model.Types.DosimeterUnit.Second
+  langs:
+  - csharp
+  - vb
+  name: DosimeterUnit
+  nameWithType: DosimeterUnit
+  fullName: VMS.TPS.Common.Model.Types.DosimeterUnit
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The dosimeter unit.
+  example: []
+  syntax:
+    content: public enum DosimeterUnit
+    content.vb: Public Enum DosimeterUnit
+- uid: VMS.TPS.Common.Model.Types.DosimeterUnit.Null
+  commentId: F:VMS.TPS.Common.Model.Types.DosimeterUnit.Null
+  id: "Null"
+  parent: VMS.TPS.Common.Model.Types.DosimeterUnit
+  langs:
+  - csharp
+  - vb
+  name: "Null"
+  nameWithType: DosimeterUnit.Null
+  fullName: VMS.TPS.Common.Model.Types.DosimeterUnit.Null
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Null unit, undefined.
+  example: []
+  syntax:
+    content: Null = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.DosimeterUnit
+- uid: VMS.TPS.Common.Model.Types.DosimeterUnit.MU
+  commentId: F:VMS.TPS.Common.Model.Types.DosimeterUnit.MU
+  id: MU
+  parent: VMS.TPS.Common.Model.Types.DosimeterUnit
+  langs:
+  - csharp
+  - vb
+  name: MU
+  nameWithType: DosimeterUnit.MU
+  fullName: VMS.TPS.Common.Model.Types.DosimeterUnit.MU
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Monitor Units.
+  example: []
+  syntax:
+    content: MU = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.DosimeterUnit
+- uid: VMS.TPS.Common.Model.Types.DosimeterUnit.Minute
+  commentId: F:VMS.TPS.Common.Model.Types.DosimeterUnit.Minute
+  id: Minute
+  parent: VMS.TPS.Common.Model.Types.DosimeterUnit
+  langs:
+  - csharp
+  - vb
+  name: Minute
+  nameWithType: DosimeterUnit.Minute
+  fullName: VMS.TPS.Common.Model.Types.DosimeterUnit.Minute
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Minutes.
+  example: []
+  syntax:
+    content: Minute = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.DosimeterUnit
+- uid: VMS.TPS.Common.Model.Types.DosimeterUnit.Second
+  commentId: F:VMS.TPS.Common.Model.Types.DosimeterUnit.Second
+  id: Second
+  parent: VMS.TPS.Common.Model.Types.DosimeterUnit
+  langs:
+  - csharp
+  - vb
+  name: Second
+  nameWithType: DosimeterUnit.Second
+  fullName: VMS.TPS.Common.Model.Types.DosimeterUnit.Second
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Seconds.
+  example: []
+  syntax:
+    content: Second = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.DosimeterUnit
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.DosimeterUnit
+  commentId: T:VMS.TPS.Common.Model.Types.DosimeterUnit
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DosimeterUnit.html
+  name: DosimeterUnit
+  nameWithType: DosimeterUnit
+  fullName: VMS.TPS.Common.Model.Types.DosimeterUnit

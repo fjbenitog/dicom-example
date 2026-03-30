@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.LogSeverity
+  commentId: T:VMS.TPS.Common.Model.Types.LogSeverity
+  id: LogSeverity
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.LogSeverity.Alert
+  - VMS.TPS.Common.Model.Types.LogSeverity.Debug
+  - VMS.TPS.Common.Model.Types.LogSeverity.Emergency
+  - VMS.TPS.Common.Model.Types.LogSeverity.Error
+  - VMS.TPS.Common.Model.Types.LogSeverity.Info
+  - VMS.TPS.Common.Model.Types.LogSeverity.Warning
+  langs:
+  - csharp
+  - vb
+  name: LogSeverity
+  nameWithType: LogSeverity
+  fullName: VMS.TPS.Common.Model.Types.LogSeverity
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The enumeration of log severities.
+  example: []
+  syntax:
+    content: public enum LogSeverity
+    content.vb: Public Enum LogSeverity
+- uid: VMS.TPS.Common.Model.Types.LogSeverity.Emergency
+  commentId: F:VMS.TPS.Common.Model.Types.LogSeverity.Emergency
+  id: Emergency
+  parent: VMS.TPS.Common.Model.Types.LogSeverity
+  langs:
+  - csharp
+  - vb
+  name: Emergency
+  nameWithType: LogSeverity.Emergency
+  fullName: VMS.TPS.Common.Model.Types.LogSeverity.Emergency
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Emergency.
+  example: []
+  syntax:
+    content: Emergency = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.LogSeverity
+- uid: VMS.TPS.Common.Model.Types.LogSeverity.Alert
+  commentId: F:VMS.TPS.Common.Model.Types.LogSeverity.Alert
+  id: Alert
+  parent: VMS.TPS.Common.Model.Types.LogSeverity
+  langs:
+  - csharp
+  - vb
+  name: Alert
+  nameWithType: LogSeverity.Alert
+  fullName: VMS.TPS.Common.Model.Types.LogSeverity.Alert
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Alert.
+  example: []
+  syntax:
+    content: Alert = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.LogSeverity
+- uid: VMS.TPS.Common.Model.Types.LogSeverity.Error
+  commentId: F:VMS.TPS.Common.Model.Types.LogSeverity.Error
+  id: Error
+  parent: VMS.TPS.Common.Model.Types.LogSeverity
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: LogSeverity.Error
+  fullName: VMS.TPS.Common.Model.Types.LogSeverity.Error
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Error.
+  example: []
+  syntax:
+    content: Error = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.LogSeverity
+- uid: VMS.TPS.Common.Model.Types.LogSeverity.Warning
+  commentId: F:VMS.TPS.Common.Model.Types.LogSeverity.Warning
+  id: Warning
+  parent: VMS.TPS.Common.Model.Types.LogSeverity
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: LogSeverity.Warning
+  fullName: VMS.TPS.Common.Model.Types.LogSeverity.Warning
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Warning.
+  example: []
+  syntax:
+    content: Warning = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.LogSeverity
+- uid: VMS.TPS.Common.Model.Types.LogSeverity.Info
+  commentId: F:VMS.TPS.Common.Model.Types.LogSeverity.Info
+  id: Info
+  parent: VMS.TPS.Common.Model.Types.LogSeverity
+  langs:
+  - csharp
+  - vb
+  name: Info
+  nameWithType: LogSeverity.Info
+  fullName: VMS.TPS.Common.Model.Types.LogSeverity.Info
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Info.
+  example: []
+  syntax:
+    content: Info = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.LogSeverity
+- uid: VMS.TPS.Common.Model.Types.LogSeverity.Debug
+  commentId: F:VMS.TPS.Common.Model.Types.LogSeverity.Debug
+  id: Debug
+  parent: VMS.TPS.Common.Model.Types.LogSeverity
+  langs:
+  - csharp
+  - vb
+  name: Debug
+  nameWithType: LogSeverity.Debug
+  fullName: VMS.TPS.Common.Model.Types.LogSeverity.Debug
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Debug.
+  example: []
+  syntax:
+    content: Debug = 5
+    return:
+      type: VMS.TPS.Common.Model.Types.LogSeverity
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.LogSeverity
+  commentId: T:VMS.TPS.Common.Model.Types.LogSeverity
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.LogSeverity.html
+  name: LogSeverity
+  nameWithType: LogSeverity
+  fullName: VMS.TPS.Common.Model.Types.LogSeverity

@@ -1,0 +1,752 @@
+### YamlMime:TableOfContent
+items:
+- uid: VMS.TPS.Common.Model.API
+  name: VMS.TPS.Common.Model.API
+  type: Namespace
+  items:
+  - uid: VMS.TPS.Common.Model.API.ActiveStructureCodeDictionaries
+    name: ActiveStructureCodeDictionaries
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.AddOn
+    name: AddOn
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.AddOnMaterial
+    name: AddOnMaterial
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject
+    name: ApiDataObject
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Application
+    name: Application
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.ApplicationPackage
+    name: ApplicationPackage
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.ApplicationScript
+    name: ApplicationScript
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.ApplicationScriptLog
+    name: ApplicationScriptLog
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Applicator
+    name: Applicator
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Beam
+    name: Beam
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.BeamCalculationLog
+    name: BeamCalculationLog
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.BeamDose
+    name: BeamDose
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.BeamParameters
+    name: BeamParameters
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.BeamUncertainty
+    name: BeamUncertainty
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Block
+    name: Block
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Bolus
+    name: Bolus
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.BrachyFieldReferencePoint
+    name: BrachyFieldReferencePoint
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.BrachyPlanSetup
+    name: BrachyPlanSetup
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.BrachySolidApplicator
+    name: BrachySolidApplicator
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.BrachyTreatmentUnit
+    name: BrachyTreatmentUnit
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.CalculateBrachy3DDoseResult
+    name: CalculateBrachy3DDoseResult
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Calculation
+    name: Calculation
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Calculation.Algorithm
+    name: Calculation.Algorithm
+    type: Struct
+  - uid: VMS.TPS.Common.Model.API.Calculation.CalculationModel
+    name: Calculation.CalculationModel
+    type: Struct
+  - uid: VMS.TPS.Common.Model.API.CalculationResult
+    name: CalculationResult
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Catheter
+    name: Catheter
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Compensator
+    name: Compensator
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.ControlPoint
+    name: ControlPoint
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.ControlPointCollection
+    name: ControlPointCollection
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.ControlPointParameters
+    name: ControlPointParameters
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Course
+    name: Course
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.CustomScriptExecutable
+    name: CustomScriptExecutable
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.DVHData
+    name: DVHData
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.DVHEstimationModelStructure
+    name: DVHEstimationModelStructure
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.DVHEstimationModelSummary
+    name: DVHEstimationModelSummary
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Department
+    name: Department
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Diagnosis
+    name: Diagnosis
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Dose
+    name: Dose
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.DynamicWedge
+    name: DynamicWedge
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.ESAPIActionPackAttribute
+    name: ESAPIActionPackAttribute
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.ESAPIScriptAttribute
+    name: ESAPIScriptAttribute
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.EnergyMode
+    name: EnergyMode
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.EnhancedDynamicWedge
+    name: EnhancedDynamicWedge
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Equipment
+    name: Equipment
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.EstimatedDVH
+    name: EstimatedDVH
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.EvaluationDose
+    name: EvaluationDose
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.ExternalBeamTreatmentUnit
+    name: ExternalBeamTreatmentUnit
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.ExternalPlanSetup
+    name: ExternalPlanSetup
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.FieldReferencePoint
+    name: FieldReferencePoint
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Globals
+    name: Globals
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Hospital
+    name: Hospital
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.IDVHEstimationCalculator
+    name: IDVHEstimationCalculator
+    type: Interface
+  - uid: VMS.TPS.Common.Model.API.Image
+    name: Image
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.IonBeam
+    name: IonBeam
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.IonBeamParameters
+    name: IonBeamParameters
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.IonControlPoint
+    name: IonControlPoint
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.IonControlPointCollection
+    name: IonControlPointCollection
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.IonControlPointPair
+    name: IonControlPointPair
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.IonControlPointPairCollection
+    name: IonControlPointPairCollection
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.IonControlPointParameters
+    name: IonControlPointParameters
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.IonPlanSetup
+    name: IonPlanSetup
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.IonSpot
+    name: IonSpot
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.IonSpotCollection
+    name: IonSpotCollection
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.IonSpotParameters
+    name: IonSpotParameters
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.IonSpotParametersCollection
+    name: IonSpotParametersCollection
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Isodose
+    name: Isodose
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.LateralSpreadingDevice
+    name: LateralSpreadingDevice
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.LateralSpreadingDeviceSettings
+    name: LateralSpreadingDeviceSettings
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.MLC
+    name: MLC
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.MotorizedWedge
+    name: MotorizedWedge
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OmniWedge
+    name: OmniWedge
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OptimizationEUDObjective
+    name: OptimizationEUDObjective
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OptimizationExcludeStructureParameter
+    name: OptimizationExcludeStructureParameter
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OptimizationIMRTBeamParameter
+    name: OptimizationIMRTBeamParameter
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OptimizationJawTrackingUsedParameter
+    name: OptimizationJawTrackingUsedParameter
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OptimizationLineObjective
+    name: OptimizationLineObjective
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OptimizationMeanDoseObjective
+    name: OptimizationMeanDoseObjective
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter
+    name: OptimizationNormalTissueParameter
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OptimizationObjective
+    name: OptimizationObjective
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OptimizationParameter
+    name: OptimizationParameter
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OptimizationPointCloudParameter
+    name: OptimizationPointCloudParameter
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OptimizationPointObjective
+    name: OptimizationPointObjective
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OptimizationSetup
+    name: OptimizationSetup
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OptimizationVMATAvoidanceSectors
+    name: OptimizationVMATAvoidanceSectors
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OptimizerDVH
+    name: OptimizerDVH
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OptimizerObjectiveValue
+    name: OptimizerObjectiveValue
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.OptimizerResult
+    name: OptimizerResult
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Patient
+    name: Patient
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.PatientSummary
+    name: PatientSummary
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.PatientSupportDevice
+    name: PatientSupportDevice
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.PlanSetup
+    name: PlanSetup
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.PlanSum
+    name: PlanSum
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.PlanSumComponent
+    name: PlanSumComponent
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.PlanTreatmentSession
+    name: PlanTreatmentSession
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.PlanUncertainty
+    name: PlanUncertainty
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.PlanningItem
+    name: PlanningItem
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.PlanningItemDose
+    name: PlanningItemDose
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.ProtocolPhaseMeasure
+    name: ProtocolPhaseMeasure
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.ProtocolPhasePrescription
+    name: ProtocolPhasePrescription
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.RTPrescription
+    name: RTPrescription
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.RTPrescriptionConstraint
+    name: RTPrescriptionConstraint
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.RTPrescriptionOrganAtRisk
+    name: RTPrescriptionOrganAtRisk
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.RTPrescriptionTarget
+    name: RTPrescriptionTarget
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.RTPrescriptionTargetConstraints
+    name: RTPrescriptionTargetConstraints
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.RadioactiveSource
+    name: RadioactiveSource
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.RadioactiveSourceModel
+    name: RadioactiveSourceModel
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.RangeModulator
+    name: RangeModulator
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.RangeModulatorSettings
+    name: RangeModulatorSettings
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.RangeShifter
+    name: RangeShifter
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.RangeShifterSettings
+    name: RangeShifterSettings
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.ReferencePoint
+    name: ReferencePoint
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Registration
+    name: Registration
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.ScriptContext
+    name: ScriptContext
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.ScriptEnvironment
+    name: ScriptEnvironment
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.SearchBodyParameters
+    name: SearchBodyParameters
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.SeedCollection
+    name: SeedCollection
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.SegmentVolume
+    name: SegmentVolume
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.SerializableObject
+    name: SerializableObject
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Series
+    name: Series
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Slot
+    name: Slot
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.SourcePosition
+    name: SourcePosition
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.StandardWedge
+    name: StandardWedge
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Structure
+    name: Structure
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.StructureCode
+    name: StructureCode
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.StructureCodeDictionary
+    name: StructureCodeDictionary
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.StructureSet
+    name: StructureSet
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Study
+    name: Study
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Technique
+    name: Technique
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.TradeoffExplorationContext
+    name: TradeoffExplorationContext
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.TradeoffObjective
+    name: TradeoffObjective
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.TradeoffPlanGenerationIntermediateDoseMode
+    name: TradeoffPlanGenerationIntermediateDoseMode
+    type: Enum
+  - uid: VMS.TPS.Common.Model.API.Tray
+    name: Tray
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.TreatmentPhase
+    name: TreatmentPhase
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.TreatmentSession
+    name: TreatmentSession
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.TreatmentUnitOperatingLimit
+    name: TreatmentUnitOperatingLimit
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.TreatmentUnitOperatingLimits
+    name: TreatmentUnitOperatingLimits
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.TypeBasedIdValidator
+    name: TypeBasedIdValidator
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.User
+    name: User
+    type: Class
+  - uid: VMS.TPS.Common.Model.API.Wedge
+    name: Wedge
+    type: Class
+- uid: VMS.TPS.Common.Model.Types
+  name: VMS.TPS.Common.Model.Types
+  type: Namespace
+  items:
+  - uid: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus
+    name: ApplicationScriptApprovalStatus
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.ApplicationScriptType
+    name: ApplicationScriptType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.ApprovalHistoryEntry
+    name: ApprovalHistoryEntry
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.ArcOptimizationAperture
+    name: ArcOptimizationAperture
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.AxisAlignedMargins
+    name: AxisAlignedMargins
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.BeamNumber
+    name: BeamNumber
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.BeamTechnique
+    name: BeamTechnique
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.BlockType
+    name: BlockType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+    name: BrachyTreatmentTechniqueType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.CalculationType
+    name: CalculationType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult
+    name: ChangeBrachyTreatmentUnitResult
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.ClinicalGoal
+    name: ClinicalGoal
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint
+    name: ClosedLeavesMeetingPoint
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.CourseClinicalStatus
+    name: CourseClinicalStatus
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.DRRCalculationParameters
+    name: DRRCalculationParameters
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.DVHEstimateType
+    name: DVHEstimateType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.DVHEstimationStructureType
+    name: DVHEstimationStructureType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.DVHPoint
+    name: DVHPoint
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.DoseProfile
+    name: DoseProfile
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+    name: DoseValue.DoseUnit
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.DoseValueDisplayConfig
+    name: DoseValueDisplayConfig
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.DoseValuePresentation
+    name: DoseValuePresentation
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.DosimeterUnit
+    name: DosimeterUnit
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters
+    name: ExternalBeamMachineParameters
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.FitToStructureMarginType
+    name: FitToStructureMarginType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.FitToStructureMargins
+    name: FitToStructureMargins
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.Fluence
+    name: Fluence
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.GantryDirection
+    name: GantryDirection
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.GoalEvalResult
+    name: GoalEvalResult
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.GoalPriority
+    name: GoalPriority
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings
+    name: IDoseValueDisplaySettings
+    type: Interface
+  - uid: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry
+    name: ImageApprovalHistoryEntry
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+    name: ImageApprovalStatus
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.ImageProfile
+    name: ImageProfile
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters
+    name: ImagingBeamSetupParameters
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.ImagingSetup
+    name: ImagingSetup
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.IonBeamScanMode
+    name: IonBeamScanMode
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+    name: IonOptimizationIntermediateDoseOption
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters
+    name: IonPlanNormalizationParameters
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.IonPlanOptimizationMode
+    name: IonPlanOptimizationMode
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.JawFitting
+    name: JawFitting
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.LMCMSSOptions
+    name: LMCMSSOptions
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.LMCVOptions
+    name: LMCVOptions
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType
+    name: LateralSpreadingDeviceType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.LineProfile
+    name: LineProfile
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.LogSeverity
+    name: LogSeverity
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.MLCPlanType
+    name: MLCPlanType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.MeasureModifier
+    name: MeasureModifier
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.MeasureType
+    name: MeasureType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.MetersetValue
+    name: MetersetValue
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.Objective
+    name: Objective
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+    name: ObjectiveGoalType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.ObjectiveOperator
+    name: ObjectiveOperator
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.ObjectiveUnit
+    name: ObjectiveUnit
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint
+    name: OpenLeavesMeetingPoint
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.OptimizationAvoidanceSector
+    name: OptimizationAvoidanceSector
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption
+    name: OptimizationConvergenceOption
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption
+    name: OptimizationIntermediateDoseOption
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+    name: OptimizationObjectiveOperator
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.OptimizationOption
+    name: OptimizationOption
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.OptimizationOptionsBase
+    name: OptimizationOptionsBase
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT
+    name: OptimizationOptionsIMPT
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.OptimizationOptionsIMRT
+    name: OptimizationOptionsIMRT
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.OptimizationOptionsVMAT
+    name: OptimizationOptionsVMAT
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.ParticleType
+    name: ParticleType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.PatientOrientation
+    name: PatientOrientation
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.PatientSupportType
+    name: PatientSupportType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+    name: PlanNormalizationMode
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+    name: PlanSetupApprovalStatus
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.PlanSumOperation
+    name: PlanSumOperation
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.PlanType
+    name: PlanType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.PlanUncertaintyType
+    name: PlanUncertaintyType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.PlanValidationResult
+    name: PlanValidationResult
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.PlanValidationResultDetail
+    name: PlanValidationResultDetail
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification
+    name: PlanValidationResultDetail.ResultClassification
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.PlanValidationResultEsapiDetail
+    name: PlanValidationResultEsapiDetail
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.PrescriptionModifier
+    name: PrescriptionModifier
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.PrescriptionType
+    name: PrescriptionType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.ProfilePoint
+    name: ProfilePoint
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus
+    name: ProtonBeamLineStatus
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.ProtonBeamMachineParameters
+    name: ProtonBeamMachineParameters
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus
+    name: ProtonDeliveryTimeStatus
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+    name: RTPrescriptionConstraintType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType
+    name: RTPrescriptionTargetType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.RailPosition
+    name: RailPosition
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.RangeModulatorType
+    name: RangeModulatorType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.RangeShifterType
+    name: RangeShifterType
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus
+    name: RegistrationApprovalStatus
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.ResetSourcePositionsResult
+    name: ResetSourcePositionsResult
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.SegmentProfile
+    name: SegmentProfile
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.SegmentProfilePoint
+    name: SegmentProfilePoint
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.SeriesModality
+    name: SeriesModality
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.SetSourcePositionsResult
+    name: SetSourcePositionsResult
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.SetupTechnique
+    name: SetupTechnique
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.SingleLayerParameters
+    name: SingleLayerParameters
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.SmartLMCOptions
+    name: SmartLMCOptions
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.StructureApprovalHistoryEntry
+    name: StructureApprovalHistoryEntry
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.StructureApprovalStatus
+    name: StructureApprovalStatus
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.StructureCodeInfo
+    name: StructureCodeInfo
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.StructureMarginGeometry
+    name: StructureMarginGeometry
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+    name: TreatmentSessionStatus
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.UserIdentity
+    name: UserIdentity
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.VRect`1
+    name: VRect<T>
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    type: Struct
+  - uid: VMS.TPS.Common.Model.Types.VVector.Component
+    name: VVector.Component
+    type: Enum
+  - uid: VMS.TPS.Common.Model.Types.ValidationException
+    name: ValidationException
+    type: Class
+  - uid: VMS.TPS.Common.Model.Types.VolumePresentation
+    name: VolumePresentation
+    type: Enum
+memberLayout: SamePage

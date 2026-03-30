@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus
+  commentId: T:VMS.TPS.Common.Model.Types.ProtonBeamLineStatus
+  id: ProtonBeamLineStatus
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.Invalid
+  - VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.Outdated
+  - VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.Valid
+  langs:
+  - csharp
+  - vb
+  name: ProtonBeamLineStatus
+  nameWithType: ProtonBeamLineStatus
+  fullName: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Status of proton beam line
+  example: []
+  syntax:
+    content: public enum ProtonBeamLineStatus
+    content.vb: Public Enum ProtonBeamLineStatus
+- uid: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.Invalid
+  commentId: F:VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.Invalid
+  id: Invalid
+  parent: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus
+  langs:
+  - csharp
+  - vb
+  name: Invalid
+  nameWithType: ProtonBeamLineStatus.Invalid
+  fullName: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.Invalid
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Invalid
+  example: []
+  syntax:
+    content: Invalid = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus
+- uid: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.Valid
+  commentId: F:VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.Valid
+  id: Valid
+  parent: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus
+  langs:
+  - csharp
+  - vb
+  name: Valid
+  nameWithType: ProtonBeamLineStatus.Valid
+  fullName: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.Valid
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Valid
+  example: []
+  syntax:
+    content: Valid = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus
+- uid: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.Outdated
+  commentId: F:VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.Outdated
+  id: Outdated
+  parent: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus
+  langs:
+  - csharp
+  - vb
+  name: Outdated
+  nameWithType: ProtonBeamLineStatus.Outdated
+  fullName: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.Outdated
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Outdated
+  example: []
+  syntax:
+    content: Outdated = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus
+  commentId: T:VMS.TPS.Common.Model.Types.ProtonBeamLineStatus
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.html
+  name: ProtonBeamLineStatus
+  nameWithType: ProtonBeamLineStatus
+  fullName: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus

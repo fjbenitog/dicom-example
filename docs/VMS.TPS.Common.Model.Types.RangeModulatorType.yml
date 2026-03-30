@@ -1,0 +1,157 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.RangeModulatorType
+  commentId: T:VMS.TPS.Common.Model.Types.RangeModulatorType
+  id: RangeModulatorType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.RangeModulatorType.Fixed
+  - VMS.TPS.Common.Model.Types.RangeModulatorType.Whl_FixedWeights
+  - VMS.TPS.Common.Model.Types.RangeModulatorType.Whl_ModWeights
+  langs:
+  - csharp
+  - vb
+  name: RangeModulatorType
+  nameWithType: RangeModulatorType
+  fullName: VMS.TPS.Common.Model.Types.RangeModulatorType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Type of the range modulator.
+  example: []
+  syntax:
+    content: public enum RangeModulatorType
+    content.vb: Public Enum RangeModulatorType
+- uid: VMS.TPS.Common.Model.Types.RangeModulatorType.Fixed
+  commentId: F:VMS.TPS.Common.Model.Types.RangeModulatorType.Fixed
+  id: Fixed
+  parent: VMS.TPS.Common.Model.Types.RangeModulatorType
+  langs:
+  - csharp
+  - vb
+  name: Fixed
+  nameWithType: RangeModulatorType.Fixed
+  fullName: VMS.TPS.Common.Model.Types.RangeModulatorType.Fixed
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Fixed modulation width and weights which are achieved by using a ridge filter or a constant speed wheel with constant beam current.
+  example: []
+  syntax:
+    content: Fixed = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.RangeModulatorType
+- uid: VMS.TPS.Common.Model.Types.RangeModulatorType.Whl_FixedWeights
+  commentId: F:VMS.TPS.Common.Model.Types.RangeModulatorType.Whl_FixedWeights
+  id: Whl_FixedWeights
+  parent: VMS.TPS.Common.Model.Types.RangeModulatorType
+  langs:
+  - csharp
+  - vb
+  name: Whl_FixedWeights
+  nameWithType: RangeModulatorType.Whl_FixedWeights
+  fullName: VMS.TPS.Common.Model.Types.RangeModulatorType.Whl_FixedWeights
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Selected wheel/track (Range Modulator ID) is spinning at constant speed. Modulation width
+
+    is adjusted by switching constant beam current on and off at wheel steps indicated by Range Modulator Gating Values.
+  example: []
+  syntax:
+    content: Whl_FixedWeights = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.RangeModulatorType
+- uid: VMS.TPS.Common.Model.Types.RangeModulatorType.Whl_ModWeights
+  commentId: F:VMS.TPS.Common.Model.Types.RangeModulatorType.Whl_ModWeights
+  id: Whl_ModWeights
+  parent: VMS.TPS.Common.Model.Types.RangeModulatorType
+  langs:
+  - csharp
+  - vb
+  name: Whl_ModWeights
+  nameWithType: RangeModulatorType.Whl_ModWeights
+  fullName: VMS.TPS.Common.Model.Types.RangeModulatorType.Whl_ModWeights
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Selected wheel/track (Range Modulator ID) is spinning at constant speed. Weight per wheel
+
+    step is adjusted by modulating beam current according to selected Beam Current Modulation.
+  example: []
+  syntax:
+    content: Whl_ModWeights = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.RangeModulatorType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.RangeModulatorType
+  commentId: T:VMS.TPS.Common.Model.Types.RangeModulatorType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.RangeModulatorType.html
+  name: RangeModulatorType
+  nameWithType: RangeModulatorType
+  fullName: VMS.TPS.Common.Model.Types.RangeModulatorType

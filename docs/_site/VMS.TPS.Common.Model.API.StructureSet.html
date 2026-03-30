@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class StructureSet | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class StructureSet | Example ">
+      
+      <meta name="description" content="A structure set is a container for structures of a patient, including anatomical organs, treatment volumes and markers, and support structures.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API.StructureSet">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_API_StructureSet" data-uid="VMS.TPS.Common.Model.API.StructureSet" class="text-break">
+Class StructureSet  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A structure set is a container for structures of a patient, including anatomical organs, treatment volumes and markers, and support structures.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StructureSet : ApiDataObject, IXmlSerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html">SerializableObject</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html">ApiDataObject</a></div>
+      <div><span class="xref">StructureSet</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IXmlSerializable</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString">ApiDataObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_">ApiDataObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode">ApiDataObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName">ApiDataObject.HistoryUserName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName">ApiDataObject.HistoryUserDisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime">ApiDataObject.HistoryDateTime</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema">SerializableObject.GetSchema()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_">SerializableObject.ReadXml(XmlReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_">SerializableObject.WriteXml(XmlWriter, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_">SerializableObject.WriteXml(XmlWriter, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__">SerializableObject.WriteXml&lt;T&gt;(XmlWriter, string, IEnumerable&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__">SerializableObject.WriteXml&lt;T1, T2&gt;(XmlWriter, string, IDictionary&lt;T1, T2&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_">SerializableObject.StartSerialization(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization">SerializableObject.EndSerialization()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory">SerializableObject.ClearSerializationHistory()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_ApplicationScriptLogs_" data-uid="VMS.TPS.Common.Model.API.StructureSet.ApplicationScriptLogs*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_ApplicationScriptLogs" data-uid="VMS.TPS.Common.Model.API.StructureSet.ApplicationScriptLogs">
+  ApplicationScriptLogs
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The log entries of the script executions that have modified the structure set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ApplicationScriptLog&gt; ApplicationScriptLogs { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.ApplicationScriptLog.html">ApplicationScriptLog</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_Comment_" data-uid="VMS.TPS.Common.Model.API.StructureSet.Comment*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_Comment" data-uid="VMS.TPS.Common.Model.API.StructureSet.Comment">
+  Comment
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license] A comment about the structure set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Comment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_Id_" data-uid="VMS.TPS.Common.Model.API.StructureSet.Id*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_Id" data-uid="VMS.TPS.Common.Model.API.StructureSet.Id">
+  Id
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license] The identifier of the structure set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_Image_" data-uid="VMS.TPS.Common.Model.API.StructureSet.Image*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_Image" data-uid="VMS.TPS.Common.Model.API.StructureSet.Image">
+  Image
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Used for navigating to the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image Image { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_Name_" data-uid="VMS.TPS.Common.Model.API.StructureSet.Name*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_Name" data-uid="VMS.TPS.Common.Model.API.StructureSet.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license] The name of the structure set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_Patient_" data-uid="VMS.TPS.Common.Model.API.StructureSet.Patient*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_Patient" data-uid="VMS.TPS.Common.Model.API.StructureSet.Patient">
+  Patient
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Used for navigating to the patient.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Patient Patient { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Patient.html">Patient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_Series_" data-uid="VMS.TPS.Common.Model.API.StructureSet.Series*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_Series" data-uid="VMS.TPS.Common.Model.API.StructureSet.Series">
+  Series
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The series that contains this plan. Null if the plan is not connected to a series.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Series Series { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Series.html">Series</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_SeriesUID_" data-uid="VMS.TPS.Common.Model.API.StructureSet.SeriesUID*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_SeriesUID" data-uid="VMS.TPS.Common.Model.API.StructureSet.SeriesUID">
+  SeriesUID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The DICOM UID of the series that contains this structure set. Empty string if the structure set is not connected to a series.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SeriesUID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_Structures_" data-uid="VMS.TPS.Common.Model.API.StructureSet.Structures*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_Structures" data-uid="VMS.TPS.Common.Model.API.StructureSet.Structures">
+  Structures
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Used for navigating to the child structures.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Structure&gt; Structures { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_UID_" data-uid="VMS.TPS.Common.Model.API.StructureSet.UID*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_UID" data-uid="VMS.TPS.Common.Model.API.StructureSet.UID">
+  UID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>DICOM UID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string UID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_AddCouchStructures_" data-uid="VMS.TPS.Common.Model.API.StructureSet.AddCouchStructures*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_AddCouchStructures_System_String_VMS_TPS_Common_Model_Types_PatientOrientation_VMS_TPS_Common_Model_Types_RailPosition_VMS_TPS_Common_Model_Types_RailPosition_System_Nullable_System_Double__System_Nullable_System_Double__System_Nullable_System_Double__System_Collections_Generic_IReadOnlyList_VMS_TPS_Common_Model_API_Structure___System_Boolean__System_String__" data-uid="VMS.TPS.Common.Model.API.StructureSet.AddCouchStructures(System.String,VMS.TPS.Common.Model.Types.PatientOrientation,VMS.TPS.Common.Model.Types.RailPosition,VMS.TPS.Common.Model.Types.RailPosition,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.Collections.Generic.IReadOnlyList{VMS.TPS.Common.Model.API.Structure}@,System.Boolean@,System.String@)">
+  AddCouchStructures(string, PatientOrientation, RailPosition, RailPosition, double?, double?, double?, out IReadOnlyList&lt;Structure&gt;, out bool, out string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license]
+Adds couch structures to the StructureSet.
+Eclipse can model certain couches for photon treatment planning. A couch is
+modeled as a set of couch structures.The couch panel surface and interior, movable
+structural rails and grid(for Unipanel only) are each modeled as separate couch
+structures.
+The structure code of a couch structure is Support by default. You can change it to
+another structure code if necessary.
+The volume type of a couch structure is always Support. Couch structures are
+modeled inside a 3D image. If the 3D image is too small, this method will always enlarge the
+image to fit the couch structures.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddCouchStructures(string couchModel, PatientOrientation orientation, RailPosition railA, RailPosition railB, double? surfaceHU, double? interiorHU, double? railHU, out IReadOnlyList&lt;Structure&gt; addedStructures, out bool imageResized, out string error)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>couchModel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The id of the couch profile configured in Eclipse to use when creating the couch structures.</p>
+</dd>
+    <dt><code>orientation</code> <a class="xref" href="VMS.TPS.Common.Model.Types.PatientOrientation.html">PatientOrientation</a></dt>
+    <dd><p>Patient orientation specifying where the couch structures are added.
+Pass NoOrientation to take the orientation from the image.</p>
+</dd>
+    <dt><code>railA</code> <a class="xref" href="VMS.TPS.Common.Model.Types.RailPosition.html">RailPosition</a></dt>
+    <dd><p>Position of moveable rail A.</p>
+</dd>
+    <dt><code>railB</code> <a class="xref" href="VMS.TPS.Common.Model.Types.RailPosition.html">RailPosition</a></dt>
+    <dd><p>Position of moveable rail B.</p>
+</dd>
+    <dt><code>surfaceHU</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd><p>HU value of the modeled couch surface.
+Pass null to use the setting from the specified couch profile or override by passing another value.</p>
+</dd>
+    <dt><code>interiorHU</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd><p>HU value of the modeled couch interior.
+Pass null to use the setting from the specified couch profile or override by passing another value.</p>
+</dd>
+    <dt><code>railHU</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>?</dt>
+    <dd><p>HU value of the modeled couch rails.
+Pass null to use the setting from the specified couch profile or override by passing another value.</p>
+</dd>
+    <dt><code>addedStructures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a>&gt;</dt>
+    <dd><p>Returned list of added couch structures if successful.</p>
+</dd>
+    <dt><code>imageResized</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if image was resized.</p>
+</dd>
+    <dt><code>error</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returned error message if call failed.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if couch structures added.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_AddReferenceLine_" data-uid="VMS.TPS.Common.Model.API.StructureSet.AddReferenceLine*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_AddReferenceLine_System_String_System_String_VMS_TPS_Common_Model_Types_VVector___" data-uid="VMS.TPS.Common.Model.API.StructureSet.AddReferenceLine(System.String,System.String,VMS.TPS.Common.Model.Types.VVector[])">
+  AddReferenceLine(string, string, VVector[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new reference line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Structure AddReferenceLine(string name, string id, VVector[] referenceLinePoints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Reference line name.</p>
+</dd>
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Reference line Id.</p>
+</dd>
+    <dt><code>referenceLinePoints</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a>[]</dt>
+    <dd><p>Reference line points. Number of points: 1 .. 500.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>Newly created reference line.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_AddStructure_" data-uid="VMS.TPS.Common.Model.API.StructureSet.AddStructure*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_AddStructure_System_String_System_String_" data-uid="VMS.TPS.Common.Model.API.StructureSet.AddStructure(System.String,System.String)">
+  AddStructure(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new structure according to the DICOM structure type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Structure AddStructure(string dicomType, string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dicomType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>RT ROI Interpreted Type (DICOM). Identifies the DICOM structure type.
+Possible values are &quot;AVOIDANCE&quot;, &quot;CAVITY&quot;, &quot;CONTRAST_AGENT&quot;, &quot;CTV&quot;, &quot;EXTERNAL&quot;, &quot;GTV&quot;, &quot;IRRAD_VOLUME&quot;,
+&quot;ORGAN&quot;, &quot;PTV&quot;, &quot;TREATED_VOLUME&quot;, &quot;SUPPORT&quot;, &quot;FIXATION&quot;, &quot;CONTROL&quot;, and &quot;DOSE_REGION&quot;.</p>
+</dd>
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The identifier for the new structure.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>Newly created structure.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_AddStructure_" data-uid="VMS.TPS.Common.Model.API.StructureSet.AddStructure*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_AddStructure_VMS_TPS_Common_Model_Types_StructureCodeInfo_" data-uid="VMS.TPS.Common.Model.API.StructureSet.AddStructure(VMS.TPS.Common.Model.Types.StructureCodeInfo)">
+  AddStructure(StructureCodeInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new structure based on structure code.
+The DICOM structure type and structure ID are automatically assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Structure AddStructure(StructureCodeInfo code)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>code</code> <a class="xref" href="VMS.TPS.Common.Model.Types.StructureCodeInfo.html">StructureCodeInfo</a></dt>
+    <dd><p>The structure code.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>Newly created structure.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_CanAddCouchStructures_" data-uid="VMS.TPS.Common.Model.API.StructureSet.CanAddCouchStructures*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_CanAddCouchStructures_System_String__" data-uid="VMS.TPS.Common.Model.API.StructureSet.CanAddCouchStructures(System.String@)">
+  CanAddCouchStructures(out string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is used to verify whether it is possible to
+add couch structures to the StructureSet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanAddCouchStructures(out string error)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>error</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returned reason why couch structures cannot be added if method returns false.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if couch structures can be added.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_CanAddStructure_" data-uid="VMS.TPS.Common.Model.API.StructureSet.CanAddStructure*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_CanAddStructure_System_String_System_String_" data-uid="VMS.TPS.Common.Model.API.StructureSet.CanAddStructure(System.String,System.String)">
+  CanAddStructure(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if it is possible to add the given type of structure to the structure set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanAddStructure(string dicomType, string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dicomType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>RT ROI Interpreted Type (DICOM). Identifies the DICOM structure type.
+Possible values are &quot;AVOIDANCE&quot;, &quot;CAVITY&quot;, &quot;CONTRAST_AGENT&quot;, &quot;CTV&quot;, &quot;EXTERNAL&quot;, &quot;GTV&quot;, &quot;IRRAD_VOLUME&quot;,
+&quot;ORGAN&quot;, &quot;PTV&quot;, &quot;TREATED_VOLUME&quot;, &quot;SUPPORT&quot;, &quot;FIXATION&quot;, &quot;CONTROL&quot;, and &quot;DOSE_REGION&quot;.</p>
+</dd>
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The identifier for the new structure.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if it is possible to add the given type of structure to the structure set. Otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_CanRemoveCouchStructures_" data-uid="VMS.TPS.Common.Model.API.StructureSet.CanRemoveCouchStructures*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_CanRemoveCouchStructures_System_String__" data-uid="VMS.TPS.Common.Model.API.StructureSet.CanRemoveCouchStructures(System.String@)">
+  CanRemoveCouchStructures(out string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is used to verify whether it is possible to
+remove couch structures from the StructureSet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanRemoveCouchStructures(out string error)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>error</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returned reason why couch structures cannot be removed if method returns false.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if couch structures can be removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_CanRemoveStructure_" data-uid="VMS.TPS.Common.Model.API.StructureSet.CanRemoveStructure*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_CanRemoveStructure_VMS_TPS_Common_Model_API_Structure_" data-uid="VMS.TPS.Common.Model.API.StructureSet.CanRemoveStructure(VMS.TPS.Common.Model.API.Structure)">
+  CanRemoveStructure(Structure)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if it is possible to remove the given structure from the structure set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanRemoveStructure(Structure structure)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>The structure to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if the structure can be removed, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_Copy_" data-uid="VMS.TPS.Common.Model.API.StructureSet.Copy*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_Copy" data-uid="VMS.TPS.Common.Model.API.StructureSet.Copy">
+  Copy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Creates a copy of this structure set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StructureSet Copy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.StructureSet.html">StructureSet</a></dt>
+    <dd><p>The newly created copy of the structure set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_CreateAndSearchBody_" data-uid="VMS.TPS.Common.Model.API.StructureSet.CreateAndSearchBody*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_CreateAndSearchBody_VMS_TPS_Common_Model_API_SearchBodyParameters_" data-uid="VMS.TPS.Common.Model.API.StructureSet.CreateAndSearchBody(VMS.TPS.Common.Model.API.SearchBodyParameters)">
+  CreateAndSearchBody(SearchBodyParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Creates a new Body structure and searches Body with the specified parameters. The existing Body structure is returned, if there is one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Structure CreateAndSearchBody(SearchBodyParameters parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parameters</code> <a class="xref" href="VMS.TPS.Common.Model.API.SearchBodyParameters.html">SearchBodyParameters</a></dt>
+    <dd><p>Parameters for the Search Body feature.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>Newly created or already existing Body structure.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_Delete_" data-uid="VMS.TPS.Common.Model.API.StructureSet.Delete*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_Delete" data-uid="VMS.TPS.Common.Model.API.StructureSet.Delete">
+  Delete()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Deletes this structure set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Delete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_GetDefaultSearchBodyParameters_" data-uid="VMS.TPS.Common.Model.API.StructureSet.GetDefaultSearchBodyParameters*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_GetDefaultSearchBodyParameters" data-uid="VMS.TPS.Common.Model.API.StructureSet.GetDefaultSearchBodyParameters">
+  GetDefaultSearchBodyParameters()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a default set of Search Body parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SearchBodyParameters GetDefaultSearchBodyParameters()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.SearchBodyParameters.html">SearchBodyParameters</a></dt>
+    <dd><p>Parameters for the Search Body feature.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_RemoveCouchStructures_" data-uid="VMS.TPS.Common.Model.API.StructureSet.RemoveCouchStructures*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_RemoveCouchStructures_System_Collections_Generic_IReadOnlyList_System_String___System_String__" data-uid="VMS.TPS.Common.Model.API.StructureSet.RemoveCouchStructures(System.Collections.Generic.IReadOnlyList{System.String}@,System.String@)">
+  RemoveCouchStructures(out IReadOnlyList&lt;string&gt;, out string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license]
+Removes couch structures from the StructureSet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveCouchStructures(out IReadOnlyList&lt;string&gt; removedStructureIds, out string error)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>removedStructureIds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Returned list of removed couch structure IDs if successful.</p>
+</dd>
+    <dt><code>error</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returned error message if call failed.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if couch structures were removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_RemoveStructure_" data-uid="VMS.TPS.Common.Model.API.StructureSet.RemoveStructure*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_RemoveStructure_VMS_TPS_Common_Model_API_Structure_" data-uid="VMS.TPS.Common.Model.API.StructureSet.RemoveStructure(VMS.TPS.Common.Model.API.Structure)">
+  RemoveStructure(Structure)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Removes the structure from this structure set if removal is allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveStructure(Structure structure)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>The structure to remove.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_StructureSet_WriteXml_" data-uid="VMS.TPS.Common.Model.API.StructureSet.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_StructureSet_WriteXml_System_Xml_XmlWriter_" data-uid="VMS.TPS.Common.Model.API.StructureSet.WriteXml(System.Xml.XmlWriter)">
+  WriteXml(XmlWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an object into its XML representation.
+For more information on how to serialize an object into an XML document, see <span class="xref">System.Xml.Serialization.XmlSerializer</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>The System.Xml.XmlWriter stream, to which the object is serialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

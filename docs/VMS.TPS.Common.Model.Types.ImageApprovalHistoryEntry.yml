@@ -1,0 +1,444 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry
+  commentId: T:VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry
+  id: ImageApprovalHistoryEntry
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.ApprovalDateTime
+  - VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.ApprovalStatus
+  - VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.StatusComment
+  - VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.UserDisplayName
+  - VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.UserId
+  langs:
+  - csharp
+  - vb
+  name: ImageApprovalHistoryEntry
+  nameWithType: ImageApprovalHistoryEntry
+  fullName: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry
+  type: Struct
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: An entry in the image approval history.
+  example: []
+  syntax:
+    content: public struct ImageApprovalHistoryEntry
+    content.vb: Public Structure ImageApprovalHistoryEntry
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.ApprovalStatus
+  commentId: F:VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.ApprovalStatus
+  id: ApprovalStatus
+  parent: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry
+  langs:
+  - csharp
+  - vb
+  name: ApprovalStatus
+  nameWithType: ImageApprovalHistoryEntry.ApprovalStatus
+  fullName: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.ApprovalStatus
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The status of the approval.
+  example: []
+  syntax:
+    content: public ImageApprovalStatus ApprovalStatus
+    return:
+      type: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+    content.vb: Public ApprovalStatus As ImageApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.StatusComment
+  commentId: F:VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.StatusComment
+  id: StatusComment
+  parent: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry
+  langs:
+  - csharp
+  - vb
+  name: StatusComment
+  nameWithType: ImageApprovalHistoryEntry.StatusComment
+  fullName: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.StatusComment
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: User comment on the approval status change.
+  example: []
+  syntax:
+    content: public string StatusComment
+    return:
+      type: System.String
+    content.vb: Public StatusComment As String
+- uid: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.UserId
+  commentId: F:VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.UserId
+  id: UserId
+  parent: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: ImageApprovalHistoryEntry.UserId
+  fullName: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.UserId
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: User ID of the user who changed the approval status.
+  example: []
+  syntax:
+    content: public string UserId
+    return:
+      type: System.String
+    content.vb: Public UserId As String
+- uid: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.UserDisplayName
+  commentId: F:VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.UserDisplayName
+  id: UserDisplayName
+  parent: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry
+  langs:
+  - csharp
+  - vb
+  name: UserDisplayName
+  nameWithType: ImageApprovalHistoryEntry.UserDisplayName
+  fullName: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.UserDisplayName
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Full user name of user who changed the approval status.
+  example: []
+  syntax:
+    content: public string UserDisplayName
+    return:
+      type: System.String
+    content.vb: Public UserDisplayName As String
+- uid: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.ApprovalDateTime
+  commentId: F:VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.ApprovalDateTime
+  id: ApprovalDateTime
+  parent: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry
+  langs:
+  - csharp
+  - vb
+  name: ApprovalDateTime
+  nameWithType: ImageApprovalHistoryEntry.ApprovalDateTime
+  fullName: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.ApprovalDateTime
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The date and time of the approval status change.
+  example: []
+  syntax:
+    content: public DateTime ApprovalDateTime
+    return:
+      type: System.DateTime
+    content.vb: Public ApprovalDateTime As Date
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+  commentId: T:VMS.TPS.Common.Model.Types.ImageApprovalStatus
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ImageApprovalStatus.html
+  name: ImageApprovalStatus
+  nameWithType: ImageApprovalStatus
+  fullName: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date

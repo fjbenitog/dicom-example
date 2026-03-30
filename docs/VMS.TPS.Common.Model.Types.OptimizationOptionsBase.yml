@@ -1,0 +1,451 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsBase
+  commentId: T:VMS.TPS.Common.Model.Types.OptimizationOptionsBase
+  id: OptimizationOptionsBase
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.OptimizationOptionsBase.IntermediateDoseOption
+  - VMS.TPS.Common.Model.Types.OptimizationOptionsBase.MLC
+  - VMS.TPS.Common.Model.Types.OptimizationOptionsBase.StartOption
+  langs:
+  - csharp
+  - vb
+  name: OptimizationOptionsBase
+  nameWithType: OptimizationOptionsBase
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsBase
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Abstract base class for IMRT and VMAT optimization options.
+  example: []
+  syntax:
+    content: public abstract class OptimizationOptionsBase
+    content.vb: Public MustInherit Class OptimizationOptionsBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT
+  - VMS.TPS.Common.Model.Types.OptimizationOptionsIMRT
+  - VMS.TPS.Common.Model.Types.OptimizationOptionsVMAT
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.MLC
+  commentId: P:VMS.TPS.Common.Model.Types.OptimizationOptionsBase.MLC
+  id: MLC
+  parent: VMS.TPS.Common.Model.Types.OptimizationOptionsBase
+  langs:
+  - csharp
+  - vb
+  name: MLC
+  nameWithType: OptimizationOptionsBase.MLC
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.MLC
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Identifier for the Multileaf Collimator (MLC). This can be left empty if there is exactly one MLC configured.
+  example: []
+  syntax:
+    content: public string MLC { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property MLC As String
+  overload: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.MLC*
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.StartOption
+  commentId: P:VMS.TPS.Common.Model.Types.OptimizationOptionsBase.StartOption
+  id: StartOption
+  parent: VMS.TPS.Common.Model.Types.OptimizationOptionsBase
+  langs:
+  - csharp
+  - vb
+  name: StartOption
+  nameWithType: OptimizationOptionsBase.StartOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.StartOption
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The state at the beginning of the optimization.
+  example: []
+  syntax:
+    content: public OptimizationOption StartOption { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.OptimizationOption
+    content.vb: Public ReadOnly Property StartOption As OptimizationOption
+  overload: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.StartOption*
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.IntermediateDoseOption
+  commentId: P:VMS.TPS.Common.Model.Types.OptimizationOptionsBase.IntermediateDoseOption
+  id: IntermediateDoseOption
+  parent: VMS.TPS.Common.Model.Types.OptimizationOptionsBase
+  langs:
+  - csharp
+  - vb
+  name: IntermediateDoseOption
+  nameWithType: OptimizationOptionsBase.IntermediateDoseOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.IntermediateDoseOption
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Use of intermediate dose in optimization.
+  example: []
+  syntax:
+    content: public OptimizationIntermediateDoseOption IntermediateDoseOption { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption
+    content.vb: Public ReadOnly Property IntermediateDoseOption As OptimizationIntermediateDoseOption
+  overload: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.IntermediateDoseOption*
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.MLC*
+  commentId: Overload:VMS.TPS.Common.Model.Types.OptimizationOptionsBase.MLC
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.html#VMS_TPS_Common_Model_Types_OptimizationOptionsBase_MLC
+  name: MLC
+  nameWithType: OptimizationOptionsBase.MLC
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.MLC
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.StartOption*
+  commentId: Overload:VMS.TPS.Common.Model.Types.OptimizationOptionsBase.StartOption
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.html#VMS_TPS_Common_Model_Types_OptimizationOptionsBase_StartOption
+  name: StartOption
+  nameWithType: OptimizationOptionsBase.StartOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.StartOption
+- uid: VMS.TPS.Common.Model.Types.OptimizationOption
+  commentId: T:VMS.TPS.Common.Model.Types.OptimizationOption
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationOption.html
+  name: OptimizationOption
+  nameWithType: OptimizationOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOption
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.IntermediateDoseOption*
+  commentId: Overload:VMS.TPS.Common.Model.Types.OptimizationOptionsBase.IntermediateDoseOption
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.html#VMS_TPS_Common_Model_Types_OptimizationOptionsBase_IntermediateDoseOption
+  name: IntermediateDoseOption
+  nameWithType: OptimizationOptionsBase.IntermediateDoseOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.IntermediateDoseOption
+- uid: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption
+  commentId: T:VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption.html
+  name: OptimizationIntermediateDoseOption
+  nameWithType: OptimizationIntermediateDoseOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption

@@ -1,0 +1,267 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+  commentId: T:VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+  id: TreatmentSessionStatus
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Completed
+  - VMS.TPS.Common.Model.Types.TreatmentSessionStatus.CompletedPartially
+  - VMS.TPS.Common.Model.Types.TreatmentSessionStatus.InActiveResume
+  - VMS.TPS.Common.Model.Types.TreatmentSessionStatus.InActiveTreat
+  - VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Null
+  - VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Resume
+  - VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Treat
+  langs:
+  - csharp
+  - vb
+  name: TreatmentSessionStatus
+  nameWithType: TreatmentSessionStatus
+  fullName: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Status of the treatment session.
+  example: []
+  syntax:
+    content: public enum TreatmentSessionStatus
+    content.vb: Public Enum TreatmentSessionStatus
+- uid: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Null
+  commentId: F:VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Null
+  id: "Null"
+  parent: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+  langs:
+  - csharp
+  - vb
+  name: "Null"
+  nameWithType: TreatmentSessionStatus.Null
+  fullName: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Null
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: If the value is null, the status of the treatment session is unknown.
+  example: []
+  syntax:
+    content: Null = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+- uid: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Treat
+  commentId: F:VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Treat
+  id: Treat
+  parent: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+  langs:
+  - csharp
+  - vb
+  name: Treat
+  nameWithType: TreatmentSessionStatus.Treat
+  fullName: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Treat
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    The plan in this session is to be treated as a complete fraction.
+
+    When treating a plan based on this status, the fraction number shall be incremented by 1.
+
+    In case of a previous partial treatment, the next session shall
+
+    treat the plan completely. Typically, further treatments have to be treated completely as well.
+  example: []
+  syntax:
+    content: Treat = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+- uid: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Resume
+  commentId: F:VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Resume
+  id: Resume
+  parent: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+  langs:
+  - csharp
+  - vb
+  name: Resume
+  nameWithType: TreatmentSessionStatus.Resume
+  fullName: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Resume
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    The plan in this session shall complete a partial treatment of the last incomplete fraction.
+
+    When treating a plan based on this status, the fraction number remains the one of the last treatment.
+
+    Any previously applied dose for the current fraction is taken into account and the user can complete the treatment.
+  example: []
+  syntax:
+    content: Resume = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+- uid: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Completed
+  commentId: F:VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Completed
+  id: Completed
+  parent: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+  langs:
+  - csharp
+  - vb
+  name: Completed
+  nameWithType: TreatmentSessionStatus.Completed
+  fullName: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Completed
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The plan in this session has been completely treated.
+  example: []
+  syntax:
+    content: Completed = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+- uid: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.CompletedPartially
+  commentId: F:VMS.TPS.Common.Model.Types.TreatmentSessionStatus.CompletedPartially
+  id: CompletedPartially
+  parent: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+  langs:
+  - csharp
+  - vb
+  name: CompletedPartially
+  nameWithType: TreatmentSessionStatus.CompletedPartially
+  fullName: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.CompletedPartially
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The plan in this session has been partially treated.
+  example: []
+  syntax:
+    content: CompletedPartially = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+- uid: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.InActiveTreat
+  commentId: F:VMS.TPS.Common.Model.Types.TreatmentSessionStatus.InActiveTreat
+  id: InActiveTreat
+  parent: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+  langs:
+  - csharp
+  - vb
+  name: InActiveTreat
+  nameWithType: TreatmentSessionStatus.InActiveTreat
+  fullName: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.InActiveTreat
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    There is no clinical decision yet on whether the plan should be treated or not.
+
+    The <xref href="VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Treat" data-throw-if-not-resolved="false"></xref> status was active before the status was set to InActiveTreat.
+  example: []
+  syntax:
+    content: InActiveTreat = 5
+    return:
+      type: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+- uid: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.InActiveResume
+  commentId: F:VMS.TPS.Common.Model.Types.TreatmentSessionStatus.InActiveResume
+  id: InActiveResume
+  parent: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+  langs:
+  - csharp
+  - vb
+  name: InActiveResume
+  nameWithType: TreatmentSessionStatus.InActiveResume
+  fullName: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.InActiveResume
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    There is no clinical decision yet on whether the plan should be treated or not.
+
+    The <xref href="VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Resume" data-throw-if-not-resolved="false"></xref> status was active before the status was set to InActiveResume.
+  example: []
+  syntax:
+    content: InActiveResume = 6
+    return:
+      type: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+  commentId: T:VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.html
+  name: TreatmentSessionStatus
+  nameWithType: TreatmentSessionStatus
+  fullName: VMS.TPS.Common.Model.Types.TreatmentSessionStatus
+- uid: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Treat
+  commentId: F:VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Treat
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.html#VMS_TPS_Common_Model_Types_TreatmentSessionStatus_Treat
+  name: Treat
+  nameWithType: TreatmentSessionStatus.Treat
+  fullName: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Treat
+- uid: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Resume
+  commentId: F:VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Resume
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.html#VMS_TPS_Common_Model_Types_TreatmentSessionStatus_Resume
+  name: Resume
+  nameWithType: TreatmentSessionStatus.Resume
+  fullName: VMS.TPS.Common.Model.Types.TreatmentSessionStatus.Resume

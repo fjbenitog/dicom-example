@@ -1,0 +1,382 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.CalculationType
+  commentId: T:VMS.TPS.Common.Model.Types.CalculationType
+  id: CalculationType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.CalculationType.DVHEstimation
+  - VMS.TPS.Common.Model.Types.CalculationType.PhotonIMRTOptimization
+  - VMS.TPS.Common.Model.Types.CalculationType.PhotonLeafMotions
+  - VMS.TPS.Common.Model.Types.CalculationType.PhotonOptimization
+  - VMS.TPS.Common.Model.Types.CalculationType.PhotonSRSDose
+  - VMS.TPS.Common.Model.Types.CalculationType.PhotonVMATOptimization
+  - VMS.TPS.Common.Model.Types.CalculationType.PhotonVolumeDose
+  - VMS.TPS.Common.Model.Types.CalculationType.ProtonBeamDeliveryDynamics
+  - VMS.TPS.Common.Model.Types.CalculationType.ProtonBeamLineModifiers
+  - VMS.TPS.Common.Model.Types.CalculationType.ProtonDDC
+  - VMS.TPS.Common.Model.Types.CalculationType.ProtonDVHEstimation
+  - VMS.TPS.Common.Model.Types.CalculationType.ProtonMSPostProcessing
+  - VMS.TPS.Common.Model.Types.CalculationType.ProtonOptimization
+  - VMS.TPS.Common.Model.Types.CalculationType.ProtonVolumeDose
+  langs:
+  - csharp
+  - vb
+  name: CalculationType
+  nameWithType: CalculationType
+  fullName: VMS.TPS.Common.Model.Types.CalculationType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Calculation type.
+  example: []
+  syntax:
+    content: public enum CalculationType
+    content.vb: Public Enum CalculationType
+- uid: VMS.TPS.Common.Model.Types.CalculationType.PhotonVolumeDose
+  commentId: F:VMS.TPS.Common.Model.Types.CalculationType.PhotonVolumeDose
+  id: PhotonVolumeDose
+  parent: VMS.TPS.Common.Model.Types.CalculationType
+  langs:
+  - csharp
+  - vb
+  name: PhotonVolumeDose
+  nameWithType: CalculationType.PhotonVolumeDose
+  fullName: VMS.TPS.Common.Model.Types.CalculationType.PhotonVolumeDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Photon Volume Dose calculation.
+  example: []
+  syntax:
+    content: PhotonVolumeDose = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.CalculationType
+- uid: VMS.TPS.Common.Model.Types.CalculationType.PhotonSRSDose
+  commentId: F:VMS.TPS.Common.Model.Types.CalculationType.PhotonSRSDose
+  id: PhotonSRSDose
+  parent: VMS.TPS.Common.Model.Types.CalculationType
+  langs:
+  - csharp
+  - vb
+  name: PhotonSRSDose
+  nameWithType: CalculationType.PhotonSRSDose
+  fullName: VMS.TPS.Common.Model.Types.CalculationType.PhotonSRSDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Photon SRS Dose calculation.
+  example: []
+  syntax:
+    content: PhotonSRSDose = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.CalculationType
+- uid: VMS.TPS.Common.Model.Types.CalculationType.PhotonOptimization
+  commentId: F:VMS.TPS.Common.Model.Types.CalculationType.PhotonOptimization
+  id: PhotonOptimization
+  parent: VMS.TPS.Common.Model.Types.CalculationType
+  langs:
+  - csharp
+  - vb
+  name: PhotonOptimization
+  nameWithType: CalculationType.PhotonOptimization
+  fullName: VMS.TPS.Common.Model.Types.CalculationType.PhotonOptimization
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Photon optimization.
+  example: []
+  syntax:
+    content: PhotonOptimization = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.CalculationType
+- uid: VMS.TPS.Common.Model.Types.CalculationType.PhotonIMRTOptimization
+  commentId: F:VMS.TPS.Common.Model.Types.CalculationType.PhotonIMRTOptimization
+  id: PhotonIMRTOptimization
+  parent: VMS.TPS.Common.Model.Types.CalculationType
+  langs:
+  - csharp
+  - vb
+  name: PhotonIMRTOptimization
+  nameWithType: CalculationType.PhotonIMRTOptimization
+  fullName: VMS.TPS.Common.Model.Types.CalculationType.PhotonIMRTOptimization
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Photon IMRT optimization.
+  example: []
+  syntax:
+    content: PhotonIMRTOptimization = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.CalculationType
+- uid: VMS.TPS.Common.Model.Types.CalculationType.PhotonVMATOptimization
+  commentId: F:VMS.TPS.Common.Model.Types.CalculationType.PhotonVMATOptimization
+  id: PhotonVMATOptimization
+  parent: VMS.TPS.Common.Model.Types.CalculationType
+  langs:
+  - csharp
+  - vb
+  name: PhotonVMATOptimization
+  nameWithType: CalculationType.PhotonVMATOptimization
+  fullName: VMS.TPS.Common.Model.Types.CalculationType.PhotonVMATOptimization
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Photon VMAT optimization.
+  example: []
+  syntax:
+    content: PhotonVMATOptimization = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.CalculationType
+- uid: VMS.TPS.Common.Model.Types.CalculationType.PhotonLeafMotions
+  commentId: F:VMS.TPS.Common.Model.Types.CalculationType.PhotonLeafMotions
+  id: PhotonLeafMotions
+  parent: VMS.TPS.Common.Model.Types.CalculationType
+  langs:
+  - csharp
+  - vb
+  name: PhotonLeafMotions
+  nameWithType: CalculationType.PhotonLeafMotions
+  fullName: VMS.TPS.Common.Model.Types.CalculationType.PhotonLeafMotions
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Photon Leaf motion calculation.
+  example: []
+  syntax:
+    content: PhotonLeafMotions = 5
+    return:
+      type: VMS.TPS.Common.Model.Types.CalculationType
+- uid: VMS.TPS.Common.Model.Types.CalculationType.ProtonVolumeDose
+  commentId: F:VMS.TPS.Common.Model.Types.CalculationType.ProtonVolumeDose
+  id: ProtonVolumeDose
+  parent: VMS.TPS.Common.Model.Types.CalculationType
+  langs:
+  - csharp
+  - vb
+  name: ProtonVolumeDose
+  nameWithType: CalculationType.ProtonVolumeDose
+  fullName: VMS.TPS.Common.Model.Types.CalculationType.ProtonVolumeDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Proton Volume Dose calculation.
+  example: []
+  syntax:
+    content: ProtonVolumeDose = 6
+    return:
+      type: VMS.TPS.Common.Model.Types.CalculationType
+- uid: VMS.TPS.Common.Model.Types.CalculationType.DVHEstimation
+  commentId: F:VMS.TPS.Common.Model.Types.CalculationType.DVHEstimation
+  id: DVHEstimation
+  parent: VMS.TPS.Common.Model.Types.CalculationType
+  langs:
+  - csharp
+  - vb
+  name: DVHEstimation
+  nameWithType: CalculationType.DVHEstimation
+  fullName: VMS.TPS.Common.Model.Types.CalculationType.DVHEstimation
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: DVH Estimation.
+  example: []
+  syntax:
+    content: DVHEstimation = 7
+    return:
+      type: VMS.TPS.Common.Model.Types.CalculationType
+- uid: VMS.TPS.Common.Model.Types.CalculationType.ProtonDVHEstimation
+  commentId: F:VMS.TPS.Common.Model.Types.CalculationType.ProtonDVHEstimation
+  id: ProtonDVHEstimation
+  parent: VMS.TPS.Common.Model.Types.CalculationType
+  langs:
+  - csharp
+  - vb
+  name: ProtonDVHEstimation
+  nameWithType: CalculationType.ProtonDVHEstimation
+  fullName: VMS.TPS.Common.Model.Types.CalculationType.ProtonDVHEstimation
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Proton DVH Estimation.
+  example: []
+  syntax:
+    content: ProtonDVHEstimation = 8
+    return:
+      type: VMS.TPS.Common.Model.Types.CalculationType
+- uid: VMS.TPS.Common.Model.Types.CalculationType.ProtonOptimization
+  commentId: F:VMS.TPS.Common.Model.Types.CalculationType.ProtonOptimization
+  id: ProtonOptimization
+  parent: VMS.TPS.Common.Model.Types.CalculationType
+  langs:
+  - csharp
+  - vb
+  name: ProtonOptimization
+  nameWithType: CalculationType.ProtonOptimization
+  fullName: VMS.TPS.Common.Model.Types.CalculationType.ProtonOptimization
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Proton optimization.
+  example: []
+  syntax:
+    content: ProtonOptimization = 9
+    return:
+      type: VMS.TPS.Common.Model.Types.CalculationType
+- uid: VMS.TPS.Common.Model.Types.CalculationType.ProtonBeamLineModifiers
+  commentId: F:VMS.TPS.Common.Model.Types.CalculationType.ProtonBeamLineModifiers
+  id: ProtonBeamLineModifiers
+  parent: VMS.TPS.Common.Model.Types.CalculationType
+  langs:
+  - csharp
+  - vb
+  name: ProtonBeamLineModifiers
+  nameWithType: CalculationType.ProtonBeamLineModifiers
+  fullName: VMS.TPS.Common.Model.Types.CalculationType.ProtonBeamLineModifiers
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Proton beam line modifers.
+  example: []
+  syntax:
+    content: ProtonBeamLineModifiers = 10
+    return:
+      type: VMS.TPS.Common.Model.Types.CalculationType
+- uid: VMS.TPS.Common.Model.Types.CalculationType.ProtonMSPostProcessing
+  commentId: F:VMS.TPS.Common.Model.Types.CalculationType.ProtonMSPostProcessing
+  id: ProtonMSPostProcessing
+  parent: VMS.TPS.Common.Model.Types.CalculationType
+  langs:
+  - csharp
+  - vb
+  name: ProtonMSPostProcessing
+  nameWithType: CalculationType.ProtonMSPostProcessing
+  fullName: VMS.TPS.Common.Model.Types.CalculationType.ProtonMSPostProcessing
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Proton MS post processing.
+  example: []
+  syntax:
+    content: ProtonMSPostProcessing = 11
+    return:
+      type: VMS.TPS.Common.Model.Types.CalculationType
+- uid: VMS.TPS.Common.Model.Types.CalculationType.ProtonDDC
+  commentId: F:VMS.TPS.Common.Model.Types.CalculationType.ProtonDDC
+  id: ProtonDDC
+  parent: VMS.TPS.Common.Model.Types.CalculationType
+  langs:
+  - csharp
+  - vb
+  name: ProtonDDC
+  nameWithType: CalculationType.ProtonDDC
+  fullName: VMS.TPS.Common.Model.Types.CalculationType.ProtonDDC
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Proton DDC.
+  example: []
+  syntax:
+    content: ProtonDDC = 12
+    return:
+      type: VMS.TPS.Common.Model.Types.CalculationType
+- uid: VMS.TPS.Common.Model.Types.CalculationType.ProtonBeamDeliveryDynamics
+  commentId: F:VMS.TPS.Common.Model.Types.CalculationType.ProtonBeamDeliveryDynamics
+  id: ProtonBeamDeliveryDynamics
+  parent: VMS.TPS.Common.Model.Types.CalculationType
+  langs:
+  - csharp
+  - vb
+  name: ProtonBeamDeliveryDynamics
+  nameWithType: CalculationType.ProtonBeamDeliveryDynamics
+  fullName: VMS.TPS.Common.Model.Types.CalculationType.ProtonBeamDeliveryDynamics
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Proton beam delivery dynamics.
+  example: []
+  syntax:
+    content: ProtonBeamDeliveryDynamics = 13
+    return:
+      type: VMS.TPS.Common.Model.Types.CalculationType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.CalculationType
+  commentId: T:VMS.TPS.Common.Model.Types.CalculationType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.CalculationType.html
+  name: CalculationType
+  nameWithType: CalculationType
+  fullName: VMS.TPS.Common.Model.Types.CalculationType

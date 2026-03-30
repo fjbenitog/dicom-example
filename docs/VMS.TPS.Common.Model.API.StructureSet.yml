@@ -1,0 +1,2351 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.API.StructureSet
+  commentId: T:VMS.TPS.Common.Model.API.StructureSet
+  id: StructureSet
+  parent: VMS.TPS.Common.Model.API
+  children:
+  - VMS.TPS.Common.Model.API.StructureSet.AddCouchStructures(System.String,VMS.TPS.Common.Model.Types.PatientOrientation,VMS.TPS.Common.Model.Types.RailPosition,VMS.TPS.Common.Model.Types.RailPosition,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.Collections.Generic.IReadOnlyList{VMS.TPS.Common.Model.API.Structure}@,System.Boolean@,System.String@)
+  - VMS.TPS.Common.Model.API.StructureSet.AddReferenceLine(System.String,System.String,VMS.TPS.Common.Model.Types.VVector[])
+  - VMS.TPS.Common.Model.API.StructureSet.AddStructure(System.String,System.String)
+  - VMS.TPS.Common.Model.API.StructureSet.AddStructure(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  - VMS.TPS.Common.Model.API.StructureSet.ApplicationScriptLogs
+  - VMS.TPS.Common.Model.API.StructureSet.CanAddCouchStructures(System.String@)
+  - VMS.TPS.Common.Model.API.StructureSet.CanAddStructure(System.String,System.String)
+  - VMS.TPS.Common.Model.API.StructureSet.CanRemoveCouchStructures(System.String@)
+  - VMS.TPS.Common.Model.API.StructureSet.CanRemoveStructure(VMS.TPS.Common.Model.API.Structure)
+  - VMS.TPS.Common.Model.API.StructureSet.Comment
+  - VMS.TPS.Common.Model.API.StructureSet.Copy
+  - VMS.TPS.Common.Model.API.StructureSet.CreateAndSearchBody(VMS.TPS.Common.Model.API.SearchBodyParameters)
+  - VMS.TPS.Common.Model.API.StructureSet.Delete
+  - VMS.TPS.Common.Model.API.StructureSet.GetDefaultSearchBodyParameters
+  - VMS.TPS.Common.Model.API.StructureSet.Id
+  - VMS.TPS.Common.Model.API.StructureSet.Image
+  - VMS.TPS.Common.Model.API.StructureSet.Name
+  - VMS.TPS.Common.Model.API.StructureSet.Patient
+  - VMS.TPS.Common.Model.API.StructureSet.RemoveCouchStructures(System.Collections.Generic.IReadOnlyList{System.String}@,System.String@)
+  - VMS.TPS.Common.Model.API.StructureSet.RemoveStructure(VMS.TPS.Common.Model.API.Structure)
+  - VMS.TPS.Common.Model.API.StructureSet.Series
+  - VMS.TPS.Common.Model.API.StructureSet.SeriesUID
+  - VMS.TPS.Common.Model.API.StructureSet.Structures
+  - VMS.TPS.Common.Model.API.StructureSet.UID
+  - VMS.TPS.Common.Model.API.StructureSet.WriteXml(System.Xml.XmlWriter)
+  langs:
+  - csharp
+  - vb
+  name: StructureSet
+  nameWithType: StructureSet
+  fullName: VMS.TPS.Common.Model.API.StructureSet
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: A structure set is a container for structures of a patient, including anatomical organs, treatment volumes and markers, and support structures.
+  example: []
+  syntax:
+    content: 'public class StructureSet : ApiDataObject, IXmlSerializable'
+    content.vb: Public Class StructureSet Inherits ApiDataObject Implements IXmlSerializable
+  inheritance:
+  - System.Object
+  - VMS.TPS.Common.Model.API.SerializableObject
+  - VMS.TPS.Common.Model.API.ApiDataObject
+  implements:
+  - System.Xml.Serialization.IXmlSerializable
+  inheritedMembers:
+  - VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  - VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  - VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  - VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  - VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  - VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  - VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.API.StructureSet.AddCouchStructures(System.String,VMS.TPS.Common.Model.Types.PatientOrientation,VMS.TPS.Common.Model.Types.RailPosition,VMS.TPS.Common.Model.Types.RailPosition,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.Collections.Generic.IReadOnlyList{VMS.TPS.Common.Model.API.Structure}@,System.Boolean@,System.String@)
+  commentId: M:VMS.TPS.Common.Model.API.StructureSet.AddCouchStructures(System.String,VMS.TPS.Common.Model.Types.PatientOrientation,VMS.TPS.Common.Model.Types.RailPosition,VMS.TPS.Common.Model.Types.RailPosition,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.Collections.Generic.IReadOnlyList{VMS.TPS.Common.Model.API.Structure}@,System.Boolean@,System.String@)
+  id: AddCouchStructures(System.String,VMS.TPS.Common.Model.Types.PatientOrientation,VMS.TPS.Common.Model.Types.RailPosition,VMS.TPS.Common.Model.Types.RailPosition,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.Collections.Generic.IReadOnlyList{VMS.TPS.Common.Model.API.Structure}@,System.Boolean@,System.String@)
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: AddCouchStructures(string, PatientOrientation, RailPosition, RailPosition, double?, double?, double?, out IReadOnlyList<Structure>, out bool, out string)
+  nameWithType: StructureSet.AddCouchStructures(string, PatientOrientation, RailPosition, RailPosition, double?, double?, double?, out IReadOnlyList<Structure>, out bool, out string)
+  fullName: VMS.TPS.Common.Model.API.StructureSet.AddCouchStructures(string, VMS.TPS.Common.Model.Types.PatientOrientation, VMS.TPS.Common.Model.Types.RailPosition, VMS.TPS.Common.Model.Types.RailPosition, double?, double?, double?, out System.Collections.Generic.IReadOnlyList<VMS.TPS.Common.Model.API.Structure>, out bool, out string)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] 
+
+    Adds couch structures to the StructureSet.
+
+    Eclipse can model certain couches for photon treatment planning. A couch is 
+
+    modeled as a set of couch structures.The couch panel surface and interior, movable
+
+    structural rails and grid(for Unipanel only) are each modeled as separate couch
+
+    structures.
+
+    The structure code of a couch structure is Support by default. You can change it to
+
+    another structure code if necessary.
+
+    The volume type of a couch structure is always Support. Couch structures are
+
+    modeled inside a 3D image. If the 3D image is too small, this method will always enlarge the
+
+    image to fit the couch structures.
+  example: []
+  syntax:
+    content: public bool AddCouchStructures(string couchModel, PatientOrientation orientation, RailPosition railA, RailPosition railB, double? surfaceHU, double? interiorHU, double? railHU, out IReadOnlyList<Structure> addedStructures, out bool imageResized, out string error)
+    parameters:
+    - id: couchModel
+      type: System.String
+      description: The id of the couch profile configured in Eclipse to use when creating the couch structures.
+    - id: orientation
+      type: VMS.TPS.Common.Model.Types.PatientOrientation
+      description: >-
+        Patient orientation specifying where the couch structures are added.
+                    Pass NoOrientation to take the orientation from the image.
+    - id: railA
+      type: VMS.TPS.Common.Model.Types.RailPosition
+      description: Position of moveable rail A.
+    - id: railB
+      type: VMS.TPS.Common.Model.Types.RailPosition
+      description: Position of moveable rail B.
+    - id: surfaceHU
+      type: System.Nullable{System.Double}
+      description: >-
+        HU value of the modeled couch surface.
+                    Pass null to use the setting from the specified couch profile or override by passing another value.
+    - id: interiorHU
+      type: System.Nullable{System.Double}
+      description: >-
+        HU value of the modeled couch interior.
+                    Pass null to use the setting from the specified couch profile or override by passing another value.
+    - id: railHU
+      type: System.Nullable{System.Double}
+      description: >-
+        HU value of the modeled couch rails.
+                    Pass null to use the setting from the specified couch profile or override by passing another value.
+    - id: addedStructures
+      type: System.Collections.Generic.IReadOnlyList{VMS.TPS.Common.Model.API.Structure}
+      description: Returned list of added couch structures if successful.
+    - id: imageResized
+      type: System.Boolean
+      description: True if image was resized.
+    - id: error
+      type: System.String
+      description: Returned error message if call failed.
+    return:
+      type: System.Boolean
+      description: True if couch structures added.
+    content.vb: Public Function AddCouchStructures(couchModel As String, orientation As PatientOrientation, railA As RailPosition, railB As RailPosition, surfaceHU As Double?, interiorHU As Double?, railHU As Double?, addedStructures As IReadOnlyList(Of [Structure]), imageResized As Boolean, [error] As String) As Boolean
+  overload: VMS.TPS.Common.Model.API.StructureSet.AddCouchStructures*
+  nameWithType.vb: StructureSet.AddCouchStructures(String, PatientOrientation, RailPosition, RailPosition, Double?, Double?, Double?, IReadOnlyList(Of Structure), Boolean, String)
+  fullName.vb: VMS.TPS.Common.Model.API.StructureSet.AddCouchStructures(String, VMS.TPS.Common.Model.Types.PatientOrientation, VMS.TPS.Common.Model.Types.RailPosition, VMS.TPS.Common.Model.Types.RailPosition, Double?, Double?, Double?, System.Collections.Generic.IReadOnlyList(Of VMS.TPS.Common.Model.API.Structure), Boolean, String)
+  name.vb: AddCouchStructures(String, PatientOrientation, RailPosition, RailPosition, Double?, Double?, Double?, IReadOnlyList(Of Structure), Boolean, String)
+- uid: VMS.TPS.Common.Model.API.StructureSet.RemoveCouchStructures(System.Collections.Generic.IReadOnlyList{System.String}@,System.String@)
+  commentId: M:VMS.TPS.Common.Model.API.StructureSet.RemoveCouchStructures(System.Collections.Generic.IReadOnlyList{System.String}@,System.String@)
+  id: RemoveCouchStructures(System.Collections.Generic.IReadOnlyList{System.String}@,System.String@)
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: RemoveCouchStructures(out IReadOnlyList<string>, out string)
+  nameWithType: StructureSet.RemoveCouchStructures(out IReadOnlyList<string>, out string)
+  fullName: VMS.TPS.Common.Model.API.StructureSet.RemoveCouchStructures(out System.Collections.Generic.IReadOnlyList<string>, out string)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] 
+
+    Removes couch structures from the StructureSet.
+  example: []
+  syntax:
+    content: public bool RemoveCouchStructures(out IReadOnlyList<string> removedStructureIds, out string error)
+    parameters:
+    - id: removedStructureIds
+      type: System.Collections.Generic.IReadOnlyList{System.String}
+      description: Returned list of removed couch structure IDs if successful.
+    - id: error
+      type: System.String
+      description: Returned error message if call failed.
+    return:
+      type: System.Boolean
+      description: True if couch structures were removed.
+    content.vb: Public Function RemoveCouchStructures(removedStructureIds As IReadOnlyList(Of String), [error] As String) As Boolean
+  overload: VMS.TPS.Common.Model.API.StructureSet.RemoveCouchStructures*
+  nameWithType.vb: StructureSet.RemoveCouchStructures(IReadOnlyList(Of String), String)
+  fullName.vb: VMS.TPS.Common.Model.API.StructureSet.RemoveCouchStructures(System.Collections.Generic.IReadOnlyList(Of String), String)
+  name.vb: RemoveCouchStructures(IReadOnlyList(Of String), String)
+- uid: VMS.TPS.Common.Model.API.StructureSet.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.StructureSet.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  nameWithType: StructureSet.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.StructureSet.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Converts an object into its XML representation.
+
+    For more information on how to serialize an object into an XML document, see <xref href="System.Xml.Serialization.XmlSerializer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override void WriteXml(XmlWriter writer)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The System.Xml.XmlWriter stream, to which the object is serialized.
+    content.vb: Public Overrides Sub WriteXml(writer As XmlWriter)
+  overridden: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+  overload: VMS.TPS.Common.Model.API.StructureSet.WriteXml*
+- uid: VMS.TPS.Common.Model.API.StructureSet.AddReferenceLine(System.String,System.String,VMS.TPS.Common.Model.Types.VVector[])
+  commentId: M:VMS.TPS.Common.Model.API.StructureSet.AddReferenceLine(System.String,System.String,VMS.TPS.Common.Model.Types.VVector[])
+  id: AddReferenceLine(System.String,System.String,VMS.TPS.Common.Model.Types.VVector[])
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: AddReferenceLine(string, string, VVector[])
+  nameWithType: StructureSet.AddReferenceLine(string, string, VVector[])
+  fullName: VMS.TPS.Common.Model.API.StructureSet.AddReferenceLine(string, string, VMS.TPS.Common.Model.Types.VVector[])
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Adds a new reference line.'
+  example: []
+  syntax:
+    content: public Structure AddReferenceLine(string name, string id, VVector[] referenceLinePoints)
+    parameters:
+    - id: name
+      type: System.String
+      description: Reference line name.
+    - id: id
+      type: System.String
+      description: Reference line Id.
+    - id: referenceLinePoints
+      type: VMS.TPS.Common.Model.Types.VVector[]
+      description: 'Reference line points. Number of points: 1 .. 500.'
+    return:
+      type: VMS.TPS.Common.Model.API.Structure
+      description: Newly created reference line.
+    content.vb: Public Function AddReferenceLine(name As String, id As String, referenceLinePoints As VVector()) As [Structure]
+  overload: VMS.TPS.Common.Model.API.StructureSet.AddReferenceLine*
+  nameWithType.vb: StructureSet.AddReferenceLine(String, String, VVector())
+  fullName.vb: VMS.TPS.Common.Model.API.StructureSet.AddReferenceLine(String, String, VMS.TPS.Common.Model.Types.VVector())
+  name.vb: AddReferenceLine(String, String, VVector())
+- uid: VMS.TPS.Common.Model.API.StructureSet.AddStructure(System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.StructureSet.AddStructure(System.String,System.String)
+  id: AddStructure(System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: AddStructure(string, string)
+  nameWithType: StructureSet.AddStructure(string, string)
+  fullName: VMS.TPS.Common.Model.API.StructureSet.AddStructure(string, string)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Adds a new structure according to the DICOM structure type.'
+  example: []
+  syntax:
+    content: public Structure AddStructure(string dicomType, string id)
+    parameters:
+    - id: dicomType
+      type: System.String
+      description: >-
+        RT ROI Interpreted Type (DICOM). Identifies the DICOM structure type.
+                    Possible values are "AVOIDANCE", "CAVITY", "CONTRAST_AGENT", "CTV", "EXTERNAL", "GTV", "IRRAD_VOLUME",
+                    "ORGAN", "PTV", "TREATED_VOLUME", "SUPPORT", "FIXATION", "CONTROL", and "DOSE_REGION".
+    - id: id
+      type: System.String
+      description: The identifier for the new structure.
+    return:
+      type: VMS.TPS.Common.Model.API.Structure
+      description: Newly created structure.
+    content.vb: Public Function AddStructure(dicomType As String, id As String) As [Structure]
+  overload: VMS.TPS.Common.Model.API.StructureSet.AddStructure*
+  nameWithType.vb: StructureSet.AddStructure(String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.StructureSet.AddStructure(String, String)
+  name.vb: AddStructure(String, String)
+- uid: VMS.TPS.Common.Model.API.StructureSet.AddStructure(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  commentId: M:VMS.TPS.Common.Model.API.StructureSet.AddStructure(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  id: AddStructure(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: AddStructure(StructureCodeInfo)
+  nameWithType: StructureSet.AddStructure(StructureCodeInfo)
+  fullName: VMS.TPS.Common.Model.API.StructureSet.AddStructure(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] Adds a new structure based on structure code.
+
+    The DICOM structure type and structure ID are automatically assigned.
+  example: []
+  syntax:
+    content: public Structure AddStructure(StructureCodeInfo code)
+    parameters:
+    - id: code
+      type: VMS.TPS.Common.Model.Types.StructureCodeInfo
+      description: The structure code.
+    return:
+      type: VMS.TPS.Common.Model.API.Structure
+      description: Newly created structure.
+    content.vb: Public Function AddStructure(code As StructureCodeInfo) As [Structure]
+  overload: VMS.TPS.Common.Model.API.StructureSet.AddStructure*
+- uid: VMS.TPS.Common.Model.API.StructureSet.CanAddCouchStructures(System.String@)
+  commentId: M:VMS.TPS.Common.Model.API.StructureSet.CanAddCouchStructures(System.String@)
+  id: CanAddCouchStructures(System.String@)
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: CanAddCouchStructures(out string)
+  nameWithType: StructureSet.CanAddCouchStructures(out string)
+  fullName: VMS.TPS.Common.Model.API.StructureSet.CanAddCouchStructures(out string)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    This method is used to verify whether it is possible to
+
+    add couch structures to the StructureSet.
+  example: []
+  syntax:
+    content: public bool CanAddCouchStructures(out string error)
+    parameters:
+    - id: error
+      type: System.String
+      description: Returned reason why couch structures cannot be added if method returns false.
+    return:
+      type: System.Boolean
+      description: True if couch structures can be added.
+    content.vb: Public Function CanAddCouchStructures([error] As String) As Boolean
+  overload: VMS.TPS.Common.Model.API.StructureSet.CanAddCouchStructures*
+  nameWithType.vb: StructureSet.CanAddCouchStructures(String)
+  fullName.vb: VMS.TPS.Common.Model.API.StructureSet.CanAddCouchStructures(String)
+  name.vb: CanAddCouchStructures(String)
+- uid: VMS.TPS.Common.Model.API.StructureSet.CanAddStructure(System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.StructureSet.CanAddStructure(System.String,System.String)
+  id: CanAddStructure(System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: CanAddStructure(string, string)
+  nameWithType: StructureSet.CanAddStructure(string, string)
+  fullName: VMS.TPS.Common.Model.API.StructureSet.CanAddStructure(string, string)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Returns true if it is possible to add the given type of structure to the structure set.
+  example: []
+  syntax:
+    content: public bool CanAddStructure(string dicomType, string id)
+    parameters:
+    - id: dicomType
+      type: System.String
+      description: >-
+        RT ROI Interpreted Type (DICOM). Identifies the DICOM structure type.
+                    Possible values are "AVOIDANCE", "CAVITY", "CONTRAST_AGENT", "CTV", "EXTERNAL", "GTV", "IRRAD_VOLUME",
+                    "ORGAN", "PTV", "TREATED_VOLUME", "SUPPORT", "FIXATION", "CONTROL", and "DOSE_REGION".
+    - id: id
+      type: System.String
+      description: The identifier for the new structure.
+    return:
+      type: System.Boolean
+      description: true if it is possible to add the given type of structure to the structure set. Otherwise false.
+    content.vb: Public Function CanAddStructure(dicomType As String, id As String) As Boolean
+  overload: VMS.TPS.Common.Model.API.StructureSet.CanAddStructure*
+  nameWithType.vb: StructureSet.CanAddStructure(String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.StructureSet.CanAddStructure(String, String)
+  name.vb: CanAddStructure(String, String)
+- uid: VMS.TPS.Common.Model.API.StructureSet.CanRemoveCouchStructures(System.String@)
+  commentId: M:VMS.TPS.Common.Model.API.StructureSet.CanRemoveCouchStructures(System.String@)
+  id: CanRemoveCouchStructures(System.String@)
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: CanRemoveCouchStructures(out string)
+  nameWithType: StructureSet.CanRemoveCouchStructures(out string)
+  fullName: VMS.TPS.Common.Model.API.StructureSet.CanRemoveCouchStructures(out string)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    This method is used to verify whether it is possible to
+
+    remove couch structures from the StructureSet.
+  example: []
+  syntax:
+    content: public bool CanRemoveCouchStructures(out string error)
+    parameters:
+    - id: error
+      type: System.String
+      description: Returned reason why couch structures cannot be removed if method returns false.
+    return:
+      type: System.Boolean
+      description: True if couch structures can be removed.
+    content.vb: Public Function CanRemoveCouchStructures([error] As String) As Boolean
+  overload: VMS.TPS.Common.Model.API.StructureSet.CanRemoveCouchStructures*
+  nameWithType.vb: StructureSet.CanRemoveCouchStructures(String)
+  fullName.vb: VMS.TPS.Common.Model.API.StructureSet.CanRemoveCouchStructures(String)
+  name.vb: CanRemoveCouchStructures(String)
+- uid: VMS.TPS.Common.Model.API.StructureSet.CanRemoveStructure(VMS.TPS.Common.Model.API.Structure)
+  commentId: M:VMS.TPS.Common.Model.API.StructureSet.CanRemoveStructure(VMS.TPS.Common.Model.API.Structure)
+  id: CanRemoveStructure(VMS.TPS.Common.Model.API.Structure)
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: CanRemoveStructure(Structure)
+  nameWithType: StructureSet.CanRemoveStructure(Structure)
+  fullName: VMS.TPS.Common.Model.API.StructureSet.CanRemoveStructure(VMS.TPS.Common.Model.API.Structure)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Returns true if it is possible to remove the given structure from the structure set.
+  example: []
+  syntax:
+    content: public bool CanRemoveStructure(Structure structure)
+    parameters:
+    - id: structure
+      type: VMS.TPS.Common.Model.API.Structure
+      description: The structure to check.
+    return:
+      type: System.Boolean
+      description: Returns true if the structure can be removed, false otherwise.
+    content.vb: Public Function CanRemoveStructure([structure] As [Structure]) As Boolean
+  overload: VMS.TPS.Common.Model.API.StructureSet.CanRemoveStructure*
+- uid: VMS.TPS.Common.Model.API.StructureSet.Copy
+  commentId: M:VMS.TPS.Common.Model.API.StructureSet.Copy
+  id: Copy
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: Copy()
+  nameWithType: StructureSet.Copy()
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Copy()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Creates a copy of this structure set.'
+  example: []
+  syntax:
+    content: public StructureSet Copy()
+    return:
+      type: VMS.TPS.Common.Model.API.StructureSet
+      description: The newly created copy of the structure set.
+    content.vb: Public Function Copy() As StructureSet
+  overload: VMS.TPS.Common.Model.API.StructureSet.Copy*
+- uid: VMS.TPS.Common.Model.API.StructureSet.CreateAndSearchBody(VMS.TPS.Common.Model.API.SearchBodyParameters)
+  commentId: M:VMS.TPS.Common.Model.API.StructureSet.CreateAndSearchBody(VMS.TPS.Common.Model.API.SearchBodyParameters)
+  id: CreateAndSearchBody(VMS.TPS.Common.Model.API.SearchBodyParameters)
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: CreateAndSearchBody(SearchBodyParameters)
+  nameWithType: StructureSet.CreateAndSearchBody(SearchBodyParameters)
+  fullName: VMS.TPS.Common.Model.API.StructureSet.CreateAndSearchBody(VMS.TPS.Common.Model.API.SearchBodyParameters)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Creates a new Body structure and searches Body with the specified parameters. The existing Body structure is returned, if there is one.'
+  example: []
+  syntax:
+    content: public Structure CreateAndSearchBody(SearchBodyParameters parameters)
+    parameters:
+    - id: parameters
+      type: VMS.TPS.Common.Model.API.SearchBodyParameters
+      description: Parameters for the Search Body feature.
+    return:
+      type: VMS.TPS.Common.Model.API.Structure
+      description: Newly created or already existing Body structure.
+    content.vb: Public Function CreateAndSearchBody(parameters As SearchBodyParameters) As [Structure]
+  overload: VMS.TPS.Common.Model.API.StructureSet.CreateAndSearchBody*
+- uid: VMS.TPS.Common.Model.API.StructureSet.Delete
+  commentId: M:VMS.TPS.Common.Model.API.StructureSet.Delete
+  id: Delete
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: Delete()
+  nameWithType: StructureSet.Delete()
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Delete()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Deletes this structure set.'
+  example: []
+  syntax:
+    content: public void Delete()
+    content.vb: Public Sub Delete()
+  overload: VMS.TPS.Common.Model.API.StructureSet.Delete*
+- uid: VMS.TPS.Common.Model.API.StructureSet.GetDefaultSearchBodyParameters
+  commentId: M:VMS.TPS.Common.Model.API.StructureSet.GetDefaultSearchBodyParameters
+  id: GetDefaultSearchBodyParameters
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultSearchBodyParameters()
+  nameWithType: StructureSet.GetDefaultSearchBodyParameters()
+  fullName: VMS.TPS.Common.Model.API.StructureSet.GetDefaultSearchBodyParameters()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Gets a default set of Search Body parameters.
+  example: []
+  syntax:
+    content: public SearchBodyParameters GetDefaultSearchBodyParameters()
+    return:
+      type: VMS.TPS.Common.Model.API.SearchBodyParameters
+      description: Parameters for the Search Body feature.
+    content.vb: Public Function GetDefaultSearchBodyParameters() As SearchBodyParameters
+  overload: VMS.TPS.Common.Model.API.StructureSet.GetDefaultSearchBodyParameters*
+- uid: VMS.TPS.Common.Model.API.StructureSet.RemoveStructure(VMS.TPS.Common.Model.API.Structure)
+  commentId: M:VMS.TPS.Common.Model.API.StructureSet.RemoveStructure(VMS.TPS.Common.Model.API.Structure)
+  id: RemoveStructure(VMS.TPS.Common.Model.API.Structure)
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: RemoveStructure(Structure)
+  nameWithType: StructureSet.RemoveStructure(Structure)
+  fullName: VMS.TPS.Common.Model.API.StructureSet.RemoveStructure(VMS.TPS.Common.Model.API.Structure)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Removes the structure from this structure set if removal is allowed.'
+  example: []
+  syntax:
+    content: public void RemoveStructure(Structure structure)
+    parameters:
+    - id: structure
+      type: VMS.TPS.Common.Model.API.Structure
+      description: The structure to remove.
+    content.vb: Public Sub RemoveStructure([structure] As [Structure])
+  overload: VMS.TPS.Common.Model.API.StructureSet.RemoveStructure*
+- uid: VMS.TPS.Common.Model.API.StructureSet.Structures
+  commentId: P:VMS.TPS.Common.Model.API.StructureSet.Structures
+  id: Structures
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: Structures
+  nameWithType: StructureSet.Structures
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Structures
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Used for navigating to the child structures.
+  example: []
+  syntax:
+    content: public IEnumerable<Structure> Structures { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.Structure}
+    content.vb: Public ReadOnly Property Structures As IEnumerable(Of [Structure])
+  overload: VMS.TPS.Common.Model.API.StructureSet.Structures*
+- uid: VMS.TPS.Common.Model.API.StructureSet.Id
+  commentId: P:VMS.TPS.Common.Model.API.StructureSet.Id
+  id: Id
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: StructureSet.Id
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Id
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this property depends on your Eclipse Scripting API license] The identifier of the structure set.'
+  example: []
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: VMS.TPS.Common.Model.API.StructureSet.Id*
+- uid: VMS.TPS.Common.Model.API.StructureSet.Name
+  commentId: P:VMS.TPS.Common.Model.API.StructureSet.Name
+  id: Name
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: StructureSet.Name
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Name
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this property depends on your Eclipse Scripting API license] The name of the structure set.'
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: VMS.TPS.Common.Model.API.StructureSet.Name*
+- uid: VMS.TPS.Common.Model.API.StructureSet.Comment
+  commentId: P:VMS.TPS.Common.Model.API.StructureSet.Comment
+  id: Comment
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: Comment
+  nameWithType: StructureSet.Comment
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Comment
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this property depends on your Eclipse Scripting API license] A comment about the structure set.'
+  example: []
+  syntax:
+    content: public string Comment { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Comment As String
+  overload: VMS.TPS.Common.Model.API.StructureSet.Comment*
+- uid: VMS.TPS.Common.Model.API.StructureSet.ApplicationScriptLogs
+  commentId: P:VMS.TPS.Common.Model.API.StructureSet.ApplicationScriptLogs
+  id: ApplicationScriptLogs
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: ApplicationScriptLogs
+  nameWithType: StructureSet.ApplicationScriptLogs
+  fullName: VMS.TPS.Common.Model.API.StructureSet.ApplicationScriptLogs
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The log entries of the script executions that have modified the structure set.
+  example: []
+  syntax:
+    content: public IEnumerable<ApplicationScriptLog> ApplicationScriptLogs { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ApplicationScriptLog}
+    content.vb: Public ReadOnly Property ApplicationScriptLogs As IEnumerable(Of ApplicationScriptLog)
+  overload: VMS.TPS.Common.Model.API.StructureSet.ApplicationScriptLogs*
+- uid: VMS.TPS.Common.Model.API.StructureSet.Image
+  commentId: P:VMS.TPS.Common.Model.API.StructureSet.Image
+  id: Image
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: StructureSet.Image
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Image
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Used for navigating to the image.
+  example: []
+  syntax:
+    content: public Image Image { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.Image
+    content.vb: Public ReadOnly Property Image As Image
+  overload: VMS.TPS.Common.Model.API.StructureSet.Image*
+- uid: VMS.TPS.Common.Model.API.StructureSet.Patient
+  commentId: P:VMS.TPS.Common.Model.API.StructureSet.Patient
+  id: Patient
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: Patient
+  nameWithType: StructureSet.Patient
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Patient
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Used for navigating to the patient.
+  example: []
+  syntax:
+    content: public Patient Patient { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.Patient
+    content.vb: Public ReadOnly Property Patient As Patient
+  overload: VMS.TPS.Common.Model.API.StructureSet.Patient*
+- uid: VMS.TPS.Common.Model.API.StructureSet.Series
+  commentId: P:VMS.TPS.Common.Model.API.StructureSet.Series
+  id: Series
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: Series
+  nameWithType: StructureSet.Series
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Series
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The series that contains this plan. Null if the plan is not connected to a series.
+  example: []
+  syntax:
+    content: public Series Series { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.Series
+    content.vb: Public ReadOnly Property Series As Series
+  overload: VMS.TPS.Common.Model.API.StructureSet.Series*
+- uid: VMS.TPS.Common.Model.API.StructureSet.SeriesUID
+  commentId: P:VMS.TPS.Common.Model.API.StructureSet.SeriesUID
+  id: SeriesUID
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: SeriesUID
+  nameWithType: StructureSet.SeriesUID
+  fullName: VMS.TPS.Common.Model.API.StructureSet.SeriesUID
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The DICOM UID of the series that contains this structure set. Empty string if the structure set is not connected to a series.
+  example: []
+  syntax:
+    content: public string SeriesUID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property SeriesUID As String
+  overload: VMS.TPS.Common.Model.API.StructureSet.SeriesUID*
+- uid: VMS.TPS.Common.Model.API.StructureSet.UID
+  commentId: P:VMS.TPS.Common.Model.API.StructureSet.UID
+  id: UID
+  parent: VMS.TPS.Common.Model.API.StructureSet
+  langs:
+  - csharp
+  - vb
+  name: UID
+  nameWithType: StructureSet.UID
+  fullName: VMS.TPS.Common.Model.API.StructureSet.UID
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: DICOM UID.
+  example: []
+  syntax:
+    content: public string UID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property UID As String
+  overload: VMS.TPS.Common.Model.API.StructureSet.UID*
+references:
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: VMS.TPS.Common.Model.API.SerializableObject
+  commentId: T:VMS.TPS.Common.Model.API.SerializableObject
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: VMS.TPS.Common.Model.API.SerializableObject
+- uid: VMS.TPS.Common.Model.API.ApiDataObject
+  commentId: T:VMS.TPS.Common.Model.API.ApiDataObject
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html
+  name: ApiDataObject
+  nameWithType: ApiDataObject
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject
+- uid: System.Xml.Serialization.IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  nameWithType: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  name: ToString()
+  nameWithType: ApiDataObject.ToString()
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.ToString()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+    name: ToString
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+    name: ToString
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: ApiDataObject.Equals(object)
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.Equals(object)
+  nameWithType.vb: ApiDataObject.Equals(Object)
+  fullName.vb: VMS.TPS.Common.Model.API.ApiDataObject.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  name: GetHashCode()
+  nameWithType: ApiDataObject.GetHashCode()
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName
+  name: HistoryUserName
+  nameWithType: ApiDataObject.HistoryUserName
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName
+  name: HistoryUserDisplayName
+  nameWithType: ApiDataObject.HistoryUserDisplayName
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime
+  name: HistoryDateTime
+  nameWithType: ApiDataObject.HistoryDateTime
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+- uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  name: GetSchema()
+  nameWithType: SerializableObject.GetSchema()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.GetSchema()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  name: ReadXml(XmlReader)
+  nameWithType: SerializableObject.ReadXml(XmlReader)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  name: WriteXml(XmlWriter, string, object)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, object)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, object)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, Object)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, Object)
+  name.vb: WriteXml(XmlWriter, String, Object)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  name: WriteXml(XmlWriter, string, string)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, string)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, String)
+  name.vb: WriteXml(XmlWriter, String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  name: StartSerialization(string, string)
+  nameWithType: SerializableObject.StartSerialization(string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(string, string)
+  nameWithType.vb: SerializableObject.StartSerialization(String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(String, String)
+  name.vb: StartSerialization(String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  name: EndSerialization()
+  nameWithType: SerializableObject.EndSerialization()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  name: ClearSerializationHistory()
+  nameWithType: SerializableObject.ClearSerializationHistory()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.StructureSet.AddCouchStructures*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.AddCouchStructures
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_AddCouchStructures_System_String_VMS_TPS_Common_Model_Types_PatientOrientation_VMS_TPS_Common_Model_Types_RailPosition_VMS_TPS_Common_Model_Types_RailPosition_System_Nullable_System_Double__System_Nullable_System_Double__System_Nullable_System_Double__System_Collections_Generic_IReadOnlyList_VMS_TPS_Common_Model_API_Structure___System_Boolean__System_String__
+  name: AddCouchStructures
+  nameWithType: StructureSet.AddCouchStructures
+  fullName: VMS.TPS.Common.Model.API.StructureSet.AddCouchStructures
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: VMS.TPS.Common.Model.Types.PatientOrientation
+  commentId: T:VMS.TPS.Common.Model.Types.PatientOrientation
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.PatientOrientation.html
+  name: PatientOrientation
+  nameWithType: PatientOrientation
+  fullName: VMS.TPS.Common.Model.Types.PatientOrientation
+- uid: VMS.TPS.Common.Model.Types.RailPosition
+  commentId: T:VMS.TPS.Common.Model.Types.RailPosition
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.RailPosition.html
+  name: RailPosition
+  nameWithType: RailPosition
+  fullName: VMS.TPS.Common.Model.Types.RailPosition
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: System.Collections.Generic.IReadOnlyList{VMS.TPS.Common.Model.API.Structure}
+  commentId: T:System.Collections.Generic.IReadOnlyList{VMS.TPS.Common.Model.API.Structure}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Structure>
+  nameWithType: IReadOnlyList<Structure>
+  fullName: System.Collections.Generic.IReadOnlyList<VMS.TPS.Common.Model.API.Structure>
+  nameWithType.vb: IReadOnlyList(Of Structure)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of VMS.TPS.Common.Model.API.Structure)
+  name.vb: IReadOnlyList(Of Structure)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.Structure
+    name: Structure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Structure.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.Structure
+    name: Structure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Structure.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: VMS.TPS.Common.Model.API.StructureSet.RemoveCouchStructures*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.RemoveCouchStructures
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_RemoveCouchStructures_System_Collections_Generic_IReadOnlyList_System_String___System_String__
+  name: RemoveCouchStructures
+  nameWithType: StructureSet.RemoveCouchStructures
+  fullName: VMS.TPS.Common.Model.API.StructureSet.RemoveCouchStructures
+- uid: System.Collections.Generic.IReadOnlyList{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<string>
+  nameWithType: IReadOnlyList<string>
+  fullName: System.Collections.Generic.IReadOnlyList<string>
+  nameWithType.vb: IReadOnlyList(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of String)
+  name.vb: IReadOnlyList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Xml.Serialization.XmlSerializer
+  commentId: T:System.Xml.Serialization.XmlSerializer
+  isExternal: true
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml(XmlWriter)
+  nameWithType: ApiDataObject.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.StructureSet.WriteXml*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.WriteXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml
+  nameWithType: StructureSet.WriteXml
+  fullName: VMS.TPS.Common.Model.API.StructureSet.WriteXml
+- uid: System.Xml.XmlWriter
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: VMS.TPS.Common.Model.API.StructureSet.AddReferenceLine*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.AddReferenceLine
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_AddReferenceLine_System_String_System_String_VMS_TPS_Common_Model_Types_VVector___
+  name: AddReferenceLine
+  nameWithType: StructureSet.AddReferenceLine
+  fullName: VMS.TPS.Common.Model.API.StructureSet.AddReferenceLine
+- uid: VMS.TPS.Common.Model.Types.VVector[]
+  isExternal: true
+  name: VVector[]
+  nameWithType: VVector[]
+  fullName: VMS.TPS.Common.Model.Types.VVector[]
+  nameWithType.vb: VVector()
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector()
+  name.vb: VVector()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Structure
+  commentId: T:VMS.TPS.Common.Model.API.Structure
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Structure.html
+  name: Structure
+  nameWithType: Structure
+  fullName: VMS.TPS.Common.Model.API.Structure
+- uid: VMS.TPS.Common.Model.API.StructureSet.AddStructure*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.AddStructure
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_AddStructure_System_String_System_String_
+  name: AddStructure
+  nameWithType: StructureSet.AddStructure
+  fullName: VMS.TPS.Common.Model.API.StructureSet.AddStructure
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  commentId: T:VMS.TPS.Common.Model.Types.StructureCodeInfo
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html
+  name: StructureCodeInfo
+  nameWithType: StructureCodeInfo
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo
+- uid: VMS.TPS.Common.Model.API.StructureSet.CanAddCouchStructures*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.CanAddCouchStructures
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_CanAddCouchStructures_System_String__
+  name: CanAddCouchStructures
+  nameWithType: StructureSet.CanAddCouchStructures
+  fullName: VMS.TPS.Common.Model.API.StructureSet.CanAddCouchStructures
+- uid: VMS.TPS.Common.Model.API.StructureSet.CanAddStructure*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.CanAddStructure
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_CanAddStructure_System_String_System_String_
+  name: CanAddStructure
+  nameWithType: StructureSet.CanAddStructure
+  fullName: VMS.TPS.Common.Model.API.StructureSet.CanAddStructure
+- uid: VMS.TPS.Common.Model.API.StructureSet.CanRemoveCouchStructures*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.CanRemoveCouchStructures
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_CanRemoveCouchStructures_System_String__
+  name: CanRemoveCouchStructures
+  nameWithType: StructureSet.CanRemoveCouchStructures
+  fullName: VMS.TPS.Common.Model.API.StructureSet.CanRemoveCouchStructures
+- uid: VMS.TPS.Common.Model.API.StructureSet.CanRemoveStructure*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.CanRemoveStructure
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_CanRemoveStructure_VMS_TPS_Common_Model_API_Structure_
+  name: CanRemoveStructure
+  nameWithType: StructureSet.CanRemoveStructure
+  fullName: VMS.TPS.Common.Model.API.StructureSet.CanRemoveStructure
+- uid: VMS.TPS.Common.Model.API.StructureSet.Copy*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.Copy
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_Copy
+  name: Copy
+  nameWithType: StructureSet.Copy
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Copy
+- uid: VMS.TPS.Common.Model.API.StructureSet
+  commentId: T:VMS.TPS.Common.Model.API.StructureSet
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html
+  name: StructureSet
+  nameWithType: StructureSet
+  fullName: VMS.TPS.Common.Model.API.StructureSet
+- uid: VMS.TPS.Common.Model.API.StructureSet.CreateAndSearchBody*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.CreateAndSearchBody
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_CreateAndSearchBody_VMS_TPS_Common_Model_API_SearchBodyParameters_
+  name: CreateAndSearchBody
+  nameWithType: StructureSet.CreateAndSearchBody
+  fullName: VMS.TPS.Common.Model.API.StructureSet.CreateAndSearchBody
+- uid: VMS.TPS.Common.Model.API.SearchBodyParameters
+  commentId: T:VMS.TPS.Common.Model.API.SearchBodyParameters
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SearchBodyParameters.html
+  name: SearchBodyParameters
+  nameWithType: SearchBodyParameters
+  fullName: VMS.TPS.Common.Model.API.SearchBodyParameters
+- uid: VMS.TPS.Common.Model.API.StructureSet.Delete*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.Delete
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_Delete
+  name: Delete
+  nameWithType: StructureSet.Delete
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Delete
+- uid: VMS.TPS.Common.Model.API.StructureSet.GetDefaultSearchBodyParameters*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.GetDefaultSearchBodyParameters
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_GetDefaultSearchBodyParameters
+  name: GetDefaultSearchBodyParameters
+  nameWithType: StructureSet.GetDefaultSearchBodyParameters
+  fullName: VMS.TPS.Common.Model.API.StructureSet.GetDefaultSearchBodyParameters
+- uid: VMS.TPS.Common.Model.API.StructureSet.RemoveStructure*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.RemoveStructure
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_RemoveStructure_VMS_TPS_Common_Model_API_Structure_
+  name: RemoveStructure
+  nameWithType: StructureSet.RemoveStructure
+  fullName: VMS.TPS.Common.Model.API.StructureSet.RemoveStructure
+- uid: VMS.TPS.Common.Model.API.StructureSet.Structures*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.Structures
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_Structures
+  name: Structures
+  nameWithType: StructureSet.Structures
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Structures
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.Structure}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.Structure}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Structure>
+  nameWithType: IEnumerable<Structure>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.Structure>
+  nameWithType.vb: IEnumerable(Of Structure)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.Structure)
+  name.vb: IEnumerable(Of Structure)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.Structure
+    name: Structure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Structure.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.Structure
+    name: Structure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Structure.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: VMS.TPS.Common.Model.API.StructureSet.Id*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.Id
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_Id
+  name: Id
+  nameWithType: StructureSet.Id
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Id
+- uid: VMS.TPS.Common.Model.API.StructureSet.Name*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.Name
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_Name
+  name: Name
+  nameWithType: StructureSet.Name
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Name
+- uid: VMS.TPS.Common.Model.API.StructureSet.Comment*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.Comment
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_Comment
+  name: Comment
+  nameWithType: StructureSet.Comment
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Comment
+- uid: VMS.TPS.Common.Model.API.StructureSet.ApplicationScriptLogs*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.ApplicationScriptLogs
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_ApplicationScriptLogs
+  name: ApplicationScriptLogs
+  nameWithType: StructureSet.ApplicationScriptLogs
+  fullName: VMS.TPS.Common.Model.API.StructureSet.ApplicationScriptLogs
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ApplicationScriptLog}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ApplicationScriptLog}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ApplicationScriptLog>
+  nameWithType: IEnumerable<ApplicationScriptLog>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.ApplicationScriptLog>
+  nameWithType.vb: IEnumerable(Of ApplicationScriptLog)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.ApplicationScriptLog)
+  name.vb: IEnumerable(Of ApplicationScriptLog)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.ApplicationScriptLog
+    name: ApplicationScriptLog
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApplicationScriptLog.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.ApplicationScriptLog
+    name: ApplicationScriptLog
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApplicationScriptLog.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.StructureSet.Image*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.Image
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_Image
+  name: Image
+  nameWithType: StructureSet.Image
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Image
+- uid: VMS.TPS.Common.Model.API.Image
+  commentId: T:VMS.TPS.Common.Model.API.Image
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html
+  name: Image
+  nameWithType: Image
+  fullName: VMS.TPS.Common.Model.API.Image
+- uid: VMS.TPS.Common.Model.API.StructureSet.Patient*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.Patient
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_Patient
+  name: Patient
+  nameWithType: StructureSet.Patient
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Patient
+- uid: VMS.TPS.Common.Model.API.Patient
+  commentId: T:VMS.TPS.Common.Model.API.Patient
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Patient.html
+  name: Patient
+  nameWithType: Patient
+  fullName: VMS.TPS.Common.Model.API.Patient
+- uid: VMS.TPS.Common.Model.API.StructureSet.Series*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.Series
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_Series
+  name: Series
+  nameWithType: StructureSet.Series
+  fullName: VMS.TPS.Common.Model.API.StructureSet.Series
+- uid: VMS.TPS.Common.Model.API.Series
+  commentId: T:VMS.TPS.Common.Model.API.Series
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Series.html
+  name: Series
+  nameWithType: Series
+  fullName: VMS.TPS.Common.Model.API.Series
+- uid: VMS.TPS.Common.Model.API.StructureSet.SeriesUID*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.SeriesUID
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_SeriesUID
+  name: SeriesUID
+  nameWithType: StructureSet.SeriesUID
+  fullName: VMS.TPS.Common.Model.API.StructureSet.SeriesUID
+- uid: VMS.TPS.Common.Model.API.StructureSet.UID*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureSet.UID
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html#VMS_TPS_Common_Model_API_StructureSet_UID
+  name: UID
+  nameWithType: StructureSet.UID
+  fullName: VMS.TPS.Common.Model.API.StructureSet.UID

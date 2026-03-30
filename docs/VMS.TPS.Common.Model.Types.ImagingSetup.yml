@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.ImagingSetup
+  commentId: T:VMS.TPS.Common.Model.Types.ImagingSetup
+  id: ImagingSetup
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.ImagingSetup.MVCBCT_High_Quality
+  - VMS.TPS.Common.Model.Types.ImagingSetup.MVCBCT_Low_Dose
+  - VMS.TPS.Common.Model.Types.ImagingSetup.MV_MV_High_Quality
+  - VMS.TPS.Common.Model.Types.ImagingSetup.MV_MV_Low_Dose
+  - VMS.TPS.Common.Model.Types.ImagingSetup.kVCBCT
+  langs:
+  - csharp
+  - vb
+  name: ImagingSetup
+  nameWithType: ImagingSetup
+  fullName: VMS.TPS.Common.Model.Types.ImagingSetup
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Set of available imaging setups.
+  example: []
+  syntax:
+    content: public enum ImagingSetup
+    content.vb: Public Enum ImagingSetup
+- uid: VMS.TPS.Common.Model.Types.ImagingSetup.MVCBCT_High_Quality
+  commentId: F:VMS.TPS.Common.Model.Types.ImagingSetup.MVCBCT_High_Quality
+  id: MVCBCT_High_Quality
+  parent: VMS.TPS.Common.Model.Types.ImagingSetup
+  langs:
+  - csharp
+  - vb
+  name: MVCBCT_High_Quality
+  nameWithType: ImagingSetup.MVCBCT_High_Quality
+  fullName: VMS.TPS.Common.Model.Types.ImagingSetup.MVCBCT_High_Quality
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: High quality MV CBCT.
+  example: []
+  syntax:
+    content: MVCBCT_High_Quality = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.ImagingSetup
+- uid: VMS.TPS.Common.Model.Types.ImagingSetup.MVCBCT_Low_Dose
+  commentId: F:VMS.TPS.Common.Model.Types.ImagingSetup.MVCBCT_Low_Dose
+  id: MVCBCT_Low_Dose
+  parent: VMS.TPS.Common.Model.Types.ImagingSetup
+  langs:
+  - csharp
+  - vb
+  name: MVCBCT_Low_Dose
+  nameWithType: ImagingSetup.MVCBCT_Low_Dose
+  fullName: VMS.TPS.Common.Model.Types.ImagingSetup.MVCBCT_Low_Dose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Low dose MV CBCT.
+  example: []
+  syntax:
+    content: MVCBCT_Low_Dose = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.ImagingSetup
+- uid: VMS.TPS.Common.Model.Types.ImagingSetup.MV_MV_High_Quality
+  commentId: F:VMS.TPS.Common.Model.Types.ImagingSetup.MV_MV_High_Quality
+  id: MV_MV_High_Quality
+  parent: VMS.TPS.Common.Model.Types.ImagingSetup
+  langs:
+  - csharp
+  - vb
+  name: MV_MV_High_Quality
+  nameWithType: ImagingSetup.MV_MV_High_Quality
+  fullName: VMS.TPS.Common.Model.Types.ImagingSetup.MV_MV_High_Quality
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: High quality MV-MV.
+  example: []
+  syntax:
+    content: MV_MV_High_Quality = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.ImagingSetup
+- uid: VMS.TPS.Common.Model.Types.ImagingSetup.MV_MV_Low_Dose
+  commentId: F:VMS.TPS.Common.Model.Types.ImagingSetup.MV_MV_Low_Dose
+  id: MV_MV_Low_Dose
+  parent: VMS.TPS.Common.Model.Types.ImagingSetup
+  langs:
+  - csharp
+  - vb
+  name: MV_MV_Low_Dose
+  nameWithType: ImagingSetup.MV_MV_Low_Dose
+  fullName: VMS.TPS.Common.Model.Types.ImagingSetup.MV_MV_Low_Dose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Low dose MV-MV.
+  example: []
+  syntax:
+    content: MV_MV_Low_Dose = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.ImagingSetup
+- uid: VMS.TPS.Common.Model.Types.ImagingSetup.kVCBCT
+  commentId: F:VMS.TPS.Common.Model.Types.ImagingSetup.kVCBCT
+  id: kVCBCT
+  parent: VMS.TPS.Common.Model.Types.ImagingSetup
+  langs:
+  - csharp
+  - vb
+  name: kVCBCT
+  nameWithType: ImagingSetup.kVCBCT
+  fullName: VMS.TPS.Common.Model.Types.ImagingSetup.kVCBCT
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: kVCBCT.
+  example: []
+  syntax:
+    content: kVCBCT = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.ImagingSetup
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.ImagingSetup
+  commentId: T:VMS.TPS.Common.Model.Types.ImagingSetup
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ImagingSetup.html
+  name: ImagingSetup
+  nameWithType: ImagingSetup
+  fullName: VMS.TPS.Common.Model.Types.ImagingSetup

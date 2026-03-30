@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ControlPoint | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ControlPoint | Example ">
+      
+      <meta name="description" content="Represents a point in a planned sequence of treatment beam parameters. See the definition of control points in a DICOM RT Beam.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API.ControlPoint">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_API_ControlPoint" data-uid="VMS.TPS.Common.Model.API.ControlPoint" class="text-break">
+Class ControlPoint  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a point in a planned sequence of treatment beam parameters. See the definition of control points in a DICOM RT Beam.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ControlPoint : SerializableObject, IXmlSerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html">SerializableObject</a></div>
+      <div><span class="xref">ControlPoint</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IXmlSerializable</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.IonControlPoint.html">IonControlPoint</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema">SerializableObject.GetSchema()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_">SerializableObject.ReadXml(XmlReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_">SerializableObject.WriteXml(XmlWriter, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_">SerializableObject.WriteXml(XmlWriter, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__">SerializableObject.WriteXml&lt;T&gt;(XmlWriter, string, IEnumerable&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__">SerializableObject.WriteXml&lt;T1, T2&gt;(XmlWriter, string, IDictionary&lt;T1, T2&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_">SerializableObject.StartSerialization(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization">SerializableObject.EndSerialization()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory">SerializableObject.ClearSerializationHistory()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="VMS_TPS_Common_Model_API_ControlPoint_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Control points are discussed in DICOM PS 3.3 C.8.8.14. All beams have
+at least two control points. Note that some values may be NaN
+if they are not applicable to the treatment plan in question.</p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPoint_Beam_" data-uid="VMS.TPS.Common.Model.API.ControlPoint.Beam*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPoint_Beam" data-uid="VMS.TPS.Common.Model.API.ControlPoint.Beam">
+  Beam
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Used for navigating to parent beam</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Beam Beam { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPoint_CollimatorAngle_" data-uid="VMS.TPS.Common.Model.API.ControlPoint.CollimatorAngle*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPoint_CollimatorAngle" data-uid="VMS.TPS.Common.Model.API.ControlPoint.CollimatorAngle">
+  CollimatorAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The orientation of the IEC BEAM LIMITING DEVICE coordinate system with
+respect to the IEC GANTRY coordinate system (in degrees).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double CollimatorAngle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ControlPoint_CollimatorAngle_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The definition is adapted from DICOM PS 3.3 C.8.8.14
+&quot;Beam Limiting Device Angle&quot;, but rotation direction is
+not specified explicitly.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPoint_GantryAngle_" data-uid="VMS.TPS.Common.Model.API.ControlPoint.GantryAngle*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPoint_GantryAngle" data-uid="VMS.TPS.Common.Model.API.ControlPoint.GantryAngle">
+  GantryAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The gantry angle of the radiation source. In other words, the orientation of the IEC GANTRY
+coordinate system with respect to the IEC FIXED REFERENCE coordinate
+system (in degrees).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GantryAngle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ControlPoint_GantryAngle_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The definition is from DICOM PS 3.3 C.8.8.14 &quot;Gantry Angle&quot;, but
+rotation direction does not change during treatment and it is
+specified in Beam.GantryDirection instead.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPoint_Index_" data-uid="VMS.TPS.Common.Model.API.ControlPoint.Index*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPoint_Index" data-uid="VMS.TPS.Common.Model.API.ControlPoint.Index">
+  Index
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Control point index starting with zero. Even numbers represent start control points, and odd numbers represent stop control points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Index { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPoint_JawPositions_" data-uid="VMS.TPS.Common.Model.API.ControlPoint.JawPositions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPoint_JawPositions" data-uid="VMS.TPS.Common.Model.API.ControlPoint.JawPositions">
+  JawPositions
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The positions of the beam collimator jaws (in mm) in the IEC BEAM LIMITING DEVICE
+coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VRect&lt;double&gt; JawPositions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VRect-1.html">VRect</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ControlPoint_JawPositions_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The definition is adapted from DICOM PS 3.3 C.8.8.14
+&quot;Leaf/Jaw Positions&quot;. The difference is that DICOM likens the
+collimator jaw positions with MLC leaf positions and places
+them in the same sequence.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPoint_LeafPositions_" data-uid="VMS.TPS.Common.Model.API.ControlPoint.LeafPositions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPoint_LeafPositions" data-uid="VMS.TPS.Common.Model.API.ControlPoint.LeafPositions">
+  LeafPositions
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The positions of the beam collimator leaf pairs (in mm) in the IEC BEAMLIMITING
+DEVICE coordinate axis appropriate to the device type. For example, the X-axis
+for MLCX and the Y-axis for MLCY. The two-dimensional array is
+indexed [bank, leaf] where the bank is either 0 or 1. Bank 0 represents
+the leaf bank to the negative MLC X direction, and bank 1 to the
+positive MLC X direction. If there is no MLC, a (0,0)-length array is
+returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[,] LeafPositions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ControlPoint_LeafPositions_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The definition is adapted from DICOM PS 3.3 C.8.8.14
+&quot;Leaf/Jaw Positions&quot;. The difference is that DICOM supports a
+position sequence for each collimator type while we support a position
+sequence for a single MLC plus four jaws.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPoint_MetersetWeight_" data-uid="VMS.TPS.Common.Model.API.ControlPoint.MetersetWeight*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPoint_MetersetWeight" data-uid="VMS.TPS.Common.Model.API.ControlPoint.MetersetWeight">
+  MetersetWeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The cumulative meterset weight to this control point. The cumulative meterset
+weight for the first item in a control point sequence is zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MetersetWeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ControlPoint_MetersetWeight_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The meterset at a given control point is equal to the beam meterset,
+multiplied by the cumulative meterset weight for the control point,
+divided by the final cumulative meterset weight.
+The definition is adapted from DICOM PS 3.3 C.8.8.14.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPoint_PatientSupportAngle_" data-uid="VMS.TPS.Common.Model.API.ControlPoint.PatientSupportAngle*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPoint_PatientSupportAngle" data-uid="VMS.TPS.Common.Model.API.ControlPoint.PatientSupportAngle">
+  PatientSupportAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The patient support angle. In other words, the orientation of the IEC PATIENT SUPPORT
+(turntable) coordinate system with respect to the IEC FIXED REFERENCE
+coordinate system (in degrees).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double PatientSupportAngle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ControlPoint_PatientSupportAngle_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The definition is from DICOM PS 3.3 C.8.8.14 &quot;Patient Support Angle&quot;,
+but here rotation direction is specified implicitly towards the
+shortest angle between the current and the next control point.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPoint_TableTopLateralPosition_" data-uid="VMS.TPS.Common.Model.API.ControlPoint.TableTopLateralPosition*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPoint_TableTopLateralPosition" data-uid="VMS.TPS.Common.Model.API.ControlPoint.TableTopLateralPosition">
+  TableTopLateralPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Table top lateral position in millimeters, in the IEC TABLE TOP coordinate system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TableTopLateralPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPoint_TableTopLongitudinalPosition_" data-uid="VMS.TPS.Common.Model.API.ControlPoint.TableTopLongitudinalPosition*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPoint_TableTopLongitudinalPosition" data-uid="VMS.TPS.Common.Model.API.ControlPoint.TableTopLongitudinalPosition">
+  TableTopLongitudinalPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Table top longitudinal position in millimeters, in the IEC TABLE TOP coordinate system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TableTopLongitudinalPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPoint_TableTopVerticalPosition_" data-uid="VMS.TPS.Common.Model.API.ControlPoint.TableTopVerticalPosition*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPoint_TableTopVerticalPosition" data-uid="VMS.TPS.Common.Model.API.ControlPoint.TableTopVerticalPosition">
+  TableTopVerticalPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Table top vertical position in millimeters, in the IEC TABLE TOP coordinate system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TableTopVerticalPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPoint_WriteXml_" data-uid="VMS.TPS.Common.Model.API.ControlPoint.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPoint_WriteXml_System_Xml_XmlWriter_" data-uid="VMS.TPS.Common.Model.API.ControlPoint.WriteXml(System.Xml.XmlWriter)">
+  WriteXml(XmlWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an object into its XML representation.
+For more information on how to serialize an object into an XML document, see <span class="xref">System.Xml.Serialization.XmlSerializer</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>The System.Xml.XmlWriter stream, to which the object is serialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,628 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters
+  commentId: T:VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters
+  id: ExternalBeamMachineParameters
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.#ctor(System.String)
+  - VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.#ctor(System.String,System.String,System.Int32,System.String,System.String)
+  - VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.DoseRate
+  - VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.EnergyModeId
+  - VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.MLCId
+  - VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.MachineId
+  - VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.PrimaryFluenceModeId
+  - VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.TechniqueId
+  langs:
+  - csharp
+  - vb
+  name: ExternalBeamMachineParameters
+  nameWithType: ExternalBeamMachineParameters
+  fullName: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The parameters for the external beam treatment unit.
+  example: []
+  syntax:
+    content: public class ExternalBeamMachineParameters
+    content.vb: Public Class ExternalBeamMachineParameters
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.#ctor(System.String,System.String,System.Int32,System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.#ctor(System.String,System.String,System.Int32,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.Int32,System.String,System.String)'
+  parent: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters
+  langs:
+  - csharp
+  - vb
+  name: ExternalBeamMachineParameters(string, string, int, string, string)
+  nameWithType: ExternalBeamMachineParameters.ExternalBeamMachineParameters(string, string, int, string, string)
+  fullName: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.ExternalBeamMachineParameters(string, string, int, string, string)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Assigns the parameters to the properties for external beams.
+  example: []
+  syntax:
+    content: public ExternalBeamMachineParameters(string machineId, string energyModeId, int doseRate, string techniqueId, string primaryFluenceModeId)
+    parameters:
+    - id: machineId
+      type: System.String
+      description: The treatment unit identifier.
+    - id: energyModeId
+      type: System.String
+      description: The energy mode identifier. For example, "6X", or "18X".
+    - id: doseRate
+      type: System.Int32
+      description: Dose rate value.
+    - id: techniqueId
+      type: System.String
+      description: Technique identifier. Typically "STATIC" or "ARC".
+    - id: primaryFluenceModeId
+      type: System.String
+      description: 'Primary Fluence Mode ID. Acceptable values are: null, empty string, "SRS","FFF".'
+    content.vb: Public Sub New(machineId As String, energyModeId As String, doseRate As Integer, techniqueId As String, primaryFluenceModeId As String)
+  overload: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.#ctor*
+  nameWithType.vb: ExternalBeamMachineParameters.New(String, String, Integer, String, String)
+  fullName.vb: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.New(String, String, Integer, String, String)
+  name.vb: New(String, String, Integer, String, String)
+- uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.#ctor(System.String)
+  commentId: M:VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters
+  langs:
+  - csharp
+  - vb
+  name: ExternalBeamMachineParameters(string)
+  nameWithType: ExternalBeamMachineParameters.ExternalBeamMachineParameters(string)
+  fullName: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.ExternalBeamMachineParameters(string)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Assigns the Treatment Unit ID to the properties. Rest of the properties are left empty. These parameters will work for Halcyon machine when adding
+
+    imaging setup or Fixed Sequence beam. For other types of beams, define all properties.
+  example: []
+  syntax:
+    content: public ExternalBeamMachineParameters(string machineId)
+    parameters:
+    - id: machineId
+      type: System.String
+      description: The treatment unit identifier.
+    content.vb: Public Sub New(machineId As String)
+  overload: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.#ctor*
+  nameWithType.vb: ExternalBeamMachineParameters.New(String)
+  fullName.vb: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.New(String)
+  name.vb: New(String)
+- uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.MachineId
+  commentId: P:VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.MachineId
+  id: MachineId
+  parent: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters
+  langs:
+  - csharp
+  - vb
+  name: MachineId
+  nameWithType: ExternalBeamMachineParameters.MachineId
+  fullName: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.MachineId
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The treatment unit identifier.
+  example: []
+  syntax:
+    content: public string MachineId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MachineId As String
+  overload: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.MachineId*
+- uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.EnergyModeId
+  commentId: P:VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.EnergyModeId
+  id: EnergyModeId
+  parent: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters
+  langs:
+  - csharp
+  - vb
+  name: EnergyModeId
+  nameWithType: ExternalBeamMachineParameters.EnergyModeId
+  fullName: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.EnergyModeId
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    The energy mode identifier.
+
+    For example, "6X", or "18X".
+  example: []
+  syntax:
+    content: public string EnergyModeId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EnergyModeId As String
+  overload: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.EnergyModeId*
+- uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.DoseRate
+  commentId: P:VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.DoseRate
+  id: DoseRate
+  parent: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters
+  langs:
+  - csharp
+  - vb
+  name: DoseRate
+  nameWithType: ExternalBeamMachineParameters.DoseRate
+  fullName: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.DoseRate
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Dose rate value.
+  example: []
+  syntax:
+    content: public int DoseRate { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DoseRate As Integer
+  overload: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.DoseRate*
+- uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.PrimaryFluenceModeId
+  commentId: P:VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.PrimaryFluenceModeId
+  id: PrimaryFluenceModeId
+  parent: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters
+  langs:
+  - csharp
+  - vb
+  name: PrimaryFluenceModeId
+  nameWithType: ExternalBeamMachineParameters.PrimaryFluenceModeId
+  fullName: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.PrimaryFluenceModeId
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Primary Fluence Mode identifier.
+
+    Acceptable values are: null, empty string, "SRS","FFF".
+  example: []
+  syntax:
+    content: public string PrimaryFluenceModeId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PrimaryFluenceModeId As String
+  overload: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.PrimaryFluenceModeId*
+- uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.TechniqueId
+  commentId: P:VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.TechniqueId
+  id: TechniqueId
+  parent: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters
+  langs:
+  - csharp
+  - vb
+  name: TechniqueId
+  nameWithType: ExternalBeamMachineParameters.TechniqueId
+  fullName: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.TechniqueId
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Technique identifier.
+
+    Typically "STATIC" or "ARC".
+  example: []
+  syntax:
+    content: public string TechniqueId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TechniqueId As String
+  overload: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.TechniqueId*
+- uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.MLCId
+  commentId: P:VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.MLCId
+  id: MLCId
+  parent: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters
+  langs:
+  - csharp
+  - vb
+  name: MLCId
+  nameWithType: ExternalBeamMachineParameters.MLCId
+  fullName: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.MLCId
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Optional MLC identifier. If null (which is the default) then
+
+    the single MLC of the treatment unit is selected.
+  example: []
+  syntax:
+    content: public string MLCId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MLCId As String
+  overload: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.MLCId*
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html#VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters__ctor_System_String_System_String_System_Int32_System_String_System_String_
+  name: ExternalBeamMachineParameters
+  nameWithType: ExternalBeamMachineParameters.ExternalBeamMachineParameters
+  fullName: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.ExternalBeamMachineParameters
+  nameWithType.vb: ExternalBeamMachineParameters.New
+  fullName.vb: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.MachineId*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.MachineId
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html#VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_MachineId
+  name: MachineId
+  nameWithType: ExternalBeamMachineParameters.MachineId
+  fullName: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.MachineId
+- uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.EnergyModeId*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.EnergyModeId
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html#VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_EnergyModeId
+  name: EnergyModeId
+  nameWithType: ExternalBeamMachineParameters.EnergyModeId
+  fullName: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.EnergyModeId
+- uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.DoseRate*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.DoseRate
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html#VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_DoseRate
+  name: DoseRate
+  nameWithType: ExternalBeamMachineParameters.DoseRate
+  fullName: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.DoseRate
+- uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.PrimaryFluenceModeId*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.PrimaryFluenceModeId
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html#VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_PrimaryFluenceModeId
+  name: PrimaryFluenceModeId
+  nameWithType: ExternalBeamMachineParameters.PrimaryFluenceModeId
+  fullName: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.PrimaryFluenceModeId
+- uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.TechniqueId*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.TechniqueId
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html#VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_TechniqueId
+  name: TechniqueId
+  nameWithType: ExternalBeamMachineParameters.TechniqueId
+  fullName: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.TechniqueId
+- uid: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.MLCId*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.MLCId
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html#VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_MLCId
+  name: MLCId
+  nameWithType: ExternalBeamMachineParameters.MLCId
+  fullName: VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.MLCId

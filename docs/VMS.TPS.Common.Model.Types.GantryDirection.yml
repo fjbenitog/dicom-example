@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.GantryDirection
+  commentId: T:VMS.TPS.Common.Model.Types.GantryDirection
+  id: GantryDirection
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.GantryDirection.Clockwise
+  - VMS.TPS.Common.Model.Types.GantryDirection.CounterClockwise
+  - VMS.TPS.Common.Model.Types.GantryDirection.None
+  langs:
+  - csharp
+  - vb
+  name: GantryDirection
+  nameWithType: GantryDirection
+  fullName: VMS.TPS.Common.Model.Types.GantryDirection
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The enumeration of gantry rotation directions.
+  example: []
+  syntax:
+    content: public enum GantryDirection
+    content.vb: Public Enum GantryDirection
+- uid: VMS.TPS.Common.Model.Types.GantryDirection.None
+  commentId: F:VMS.TPS.Common.Model.Types.GantryDirection.None
+  id: None
+  parent: VMS.TPS.Common.Model.Types.GantryDirection
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: GantryDirection.None
+  fullName: VMS.TPS.Common.Model.Types.GantryDirection.None
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: None.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.GantryDirection
+- uid: VMS.TPS.Common.Model.Types.GantryDirection.Clockwise
+  commentId: F:VMS.TPS.Common.Model.Types.GantryDirection.Clockwise
+  id: Clockwise
+  parent: VMS.TPS.Common.Model.Types.GantryDirection
+  langs:
+  - csharp
+  - vb
+  name: Clockwise
+  nameWithType: GantryDirection.Clockwise
+  fullName: VMS.TPS.Common.Model.Types.GantryDirection.Clockwise
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Clockwise.
+  example: []
+  syntax:
+    content: Clockwise = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.GantryDirection
+- uid: VMS.TPS.Common.Model.Types.GantryDirection.CounterClockwise
+  commentId: F:VMS.TPS.Common.Model.Types.GantryDirection.CounterClockwise
+  id: CounterClockwise
+  parent: VMS.TPS.Common.Model.Types.GantryDirection
+  langs:
+  - csharp
+  - vb
+  name: CounterClockwise
+  nameWithType: GantryDirection.CounterClockwise
+  fullName: VMS.TPS.Common.Model.Types.GantryDirection.CounterClockwise
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Counterclockwise.
+  example: []
+  syntax:
+    content: CounterClockwise = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.GantryDirection
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.GantryDirection
+  commentId: T:VMS.TPS.Common.Model.Types.GantryDirection
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.GantryDirection.html
+  name: GantryDirection
+  nameWithType: GantryDirection
+  fullName: VMS.TPS.Common.Model.Types.GantryDirection

@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.OptimizationOption
+  commentId: T:VMS.TPS.Common.Model.Types.OptimizationOption
+  id: OptimizationOption
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.OptimizationOption.ContinueOptimization
+  - VMS.TPS.Common.Model.Types.OptimizationOption.ContinueOptimizationWithPlanDoseAsIntermediateDose
+  - VMS.TPS.Common.Model.Types.OptimizationOption.RestartOptimization
+  langs:
+  - csharp
+  - vb
+  name: OptimizationOption
+  nameWithType: OptimizationOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOption
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Options for Optimization.
+  example: []
+  syntax:
+    content: public enum OptimizationOption
+    content.vb: Public Enum OptimizationOption
+- uid: VMS.TPS.Common.Model.Types.OptimizationOption.RestartOptimization
+  commentId: F:VMS.TPS.Common.Model.Types.OptimizationOption.RestartOptimization
+  id: RestartOptimization
+  parent: VMS.TPS.Common.Model.Types.OptimizationOption
+  langs:
+  - csharp
+  - vb
+  name: RestartOptimization
+  nameWithType: OptimizationOption.RestartOptimization
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOption.RestartOptimization
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Remove the existing optimal fluences or proton scan list from beams before optimization.
+  example: []
+  syntax:
+    content: RestartOptimization = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.OptimizationOption
+- uid: VMS.TPS.Common.Model.Types.OptimizationOption.ContinueOptimization
+  commentId: F:VMS.TPS.Common.Model.Types.OptimizationOption.ContinueOptimization
+  id: ContinueOptimization
+  parent: VMS.TPS.Common.Model.Types.OptimizationOption
+  langs:
+  - csharp
+  - vb
+  name: ContinueOptimization
+  nameWithType: OptimizationOption.ContinueOptimization
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOption.ContinueOptimization
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Use existing optimal fluences or proton scan list as a starting point of optimization.
+  example: []
+  syntax:
+    content: ContinueOptimization = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.OptimizationOption
+- uid: VMS.TPS.Common.Model.Types.OptimizationOption.ContinueOptimizationWithPlanDoseAsIntermediateDose
+  commentId: F:VMS.TPS.Common.Model.Types.OptimizationOption.ContinueOptimizationWithPlanDoseAsIntermediateDose
+  id: ContinueOptimizationWithPlanDoseAsIntermediateDose
+  parent: VMS.TPS.Common.Model.Types.OptimizationOption
+  langs:
+  - csharp
+  - vb
+  name: ContinueOptimizationWithPlanDoseAsIntermediateDose
+  nameWithType: OptimizationOption.ContinueOptimizationWithPlanDoseAsIntermediateDose
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOption.ContinueOptimizationWithPlanDoseAsIntermediateDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: If the plan dose is valid, it is used as an intermediate dose for optimization.
+  example: []
+  syntax:
+    content: ContinueOptimizationWithPlanDoseAsIntermediateDose = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.OptimizationOption
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.OptimizationOption
+  commentId: T:VMS.TPS.Common.Model.Types.OptimizationOption
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationOption.html
+  name: OptimizationOption
+  nameWithType: OptimizationOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOption

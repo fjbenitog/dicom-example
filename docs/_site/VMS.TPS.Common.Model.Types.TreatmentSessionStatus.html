@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Enum TreatmentSessionStatus | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Enum TreatmentSessionStatus | Example ">
+      
+      <meta name="description" content="Status of the treatment session.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.Types.TreatmentSessionStatus">
+
+
+
+
+  <h1 id="VMS_TPS_Common_Model_Types_TreatmentSessionStatus" data-uid="VMS.TPS.Common.Model.Types.TreatmentSessionStatus" class="text-break">
+Enum TreatmentSessionStatus  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.Types.html">Types</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.Types.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Status of the treatment session.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum TreatmentSessionStatus</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h2 id="fields">Fields
+</h2>
+  <dl class="parameters">
+    <dt id="VMS_TPS_Common_Model_Types_TreatmentSessionStatus_Completed"><code>Completed = 3</code></dt>
+  
+  <dd><p>The plan in this session has been completely treated.</p>
+</dd>
+    <dt id="VMS_TPS_Common_Model_Types_TreatmentSessionStatus_CompletedPartially"><code>CompletedPartially = 4</code></dt>
+  
+  <dd><p>The plan in this session has been partially treated.</p>
+</dd>
+    <dt id="VMS_TPS_Common_Model_Types_TreatmentSessionStatus_InActiveResume"><code>InActiveResume = 6</code></dt>
+  
+  <dd><p>There is no clinical decision yet on whether the plan should be treated or not.
+The <a class="xref" href="VMS.TPS.Common.Model.Types.TreatmentSessionStatus.html#VMS_TPS_Common_Model_Types_TreatmentSessionStatus_Resume">Resume</a> status was active before the status was set to InActiveResume.</p>
+</dd>
+    <dt id="VMS_TPS_Common_Model_Types_TreatmentSessionStatus_InActiveTreat"><code>InActiveTreat = 5</code></dt>
+  
+  <dd><p>There is no clinical decision yet on whether the plan should be treated or not.
+The <a class="xref" href="VMS.TPS.Common.Model.Types.TreatmentSessionStatus.html#VMS_TPS_Common_Model_Types_TreatmentSessionStatus_Treat">Treat</a> status was active before the status was set to InActiveTreat.</p>
+</dd>
+    <dt id="VMS_TPS_Common_Model_Types_TreatmentSessionStatus_Null"><code>Null = 0</code></dt>
+  
+  <dd><p>If the value is null, the status of the treatment session is unknown.</p>
+</dd>
+    <dt id="VMS_TPS_Common_Model_Types_TreatmentSessionStatus_Resume"><code>Resume = 2</code></dt>
+  
+  <dd><p>The plan in this session shall complete a partial treatment of the last incomplete fraction.
+When treating a plan based on this status, the fraction number remains the one of the last treatment.
+Any previously applied dose for the current fraction is taken into account and the user can complete the treatment.</p>
+</dd>
+    <dt id="VMS_TPS_Common_Model_Types_TreatmentSessionStatus_Treat"><code>Treat = 1</code></dt>
+  
+  <dd><p>The plan in this session is to be treated as a complete fraction.
+When treating a plan based on this status, the fraction number shall be incremented by 1.
+In case of a previous partial treatment, the next session shall
+treat the plan completely. Typically, further treatments have to be treated completely as well.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

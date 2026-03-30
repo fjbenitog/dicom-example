@@ -1,0 +1,196 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus
+  commentId: T:VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus
+  id: ApplicationScriptApprovalStatus
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.Approved
+  - VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.ApprovedForEvaluation
+  - VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.Retired
+  - VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.Unapproved
+  - VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.Undefined
+  langs:
+  - csharp
+  - vb
+  name: ApplicationScriptApprovalStatus
+  nameWithType: ApplicationScriptApprovalStatus
+  fullName: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The approval statuses of the application script.
+  example: []
+  syntax:
+    content: public enum ApplicationScriptApprovalStatus
+    content.vb: Public Enum ApplicationScriptApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.Undefined
+  commentId: F:VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.Undefined
+  id: Undefined
+  parent: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Undefined
+  nameWithType: ApplicationScriptApprovalStatus.Undefined
+  fullName: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.Undefined
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Approval status is undefined or the application could not resolve the approval status.
+  example: []
+  syntax:
+    content: Undefined = -1
+    return:
+      type: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.Unapproved
+  commentId: F:VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.Unapproved
+  id: Unapproved
+  parent: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Unapproved
+  nameWithType: ApplicationScriptApprovalStatus.Unapproved
+  fullName: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.Unapproved
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The script cannot be executed in the application.
+  example: []
+  syntax:
+    content: Unapproved = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.ApprovedForEvaluation
+  commentId: F:VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.ApprovedForEvaluation
+  id: ApprovedForEvaluation
+  parent: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: ApprovedForEvaluation
+  nameWithType: ApplicationScriptApprovalStatus.ApprovedForEvaluation
+  fullName: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.ApprovedForEvaluation
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    The script can be executed by users who have rights to execute scripts under evaluation.
+
+    User needs to have user rights for all operations that the script does.
+  example: []
+  syntax:
+    content: ApprovedForEvaluation = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.Approved
+  commentId: F:VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.Approved
+  id: Approved
+  parent: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Approved
+  nameWithType: ApplicationScriptApprovalStatus.Approved
+  fullName: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.Approved
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The script can be executed by any user. User needs to have user rights for all operations that the script does.
+  example: []
+  syntax:
+    content: Approved = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.Retired
+  commentId: F:VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.Retired
+  id: Retired
+  parent: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Retired
+  nameWithType: ApplicationScriptApprovalStatus.Retired
+  fullName: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.Retired
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The script is retired and cannot be executed. The approval status cannot be changed anymore.
+  example: []
+  syntax:
+    content: Retired = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus
+  commentId: T:VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.html
+  name: ApplicationScriptApprovalStatus
+  nameWithType: ApplicationScriptApprovalStatus
+  fullName: VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus

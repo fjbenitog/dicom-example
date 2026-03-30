@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType
+  commentId: T:VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType
+  id: LateralSpreadingDeviceType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType.Magnet
+  - VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType.Scatterer
+  langs:
+  - csharp
+  - vb
+  name: LateralSpreadingDeviceType
+  nameWithType: LateralSpreadingDeviceType
+  fullName: VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Type of the lateral spreading device.
+  example: []
+  syntax:
+    content: public enum LateralSpreadingDeviceType
+    content.vb: Public Enum LateralSpreadingDeviceType
+- uid: VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType.Scatterer
+  commentId: F:VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType.Scatterer
+  id: Scatterer
+  parent: VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType
+  langs:
+  - csharp
+  - vb
+  name: Scatterer
+  nameWithType: LateralSpreadingDeviceType.Scatterer
+  fullName: VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType.Scatterer
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Metal placed into the beam path to scatter charged particles laterally.
+  example: []
+  syntax:
+    content: Scatterer = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType
+- uid: VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType.Magnet
+  commentId: F:VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType.Magnet
+  id: Magnet
+  parent: VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType
+  langs:
+  - csharp
+  - vb
+  name: Magnet
+  nameWithType: LateralSpreadingDeviceType.Magnet
+  fullName: VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType.Magnet
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Nozzle configuration of magnet devices to expand the beam laterally.
+  example: []
+  syntax:
+    content: Magnet = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType
+  commentId: T:VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType.html
+  name: LateralSpreadingDeviceType
+  nameWithType: LateralSpreadingDeviceType
+  fullName: VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType

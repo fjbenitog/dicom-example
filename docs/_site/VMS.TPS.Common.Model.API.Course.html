@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Course | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Course | Example ">
+      
+      <meta name="description" content="A course represents the course of treatment that a patient will be given. Every patient must have a course, and all plans always belong to a course.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API.Course">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_API_Course" data-uid="VMS.TPS.Common.Model.API.Course" class="text-break">
+Class Course  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A course represents the course of treatment that a patient will be given.
+Every patient must have a course, and all plans always belong to a course.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Course : ApiDataObject, IXmlSerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html">SerializableObject</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html">ApiDataObject</a></div>
+      <div><span class="xref">Course</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IXmlSerializable</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString">ApiDataObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_">ApiDataObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode">ApiDataObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Name">ApiDataObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName">ApiDataObject.HistoryUserName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName">ApiDataObject.HistoryUserDisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime">ApiDataObject.HistoryDateTime</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema">SerializableObject.GetSchema()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_">SerializableObject.ReadXml(XmlReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_">SerializableObject.WriteXml(XmlWriter, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_">SerializableObject.WriteXml(XmlWriter, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__">SerializableObject.WriteXml&lt;T&gt;(XmlWriter, string, IEnumerable&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__">SerializableObject.WriteXml&lt;T1, T2&gt;(XmlWriter, string, IDictionary&lt;T1, T2&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_">SerializableObject.StartSerialization(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization">SerializableObject.EndSerialization()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory">SerializableObject.ClearSerializationHistory()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_BrachyPlanSetups_" data-uid="VMS.TPS.Common.Model.API.Course.BrachyPlanSetups*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_BrachyPlanSetups" data-uid="VMS.TPS.Common.Model.API.Course.BrachyPlanSetups">
+  BrachyPlanSetups
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A collection of brachytherapy plans for the course.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;BrachyPlanSetup&gt; BrachyPlanSetups { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.BrachyPlanSetup.html">BrachyPlanSetup</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_ClinicalStatus_" data-uid="VMS.TPS.Common.Model.API.Course.ClinicalStatus*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_ClinicalStatus" data-uid="VMS.TPS.Common.Model.API.Course.ClinicalStatus">
+  ClinicalStatus
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clinical Status of Course.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CourseClinicalStatus ClinicalStatus { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.CourseClinicalStatus.html">CourseClinicalStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_Comment_" data-uid="VMS.TPS.Common.Model.API.Course.Comment*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_Comment" data-uid="VMS.TPS.Common.Model.API.Course.Comment">
+  Comment
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license] A comment about the Course.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Comment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_CompletedDateTime_" data-uid="VMS.TPS.Common.Model.API.Course.CompletedDateTime*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_CompletedDateTime" data-uid="VMS.TPS.Common.Model.API.Course.CompletedDateTime">
+  CompletedDateTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The date and time when the course was completed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? CompletedDateTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_Diagnoses_" data-uid="VMS.TPS.Common.Model.API.Course.Diagnoses*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_Diagnoses" data-uid="VMS.TPS.Common.Model.API.Course.Diagnoses">
+  Diagnoses
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The diagnoses that are attached to the course.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Diagnosis&gt; Diagnoses { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.Diagnosis.html">Diagnosis</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_ExternalPlanSetups_" data-uid="VMS.TPS.Common.Model.API.Course.ExternalPlanSetups*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_ExternalPlanSetups" data-uid="VMS.TPS.Common.Model.API.Course.ExternalPlanSetups">
+  ExternalPlanSetups
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A collection of external beam plans for the course.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ExternalPlanSetup&gt; ExternalPlanSetups { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.ExternalPlanSetup.html">ExternalPlanSetup</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_Id_" data-uid="VMS.TPS.Common.Model.API.Course.Id*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_Id" data-uid="VMS.TPS.Common.Model.API.Course.Id">
+  Id
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license] The identifier of the Course.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_Intent_" data-uid="VMS.TPS.Common.Model.API.Course.Intent*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_Intent" data-uid="VMS.TPS.Common.Model.API.Course.Intent">
+  Intent
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The intent of the course.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Intent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_IonPlanSetups_" data-uid="VMS.TPS.Common.Model.API.Course.IonPlanSetups*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_IonPlanSetups" data-uid="VMS.TPS.Common.Model.API.Course.IonPlanSetups">
+  IonPlanSetups
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A collection of proton plans for the course.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IonPlanSetup&gt; IonPlanSetups { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.IonPlanSetup.html">IonPlanSetup</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_Patient_" data-uid="VMS.TPS.Common.Model.API.Course.Patient*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_Patient" data-uid="VMS.TPS.Common.Model.API.Course.Patient">
+  Patient
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Patient in which the course is defined.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Patient Patient { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Patient.html">Patient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_PlanSetups_" data-uid="VMS.TPS.Common.Model.API.Course.PlanSetups*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_PlanSetups" data-uid="VMS.TPS.Common.Model.API.Course.PlanSetups">
+  PlanSetups
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A collection of plans for the course. The plans can be of any type (external beam or brachytherapy).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;PlanSetup&gt; PlanSetups { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_PlanSums_" data-uid="VMS.TPS.Common.Model.API.Course.PlanSums*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_PlanSums" data-uid="VMS.TPS.Common.Model.API.Course.PlanSums">
+  PlanSums
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A collection of plan sums for the course.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;PlanSum&gt; PlanSums { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.PlanSum.html">PlanSum</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_StartDateTime_" data-uid="VMS.TPS.Common.Model.API.Course.StartDateTime*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_StartDateTime" data-uid="VMS.TPS.Common.Model.API.Course.StartDateTime">
+  StartDateTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The date and time when the course was started.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? StartDateTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_TreatmentPhases_" data-uid="VMS.TPS.Common.Model.API.Course.TreatmentPhases*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_TreatmentPhases" data-uid="VMS.TPS.Common.Model.API.Course.TreatmentPhases">
+  TreatmentPhases
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>All treatment phases in the course.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TreatmentPhase&gt; TreatmentPhases { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.TreatmentPhase.html">TreatmentPhase</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_TreatmentSessions_" data-uid="VMS.TPS.Common.Model.API.Course.TreatmentSessions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_TreatmentSessions" data-uid="VMS.TPS.Common.Model.API.Course.TreatmentSessions">
+  TreatmentSessions
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Treatment sessions of the course.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TreatmentSession&gt; TreatmentSessions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.TreatmentSession.html">TreatmentSession</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_AddBrachyPlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_AddBrachyPlanSetup_VMS_TPS_Common_Model_API_StructureSet_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_API_ReferencePoint_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_BrachyTreatmentTechniqueType_System_Collections_Generic_IEnumerable_VMS_TPS_Common_Model_API_ReferencePoint__" data-uid="VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.API.ReferencePoint,VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint})">
+  AddBrachyPlanSetup(StructureSet, Structure, ReferencePoint, DoseValue, BrachyTreatmentTechniqueType, IEnumerable&lt;ReferencePoint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Attaches a new brachytherapy plan to this course with the target structure, primary reference point and additional reference points specified in arguments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BrachyPlanSetup AddBrachyPlanSetup(StructureSet structureSet, Structure targetStructure, ReferencePoint primaryReferencePoint, DoseValue dosePerFraction, BrachyTreatmentTechniqueType brachyTreatmentTechnique, IEnumerable&lt;ReferencePoint&gt; additionalReferencePoints = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structureSet</code> <a class="xref" href="VMS.TPS.Common.Model.API.StructureSet.html">StructureSet</a></dt>
+    <dd><p>Valid StructureSet to be connected to the plan</p>
+</dd>
+    <dt><code>targetStructure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>Target structure. If defined, the value must be from 'structureSet'. If the value is null, the target will remain unset.</p>
+</dd>
+    <dt><code>primaryReferencePoint</code> <a class="xref" href="VMS.TPS.Common.Model.API.ReferencePoint.html">ReferencePoint</a></dt>
+    <dd><p>Valid reference point to be connected as primary reference point.</p>
+</dd>
+    <dt><code>dosePerFraction</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Dose per fraction</p>
+</dd>
+    <dt><code>brachyTreatmentTechnique</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.html">BrachyTreatmentTechniqueType</a></dt>
+    <dd><p>Brachytherapy treatment technique</p>
+</dd>
+    <dt><code>additionalReferencePoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.ReferencePoint.html">ReferencePoint</a>&gt;</dt>
+    <dd><p>Collection of additional valid reference points</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.BrachyPlanSetup.html">BrachyPlanSetup</a></dt>
+    <dd><p>New brachytherapy plan with primary reference point and target structure set as specified in arguments.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_AddBrachyPlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_AddBrachyPlanSetup_VMS_TPS_Common_Model_API_StructureSet_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_BrachyTreatmentTechniqueType_" data-uid="VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType)">
+  AddBrachyPlanSetup(StructureSet, DoseValue, BrachyTreatmentTechniqueType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Attaches a new brachytherapy plan to this course. A new primary reference point is always created for the new brachytherapy plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BrachyPlanSetup AddBrachyPlanSetup(StructureSet structureSet, DoseValue dosePerFraction, BrachyTreatmentTechniqueType brachyTreatmentTechnique)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structureSet</code> <a class="xref" href="VMS.TPS.Common.Model.API.StructureSet.html">StructureSet</a></dt>
+    <dd><p>A valid StructureSet to be connected to the plan.</p>
+</dd>
+    <dt><code>dosePerFraction</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Dose per fraction</p>
+</dd>
+    <dt><code>brachyTreatmentTechnique</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.html">BrachyTreatmentTechniqueType</a></dt>
+    <dd><p>Brachytherapy treatment technique</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.BrachyPlanSetup.html">BrachyPlanSetup</a></dt>
+    <dd><p>A new brachytherapy plan.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_AddExternalPlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_AddExternalPlanSetup_VMS_TPS_Common_Model_API_StructureSet_" data-uid="VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup(VMS.TPS.Common.Model.API.StructureSet)">
+  AddExternalPlanSetup(StructureSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Attaches a new plan to this course. A new primary reference point is always created for the new plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExternalPlanSetup AddExternalPlanSetup(StructureSet structureSet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structureSet</code> <a class="xref" href="VMS.TPS.Common.Model.API.StructureSet.html">StructureSet</a></dt>
+    <dd><p>A valid structure set.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.ExternalPlanSetup.html">ExternalPlanSetup</a></dt>
+    <dd><p>A new plan.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_AddExternalPlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_AddExternalPlanSetup_VMS_TPS_Common_Model_API_StructureSet_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_API_ReferencePoint_System_Collections_Generic_IEnumerable_VMS_TPS_Common_Model_API_ReferencePoint__" data-uid="VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.API.ReferencePoint,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint})">
+  AddExternalPlanSetup(StructureSet, Structure, ReferencePoint, IEnumerable&lt;ReferencePoint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Attaches a new plan to this course with target, primary reference point and additional reference points in arguments</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExternalPlanSetup AddExternalPlanSetup(StructureSet structureSet, Structure targetStructure, ReferencePoint primaryReferencePoint, IEnumerable&lt;ReferencePoint&gt; additionalReferencePoints = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structureSet</code> <a class="xref" href="VMS.TPS.Common.Model.API.StructureSet.html">StructureSet</a></dt>
+    <dd><p>Valid StructureSet to connected with the plan</p>
+</dd>
+    <dt><code>targetStructure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>Target structure, if defined must be from 'structureSet', if left null target will remain unset.</p>
+</dd>
+    <dt><code>primaryReferencePoint</code> <a class="xref" href="VMS.TPS.Common.Model.API.ReferencePoint.html">ReferencePoint</a></dt>
+    <dd><p>Valid reference point to be connected as primary.</p>
+</dd>
+    <dt><code>additionalReferencePoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.ReferencePoint.html">ReferencePoint</a>&gt;</dt>
+    <dd><p>Collection of additional valid reference points</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.ExternalPlanSetup.html">ExternalPlanSetup</a></dt>
+    <dd><p>New external beam plan with primary reference point, additional reference points, target structure set as specified in arguments.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_AddExternalPlanSetupAsVerificationPlan_" data-uid="VMS.TPS.Common.Model.API.Course.AddExternalPlanSetupAsVerificationPlan*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_AddExternalPlanSetupAsVerificationPlan_VMS_TPS_Common_Model_API_StructureSet_VMS_TPS_Common_Model_API_ExternalPlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.AddExternalPlanSetupAsVerificationPlan(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.ExternalPlanSetup)">
+  AddExternalPlanSetupAsVerificationPlan(StructureSet, ExternalPlanSetup)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Attaches a new verification plan to this course and adds the relationship between the verified plan and a new plan. Data is not copied from the verified plan.
+A new primary reference point is always created for the new plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExternalPlanSetup AddExternalPlanSetupAsVerificationPlan(StructureSet structureSet, ExternalPlanSetup verifiedPlan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structureSet</code> <a class="xref" href="VMS.TPS.Common.Model.API.StructureSet.html">StructureSet</a></dt>
+    <dd><p>A valid structure set.</p>
+</dd>
+    <dt><code>verifiedPlan</code> <a class="xref" href="VMS.TPS.Common.Model.API.ExternalPlanSetup.html">ExternalPlanSetup</a></dt>
+    <dd><p>The verified plan.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.ExternalPlanSetup.html">ExternalPlanSetup</a></dt>
+    <dd><p>A new verification plan.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_AddIonPlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.AddIonPlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_AddIonPlanSetup_VMS_TPS_Common_Model_API_StructureSet_System_String_" data-uid="VMS.TPS.Common.Model.API.Course.AddIonPlanSetup(VMS.TPS.Common.Model.API.StructureSet,System.String)">
+  AddIonPlanSetup(StructureSet, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Attaches a new proton plan to this course.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IonPlanSetup AddIonPlanSetup(StructureSet structureSet, string patientSupportDeviceId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structureSet</code> <a class="xref" href="VMS.TPS.Common.Model.API.StructureSet.html">StructureSet</a></dt>
+    <dd><p>A valid structure set.</p>
+</dd>
+    <dt><code>patientSupportDeviceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Id of the patient support device.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.IonPlanSetup.html">IonPlanSetup</a></dt>
+    <dd><p>A new proton plan.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_AddIonPlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.AddIonPlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_AddIonPlanSetup_VMS_TPS_Common_Model_API_StructureSet_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_API_ReferencePoint_System_String_System_Collections_Generic_IEnumerable_VMS_TPS_Common_Model_API_ReferencePoint__" data-uid="VMS.TPS.Common.Model.API.Course.AddIonPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.API.ReferencePoint,System.String,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint})">
+  AddIonPlanSetup(StructureSet, Structure, ReferencePoint, string, IEnumerable&lt;ReferencePoint&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Attaches a new proton plan to this course.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IonPlanSetup AddIonPlanSetup(StructureSet structureSet, Structure targetStructure, ReferencePoint primaryReferencePoint, string patientSupportDeviceId, IEnumerable&lt;ReferencePoint&gt; additionalReferencePoints = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structureSet</code> <a class="xref" href="VMS.TPS.Common.Model.API.StructureSet.html">StructureSet</a></dt>
+    <dd><p>A valid structure set.</p>
+</dd>
+    <dt><code>targetStructure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>Target structure. If defined, the value must be from 'structureSet'. If the value is null, the target will remain unset.</p>
+</dd>
+    <dt><code>primaryReferencePoint</code> <a class="xref" href="VMS.TPS.Common.Model.API.ReferencePoint.html">ReferencePoint</a></dt>
+    <dd><p>Valid reference point to be connected as primary.</p>
+</dd>
+    <dt><code>patientSupportDeviceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Id of the patient support device.</p>
+</dd>
+    <dt><code>additionalReferencePoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.ReferencePoint.html">ReferencePoint</a>&gt;</dt>
+    <dd><p>Collection of additional valid reference points</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.IonPlanSetup.html">IonPlanSetup</a></dt>
+    <dd><p>New proton plan with primary reference point, additional reference points and target structure set as specified in arguments.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_AddIonPlanSetupAsVerificationPlan_" data-uid="VMS.TPS.Common.Model.API.Course.AddIonPlanSetupAsVerificationPlan*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_AddIonPlanSetupAsVerificationPlan_VMS_TPS_Common_Model_API_StructureSet_System_String_VMS_TPS_Common_Model_API_IonPlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.AddIonPlanSetupAsVerificationPlan(VMS.TPS.Common.Model.API.StructureSet,System.String,VMS.TPS.Common.Model.API.IonPlanSetup)">
+  AddIonPlanSetupAsVerificationPlan(StructureSet, string, IonPlanSetup)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Attaches a new verification plan to this course and adds the relationship between the proton plan to be verified and the new verification plan. Data is not copied from the verified plan.
+A new primary reference point is always created for the new plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IonPlanSetup AddIonPlanSetupAsVerificationPlan(StructureSet structureSet, string patientSupportDeviceId, IonPlanSetup verifiedPlan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structureSet</code> <a class="xref" href="VMS.TPS.Common.Model.API.StructureSet.html">StructureSet</a></dt>
+    <dd><p>A valid structure set.</p>
+</dd>
+    <dt><code>patientSupportDeviceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Id of the patient support device.</p>
+</dd>
+    <dt><code>verifiedPlan</code> <a class="xref" href="VMS.TPS.Common.Model.API.IonPlanSetup.html">IonPlanSetup</a></dt>
+    <dd><p>The verified plan.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.IonPlanSetup.html">IonPlanSetup</a></dt>
+    <dd><p>A new proton verification plan.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_CanAddPlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.CanAddPlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_CanAddPlanSetup_VMS_TPS_Common_Model_API_StructureSet_" data-uid="VMS.TPS.Common.Model.API.Course.CanAddPlanSetup(VMS.TPS.Common.Model.API.StructureSet)">
+  CanAddPlanSetup(StructureSet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a new plan can be added to this course using the given structure set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanAddPlanSetup(StructureSet structureSet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structureSet</code> <a class="xref" href="VMS.TPS.Common.Model.API.StructureSet.html">StructureSet</a></dt>
+    <dd><p>The structure set used by the plan.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if a new plan can be added.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_CanRemovePlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.CanRemovePlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_CanRemovePlanSetup_VMS_TPS_Common_Model_API_PlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.CanRemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)">
+  CanRemovePlanSetup(PlanSetup)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the plan setup can be removed from this course.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanRemovePlanSetup(PlanSetup planSetup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>planSetup</code> <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd><p>The plan setup to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the plan can be removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_CopyBrachyPlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_CopyBrachyPlanSetup_VMS_TPS_Common_Model_API_BrachyPlanSetup_System_Text_StringBuilder_" data-uid="VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup(VMS.TPS.Common.Model.API.BrachyPlanSetup,System.Text.StringBuilder)">
+  CopyBrachyPlanSetup(BrachyPlanSetup, StringBuilder)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Copies brachytherapy plan (the planning image will be the same for both plans).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BrachyPlanSetup CopyBrachyPlanSetup(BrachyPlanSetup sourcePlan, StringBuilder outputDiagnostics)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourcePlan</code> <a class="xref" href="VMS.TPS.Common.Model.API.BrachyPlanSetup.html">BrachyPlanSetup</a></dt>
+    <dd><p>Brachy plan to copy from</p>
+</dd>
+    <dt><code>outputDiagnostics</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>Information about copying, this needs to be shown to the user.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.BrachyPlanSetup.html">BrachyPlanSetup</a></dt>
+    <dd><p>New plan</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_CopyBrachyPlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_CopyBrachyPlanSetup_VMS_TPS_Common_Model_API_BrachyPlanSetup_VMS_TPS_Common_Model_API_StructureSet_System_Text_StringBuilder_" data-uid="VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup(VMS.TPS.Common.Model.API.BrachyPlanSetup,VMS.TPS.Common.Model.API.StructureSet,System.Text.StringBuilder)">
+  CopyBrachyPlanSetup(BrachyPlanSetup, StructureSet, StringBuilder)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Copies brachytherapy plan from sourcePlan to the target Image associated with the given structure set.
+TargetImage must be registered with the primary image of the sourcePlan.
+First copies image and then changes planning image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BrachyPlanSetup CopyBrachyPlanSetup(BrachyPlanSetup sourcePlan, StructureSet structureset, StringBuilder outputDiagnostics)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourcePlan</code> <a class="xref" href="VMS.TPS.Common.Model.API.BrachyPlanSetup.html">BrachyPlanSetup</a></dt>
+    <dd><p>Brachy plan to copy from</p>
+</dd>
+    <dt><code>structureset</code> <a class="xref" href="VMS.TPS.Common.Model.API.StructureSet.html">StructureSet</a></dt>
+    <dd><p>The structure set along with its associated image that will be assigned to the copied plan</p>
+</dd>
+    <dt><code>outputDiagnostics</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>Information about copying, this needs to be shown to the user.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.BrachyPlanSetup.html">BrachyPlanSetup</a></dt>
+    <dd><p>New plan</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_CopyPlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.CopyPlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_CopyPlanSetup_VMS_TPS_Common_Model_API_PlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup)">
+  CopyPlanSetup(PlanSetup)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Copies plan (the planning image will be the same for both plans).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanSetup CopyPlanSetup(PlanSetup sourcePlan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourcePlan</code> <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd><p>Plan to copy from</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd><p>New plan</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_CopyPlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.CopyPlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_CopyPlanSetup_VMS_TPS_Common_Model_API_PlanSetup_VMS_TPS_Common_Model_API_Image_System_Text_StringBuilder_" data-uid="VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.Image,System.Text.StringBuilder)">
+  CopyPlanSetup(PlanSetup, Image, StringBuilder)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Copies plan from sourcePlan to targetImage. targetImage must be registered with
+primary image of the sourcePlan.
+First copies image and then changes planning image. If there are multiple registrations,
+just copies isocenter locations and shows a message about this.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanSetup CopyPlanSetup(PlanSetup sourcePlan, Image targetImage, StringBuilder outputDiagnostics)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourcePlan</code> <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd><p>Plan to copy from</p>
+</dd>
+    <dt><code>targetImage</code> <a class="xref" href="VMS.TPS.Common.Model.API.Image.html">Image</a></dt>
+    <dd><p>Image to copy plan to</p>
+</dd>
+    <dt><code>outputDiagnostics</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>Information about copying, this needs to be shown to the user.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd><p>New plan</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_CopyPlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.CopyPlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_CopyPlanSetup_VMS_TPS_Common_Model_API_PlanSetup_VMS_TPS_Common_Model_API_Image_VMS_TPS_Common_Model_API_Registration_System_Text_StringBuilder_" data-uid="VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.Image,VMS.TPS.Common.Model.API.Registration,System.Text.StringBuilder)">
+  CopyPlanSetup(PlanSetup, Image, Registration, StringBuilder)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Copies plan from sourcePlan to targetImage. targetImage must be registered with
+primary image of the sourcePlan.
+First copies image and then changes planning image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanSetup CopyPlanSetup(PlanSetup sourcePlan, Image targetImage, Registration registration, StringBuilder outputDiagnostics)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourcePlan</code> <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd><p>Plan to copy from</p>
+</dd>
+    <dt><code>targetImage</code> <a class="xref" href="VMS.TPS.Common.Model.API.Image.html">Image</a></dt>
+    <dd><p>Image to copy plan to</p>
+</dd>
+    <dt><code>registration</code> <a class="xref" href="VMS.TPS.Common.Model.API.Registration.html">Registration</a></dt>
+    <dd><p>Registration to use to map geometry from source to target</p>
+</dd>
+    <dt><code>outputDiagnostics</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>Information about copying, this needs to be shown to the user.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd><p>New plan</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_CopyPlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.CopyPlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_CopyPlanSetup_VMS_TPS_Common_Model_API_PlanSetup_VMS_TPS_Common_Model_API_StructureSet_System_Text_StringBuilder_" data-uid="VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.StructureSet,System.Text.StringBuilder)">
+  CopyPlanSetup(PlanSetup, StructureSet, StringBuilder)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Copies plan from sourcePlan to the target Image associated with the given structure set.
+TargetImage must be registered with primary image of the sourcePlan.
+First copies image and then changes planning image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanSetup CopyPlanSetup(PlanSetup sourcePlan, StructureSet structureset, StringBuilder outputDiagnostics)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourcePlan</code> <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd><p>Plan to copy from</p>
+</dd>
+    <dt><code>structureset</code> <a class="xref" href="VMS.TPS.Common.Model.API.StructureSet.html">StructureSet</a></dt>
+    <dd><p>The structure set along with its associated image that will be assigned to the copied plan</p>
+</dd>
+    <dt><code>outputDiagnostics</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>Information about copying, this needs to be shown to the user.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd><p>New plan</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_CreatePlanSum_" data-uid="VMS.TPS.Common.Model.API.Course.CreatePlanSum*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_CreatePlanSum_System_Collections_Generic_IEnumerable_VMS_TPS_Common_Model_API_PlanningItem__VMS_TPS_Common_Model_API_Image_" data-uid="VMS.TPS.Common.Model.API.Course.CreatePlanSum(System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanningItem},VMS.TPS.Common.Model.API.Image)">
+  CreatePlanSum(IEnumerable&lt;PlanningItem&gt;, Image)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Creates a plan sum from given planning items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanSum CreatePlanSum(IEnumerable&lt;PlanningItem&gt; planningItems, Image image)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>planningItems</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html">PlanningItem</a>&gt;</dt>
+    <dd><p>Items to create sum from. All plans must share the same image, otherwise please use <a class="xref" href="VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_CopyPlanSetup_VMS_TPS_Common_Model_API_PlanSetup_VMS_TPS_Common_Model_API_Image_VMS_TPS_Common_Model_API_Registration_System_Text_StringBuilder_">CopyPlanSetup</a> method before adding plan to Plan sum.</p>
+</dd>
+    <dt><code>image</code> <a class="xref" href="VMS.TPS.Common.Model.API.Image.html">Image</a></dt>
+    <dd><p>Plan Sum image</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanSum.html">PlanSum</a></dt>
+    <dd><p>Plan sum if creation was possible.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_IsCompleted_" data-uid="VMS.TPS.Common.Model.API.Course.IsCompleted*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_IsCompleted" data-uid="VMS.TPS.Common.Model.API.Course.IsCompleted">
+  IsCompleted()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the clinical status of the course is completed or restored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCompleted()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the clinical status of the course is completed or restored.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_RemovePlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.RemovePlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_RemovePlanSetup_VMS_TPS_Common_Model_API_PlanSetup_" data-uid="VMS.TPS.Common.Model.API.Course.RemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)">
+  RemovePlanSetup(PlanSetup)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Removes the plan setup from the database. Use <a class="xref" href="VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_CanRemovePlanSetup_VMS_TPS_Common_Model_API_PlanSetup_">CanRemovePlanSetup</a> to check if it is possible to remove the plan. The
+PlanSetup object given as a parameter is not usable anymore after this operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemovePlanSetup(PlanSetup planSetup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>planSetup</code> <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd><p>The plan setup that is removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_RemovePlanSum_" data-uid="VMS.TPS.Common.Model.API.Course.RemovePlanSum*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_RemovePlanSum_VMS_TPS_Common_Model_API_PlanSum_" data-uid="VMS.TPS.Common.Model.API.Course.RemovePlanSum(VMS.TPS.Common.Model.API.PlanSum)">
+  RemovePlanSum(PlanSum)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Removes the plan sum from the database. The PlanSum object given as a parameter is not usable anymore after this operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemovePlanSum(PlanSum planSum)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>planSum</code> <a class="xref" href="VMS.TPS.Common.Model.API.PlanSum.html">PlanSum</a></dt>
+    <dd><p>The plan sum that is removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Course_WriteXml_" data-uid="VMS.TPS.Common.Model.API.Course.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Course_WriteXml_System_Xml_XmlWriter_" data-uid="VMS.TPS.Common.Model.API.Course.WriteXml(System.Xml.XmlWriter)">
+  WriteXml(XmlWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an object into its XML representation.
+For more information on how to serialize an object into an XML document, see <span class="xref">System.Xml.Serialization.XmlSerializer</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>The System.Xml.XmlWriter stream, to which the object is serialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class OptimizationSetup | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class OptimizationSetup | Example ">
+      
+      <meta name="description" content="Gives access to the optimization parameters and objectives.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API.OptimizationSetup">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_API_OptimizationSetup" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup" class="text-break">
+Class OptimizationSetup  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Gives access to the optimization parameters and objectives.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class OptimizationSetup : SerializableObject, IXmlSerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html">SerializableObject</a></div>
+      <div><span class="xref">OptimizationSetup</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IXmlSerializable</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema">SerializableObject.GetSchema()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_">SerializableObject.ReadXml(XmlReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_">SerializableObject.WriteXml(XmlWriter, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_">SerializableObject.WriteXml(XmlWriter, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__">SerializableObject.WriteXml&lt;T&gt;(XmlWriter, string, IEnumerable&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__">SerializableObject.WriteXml&lt;T1, T2&gt;(XmlWriter, string, IDictionary&lt;T1, T2&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_">SerializableObject.StartSerialization(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization">SerializableObject.EndSerialization()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory">SerializableObject.ClearSerializationHistory()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_Objectives_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.Objectives*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_Objectives" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.Objectives">
+  Objectives
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A collection of optimization objectives.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;OptimizationObjective&gt; Objectives { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.OptimizationObjective.html">OptimizationObjective</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_Parameters_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.Parameters*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_Parameters" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.Parameters">
+  Parameters
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A collection of optimization parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;OptimizationParameter&gt; Parameters { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.OptimizationParameter.html">OptimizationParameter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_UseJawTracking_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.UseJawTracking*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_UseJawTracking" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.UseJawTracking">
+  UseJawTracking
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license] Jaw tracking parameter for VMAT optimization.
+The parameter can only be set for plans to be delivered with a treatment machine that supports jaw tracking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseJawTracking { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_AddAutomaticNormalTissueObjective_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticNormalTissueObjective*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_AddAutomaticNormalTissueObjective_System_Double_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticNormalTissueObjective(System.Double)">
+  AddAutomaticNormalTissueObjective(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new automatic normal tissue objective (NTO) or updates the data of the existing objective. Only one
+NTO can be added.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizationNormalTissueParameter AddAutomaticNormalTissueObjective(double priority)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Determines the relative importance of the NTO in relation to other optimization objectives. The value is positive.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter.html">OptimizationNormalTissueParameter</a></dt>
+    <dd><p>The added parameter.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_AddAutomaticSbrtNormalTissueObjective_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticSbrtNormalTissueObjective*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_AddAutomaticSbrtNormalTissueObjective_System_Double_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticSbrtNormalTissueObjective(System.Double)">
+  AddAutomaticSbrtNormalTissueObjective(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new automatic SBRT normal tissue objective (NTO) or updates the data of the existing objective. Only one
+NTO can be added.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizationNormalTissueParameter AddAutomaticSbrtNormalTissueObjective(double priority)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Determines the relative importance of the NTO in relation to other optimization objectives. The value is positive.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter.html">OptimizationNormalTissueParameter</a></dt>
+    <dd><p>The added parameter.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_AddBeamSpecificParameter_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddBeamSpecificParameter*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_AddBeamSpecificParameter_VMS_TPS_Common_Model_API_Beam_System_Double_System_Double_System_Boolean_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddBeamSpecificParameter(VMS.TPS.Common.Model.API.Beam,System.Double,System.Double,System.Boolean)">
+  AddBeamSpecificParameter(Beam, double, double, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new beam-specific parameter for IMRT optimization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizationIMRTBeamParameter AddBeamSpecificParameter(Beam beam, double smoothX, double smoothY, bool fixedJaws)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>beam</code> <a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+    <dd><p>The beam for which the parameters are added.</p>
+</dd>
+    <dt><code>smoothX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>A fluence-smoothing parameter in X-direction.</p>
+</dd>
+    <dt><code>smoothY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>A fluence-smoothing parameter in Y-direction.</p>
+</dd>
+    <dt><code>fixedJaws</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, the collimator jaw positions of the beam remain the same during the optimization.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationIMRTBeamParameter.html">OptimizationIMRTBeamParameter</a></dt>
+    <dd><p>The added parameter.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_AddEUDObjective_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_AddEUDObjective_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_Types_OptimizationObjectiveOperator_VMS_TPS_Common_Model_Types_DoseValue_System_Double_System_Double_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double)">
+  AddEUDObjective(Structure, OptimizationObjectiveOperator, DoseValue, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new gEUD objective.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizationEUDObjective AddEUDObjective(Structure structure, OptimizationObjectiveOperator objectiveOperator, DoseValue dose, double parameterA, double priority)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>The target structure of the objective.</p>
+</dd>
+    <dt><code>objectiveOperator</code> <a class="xref" href="VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.html">OptimizationObjectiveOperator</a></dt>
+    <dd><p>The type of the gEUD objective.</p>
+</dd>
+    <dt><code>dose</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>The dose value of the objective. The unit must be the same as defined in the system configuration.</p>
+</dd>
+    <dt><code>parameterA</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>gEUD parameter a.</p>
+</dd>
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The priority of the objective.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationEUDObjective.html">OptimizationEUDObjective</a></dt>
+    <dd><p>The added objective.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_AddEUDObjective_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_AddEUDObjective_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_Types_OptimizationObjectiveOperator_VMS_TPS_Common_Model_Types_DoseValue_System_Double_System_Double_System_Boolean_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double,System.Boolean)">
+  AddEUDObjective(Structure, OptimizationObjectiveOperator, DoseValue, double, double, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new gEUD objective.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizationEUDObjective AddEUDObjective(Structure structure, OptimizationObjectiveOperator objectiveOperator, DoseValue dose, double parameterA, double priority, bool isRobustObjective)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>The target structure of the objective.</p>
+</dd>
+    <dt><code>objectiveOperator</code> <a class="xref" href="VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.html">OptimizationObjectiveOperator</a></dt>
+    <dd><p>The type of the gEUD objective.</p>
+</dd>
+    <dt><code>dose</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>The dose value of the objective. The unit must be the same as defined in the system configuration.</p>
+</dd>
+    <dt><code>parameterA</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>gEUD parameter a.</p>
+</dd>
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The priority of the objective.</p>
+</dd>
+    <dt><code>isRobustObjective</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is the objective a robust objective.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationEUDObjective.html">OptimizationEUDObjective</a></dt>
+    <dd><p>The added objective.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_AddMeanDoseObjective_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_AddMeanDoseObjective_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_Types_DoseValue_System_Double_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.DoseValue,System.Double)">
+  AddMeanDoseObjective(Structure, DoseValue, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new mean dose objective.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizationMeanDoseObjective AddMeanDoseObjective(Structure structure, DoseValue dose, double priority)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>The target structure of the objective.</p>
+</dd>
+    <dt><code>dose</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>The dose value of the objective. The unit must be the same as defined in the system configuration.</p>
+</dd>
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The priority of the objective.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationMeanDoseObjective.html">OptimizationMeanDoseObjective</a></dt>
+    <dd><p>The added objective.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_AddMeanDoseObjective_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_AddMeanDoseObjective_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_Types_DoseValue_System_Double_System_Boolean_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Boolean)">
+  AddMeanDoseObjective(Structure, DoseValue, double, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new mean dose objective.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizationMeanDoseObjective AddMeanDoseObjective(Structure structure, DoseValue dose, double priority, bool isRobustObjective)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>The target structure of the objective.</p>
+</dd>
+    <dt><code>dose</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>The dose value of the objective. The unit must be the same as defined in the system configuration.</p>
+</dd>
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The priority of the objective.</p>
+</dd>
+    <dt><code>isRobustObjective</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is the objective a robust objective.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationMeanDoseObjective.html">OptimizationMeanDoseObjective</a></dt>
+    <dd><p>The added objective.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_AddNormalTissueObjective_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddNormalTissueObjective*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_AddNormalTissueObjective_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddNormalTissueObjective(System.Double,System.Double,System.Double,System.Double,System.Double)">
+  AddNormalTissueObjective(double, double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new normal tissue objective (NTO) or updates the data of the existing objective. Only one
+NTO can be added. Calling this function disables the automatic NTO if it has been set previously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizationNormalTissueParameter AddNormalTissueObjective(double priority, double distanceFromTargetBorderInMM, double startDosePercentage, double endDosePercentage, double fallOff)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Determines the relative importance of the normal tissue objective in relation to other optimization objectives. The value is positive.</p>
+</dd>
+    <dt><code>distanceFromTargetBorderInMM</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Determines the distance in millimeters from the target border where the evaluation of the normal tissue objective dose begins.</p>
+</dd>
+    <dt><code>startDosePercentage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Determines the relative dose level in the normal tissue objective at the target border,
+expressed in percentage of the upper objective for the target.
+The value is positive. 100% is specified as 100.</p>
+</dd>
+    <dt><code>endDosePercentage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Determines the relative dose level in the normal tissue objective in the area furthest from the target border.
+Expressed in percentage. The value is positive. 100% is specified as 100.</p>
+</dd>
+    <dt><code>fallOff</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Determines the steepness of the normal tissue objective fall-off.
+The value is positive.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter.html">OptimizationNormalTissueParameter</a></dt>
+    <dd><p>The added parameter.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_AddPointObjective_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_AddPointObjective_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_Types_OptimizationObjectiveOperator_VMS_TPS_Common_Model_Types_DoseValue_System_Double_System_Double_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double)">
+  AddPointObjective(Structure, OptimizationObjectiveOperator, DoseValue, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new point objective.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizationPointObjective AddPointObjective(Structure structure, OptimizationObjectiveOperator objectiveOperator, DoseValue dose, double volume, double priority)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>The target structure of the objective.</p>
+</dd>
+    <dt><code>objectiveOperator</code> <a class="xref" href="VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.html">OptimizationObjectiveOperator</a></dt>
+    <dd><p>The type of the dose-volume objective.</p>
+</dd>
+    <dt><code>dose</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>The dose value of the objective. The unit must be the same as defined in the system configuration.</p>
+</dd>
+    <dt><code>volume</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The volume of the objective.</p>
+</dd>
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The priority of the objective.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationPointObjective.html">OptimizationPointObjective</a></dt>
+    <dd><p>The added objective.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_AddPointObjective_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_AddPointObjective_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_Types_OptimizationObjectiveOperator_VMS_TPS_Common_Model_Types_DoseValue_System_Double_System_Double_System_Boolean_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double,System.Boolean)">
+  AddPointObjective(Structure, OptimizationObjectiveOperator, DoseValue, double, double, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new point objective.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizationPointObjective AddPointObjective(Structure structure, OptimizationObjectiveOperator objectiveOperator, DoseValue dose, double volume, double priority, bool isRobustObjective)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>The target structure of the objective.</p>
+</dd>
+    <dt><code>objectiveOperator</code> <a class="xref" href="VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.html">OptimizationObjectiveOperator</a></dt>
+    <dd><p>The type of the dose-volume objective.</p>
+</dd>
+    <dt><code>dose</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>The dose value of the objective. The unit must be the same as defined in the system configuration.</p>
+</dd>
+    <dt><code>volume</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The volume of the objective.</p>
+</dd>
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The priority of the objective.</p>
+</dd>
+    <dt><code>isRobustObjective</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Is the objective a robust objective.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationPointObjective.html">OptimizationPointObjective</a></dt>
+    <dd><p>The added objective.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_AddProtonNormalTissueObjective_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddProtonNormalTissueObjective*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_AddProtonNormalTissueObjective_System_Double_System_Double_System_Double_System_Double_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.AddProtonNormalTissueObjective(System.Double,System.Double,System.Double,System.Double)">
+  AddProtonNormalTissueObjective(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new normal tissue objective (NTO) for a proton plan or updates the data of the existing objective. Only one
+NTO can be added. Calling this function disables the automatic NTO if it has been set previously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizationNormalTissueParameter AddProtonNormalTissueObjective(double priority, double distanceFromTargetBorderInMM, double startDosePercentage, double endDosePercentage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>priority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Determines the relative importance of the normal tissue objective in relation to other optimization objectives. The value is positive.</p>
+</dd>
+    <dt><code>distanceFromTargetBorderInMM</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Determines the distance in millimeters from the target border where the evaluation of the normal tissue objective dose begins.</p>
+</dd>
+    <dt><code>startDosePercentage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Determines the relative dose level in the normal tissue objective at the target border,
+expressed in percentage of the upper objective for the target.
+The value is positive. 100% is specified as 100.</p>
+</dd>
+    <dt><code>endDosePercentage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Determines the relative dose level in the normal tissue objective in the area furthest from the target border.
+Expressed in percentage. The value is positive. 100% is specified as 100.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter.html">OptimizationNormalTissueParameter</a></dt>
+    <dd><p>The added parameter.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_RemoveObjective_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.RemoveObjective*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_RemoveObjective_VMS_TPS_Common_Model_API_OptimizationObjective_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.RemoveObjective(VMS.TPS.Common.Model.API.OptimizationObjective)">
+  RemoveObjective(OptimizationObjective)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Removes the specified optimization objective.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveObjective(OptimizationObjective objective)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objective</code> <a class="xref" href="VMS.TPS.Common.Model.API.OptimizationObjective.html">OptimizationObjective</a></dt>
+    <dd><p>The objective that is removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_RemoveParameter_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.RemoveParameter*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_RemoveParameter_VMS_TPS_Common_Model_API_OptimizationParameter_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.RemoveParameter(VMS.TPS.Common.Model.API.OptimizationParameter)">
+  RemoveParameter(OptimizationParameter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Removes the specified optimization parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveParameter(OptimizationParameter parameter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parameter</code> <a class="xref" href="VMS.TPS.Common.Model.API.OptimizationParameter.html">OptimizationParameter</a></dt>
+    <dd><p>The parameter that is removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_OptimizationSetup_WriteXml_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_OptimizationSetup_WriteXml_System_Xml_XmlWriter_" data-uid="VMS.TPS.Common.Model.API.OptimizationSetup.WriteXml(System.Xml.XmlWriter)">
+  WriteXml(XmlWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an object into its XML representation.
+For more information on how to serialize an object into an XML document, see <span class="xref">System.Xml.Serialization.XmlSerializer</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>The System.Xml.XmlWriter stream, to which the object is serialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

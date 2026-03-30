@@ -1,0 +1,161 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings
+  commentId: T:VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings
+  id: IDoseValueDisplaySettings
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings.Decimals(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  langs:
+  - csharp
+  - vb
+  name: IDoseValueDisplaySettings
+  nameWithType: IDoseValueDisplaySettings
+  fullName: VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings
+  type: Interface
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Application specific dose value display settings.
+  example: []
+  syntax:
+    content: public interface IDoseValueDisplaySettings
+    content.vb: Public Interface IDoseValueDisplaySettings
+- uid: VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings.Decimals(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  commentId: M:VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings.Decimals(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  id: Decimals(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  parent: VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings
+  langs:
+  - csharp
+  - vb
+  name: Decimals(DoseUnit)
+  nameWithType: IDoseValueDisplaySettings.Decimals(DoseValue.DoseUnit)
+  fullName: VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings.Decimals(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Determines how many decimals to use to display a dosevalue with specified unit.
+  example: []
+  syntax:
+    content: int Decimals(DoseValue.DoseUnit unit)
+    parameters:
+    - id: unit
+      type: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+      description: DoseUnit for which the number of decimals is requested.
+    return:
+      type: System.Int32
+      description: Number of decimals to use for the dose unit.
+    content.vb: Function Decimals(unit As DoseValue.DoseUnit) As Integer
+  overload: VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings.Decimals*
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings.Decimals*
+  commentId: Overload:VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings.Decimals
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings.html#VMS_TPS_Common_Model_Types_IDoseValueDisplaySettings_Decimals_VMS_TPS_Common_Model_Types_DoseValue_DoseUnit_
+  name: Decimals
+  nameWithType: IDoseValueDisplaySettings.Decimals
+  fullName: VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings.Decimals
+- uid: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+  commentId: T:VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html
+  name: DoseValue.DoseUnit
+  nameWithType: DoseValue.DoseUnit
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+    name: DoseUnit
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.html
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+    name: DoseUnit
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.html
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

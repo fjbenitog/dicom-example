@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RTPrescription | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RTPrescription | Example ">
+      
+      <meta name="description" content="Represents a prescription.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API.RTPrescription">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_API_RTPrescription" data-uid="VMS.TPS.Common.Model.API.RTPrescription" class="text-break">
+Class RTPrescription  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a prescription.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RTPrescription : ApiDataObject, IXmlSerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html">SerializableObject</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html">ApiDataObject</a></div>
+      <div><span class="xref">RTPrescription</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IXmlSerializable</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString">ApiDataObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_">ApiDataObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode">ApiDataObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Id">ApiDataObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Name">ApiDataObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Comment">ApiDataObject.Comment</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName">ApiDataObject.HistoryUserName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName">ApiDataObject.HistoryUserDisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime">ApiDataObject.HistoryDateTime</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema">SerializableObject.GetSchema()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_">SerializableObject.ReadXml(XmlReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_">SerializableObject.WriteXml(XmlWriter, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_">SerializableObject.WriteXml(XmlWriter, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__">SerializableObject.WriteXml&lt;T&gt;(XmlWriter, string, IEnumerable&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__">SerializableObject.WriteXml&lt;T1, T2&gt;(XmlWriter, string, IDictionary&lt;T1, T2&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_">SerializableObject.StartSerialization(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization">SerializableObject.EndSerialization()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory">SerializableObject.ClearSerializationHistory()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_BolusFrequency_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.BolusFrequency*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_BolusFrequency" data-uid="VMS.TPS.Common.Model.API.RTPrescription.BolusFrequency">
+  BolusFrequency
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Bolus frequency (how often the bolus is present in the field). For example, daily.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BolusFrequency { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_BolusThickness_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.BolusThickness*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_BolusThickness" data-uid="VMS.TPS.Common.Model.API.RTPrescription.BolusThickness">
+  BolusThickness
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Thickness of the bolus to be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BolusThickness { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_Energies_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.Energies*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_Energies" data-uid="VMS.TPS.Common.Model.API.RTPrescription.Energies">
+  Energies
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The energies in the prescription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; Energies { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_EnergyModes_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.EnergyModes*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_EnergyModes" data-uid="VMS.TPS.Common.Model.API.RTPrescription.EnergyModes">
+  EnergyModes
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The energy modes in the prescription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; EnergyModes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_Gating_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.Gating*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_Gating" data-uid="VMS.TPS.Common.Model.API.RTPrescription.Gating">
+  Gating
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gating information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Gating { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_LatestRevision_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.LatestRevision*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_LatestRevision" data-uid="VMS.TPS.Common.Model.API.RTPrescription.LatestRevision">
+  LatestRevision
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the latest revision of the current RT prescription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RTPrescription LatestRevision { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.RTPrescription.html">RTPrescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_Notes_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.Notes*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_Notes" data-uid="VMS.TPS.Common.Model.API.RTPrescription.Notes">
+  Notes
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Additional notes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Notes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_NumberOfFractions_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.NumberOfFractions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_NumberOfFractions" data-uid="VMS.TPS.Common.Model.API.RTPrescription.NumberOfFractions">
+  NumberOfFractions
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of fractions, optional.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? NumberOfFractions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_OrgansAtRisk_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.OrgansAtRisk*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_OrgansAtRisk" data-uid="VMS.TPS.Common.Model.API.RTPrescription.OrgansAtRisk">
+  OrgansAtRisk
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the organs at risk of the current RT prescription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RTPrescriptionOrganAtRisk&gt; OrgansAtRisk { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.RTPrescriptionOrganAtRisk.html">RTPrescriptionOrganAtRisk</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_PhaseType_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.PhaseType*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_PhaseType" data-uid="VMS.TPS.Common.Model.API.RTPrescription.PhaseType">
+  PhaseType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Type of the phase (primary/boost).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PhaseType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_PredecessorPrescription_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.PredecessorPrescription*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_PredecessorPrescription" data-uid="VMS.TPS.Common.Model.API.RTPrescription.PredecessorPrescription">
+  PredecessorPrescription
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the previous version of the RT prescription if it exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RTPrescription PredecessorPrescription { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.RTPrescription.html">RTPrescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_RevisionNumber_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.RevisionNumber*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_RevisionNumber" data-uid="VMS.TPS.Common.Model.API.RTPrescription.RevisionNumber">
+  RevisionNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Revision number of the prescription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RevisionNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_SimulationNeeded_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.SimulationNeeded*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_SimulationNeeded" data-uid="VMS.TPS.Common.Model.API.RTPrescription.SimulationNeeded">
+  SimulationNeeded
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if simulations need to be done before treatment planning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? SimulationNeeded { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_Site_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.Site*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_Site" data-uid="VMS.TPS.Common.Model.API.RTPrescription.Site">
+  Site
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The treatment site in the prescription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Site { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_Status_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.Status*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_Status" data-uid="VMS.TPS.Common.Model.API.RTPrescription.Status">
+  Status
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Prescription status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Status { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_TargetConstraintsWithoutTargetLevel_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.TargetConstraintsWithoutTargetLevel*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_TargetConstraintsWithoutTargetLevel" data-uid="VMS.TPS.Common.Model.API.RTPrescription.TargetConstraintsWithoutTargetLevel">
+  TargetConstraintsWithoutTargetLevel
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Coverage constraints for targets with no prescribed dose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RTPrescriptionTargetConstraints&gt; TargetConstraintsWithoutTargetLevel { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.RTPrescriptionTargetConstraints.html">RTPrescriptionTargetConstraints</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_Targets_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.Targets*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_Targets" data-uid="VMS.TPS.Common.Model.API.RTPrescription.Targets">
+  Targets
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the targets of the current prescription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;RTPrescriptionTarget&gt; Targets { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.RTPrescriptionTarget.html">RTPrescriptionTarget</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_Technique_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.Technique*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_Technique" data-uid="VMS.TPS.Common.Model.API.RTPrescription.Technique">
+  Technique
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Treatment technique to be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Technique { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_RTPrescription_WriteXml_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RTPrescription_WriteXml_System_Xml_XmlWriter_" data-uid="VMS.TPS.Common.Model.API.RTPrescription.WriteXml(System.Xml.XmlWriter)">
+  WriteXml(XmlWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an object into its XML representation.
+For more information on how to serialize an object into an XML document, see <span class="xref">System.Xml.Serialization.XmlSerializer</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>The System.Xml.XmlWriter stream, to which the object is serialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

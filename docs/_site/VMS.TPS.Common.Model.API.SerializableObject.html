@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SerializableObject | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SerializableObject | Example ">
+      
+      <meta name="description" content="Base class for objects that can be serialized.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API.SerializableObject">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_API_SerializableObject" data-uid="VMS.TPS.Common.Model.API.SerializableObject" class="text-break">
+Class SerializableObject  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Base class for objects that can be serialized.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SerializableObject : IXmlSerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SerializableObject</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IXmlSerializable</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html">ApiDataObject</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.Application.html">Application</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.BeamCalculationLog.html">BeamCalculationLog</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.Bolus.html">Bolus</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.CalculateBrachy3DDoseResult.html">CalculateBrachy3DDoseResult</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ControlPoint.html">ControlPoint</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ControlPointCollection.html">ControlPointCollection</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.DVHData.html">DVHData</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.DVHEstimationModelStructure.html">DVHEstimationModelStructure</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.DVHEstimationModelSummary.html">DVHEstimationModelSummary</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.IonControlPointCollection.html">IonControlPointCollection</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.IonSpot.html">IonSpot</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.IonSpotCollection.html">IonSpotCollection</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.IonSpotParameters.html">IonSpotParameters</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.IonSpotParametersCollection.html">IonSpotParametersCollection</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.Isodose.html">Isodose</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.LateralSpreadingDeviceSettings.html">LateralSpreadingDeviceSettings</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationObjective.html">OptimizationObjective</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationParameter.html">OptimizationParameter</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationSetup.html">OptimizationSetup</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.PatientSummary.html">PatientSummary</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ProtocolPhaseMeasure.html">ProtocolPhaseMeasure</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ProtocolPhasePrescription.html">ProtocolPhasePrescription</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.RTPrescriptionConstraint.html">RTPrescriptionConstraint</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.RTPrescriptionOrganAtRisk.html">RTPrescriptionOrganAtRisk</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.RTPrescriptionTargetConstraints.html">RTPrescriptionTargetConstraints</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.RangeModulatorSettings.html">RangeModulatorSettings</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.RangeShifterSettings.html">RangeShifterSettings</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.SearchBodyParameters.html">SearchBodyParameters</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.SegmentVolume.html">SegmentVolume</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.StructureCode.html">StructureCode</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.TreatmentUnitOperatingLimits.html">TreatmentUnitOperatingLimits</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.User.html">User</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_SerializableObject__ctor_" data-uid="VMS.TPS.Common.Model.API.SerializableObject.#ctor*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_SerializableObject__ctor" data-uid="VMS.TPS.Common.Model.API.SerializableObject.#ctor">
+  SerializableObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SerializableObject()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory_" data-uid="VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory" data-uid="VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory">
+  ClearSerializationHistory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This member is internal to the Eclipse Scripting API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearSerializationHistory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_SerializableObject_EndSerialization_" data-uid="VMS.TPS.Common.Model.API.SerializableObject.EndSerialization*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_SerializableObject_EndSerialization" data-uid="VMS.TPS.Common.Model.API.SerializableObject.EndSerialization">
+  EndSerialization()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Must be called at the end of serialization. Clear history records and type names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EndSerialization()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_SerializableObject_GetSchema_" data-uid="VMS.TPS.Common.Model.API.SerializableObject.GetSchema*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_SerializableObject_GetSchema" data-uid="VMS.TPS.Common.Model.API.SerializableObject.GetSchema">
+  GetSchema()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This member is internal to the Eclipse Scripting API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlSchema GetSchema()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">XmlSchema</span></dt>
+    <dd><p>XmlSchema</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_SerializableObject_ReadXml_" data-uid="VMS.TPS.Common.Model.API.SerializableObject.ReadXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_" data-uid="VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)">
+  ReadXml(XmlReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This member is internal to the Eclipse Scripting API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadXml(XmlReader reader)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reader</code> <span class="xref">XmlReader</span></dt>
+    <dd><p>XmlReader</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_" data-uid="VMS.TPS.Common.Model.API.SerializableObject.StartSerialization*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_" data-uid="VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)">
+  StartSerialization(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Must be called at the beginning of serialization</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void StartSerialization(string typeName, string typeId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>typeName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the type to serialize.</p>
+</dd>
+    <dt><code>typeId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Id of the object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_SerializableObject_WriteXml_" data-uid="VMS.TPS.Common.Model.API.SerializableObject.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_" data-uid="VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter)">
+  WriteXml(XmlWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes this object to the given XmlWriter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>XmlWriter where this object is serialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_SerializableObject_WriteXml_" data-uid="VMS.TPS.Common.Model.API.SerializableObject.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_" data-uid="VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)">
+  WriteXml(XmlWriter, string, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes everything except IEnumerable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void WriteXml(XmlWriter writer, string name, object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>XmlWriter</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name.</p>
+</dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_SerializableObject_WriteXml_" data-uid="VMS.TPS.Common.Model.API.SerializableObject.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_" data-uid="VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)">
+  WriteXml(XmlWriter, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void WriteXml(XmlWriter writer, string name, string obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>XmlWriter.</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name.</p>
+</dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>String.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Special case, because string is IEnumerable also.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_SerializableObject_WriteXml_" data-uid="VMS.TPS.Common.Model.API.SerializableObject.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__" data-uid="VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})">
+  WriteXml&lt;T&gt;(XmlWriter, string, IEnumerable&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes IEnumerable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void WriteXml&lt;T&gt;(XmlWriter writer, string name, IEnumerable&lt;T&gt; obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_SerializableObject_WriteXml_" data-uid="VMS.TPS.Common.Model.API.SerializableObject.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__" data-uid="VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})">
+  WriteXml&lt;T1, T2&gt;(XmlWriter, string, IDictionary&lt;T1, T2&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes IDictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void WriteXml&lt;T1, T2&gt;(XmlWriter writer, string name, IDictionary&lt;T1, T2&gt; obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;T1, T2&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

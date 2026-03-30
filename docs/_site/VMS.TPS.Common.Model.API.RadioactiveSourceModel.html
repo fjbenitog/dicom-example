@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RadioactiveSourceModel | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RadioactiveSourceModel | Example ">
+      
+      <meta name="description" content="The radioactive source model represents the details of the radioactive source used in brachytherapy. It encapsulates the source isotope, dimensions, and dose calculation parameters.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_API_RadioactiveSourceModel" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel" class="text-break">
+Class RadioactiveSourceModel  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The radioactive source model represents the details of the radioactive source used in brachytherapy. It encapsulates
+the source isotope, dimensions, and dose calculation parameters.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RadioactiveSourceModel : ApiDataObject, IXmlSerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html">SerializableObject</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html">ApiDataObject</a></div>
+      <div><span class="xref">RadioactiveSourceModel</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IXmlSerializable</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString">ApiDataObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_">ApiDataObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode">ApiDataObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Id">ApiDataObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Name">ApiDataObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Comment">ApiDataObject.Comment</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName">ApiDataObject.HistoryUserName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName">ApiDataObject.HistoryUserDisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime">ApiDataObject.HistoryDateTime</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema">SerializableObject.GetSchema()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_">SerializableObject.ReadXml(XmlReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_">SerializableObject.WriteXml(XmlWriter, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_">SerializableObject.WriteXml(XmlWriter, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__">SerializableObject.WriteXml&lt;T&gt;(XmlWriter, string, IEnumerable&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__">SerializableObject.WriteXml&lt;T1, T2&gt;(XmlWriter, string, IDictionary&lt;T1, T2&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_">SerializableObject.StartSerialization(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization">SerializableObject.EndSerialization()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory">SerializableObject.ClearSerializationHistory()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_ActiveSize_" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.ActiveSize*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_ActiveSize" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.ActiveSize">
+  ActiveSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The active size of the modeled radioactive source in x, y, and z dimensions in millimeters.
+x represents the source width, y represents the source height, and z the source length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VVector ActiveSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_ActivityConversionFactor_" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.ActivityConversionFactor*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_ActivityConversionFactor" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.ActivityConversionFactor">
+  ActivityConversionFactor
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The activity-kerma conversion factor is used for converting activity (in mCi) to air-kerma strength (in U = cGy cm^2 / h).
+The unit of the factor is [U / mCi].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ActivityConversionFactor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_CalculationModel_" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.CalculationModel*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_CalculationModel" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.CalculationModel">
+  CalculationModel
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The dose calculation type used with this source model. Possible values are &quot;Point source&quot; and &quot;Linear source&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CalculationModel { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_DoseRateConstant_" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.DoseRateConstant*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_DoseRateConstant" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.DoseRateConstant">
+  DoseRateConstant
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A conversion factor from the air-kerma strength to the dose rate in tissue. The unit of the dose rate constant is cGy / (h U).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double DoseRateConstant { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_HalfLife_" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.HalfLife*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_HalfLife" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.HalfLife">
+  HalfLife
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The half life of the isotope in seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double HalfLife { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_LiteratureReference_" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.LiteratureReference*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_LiteratureReference" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.LiteratureReference">
+  LiteratureReference
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The reference to the scientific publications on which the source model is based.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LiteratureReference { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_Manufacturer_" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.Manufacturer*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_Manufacturer" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.Manufacturer">
+  Manufacturer
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The manufacturer of the modeled radioactive source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Manufacturer { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_SourceType_" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.SourceType*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_SourceType" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.SourceType">
+  SourceType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The DICOM source type. Possible values are &quot;Point&quot;, &quot;Line&quot;, &quot;Cylinder&quot;, and &quot;Sphere&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SourceType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_Status_" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.Status*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_Status" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.Status">
+  Status
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The status of this source model. The status can be either &quot;Unapproved&quot;, &quot;Commissioning&quot;, &quot;Approved&quot;, or &quot;Retired&quot;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Status { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_StatusDate_" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.StatusDate*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_StatusDate" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.StatusDate">
+  StatusDate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The time when the status of the source model was set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? StatusDate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_StatusUserName_" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.StatusUserName*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_StatusUserName" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.StatusUserName">
+  StatusUserName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the user who last set the status of the source model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StatusUserName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_WriteXml_" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_RadioactiveSourceModel_WriteXml_System_Xml_XmlWriter_" data-uid="VMS.TPS.Common.Model.API.RadioactiveSourceModel.WriteXml(System.Xml.XmlWriter)">
+  WriteXml(XmlWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an object into its XML representation.
+For more information on how to serialize an object into an XML document, see <span class="xref">System.Xml.Serialization.XmlSerializer</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>The System.Xml.XmlWriter stream, to which the object is serialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

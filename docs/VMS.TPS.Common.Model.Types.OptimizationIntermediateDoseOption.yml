@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption
+  commentId: T:VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption
+  id: OptimizationIntermediateDoseOption
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption.NoIntermediateDose
+  - VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption.UseIntermediateDose
+  langs:
+  - csharp
+  - vb
+  name: OptimizationIntermediateDoseOption
+  nameWithType: OptimizationIntermediateDoseOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Options for using intermediate dose in optimization.
+  example: []
+  syntax:
+    content: public enum OptimizationIntermediateDoseOption
+    content.vb: Public Enum OptimizationIntermediateDoseOption
+- uid: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption.NoIntermediateDose
+  commentId: F:VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption.NoIntermediateDose
+  id: NoIntermediateDose
+  parent: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption
+  langs:
+  - csharp
+  - vb
+  name: NoIntermediateDose
+  nameWithType: OptimizationIntermediateDoseOption.NoIntermediateDose
+  fullName: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption.NoIntermediateDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: No intermediate dose for optimization.
+  example: []
+  syntax:
+    content: NoIntermediateDose = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption
+- uid: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption.UseIntermediateDose
+  commentId: F:VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption.UseIntermediateDose
+  id: UseIntermediateDose
+  parent: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption
+  langs:
+  - csharp
+  - vb
+  name: UseIntermediateDose
+  nameWithType: OptimizationIntermediateDoseOption.UseIntermediateDose
+  fullName: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption.UseIntermediateDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Use an intermediate dose in optimization.
+  example: []
+  syntax:
+    content: UseIntermediateDose = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption
+  commentId: T:VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption.html
+  name: OptimizationIntermediateDoseOption
+  nameWithType: OptimizationIntermediateDoseOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption

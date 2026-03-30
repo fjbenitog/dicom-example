@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+  commentId: T:VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+  id: DoseValue.DoseUnit
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.Gy
+  - VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.Percent
+  - VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.Unknown
+  - VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.cGy
+  langs:
+  - csharp
+  - vb
+  name: DoseValue.DoseUnit
+  nameWithType: DoseValue.DoseUnit
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The unit of the dose value.
+  example: []
+  syntax:
+    content: public enum DoseValue.DoseUnit
+    content.vb: Public Enum DoseValue.DoseUnit
+- uid: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.Unknown
+  commentId: F:VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.Unknown
+  id: Unknown
+  parent: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: DoseValue.DoseUnit.Unknown
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.Unknown
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Unknown unit.
+  example: []
+  syntax:
+    content: Unknown = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+- uid: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.Gy
+  commentId: F:VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.Gy
+  id: Gy
+  parent: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+  langs:
+  - csharp
+  - vb
+  name: Gy
+  nameWithType: DoseValue.DoseUnit.Gy
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.Gy
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Grays.
+  example: []
+  syntax:
+    content: Gy = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+- uid: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.cGy
+  commentId: F:VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.cGy
+  id: cGy
+  parent: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+  langs:
+  - csharp
+  - vb
+  name: cGy
+  nameWithType: DoseValue.DoseUnit.cGy
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.cGy
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Centigrays.
+  example: []
+  syntax:
+    content: cGy = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+- uid: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.Percent
+  commentId: F:VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.Percent
+  id: Percent
+  parent: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+  langs:
+  - csharp
+  - vb
+  name: Percent
+  nameWithType: DoseValue.DoseUnit.Percent
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.Percent
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Percent.
+  example: []
+  syntax:
+    content: Percent = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+  commentId: T:VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html
+  name: DoseValue.DoseUnit
+  nameWithType: DoseValue.DoseUnit
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+    name: DoseUnit
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.html
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+    name: DoseUnit
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.html

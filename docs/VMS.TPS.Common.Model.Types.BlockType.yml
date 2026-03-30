@@ -1,0 +1,135 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.BlockType
+  commentId: T:VMS.TPS.Common.Model.Types.BlockType
+  id: BlockType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.BlockType.APERTURE
+  - VMS.TPS.Common.Model.Types.BlockType.SHIELDING
+  langs:
+  - csharp
+  - vb
+  name: BlockType
+  nameWithType: BlockType
+  fullName: VMS.TPS.Common.Model.Types.BlockType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    A type flag that tells whether a block is an aperture block or a shielding
+
+    block. An aperture block is used to limit the radiated area while a
+
+    shielding block is made to protect a sensitive organ.
+  example: []
+  syntax:
+    content: public enum BlockType
+    content.vb: Public Enum BlockType
+- uid: VMS.TPS.Common.Model.Types.BlockType.APERTURE
+  commentId: F:VMS.TPS.Common.Model.Types.BlockType.APERTURE
+  id: APERTURE
+  parent: VMS.TPS.Common.Model.Types.BlockType
+  langs:
+  - csharp
+  - vb
+  name: APERTURE
+  nameWithType: BlockType.APERTURE
+  fullName: VMS.TPS.Common.Model.Types.BlockType.APERTURE
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: An aperture block is used to limit the irradiated area.
+  example: []
+  syntax:
+    content: APERTURE = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.BlockType
+- uid: VMS.TPS.Common.Model.Types.BlockType.SHIELDING
+  commentId: F:VMS.TPS.Common.Model.Types.BlockType.SHIELDING
+  id: SHIELDING
+  parent: VMS.TPS.Common.Model.Types.BlockType
+  langs:
+  - csharp
+  - vb
+  name: SHIELDING
+  nameWithType: BlockType.SHIELDING
+  fullName: VMS.TPS.Common.Model.Types.BlockType.SHIELDING
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: A shielding block is made to protect a sensitive organ.
+  example: []
+  syntax:
+    content: SHIELDING = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.BlockType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.BlockType
+  commentId: T:VMS.TPS.Common.Model.Types.BlockType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BlockType.html
+  name: BlockType
+  nameWithType: BlockType
+  fullName: VMS.TPS.Common.Model.Types.BlockType

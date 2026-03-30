@@ -5,8 +5,9 @@ using EvilDICOM.Network;
 using EvilDICOM.Network.DIMSE;
 using EvilDICOM.Network.DIMSE.IOD;
 
+using VMS.TPS.Common.Model.API;
 
-namespace DICOMExample
+namespace Javibenito.DICOM
 {
 
     public class Example
@@ -18,8 +19,11 @@ namespace DICOMExample
         private const string LocalAeTitle = "EVILSCU";
         private const int LocalPort = 11112;
 
+        VMS.TPS.Common.Model.API.ScriptContext
+
         public static void Main()
         {
+
             var localEntity = new Entity(LocalAeTitle, LocalHost, LocalPort);
             var remoteEntity = new Entity(RemoteAeTitle, RemoteHost, RemotePort);
             var scu = new DICOMSCU(localEntity)

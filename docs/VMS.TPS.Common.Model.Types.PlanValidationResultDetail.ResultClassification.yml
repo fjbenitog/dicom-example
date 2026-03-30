@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification
+  commentId: T:VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification
+  id: PlanValidationResultDetail.ResultClassification
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.ValidationError
+  - VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.ValidationInfo
+  - VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.ValidationWarning
+  langs:
+  - csharp
+  - vb
+  name: PlanValidationResultDetail.ResultClassification
+  nameWithType: PlanValidationResultDetail.ResultClassification
+  fullName: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Classification of plan validation detail.
+  example: []
+  syntax:
+    content: public enum PlanValidationResultDetail.ResultClassification
+    content.vb: Public Enum PlanValidationResultDetail.ResultClassification
+- uid: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.ValidationError
+  commentId: F:VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.ValidationError
+  id: ValidationError
+  parent: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification
+  langs:
+  - csharp
+  - vb
+  name: ValidationError
+  nameWithType: PlanValidationResultDetail.ResultClassification.ValidationError
+  fullName: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.ValidationError
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Validation error
+  example: []
+  syntax:
+    content: ValidationError = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification
+- uid: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.ValidationWarning
+  commentId: F:VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.ValidationWarning
+  id: ValidationWarning
+  parent: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification
+  langs:
+  - csharp
+  - vb
+  name: ValidationWarning
+  nameWithType: PlanValidationResultDetail.ResultClassification.ValidationWarning
+  fullName: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.ValidationWarning
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Validation warning
+  example: []
+  syntax:
+    content: ValidationWarning = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification
+- uid: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.ValidationInfo
+  commentId: F:VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.ValidationInfo
+  id: ValidationInfo
+  parent: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification
+  langs:
+  - csharp
+  - vb
+  name: ValidationInfo
+  nameWithType: PlanValidationResultDetail.ResultClassification.ValidationInfo
+  fullName: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.ValidationInfo
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Validation info
+  example: []
+  syntax:
+    content: ValidationInfo = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification
+  commentId: T:VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.html
+  name: PlanValidationResultDetail.ResultClassification
+  nameWithType: PlanValidationResultDetail.ResultClassification
+  fullName: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.Types.PlanValidationResultDetail
+    name: PlanValidationResultDetail
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification
+    name: ResultClassification
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.html
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.Types.PlanValidationResultDetail
+    name: PlanValidationResultDetail
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification
+    name: ResultClassification
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.html

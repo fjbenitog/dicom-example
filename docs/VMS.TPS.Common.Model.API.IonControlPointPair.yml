@@ -1,0 +1,662 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair
+  commentId: T:VMS.TPS.Common.Model.API.IonControlPointPair
+  id: IonControlPointPair
+  parent: VMS.TPS.Common.Model.API
+  children:
+  - VMS.TPS.Common.Model.API.IonControlPointPair.EndControlPoint
+  - VMS.TPS.Common.Model.API.IonControlPointPair.FinalSpotList
+  - VMS.TPS.Common.Model.API.IonControlPointPair.NominalBeamEnergy
+  - VMS.TPS.Common.Model.API.IonControlPointPair.RawSpotList
+  - VMS.TPS.Common.Model.API.IonControlPointPair.ResizeFinalSpotList(System.Int32)
+  - VMS.TPS.Common.Model.API.IonControlPointPair.ResizeRawSpotList(System.Int32)
+  - VMS.TPS.Common.Model.API.IonControlPointPair.StartControlPoint
+  - VMS.TPS.Common.Model.API.IonControlPointPair.StartIndex
+  langs:
+  - csharp
+  - vb
+  name: IonControlPointPair
+  nameWithType: IonControlPointPair
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    An editable copy of a control point pair (the pair of the start control
+
+    point with an even index, and the end control point with an odd index).
+  remarks: >-
+    To apply the parameters, call the <xref href="VMS.TPS.Common.Model.API.Beam.ApplyParameters(VMS.TPS.Common.Model.API.BeamParameters)?text=ApplyParameters" data-throw-if-not-resolved="false"></xref> method of the
+
+    IonBeam class. The parameters contained in this class are simply
+
+    copies, and they do not reflect the current state of the data model.
+  example: []
+  syntax:
+    content: public class IonControlPointPair
+    content.vb: Public Class IonControlPointPair
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair.ResizeFinalSpotList(System.Int32)
+  commentId: M:VMS.TPS.Common.Model.API.IonControlPointPair.ResizeFinalSpotList(System.Int32)
+  id: ResizeFinalSpotList(System.Int32)
+  parent: VMS.TPS.Common.Model.API.IonControlPointPair
+  langs:
+  - csharp
+  - vb
+  name: ResizeFinalSpotList(int)
+  nameWithType: IonControlPointPair.ResizeFinalSpotList(int)
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair.ResizeFinalSpotList(int)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Resizes the list of final spots.
+  example: []
+  syntax:
+    content: public void ResizeFinalSpotList(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: New length of the list.
+    content.vb: Public Sub ResizeFinalSpotList(count As Integer)
+  overload: VMS.TPS.Common.Model.API.IonControlPointPair.ResizeFinalSpotList*
+  nameWithType.vb: IonControlPointPair.ResizeFinalSpotList(Integer)
+  fullName.vb: VMS.TPS.Common.Model.API.IonControlPointPair.ResizeFinalSpotList(Integer)
+  name.vb: ResizeFinalSpotList(Integer)
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair.ResizeRawSpotList(System.Int32)
+  commentId: M:VMS.TPS.Common.Model.API.IonControlPointPair.ResizeRawSpotList(System.Int32)
+  id: ResizeRawSpotList(System.Int32)
+  parent: VMS.TPS.Common.Model.API.IonControlPointPair
+  langs:
+  - csharp
+  - vb
+  name: ResizeRawSpotList(int)
+  nameWithType: IonControlPointPair.ResizeRawSpotList(int)
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair.ResizeRawSpotList(int)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Resizes the list of raw spots.
+  example: []
+  syntax:
+    content: public void ResizeRawSpotList(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: New length of the list.
+    content.vb: Public Sub ResizeRawSpotList(count As Integer)
+  overload: VMS.TPS.Common.Model.API.IonControlPointPair.ResizeRawSpotList*
+  nameWithType.vb: IonControlPointPair.ResizeRawSpotList(Integer)
+  fullName.vb: VMS.TPS.Common.Model.API.IonControlPointPair.ResizeRawSpotList(Integer)
+  name.vb: ResizeRawSpotList(Integer)
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair.EndControlPoint
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPointPair.EndControlPoint
+  id: EndControlPoint
+  parent: VMS.TPS.Common.Model.API.IonControlPointPair
+  langs:
+  - csharp
+  - vb
+  name: EndControlPoint
+  nameWithType: IonControlPointPair.EndControlPoint
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair.EndControlPoint
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The end control point in the pair, with an odd index.
+  example: []
+  syntax:
+    content: public IonControlPointParameters EndControlPoint { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.IonControlPointParameters
+    content.vb: Public ReadOnly Property EndControlPoint As IonControlPointParameters
+  overload: VMS.TPS.Common.Model.API.IonControlPointPair.EndControlPoint*
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair.FinalSpotList
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPointPair.FinalSpotList
+  id: FinalSpotList
+  parent: VMS.TPS.Common.Model.API.IonControlPointPair
+  langs:
+  - csharp
+  - vb
+  name: FinalSpotList
+  nameWithType: IonControlPointPair.FinalSpotList
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair.FinalSpotList
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Gets a cached copy of the editable post-processed final spot list.
+  example: []
+  syntax:
+    content: public IonSpotParametersCollection FinalSpotList { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.IonSpotParametersCollection
+    content.vb: Public ReadOnly Property FinalSpotList As IonSpotParametersCollection
+  overload: VMS.TPS.Common.Model.API.IonControlPointPair.FinalSpotList*
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair.NominalBeamEnergy
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPointPair.NominalBeamEnergy
+  id: NominalBeamEnergy
+  parent: VMS.TPS.Common.Model.API.IonControlPointPair
+  langs:
+  - csharp
+  - vb
+  name: NominalBeamEnergy
+  nameWithType: IonControlPointPair.NominalBeamEnergy
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair.NominalBeamEnergy
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Nominal beam energy in megavolts.
+  example: []
+  syntax:
+    content: public double NominalBeamEnergy { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property NominalBeamEnergy As Double
+  overload: VMS.TPS.Common.Model.API.IonControlPointPair.NominalBeamEnergy*
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair.RawSpotList
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPointPair.RawSpotList
+  id: RawSpotList
+  parent: VMS.TPS.Common.Model.API.IonControlPointPair
+  langs:
+  - csharp
+  - vb
+  name: RawSpotList
+  nameWithType: IonControlPointPair.RawSpotList
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair.RawSpotList
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Gets a cached copy of the editable raw spot list
+  example: []
+  syntax:
+    content: public IonSpotParametersCollection RawSpotList { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.IonSpotParametersCollection
+    content.vb: Public ReadOnly Property RawSpotList As IonSpotParametersCollection
+  overload: VMS.TPS.Common.Model.API.IonControlPointPair.RawSpotList*
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair.StartControlPoint
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPointPair.StartControlPoint
+  id: StartControlPoint
+  parent: VMS.TPS.Common.Model.API.IonControlPointPair
+  langs:
+  - csharp
+  - vb
+  name: StartControlPoint
+  nameWithType: IonControlPointPair.StartControlPoint
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair.StartControlPoint
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Start control point in the pair, with an even index from zero.
+  example: []
+  syntax:
+    content: public IonControlPointParameters StartControlPoint { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.IonControlPointParameters
+    content.vb: Public ReadOnly Property StartControlPoint As IonControlPointParameters
+  overload: VMS.TPS.Common.Model.API.IonControlPointPair.StartControlPoint*
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair.StartIndex
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPointPair.StartIndex
+  id: StartIndex
+  parent: VMS.TPS.Common.Model.API.IonControlPointPair
+  langs:
+  - csharp
+  - vb
+  name: StartIndex
+  nameWithType: IonControlPointPair.StartIndex
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair.StartIndex
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    The index of the start control point in the pair. The index should be an even number
+
+    starting from zero.
+  example: []
+  syntax:
+    content: public int StartIndex { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property StartIndex As Integer
+  overload: VMS.TPS.Common.Model.API.IonControlPointPair.StartIndex*
+references:
+- uid: VMS.TPS.Common.Model.API.Beam.ApplyParameters(VMS.TPS.Common.Model.API.BeamParameters)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.ApplyParameters(VMS.TPS.Common.Model.API.BeamParameters)
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_ApplyParameters_VMS_TPS_Common_Model_API_BeamParameters_
+  name: ApplyParameters(BeamParameters)
+  nameWithType: Beam.ApplyParameters(BeamParameters)
+  fullName: VMS.TPS.Common.Model.API.Beam.ApplyParameters(VMS.TPS.Common.Model.API.BeamParameters)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.ApplyParameters(VMS.TPS.Common.Model.API.BeamParameters)
+    name: ApplyParameters
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_ApplyParameters_VMS_TPS_Common_Model_API_BeamParameters_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.BeamParameters
+    name: BeamParameters
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.BeamParameters.html
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.ApplyParameters(VMS.TPS.Common.Model.API.BeamParameters)
+    name: ApplyParameters
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_ApplyParameters_VMS_TPS_Common_Model_API_BeamParameters_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.BeamParameters
+    name: BeamParameters
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.BeamParameters.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair.ResizeFinalSpotList*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPointPair.ResizeFinalSpotList
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPointPair.html#VMS_TPS_Common_Model_API_IonControlPointPair_ResizeFinalSpotList_System_Int32_
+  name: ResizeFinalSpotList
+  nameWithType: IonControlPointPair.ResizeFinalSpotList
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair.ResizeFinalSpotList
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair.ResizeRawSpotList*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPointPair.ResizeRawSpotList
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPointPair.html#VMS_TPS_Common_Model_API_IonControlPointPair_ResizeRawSpotList_System_Int32_
+  name: ResizeRawSpotList
+  nameWithType: IonControlPointPair.ResizeRawSpotList
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair.ResizeRawSpotList
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair.EndControlPoint*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPointPair.EndControlPoint
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPointPair.html#VMS_TPS_Common_Model_API_IonControlPointPair_EndControlPoint
+  name: EndControlPoint
+  nameWithType: IonControlPointPair.EndControlPoint
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair.EndControlPoint
+- uid: VMS.TPS.Common.Model.API.IonControlPointParameters
+  commentId: T:VMS.TPS.Common.Model.API.IonControlPointParameters
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPointParameters.html
+  name: IonControlPointParameters
+  nameWithType: IonControlPointParameters
+  fullName: VMS.TPS.Common.Model.API.IonControlPointParameters
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair.FinalSpotList*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPointPair.FinalSpotList
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPointPair.html#VMS_TPS_Common_Model_API_IonControlPointPair_FinalSpotList
+  name: FinalSpotList
+  nameWithType: IonControlPointPair.FinalSpotList
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair.FinalSpotList
+- uid: VMS.TPS.Common.Model.API.IonSpotParametersCollection
+  commentId: T:VMS.TPS.Common.Model.API.IonSpotParametersCollection
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonSpotParametersCollection.html
+  name: IonSpotParametersCollection
+  nameWithType: IonSpotParametersCollection
+  fullName: VMS.TPS.Common.Model.API.IonSpotParametersCollection
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair.NominalBeamEnergy*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPointPair.NominalBeamEnergy
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPointPair.html#VMS_TPS_Common_Model_API_IonControlPointPair_NominalBeamEnergy
+  name: NominalBeamEnergy
+  nameWithType: IonControlPointPair.NominalBeamEnergy
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair.NominalBeamEnergy
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair.RawSpotList*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPointPair.RawSpotList
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPointPair.html#VMS_TPS_Common_Model_API_IonControlPointPair_RawSpotList
+  name: RawSpotList
+  nameWithType: IonControlPointPair.RawSpotList
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair.RawSpotList
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair.StartControlPoint*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPointPair.StartControlPoint
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPointPair.html#VMS_TPS_Common_Model_API_IonControlPointPair_StartControlPoint
+  name: StartControlPoint
+  nameWithType: IonControlPointPair.StartControlPoint
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair.StartControlPoint
+- uid: VMS.TPS.Common.Model.API.IonControlPointPair.StartIndex*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPointPair.StartIndex
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPointPair.html#VMS_TPS_Common_Model_API_IonControlPointPair_StartIndex
+  name: StartIndex
+  nameWithType: IonControlPointPair.StartIndex
+  fullName: VMS.TPS.Common.Model.API.IonControlPointPair.StartIndex

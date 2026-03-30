@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.GoalPriority
+  commentId: T:VMS.TPS.Common.Model.Types.GoalPriority
+  id: GoalPriority
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.GoalPriority.Important
+  - VMS.TPS.Common.Model.Types.GoalPriority.LessImportant
+  - VMS.TPS.Common.Model.Types.GoalPriority.MostImportant
+  - VMS.TPS.Common.Model.Types.GoalPriority.ReportValueOnly
+  - VMS.TPS.Common.Model.Types.GoalPriority.VeryImportant
+  langs:
+  - csharp
+  - vb
+  name: GoalPriority
+  nameWithType: GoalPriority
+  fullName: VMS.TPS.Common.Model.Types.GoalPriority
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Clinical Goal Priority
+  example: []
+  syntax:
+    content: public enum GoalPriority
+    content.vb: Public Enum GoalPriority
+- uid: VMS.TPS.Common.Model.Types.GoalPriority.MostImportant
+  commentId: F:VMS.TPS.Common.Model.Types.GoalPriority.MostImportant
+  id: MostImportant
+  parent: VMS.TPS.Common.Model.Types.GoalPriority
+  langs:
+  - csharp
+  - vb
+  name: MostImportant
+  nameWithType: GoalPriority.MostImportant
+  fullName: VMS.TPS.Common.Model.Types.GoalPriority.MostImportant
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Must Have
+  example: []
+  syntax:
+    content: MostImportant = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.GoalPriority
+- uid: VMS.TPS.Common.Model.Types.GoalPriority.VeryImportant
+  commentId: F:VMS.TPS.Common.Model.Types.GoalPriority.VeryImportant
+  id: VeryImportant
+  parent: VMS.TPS.Common.Model.Types.GoalPriority
+  langs:
+  - csharp
+  - vb
+  name: VeryImportant
+  nameWithType: GoalPriority.VeryImportant
+  fullName: VMS.TPS.Common.Model.Types.GoalPriority.VeryImportant
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Very Important
+  example: []
+  syntax:
+    content: VeryImportant = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.GoalPriority
+- uid: VMS.TPS.Common.Model.Types.GoalPriority.Important
+  commentId: F:VMS.TPS.Common.Model.Types.GoalPriority.Important
+  id: Important
+  parent: VMS.TPS.Common.Model.Types.GoalPriority
+  langs:
+  - csharp
+  - vb
+  name: Important
+  nameWithType: GoalPriority.Important
+  fullName: VMS.TPS.Common.Model.Types.GoalPriority.Important
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Important
+  example: []
+  syntax:
+    content: Important = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.GoalPriority
+- uid: VMS.TPS.Common.Model.Types.GoalPriority.LessImportant
+  commentId: F:VMS.TPS.Common.Model.Types.GoalPriority.LessImportant
+  id: LessImportant
+  parent: VMS.TPS.Common.Model.Types.GoalPriority
+  langs:
+  - csharp
+  - vb
+  name: LessImportant
+  nameWithType: GoalPriority.LessImportant
+  fullName: VMS.TPS.Common.Model.Types.GoalPriority.LessImportant
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Less Important
+  example: []
+  syntax:
+    content: LessImportant = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.GoalPriority
+- uid: VMS.TPS.Common.Model.Types.GoalPriority.ReportValueOnly
+  commentId: F:VMS.TPS.Common.Model.Types.GoalPriority.ReportValueOnly
+  id: ReportValueOnly
+  parent: VMS.TPS.Common.Model.Types.GoalPriority
+  langs:
+  - csharp
+  - vb
+  name: ReportValueOnly
+  nameWithType: GoalPriority.ReportValueOnly
+  fullName: VMS.TPS.Common.Model.Types.GoalPriority.ReportValueOnly
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: For reporting purpose
+  example: []
+  syntax:
+    content: ReportValueOnly = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.GoalPriority
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.GoalPriority
+  commentId: T:VMS.TPS.Common.Model.Types.GoalPriority
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.GoalPriority.html
+  name: GoalPriority
+  nameWithType: GoalPriority
+  fullName: VMS.TPS.Common.Model.Types.GoalPriority

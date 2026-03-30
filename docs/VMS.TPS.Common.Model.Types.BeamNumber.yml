@@ -1,0 +1,1197 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.BeamNumber
+  commentId: T:VMS.TPS.Common.Model.Types.BeamNumber
+  id: BeamNumber
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.BeamNumber.#ctor(System.Int32)
+  - VMS.TPS.Common.Model.Types.BeamNumber.#ctor(VMS.TPS.Common.Model.Types.BeamNumber)
+  - VMS.TPS.Common.Model.Types.BeamNumber.Equals(System.Object)
+  - VMS.TPS.Common.Model.Types.BeamNumber.Equals(VMS.TPS.Common.Model.Types.BeamNumber)
+  - VMS.TPS.Common.Model.Types.BeamNumber.GetHashCode
+  - VMS.TPS.Common.Model.Types.BeamNumber.GetSchema
+  - VMS.TPS.Common.Model.Types.BeamNumber.IsValid
+  - VMS.TPS.Common.Model.Types.BeamNumber.NotABeamNumber
+  - VMS.TPS.Common.Model.Types.BeamNumber.Number
+  - VMS.TPS.Common.Model.Types.BeamNumber.ReadXml(System.Xml.XmlReader)
+  - VMS.TPS.Common.Model.Types.BeamNumber.WriteXml(System.Xml.XmlWriter)
+  - VMS.TPS.Common.Model.Types.BeamNumber.op_Equality(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  - VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThan(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  - VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThanOrEqual(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  - VMS.TPS.Common.Model.Types.BeamNumber.op_Implicit(VMS.TPS.Common.Model.Types.BeamNumber)~System.Int32
+  - VMS.TPS.Common.Model.Types.BeamNumber.op_Inequality(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  - VMS.TPS.Common.Model.Types.BeamNumber.op_LessThan(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  - VMS.TPS.Common.Model.Types.BeamNumber.op_LessThanOrEqual(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  langs:
+  - csharp
+  - vb
+  name: BeamNumber
+  nameWithType: BeamNumber
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber
+  type: Struct
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Represents a unique identifier for a beam of a plan. The identifier is unique within the scope of the plan.
+  example: []
+  syntax:
+    content: 'public struct BeamNumber : IXmlSerializable, IEquatable<BeamNumber>'
+    content.vb: Public Structure BeamNumber Implements IXmlSerializable, IEquatable(Of BeamNumber)
+  implements:
+  - System.Xml.Serialization.IXmlSerializable
+  - System.IEquatable{VMS.TPS.Common.Model.Types.BeamNumber}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.NotABeamNumber
+  commentId: F:VMS.TPS.Common.Model.Types.BeamNumber.NotABeamNumber
+  id: NotABeamNumber
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: NotABeamNumber
+  nameWithType: BeamNumber.NotABeamNumber
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.NotABeamNumber
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Represents an undefined BeamNumber that does not have a corresponding beam.
+
+    The IsValid property of the Invalid BeamNumber always returns false.
+  example: []
+  syntax:
+    content: public static readonly BeamNumber NotABeamNumber
+    return:
+      type: VMS.TPS.Common.Model.Types.BeamNumber
+    content.vb: Public Shared ReadOnly NotABeamNumber As BeamNumber
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.#ctor(System.Int32)
+  commentId: M:VMS.TPS.Common.Model.Types.BeamNumber.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: BeamNumber(int)
+  nameWithType: BeamNumber.BeamNumber(int)
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.BeamNumber(int)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Constructs a new beam number from a numeric beam number.
+  example: []
+  syntax:
+    content: public BeamNumber(int number)
+    parameters:
+    - id: number
+      type: System.Int32
+      description: Make sure that the beam number corresponds to the real beam number, otherwise use NotABeamNumber.
+    content.vb: Public Sub New(number As Integer)
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.#ctor*
+  nameWithType.vb: BeamNumber.New(Integer)
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.New(Integer)
+  name.vb: New(Integer)
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.#ctor(VMS.TPS.Common.Model.Types.BeamNumber)
+  commentId: M:VMS.TPS.Common.Model.Types.BeamNumber.#ctor(VMS.TPS.Common.Model.Types.BeamNumber)
+  id: '#ctor(VMS.TPS.Common.Model.Types.BeamNumber)'
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: BeamNumber(BeamNumber)
+  nameWithType: BeamNumber.BeamNumber(BeamNumber)
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.BeamNumber(VMS.TPS.Common.Model.Types.BeamNumber)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Constructs a new beam number from another BeamNumber.
+  example: []
+  syntax:
+    content: public BeamNumber(BeamNumber other)
+    parameters:
+    - id: other
+      type: VMS.TPS.Common.Model.Types.BeamNumber
+      description: Another BeamNumber.
+    content.vb: Public Sub New(other As BeamNumber)
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.#ctor*
+  nameWithType.vb: BeamNumber.New(BeamNumber)
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.New(VMS.TPS.Common.Model.Types.BeamNumber)
+  name.vb: New(BeamNumber)
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.op_Equality(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  commentId: M:VMS.TPS.Common.Model.Types.BeamNumber.op_Equality(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  id: op_Equality(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: operator ==(BeamNumber, BeamNumber)
+  nameWithType: BeamNumber.operator ==(BeamNumber, BeamNumber)
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.operator ==(VMS.TPS.Common.Model.Types.BeamNumber, VMS.TPS.Common.Model.Types.BeamNumber)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Compares two beam numbers for equality.
+  example: []
+  syntax:
+    content: public static bool operator ==(BeamNumber a, BeamNumber b)
+    parameters:
+    - id: a
+      type: VMS.TPS.Common.Model.Types.BeamNumber
+      description: The first object to compare.
+    - id: b
+      type: VMS.TPS.Common.Model.Types.BeamNumber
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: True if a and b represent the same beam number. Otherwise, false.
+    content.vb: Public Shared Operator =(a As BeamNumber, b As BeamNumber) As Boolean
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.op_Equality*
+  nameWithType.vb: BeamNumber.=(BeamNumber, BeamNumber)
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.=(VMS.TPS.Common.Model.Types.BeamNumber, VMS.TPS.Common.Model.Types.BeamNumber)
+  name.vb: =(BeamNumber, BeamNumber)
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.op_Inequality(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  commentId: M:VMS.TPS.Common.Model.Types.BeamNumber.op_Inequality(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  id: op_Inequality(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: operator !=(BeamNumber, BeamNumber)
+  nameWithType: BeamNumber.operator !=(BeamNumber, BeamNumber)
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.operator !=(VMS.TPS.Common.Model.Types.BeamNumber, VMS.TPS.Common.Model.Types.BeamNumber)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Compares two BeamNumbers for inequality.
+  example: []
+  syntax:
+    content: public static bool operator !=(BeamNumber a, BeamNumber b)
+    parameters:
+    - id: a
+      type: VMS.TPS.Common.Model.Types.BeamNumber
+      description: The first object to compare.
+    - id: b
+      type: VMS.TPS.Common.Model.Types.BeamNumber
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: True if a and b represent a different beam number. Otherwise false.
+    content.vb: Public Shared Operator <>(a As BeamNumber, b As BeamNumber) As Boolean
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.op_Inequality*
+  nameWithType.vb: BeamNumber.<>(BeamNumber, BeamNumber)
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.<>(VMS.TPS.Common.Model.Types.BeamNumber, VMS.TPS.Common.Model.Types.BeamNumber)
+  name.vb: <>(BeamNumber, BeamNumber)
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThan(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  commentId: M:VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThan(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  id: op_GreaterThan(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: operator >(BeamNumber, BeamNumber)
+  nameWithType: BeamNumber.operator >(BeamNumber, BeamNumber)
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.operator >(VMS.TPS.Common.Model.Types.BeamNumber, VMS.TPS.Common.Model.Types.BeamNumber)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Compares two BeamNumbers, a and b, to determine if a is greater than b.
+  example: []
+  syntax:
+    content: public static bool operator >(BeamNumber a, BeamNumber b)
+    parameters:
+    - id: a
+      type: VMS.TPS.Common.Model.Types.BeamNumber
+      description: The first object to compare.
+    - id: b
+      type: VMS.TPS.Common.Model.Types.BeamNumber
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: True if a is greater than b. Otherwise false.
+    content.vb: Public Shared Operator >(a As BeamNumber, b As BeamNumber) As Boolean
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThan*
+  nameWithType.vb: BeamNumber.>(BeamNumber, BeamNumber)
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.>(VMS.TPS.Common.Model.Types.BeamNumber, VMS.TPS.Common.Model.Types.BeamNumber)
+  name.vb: '>(BeamNumber, BeamNumber)'
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.op_LessThan(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  commentId: M:VMS.TPS.Common.Model.Types.BeamNumber.op_LessThan(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  id: op_LessThan(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: operator <(BeamNumber, BeamNumber)
+  nameWithType: BeamNumber.operator <(BeamNumber, BeamNumber)
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.operator <(VMS.TPS.Common.Model.Types.BeamNumber, VMS.TPS.Common.Model.Types.BeamNumber)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Compares two BeamNumbers, a and b, to determine if a is smaller than b.
+  example: []
+  syntax:
+    content: public static bool operator <(BeamNumber a, BeamNumber b)
+    parameters:
+    - id: a
+      type: VMS.TPS.Common.Model.Types.BeamNumber
+      description: The first object to compare.
+    - id: b
+      type: VMS.TPS.Common.Model.Types.BeamNumber
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: True if a is smaller than b. Otherwise false.
+    content.vb: Public Shared Operator <(a As BeamNumber, b As BeamNumber) As Boolean
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.op_LessThan*
+  nameWithType.vb: BeamNumber.<(BeamNumber, BeamNumber)
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.<(VMS.TPS.Common.Model.Types.BeamNumber, VMS.TPS.Common.Model.Types.BeamNumber)
+  name.vb: <(BeamNumber, BeamNumber)
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThanOrEqual(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  commentId: M:VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThanOrEqual(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  id: op_GreaterThanOrEqual(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: operator >=(BeamNumber, BeamNumber)
+  nameWithType: BeamNumber.operator >=(BeamNumber, BeamNumber)
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.operator >=(VMS.TPS.Common.Model.Types.BeamNumber, VMS.TPS.Common.Model.Types.BeamNumber)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Compares two BeamNumbers, a and b, to determine if a is greater than or equal to b.
+  example: []
+  syntax:
+    content: public static bool operator >=(BeamNumber a, BeamNumber b)
+    parameters:
+    - id: a
+      type: VMS.TPS.Common.Model.Types.BeamNumber
+      description: The first object to compare.
+    - id: b
+      type: VMS.TPS.Common.Model.Types.BeamNumber
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: True if a is greater than or equal to b. Otherwise false.
+    content.vb: Public Shared Operator >=(a As BeamNumber, b As BeamNumber) As Boolean
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThanOrEqual*
+  nameWithType.vb: BeamNumber.>=(BeamNumber, BeamNumber)
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.>=(VMS.TPS.Common.Model.Types.BeamNumber, VMS.TPS.Common.Model.Types.BeamNumber)
+  name.vb: '>=(BeamNumber, BeamNumber)'
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.op_LessThanOrEqual(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  commentId: M:VMS.TPS.Common.Model.Types.BeamNumber.op_LessThanOrEqual(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  id: op_LessThanOrEqual(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: operator <=(BeamNumber, BeamNumber)
+  nameWithType: BeamNumber.operator <=(BeamNumber, BeamNumber)
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.operator <=(VMS.TPS.Common.Model.Types.BeamNumber, VMS.TPS.Common.Model.Types.BeamNumber)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Compares two BeamNumbers, a and b, to determine if a is smaller than or equal to b.
+  example: []
+  syntax:
+    content: public static bool operator <=(BeamNumber a, BeamNumber b)
+    parameters:
+    - id: a
+      type: VMS.TPS.Common.Model.Types.BeamNumber
+      description: The first object to compare.
+    - id: b
+      type: VMS.TPS.Common.Model.Types.BeamNumber
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: True if a is smaller than or equal to b. Otherwise false.
+    content.vb: Public Shared Operator <=(a As BeamNumber, b As BeamNumber) As Boolean
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.op_LessThanOrEqual*
+  nameWithType.vb: BeamNumber.<=(BeamNumber, BeamNumber)
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.<=(VMS.TPS.Common.Model.Types.BeamNumber, VMS.TPS.Common.Model.Types.BeamNumber)
+  name.vb: <=(BeamNumber, BeamNumber)
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.op_Implicit(VMS.TPS.Common.Model.Types.BeamNumber)~System.Int32
+  commentId: M:VMS.TPS.Common.Model.Types.BeamNumber.op_Implicit(VMS.TPS.Common.Model.Types.BeamNumber)~System.Int32
+  id: op_Implicit(VMS.TPS.Common.Model.Types.BeamNumber)~System.Int32
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: implicit operator int(BeamNumber)
+  nameWithType: BeamNumber.implicit operator int(BeamNumber)
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.implicit operator int(VMS.TPS.Common.Model.Types.BeamNumber)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Converts a BeamNumber to an int.
+  example: []
+  syntax:
+    content: public static implicit operator int(BeamNumber bn)
+    parameters:
+    - id: bn
+      type: VMS.TPS.Common.Model.Types.BeamNumber
+      description: The converted BeamNumber object.
+    return:
+      type: System.Int32
+      description: The beam number as an integer.
+    content.vb: Public Shared Widening Operator CType(bn As BeamNumber) As Integer
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.op_Implicit*
+  nameWithType.vb: BeamNumber.CType(BeamNumber)
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.CType(VMS.TPS.Common.Model.Types.BeamNumber)
+  name.vb: CType(BeamNumber)
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.GetHashCode
+  commentId: M:VMS.TPS.Common.Model.Types.BeamNumber.GetHashCode
+  id: GetHashCode
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: BeamNumber.GetHashCode()
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.GetHashCode()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Provides a hash code for the item, see <xref href="System.Object.GetHashCode?text=Object.GetHashCode()" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: The hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.GetHashCode*
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.Equals(System.Object)
+  commentId: M:VMS.TPS.Common.Model.Types.BeamNumber.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: BeamNumber.Equals(object)
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.Equals(object)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Determines whether the specified object is equal to the current object.
+  example: []
+  syntax:
+    content: public override bool Equals(object other)
+    parameters:
+    - id: other
+      type: System.Object
+      description: The other object to compare.
+    return:
+      type: System.Boolean
+      description: True if this object equals to the other object. Otherwise false.
+    content.vb: Public Overrides Function Equals(other As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.Equals*
+  nameWithType.vb: BeamNumber.Equals(Object)
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.Equals(Object)
+  name.vb: Equals(Object)
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.Equals(VMS.TPS.Common.Model.Types.BeamNumber)
+  commentId: M:VMS.TPS.Common.Model.Types.BeamNumber.Equals(VMS.TPS.Common.Model.Types.BeamNumber)
+  id: Equals(VMS.TPS.Common.Model.Types.BeamNumber)
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: Equals(BeamNumber)
+  nameWithType: BeamNumber.Equals(BeamNumber)
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.Equals(VMS.TPS.Common.Model.Types.BeamNumber)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(BeamNumber other)
+    parameters:
+    - id: other
+      type: VMS.TPS.Common.Model.Types.BeamNumber
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: True if the current object is equal to the other object. Otherwise, false.
+    content.vb: Public Function Equals(other As BeamNumber) As Boolean
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.Equals*
+  implements:
+  - System.IEquatable{VMS.TPS.Common.Model.Types.BeamNumber}.Equals(VMS.TPS.Common.Model.Types.BeamNumber)
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.GetSchema
+  commentId: M:VMS.TPS.Common.Model.Types.BeamNumber.GetSchema
+  id: GetSchema
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: GetSchema()
+  nameWithType: BeamNumber.GetSchema()
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.GetSchema()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: This member is internal to the Eclipse Scripting API.
+  example: []
+  syntax:
+    content: public XmlSchema GetSchema()
+    return:
+      type: System.Xml.Schema.XmlSchema
+      description: XmlSchema.
+    content.vb: Public Function GetSchema() As XmlSchema
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.GetSchema*
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.ReadXml(System.Xml.XmlReader)
+  commentId: M:VMS.TPS.Common.Model.Types.BeamNumber.ReadXml(System.Xml.XmlReader)
+  id: ReadXml(System.Xml.XmlReader)
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: ReadXml(XmlReader)
+  nameWithType: BeamNumber.ReadXml(XmlReader)
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.ReadXml(System.Xml.XmlReader)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: This member is internal to the Eclipse Scripting API.
+  example: []
+  syntax:
+    content: public void ReadXml(XmlReader reader)
+    parameters:
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The XmlReader stream from which the object is deserialized.
+    content.vb: Public Sub ReadXml(reader As XmlReader)
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.ReadXml*
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.Types.BeamNumber.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  nameWithType: BeamNumber.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Serialization support.
+  example: []
+  syntax:
+    content: public void WriteXml(XmlWriter writer)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The System.Xml.XmlWriter stream to which the object is serialized.
+    content.vb: Public Sub WriteXml(writer As XmlWriter)
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.WriteXml*
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.Number
+  commentId: P:VMS.TPS.Common.Model.Types.BeamNumber.Number
+  id: Number
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: Number
+  nameWithType: BeamNumber.Number
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.Number
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The beam number.
+  example: []
+  syntax:
+    content: public int Number { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Number As Integer
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.Number*
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.IsValid
+  commentId: P:VMS.TPS.Common.Model.Types.BeamNumber.IsValid
+  id: IsValid
+  parent: VMS.TPS.Common.Model.Types.BeamNumber
+  langs:
+  - csharp
+  - vb
+  name: IsValid
+  nameWithType: BeamNumber.IsValid
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.IsValid
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Returns true if the given BeamNumber is valid. Otherwise false.
+  example: []
+  syntax:
+    content: public bool IsValid { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsValid As Boolean
+  overload: VMS.TPS.Common.Model.Types.BeamNumber.IsValid*
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.Xml.Serialization.IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  nameWithType: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+- uid: System.IEquatable{VMS.TPS.Common.Model.Types.BeamNumber}
+  commentId: T:System.IEquatable{VMS.TPS.Common.Model.Types.BeamNumber}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<BeamNumber>
+  nameWithType: IEquatable<BeamNumber>
+  fullName: System.IEquatable<VMS.TPS.Common.Model.Types.BeamNumber>
+  nameWithType.vb: IEquatable(Of BeamNumber)
+  fullName.vb: System.IEquatable(Of VMS.TPS.Common.Model.Types.BeamNumber)
+  name.vb: IEquatable(Of BeamNumber)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.Types.BeamNumber
+    name: BeamNumber
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.BeamNumber.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.BeamNumber
+    name: BeamNumber
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.BeamNumber.html
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: VMS.TPS.Common.Model.Types.BeamNumber
+  commentId: T:VMS.TPS.Common.Model.Types.BeamNumber
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BeamNumber.html
+  name: BeamNumber
+  nameWithType: BeamNumber
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.Types.BeamNumber.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber__ctor_System_Int32_
+  name: BeamNumber
+  nameWithType: BeamNumber.BeamNumber
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.BeamNumber
+  nameWithType.vb: BeamNumber.New
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.op_Equality*
+  commentId: Overload:VMS.TPS.Common.Model.Types.BeamNumber.op_Equality
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_op_Equality_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_
+  name: operator ==
+  nameWithType: BeamNumber.operator ==
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.operator ==
+  nameWithType.vb: BeamNumber.=
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.BeamNumber.op_Equality*
+    name: ==
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_op_Equality_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.op_Inequality*
+  commentId: Overload:VMS.TPS.Common.Model.Types.BeamNumber.op_Inequality
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_op_Inequality_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_
+  name: operator !=
+  nameWithType: BeamNumber.operator !=
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.operator !=
+  nameWithType.vb: BeamNumber.<>
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.BeamNumber.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_op_Inequality_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThan*
+  commentId: Overload:VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThan
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_op_GreaterThan_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_
+  name: operator >
+  nameWithType: BeamNumber.operator >
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.operator >
+  nameWithType.vb: BeamNumber.>
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.>
+  name.vb: '>'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThan*
+    name: '>'
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_op_GreaterThan_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.op_LessThan*
+  commentId: Overload:VMS.TPS.Common.Model.Types.BeamNumber.op_LessThan
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_op_LessThan_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_
+  name: operator <
+  nameWithType: BeamNumber.operator <
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.operator <
+  nameWithType.vb: BeamNumber.<
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.<
+  name.vb: <
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.BeamNumber.op_LessThan*
+    name: <
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_op_LessThan_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThanOrEqual*
+  commentId: Overload:VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThanOrEqual
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_op_GreaterThanOrEqual_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_
+  name: operator >=
+  nameWithType: BeamNumber.operator >=
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.operator >=
+  nameWithType.vb: BeamNumber.>=
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.>=
+  name.vb: '>='
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThanOrEqual*
+    name: '>='
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_op_GreaterThanOrEqual_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.op_LessThanOrEqual*
+  commentId: Overload:VMS.TPS.Common.Model.Types.BeamNumber.op_LessThanOrEqual
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_op_LessThanOrEqual_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_
+  name: operator <=
+  nameWithType: BeamNumber.operator <=
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.operator <=
+  nameWithType.vb: BeamNumber.<=
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.<=
+  name.vb: <=
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.BeamNumber.op_LessThanOrEqual*
+    name: <=
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_op_LessThanOrEqual_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.op_Implicit*
+  commentId: Overload:VMS.TPS.Common.Model.Types.BeamNumber.op_Implicit
+  name: implicit operator
+  nameWithType: BeamNumber.implicit operator
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.implicit operator
+  nameWithType.vb: BeamNumber.CType
+  fullName.vb: VMS.TPS.Common.Model.Types.BeamNumber.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.GetHashCode*
+  commentId: Overload:VMS.TPS.Common.Model.Types.BeamNumber.GetHashCode
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_GetHashCode
+  name: GetHashCode
+  nameWithType: BeamNumber.GetHashCode
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.GetHashCode
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.Equals*
+  commentId: Overload:VMS.TPS.Common.Model.Types.BeamNumber.Equals
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_Equals_System_Object_
+  name: Equals
+  nameWithType: BeamNumber.Equals
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.Equals
+- uid: System.IEquatable{VMS.TPS.Common.Model.Types.BeamNumber}.Equals(VMS.TPS.Common.Model.Types.BeamNumber)
+  commentId: M:System.IEquatable{VMS.TPS.Common.Model.Types.BeamNumber}.Equals(VMS.TPS.Common.Model.Types.BeamNumber)
+  parent: System.IEquatable{VMS.TPS.Common.Model.Types.BeamNumber}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(BeamNumber)
+  nameWithType: IEquatable<BeamNumber>.Equals(BeamNumber)
+  fullName: System.IEquatable<VMS.TPS.Common.Model.Types.BeamNumber>.Equals(VMS.TPS.Common.Model.Types.BeamNumber)
+  nameWithType.vb: IEquatable(Of BeamNumber).Equals(BeamNumber)
+  fullName.vb: System.IEquatable(Of VMS.TPS.Common.Model.Types.BeamNumber).Equals(VMS.TPS.Common.Model.Types.BeamNumber)
+  spec.csharp:
+  - uid: System.IEquatable{VMS.TPS.Common.Model.Types.BeamNumber}.Equals(VMS.TPS.Common.Model.Types.BeamNumber)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.BeamNumber
+    name: BeamNumber
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.BeamNumber.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{VMS.TPS.Common.Model.Types.BeamNumber}.Equals(VMS.TPS.Common.Model.Types.BeamNumber)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.BeamNumber
+    name: BeamNumber
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.BeamNumber.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.GetSchema*
+  commentId: Overload:VMS.TPS.Common.Model.Types.BeamNumber.GetSchema
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_GetSchema
+  name: GetSchema
+  nameWithType: BeamNumber.GetSchema
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.GetSchema
+- uid: System.Xml.Schema.XmlSchema
+  isExternal: true
+  name: XmlSchema
+  nameWithType: XmlSchema
+  fullName: System.Xml.Schema.XmlSchema
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.ReadXml*
+  commentId: Overload:VMS.TPS.Common.Model.Types.BeamNumber.ReadXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_ReadXml_System_Xml_XmlReader_
+  name: ReadXml
+  nameWithType: BeamNumber.ReadXml
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.ReadXml
+- uid: System.Xml.XmlReader
+  isExternal: true
+  name: XmlReader
+  nameWithType: XmlReader
+  fullName: System.Xml.XmlReader
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.WriteXml*
+  commentId: Overload:VMS.TPS.Common.Model.Types.BeamNumber.WriteXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml
+  nameWithType: BeamNumber.WriteXml
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.WriteXml
+- uid: System.Xml.XmlWriter
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.Number*
+  commentId: Overload:VMS.TPS.Common.Model.Types.BeamNumber.Number
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_Number
+  name: Number
+  nameWithType: BeamNumber.Number
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.Number
+- uid: VMS.TPS.Common.Model.Types.BeamNumber.IsValid*
+  commentId: Overload:VMS.TPS.Common.Model.Types.BeamNumber.IsValid
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BeamNumber.html#VMS_TPS_Common_Model_Types_BeamNumber_IsValid
+  name: IsValid
+  nameWithType: BeamNumber.IsValid
+  fullName: VMS.TPS.Common.Model.Types.BeamNumber.IsValid

@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.IonBeamScanMode
+  commentId: T:VMS.TPS.Common.Model.Types.IonBeamScanMode
+  id: IonBeamScanMode
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.IonBeamScanMode.Line
+  - VMS.TPS.Common.Model.Types.IonBeamScanMode.Modulated
+  - VMS.TPS.Common.Model.Types.IonBeamScanMode.None
+  - VMS.TPS.Common.Model.Types.IonBeamScanMode.Uniform
+  - VMS.TPS.Common.Model.Types.IonBeamScanMode.Unknown
+  - VMS.TPS.Common.Model.Types.IonBeamScanMode.Wobbling
+  langs:
+  - csharp
+  - vb
+  name: IonBeamScanMode
+  nameWithType: IonBeamScanMode
+  fullName: VMS.TPS.Common.Model.Types.IonBeamScanMode
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The method of beam scanning to be used during treatment. Used with IonBeams.
+  example: []
+  syntax:
+    content: public enum IonBeamScanMode
+    content.vb: Public Enum IonBeamScanMode
+- uid: VMS.TPS.Common.Model.Types.IonBeamScanMode.None
+  commentId: F:VMS.TPS.Common.Model.Types.IonBeamScanMode.None
+  id: None
+  parent: VMS.TPS.Common.Model.Types.IonBeamScanMode
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: IonBeamScanMode.None
+  fullName: VMS.TPS.Common.Model.Types.IonBeamScanMode.None
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: No beam scanning is performed.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.IonBeamScanMode
+- uid: VMS.TPS.Common.Model.Types.IonBeamScanMode.Uniform
+  commentId: F:VMS.TPS.Common.Model.Types.IonBeamScanMode.Uniform
+  id: Uniform
+  parent: VMS.TPS.Common.Model.Types.IonBeamScanMode
+  langs:
+  - csharp
+  - vb
+  name: Uniform
+  nameWithType: IonBeamScanMode.Uniform
+  fullName: VMS.TPS.Common.Model.Types.IonBeamScanMode.Uniform
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The beam is scanned between control points to create a uniform lateral fluence distribution across the field.
+  example: []
+  syntax:
+    content: Uniform = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.IonBeamScanMode
+- uid: VMS.TPS.Common.Model.Types.IonBeamScanMode.Modulated
+  commentId: F:VMS.TPS.Common.Model.Types.IonBeamScanMode.Modulated
+  id: Modulated
+  parent: VMS.TPS.Common.Model.Types.IonBeamScanMode
+  langs:
+  - csharp
+  - vb
+  name: Modulated
+  nameWithType: IonBeamScanMode.Modulated
+  fullName: VMS.TPS.Common.Model.Types.IonBeamScanMode.Modulated
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The beam is scanned between control points to create a modulated lateral fluence distribution across the field.
+  example: []
+  syntax:
+    content: Modulated = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.IonBeamScanMode
+- uid: VMS.TPS.Common.Model.Types.IonBeamScanMode.Wobbling
+  commentId: F:VMS.TPS.Common.Model.Types.IonBeamScanMode.Wobbling
+  id: Wobbling
+  parent: VMS.TPS.Common.Model.Types.IonBeamScanMode
+  langs:
+  - csharp
+  - vb
+  name: Wobbling
+  nameWithType: IonBeamScanMode.Wobbling
+  fullName: VMS.TPS.Common.Model.Types.IonBeamScanMode.Wobbling
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Non-standard
+  example: []
+  syntax:
+    content: Wobbling = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.IonBeamScanMode
+- uid: VMS.TPS.Common.Model.Types.IonBeamScanMode.Line
+  commentId: F:VMS.TPS.Common.Model.Types.IonBeamScanMode.Line
+  id: Line
+  parent: VMS.TPS.Common.Model.Types.IonBeamScanMode
+  langs:
+  - csharp
+  - vb
+  name: Line
+  nameWithType: IonBeamScanMode.Line
+  fullName: VMS.TPS.Common.Model.Types.IonBeamScanMode.Line
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Non-standard
+  example: []
+  syntax:
+    content: Line = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.IonBeamScanMode
+- uid: VMS.TPS.Common.Model.Types.IonBeamScanMode.Unknown
+  commentId: F:VMS.TPS.Common.Model.Types.IonBeamScanMode.Unknown
+  id: Unknown
+  parent: VMS.TPS.Common.Model.Types.IonBeamScanMode
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: IonBeamScanMode.Unknown
+  fullName: VMS.TPS.Common.Model.Types.IonBeamScanMode.Unknown
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Scanning mode is not known
+  example: []
+  syntax:
+    content: Unknown = 999
+    return:
+      type: VMS.TPS.Common.Model.Types.IonBeamScanMode
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.IonBeamScanMode
+  commentId: T:VMS.TPS.Common.Model.Types.IonBeamScanMode
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.IonBeamScanMode.html
+  name: IonBeamScanMode
+  nameWithType: IonBeamScanMode
+  fullName: VMS.TPS.Common.Model.Types.IonBeamScanMode

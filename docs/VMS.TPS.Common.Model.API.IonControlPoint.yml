@@ -1,0 +1,1639 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.API.IonControlPoint
+  commentId: T:VMS.TPS.Common.Model.API.IonControlPoint
+  id: IonControlPoint
+  parent: VMS.TPS.Common.Model.API
+  children:
+  - VMS.TPS.Common.Model.API.IonControlPoint.FinalSpotList
+  - VMS.TPS.Common.Model.API.IonControlPoint.LateralSpreadingDeviceSettings
+  - VMS.TPS.Common.Model.API.IonControlPoint.NominalBeamEnergy
+  - VMS.TPS.Common.Model.API.IonControlPoint.NumberOfPaintings
+  - VMS.TPS.Common.Model.API.IonControlPoint.RangeModulatorSettings
+  - VMS.TPS.Common.Model.API.IonControlPoint.RangeShifterSettings
+  - VMS.TPS.Common.Model.API.IonControlPoint.RawSpotList
+  - VMS.TPS.Common.Model.API.IonControlPoint.ScanSpotTuneId
+  - VMS.TPS.Common.Model.API.IonControlPoint.ScanningSpotSizeX
+  - VMS.TPS.Common.Model.API.IonControlPoint.ScanningSpotSizeY
+  - VMS.TPS.Common.Model.API.IonControlPoint.SnoutPosition
+  - VMS.TPS.Common.Model.API.IonControlPoint.WriteXml(System.Xml.XmlWriter)
+  langs:
+  - csharp
+  - vb
+  name: IonControlPoint
+  nameWithType: IonControlPoint
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Proton control point interface.
+  example: []
+  syntax:
+    content: 'public class IonControlPoint : ControlPoint, IXmlSerializable'
+    content.vb: Public Class IonControlPoint Inherits ControlPoint Implements IXmlSerializable
+  inheritance:
+  - System.Object
+  - VMS.TPS.Common.Model.API.SerializableObject
+  - VMS.TPS.Common.Model.API.ControlPoint
+  implements:
+  - System.Xml.Serialization.IXmlSerializable
+  inheritedMembers:
+  - VMS.TPS.Common.Model.API.ControlPoint.Beam
+  - VMS.TPS.Common.Model.API.ControlPoint.CollimatorAngle
+  - VMS.TPS.Common.Model.API.ControlPoint.GantryAngle
+  - VMS.TPS.Common.Model.API.ControlPoint.Index
+  - VMS.TPS.Common.Model.API.ControlPoint.JawPositions
+  - VMS.TPS.Common.Model.API.ControlPoint.LeafPositions
+  - VMS.TPS.Common.Model.API.ControlPoint.MetersetWeight
+  - VMS.TPS.Common.Model.API.ControlPoint.PatientSupportAngle
+  - VMS.TPS.Common.Model.API.ControlPoint.TableTopLateralPosition
+  - VMS.TPS.Common.Model.API.ControlPoint.TableTopLongitudinalPosition
+  - VMS.TPS.Common.Model.API.ControlPoint.TableTopVerticalPosition
+  - VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  - VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  - VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  - VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.IonControlPoint.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.IonControlPoint
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  nameWithType: IonControlPoint.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Converts an object into its XML representation.
+
+    For more information on how to serialize an object into an XML document, see <xref href="System.Xml.Serialization.XmlSerializer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override void WriteXml(XmlWriter writer)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The System.Xml.XmlWriter stream, to which the object is serialized.
+    content.vb: Public Overrides Sub WriteXml(writer As XmlWriter)
+  overridden: VMS.TPS.Common.Model.API.ControlPoint.WriteXml(System.Xml.XmlWriter)
+  overload: VMS.TPS.Common.Model.API.IonControlPoint.WriteXml*
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.FinalSpotList
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPoint.FinalSpotList
+  id: FinalSpotList
+  parent: VMS.TPS.Common.Model.API.IonControlPoint
+  langs:
+  - csharp
+  - vb
+  name: FinalSpotList
+  nameWithType: IonControlPoint.FinalSpotList
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.FinalSpotList
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Gets a cached copy of the post-processed final spot list.
+  example: []
+  syntax:
+    content: public IonSpotCollection FinalSpotList { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.IonSpotCollection
+    content.vb: Public ReadOnly Property FinalSpotList As IonSpotCollection
+  overload: VMS.TPS.Common.Model.API.IonControlPoint.FinalSpotList*
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.LateralSpreadingDeviceSettings
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPoint.LateralSpreadingDeviceSettings
+  id: LateralSpreadingDeviceSettings
+  parent: VMS.TPS.Common.Model.API.IonControlPoint
+  langs:
+  - csharp
+  - vb
+  name: LateralSpreadingDeviceSettings
+  nameWithType: IonControlPoint.LateralSpreadingDeviceSettings
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.LateralSpreadingDeviceSettings
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The lateral spreading device settings.
+  example: []
+  syntax:
+    content: public IEnumerable<LateralSpreadingDeviceSettings> LateralSpreadingDeviceSettings { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.LateralSpreadingDeviceSettings}
+    content.vb: Public ReadOnly Property LateralSpreadingDeviceSettings As IEnumerable(Of LateralSpreadingDeviceSettings)
+  overload: VMS.TPS.Common.Model.API.IonControlPoint.LateralSpreadingDeviceSettings*
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.NominalBeamEnergy
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPoint.NominalBeamEnergy
+  id: NominalBeamEnergy
+  parent: VMS.TPS.Common.Model.API.IonControlPoint
+  langs:
+  - csharp
+  - vb
+  name: NominalBeamEnergy
+  nameWithType: IonControlPoint.NominalBeamEnergy
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.NominalBeamEnergy
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Nominal beam energy, in megavolts.
+  example: []
+  syntax:
+    content: public double NominalBeamEnergy { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property NominalBeamEnergy As Double
+  overload: VMS.TPS.Common.Model.API.IonControlPoint.NominalBeamEnergy*
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.NumberOfPaintings
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPoint.NumberOfPaintings
+  id: NumberOfPaintings
+  parent: VMS.TPS.Common.Model.API.IonControlPoint
+  langs:
+  - csharp
+  - vb
+  name: NumberOfPaintings
+  nameWithType: IonControlPoint.NumberOfPaintings
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.NumberOfPaintings
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The number of times the scan pattern shall be applied at the current control point.
+  example: []
+  syntax:
+    content: public int NumberOfPaintings { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property NumberOfPaintings As Integer
+  overload: VMS.TPS.Common.Model.API.IonControlPoint.NumberOfPaintings*
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.RangeModulatorSettings
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPoint.RangeModulatorSettings
+  id: RangeModulatorSettings
+  parent: VMS.TPS.Common.Model.API.IonControlPoint
+  langs:
+  - csharp
+  - vb
+  name: RangeModulatorSettings
+  nameWithType: IonControlPoint.RangeModulatorSettings
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.RangeModulatorSettings
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The range modulator settings.
+  example: []
+  syntax:
+    content: public IEnumerable<RangeModulatorSettings> RangeModulatorSettings { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.RangeModulatorSettings}
+    content.vb: Public ReadOnly Property RangeModulatorSettings As IEnumerable(Of RangeModulatorSettings)
+  overload: VMS.TPS.Common.Model.API.IonControlPoint.RangeModulatorSettings*
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.RangeShifterSettings
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPoint.RangeShifterSettings
+  id: RangeShifterSettings
+  parent: VMS.TPS.Common.Model.API.IonControlPoint
+  langs:
+  - csharp
+  - vb
+  name: RangeShifterSettings
+  nameWithType: IonControlPoint.RangeShifterSettings
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.RangeShifterSettings
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The range shifter settings.
+  example: []
+  syntax:
+    content: public IEnumerable<RangeShifterSettings> RangeShifterSettings { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.RangeShifterSettings}
+    content.vb: Public ReadOnly Property RangeShifterSettings As IEnumerable(Of RangeShifterSettings)
+  overload: VMS.TPS.Common.Model.API.IonControlPoint.RangeShifterSettings*
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.RawSpotList
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPoint.RawSpotList
+  id: RawSpotList
+  parent: VMS.TPS.Common.Model.API.IonControlPoint
+  langs:
+  - csharp
+  - vb
+  name: RawSpotList
+  nameWithType: IonControlPoint.RawSpotList
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.RawSpotList
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Gets a cached copy of the raw spot list.
+  example: []
+  syntax:
+    content: public IonSpotCollection RawSpotList { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.IonSpotCollection
+    content.vb: Public ReadOnly Property RawSpotList As IonSpotCollection
+  overload: VMS.TPS.Common.Model.API.IonControlPoint.RawSpotList*
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.ScanningSpotSizeX
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPoint.ScanningSpotSizeX
+  id: ScanningSpotSizeX
+  parent: VMS.TPS.Common.Model.API.IonControlPoint
+  langs:
+  - csharp
+  - vb
+  name: ScanningSpotSizeX
+  nameWithType: IonControlPoint.ScanningSpotSizeX
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.ScanningSpotSizeX
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The scanning spot size as calculated using the Full Width HalfMaximum (FWHM). The size is measured in air at isocenter in IEC GANTRY X direction (mm).
+  example: []
+  syntax:
+    content: public double ScanningSpotSizeX { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property ScanningSpotSizeX As Double
+  overload: VMS.TPS.Common.Model.API.IonControlPoint.ScanningSpotSizeX*
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.ScanningSpotSizeY
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPoint.ScanningSpotSizeY
+  id: ScanningSpotSizeY
+  parent: VMS.TPS.Common.Model.API.IonControlPoint
+  langs:
+  - csharp
+  - vb
+  name: ScanningSpotSizeY
+  nameWithType: IonControlPoint.ScanningSpotSizeY
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.ScanningSpotSizeY
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The scanning spot size as calculated using the Full Width HalfMaximum (FWHM). The size is measured in air at isocenter in IEC GANTRY Y direction (mm).
+  example: []
+  syntax:
+    content: public double ScanningSpotSizeY { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property ScanningSpotSizeY As Double
+  overload: VMS.TPS.Common.Model.API.IonControlPoint.ScanningSpotSizeY*
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.ScanSpotTuneId
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPoint.ScanSpotTuneId
+  id: ScanSpotTuneId
+  parent: VMS.TPS.Common.Model.API.IonControlPoint
+  langs:
+  - csharp
+  - vb
+  name: ScanSpotTuneId
+  nameWithType: IonControlPoint.ScanSpotTuneId
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.ScanSpotTuneId
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: User-supplied or machine code identifier for machine configuration to produce beam spot. This may be the nominal spot size or some other machine-specific value. Returns null if undefined.
+  example: []
+  syntax:
+    content: public string ScanSpotTuneId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ScanSpotTuneId As String
+  overload: VMS.TPS.Common.Model.API.IonControlPoint.ScanSpotTuneId*
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.SnoutPosition
+  commentId: P:VMS.TPS.Common.Model.API.IonControlPoint.SnoutPosition
+  id: SnoutPosition
+  parent: VMS.TPS.Common.Model.API.IonControlPoint
+  langs:
+  - csharp
+  - vb
+  name: SnoutPosition
+  nameWithType: IonControlPoint.SnoutPosition
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.SnoutPosition
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The snout position, in mm.
+  example: []
+  syntax:
+    content: public double SnoutPosition { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property SnoutPosition As Double
+  overload: VMS.TPS.Common.Model.API.IonControlPoint.SnoutPosition*
+references:
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: VMS.TPS.Common.Model.API.SerializableObject
+  commentId: T:VMS.TPS.Common.Model.API.SerializableObject
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: VMS.TPS.Common.Model.API.SerializableObject
+- uid: VMS.TPS.Common.Model.API.ControlPoint
+  commentId: T:VMS.TPS.Common.Model.API.ControlPoint
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ControlPoint.html
+  name: ControlPoint
+  nameWithType: ControlPoint
+  fullName: VMS.TPS.Common.Model.API.ControlPoint
+- uid: System.Xml.Serialization.IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  nameWithType: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+- uid: VMS.TPS.Common.Model.API.ControlPoint.Beam
+  commentId: P:VMS.TPS.Common.Model.API.ControlPoint.Beam
+  parent: VMS.TPS.Common.Model.API.ControlPoint
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ControlPoint.html#VMS_TPS_Common_Model_API_ControlPoint_Beam
+  name: Beam
+  nameWithType: ControlPoint.Beam
+  fullName: VMS.TPS.Common.Model.API.ControlPoint.Beam
+- uid: VMS.TPS.Common.Model.API.ControlPoint.CollimatorAngle
+  commentId: P:VMS.TPS.Common.Model.API.ControlPoint.CollimatorAngle
+  parent: VMS.TPS.Common.Model.API.ControlPoint
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ControlPoint.html#VMS_TPS_Common_Model_API_ControlPoint_CollimatorAngle
+  name: CollimatorAngle
+  nameWithType: ControlPoint.CollimatorAngle
+  fullName: VMS.TPS.Common.Model.API.ControlPoint.CollimatorAngle
+- uid: VMS.TPS.Common.Model.API.ControlPoint.GantryAngle
+  commentId: P:VMS.TPS.Common.Model.API.ControlPoint.GantryAngle
+  parent: VMS.TPS.Common.Model.API.ControlPoint
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ControlPoint.html#VMS_TPS_Common_Model_API_ControlPoint_GantryAngle
+  name: GantryAngle
+  nameWithType: ControlPoint.GantryAngle
+  fullName: VMS.TPS.Common.Model.API.ControlPoint.GantryAngle
+- uid: VMS.TPS.Common.Model.API.ControlPoint.Index
+  commentId: P:VMS.TPS.Common.Model.API.ControlPoint.Index
+  parent: VMS.TPS.Common.Model.API.ControlPoint
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ControlPoint.html#VMS_TPS_Common_Model_API_ControlPoint_Index
+  name: Index
+  nameWithType: ControlPoint.Index
+  fullName: VMS.TPS.Common.Model.API.ControlPoint.Index
+- uid: VMS.TPS.Common.Model.API.ControlPoint.JawPositions
+  commentId: P:VMS.TPS.Common.Model.API.ControlPoint.JawPositions
+  parent: VMS.TPS.Common.Model.API.ControlPoint
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ControlPoint.html#VMS_TPS_Common_Model_API_ControlPoint_JawPositions
+  name: JawPositions
+  nameWithType: ControlPoint.JawPositions
+  fullName: VMS.TPS.Common.Model.API.ControlPoint.JawPositions
+- uid: VMS.TPS.Common.Model.API.ControlPoint.LeafPositions
+  commentId: P:VMS.TPS.Common.Model.API.ControlPoint.LeafPositions
+  parent: VMS.TPS.Common.Model.API.ControlPoint
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ControlPoint.html#VMS_TPS_Common_Model_API_ControlPoint_LeafPositions
+  name: LeafPositions
+  nameWithType: ControlPoint.LeafPositions
+  fullName: VMS.TPS.Common.Model.API.ControlPoint.LeafPositions
+- uid: VMS.TPS.Common.Model.API.ControlPoint.MetersetWeight
+  commentId: P:VMS.TPS.Common.Model.API.ControlPoint.MetersetWeight
+  parent: VMS.TPS.Common.Model.API.ControlPoint
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ControlPoint.html#VMS_TPS_Common_Model_API_ControlPoint_MetersetWeight
+  name: MetersetWeight
+  nameWithType: ControlPoint.MetersetWeight
+  fullName: VMS.TPS.Common.Model.API.ControlPoint.MetersetWeight
+- uid: VMS.TPS.Common.Model.API.ControlPoint.PatientSupportAngle
+  commentId: P:VMS.TPS.Common.Model.API.ControlPoint.PatientSupportAngle
+  parent: VMS.TPS.Common.Model.API.ControlPoint
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ControlPoint.html#VMS_TPS_Common_Model_API_ControlPoint_PatientSupportAngle
+  name: PatientSupportAngle
+  nameWithType: ControlPoint.PatientSupportAngle
+  fullName: VMS.TPS.Common.Model.API.ControlPoint.PatientSupportAngle
+- uid: VMS.TPS.Common.Model.API.ControlPoint.TableTopLateralPosition
+  commentId: P:VMS.TPS.Common.Model.API.ControlPoint.TableTopLateralPosition
+  parent: VMS.TPS.Common.Model.API.ControlPoint
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ControlPoint.html#VMS_TPS_Common_Model_API_ControlPoint_TableTopLateralPosition
+  name: TableTopLateralPosition
+  nameWithType: ControlPoint.TableTopLateralPosition
+  fullName: VMS.TPS.Common.Model.API.ControlPoint.TableTopLateralPosition
+- uid: VMS.TPS.Common.Model.API.ControlPoint.TableTopLongitudinalPosition
+  commentId: P:VMS.TPS.Common.Model.API.ControlPoint.TableTopLongitudinalPosition
+  parent: VMS.TPS.Common.Model.API.ControlPoint
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ControlPoint.html#VMS_TPS_Common_Model_API_ControlPoint_TableTopLongitudinalPosition
+  name: TableTopLongitudinalPosition
+  nameWithType: ControlPoint.TableTopLongitudinalPosition
+  fullName: VMS.TPS.Common.Model.API.ControlPoint.TableTopLongitudinalPosition
+- uid: VMS.TPS.Common.Model.API.ControlPoint.TableTopVerticalPosition
+  commentId: P:VMS.TPS.Common.Model.API.ControlPoint.TableTopVerticalPosition
+  parent: VMS.TPS.Common.Model.API.ControlPoint
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ControlPoint.html#VMS_TPS_Common_Model_API_ControlPoint_TableTopVerticalPosition
+  name: TableTopVerticalPosition
+  nameWithType: ControlPoint.TableTopVerticalPosition
+  fullName: VMS.TPS.Common.Model.API.ControlPoint.TableTopVerticalPosition
+- uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  name: GetSchema()
+  nameWithType: SerializableObject.GetSchema()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.GetSchema()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  name: ReadXml(XmlReader)
+  nameWithType: SerializableObject.ReadXml(XmlReader)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  name: WriteXml(XmlWriter, string, object)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, object)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, object)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, Object)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, Object)
+  name.vb: WriteXml(XmlWriter, String, Object)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  name: WriteXml(XmlWriter, string, string)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, string)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, String)
+  name.vb: WriteXml(XmlWriter, String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  name: StartSerialization(string, string)
+  nameWithType: SerializableObject.StartSerialization(string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(string, string)
+  nameWithType.vb: SerializableObject.StartSerialization(String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(String, String)
+  name.vb: StartSerialization(String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  name: EndSerialization()
+  nameWithType: SerializableObject.EndSerialization()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  name: ClearSerializationHistory()
+  nameWithType: SerializableObject.ClearSerializationHistory()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: System.Xml.Serialization.XmlSerializer
+  commentId: T:System.Xml.Serialization.XmlSerializer
+  isExternal: true
+- uid: VMS.TPS.Common.Model.API.ControlPoint.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.ControlPoint.WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.ControlPoint
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ControlPoint.html#VMS_TPS_Common_Model_API_ControlPoint_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml(XmlWriter)
+  nameWithType: ControlPoint.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.ControlPoint.WriteXml(System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ControlPoint.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ControlPoint.html#VMS_TPS_Common_Model_API_ControlPoint_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ControlPoint.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ControlPoint.html#VMS_TPS_Common_Model_API_ControlPoint_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.WriteXml*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPoint.WriteXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPoint.html#VMS_TPS_Common_Model_API_IonControlPoint_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml
+  nameWithType: IonControlPoint.WriteXml
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.WriteXml
+- uid: System.Xml.XmlWriter
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.FinalSpotList*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPoint.FinalSpotList
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPoint.html#VMS_TPS_Common_Model_API_IonControlPoint_FinalSpotList
+  name: FinalSpotList
+  nameWithType: IonControlPoint.FinalSpotList
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.FinalSpotList
+- uid: VMS.TPS.Common.Model.API.IonSpotCollection
+  commentId: T:VMS.TPS.Common.Model.API.IonSpotCollection
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonSpotCollection.html
+  name: IonSpotCollection
+  nameWithType: IonSpotCollection
+  fullName: VMS.TPS.Common.Model.API.IonSpotCollection
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.LateralSpreadingDeviceSettings*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPoint.LateralSpreadingDeviceSettings
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPoint.html#VMS_TPS_Common_Model_API_IonControlPoint_LateralSpreadingDeviceSettings
+  name: LateralSpreadingDeviceSettings
+  nameWithType: IonControlPoint.LateralSpreadingDeviceSettings
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.LateralSpreadingDeviceSettings
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.LateralSpreadingDeviceSettings}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.LateralSpreadingDeviceSettings}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<LateralSpreadingDeviceSettings>
+  nameWithType: IEnumerable<LateralSpreadingDeviceSettings>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.LateralSpreadingDeviceSettings>
+  nameWithType.vb: IEnumerable(Of LateralSpreadingDeviceSettings)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.LateralSpreadingDeviceSettings)
+  name.vb: IEnumerable(Of LateralSpreadingDeviceSettings)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.LateralSpreadingDeviceSettings
+    name: LateralSpreadingDeviceSettings
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.LateralSpreadingDeviceSettings.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.LateralSpreadingDeviceSettings
+    name: LateralSpreadingDeviceSettings
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.LateralSpreadingDeviceSettings.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.NominalBeamEnergy*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPoint.NominalBeamEnergy
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPoint.html#VMS_TPS_Common_Model_API_IonControlPoint_NominalBeamEnergy
+  name: NominalBeamEnergy
+  nameWithType: IonControlPoint.NominalBeamEnergy
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.NominalBeamEnergy
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.NumberOfPaintings*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPoint.NumberOfPaintings
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPoint.html#VMS_TPS_Common_Model_API_IonControlPoint_NumberOfPaintings
+  name: NumberOfPaintings
+  nameWithType: IonControlPoint.NumberOfPaintings
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.NumberOfPaintings
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.RangeModulatorSettings*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPoint.RangeModulatorSettings
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPoint.html#VMS_TPS_Common_Model_API_IonControlPoint_RangeModulatorSettings
+  name: RangeModulatorSettings
+  nameWithType: IonControlPoint.RangeModulatorSettings
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.RangeModulatorSettings
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.RangeModulatorSettings}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.RangeModulatorSettings}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<RangeModulatorSettings>
+  nameWithType: IEnumerable<RangeModulatorSettings>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.RangeModulatorSettings>
+  nameWithType.vb: IEnumerable(Of RangeModulatorSettings)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.RangeModulatorSettings)
+  name.vb: IEnumerable(Of RangeModulatorSettings)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.RangeModulatorSettings
+    name: RangeModulatorSettings
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.RangeModulatorSettings.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.RangeModulatorSettings
+    name: RangeModulatorSettings
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.RangeModulatorSettings.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.RangeShifterSettings*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPoint.RangeShifterSettings
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPoint.html#VMS_TPS_Common_Model_API_IonControlPoint_RangeShifterSettings
+  name: RangeShifterSettings
+  nameWithType: IonControlPoint.RangeShifterSettings
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.RangeShifterSettings
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.RangeShifterSettings}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.RangeShifterSettings}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<RangeShifterSettings>
+  nameWithType: IEnumerable<RangeShifterSettings>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.RangeShifterSettings>
+  nameWithType.vb: IEnumerable(Of RangeShifterSettings)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.RangeShifterSettings)
+  name.vb: IEnumerable(Of RangeShifterSettings)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.RangeShifterSettings
+    name: RangeShifterSettings
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.RangeShifterSettings.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.RangeShifterSettings
+    name: RangeShifterSettings
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.RangeShifterSettings.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.RawSpotList*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPoint.RawSpotList
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPoint.html#VMS_TPS_Common_Model_API_IonControlPoint_RawSpotList
+  name: RawSpotList
+  nameWithType: IonControlPoint.RawSpotList
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.RawSpotList
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.ScanningSpotSizeX*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPoint.ScanningSpotSizeX
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPoint.html#VMS_TPS_Common_Model_API_IonControlPoint_ScanningSpotSizeX
+  name: ScanningSpotSizeX
+  nameWithType: IonControlPoint.ScanningSpotSizeX
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.ScanningSpotSizeX
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.ScanningSpotSizeY*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPoint.ScanningSpotSizeY
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPoint.html#VMS_TPS_Common_Model_API_IonControlPoint_ScanningSpotSizeY
+  name: ScanningSpotSizeY
+  nameWithType: IonControlPoint.ScanningSpotSizeY
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.ScanningSpotSizeY
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.ScanSpotTuneId*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPoint.ScanSpotTuneId
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPoint.html#VMS_TPS_Common_Model_API_IonControlPoint_ScanSpotTuneId
+  name: ScanSpotTuneId
+  nameWithType: IonControlPoint.ScanSpotTuneId
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.ScanSpotTuneId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: VMS.TPS.Common.Model.API.IonControlPoint.SnoutPosition*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonControlPoint.SnoutPosition
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPoint.html#VMS_TPS_Common_Model_API_IonControlPoint_SnoutPosition
+  name: SnoutPosition
+  nameWithType: IonControlPoint.SnoutPosition
+  fullName: VMS.TPS.Common.Model.API.IonControlPoint.SnoutPosition

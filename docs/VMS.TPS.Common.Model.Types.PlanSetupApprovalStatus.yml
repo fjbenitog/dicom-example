@@ -1,0 +1,331 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+  commentId: T:VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+  id: PlanSetupApprovalStatus
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Completed
+  - VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.CompletedEarly
+  - VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.ExternallyApproved
+  - VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.PlanningApproved
+  - VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Rejected
+  - VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Retired
+  - VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Reviewed
+  - VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.TreatmentApproved
+  - VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.UnApproved
+  - VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.UnPlannedTreatment
+  - VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Unknown
+  langs:
+  - csharp
+  - vb
+  name: PlanSetupApprovalStatus
+  nameWithType: PlanSetupApprovalStatus
+  fullName: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The enumeration of plan approval statuses.
+  example: []
+  syntax:
+    content: public enum PlanSetupApprovalStatus
+    content.vb: Public Enum PlanSetupApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Rejected
+  commentId: F:VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Rejected
+  id: Rejected
+  parent: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Rejected
+  nameWithType: PlanSetupApprovalStatus.Rejected
+  fullName: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Rejected
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Rejected for actual use in treatment, unlocked in the database.
+  example: []
+  syntax:
+    content: Rejected = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.UnApproved
+  commentId: F:VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.UnApproved
+  id: UnApproved
+  parent: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: UnApproved
+  nameWithType: PlanSetupApprovalStatus.UnApproved
+  fullName: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.UnApproved
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Unapproved, unlocked in the database.
+  example: []
+  syntax:
+    content: UnApproved = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Reviewed
+  commentId: F:VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Reviewed
+  id: Reviewed
+  parent: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Reviewed
+  nameWithType: PlanSetupApprovalStatus.Reviewed
+  fullName: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Reviewed
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Has typically been initially verified, but still requires further approvals,
+
+    locked in the database.
+  example: []
+  syntax:
+    content: Reviewed = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.PlanningApproved
+  commentId: F:VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.PlanningApproved
+  id: PlanningApproved
+  parent: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: PlanningApproved
+  nameWithType: PlanSetupApprovalStatus.PlanningApproved
+  fullName: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.PlanningApproved
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Intended to be used for the treatment of a patient, locked in the database.
+
+    Must be scheduled and given the Treatment Approval status to use it for the actual patient treatment.
+  example: []
+  syntax:
+    content: PlanningApproved = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.TreatmentApproved
+  commentId: F:VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.TreatmentApproved
+  id: TreatmentApproved
+  parent: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: TreatmentApproved
+  nameWithType: PlanSetupApprovalStatus.TreatmentApproved
+  fullName: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.TreatmentApproved
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Intended to be used for the treatment of a patient, limited changes are allowed.
+  example: []
+  syntax:
+    content: TreatmentApproved = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.CompletedEarly
+  commentId: F:VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.CompletedEarly
+  id: CompletedEarly
+  parent: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: CompletedEarly
+  nameWithType: PlanSetupApprovalStatus.CompletedEarly
+  fullName: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.CompletedEarly
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Completed early status.
+  example: []
+  syntax:
+    content: CompletedEarly = 5
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Completed
+  commentId: F:VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Completed
+  id: Completed
+  parent: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Completed
+  nameWithType: PlanSetupApprovalStatus.Completed
+  fullName: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Completed
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Completed status.
+  example: []
+  syntax:
+    content: Completed = 6
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Retired
+  commentId: F:VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Retired
+  id: Retired
+  parent: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Retired
+  nameWithType: PlanSetupApprovalStatus.Retired
+  fullName: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Retired
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    The original plan is set to the Retired state when a revision is created. 
+
+    No changes are possible to Retired plans.
+  example: []
+  syntax:
+    content: Retired = 7
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.UnPlannedTreatment
+  commentId: F:VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.UnPlannedTreatment
+  id: UnPlannedTreatment
+  parent: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: UnPlannedTreatment
+  nameWithType: PlanSetupApprovalStatus.UnPlannedTreatment
+  fullName: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.UnPlannedTreatment
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Unplanned treatment status.
+  example: []
+  syntax:
+    content: UnPlannedTreatment = 8
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.ExternallyApproved
+  commentId: F:VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.ExternallyApproved
+  id: ExternallyApproved
+  parent: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: ExternallyApproved
+  nameWithType: PlanSetupApprovalStatus.ExternallyApproved
+  fullName: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.ExternallyApproved
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Refers to an imported plan that has the approval status in its DICOM data.
+
+    Locked in the database, and managed in the same way as Planning Approved plans.
+  example: []
+  syntax:
+    content: ExternallyApproved = 9
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Unknown
+  commentId: F:VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Unknown
+  id: Unknown
+  parent: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: PlanSetupApprovalStatus.Unknown
+  fullName: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.Unknown
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Unknown status.
+  example: []
+  syntax:
+    content: Unknown = 999
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+  commentId: T:VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.html
+  name: PlanSetupApprovalStatus
+  nameWithType: PlanSetupApprovalStatus
+  fullName: VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus

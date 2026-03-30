@@ -1,0 +1,698 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.Objective
+  commentId: T:VMS.TPS.Common.Model.Types.Objective
+  id: Objective
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.Objective.#ctor(VMS.TPS.Common.Model.Types.ObjectiveGoalType,System.Double,VMS.TPS.Common.Model.Types.ObjectiveUnit,VMS.TPS.Common.Model.Types.ObjectiveOperator,System.Double,VMS.TPS.Common.Model.Types.ObjectiveUnit)
+  - VMS.TPS.Common.Model.Types.Objective.GetSchema
+  - VMS.TPS.Common.Model.Types.Objective.Limit
+  - VMS.TPS.Common.Model.Types.Objective.LimitUnit
+  - VMS.TPS.Common.Model.Types.Objective.Operator
+  - VMS.TPS.Common.Model.Types.Objective.ReadXml(System.Xml.XmlReader)
+  - VMS.TPS.Common.Model.Types.Objective.Type
+  - VMS.TPS.Common.Model.Types.Objective.Value
+  - VMS.TPS.Common.Model.Types.Objective.ValueUnit
+  - VMS.TPS.Common.Model.Types.Objective.WriteXml(System.Xml.XmlWriter)
+  langs:
+  - csharp
+  - vb
+  name: Objective
+  nameWithType: Objective
+  fullName: VMS.TPS.Common.Model.Types.Objective
+  type: Struct
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Represents a clinical goal objective.
+  example: []
+  syntax:
+    content: 'public struct Objective : IXmlSerializable'
+    content.vb: Public Structure Objective Implements IXmlSerializable
+  implements:
+  - System.Xml.Serialization.IXmlSerializable
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.Types.Objective.#ctor(VMS.TPS.Common.Model.Types.ObjectiveGoalType,System.Double,VMS.TPS.Common.Model.Types.ObjectiveUnit,VMS.TPS.Common.Model.Types.ObjectiveOperator,System.Double,VMS.TPS.Common.Model.Types.ObjectiveUnit)
+  commentId: M:VMS.TPS.Common.Model.Types.Objective.#ctor(VMS.TPS.Common.Model.Types.ObjectiveGoalType,System.Double,VMS.TPS.Common.Model.Types.ObjectiveUnit,VMS.TPS.Common.Model.Types.ObjectiveOperator,System.Double,VMS.TPS.Common.Model.Types.ObjectiveUnit)
+  id: '#ctor(VMS.TPS.Common.Model.Types.ObjectiveGoalType,System.Double,VMS.TPS.Common.Model.Types.ObjectiveUnit,VMS.TPS.Common.Model.Types.ObjectiveOperator,System.Double,VMS.TPS.Common.Model.Types.ObjectiveUnit)'
+  parent: VMS.TPS.Common.Model.Types.Objective
+  langs:
+  - csharp
+  - vb
+  name: Objective(ObjectiveGoalType, double, ObjectiveUnit, ObjectiveOperator, double, ObjectiveUnit)
+  nameWithType: Objective.Objective(ObjectiveGoalType, double, ObjectiveUnit, ObjectiveOperator, double, ObjectiveUnit)
+  fullName: VMS.TPS.Common.Model.Types.Objective.Objective(VMS.TPS.Common.Model.Types.ObjectiveGoalType, double, VMS.TPS.Common.Model.Types.ObjectiveUnit, VMS.TPS.Common.Model.Types.ObjectiveOperator, double, VMS.TPS.Common.Model.Types.ObjectiveUnit)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Clinical Goal Objective constructor
+  example: []
+  syntax:
+    content: public Objective(ObjectiveGoalType type, double value, ObjectiveUnit valueUnit, ObjectiveOperator oper, double limit, ObjectiveUnit limitUnit)
+    parameters:
+    - id: type
+      type: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+      description: Objective type.
+    - id: value
+      type: System.Double
+      description: Objective value.
+    - id: valueUnit
+      type: VMS.TPS.Common.Model.Types.ObjectiveUnit
+      description: Value unit.
+    - id: oper
+      type: VMS.TPS.Common.Model.Types.ObjectiveOperator
+      description: Operator.
+    - id: limit
+      type: System.Double
+      description: Limit.
+    - id: limitUnit
+      type: VMS.TPS.Common.Model.Types.ObjectiveUnit
+      description: Limit unit.
+    content.vb: Public Sub New(type As ObjectiveGoalType, value As Double, valueUnit As ObjectiveUnit, oper As ObjectiveOperator, limit As Double, limitUnit As ObjectiveUnit)
+  overload: VMS.TPS.Common.Model.Types.Objective.#ctor*
+  nameWithType.vb: Objective.New(ObjectiveGoalType, Double, ObjectiveUnit, ObjectiveOperator, Double, ObjectiveUnit)
+  fullName.vb: VMS.TPS.Common.Model.Types.Objective.New(VMS.TPS.Common.Model.Types.ObjectiveGoalType, Double, VMS.TPS.Common.Model.Types.ObjectiveUnit, VMS.TPS.Common.Model.Types.ObjectiveOperator, Double, VMS.TPS.Common.Model.Types.ObjectiveUnit)
+  name.vb: New(ObjectiveGoalType, Double, ObjectiveUnit, ObjectiveOperator, Double, ObjectiveUnit)
+- uid: VMS.TPS.Common.Model.Types.Objective.GetSchema
+  commentId: M:VMS.TPS.Common.Model.Types.Objective.GetSchema
+  id: GetSchema
+  parent: VMS.TPS.Common.Model.Types.Objective
+  langs:
+  - csharp
+  - vb
+  name: GetSchema()
+  nameWithType: Objective.GetSchema()
+  fullName: VMS.TPS.Common.Model.Types.Objective.GetSchema()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: This member is internal to the Eclipse Scripting API.
+  example: []
+  syntax:
+    content: public XmlSchema GetSchema()
+    return:
+      type: System.Xml.Schema.XmlSchema
+      description: XmlSchema.
+    content.vb: Public Function GetSchema() As XmlSchema
+  overload: VMS.TPS.Common.Model.Types.Objective.GetSchema*
+- uid: VMS.TPS.Common.Model.Types.Objective.ReadXml(System.Xml.XmlReader)
+  commentId: M:VMS.TPS.Common.Model.Types.Objective.ReadXml(System.Xml.XmlReader)
+  id: ReadXml(System.Xml.XmlReader)
+  parent: VMS.TPS.Common.Model.Types.Objective
+  langs:
+  - csharp
+  - vb
+  name: ReadXml(XmlReader)
+  nameWithType: Objective.ReadXml(XmlReader)
+  fullName: VMS.TPS.Common.Model.Types.Objective.ReadXml(System.Xml.XmlReader)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: This member is internal to the Eclipse Scripting API.
+  example: []
+  syntax:
+    content: public void ReadXml(XmlReader reader)
+    parameters:
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader.
+    content.vb: Public Sub ReadXml(reader As XmlReader)
+  overload: VMS.TPS.Common.Model.Types.Objective.ReadXml*
+- uid: VMS.TPS.Common.Model.Types.Objective.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.Types.Objective.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.Types.Objective
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  nameWithType: Objective.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.Types.Objective.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Serialization support. 
+
+    TODO: Convert unit and operator to human form.
+  example: []
+  syntax:
+    content: public void WriteXml(XmlWriter writer)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The System.Xml.XmlWriter stream to which the object is serialized.
+    content.vb: Public Sub WriteXml(writer As XmlWriter)
+  overload: VMS.TPS.Common.Model.Types.Objective.WriteXml*
+- uid: VMS.TPS.Common.Model.Types.Objective.Type
+  commentId: P:VMS.TPS.Common.Model.Types.Objective.Type
+  id: Type
+  parent: VMS.TPS.Common.Model.Types.Objective
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Objective.Type
+  fullName: VMS.TPS.Common.Model.Types.Objective.Type
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Objective type
+  example: []
+  syntax:
+    content: public ObjectiveGoalType Type { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+    content.vb: Public ReadOnly Property Type As ObjectiveGoalType
+  overload: VMS.TPS.Common.Model.Types.Objective.Type*
+- uid: VMS.TPS.Common.Model.Types.Objective.Value
+  commentId: P:VMS.TPS.Common.Model.Types.Objective.Value
+  id: Value
+  parent: VMS.TPS.Common.Model.Types.Objective
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: Objective.Value
+  fullName: VMS.TPS.Common.Model.Types.Objective.Value
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Objective value
+  example: []
+  syntax:
+    content: public double Value { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Value As Double
+  overload: VMS.TPS.Common.Model.Types.Objective.Value*
+- uid: VMS.TPS.Common.Model.Types.Objective.ValueUnit
+  commentId: P:VMS.TPS.Common.Model.Types.Objective.ValueUnit
+  id: ValueUnit
+  parent: VMS.TPS.Common.Model.Types.Objective
+  langs:
+  - csharp
+  - vb
+  name: ValueUnit
+  nameWithType: Objective.ValueUnit
+  fullName: VMS.TPS.Common.Model.Types.Objective.ValueUnit
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Objective value
+  example: []
+  syntax:
+    content: public ObjectiveUnit ValueUnit { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveUnit
+    content.vb: Public ReadOnly Property ValueUnit As ObjectiveUnit
+  overload: VMS.TPS.Common.Model.Types.Objective.ValueUnit*
+- uid: VMS.TPS.Common.Model.Types.Objective.Operator
+  commentId: P:VMS.TPS.Common.Model.Types.Objective.Operator
+  id: Operator
+  parent: VMS.TPS.Common.Model.Types.Objective
+  langs:
+  - csharp
+  - vb
+  name: Operator
+  nameWithType: Objective.Operator
+  fullName: VMS.TPS.Common.Model.Types.Objective.Operator
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Objective operator
+  example: []
+  syntax:
+    content: public ObjectiveOperator Operator { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveOperator
+    content.vb: Public ReadOnly Property [Operator] As ObjectiveOperator
+  overload: VMS.TPS.Common.Model.Types.Objective.Operator*
+- uid: VMS.TPS.Common.Model.Types.Objective.Limit
+  commentId: P:VMS.TPS.Common.Model.Types.Objective.Limit
+  id: Limit
+  parent: VMS.TPS.Common.Model.Types.Objective
+  langs:
+  - csharp
+  - vb
+  name: Limit
+  nameWithType: Objective.Limit
+  fullName: VMS.TPS.Common.Model.Types.Objective.Limit
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Objective limit
+  example: []
+  syntax:
+    content: public double Limit { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Limit As Double
+  overload: VMS.TPS.Common.Model.Types.Objective.Limit*
+- uid: VMS.TPS.Common.Model.Types.Objective.LimitUnit
+  commentId: P:VMS.TPS.Common.Model.Types.Objective.LimitUnit
+  id: LimitUnit
+  parent: VMS.TPS.Common.Model.Types.Objective
+  langs:
+  - csharp
+  - vb
+  name: LimitUnit
+  nameWithType: Objective.LimitUnit
+  fullName: VMS.TPS.Common.Model.Types.Objective.LimitUnit
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Objective limit unit
+  example: []
+  syntax:
+    content: public ObjectiveUnit LimitUnit { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveUnit
+    content.vb: Public ReadOnly Property LimitUnit As ObjectiveUnit
+  overload: VMS.TPS.Common.Model.Types.Objective.LimitUnit*
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.Xml.Serialization.IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  nameWithType: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.Types.Objective.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Objective.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Objective.html#VMS_TPS_Common_Model_Types_Objective__ctor_VMS_TPS_Common_Model_Types_ObjectiveGoalType_System_Double_VMS_TPS_Common_Model_Types_ObjectiveUnit_VMS_TPS_Common_Model_Types_ObjectiveOperator_System_Double_VMS_TPS_Common_Model_Types_ObjectiveUnit_
+  name: Objective
+  nameWithType: Objective.Objective
+  fullName: VMS.TPS.Common.Model.Types.Objective.Objective
+  nameWithType.vb: Objective.New
+  fullName.vb: VMS.TPS.Common.Model.Types.Objective.New
+  name.vb: New
+- uid: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+  commentId: T:VMS.TPS.Common.Model.Types.ObjectiveGoalType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ObjectiveGoalType.html
+  name: ObjectiveGoalType
+  nameWithType: ObjectiveGoalType
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: VMS.TPS.Common.Model.Types.ObjectiveUnit
+  commentId: T:VMS.TPS.Common.Model.Types.ObjectiveUnit
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ObjectiveUnit.html
+  name: ObjectiveUnit
+  nameWithType: ObjectiveUnit
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveUnit
+- uid: VMS.TPS.Common.Model.Types.ObjectiveOperator
+  commentId: T:VMS.TPS.Common.Model.Types.ObjectiveOperator
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ObjectiveOperator.html
+  name: ObjectiveOperator
+  nameWithType: ObjectiveOperator
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveOperator
+- uid: VMS.TPS.Common.Model.Types.Objective.GetSchema*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Objective.GetSchema
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Objective.html#VMS_TPS_Common_Model_Types_Objective_GetSchema
+  name: GetSchema
+  nameWithType: Objective.GetSchema
+  fullName: VMS.TPS.Common.Model.Types.Objective.GetSchema
+- uid: System.Xml.Schema.XmlSchema
+  isExternal: true
+  name: XmlSchema
+  nameWithType: XmlSchema
+  fullName: System.Xml.Schema.XmlSchema
+- uid: VMS.TPS.Common.Model.Types.Objective.ReadXml*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Objective.ReadXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Objective.html#VMS_TPS_Common_Model_Types_Objective_ReadXml_System_Xml_XmlReader_
+  name: ReadXml
+  nameWithType: Objective.ReadXml
+  fullName: VMS.TPS.Common.Model.Types.Objective.ReadXml
+- uid: System.Xml.XmlReader
+  isExternal: true
+  name: XmlReader
+  nameWithType: XmlReader
+  fullName: System.Xml.XmlReader
+- uid: VMS.TPS.Common.Model.Types.Objective.WriteXml*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Objective.WriteXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Objective.html#VMS_TPS_Common_Model_Types_Objective_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml
+  nameWithType: Objective.WriteXml
+  fullName: VMS.TPS.Common.Model.Types.Objective.WriteXml
+- uid: System.Xml.XmlWriter
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: VMS.TPS.Common.Model.Types.Objective.Type*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Objective.Type
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Objective.html#VMS_TPS_Common_Model_Types_Objective_Type
+  name: Type
+  nameWithType: Objective.Type
+  fullName: VMS.TPS.Common.Model.Types.Objective.Type
+- uid: VMS.TPS.Common.Model.Types.Objective.Value*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Objective.Value
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Objective.html#VMS_TPS_Common_Model_Types_Objective_Value
+  name: Value
+  nameWithType: Objective.Value
+  fullName: VMS.TPS.Common.Model.Types.Objective.Value
+- uid: VMS.TPS.Common.Model.Types.Objective.ValueUnit*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Objective.ValueUnit
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Objective.html#VMS_TPS_Common_Model_Types_Objective_ValueUnit
+  name: ValueUnit
+  nameWithType: Objective.ValueUnit
+  fullName: VMS.TPS.Common.Model.Types.Objective.ValueUnit
+- uid: VMS.TPS.Common.Model.Types.Objective.Operator*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Objective.Operator
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Objective.html#VMS_TPS_Common_Model_Types_Objective_Operator
+  name: Operator
+  nameWithType: Objective.Operator
+  fullName: VMS.TPS.Common.Model.Types.Objective.Operator
+- uid: VMS.TPS.Common.Model.Types.Objective.Limit*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Objective.Limit
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Objective.html#VMS_TPS_Common_Model_Types_Objective_Limit
+  name: Limit
+  nameWithType: Objective.Limit
+  fullName: VMS.TPS.Common.Model.Types.Objective.Limit
+- uid: VMS.TPS.Common.Model.Types.Objective.LimitUnit*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Objective.LimitUnit
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Objective.html#VMS_TPS_Common_Model_Types_Objective_LimitUnit
+  name: LimitUnit
+  nameWithType: Objective.LimitUnit
+  fullName: VMS.TPS.Common.Model.Types.Objective.LimitUnit

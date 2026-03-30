@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Image | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Image | Example ">
+      
+      <meta name="description" content="Represents a 2D or 3D image, which can be a DRR, a CT, MR, or other volumetric dataset.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API.Image">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_API_Image" data-uid="VMS.TPS.Common.Model.API.Image" class="text-break">
+Class Image  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a 2D or 3D image, which can be a DRR, a CT, MR, or other volumetric dataset.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Image : ApiDataObject, IXmlSerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html">SerializableObject</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html">ApiDataObject</a></div>
+      <div><span class="xref">Image</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IXmlSerializable</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString">ApiDataObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_">ApiDataObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode">ApiDataObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Name">ApiDataObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Comment">ApiDataObject.Comment</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName">ApiDataObject.HistoryUserName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName">ApiDataObject.HistoryUserDisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime">ApiDataObject.HistoryDateTime</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema">SerializableObject.GetSchema()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_">SerializableObject.ReadXml(XmlReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_">SerializableObject.WriteXml(XmlWriter, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_">SerializableObject.WriteXml(XmlWriter, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__">SerializableObject.WriteXml&lt;T&gt;(XmlWriter, string, IEnumerable&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__">SerializableObject.WriteXml&lt;T1, T2&gt;(XmlWriter, string, IDictionary&lt;T1, T2&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_">SerializableObject.StartSerialization(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization">SerializableObject.EndSerialization()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory">SerializableObject.ClearSerializationHistory()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_ApprovalHistory_" data-uid="VMS.TPS.Common.Model.API.Image.ApprovalHistory*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_ApprovalHistory" data-uid="VMS.TPS.Common.Model.API.Image.ApprovalHistory">
+  ApprovalHistory
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the approval history of the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ImageApprovalHistoryEntry&gt; ApprovalHistory { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.html">ImageApprovalHistoryEntry</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_CalibrationProtocolDateTime_" data-uid="VMS.TPS.Common.Model.API.Image.CalibrationProtocolDateTime*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_CalibrationProtocolDateTime" data-uid="VMS.TPS.Common.Model.API.Image.CalibrationProtocolDateTime">
+  CalibrationProtocolDateTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Date the calibration protocol was selected for the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? CalibrationProtocolDateTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_CalibrationProtocolDescription_" data-uid="VMS.TPS.Common.Model.API.Image.CalibrationProtocolDescription*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_CalibrationProtocolDescription" data-uid="VMS.TPS.Common.Model.API.Image.CalibrationProtocolDescription">
+  CalibrationProtocolDescription
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Description of the calibration protocol selected for the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CalibrationProtocolDescription { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_CalibrationProtocolId_" data-uid="VMS.TPS.Common.Model.API.Image.CalibrationProtocolId*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_CalibrationProtocolId" data-uid="VMS.TPS.Common.Model.API.Image.CalibrationProtocolId">
+  CalibrationProtocolId
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Identification of the calibration protocol selected for the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CalibrationProtocolId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_CalibrationProtocolImageMatchWarning_" data-uid="VMS.TPS.Common.Model.API.Image.CalibrationProtocolImageMatchWarning*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_CalibrationProtocolImageMatchWarning" data-uid="VMS.TPS.Common.Model.API.Image.CalibrationProtocolImageMatchWarning">
+  CalibrationProtocolImageMatchWarning
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Localized warning message if the calibration protocol does not
+match with the image. If all matches empty string is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CalibrationProtocolImageMatchWarning { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_CalibrationProtocolLastModifiedDateTime_" data-uid="VMS.TPS.Common.Model.API.Image.CalibrationProtocolLastModifiedDateTime*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_CalibrationProtocolLastModifiedDateTime" data-uid="VMS.TPS.Common.Model.API.Image.CalibrationProtocolLastModifiedDateTime">
+  CalibrationProtocolLastModifiedDateTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When the calibration protocol was last modified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? CalibrationProtocolLastModifiedDateTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_CalibrationProtocolStatus_" data-uid="VMS.TPS.Common.Model.API.Image.CalibrationProtocolStatus*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_CalibrationProtocolStatus" data-uid="VMS.TPS.Common.Model.API.Image.CalibrationProtocolStatus">
+  CalibrationProtocolStatus
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Status of the calibration protocol selected for the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalibrationProtocolStatus CalibrationProtocolStatus { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CalibrationProtocolStatus</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_CalibrationProtocolUser_" data-uid="VMS.TPS.Common.Model.API.Image.CalibrationProtocolUser*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_CalibrationProtocolUser" data-uid="VMS.TPS.Common.Model.API.Image.CalibrationProtocolUser">
+  CalibrationProtocolUser
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>User selecting the calibration protocol for the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserInfo CalibrationProtocolUser { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UserInfo</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_ContrastBolusAgentIngredientName_" data-uid="VMS.TPS.Common.Model.API.Image.ContrastBolusAgentIngredientName*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_ContrastBolusAgentIngredientName" data-uid="VMS.TPS.Common.Model.API.Image.ContrastBolusAgentIngredientName">
+  ContrastBolusAgentIngredientName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the contrast bolus agent ingredient that is used in the image. If the value has not been specified, returns null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContrastBolusAgentIngredientName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_CreationDateTime_" data-uid="VMS.TPS.Common.Model.API.Image.CreationDateTime*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_CreationDateTime" data-uid="VMS.TPS.Common.Model.API.Image.CreationDateTime">
+  CreationDateTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The date when this object was created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? CreationDateTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_DisplayUnit_" data-uid="VMS.TPS.Common.Model.API.Image.DisplayUnit*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_DisplayUnit" data-uid="VMS.TPS.Common.Model.API.Image.DisplayUnit">
+  DisplayUnit
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the display unit in which the voxels of the image are shown in the user interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DisplayUnit { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_FOR_" data-uid="VMS.TPS.Common.Model.API.Image.FOR*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_FOR" data-uid="VMS.TPS.Common.Model.API.Image.FOR">
+  FOR
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The UID of the frame of reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_HasUserOrigin_" data-uid="VMS.TPS.Common.Model.API.Image.HasUserOrigin*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_HasUserOrigin" data-uid="VMS.TPS.Common.Model.API.Image.HasUserOrigin">
+  HasUserOrigin
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines if a user origin has been specified for the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasUserOrigin { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_Id_" data-uid="VMS.TPS.Common.Model.API.Image.Id*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_Id" data-uid="VMS.TPS.Common.Model.API.Image.Id">
+  Id
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license] The identifier of the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_ImageType_" data-uid="VMS.TPS.Common.Model.API.Image.ImageType*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_ImageType" data-uid="VMS.TPS.Common.Model.API.Image.ImageType">
+  ImageType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of the image as indicated in the properties of the image slices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ImageType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_ImagingDeviceId_" data-uid="VMS.TPS.Common.Model.API.Image.ImagingDeviceId*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_ImagingDeviceId" data-uid="VMS.TPS.Common.Model.API.Image.ImagingDeviceId">
+  ImagingDeviceId
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Identification of the device that is used to scan the images into the system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ImagingDeviceId { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_ImagingOrientation_" data-uid="VMS.TPS.Common.Model.API.Image.ImagingOrientation*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_ImagingOrientation" data-uid="VMS.TPS.Common.Model.API.Image.ImagingOrientation">
+  ImagingOrientation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The orientation of the patient.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PatientOrientation ImagingOrientation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.PatientOrientation.html">PatientOrientation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_ImagingOrientationAsString_" data-uid="VMS.TPS.Common.Model.API.Image.ImagingOrientationAsString*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_ImagingOrientationAsString" data-uid="VMS.TPS.Common.Model.API.Image.ImagingOrientationAsString">
+  ImagingOrientationAsString
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The orientation of the patient as a string (localized)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ImagingOrientationAsString { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_IsProcessed_" data-uid="VMS.TPS.Common.Model.API.Image.IsProcessed*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_IsProcessed" data-uid="VMS.TPS.Common.Model.API.Image.IsProcessed">
+  IsProcessed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the value true if an image processing filter is in use for the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsProcessed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_Level_" data-uid="VMS.TPS.Common.Model.API.Image.Level*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_Level" data-uid="VMS.TPS.Common.Model.API.Image.Level">
+  Level
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The level setting. The value is given in the internal voxel scale.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Level { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_Modality_" data-uid="VMS.TPS.Common.Model.API.Image.Modality*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_Modality" data-uid="VMS.TPS.Common.Model.API.Image.Modality">
+  Modality
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The modality of the image as indicated in the properties of the image slices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SeriesModality Modality { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.SeriesModality.html">SeriesModality</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_Origin_" data-uid="VMS.TPS.Common.Model.API.Image.Origin*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_Origin" data-uid="VMS.TPS.Common.Model.API.Image.Origin">
+  Origin
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The origin of the image. In other words, the DICOM coordinates of the center point
+of the upper-left hand corner voxel of the first image plane.
+Supported only for volume images. For other types of images, the return
+value is a vector of Double.NaNs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VVector Origin { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_Series_" data-uid="VMS.TPS.Common.Model.API.Image.Series*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_Series" data-uid="VMS.TPS.Common.Model.API.Image.Series">
+  Series
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Used for navigating to parent series.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Series Series { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Series.html">Series</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_UID_" data-uid="VMS.TPS.Common.Model.API.Image.UID*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_UID" data-uid="VMS.TPS.Common.Model.API.Image.UID">
+  UID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return UID of the first (and the only) slice in case of a 2D Image. Return null in case of a 3D Image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string UID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_UserOrigin_" data-uid="VMS.TPS.Common.Model.API.Image.UserOrigin*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_UserOrigin" data-uid="VMS.TPS.Common.Model.API.Image.UserOrigin">
+  UserOrigin
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The user origin in DICOM coordinates in millimeter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VVector UserOrigin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_UserOriginComments_" data-uid="VMS.TPS.Common.Model.API.Image.UserOriginComments*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_UserOriginComments" data-uid="VMS.TPS.Common.Model.API.Image.UserOriginComments">
+  UserOriginComments
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The text typed on the Origin tab in the Image Properties dialog box.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string UserOriginComments { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_Window_" data-uid="VMS.TPS.Common.Model.API.Image.Window*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_Window" data-uid="VMS.TPS.Common.Model.API.Image.Window">
+  Window
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The window setting. The value is given in the internal voxel scale.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Window { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_XDirection_" data-uid="VMS.TPS.Common.Model.API.Image.XDirection*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_XDirection" data-uid="VMS.TPS.Common.Model.API.Image.XDirection">
+  XDirection
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The direction of the x-axis in the image.
+Supported only for volume images. For other types of images, the return
+value is a vector of Double.NaNs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VVector XDirection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_XRes_" data-uid="VMS.TPS.Common.Model.API.Image.XRes*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_XRes" data-uid="VMS.TPS.Common.Model.API.Image.XRes">
+  XRes
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The image resolution in X-direction in millimeters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double XRes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_XSize_" data-uid="VMS.TPS.Common.Model.API.Image.XSize*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_XSize" data-uid="VMS.TPS.Common.Model.API.Image.XSize">
+  XSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The image size in X-direction in voxels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int XSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_YDirection_" data-uid="VMS.TPS.Common.Model.API.Image.YDirection*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_YDirection" data-uid="VMS.TPS.Common.Model.API.Image.YDirection">
+  YDirection
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The direction of the y-axis in the image.
+Supported only for volume images. For other types of images, the return
+value is a vector of Double.NaNs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VVector YDirection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_YRes_" data-uid="VMS.TPS.Common.Model.API.Image.YRes*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_YRes" data-uid="VMS.TPS.Common.Model.API.Image.YRes">
+  YRes
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The image resolution in Y-direction in millimeters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double YRes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_YSize_" data-uid="VMS.TPS.Common.Model.API.Image.YSize*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_YSize" data-uid="VMS.TPS.Common.Model.API.Image.YSize">
+  YSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The image size in Y-direction in voxels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int YSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_ZDirection_" data-uid="VMS.TPS.Common.Model.API.Image.ZDirection*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_ZDirection" data-uid="VMS.TPS.Common.Model.API.Image.ZDirection">
+  ZDirection
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The direction of the z-axis in the image.
+Supported only for volume images. For other types of images, the return
+value is a vector of Double.NaNs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VVector ZDirection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_ZRes_" data-uid="VMS.TPS.Common.Model.API.Image.ZRes*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_ZRes" data-uid="VMS.TPS.Common.Model.API.Image.ZRes">
+  ZRes
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The image resolution in Z-direction in millimeters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ZRes { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_ZSize_" data-uid="VMS.TPS.Common.Model.API.Image.ZSize*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_ZSize" data-uid="VMS.TPS.Common.Model.API.Image.ZSize">
+  ZSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The image size in Z-direction in voxels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ZSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_CalculateDectProtonStoppingPowers_" data-uid="VMS.TPS.Common.Model.API.Image.CalculateDectProtonStoppingPowers*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_CalculateDectProtonStoppingPowers_VMS_TPS_Common_Model_API_Image_VMS_TPS_Common_Model_API_Image_System_Int32_System_Double_0__0___" data-uid="VMS.TPS.Common.Model.API.Image.CalculateDectProtonStoppingPowers(VMS.TPS.Common.Model.API.Image,VMS.TPS.Common.Model.API.Image,System.Int32,System.Double[0:,0:])">
+  CalculateDectProtonStoppingPowers(Image, Image, int, double[,])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the voxel-wise DECT proton stopping powers of the given image plane calculated
+from the current image and the rho and Z images. The image FOR, size, and resolution for the rho and Z images must conform with this image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CalculateDectProtonStoppingPowers(Image rhoImage, Image zImage, int planeIndex, double[,] preallocatedBuffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rhoImage</code> <a class="xref" href="VMS.TPS.Common.Model.API.Image.html">Image</a></dt>
+    <dd><p>A DECT relative electron density image. The electron density is interpreted from the image values as rho = 0.001 * (value + 1000).</p>
+</dd>
+    <dt><code>zImage</code> <a class="xref" href="VMS.TPS.Common.Model.API.Image.html">Image</a></dt>
+    <dd><p>A DECT effective atomic number image.</p>
+</dd>
+    <dt><code>planeIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Zero based index of the plane.</p>
+</dd>
+    <dt><code>preallocatedBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[,]</dt>
+    <dd><p>Pre-allocated buffer where the proton stopping power values
+are stored. The size of the buffer must conform with the X- and Y-size of this image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_CreateNewStructureSet_" data-uid="VMS.TPS.Common.Model.API.Image.CreateNewStructureSet*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_CreateNewStructureSet" data-uid="VMS.TPS.Common.Model.API.Image.CreateNewStructureSet">
+  CreateNewStructureSet()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Creates a new structure set. If the image does not yet have a structure set,
+the new structure set will be assigned directly to it. If the image already has
+a structure set, a copy of this image is made, and the new structure set is assigned
+to the copy. The image must be a 3D image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StructureSet CreateNewStructureSet()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.StructureSet.html">StructureSet</a></dt>
+    <dd><p>New structure set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_DicomToUser_" data-uid="VMS.TPS.Common.Model.API.Image.DicomToUser*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_DicomToUser_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_API_PlanSetup_" data-uid="VMS.TPS.Common.Model.API.Image.DicomToUser(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.API.PlanSetup)">
+  DicomToUser(VVector, PlanSetup)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts DICOM coordinates to the planning coordinate system used in the Eclipse user interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VVector DicomToUser(VVector dicom, PlanSetup planSetup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dicom</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Coordinate value in DICOM coordinate system.</p>
+</dd>
+    <dt><code>planSetup</code> <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd><p>Plan that defines the planning orientation or null.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>The coordinate value in the planning coordinate system used in Eclipse user interface.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_GetImageProfile_" data-uid="VMS.TPS.Common.Model.API.Image.GetImageProfile*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_GetImageProfile_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_System_Double___" data-uid="VMS.TPS.Common.Model.API.Image.GetImageProfile(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector,System.Double[])">
+  GetImageProfile(VVector, VVector, double[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the image profile.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ImageProfile GetImageProfile(VVector start, VVector stop, double[] preallocatedBuffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>start</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Location of the first point of the profile.</p>
+</dd>
+    <dt><code>stop</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Location of the last point of the profile.</p>
+</dd>
+    <dt><code>preallocatedBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p>Preallocated buffer where the values are stored. The size of
+the buffer determines the number of values to return.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.ImageProfile.html">ImageProfile</a></dt>
+    <dd><p>The ImageProfile object holding the image pixel values along the line segment defined by start and stop parameters.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_GetProtonStoppingPowerCurve_" data-uid="VMS.TPS.Common.Model.API.Image.GetProtonStoppingPowerCurve*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_GetProtonStoppingPowerCurve_System_Collections_Generic_SortedList_System_Double_System_Double__" data-uid="VMS.TPS.Common.Model.API.Image.GetProtonStoppingPowerCurve(System.Collections.Generic.SortedList{System.Double,System.Double})">
+  GetProtonStoppingPowerCurve(SortedList&lt;double, double&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the HU to proton stopping power curve associated with the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetProtonStoppingPowerCurve(SortedList&lt;double, double&gt; protonStoppingPowerCurve)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>protonStoppingPowerCurve</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.sortedlist-2">SortedList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>An empty list where the curve values will be stored.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the stopping power curve was succesfully found, false otherwise</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_GetVoxels_" data-uid="VMS.TPS.Common.Model.API.Image.GetVoxels*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_GetVoxels_System_Int32_System_Int32_0__0___" data-uid="VMS.TPS.Common.Model.API.Image.GetVoxels(System.Int32,System.Int32[0:,0:])">
+  GetVoxels(int, int[,])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the voxels of the given image plane.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetVoxels(int planeIndex, int[,] preallocatedBuffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>planeIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Zero based index of the plane.</p>
+</dd>
+    <dt><code>preallocatedBuffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[,]</dt>
+    <dd><p>Preallocated buffer where the voxel values are stored. The size of
+the buffer must conform with the X- and Y-size of this image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_UserToDicom_" data-uid="VMS.TPS.Common.Model.API.Image.UserToDicom*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_UserToDicom_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_API_PlanSetup_" data-uid="VMS.TPS.Common.Model.API.Image.UserToDicom(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.API.PlanSetup)">
+  UserToDicom(VVector, PlanSetup)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a coordinate value from the planning coordinate system used in the Eclipse user interface to DICOM coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VVector UserToDicom(VVector user, PlanSetup planSetup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>user</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Coordinate value in the planning coordinate system.</p>
+</dd>
+    <dt><code>planSetup</code> <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd><p>Plan that defines the planning orientation or null.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>The coordinate value in DICOM coordinate system.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_VoxelToDisplayValue_" data-uid="VMS.TPS.Common.Model.API.Image.VoxelToDisplayValue*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_VoxelToDisplayValue_System_Int32_" data-uid="VMS.TPS.Common.Model.API.Image.VoxelToDisplayValue(System.Int32)">
+  VoxelToDisplayValue(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the given raw voxel value to the corresponding value
+in the user interface display unit, for example, HU, Bq/ml.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double VoxelToDisplayValue(int voxelValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>voxelValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Voxel value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Value converted to user interface display unit.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Image_WriteXml_" data-uid="VMS.TPS.Common.Model.API.Image.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Image_WriteXml_System_Xml_XmlWriter_" data-uid="VMS.TPS.Common.Model.API.Image.WriteXml(System.Xml.XmlWriter)">
+  WriteXml(XmlWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an object into its XML representation.
+For more information on how to serialize an object into an XML document, see <span class="xref">System.Xml.Serialization.XmlSerializer</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>The System.Xml.XmlWriter stream, to which the object is serialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

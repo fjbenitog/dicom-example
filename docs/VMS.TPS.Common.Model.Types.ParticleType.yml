@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.ParticleType
+  commentId: T:VMS.TPS.Common.Model.Types.ParticleType
+  id: ParticleType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.ParticleType.Photon
+  - VMS.TPS.Common.Model.Types.ParticleType.Proton
+  langs:
+  - csharp
+  - vb
+  name: ParticleType
+  nameWithType: ParticleType
+  fullName: VMS.TPS.Common.Model.Types.ParticleType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Particle types
+  example: []
+  syntax:
+    content: public enum ParticleType
+    content.vb: Public Enum ParticleType
+- uid: VMS.TPS.Common.Model.Types.ParticleType.Photon
+  commentId: F:VMS.TPS.Common.Model.Types.ParticleType.Photon
+  id: Photon
+  parent: VMS.TPS.Common.Model.Types.ParticleType
+  langs:
+  - csharp
+  - vb
+  name: Photon
+  nameWithType: ParticleType.Photon
+  fullName: VMS.TPS.Common.Model.Types.ParticleType.Photon
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Photon.
+  example: []
+  syntax:
+    content: Photon = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.ParticleType
+- uid: VMS.TPS.Common.Model.Types.ParticleType.Proton
+  commentId: F:VMS.TPS.Common.Model.Types.ParticleType.Proton
+  id: Proton
+  parent: VMS.TPS.Common.Model.Types.ParticleType
+  langs:
+  - csharp
+  - vb
+  name: Proton
+  nameWithType: ParticleType.Proton
+  fullName: VMS.TPS.Common.Model.Types.ParticleType.Proton
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Proton.
+  example: []
+  syntax:
+    content: Proton = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.ParticleType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.ParticleType
+  commentId: T:VMS.TPS.Common.Model.Types.ParticleType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ParticleType.html
+  name: ParticleType
+  nameWithType: ParticleType
+  fullName: VMS.TPS.Common.Model.Types.ParticleType

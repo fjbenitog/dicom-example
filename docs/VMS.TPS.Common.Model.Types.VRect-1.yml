@@ -1,0 +1,813 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.VRect`1
+  commentId: T:VMS.TPS.Common.Model.Types.VRect`1
+  id: VRect`1
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.VRect`1.#ctor(`0,`0,`0,`0)
+  - VMS.TPS.Common.Model.Types.VRect`1.Equals(System.Object)
+  - VMS.TPS.Common.Model.Types.VRect`1.Equals(VMS.TPS.Common.Model.Types.VRect{`0})
+  - VMS.TPS.Common.Model.Types.VRect`1.GetHashCode
+  - VMS.TPS.Common.Model.Types.VRect`1.ToString
+  - VMS.TPS.Common.Model.Types.VRect`1.X1
+  - VMS.TPS.Common.Model.Types.VRect`1.X2
+  - VMS.TPS.Common.Model.Types.VRect`1.Y1
+  - VMS.TPS.Common.Model.Types.VRect`1.Y2
+  - VMS.TPS.Common.Model.Types.VRect`1.op_Equality(VMS.TPS.Common.Model.Types.VRect{`0},VMS.TPS.Common.Model.Types.VRect{`0})
+  - VMS.TPS.Common.Model.Types.VRect`1.op_Inequality(VMS.TPS.Common.Model.Types.VRect{`0},VMS.TPS.Common.Model.Types.VRect{`0})
+  langs:
+  - csharp
+  - vb
+  name: VRect<T>
+  nameWithType: VRect<T>
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>
+  type: Struct
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Represents a rectangle.
+  remarks: Currently limited to value types.
+  example: []
+  syntax:
+    content: 'public struct VRect<T> where T : struct'
+    typeParameters:
+    - id: T
+      description: Type of the values in the rectangle.
+    content.vb: Public Structure VRect(Of T As Structure)
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  nameWithType.vb: VRect(Of T)
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T)
+  name.vb: VRect(Of T)
+- uid: VMS.TPS.Common.Model.Types.VRect`1.#ctor(`0,`0,`0,`0)
+  commentId: M:VMS.TPS.Common.Model.Types.VRect`1.#ctor(`0,`0,`0,`0)
+  id: '#ctor(`0,`0,`0,`0)'
+  parent: VMS.TPS.Common.Model.Types.VRect`1
+  langs:
+  - csharp
+  - vb
+  name: VRect(T, T, T, T)
+  nameWithType: VRect<T>.VRect(T, T, T, T)
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.VRect(T, T, T, T)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Constructs a VRect.
+  example: []
+  syntax:
+    content: public VRect(T x1, T y1, T x2, T y2)
+    parameters:
+    - id: x1
+      type: '{T}'
+      description: X1 coordinate of the rectangle.
+    - id: y1
+      type: '{T}'
+      description: Y1 coordinate of the rectangle.
+    - id: x2
+      type: '{T}'
+      description: X2 coordinate of the rectangle.
+    - id: y2
+      type: '{T}'
+      description: Y2 coordinate of the rectangle.
+    content.vb: Public Sub New(x1 As T, y1 As T, x2 As T, y2 As T)
+  overload: VMS.TPS.Common.Model.Types.VRect`1.#ctor*
+  nameWithType.vb: VRect(Of T).New(T, T, T, T)
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).New(T, T, T, T)
+  name.vb: New(T, T, T, T)
+- uid: VMS.TPS.Common.Model.Types.VRect`1.ToString
+  commentId: M:VMS.TPS.Common.Model.Types.VRect`1.ToString
+  id: ToString
+  parent: VMS.TPS.Common.Model.Types.VRect`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: VRect<T>.ToString()
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.ToString()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: A string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: VMS.TPS.Common.Model.Types.VRect`1.ToString*
+  nameWithType.vb: VRect(Of T).ToString()
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).ToString()
+- uid: VMS.TPS.Common.Model.Types.VRect`1.Equals(System.Object)
+  commentId: M:VMS.TPS.Common.Model.Types.VRect`1.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: VMS.TPS.Common.Model.Types.VRect`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: VRect<T>.Equals(object)
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.Equals(object)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Checks if this object is equal to another object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The other object to compare.
+    return:
+      type: System.Boolean
+      description: True if this object equals to the other object. Otherwise false.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: VMS.TPS.Common.Model.Types.VRect`1.Equals*
+  nameWithType.vb: VRect(Of T).Equals(Object)
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).Equals(Object)
+  name.vb: Equals(Object)
+- uid: VMS.TPS.Common.Model.Types.VRect`1.Equals(VMS.TPS.Common.Model.Types.VRect{`0})
+  commentId: M:VMS.TPS.Common.Model.Types.VRect`1.Equals(VMS.TPS.Common.Model.Types.VRect{`0})
+  id: Equals(VMS.TPS.Common.Model.Types.VRect{`0})
+  parent: VMS.TPS.Common.Model.Types.VRect`1
+  langs:
+  - csharp
+  - vb
+  name: Equals(VRect<T>)
+  nameWithType: VRect<T>.Equals(VRect<T>)
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.Equals(VMS.TPS.Common.Model.Types.VRect<T>)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Checks if this object is equal to another VRect object.
+  example: []
+  syntax:
+    content: public bool Equals(VRect<T> other)
+    parameters:
+    - id: other
+      type: VMS.TPS.Common.Model.Types.VRect`1
+      description: The other object to compare.
+    return:
+      type: System.Boolean
+      description: True if this object equals to the other object. Otherwise false.
+    content.vb: Public Function Equals(other As VRect(Of T)) As Boolean
+  overload: VMS.TPS.Common.Model.Types.VRect`1.Equals*
+  nameWithType.vb: VRect(Of T).Equals(VRect(Of T))
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).Equals(VMS.TPS.Common.Model.Types.VRect(Of T))
+  name.vb: Equals(VRect(Of T))
+- uid: VMS.TPS.Common.Model.Types.VRect`1.op_Equality(VMS.TPS.Common.Model.Types.VRect{`0},VMS.TPS.Common.Model.Types.VRect{`0})
+  commentId: M:VMS.TPS.Common.Model.Types.VRect`1.op_Equality(VMS.TPS.Common.Model.Types.VRect{`0},VMS.TPS.Common.Model.Types.VRect{`0})
+  id: op_Equality(VMS.TPS.Common.Model.Types.VRect{`0},VMS.TPS.Common.Model.Types.VRect{`0})
+  parent: VMS.TPS.Common.Model.Types.VRect`1
+  langs:
+  - csharp
+  - vb
+  name: operator ==(VRect<T>, VRect<T>)
+  nameWithType: VRect<T>.operator ==(VRect<T>, VRect<T>)
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.operator ==(VMS.TPS.Common.Model.Types.VRect<T>, VMS.TPS.Common.Model.Types.VRect<T>)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Equality operator for VRect.
+  example: []
+  syntax:
+    content: public static bool operator ==(VRect<T> a, VRect<T> b)
+    parameters:
+    - id: a
+      type: VMS.TPS.Common.Model.Types.VRect`1
+      description: The first object to compare.
+    - id: b
+      type: VMS.TPS.Common.Model.Types.VRect`1
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: True if left is equal to right. Otherwise false.
+    content.vb: Public Shared Operator =(a As VRect(Of T), b As VRect(Of T)) As Boolean
+  overload: VMS.TPS.Common.Model.Types.VRect`1.op_Equality*
+  nameWithType.vb: VRect(Of T).=(VRect(Of T), VRect(Of T))
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).=(VMS.TPS.Common.Model.Types.VRect(Of T), VMS.TPS.Common.Model.Types.VRect(Of T))
+  name.vb: =(VRect(Of T), VRect(Of T))
+- uid: VMS.TPS.Common.Model.Types.VRect`1.op_Inequality(VMS.TPS.Common.Model.Types.VRect{`0},VMS.TPS.Common.Model.Types.VRect{`0})
+  commentId: M:VMS.TPS.Common.Model.Types.VRect`1.op_Inequality(VMS.TPS.Common.Model.Types.VRect{`0},VMS.TPS.Common.Model.Types.VRect{`0})
+  id: op_Inequality(VMS.TPS.Common.Model.Types.VRect{`0},VMS.TPS.Common.Model.Types.VRect{`0})
+  parent: VMS.TPS.Common.Model.Types.VRect`1
+  langs:
+  - csharp
+  - vb
+  name: operator !=(VRect<T>, VRect<T>)
+  nameWithType: VRect<T>.operator !=(VRect<T>, VRect<T>)
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.operator !=(VMS.TPS.Common.Model.Types.VRect<T>, VMS.TPS.Common.Model.Types.VRect<T>)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Inequality operator for VRect.
+  example: []
+  syntax:
+    content: public static bool operator !=(VRect<T> a, VRect<T> b)
+    parameters:
+    - id: a
+      type: VMS.TPS.Common.Model.Types.VRect`1
+      description: The first object to compare.
+    - id: b
+      type: VMS.TPS.Common.Model.Types.VRect`1
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: True if left is not equal to right. Otherwise false.
+    content.vb: Public Shared Operator <>(a As VRect(Of T), b As VRect(Of T)) As Boolean
+  overload: VMS.TPS.Common.Model.Types.VRect`1.op_Inequality*
+  nameWithType.vb: VRect(Of T).<>(VRect(Of T), VRect(Of T))
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).<>(VMS.TPS.Common.Model.Types.VRect(Of T), VMS.TPS.Common.Model.Types.VRect(Of T))
+  name.vb: <>(VRect(Of T), VRect(Of T))
+- uid: VMS.TPS.Common.Model.Types.VRect`1.GetHashCode
+  commentId: M:VMS.TPS.Common.Model.Types.VRect`1.GetHashCode
+  id: GetHashCode
+  parent: VMS.TPS.Common.Model.Types.VRect`1
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: VRect<T>.GetHashCode()
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.GetHashCode()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Returns the hash code for this instance. Overrides Object.GetHashCode.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: The hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: VMS.TPS.Common.Model.Types.VRect`1.GetHashCode*
+  nameWithType.vb: VRect(Of T).GetHashCode()
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).GetHashCode()
+- uid: VMS.TPS.Common.Model.Types.VRect`1.X1
+  commentId: P:VMS.TPS.Common.Model.Types.VRect`1.X1
+  id: X1
+  parent: VMS.TPS.Common.Model.Types.VRect`1
+  langs:
+  - csharp
+  - vb
+  name: X1
+  nameWithType: VRect<T>.X1
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.X1
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The X1-coordinate of the rectangle.
+  example: []
+  syntax:
+    content: public T X1 { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public ReadOnly Property X1 As T
+  overload: VMS.TPS.Common.Model.Types.VRect`1.X1*
+  nameWithType.vb: VRect(Of T).X1
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).X1
+- uid: VMS.TPS.Common.Model.Types.VRect`1.Y1
+  commentId: P:VMS.TPS.Common.Model.Types.VRect`1.Y1
+  id: Y1
+  parent: VMS.TPS.Common.Model.Types.VRect`1
+  langs:
+  - csharp
+  - vb
+  name: Y1
+  nameWithType: VRect<T>.Y1
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.Y1
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The Y1-coordinate of the rectangle.
+  example: []
+  syntax:
+    content: public T Y1 { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public ReadOnly Property Y1 As T
+  overload: VMS.TPS.Common.Model.Types.VRect`1.Y1*
+  nameWithType.vb: VRect(Of T).Y1
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).Y1
+- uid: VMS.TPS.Common.Model.Types.VRect`1.X2
+  commentId: P:VMS.TPS.Common.Model.Types.VRect`1.X2
+  id: X2
+  parent: VMS.TPS.Common.Model.Types.VRect`1
+  langs:
+  - csharp
+  - vb
+  name: X2
+  nameWithType: VRect<T>.X2
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.X2
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The X2-coordinate of the rectangle.
+  example: []
+  syntax:
+    content: public T X2 { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public ReadOnly Property X2 As T
+  overload: VMS.TPS.Common.Model.Types.VRect`1.X2*
+  nameWithType.vb: VRect(Of T).X2
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).X2
+- uid: VMS.TPS.Common.Model.Types.VRect`1.Y2
+  commentId: P:VMS.TPS.Common.Model.Types.VRect`1.Y2
+  id: Y2
+  parent: VMS.TPS.Common.Model.Types.VRect`1
+  langs:
+  - csharp
+  - vb
+  name: Y2
+  nameWithType: VRect<T>.Y2
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.Y2
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The Y2-coordinate of the rectangle.
+  example: []
+  syntax:
+    content: public T Y2 { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public ReadOnly Property Y2 As T
+  overload: VMS.TPS.Common.Model.Types.VRect`1.Y2*
+  nameWithType.vb: VRect(Of T).Y2
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).Y2
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.Types.VRect`1.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VRect`1.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VRect-1.html#VMS_TPS_Common_Model_Types_VRect_1__ctor__0__0__0__0_
+  name: VRect
+  nameWithType: VRect<T>.VRect
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.VRect
+  nameWithType.vb: VRect(Of T).New
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).New
+  name.vb: New
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.VRect`1.ToString*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VRect`1.ToString
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VRect-1.html#VMS_TPS_Common_Model_Types_VRect_1_ToString
+  name: ToString
+  nameWithType: VRect<T>.ToString
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.ToString
+  nameWithType.vb: VRect(Of T).ToString
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.VRect`1.Equals*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VRect`1.Equals
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VRect-1.html#VMS_TPS_Common_Model_Types_VRect_1_Equals_System_Object_
+  name: Equals
+  nameWithType: VRect<T>.Equals
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.Equals
+  nameWithType.vb: VRect(Of T).Equals
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: VMS.TPS.Common.Model.Types.VRect`1
+  commentId: T:VMS.TPS.Common.Model.Types.VRect`1
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VRect-1.html
+  name: VRect<T>
+  nameWithType: VRect<T>
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>
+  nameWithType.vb: VRect(Of T)
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T)
+  name.vb: VRect(Of T)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.Types.VRect`1
+    name: VRect
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VRect-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.Types.VRect`1
+    name: VRect
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VRect-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.VRect`1.op_Equality*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VRect`1.op_Equality
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VRect-1.html#VMS_TPS_Common_Model_Types_VRect_1_op_Equality_VMS_TPS_Common_Model_Types_VRect__0__VMS_TPS_Common_Model_Types_VRect__0__
+  name: operator ==
+  nameWithType: VRect<T>.operator ==
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.operator ==
+  nameWithType.vb: VRect(Of T).=
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.VRect`1.op_Equality*
+    name: ==
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VRect-1.html#VMS_TPS_Common_Model_Types_VRect_1_op_Equality_VMS_TPS_Common_Model_Types_VRect__0__VMS_TPS_Common_Model_Types_VRect__0__
+- uid: VMS.TPS.Common.Model.Types.VRect`1.op_Inequality*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VRect`1.op_Inequality
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VRect-1.html#VMS_TPS_Common_Model_Types_VRect_1_op_Inequality_VMS_TPS_Common_Model_Types_VRect__0__VMS_TPS_Common_Model_Types_VRect__0__
+  name: operator !=
+  nameWithType: VRect<T>.operator !=
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.operator !=
+  nameWithType.vb: VRect(Of T).<>
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.VRect`1.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VRect-1.html#VMS_TPS_Common_Model_Types_VRect_1_op_Inequality_VMS_TPS_Common_Model_Types_VRect__0__VMS_TPS_Common_Model_Types_VRect__0__
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.VRect`1.GetHashCode*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VRect`1.GetHashCode
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VRect-1.html#VMS_TPS_Common_Model_Types_VRect_1_GetHashCode
+  name: GetHashCode
+  nameWithType: VRect<T>.GetHashCode
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.GetHashCode
+  nameWithType.vb: VRect(Of T).GetHashCode
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: VMS.TPS.Common.Model.Types.VRect`1.X1*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VRect`1.X1
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VRect-1.html#VMS_TPS_Common_Model_Types_VRect_1_X1
+  name: X1
+  nameWithType: VRect<T>.X1
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.X1
+  nameWithType.vb: VRect(Of T).X1
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).X1
+- uid: VMS.TPS.Common.Model.Types.VRect`1.Y1*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VRect`1.Y1
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VRect-1.html#VMS_TPS_Common_Model_Types_VRect_1_Y1
+  name: Y1
+  nameWithType: VRect<T>.Y1
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.Y1
+  nameWithType.vb: VRect(Of T).Y1
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).Y1
+- uid: VMS.TPS.Common.Model.Types.VRect`1.X2*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VRect`1.X2
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VRect-1.html#VMS_TPS_Common_Model_Types_VRect_1_X2
+  name: X2
+  nameWithType: VRect<T>.X2
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.X2
+  nameWithType.vb: VRect(Of T).X2
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).X2
+- uid: VMS.TPS.Common.Model.Types.VRect`1.Y2*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VRect`1.Y2
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VRect-1.html#VMS_TPS_Common_Model_Types_VRect_1_Y2
+  name: Y2
+  nameWithType: VRect<T>.Y2
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>.Y2
+  nameWithType.vb: VRect(Of T).Y2
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T).Y2

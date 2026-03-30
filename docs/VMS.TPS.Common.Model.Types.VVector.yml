@@ -1,0 +1,1572 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.VVector
+  commentId: T:VMS.TPS.Common.Model.Types.VVector
+  id: VVector
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.VVector.#ctor(System.Double,System.Double,System.Double)
+  - VMS.TPS.Common.Model.Types.VVector.DefaultEpsilon
+  - VMS.TPS.Common.Model.Types.VVector.Distance(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  - VMS.TPS.Common.Model.Types.VVector.EpsilonEqual(VMS.TPS.Common.Model.Types.VVector,System.Double)
+  - VMS.TPS.Common.Model.Types.VVector.Equals(System.Object)
+  - VMS.TPS.Common.Model.Types.VVector.Equals(VMS.TPS.Common.Model.Types.VVector)
+  - VMS.TPS.Common.Model.Types.VVector.GetHashCode
+  - VMS.TPS.Common.Model.Types.VVector.GetUnitLengthScaledVector
+  - VMS.TPS.Common.Model.Types.VVector.IsUndefined
+  - VMS.TPS.Common.Model.Types.VVector.Item(System.Int32)
+  - VMS.TPS.Common.Model.Types.VVector.Item(VMS.TPS.Common.Model.Types.VVector.Component)
+  - VMS.TPS.Common.Model.Types.VVector.Length
+  - VMS.TPS.Common.Model.Types.VVector.LengthSquared
+  - VMS.TPS.Common.Model.Types.VVector.ScalarProduct(VMS.TPS.Common.Model.Types.VVector)
+  - VMS.TPS.Common.Model.Types.VVector.ScaleToUnitLength
+  - VMS.TPS.Common.Model.Types.VVector.Undefined
+  - VMS.TPS.Common.Model.Types.VVector.Update(VMS.TPS.Common.Model.Types.VVector.Component,System.Double)
+  - VMS.TPS.Common.Model.Types.VVector.op_Addition(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  - VMS.TPS.Common.Model.Types.VVector.op_Division(VMS.TPS.Common.Model.Types.VVector,System.Double)
+  - VMS.TPS.Common.Model.Types.VVector.op_Equality(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  - VMS.TPS.Common.Model.Types.VVector.op_Inequality(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  - VMS.TPS.Common.Model.Types.VVector.op_Multiply(System.Double,VMS.TPS.Common.Model.Types.VVector)
+  - VMS.TPS.Common.Model.Types.VVector.op_Multiply(VMS.TPS.Common.Model.Types.VVector,System.Double)
+  - VMS.TPS.Common.Model.Types.VVector.op_Subtraction(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  - VMS.TPS.Common.Model.Types.VVector.x
+  - VMS.TPS.Common.Model.Types.VVector.y
+  - VMS.TPS.Common.Model.Types.VVector.z
+  langs:
+  - csharp
+  - vb
+  name: VVector
+  nameWithType: VVector
+  fullName: VMS.TPS.Common.Model.Types.VVector
+  type: Struct
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Represents a displacement in 3D space.
+  example: []
+  syntax:
+    content: 'public struct VVector : IEquatable<VVector>'
+    content.vb: Public Structure VVector Implements IEquatable(Of VVector)
+  implements:
+  - System.IEquatable{VMS.TPS.Common.Model.Types.VVector}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.Types.VVector.Undefined
+  commentId: F:VMS.TPS.Common.Model.Types.VVector.Undefined
+  id: Undefined
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: Undefined
+  nameWithType: VVector.Undefined
+  fullName: VMS.TPS.Common.Model.Types.VVector.Undefined
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Undefined vector
+  example: []
+  syntax:
+    content: public static readonly VVector Undefined
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector
+    content.vb: Public Shared ReadOnly Undefined As VVector
+- uid: VMS.TPS.Common.Model.Types.VVector.DefaultEpsilon
+  commentId: F:VMS.TPS.Common.Model.Types.VVector.DefaultEpsilon
+  id: DefaultEpsilon
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: DefaultEpsilon
+  nameWithType: VVector.DefaultEpsilon
+  fullName: VMS.TPS.Common.Model.Types.VVector.DefaultEpsilon
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: DefaultEpsilon value for epsilon equality checking.
+  example: []
+  syntax:
+    content: public const double DefaultEpsilon = 1E-06
+    return:
+      type: System.Double
+    content.vb: Public Const DefaultEpsilon As Double = 1E-06
+- uid: VMS.TPS.Common.Model.Types.VVector.#ctor(System.Double,System.Double,System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.#ctor(System.Double,System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double,System.Double)'
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: VVector(double, double, double)
+  nameWithType: VVector.VVector(double, double, double)
+  fullName: VMS.TPS.Common.Model.Types.VVector.VVector(double, double, double)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Constructs a VVector.
+  example: []
+  syntax:
+    content: public VVector(double xi, double yi, double zi)
+    parameters:
+    - id: xi
+      type: System.Double
+      description: X component.
+    - id: yi
+      type: System.Double
+      description: Y component.
+    - id: zi
+      type: System.Double
+      description: Z component.
+    content.vb: Public Sub New(xi As Double, yi As Double, zi As Double)
+  overload: VMS.TPS.Common.Model.Types.VVector.#ctor*
+  nameWithType.vb: VVector.New(Double, Double, Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.New(Double, Double, Double)
+  name.vb: New(Double, Double, Double)
+- uid: VMS.TPS.Common.Model.Types.VVector.Update(VMS.TPS.Common.Model.Types.VVector.Component,System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.Update(VMS.TPS.Common.Model.Types.VVector.Component,System.Double)
+  id: Update(VMS.TPS.Common.Model.Types.VVector.Component,System.Double)
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: Update(Component, double)
+  nameWithType: VVector.Update(VVector.Component, double)
+  fullName: VMS.TPS.Common.Model.Types.VVector.Update(VMS.TPS.Common.Model.Types.VVector.Component, double)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Updating VVector component value using VectorComponent indexing.
+  example: []
+  syntax:
+    content: public VVector Update(VVector.Component vc, double value)
+    parameters:
+    - id: vc
+      type: VMS.TPS.Common.Model.Types.VVector.Component
+      description: Component enum that correspond to x,y and z components.
+    - id: value
+      type: System.Double
+      description: Value of 0,1 or 2 that correspond to x,y and z components.
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: Returns a new VVector with updated value
+    content.vb: Public Function Update(vc As VVector.Component, value As Double) As VVector
+  overload: VMS.TPS.Common.Model.Types.VVector.Update*
+  nameWithType.vb: VVector.Update(VVector.Component, Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.Update(VMS.TPS.Common.Model.Types.VVector.Component, Double)
+  name.vb: Update(Component, Double)
+- uid: VMS.TPS.Common.Model.Types.VVector.Distance(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.Distance(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  id: Distance(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: Distance(VVector, VVector)
+  nameWithType: VVector.Distance(VVector, VVector)
+  fullName: VMS.TPS.Common.Model.Types.VVector.Distance(VMS.TPS.Common.Model.Types.VVector, VMS.TPS.Common.Model.Types.VVector)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The distance between the locations represented by the given VVectors.
+  example: []
+  syntax:
+    content: public static double Distance(VVector left, VVector right)
+    parameters:
+    - id: left
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: First operand.
+    - id: right
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: Second operand
+    return:
+      type: System.Double
+      description: Returns the distance between the locations represented by the given VVectors.
+    content.vb: Public Shared Function Distance(left As VVector, right As VVector) As Double
+  overload: VMS.TPS.Common.Model.Types.VVector.Distance*
+- uid: VMS.TPS.Common.Model.Types.VVector.ScaleToUnitLength
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.ScaleToUnitLength
+  id: ScaleToUnitLength
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: ScaleToUnitLength()
+  nameWithType: VVector.ScaleToUnitLength()
+  fullName: VMS.TPS.Common.Model.Types.VVector.ScaleToUnitLength()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Scales this VVector so that its length becomes equal to unity.
+  example: []
+  syntax:
+    content: public void ScaleToUnitLength()
+    content.vb: Public Sub ScaleToUnitLength()
+  overload: VMS.TPS.Common.Model.Types.VVector.ScaleToUnitLength*
+- uid: VMS.TPS.Common.Model.Types.VVector.GetUnitLengthScaledVector
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.GetUnitLengthScaledVector
+  id: GetUnitLengthScaledVector
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: GetUnitLengthScaledVector()
+  nameWithType: VVector.GetUnitLengthScaledVector()
+  fullName: VMS.TPS.Common.Model.Types.VVector.GetUnitLengthScaledVector()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Scales this VVector so that its length becomes equal to unity.
+  example: []
+  syntax:
+    content: public VVector GetUnitLengthScaledVector()
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector
+    content.vb: Public Function GetUnitLengthScaledVector() As VVector
+  overload: VMS.TPS.Common.Model.Types.VVector.GetUnitLengthScaledVector*
+- uid: VMS.TPS.Common.Model.Types.VVector.ScalarProduct(VMS.TPS.Common.Model.Types.VVector)
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.ScalarProduct(VMS.TPS.Common.Model.Types.VVector)
+  id: ScalarProduct(VMS.TPS.Common.Model.Types.VVector)
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: ScalarProduct(VVector)
+  nameWithType: VVector.ScalarProduct(VVector)
+  fullName: VMS.TPS.Common.Model.Types.VVector.ScalarProduct(VMS.TPS.Common.Model.Types.VVector)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The scalar product of this VVector and the given VVector.
+  example: []
+  syntax:
+    content: public double ScalarProduct(VVector left)
+    parameters:
+    - id: left
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: VVector that is second operand of the scalar product.
+    return:
+      type: System.Double
+      description: Returns the scalar product of this VVector with the given VVector.
+    content.vb: Public Function ScalarProduct(left As VVector) As Double
+  overload: VMS.TPS.Common.Model.Types.VVector.ScalarProduct*
+- uid: VMS.TPS.Common.Model.Types.VVector.op_Subtraction(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.op_Subtraction(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  id: op_Subtraction(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: operator -(VVector, VVector)
+  nameWithType: VVector.operator -(VVector, VVector)
+  fullName: VMS.TPS.Common.Model.Types.VVector.operator -(VMS.TPS.Common.Model.Types.VVector, VMS.TPS.Common.Model.Types.VVector)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The subtraction of VVectors.
+  example: []
+  syntax:
+    content: public static VVector operator -(VVector left, VVector right)
+    parameters:
+    - id: left
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: First operand.
+    - id: right
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: Second operand.
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: Result of subtraction.
+    content.vb: Public Shared Operator -(left As VVector, right As VVector) As VVector
+  overload: VMS.TPS.Common.Model.Types.VVector.op_Subtraction*
+  nameWithType.vb: VVector.-(VVector, VVector)
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.-(VMS.TPS.Common.Model.Types.VVector, VMS.TPS.Common.Model.Types.VVector)
+  name.vb: -(VVector, VVector)
+- uid: VMS.TPS.Common.Model.Types.VVector.op_Addition(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.op_Addition(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  id: op_Addition(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: operator +(VVector, VVector)
+  nameWithType: VVector.operator +(VVector, VVector)
+  fullName: VMS.TPS.Common.Model.Types.VVector.operator +(VMS.TPS.Common.Model.Types.VVector, VMS.TPS.Common.Model.Types.VVector)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The addition of VVectors.
+  example: []
+  syntax:
+    content: public static VVector operator +(VVector left, VVector right)
+    parameters:
+    - id: left
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: First operand.
+    - id: right
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: Second operand.
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: Result of addition.
+    content.vb: Public Shared Operator +(left As VVector, right As VVector) As VVector
+  overload: VMS.TPS.Common.Model.Types.VVector.op_Addition*
+  nameWithType.vb: VVector.+(VVector, VVector)
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.+(VMS.TPS.Common.Model.Types.VVector, VMS.TPS.Common.Model.Types.VVector)
+  name.vb: +(VVector, VVector)
+- uid: VMS.TPS.Common.Model.Types.VVector.op_Multiply(VMS.TPS.Common.Model.Types.VVector,System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.op_Multiply(VMS.TPS.Common.Model.Types.VVector,System.Double)
+  id: op_Multiply(VMS.TPS.Common.Model.Types.VVector,System.Double)
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: operator *(VVector, double)
+  nameWithType: VVector.operator *(VVector, double)
+  fullName: VMS.TPS.Common.Model.Types.VVector.operator *(VMS.TPS.Common.Model.Types.VVector, double)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The multiplication of a VVector and a double.
+  example: []
+  syntax:
+    content: public static VVector operator *(VVector val, double mul)
+    parameters:
+    - id: val
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: VVector to multiply.
+    - id: mul
+      type: System.Double
+      description: Multiplier.
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: Result of multiplication.
+    content.vb: Public Shared Operator *(val As VVector, mul As Double) As VVector
+  overload: VMS.TPS.Common.Model.Types.VVector.op_Multiply*
+  nameWithType.vb: VVector.*(VVector, Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.*(VMS.TPS.Common.Model.Types.VVector, Double)
+  name.vb: '*(VVector, Double)'
+- uid: VMS.TPS.Common.Model.Types.VVector.op_Multiply(System.Double,VMS.TPS.Common.Model.Types.VVector)
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.op_Multiply(System.Double,VMS.TPS.Common.Model.Types.VVector)
+  id: op_Multiply(System.Double,VMS.TPS.Common.Model.Types.VVector)
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: operator *(double, VVector)
+  nameWithType: VVector.operator *(double, VVector)
+  fullName: VMS.TPS.Common.Model.Types.VVector.operator *(double, VMS.TPS.Common.Model.Types.VVector)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The multiplication of a VVector and a double.
+  example: []
+  syntax:
+    content: public static VVector operator *(double mul, VVector val)
+    parameters:
+    - id: mul
+      type: System.Double
+      description: Multiplier.
+    - id: val
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: VVector to multiply.
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: Result of multiplication.
+    content.vb: Public Shared Operator *(mul As Double, val As VVector) As VVector
+  overload: VMS.TPS.Common.Model.Types.VVector.op_Multiply*
+  nameWithType.vb: VVector.*(Double, VVector)
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.*(Double, VMS.TPS.Common.Model.Types.VVector)
+  name.vb: '*(Double, VVector)'
+- uid: VMS.TPS.Common.Model.Types.VVector.op_Division(VMS.TPS.Common.Model.Types.VVector,System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.op_Division(VMS.TPS.Common.Model.Types.VVector,System.Double)
+  id: op_Division(VMS.TPS.Common.Model.Types.VVector,System.Double)
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: operator /(VVector, double)
+  nameWithType: VVector.operator /(VVector, double)
+  fullName: VMS.TPS.Common.Model.Types.VVector.operator /(VMS.TPS.Common.Model.Types.VVector, double)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The division of a VVector by a double.
+  example: []
+  syntax:
+    content: public static VVector operator /(VVector val, double div)
+    parameters:
+    - id: val
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: VVector to divide.
+    - id: div
+      type: System.Double
+      description: Divisor.
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: Result of division.
+    content.vb: Public Shared Operator /(val As VVector, div As Double) As VVector
+  overload: VMS.TPS.Common.Model.Types.VVector.op_Division*
+  nameWithType.vb: VVector./(VVector, Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector./(VMS.TPS.Common.Model.Types.VVector, Double)
+  name.vb: /(VVector, Double)
+- uid: VMS.TPS.Common.Model.Types.VVector.Equals(System.Object)
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: VVector.Equals(object)
+  fullName: VMS.TPS.Common.Model.Types.VVector.Equals(object)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Equality comparison of VVector and Object.
+
+    This method considers two instances of VVector.Undefined to be equal to each other.
+
+    Otherwise, a vector is equal to an object only if the object is a VVector and vectors are equal.
+
+    For epsilon-equal comparison, use <xref href="VMS.TPS.Common.Model.Types.VVector.EpsilonEqual(VMS.TPS.Common.Model.Types.VVector%2cSystem.Double)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: Object to compare this to.
+    return:
+      type: System.Boolean
+      description: True if the Object is also VVector and equal to this (vectors are equal), false otherwise.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: VMS.TPS.Common.Model.Types.VVector.Equals*
+  nameWithType.vb: VVector.Equals(Object)
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.Equals(Object)
+  name.vb: Equals(Object)
+- uid: VMS.TPS.Common.Model.Types.VVector.Equals(VMS.TPS.Common.Model.Types.VVector)
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.Equals(VMS.TPS.Common.Model.Types.VVector)
+  id: Equals(VMS.TPS.Common.Model.Types.VVector)
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: Equals(VVector)
+  nameWithType: VVector.Equals(VVector)
+  fullName: VMS.TPS.Common.Model.Types.VVector.Equals(VMS.TPS.Common.Model.Types.VVector)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Equality comparison of vectors.
+
+    This method considers two instances of VVector.Undefined to be equal to each other.
+
+    Otherwise, two vectors are equal only if the vectors components are equal.
+
+    a == b, b == c, =&gt; a has to be equal to c. Epsilon equality comparison does not fulfill this condition with epsilon &gt; 0.0.
+
+    For epsilon-equal comparison, use <xref href="VMS.TPS.Common.Model.Types.VVector.EpsilonEqual(VMS.TPS.Common.Model.Types.VVector%2cSystem.Double)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool Equals(VVector other)
+    parameters:
+    - id: other
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: vector to compare this to.
+    return:
+      type: System.Boolean
+      description: True if the vectors are equal, false otherwise.
+    content.vb: Public Function Equals(other As VVector) As Boolean
+  overload: VMS.TPS.Common.Model.Types.VVector.Equals*
+  implements:
+  - System.IEquatable{VMS.TPS.Common.Model.Types.VVector}.Equals(VMS.TPS.Common.Model.Types.VVector)
+- uid: VMS.TPS.Common.Model.Types.VVector.EpsilonEqual(VMS.TPS.Common.Model.Types.VVector,System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.EpsilonEqual(VMS.TPS.Common.Model.Types.VVector,System.Double)
+  id: EpsilonEqual(VMS.TPS.Common.Model.Types.VVector,System.Double)
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: EpsilonEqual(VVector, double)
+  nameWithType: VVector.EpsilonEqual(VVector, double)
+  fullName: VMS.TPS.Common.Model.Types.VVector.EpsilonEqual(VMS.TPS.Common.Model.Types.VVector, double)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Epsilon-equality comparison of vectors.
+
+    This method considers two instances of VVector.Undefined to be equal to each other.
+
+    Otherwise, two vectors are equal only if the vectors components are within epsilon.
+  example: []
+  syntax:
+    content: public bool EpsilonEqual(VVector other, double epsilon)
+    parameters:
+    - id: other
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: Vector to compare this to.
+    - id: epsilon
+      type: System.Double
+      description: Epsilon to use for the vector component comparison.
+    return:
+      type: System.Boolean
+      description: True if the vector components are within epsilon, false otherwise.
+    content.vb: Public Function EpsilonEqual(other As VVector, epsilon As Double) As Boolean
+  overload: VMS.TPS.Common.Model.Types.VVector.EpsilonEqual*
+  nameWithType.vb: VVector.EpsilonEqual(VVector, Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.EpsilonEqual(VMS.TPS.Common.Model.Types.VVector, Double)
+  name.vb: EpsilonEqual(VVector, Double)
+- uid: VMS.TPS.Common.Model.Types.VVector.IsUndefined
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.IsUndefined
+  id: IsUndefined
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: IsUndefined()
+  nameWithType: VVector.IsUndefined()
+  fullName: VMS.TPS.Common.Model.Types.VVector.IsUndefined()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Returns true if at least one of this vector components are equal to double.IsNaN or double.IsInfinity, false otherwise.
+  example: []
+  syntax:
+    content: public bool IsUndefined()
+    return:
+      type: System.Boolean
+      description: True if at least one of the vector component is not defined or is infinity, false otherwise.
+    content.vb: Public Function IsUndefined() As Boolean
+  overload: VMS.TPS.Common.Model.Types.VVector.IsUndefined*
+- uid: VMS.TPS.Common.Model.Types.VVector.GetHashCode
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.GetHashCode
+  id: GetHashCode
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: VVector.GetHashCode()
+  fullName: VMS.TPS.Common.Model.Types.VVector.GetHashCode()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: A hash code for the current object.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: VMS.TPS.Common.Model.Types.VVector.GetHashCode*
+- uid: VMS.TPS.Common.Model.Types.VVector.op_Equality(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.op_Equality(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  id: op_Equality(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: operator ==(VVector, VVector)
+  nameWithType: VVector.operator ==(VVector, VVector)
+  fullName: VMS.TPS.Common.Model.Types.VVector.operator ==(VMS.TPS.Common.Model.Types.VVector, VMS.TPS.Common.Model.Types.VVector)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Equality operator for vectors. 
+
+    This method considers two instances of VVector.Undefined to be equal to each other.
+
+    Otherwise, two vectors are equal only if the vectors components are equal.
+
+    For epsilon-equal comparison, use <xref href="VMS.TPS.Common.Model.Types.VVector.EpsilonEqual(VMS.TPS.Common.Model.Types.VVector%2cSystem.Double)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static bool operator ==(VVector vv1, VVector vv2)
+    parameters:
+    - id: vv1
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: First operand.
+    - id: vv2
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: Second operand.
+    return:
+      type: System.Boolean
+      description: True if the vectors are equal, false otherwise.
+    content.vb: Public Shared Operator =(vv1 As VVector, vv2 As VVector) As Boolean
+  overload: VMS.TPS.Common.Model.Types.VVector.op_Equality*
+  nameWithType.vb: VVector.=(VVector, VVector)
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.=(VMS.TPS.Common.Model.Types.VVector, VMS.TPS.Common.Model.Types.VVector)
+  name.vb: =(VVector, VVector)
+- uid: VMS.TPS.Common.Model.Types.VVector.op_Inequality(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.op_Inequality(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  id: op_Inequality(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: operator !=(VVector, VVector)
+  nameWithType: VVector.operator !=(VVector, VVector)
+  fullName: VMS.TPS.Common.Model.Types.VVector.operator !=(VMS.TPS.Common.Model.Types.VVector, VMS.TPS.Common.Model.Types.VVector)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Inequality operator for vectors.
+
+    This method considers two instances of VVector.Undefined to be equal to each other.
+
+    This operator considers two instances of vectors with undefined components to be inequal.
+
+    For epsilon-equal comparison, use <xref href="VMS.TPS.Common.Model.Types.VVector.EpsilonEqual(VMS.TPS.Common.Model.Types.VVector%2cSystem.Double)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static bool operator !=(VVector vv1, VVector vv2)
+    parameters:
+    - id: vv1
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: First operand.
+    - id: vv2
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: Second operand.
+    return:
+      type: System.Boolean
+      description: True if the vectors are inequal, false otherwise.
+    content.vb: Public Shared Operator <>(vv1 As VVector, vv2 As VVector) As Boolean
+  overload: VMS.TPS.Common.Model.Types.VVector.op_Inequality*
+  nameWithType.vb: VVector.<>(VVector, VVector)
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.<>(VMS.TPS.Common.Model.Types.VVector, VMS.TPS.Common.Model.Types.VVector)
+  name.vb: <>(VVector, VVector)
+- uid: VMS.TPS.Common.Model.Types.VVector.Item(System.Int32)
+  commentId: P:VMS.TPS.Common.Model.Types.VVector.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: VVector.this[int]
+  fullName: VMS.TPS.Common.Model.Types.VVector.this[int]
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Indexing for the x, y and z components.
+  example: []
+  syntax:
+    content: public double this[int i] { get; set; }
+    parameters:
+    - id: i
+      type: System.Int32
+      description: Value of 0,1 or 2 that correspond to x,y and z components.
+    return:
+      type: System.Double
+      description: Returns the given component of this VVector.
+    content.vb: Public Default Property this[](i As Integer) As Double
+  overload: VMS.TPS.Common.Model.Types.VVector.Item*
+  nameWithType.vb: VVector.this[](Integer)
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.this[](Integer)
+  name.vb: this[](Integer)
+- uid: VMS.TPS.Common.Model.Types.VVector.Item(VMS.TPS.Common.Model.Types.VVector.Component)
+  commentId: P:VMS.TPS.Common.Model.Types.VVector.Item(VMS.TPS.Common.Model.Types.VVector.Component)
+  id: Item(VMS.TPS.Common.Model.Types.VVector.Component)
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: this[Component]
+  nameWithType: VVector.this[VVector.Component]
+  fullName: VMS.TPS.Common.Model.Types.VVector.this[VMS.TPS.Common.Model.Types.VVector.Component]
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Indexing for the x, y and z components.
+  example: []
+  syntax:
+    content: public double this[VVector.Component vc] { get; }
+    parameters:
+    - id: vc
+      type: VMS.TPS.Common.Model.Types.VVector.Component
+      description: Enumeration of vector component corresponding to x,y and z components.
+    return:
+      type: System.Double
+      description: Returns the given component of this VVector.
+    content.vb: Public ReadOnly Default Property this[](vc As VVector.Component) As Double
+  overload: VMS.TPS.Common.Model.Types.VVector.Item*
+  nameWithType.vb: VVector.this[](VVector.Component)
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.this[](VMS.TPS.Common.Model.Types.VVector.Component)
+  name.vb: this[](Component)
+- uid: VMS.TPS.Common.Model.Types.VVector.LengthSquared
+  commentId: P:VMS.TPS.Common.Model.Types.VVector.LengthSquared
+  id: LengthSquared
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: LengthSquared
+  nameWithType: VVector.LengthSquared
+  fullName: VMS.TPS.Common.Model.Types.VVector.LengthSquared
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The square of the length of the VVector.
+  example: []
+  syntax:
+    content: public double LengthSquared { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property LengthSquared As Double
+  overload: VMS.TPS.Common.Model.Types.VVector.LengthSquared*
+- uid: VMS.TPS.Common.Model.Types.VVector.Length
+  commentId: P:VMS.TPS.Common.Model.Types.VVector.Length
+  id: Length
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: VVector.Length
+  fullName: VMS.TPS.Common.Model.Types.VVector.Length
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The length of the VVector.
+  example: []
+  syntax:
+    content: public double Length { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Length As Double
+  overload: VMS.TPS.Common.Model.Types.VVector.Length*
+- uid: VMS.TPS.Common.Model.Types.VVector.x
+  commentId: P:VMS.TPS.Common.Model.Types.VVector.x
+  id: x
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: x
+  nameWithType: VVector.x
+  fullName: VMS.TPS.Common.Model.Types.VVector.x
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The X component of the VVector.
+  example: []
+  syntax:
+    content: public double x { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property x As Double
+  overload: VMS.TPS.Common.Model.Types.VVector.x*
+- uid: VMS.TPS.Common.Model.Types.VVector.y
+  commentId: P:VMS.TPS.Common.Model.Types.VVector.y
+  id: y
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: y
+  nameWithType: VVector.y
+  fullName: VMS.TPS.Common.Model.Types.VVector.y
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The Y component of the VVector.
+  example: []
+  syntax:
+    content: public double y { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property y As Double
+  overload: VMS.TPS.Common.Model.Types.VVector.y*
+- uid: VMS.TPS.Common.Model.Types.VVector.z
+  commentId: P:VMS.TPS.Common.Model.Types.VVector.z
+  id: z
+  parent: VMS.TPS.Common.Model.Types.VVector
+  langs:
+  - csharp
+  - vb
+  name: z
+  nameWithType: VVector.z
+  fullName: VMS.TPS.Common.Model.Types.VVector.z
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The Z component of the VVector.
+  example: []
+  syntax:
+    content: public double z { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property z As Double
+  overload: VMS.TPS.Common.Model.Types.VVector.z*
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.IEquatable{VMS.TPS.Common.Model.Types.VVector}
+  commentId: T:System.IEquatable{VMS.TPS.Common.Model.Types.VVector}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<VVector>
+  nameWithType: IEquatable<VVector>
+  fullName: System.IEquatable<VMS.TPS.Common.Model.Types.VVector>
+  nameWithType.vb: IEquatable(Of VVector)
+  fullName.vb: System.IEquatable(Of VMS.TPS.Common.Model.Types.VVector)
+  name.vb: IEquatable(Of VVector)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: VMS.TPS.Common.Model.Types.VVector
+  commentId: T:VMS.TPS.Common.Model.Types.VVector
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html
+  name: VVector
+  nameWithType: VVector
+  fullName: VMS.TPS.Common.Model.Types.VVector
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: VMS.TPS.Common.Model.Types.VVector.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector__ctor_System_Double_System_Double_System_Double_
+  name: VVector
+  nameWithType: VVector.VVector
+  fullName: VMS.TPS.Common.Model.Types.VVector.VVector
+  nameWithType.vb: VVector.New
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.New
+  name.vb: New
+- uid: VMS.TPS.Common.Model.Types.VVector.Update*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.Update
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_Update_VMS_TPS_Common_Model_Types_VVector_Component_System_Double_
+  name: Update
+  nameWithType: VVector.Update
+  fullName: VMS.TPS.Common.Model.Types.VVector.Update
+- uid: VMS.TPS.Common.Model.Types.VVector.Component
+  commentId: T:VMS.TPS.Common.Model.Types.VVector.Component
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html
+  name: VVector.Component
+  nameWithType: VVector.Component
+  fullName: VMS.TPS.Common.Model.Types.VVector.Component
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types.VVector.Component
+    name: Component
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.Component.html
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types.VVector.Component
+    name: Component
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.Component.html
+- uid: VMS.TPS.Common.Model.Types.VVector.Distance*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.Distance
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_Distance_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_
+  name: Distance
+  nameWithType: VVector.Distance
+  fullName: VMS.TPS.Common.Model.Types.VVector.Distance
+- uid: VMS.TPS.Common.Model.Types.VVector.ScaleToUnitLength*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.ScaleToUnitLength
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_ScaleToUnitLength
+  name: ScaleToUnitLength
+  nameWithType: VVector.ScaleToUnitLength
+  fullName: VMS.TPS.Common.Model.Types.VVector.ScaleToUnitLength
+- uid: VMS.TPS.Common.Model.Types.VVector.GetUnitLengthScaledVector*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.GetUnitLengthScaledVector
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_GetUnitLengthScaledVector
+  name: GetUnitLengthScaledVector
+  nameWithType: VVector.GetUnitLengthScaledVector
+  fullName: VMS.TPS.Common.Model.Types.VVector.GetUnitLengthScaledVector
+- uid: VMS.TPS.Common.Model.Types.VVector.ScalarProduct*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.ScalarProduct
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_ScalarProduct_VMS_TPS_Common_Model_Types_VVector_
+  name: ScalarProduct
+  nameWithType: VVector.ScalarProduct
+  fullName: VMS.TPS.Common.Model.Types.VVector.ScalarProduct
+- uid: VMS.TPS.Common.Model.Types.VVector.op_Subtraction*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.op_Subtraction
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_op_Subtraction_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_
+  name: operator -
+  nameWithType: VVector.operator -
+  fullName: VMS.TPS.Common.Model.Types.VVector.operator -
+  nameWithType.vb: VVector.-
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.VVector.op_Subtraction*
+    name: '-'
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_op_Subtraction_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_
+- uid: VMS.TPS.Common.Model.Types.VVector.op_Addition*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.op_Addition
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_op_Addition_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_
+  name: operator +
+  nameWithType: VVector.operator +
+  fullName: VMS.TPS.Common.Model.Types.VVector.operator +
+  nameWithType.vb: VVector.+
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.VVector.op_Addition*
+    name: +
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_op_Addition_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_
+- uid: VMS.TPS.Common.Model.Types.VVector.op_Multiply*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.op_Multiply
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_op_Multiply_VMS_TPS_Common_Model_Types_VVector_System_Double_
+  name: operator *
+  nameWithType: VVector.operator *
+  fullName: VMS.TPS.Common.Model.Types.VVector.operator *
+  nameWithType.vb: VVector.*
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.VVector.op_Multiply*
+    name: '*'
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_op_Multiply_VMS_TPS_Common_Model_Types_VVector_System_Double_
+- uid: VMS.TPS.Common.Model.Types.VVector.op_Division*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.op_Division
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_op_Division_VMS_TPS_Common_Model_Types_VVector_System_Double_
+  name: operator /
+  nameWithType: VVector.operator /
+  fullName: VMS.TPS.Common.Model.Types.VVector.operator /
+  nameWithType.vb: VVector./
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector./
+  name.vb: /
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.VVector.op_Division*
+    name: /
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_op_Division_VMS_TPS_Common_Model_Types_VVector_System_Double_
+- uid: VMS.TPS.Common.Model.Types.VVector.EpsilonEqual(VMS.TPS.Common.Model.Types.VVector,System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.VVector.EpsilonEqual(VMS.TPS.Common.Model.Types.VVector,System.Double)
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_EpsilonEqual_VMS_TPS_Common_Model_Types_VVector_System_Double_
+  name: EpsilonEqual(VVector, double)
+  nameWithType: VVector.EpsilonEqual(VVector, double)
+  fullName: VMS.TPS.Common.Model.Types.VVector.EpsilonEqual(VMS.TPS.Common.Model.Types.VVector, double)
+  nameWithType.vb: VVector.EpsilonEqual(VVector, Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.EpsilonEqual(VMS.TPS.Common.Model.Types.VVector, Double)
+  name.vb: EpsilonEqual(VVector, Double)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.Types.VVector.EpsilonEqual(VMS.TPS.Common.Model.Types.VVector,System.Double)
+    name: EpsilonEqual
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_EpsilonEqual_VMS_TPS_Common_Model_Types_VVector_System_Double_
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.Types.VVector.EpsilonEqual(VMS.TPS.Common.Model.Types.VVector,System.Double)
+    name: EpsilonEqual
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_EpsilonEqual_VMS_TPS_Common_Model_Types_VVector_System_Double_
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.VVector.Equals*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.Equals
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_Equals_System_Object_
+  name: Equals
+  nameWithType: VVector.Equals
+  fullName: VMS.TPS.Common.Model.Types.VVector.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable{VMS.TPS.Common.Model.Types.VVector}.Equals(VMS.TPS.Common.Model.Types.VVector)
+  commentId: M:System.IEquatable{VMS.TPS.Common.Model.Types.VVector}.Equals(VMS.TPS.Common.Model.Types.VVector)
+  parent: System.IEquatable{VMS.TPS.Common.Model.Types.VVector}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(VVector)
+  nameWithType: IEquatable<VVector>.Equals(VVector)
+  fullName: System.IEquatable<VMS.TPS.Common.Model.Types.VVector>.Equals(VMS.TPS.Common.Model.Types.VVector)
+  nameWithType.vb: IEquatable(Of VVector).Equals(VVector)
+  fullName.vb: System.IEquatable(Of VMS.TPS.Common.Model.Types.VVector).Equals(VMS.TPS.Common.Model.Types.VVector)
+  spec.csharp:
+  - uid: System.IEquatable{VMS.TPS.Common.Model.Types.VVector}.Equals(VMS.TPS.Common.Model.Types.VVector)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{VMS.TPS.Common.Model.Types.VVector}.Equals(VMS.TPS.Common.Model.Types.VVector)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.VVector.EpsilonEqual*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.EpsilonEqual
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_EpsilonEqual_VMS_TPS_Common_Model_Types_VVector_System_Double_
+  name: EpsilonEqual
+  nameWithType: VVector.EpsilonEqual
+  fullName: VMS.TPS.Common.Model.Types.VVector.EpsilonEqual
+- uid: VMS.TPS.Common.Model.Types.VVector.IsUndefined*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.IsUndefined
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_IsUndefined
+  name: IsUndefined
+  nameWithType: VVector.IsUndefined
+  fullName: VMS.TPS.Common.Model.Types.VVector.IsUndefined
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.VVector.GetHashCode*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.GetHashCode
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_GetHashCode
+  name: GetHashCode
+  nameWithType: VVector.GetHashCode
+  fullName: VMS.TPS.Common.Model.Types.VVector.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: VMS.TPS.Common.Model.Types.VVector.op_Equality*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.op_Equality
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_op_Equality_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_
+  name: operator ==
+  nameWithType: VVector.operator ==
+  fullName: VMS.TPS.Common.Model.Types.VVector.operator ==
+  nameWithType.vb: VVector.=
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.VVector.op_Equality*
+    name: ==
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_op_Equality_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_
+- uid: VMS.TPS.Common.Model.Types.VVector.op_Inequality*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.op_Inequality
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_op_Inequality_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_
+  name: operator !=
+  nameWithType: VVector.operator !=
+  fullName: VMS.TPS.Common.Model.Types.VVector.operator !=
+  nameWithType.vb: VVector.<>
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.VVector.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_op_Inequality_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_
+- uid: VMS.TPS.Common.Model.Types.VVector.Item*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.Item
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_Item_System_Int32_
+  name: this
+  nameWithType: VVector.this
+  fullName: VMS.TPS.Common.Model.Types.VVector.this
+  nameWithType.vb: VVector.this[]
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector.this[]
+  name.vb: this[]
+- uid: VMS.TPS.Common.Model.Types.VVector.LengthSquared*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.LengthSquared
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_LengthSquared
+  name: LengthSquared
+  nameWithType: VVector.LengthSquared
+  fullName: VMS.TPS.Common.Model.Types.VVector.LengthSquared
+- uid: VMS.TPS.Common.Model.Types.VVector.Length*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.Length
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_Length
+  name: Length
+  nameWithType: VVector.Length
+  fullName: VMS.TPS.Common.Model.Types.VVector.Length
+- uid: VMS.TPS.Common.Model.Types.VVector.x*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.x
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_x
+  name: x
+  nameWithType: VVector.x
+  fullName: VMS.TPS.Common.Model.Types.VVector.x
+- uid: VMS.TPS.Common.Model.Types.VVector.y*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.y
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_y
+  name: y
+  nameWithType: VVector.y
+  fullName: VMS.TPS.Common.Model.Types.VVector.y
+- uid: VMS.TPS.Common.Model.Types.VVector.z*
+  commentId: Overload:VMS.TPS.Common.Model.Types.VVector.z
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_z
+  name: z
+  nameWithType: VVector.z
+  fullName: VMS.TPS.Common.Model.Types.VVector.z

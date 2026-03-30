@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.RailPosition
+  commentId: T:VMS.TPS.Common.Model.Types.RailPosition
+  id: RailPosition
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.RailPosition.In
+  - VMS.TPS.Common.Model.Types.RailPosition.Out
+  langs:
+  - csharp
+  - vb
+  name: RailPosition
+  nameWithType: RailPosition
+  fullName: VMS.TPS.Common.Model.Types.RailPosition
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Setting for the moveable rail position (in or out) used for couch modeling in Eclipse.
+  example: []
+  syntax:
+    content: public enum RailPosition
+    content.vb: Public Enum RailPosition
+- uid: VMS.TPS.Common.Model.Types.RailPosition.In
+  commentId: F:VMS.TPS.Common.Model.Types.RailPosition.In
+  id: In
+  parent: VMS.TPS.Common.Model.Types.RailPosition
+  langs:
+  - csharp
+  - vb
+  name: In
+  nameWithType: RailPosition.In
+  fullName: VMS.TPS.Common.Model.Types.RailPosition.In
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: In rail position.
+  example: []
+  syntax:
+    content: In = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.RailPosition
+- uid: VMS.TPS.Common.Model.Types.RailPosition.Out
+  commentId: F:VMS.TPS.Common.Model.Types.RailPosition.Out
+  id: Out
+  parent: VMS.TPS.Common.Model.Types.RailPosition
+  langs:
+  - csharp
+  - vb
+  name: Out
+  nameWithType: RailPosition.Out
+  fullName: VMS.TPS.Common.Model.Types.RailPosition.Out
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Out rail position.
+  example: []
+  syntax:
+    content: Out = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.RailPosition
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.RailPosition
+  commentId: T:VMS.TPS.Common.Model.Types.RailPosition
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.RailPosition.html
+  name: RailPosition
+  nameWithType: RailPosition
+  fullName: VMS.TPS.Common.Model.Types.RailPosition

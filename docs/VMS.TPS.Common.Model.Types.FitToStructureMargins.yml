@@ -1,0 +1,550 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.FitToStructureMargins
+  commentId: T:VMS.TPS.Common.Model.Types.FitToStructureMargins
+  id: FitToStructureMargins
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.FitToStructureMargins.#ctor(System.Double)
+  - VMS.TPS.Common.Model.Types.FitToStructureMargins.#ctor(System.Double,System.Double,System.Double,System.Double)
+  - VMS.TPS.Common.Model.Types.FitToStructureMargins.ToString
+  - VMS.TPS.Common.Model.Types.FitToStructureMargins.Type
+  - VMS.TPS.Common.Model.Types.FitToStructureMargins.X1
+  - VMS.TPS.Common.Model.Types.FitToStructureMargins.X2
+  - VMS.TPS.Common.Model.Types.FitToStructureMargins.Y1
+  - VMS.TPS.Common.Model.Types.FitToStructureMargins.Y2
+  langs:
+  - csharp
+  - vb
+  name: FitToStructureMargins
+  nameWithType: FitToStructureMargins
+  fullName: VMS.TPS.Common.Model.Types.FitToStructureMargins
+  type: Struct
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Margins that are used when fitting a field device to a structure from the BEV perspective
+  example: []
+  syntax:
+    content: public struct FitToStructureMargins
+    content.vb: Public Structure FitToStructureMargins
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.Types.FitToStructureMargins.Type
+  commentId: F:VMS.TPS.Common.Model.Types.FitToStructureMargins.Type
+  id: Type
+  parent: VMS.TPS.Common.Model.Types.FitToStructureMargins
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: FitToStructureMargins.Type
+  fullName: VMS.TPS.Common.Model.Types.FitToStructureMargins.Type
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Type of margins
+  example: []
+  syntax:
+    content: public readonly FitToStructureMarginType Type
+    return:
+      type: VMS.TPS.Common.Model.Types.FitToStructureMarginType
+    content.vb: Public ReadOnly Type As FitToStructureMarginType
+- uid: VMS.TPS.Common.Model.Types.FitToStructureMargins.X1
+  commentId: F:VMS.TPS.Common.Model.Types.FitToStructureMargins.X1
+  id: X1
+  parent: VMS.TPS.Common.Model.Types.FitToStructureMargins
+  langs:
+  - csharp
+  - vb
+  name: X1
+  nameWithType: FitToStructureMargins.X1
+  fullName: VMS.TPS.Common.Model.Types.FitToStructureMargins.X1
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Non-negative margin value in mm
+  example: []
+  syntax:
+    content: public readonly double X1
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly X1 As Double
+- uid: VMS.TPS.Common.Model.Types.FitToStructureMargins.X2
+  commentId: F:VMS.TPS.Common.Model.Types.FitToStructureMargins.X2
+  id: X2
+  parent: VMS.TPS.Common.Model.Types.FitToStructureMargins
+  langs:
+  - csharp
+  - vb
+  name: X2
+  nameWithType: FitToStructureMargins.X2
+  fullName: VMS.TPS.Common.Model.Types.FitToStructureMargins.X2
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Non-negative margin value in mm
+  example: []
+  syntax:
+    content: public readonly double X2
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly X2 As Double
+- uid: VMS.TPS.Common.Model.Types.FitToStructureMargins.Y1
+  commentId: F:VMS.TPS.Common.Model.Types.FitToStructureMargins.Y1
+  id: Y1
+  parent: VMS.TPS.Common.Model.Types.FitToStructureMargins
+  langs:
+  - csharp
+  - vb
+  name: Y1
+  nameWithType: FitToStructureMargins.Y1
+  fullName: VMS.TPS.Common.Model.Types.FitToStructureMargins.Y1
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Non-negative margin value in mm
+  example: []
+  syntax:
+    content: public readonly double Y1
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Y1 As Double
+- uid: VMS.TPS.Common.Model.Types.FitToStructureMargins.Y2
+  commentId: F:VMS.TPS.Common.Model.Types.FitToStructureMargins.Y2
+  id: Y2
+  parent: VMS.TPS.Common.Model.Types.FitToStructureMargins
+  langs:
+  - csharp
+  - vb
+  name: Y2
+  nameWithType: FitToStructureMargins.Y2
+  fullName: VMS.TPS.Common.Model.Types.FitToStructureMargins.Y2
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Non-negative margin value in mm
+  example: []
+  syntax:
+    content: public readonly double Y2
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Y2 As Double
+- uid: VMS.TPS.Common.Model.Types.FitToStructureMargins.#ctor(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.FitToStructureMargins.#ctor(System.Double,System.Double,System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double,System.Double,System.Double)'
+  parent: VMS.TPS.Common.Model.Types.FitToStructureMargins
+  langs:
+  - csharp
+  - vb
+  name: FitToStructureMargins(double, double, double, double)
+  nameWithType: FitToStructureMargins.FitToStructureMargins(double, double, double, double)
+  fullName: VMS.TPS.Common.Model.Types.FitToStructureMargins.FitToStructureMargins(double, double, double, double)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Constructs a new FitToStructureMargins instance with elliptical margin type.
+  example: []
+  syntax:
+    content: public FitToStructureMargins(double x1, double y1, double x2, double y2)
+    parameters:
+    - id: x1
+      type: System.Double
+      description: Margin x1 in mm
+    - id: y1
+      type: System.Double
+      description: Margin y1 in mm
+    - id: x2
+      type: System.Double
+      description: Margin x2 in mm
+    - id: y2
+      type: System.Double
+      description: Margin y2 in mm
+    content.vb: Public Sub New(x1 As Double, y1 As Double, x2 As Double, y2 As Double)
+  overload: VMS.TPS.Common.Model.Types.FitToStructureMargins.#ctor*
+  nameWithType.vb: FitToStructureMargins.New(Double, Double, Double, Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.FitToStructureMargins.New(Double, Double, Double, Double)
+  name.vb: New(Double, Double, Double, Double)
+- uid: VMS.TPS.Common.Model.Types.FitToStructureMargins.#ctor(System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.FitToStructureMargins.#ctor(System.Double)
+  id: '#ctor(System.Double)'
+  parent: VMS.TPS.Common.Model.Types.FitToStructureMargins
+  langs:
+  - csharp
+  - vb
+  name: FitToStructureMargins(double)
+  nameWithType: FitToStructureMargins.FitToStructureMargins(double)
+  fullName: VMS.TPS.Common.Model.Types.FitToStructureMargins.FitToStructureMargins(double)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Constructs a new FitToStructureMargins instance with circular margin type.
+  example: []
+  syntax:
+    content: public FitToStructureMargins(double margin)
+    parameters:
+    - id: margin
+      type: System.Double
+      description: Uniform margin for all directions in mm
+    content.vb: Public Sub New(margin As Double)
+  overload: VMS.TPS.Common.Model.Types.FitToStructureMargins.#ctor*
+  nameWithType.vb: FitToStructureMargins.New(Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.FitToStructureMargins.New(Double)
+  name.vb: New(Double)
+- uid: VMS.TPS.Common.Model.Types.FitToStructureMargins.ToString
+  commentId: M:VMS.TPS.Common.Model.Types.FitToStructureMargins.ToString
+  id: ToString
+  parent: VMS.TPS.Common.Model.Types.FitToStructureMargins
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: FitToStructureMargins.ToString()
+  fullName: VMS.TPS.Common.Model.Types.FitToStructureMargins.ToString()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: A string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: VMS.TPS.Common.Model.Types.FitToStructureMargins.ToString*
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.Types.FitToStructureMarginType
+  commentId: T:VMS.TPS.Common.Model.Types.FitToStructureMarginType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.FitToStructureMarginType.html
+  name: FitToStructureMarginType
+  nameWithType: FitToStructureMarginType
+  fullName: VMS.TPS.Common.Model.Types.FitToStructureMarginType
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: VMS.TPS.Common.Model.Types.FitToStructureMargins.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.Types.FitToStructureMargins.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.FitToStructureMargins.html#VMS_TPS_Common_Model_Types_FitToStructureMargins__ctor_System_Double_System_Double_System_Double_System_Double_
+  name: FitToStructureMargins
+  nameWithType: FitToStructureMargins.FitToStructureMargins
+  fullName: VMS.TPS.Common.Model.Types.FitToStructureMargins.FitToStructureMargins
+  nameWithType.vb: FitToStructureMargins.New
+  fullName.vb: VMS.TPS.Common.Model.Types.FitToStructureMargins.New
+  name.vb: New
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.FitToStructureMargins.ToString*
+  commentId: Overload:VMS.TPS.Common.Model.Types.FitToStructureMargins.ToString
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.FitToStructureMargins.html#VMS_TPS_Common_Model_Types_FitToStructureMargins_ToString
+  name: ToString
+  nameWithType: FitToStructureMargins.ToString
+  fullName: VMS.TPS.Common.Model.Types.FitToStructureMargins.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

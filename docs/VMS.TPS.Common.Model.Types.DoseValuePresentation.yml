@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.DoseValuePresentation
+  commentId: T:VMS.TPS.Common.Model.Types.DoseValuePresentation
+  id: DoseValuePresentation
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.DoseValuePresentation.Absolute
+  - VMS.TPS.Common.Model.Types.DoseValuePresentation.Relative
+  langs:
+  - csharp
+  - vb
+  name: DoseValuePresentation
+  nameWithType: DoseValuePresentation
+  fullName: VMS.TPS.Common.Model.Types.DoseValuePresentation
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Types of presentation for dose values.
+  example: []
+  syntax:
+    content: public enum DoseValuePresentation
+    content.vb: Public Enum DoseValuePresentation
+- uid: VMS.TPS.Common.Model.Types.DoseValuePresentation.Relative
+  commentId: F:VMS.TPS.Common.Model.Types.DoseValuePresentation.Relative
+  id: Relative
+  parent: VMS.TPS.Common.Model.Types.DoseValuePresentation
+  langs:
+  - csharp
+  - vb
+  name: Relative
+  nameWithType: DoseValuePresentation.Relative
+  fullName: VMS.TPS.Common.Model.Types.DoseValuePresentation.Relative
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The dose as a percentage.
+  example: []
+  syntax:
+    content: Relative = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.DoseValuePresentation
+- uid: VMS.TPS.Common.Model.Types.DoseValuePresentation.Absolute
+  commentId: F:VMS.TPS.Common.Model.Types.DoseValuePresentation.Absolute
+  id: Absolute
+  parent: VMS.TPS.Common.Model.Types.DoseValuePresentation
+  langs:
+  - csharp
+  - vb
+  name: Absolute
+  nameWithType: DoseValuePresentation.Absolute
+  fullName: VMS.TPS.Common.Model.Types.DoseValuePresentation.Absolute
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The dose in Gy or cGy.
+  example: []
+  syntax:
+    content: Absolute = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.DoseValuePresentation
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.DoseValuePresentation
+  commentId: T:VMS.TPS.Common.Model.Types.DoseValuePresentation
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValuePresentation.html
+  name: DoseValuePresentation
+  nameWithType: DoseValuePresentation
+  fullName: VMS.TPS.Common.Model.Types.DoseValuePresentation

@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.GoalEvalResult
+  commentId: T:VMS.TPS.Common.Model.Types.GoalEvalResult
+  id: GoalEvalResult
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.GoalEvalResult.Failed
+  - VMS.TPS.Common.Model.Types.GoalEvalResult.NA
+  - VMS.TPS.Common.Model.Types.GoalEvalResult.Passed
+  - VMS.TPS.Common.Model.Types.GoalEvalResult.WithinVariationAcceptable
+  langs:
+  - csharp
+  - vb
+  name: GoalEvalResult
+  nameWithType: GoalEvalResult
+  fullName: VMS.TPS.Common.Model.Types.GoalEvalResult
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Clinical Goal Evaluation Result
+  example: []
+  syntax:
+    content: public enum GoalEvalResult
+    content.vb: Public Enum GoalEvalResult
+- uid: VMS.TPS.Common.Model.Types.GoalEvalResult.Passed
+  commentId: F:VMS.TPS.Common.Model.Types.GoalEvalResult.Passed
+  id: Passed
+  parent: VMS.TPS.Common.Model.Types.GoalEvalResult
+  langs:
+  - csharp
+  - vb
+  name: Passed
+  nameWithType: GoalEvalResult.Passed
+  fullName: VMS.TPS.Common.Model.Types.GoalEvalResult.Passed
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Goal achieved
+  example: []
+  syntax:
+    content: Passed = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.GoalEvalResult
+- uid: VMS.TPS.Common.Model.Types.GoalEvalResult.WithinVariationAcceptable
+  commentId: F:VMS.TPS.Common.Model.Types.GoalEvalResult.WithinVariationAcceptable
+  id: WithinVariationAcceptable
+  parent: VMS.TPS.Common.Model.Types.GoalEvalResult
+  langs:
+  - csharp
+  - vb
+  name: WithinVariationAcceptable
+  nameWithType: GoalEvalResult.WithinVariationAcceptable
+  fullName: VMS.TPS.Common.Model.Types.GoalEvalResult.WithinVariationAcceptable
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The value within Variation Acceptable.
+  example: []
+  syntax:
+    content: WithinVariationAcceptable = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.GoalEvalResult
+- uid: VMS.TPS.Common.Model.Types.GoalEvalResult.Failed
+  commentId: F:VMS.TPS.Common.Model.Types.GoalEvalResult.Failed
+  id: Failed
+  parent: VMS.TPS.Common.Model.Types.GoalEvalResult
+  langs:
+  - csharp
+  - vb
+  name: Failed
+  nameWithType: GoalEvalResult.Failed
+  fullName: VMS.TPS.Common.Model.Types.GoalEvalResult.Failed
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Goal not achieved
+  example: []
+  syntax:
+    content: Failed = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.GoalEvalResult
+- uid: VMS.TPS.Common.Model.Types.GoalEvalResult.NA
+  commentId: F:VMS.TPS.Common.Model.Types.GoalEvalResult.NA
+  id: NA
+  parent: VMS.TPS.Common.Model.Types.GoalEvalResult
+  langs:
+  - csharp
+  - vb
+  name: NA
+  nameWithType: GoalEvalResult.NA
+  fullName: VMS.TPS.Common.Model.Types.GoalEvalResult.NA
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Not calculated
+  example: []
+  syntax:
+    content: NA = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.GoalEvalResult
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.GoalEvalResult
+  commentId: T:VMS.TPS.Common.Model.Types.GoalEvalResult
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.GoalEvalResult.html
+  name: GoalEvalResult
+  nameWithType: GoalEvalResult
+  fullName: VMS.TPS.Common.Model.Types.GoalEvalResult

@@ -1,0 +1,3076 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Beam | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Beam | Example ">
+      
+      <meta name="description" content="Represents one beam (also referred to as &amp;quot;field&amp;quot;) of an external beam treatment plan. See the definition of DICOM RT Beam for more details.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API.Beam">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_API_Beam" data-uid="VMS.TPS.Common.Model.API.Beam" class="text-break">
+Class Beam  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents one beam (also referred to as &quot;field&quot;) of an external beam treatment plan. See the definition of DICOM RT Beam for more details.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Beam : ApiDataObject, IXmlSerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html">SerializableObject</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html">ApiDataObject</a></div>
+      <div><span class="xref">Beam</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IXmlSerializable</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.IonBeam.html">IonBeam</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString">ApiDataObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_">ApiDataObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode">ApiDataObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName">ApiDataObject.HistoryUserName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName">ApiDataObject.HistoryUserDisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime">ApiDataObject.HistoryDateTime</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema">SerializableObject.GetSchema()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_">SerializableObject.ReadXml(XmlReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_">SerializableObject.WriteXml(XmlWriter, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_">SerializableObject.WriteXml(XmlWriter, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__">SerializableObject.WriteXml&lt;T&gt;(XmlWriter, string, IEnumerable&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__">SerializableObject.WriteXml&lt;T1, T2&gt;(XmlWriter, string, IDictionary&lt;T1, T2&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_">SerializableObject.StartSerialization(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization">SerializableObject.EndSerialization()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory">SerializableObject.ClearSerializationHistory()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_Applicator_" data-uid="VMS.TPS.Common.Model.API.Beam.Applicator*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_Applicator" data-uid="VMS.TPS.Common.Model.API.Beam.Applicator">
+  Applicator
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>An applicator is a specific add-on used in the beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Applicator Applicator { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Applicator.html">Applicator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_ArcLength_" data-uid="VMS.TPS.Common.Model.API.Beam.ArcLength*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_ArcLength" data-uid="VMS.TPS.Common.Model.API.Beam.ArcLength">
+  ArcLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The arc length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ArcLength { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_ArcOptimizationAperture_" data-uid="VMS.TPS.Common.Model.API.Beam.ArcOptimizationAperture*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_ArcOptimizationAperture" data-uid="VMS.TPS.Common.Model.API.Beam.ArcOptimizationAperture">
+  ArcOptimizationAperture
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Arc optimization aperture defined as an abstract rectangle around the isocenter in cm.
+Named according to IEC61217 but independent of any physical jaw collimators. Not applicable to IonBeam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ArcOptimizationAperture ArcOptimizationAperture { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.ArcOptimizationAperture.html">ArcOptimizationAperture</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_AreControlPointJawsMoving_" data-uid="VMS.TPS.Common.Model.API.Beam.AreControlPointJawsMoving*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_AreControlPointJawsMoving" data-uid="VMS.TPS.Common.Model.API.Beam.AreControlPointJawsMoving">
+  AreControlPointJawsMoving
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if jaws are moving.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AreControlPointJawsMoving { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_AverageSSD_" data-uid="VMS.TPS.Common.Model.API.Beam.AverageSSD*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_AverageSSD" data-uid="VMS.TPS.Common.Model.API.Beam.AverageSSD">
+  AverageSSD
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The average Source-to-Skin Distance (SSD) of an arc beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double AverageSSD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_BeamNumber_" data-uid="VMS.TPS.Common.Model.API.Beam.BeamNumber*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_BeamNumber" data-uid="VMS.TPS.Common.Model.API.Beam.BeamNumber">
+  BeamNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>DICOM RT Beam Number. The value is unique within the plan in which it is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BeamNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_BeamTechnique_" data-uid="VMS.TPS.Common.Model.API.Beam.BeamTechnique*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_BeamTechnique" data-uid="VMS.TPS.Common.Model.API.Beam.BeamTechnique">
+  BeamTechnique
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an enumeration that describes the type of the treatment field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BeamTechnique BeamTechnique { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.BeamTechnique.html">BeamTechnique</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_Blocks_" data-uid="VMS.TPS.Common.Model.API.Beam.Blocks*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_Blocks" data-uid="VMS.TPS.Common.Model.API.Beam.Blocks">
+  Blocks
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A collection of installed blocks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Block&gt; Blocks { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.Block.html">Block</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_Boluses_" data-uid="VMS.TPS.Common.Model.API.Beam.Boluses*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_Boluses" data-uid="VMS.TPS.Common.Model.API.Beam.Boluses">
+  Boluses
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A collection of beam boluses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Bolus&gt; Boluses { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.Bolus.html">Bolus</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_CalculationLogs_" data-uid="VMS.TPS.Common.Model.API.Beam.CalculationLogs*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_CalculationLogs" data-uid="VMS.TPS.Common.Model.API.Beam.CalculationLogs">
+  CalculationLogs
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A collection of beam calculation logs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;BeamCalculationLog&gt; CalculationLogs { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.BeamCalculationLog.html">BeamCalculationLog</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_CollimatorRotation_" data-uid="VMS.TPS.Common.Model.API.Beam.CollimatorRotation*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_CollimatorRotation" data-uid="VMS.TPS.Common.Model.API.Beam.CollimatorRotation">
+  CollimatorRotation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Collimator rotation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double CollimatorRotation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_CollimatorRotationAsString_" data-uid="VMS.TPS.Common.Model.API.Beam.CollimatorRotationAsString*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_CollimatorRotationAsString" data-uid="VMS.TPS.Common.Model.API.Beam.CollimatorRotationAsString">
+  CollimatorRotationAsString
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Collimator rotation in the user facing scale of the machine as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CollimatorRotationAsString { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_Comment_" data-uid="VMS.TPS.Common.Model.API.Beam.Comment*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_Comment" data-uid="VMS.TPS.Common.Model.API.Beam.Comment">
+  Comment
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license] The Beam comment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Comment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_Compensator_" data-uid="VMS.TPS.Common.Model.API.Beam.Compensator*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_Compensator" data-uid="VMS.TPS.Common.Model.API.Beam.Compensator">
+  Compensator
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The compensator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Compensator Compensator { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Compensator.html">Compensator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_ControlPoints_" data-uid="VMS.TPS.Common.Model.API.Beam.ControlPoints*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_ControlPoints" data-uid="VMS.TPS.Common.Model.API.Beam.ControlPoints">
+  ControlPoints
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>An enumerable sequence of machine parameters that
+describe the planned treatment beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControlPointCollection ControlPoints { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.ControlPointCollection.html">ControlPointCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_Beam_ControlPoints_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>A motorized wedge is described with four control points.
+If Elekta OmniWedge is used, the first three control points
+are used to describe the motorized wedge. Note, that for proton
+beams the control points are not currently supported and an empty
+collection is returned.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_CreationDateTime_" data-uid="VMS.TPS.Common.Model.API.Beam.CreationDateTime*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_CreationDateTime" data-uid="VMS.TPS.Common.Model.API.Beam.CreationDateTime">
+  CreationDateTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The date when this object was created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? CreationDateTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_Dose_" data-uid="VMS.TPS.Common.Model.API.Beam.Dose*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_Dose" data-uid="VMS.TPS.Common.Model.API.Beam.Dose">
+  Dose
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The dose for the beam. Returns null if the dose is not calculated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BeamDose Dose { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.BeamDose.html">BeamDose</a></dt>
+    <dd><p>Returns the beam dose, if it exists. Otherwise null.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_Beam_Dose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The dose will always be shown relative units. It does not have, for instance, the field weight factored in.
+Use <a class="xref" href="VMS.TPS.Common.Model.API.BeamDose.html#VMS_TPS_Common_Model_API_BeamDose_GetAbsoluteBeamDoseValue_VMS_TPS_Common_Model_Types_DoseValue_">BeamDose.GetAbsoluteBeamDose(DoseValue)</a> to get dose in absolute units.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_DoseRate_" data-uid="VMS.TPS.Common.Model.API.Beam.DoseRate*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_DoseRate" data-uid="VMS.TPS.Common.Model.API.Beam.DoseRate">
+  DoseRate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The dose rate of the treatment machine in MU/min.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DoseRate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_DosimetricLeafGap_" data-uid="VMS.TPS.Common.Model.API.Beam.DosimetricLeafGap*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_DosimetricLeafGap" data-uid="VMS.TPS.Common.Model.API.Beam.DosimetricLeafGap">
+  DosimetricLeafGap
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The dosimetric leaf gap that has been configured for the Dynamic Multileaf Collimator (DMLC) beams in the system. The dosimetric leaf gap is
+used for accounting for dose transmission through rounded MLC leaves.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double DosimetricLeafGap { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_EnergyMode_" data-uid="VMS.TPS.Common.Model.API.Beam.EnergyMode*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_EnergyMode" data-uid="VMS.TPS.Common.Model.API.Beam.EnergyMode">
+  EnergyMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Energy mode of the treatment machine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnergyMode EnergyMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.EnergyMode.html">EnergyMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_EnergyModeDisplayName_" data-uid="VMS.TPS.Common.Model.API.Beam.EnergyModeDisplayName*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_EnergyModeDisplayName" data-uid="VMS.TPS.Common.Model.API.Beam.EnergyModeDisplayName">
+  EnergyModeDisplayName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The display name of the energy mode. For example '18E' or '6X-SRS'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EnergyModeDisplayName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_FieldReferencePoints_" data-uid="VMS.TPS.Common.Model.API.Beam.FieldReferencePoints*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_FieldReferencePoints" data-uid="VMS.TPS.Common.Model.API.Beam.FieldReferencePoints">
+  FieldReferencePoints
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A collection of field reference points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;FieldReferencePoint&gt; FieldReferencePoints { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.FieldReferencePoint.html">FieldReferencePoint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_GantryDirection_" data-uid="VMS.TPS.Common.Model.API.Beam.GantryDirection*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_GantryDirection" data-uid="VMS.TPS.Common.Model.API.Beam.GantryDirection">
+  GantryDirection
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The gantry rotation direction: clockwise (CW), counterclockwise (CCW), or none.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GantryDirection GantryDirection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.GantryDirection.html">GantryDirection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_HasAllMLCLeavesClosed_" data-uid="VMS.TPS.Common.Model.API.Beam.HasAllMLCLeavesClosed*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_HasAllMLCLeavesClosed" data-uid="VMS.TPS.Common.Model.API.Beam.HasAllMLCLeavesClosed">
+  HasAllMLCLeavesClosed
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if all MLC leaves are closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasAllMLCLeavesClosed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_Id_" data-uid="VMS.TPS.Common.Model.API.Beam.Id*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_Id" data-uid="VMS.TPS.Common.Model.API.Beam.Id">
+  Id
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license] The identifier of the Beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_IsGantryExtended_" data-uid="VMS.TPS.Common.Model.API.Beam.IsGantryExtended*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_IsGantryExtended" data-uid="VMS.TPS.Common.Model.API.Beam.IsGantryExtended">
+  IsGantryExtended
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the gantry rotation is extended. For arc beams, checks if the gantry rotation is extended at the start angle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGantryExtended { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_IsGantryExtendedAtStopAngle_" data-uid="VMS.TPS.Common.Model.API.Beam.IsGantryExtendedAtStopAngle*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_IsGantryExtendedAtStopAngle" data-uid="VMS.TPS.Common.Model.API.Beam.IsGantryExtendedAtStopAngle">
+  IsGantryExtendedAtStopAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the gantry rotation is extended at the stop angle of an arc beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGantryExtendedAtStopAngle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_IsIMRT_" data-uid="VMS.TPS.Common.Model.API.Beam.IsIMRT*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_IsIMRT" data-uid="VMS.TPS.Common.Model.API.Beam.IsIMRT">
+  IsIMRT
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a beam is IMRT.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsIMRT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_IsImagingTreatmentField_" data-uid="VMS.TPS.Common.Model.API.Beam.IsImagingTreatmentField*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_IsImagingTreatmentField" data-uid="VMS.TPS.Common.Model.API.Beam.IsImagingTreatmentField">
+  IsImagingTreatmentField
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a beam is an Imaging Treatment Beam, i.e., a beam that is used to take an MV image and
+whose dose is calculated and taken into account in treatment planning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsImagingTreatmentField { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_IsSetupField_" data-uid="VMS.TPS.Common.Model.API.Beam.IsSetupField*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_IsSetupField" data-uid="VMS.TPS.Common.Model.API.Beam.IsSetupField">
+  IsSetupField
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a beam is a setup field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSetupField { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_IsocenterPosition_" data-uid="VMS.TPS.Common.Model.API.Beam.IsocenterPosition*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_IsocenterPosition" data-uid="VMS.TPS.Common.Model.API.Beam.IsocenterPosition">
+  IsocenterPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The position of the isocenter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VVector IsocenterPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_MLC_" data-uid="VMS.TPS.Common.Model.API.Beam.MLC*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_MLC" data-uid="VMS.TPS.Common.Model.API.Beam.MLC">
+  MLC
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a hardware description of the Multileaf Collimator (MLC) used in an MLC plan, or
+null if no MLC exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MLC MLC { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.MLC.html">MLC</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_MLCPlanType_" data-uid="VMS.TPS.Common.Model.API.Beam.MLCPlanType*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_MLCPlanType" data-uid="VMS.TPS.Common.Model.API.Beam.MLCPlanType">
+  MLCPlanType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of the Multileaf Collimator (MLC) plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MLCPlanType MLCPlanType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.MLCPlanType.html">MLCPlanType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_MLCTransmissionFactor_" data-uid="VMS.TPS.Common.Model.API.Beam.MLCTransmissionFactor*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_MLCTransmissionFactor" data-uid="VMS.TPS.Common.Model.API.Beam.MLCTransmissionFactor">
+  MLCTransmissionFactor
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The transmission factor of the Multileaf Collimator (MLC) material.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MLCTransmissionFactor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_Meterset_" data-uid="VMS.TPS.Common.Model.API.Beam.Meterset*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_Meterset" data-uid="VMS.TPS.Common.Model.API.Beam.Meterset">
+  Meterset
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The meterset value of the beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MetersetValue Meterset { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.MetersetValue.html">MetersetValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_MetersetPerGy_" data-uid="VMS.TPS.Common.Model.API.Beam.MetersetPerGy*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_MetersetPerGy" data-uid="VMS.TPS.Common.Model.API.Beam.MetersetPerGy">
+  MetersetPerGy
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The calculated meterset/Gy value for the beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MetersetPerGy { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_MotionCompensationTechnique_" data-uid="VMS.TPS.Common.Model.API.Beam.MotionCompensationTechnique*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_MotionCompensationTechnique" data-uid="VMS.TPS.Common.Model.API.Beam.MotionCompensationTechnique">
+  MotionCompensationTechnique
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>DICOM (respiratory) motion compensation technique. Returns an empty string if motion compensation technique is not used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MotionCompensationTechnique { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_MotionSignalSource_" data-uid="VMS.TPS.Common.Model.API.Beam.MotionSignalSource*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_MotionSignalSource" data-uid="VMS.TPS.Common.Model.API.Beam.MotionSignalSource">
+  MotionSignalSource
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>DICOM (respiratory) signal source. Returns an empty string if motion compensation technique is not used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string MotionSignalSource { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_Name_" data-uid="VMS.TPS.Common.Model.API.Beam.Name*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_Name" data-uid="VMS.TPS.Common.Model.API.Beam.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license] The name of the Beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_NormalizationFactor_" data-uid="VMS.TPS.Common.Model.API.Beam.NormalizationFactor*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_NormalizationFactor" data-uid="VMS.TPS.Common.Model.API.Beam.NormalizationFactor">
+  NormalizationFactor
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The beam normalization factor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double NormalizationFactor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_NormalizationMethod_" data-uid="VMS.TPS.Common.Model.API.Beam.NormalizationMethod*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_NormalizationMethod" data-uid="VMS.TPS.Common.Model.API.Beam.NormalizationMethod">
+  NormalizationMethod
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The beam normalization method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NormalizationMethod { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_Plan_" data-uid="VMS.TPS.Common.Model.API.Beam.Plan*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_Plan" data-uid="VMS.TPS.Common.Model.API.Beam.Plan">
+  Plan
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Used for navigating to parent Plan</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanSetup Plan { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_PlannedSSD_" data-uid="VMS.TPS.Common.Model.API.Beam.PlannedSSD*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_PlannedSSD" data-uid="VMS.TPS.Common.Model.API.Beam.PlannedSSD">
+  PlannedSSD
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Source-to-Skin Distance (SSD) value defined by the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double PlannedSSD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_ReferenceImage_" data-uid="VMS.TPS.Common.Model.API.Beam.ReferenceImage*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_ReferenceImage" data-uid="VMS.TPS.Common.Model.API.Beam.ReferenceImage">
+  ReferenceImage
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The reference image of the beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image ReferenceImage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_SSD_" data-uid="VMS.TPS.Common.Model.API.Beam.SSD*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_SSD" data-uid="VMS.TPS.Common.Model.API.Beam.SSD">
+  SSD
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Source-to-Skin Distance (SSD). For arc beams, the SSD at the start angle.
+This value is calculated from the geometrical setup of the beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double SSD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_SSDAtStopAngle_" data-uid="VMS.TPS.Common.Model.API.Beam.SSDAtStopAngle*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_SSDAtStopAngle" data-uid="VMS.TPS.Common.Model.API.Beam.SSDAtStopAngle">
+  SSDAtStopAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Source-to-Skin Distance (SSD) at the stop angle of an arc beam.
+This value is calculated from the geometrical setup of the beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double SSDAtStopAngle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_SetupNote_" data-uid="VMS.TPS.Common.Model.API.Beam.SetupNote*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_SetupNote" data-uid="VMS.TPS.Common.Model.API.Beam.SetupNote">
+  SetupNote
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The setup note of the field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SetupNote { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_SetupTechnique_" data-uid="VMS.TPS.Common.Model.API.Beam.SetupTechnique*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_SetupTechnique" data-uid="VMS.TPS.Common.Model.API.Beam.SetupTechnique">
+  SetupTechnique
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The setup technique.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SetupTechnique SetupTechnique { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.SetupTechnique.html">SetupTechnique</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_Technique_" data-uid="VMS.TPS.Common.Model.API.Beam.Technique*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_Technique" data-uid="VMS.TPS.Common.Model.API.Beam.Technique">
+  Technique
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The technique used in the planning beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Technique Technique { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Technique.html">Technique</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_ToleranceTableLabel_" data-uid="VMS.TPS.Common.Model.API.Beam.ToleranceTableLabel*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_ToleranceTableLabel" data-uid="VMS.TPS.Common.Model.API.Beam.ToleranceTableLabel">
+  ToleranceTableLabel
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>User-defined label for the referenced tolerance table, or an empty string if there is no reference to a tolerance table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToleranceTableLabel { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_Trays_" data-uid="VMS.TPS.Common.Model.API.Beam.Trays*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_Trays" data-uid="VMS.TPS.Common.Model.API.Beam.Trays">
+  Trays
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A collection of installed trays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Tray&gt; Trays { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.Tray.html">Tray</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_TreatmentTime_" data-uid="VMS.TPS.Common.Model.API.Beam.TreatmentTime*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_TreatmentTime" data-uid="VMS.TPS.Common.Model.API.Beam.TreatmentTime">
+  TreatmentTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The treatment time set for the beam in seconds. Plan Approval wizard sets this value by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TreatmentTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_TreatmentUnit_" data-uid="VMS.TPS.Common.Model.API.Beam.TreatmentUnit*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_TreatmentUnit" data-uid="VMS.TPS.Common.Model.API.Beam.TreatmentUnit">
+  TreatmentUnit
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The external beam treatment unit associated with this beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExternalBeamTreatmentUnit TreatmentUnit { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.ExternalBeamTreatmentUnit.html">ExternalBeamTreatmentUnit</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_Wedges_" data-uid="VMS.TPS.Common.Model.API.Beam.Wedges*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_Wedges" data-uid="VMS.TPS.Common.Model.API.Beam.Wedges">
+  Wedges
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A collection of installed wedges.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Wedge&gt; Wedges { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.Wedge.html">Wedge</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_Beam_Wedges_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Use operator <code>is</code> or <code>as</code> to distinguish between various wedge types.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_WeightFactor_" data-uid="VMS.TPS.Common.Model.API.Beam.WeightFactor*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_WeightFactor" data-uid="VMS.TPS.Common.Model.API.Beam.WeightFactor">
+  WeightFactor
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The weight factor of the beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double WeightFactor { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_AddBolus_" data-uid="VMS.TPS.Common.Model.API.Beam.AddBolus*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_AddBolus_System_String_" data-uid="VMS.TPS.Common.Model.API.Beam.AddBolus(System.String)">
+  AddBolus(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a link to bolus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddBolus(string bolusId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bolusId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The ID of the bolus to add. The bolus structure must exist in the plan's structure set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_AddBolus_" data-uid="VMS.TPS.Common.Model.API.Beam.AddBolus*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_AddBolus_VMS_TPS_Common_Model_API_Bolus_" data-uid="VMS.TPS.Common.Model.API.Beam.AddBolus(VMS.TPS.Common.Model.API.Bolus)">
+  AddBolus(Bolus)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license] Adds a link to bolus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddBolus(Bolus bolus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bolus</code> <a class="xref" href="VMS.TPS.Common.Model.API.Bolus.html">Bolus</a></dt>
+    <dd><p>The bolus to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_AddFlatteningSequence_" data-uid="VMS.TPS.Common.Model.API.Beam.AddFlatteningSequence*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_AddFlatteningSequence" data-uid="VMS.TPS.Common.Model.API.Beam.AddFlatteningSequence">
+  AddFlatteningSequence()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a flattening sequence to a static Halcyon field.
+Throws an exception if the field is not a Halcyon field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddFlatteningSequence()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if flattening sequence was added.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_ApplyParameters_" data-uid="VMS.TPS.Common.Model.API.Beam.ApplyParameters*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_ApplyParameters_VMS_TPS_Common_Model_API_BeamParameters_" data-uid="VMS.TPS.Common.Model.API.Beam.ApplyParameters(VMS.TPS.Common.Model.API.BeamParameters)">
+  ApplyParameters(BeamParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Modifies the beam by applying the given parameters. This is the only
+way to modify a beam using the Eclipse Scripting API. After a call to
+ApplyParameters, the getters of this beam instance will return the new values.
+An ApplicationException is thrown if the parameters form an invalid combination.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyParameters(BeamParameters beamParams)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>beamParams</code> <a class="xref" href="VMS.TPS.Common.Model.API.BeamParameters.html">BeamParameters</a></dt>
+    <dd><p>The parameters to apply to the beam.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_CalculateAverageLeafPairOpenings_" data-uid="VMS.TPS.Common.Model.API.Beam.CalculateAverageLeafPairOpenings*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_CalculateAverageLeafPairOpenings" data-uid="VMS.TPS.Common.Model.API.Beam.CalculateAverageLeafPairOpenings">
+  CalculateAverageLeafPairOpenings()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate and get Average Leaf Pair Opening values. ALPO values are calculated on the fly (not serialized).
+Returns a Dictionary. Key element is the index of carriage group in the field and value element is the ALPO value for that carriage group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, double&gt; CalculateAverageLeafPairOpenings()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_CanSetOptimalFluence_" data-uid="VMS.TPS.Common.Model.API.Beam.CanSetOptimalFluence*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_CanSetOptimalFluence_VMS_TPS_Common_Model_Types_Fluence_System_String__" data-uid="VMS.TPS.Common.Model.API.Beam.CanSetOptimalFluence(VMS.TPS.Common.Model.Types.Fluence,System.String@)">
+  CanSetOptimalFluence(Fluence, out string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if optimal fluence can be set for this beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanSetOptimalFluence(Fluence fluence, out string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fluence</code> <a class="xref" href="VMS.TPS.Common.Model.Types.Fluence.html">Fluence</a></dt>
+    <dd><p>The optimal fluence for the beam.</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>If the optimal fluence cannot be set, contains information about the reason.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Return true if optimal fluence can be set for this beam. Otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_CollimatorAngleToUser_" data-uid="VMS.TPS.Common.Model.API.Beam.CollimatorAngleToUser*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_CollimatorAngleToUser_System_Double_" data-uid="VMS.TPS.Common.Model.API.Beam.CollimatorAngleToUser(System.Double)">
+  CollimatorAngleToUser(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the given collimator angle value from the internal IEC scale to the user facing
+scale of the machine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double CollimatorAngleToUser(double val)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>val</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Collimator angle value</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The value in the user facing scale of the machine</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_CountSubfields_" data-uid="VMS.TPS.Common.Model.API.Beam.CountSubfields*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_CountSubfields" data-uid="VMS.TPS.Common.Model.API.Beam.CountSubfields">
+  CountSubfields()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Counts and returns Subfield count.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CountSubfields()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_CreateOrReplaceDRR_" data-uid="VMS.TPS.Common.Model.API.Beam.CreateOrReplaceDRR*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_CreateOrReplaceDRR_VMS_TPS_Common_Model_Types_DRRCalculationParameters_" data-uid="VMS.TPS.Common.Model.API.Beam.CreateOrReplaceDRR(VMS.TPS.Common.Model.Types.DRRCalculationParameters)">
+  CreateOrReplaceDRR(DRRCalculationParameters)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Calculates the DRR.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image CreateOrReplaceDRR(DRRCalculationParameters parameters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parameters</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DRRCalculationParameters.html">DRRCalculationParameters</a></dt>
+    <dd><p>DRR calculation parameters</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Image.html">Image</a></dt>
+    <dd><p>DRR image</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_FitArcOptimizationApertureToCollimatorJaws_" data-uid="VMS.TPS.Common.Model.API.Beam.FitArcOptimizationApertureToCollimatorJaws*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_FitArcOptimizationApertureToCollimatorJaws" data-uid="VMS.TPS.Common.Model.API.Beam.FitArcOptimizationApertureToCollimatorJaws">
+  FitArcOptimizationApertureToCollimatorJaws()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Fits the Arc Optimization Aperture to the collimator jaws. Not applicable to IonBeam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FitArcOptimizationApertureToCollimatorJaws()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_FitCollimatorToStructure_" data-uid="VMS.TPS.Common.Model.API.Beam.FitCollimatorToStructure*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_FitCollimatorToStructure_VMS_TPS_Common_Model_Types_FitToStructureMargins_VMS_TPS_Common_Model_API_Structure_System_Boolean_System_Boolean_System_Boolean_" data-uid="VMS.TPS.Common.Model.API.Beam.FitCollimatorToStructure(VMS.TPS.Common.Model.Types.FitToStructureMargins,VMS.TPS.Common.Model.API.Structure,System.Boolean,System.Boolean,System.Boolean)">
+  FitCollimatorToStructure(FitToStructureMargins, Structure, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Fits the collimator to the specified structure</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FitCollimatorToStructure(FitToStructureMargins margins, Structure structure, bool useAsymmetricXJaws, bool useAsymmetricYJaws, bool optimizeCollimatorRotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>margins</code> <a class="xref" href="VMS.TPS.Common.Model.Types.FitToStructureMargins.html">FitToStructureMargins</a></dt>
+    <dd><p>Margins used to fit to structure</p>
+</dd>
+    <dt><code>structure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>Structure to fit to</p>
+</dd>
+    <dt><code>useAsymmetricXJaws</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Flag of using asymmetric x jaws</p>
+</dd>
+    <dt><code>useAsymmetricYJaws</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Flag of uisng asymmetric y jaws</p>
+</dd>
+    <dt><code>optimizeCollimatorRotation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Flag of optimizing collimator angles as fitting result</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_FitMLCToOutline_" data-uid="VMS.TPS.Common.Model.API.Beam.FitMLCToOutline*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_FitMLCToOutline_System_Windows_Point_____" data-uid="VMS.TPS.Common.Model.API.Beam.FitMLCToOutline(System.Windows.Point[][])">
+  FitMLCToOutline(Point[][])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Fits the MLC leaves to a shape on the isocenter plane with default settings, or with settings from previous fit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FitMLCToOutline(Point[][] outline)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outline</code> <span class="xref">Point</span>[][]</dt>
+    <dd><p>The shape to fit the MLC leaves to, for example, Block.Outline.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_FitMLCToOutline_" data-uid="VMS.TPS.Common.Model.API.Beam.FitMLCToOutline*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_FitMLCToOutline_System_Windows_Point_____System_Boolean_VMS_TPS_Common_Model_Types_JawFitting_VMS_TPS_Common_Model_Types_OpenLeavesMeetingPoint_VMS_TPS_Common_Model_Types_ClosedLeavesMeetingPoint_" data-uid="VMS.TPS.Common.Model.API.Beam.FitMLCToOutline(System.Windows.Point[][],System.Boolean,VMS.TPS.Common.Model.Types.JawFitting,VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint,VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint)">
+  FitMLCToOutline(Point[][], bool, JawFitting, OpenLeavesMeetingPoint, ClosedLeavesMeetingPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Fits the MLC leaves to a shape on the isocenter plane with specified options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FitMLCToOutline(Point[][] outline, bool optimizeCollimatorRotation, JawFitting jawFit, OpenLeavesMeetingPoint olmp, ClosedLeavesMeetingPoint clmp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outline</code> <span class="xref">Point</span>[][]</dt>
+    <dd><p>The shape to fit the MLC leaves to, for example, Block.Outline.</p>
+</dd>
+    <dt><code>optimizeCollimatorRotation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Specifies if the MLC rotation is optimized.</p>
+</dd>
+    <dt><code>jawFit</code> <a class="xref" href="VMS.TPS.Common.Model.Types.JawFitting.html">JawFitting</a></dt>
+    <dd><p>Controls whether the collimator jaws are positioned to match the MLC outline and how it is done.</p>
+</dd>
+    <dt><code>olmp</code> <a class="xref" href="VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint.html">OpenLeavesMeetingPoint</a></dt>
+    <dd><p>Specifies the meeting point for MLC leaves and the structure outline (Inside/Middle/Outside).</p>
+</dd>
+    <dt><code>clmp</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.html">ClosedLeavesMeetingPoint</a></dt>
+    <dd><p>Specifies the placement of closed leaf pairs (Bank One/Center/Bank Two).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_FitMLCToStructure_" data-uid="VMS.TPS.Common.Model.API.Beam.FitMLCToStructure*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_FitMLCToStructure_VMS_TPS_Common_Model_API_Structure_" data-uid="VMS.TPS.Common.Model.API.Beam.FitMLCToStructure(VMS.TPS.Common.Model.API.Structure)">
+  FitMLCToStructure(Structure)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Fits the MLC leaves in the beam to a structure with the default settings, or with settings from the previous fit. The margin is zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FitMLCToStructure(Structure structure)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>The structure to fit the MLC leaves to.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_FitMLCToStructure_" data-uid="VMS.TPS.Common.Model.API.Beam.FitMLCToStructure*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_FitMLCToStructure_VMS_TPS_Common_Model_Types_FitToStructureMargins_VMS_TPS_Common_Model_API_Structure_System_Boolean_VMS_TPS_Common_Model_Types_JawFitting_VMS_TPS_Common_Model_Types_OpenLeavesMeetingPoint_VMS_TPS_Common_Model_Types_ClosedLeavesMeetingPoint_" data-uid="VMS.TPS.Common.Model.API.Beam.FitMLCToStructure(VMS.TPS.Common.Model.Types.FitToStructureMargins,VMS.TPS.Common.Model.API.Structure,System.Boolean,VMS.TPS.Common.Model.Types.JawFitting,VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint,VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint)">
+  FitMLCToStructure(FitToStructureMargins, Structure, bool, JawFitting, OpenLeavesMeetingPoint, ClosedLeavesMeetingPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Fits the MLC leaves to a structure projection on the isocenter plane with the specified margin.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FitMLCToStructure(FitToStructureMargins margins, Structure structure, bool optimizeCollimatorRotation, JawFitting jawFit, OpenLeavesMeetingPoint olmp, ClosedLeavesMeetingPoint clmp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>margins</code> <a class="xref" href="VMS.TPS.Common.Model.Types.FitToStructureMargins.html">FitToStructureMargins</a></dt>
+    <dd><p>Specifies the margin in all directions.</p>
+</dd>
+    <dt><code>structure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>The structure to fit the MLC leaves to.</p>
+</dd>
+    <dt><code>optimizeCollimatorRotation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Specify if the MLC rotation is optimized.</p>
+</dd>
+    <dt><code>jawFit</code> <a class="xref" href="VMS.TPS.Common.Model.Types.JawFitting.html">JawFitting</a></dt>
+    <dd><p>Controls whether and how the collimator jaws are positioned to match the MLC outline.</p>
+</dd>
+    <dt><code>olmp</code> <a class="xref" href="VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint.html">OpenLeavesMeetingPoint</a></dt>
+    <dd><p>Specifies the meeting point for MLC leaves and the structure outline (Inside/Middle/Outside).</p>
+</dd>
+    <dt><code>clmp</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.html">ClosedLeavesMeetingPoint</a></dt>
+    <dd><p>Specifies the placement of closed leaf pairs (Bank One/Center/Bank Two).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_GantryAngleToUser_" data-uid="VMS.TPS.Common.Model.API.Beam.GantryAngleToUser*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_GantryAngleToUser_System_Double_" data-uid="VMS.TPS.Common.Model.API.Beam.GantryAngleToUser(System.Double)">
+  GantryAngleToUser(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the given gantry rotation value from the internal IEC scale to the user facing
+scale of the machine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GantryAngleToUser(double val)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>val</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Gantry rotation value</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The value in the user facing scale of the machine</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_GetCAXPathLengthInBolus_" data-uid="VMS.TPS.Common.Model.API.Beam.GetCAXPathLengthInBolus*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_GetCAXPathLengthInBolus_VMS_TPS_Common_Model_API_Bolus_" data-uid="VMS.TPS.Common.Model.API.Beam.GetCAXPathLengthInBolus(VMS.TPS.Common.Model.API.Bolus)">
+  GetCAXPathLengthInBolus(Bolus)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>CAX path length in bolus is calculated along the vector spanning from radiation source to first skin contact (as defined by SSD).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetCAXPathLengthInBolus(Bolus bolus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bolus</code> <a class="xref" href="VMS.TPS.Common.Model.API.Bolus.html">Bolus</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_GetEditableParameters_" data-uid="VMS.TPS.Common.Model.API.Beam.GetEditableParameters*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_GetEditableParameters" data-uid="VMS.TPS.Common.Model.API.Beam.GetEditableParameters">
+  GetEditableParameters()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an editable copy of the beam parameters.
+The returned BeamParameters object is not updated if the beam parameters in the data model are changed,
+for example, by using another BeamParameters object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BeamParameters GetEditableParameters()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.BeamParameters.html">BeamParameters</a></dt>
+    <dd><p>Returns a new parameters object. Its values are copied from the
+corresponding properties of this object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_GetOptimalFluence_" data-uid="VMS.TPS.Common.Model.API.Beam.GetOptimalFluence*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_GetOptimalFluence" data-uid="VMS.TPS.Common.Model.API.Beam.GetOptimalFluence">
+  GetOptimalFluence()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the optimal fluence for this beam. Returns null if optimal fluence does not exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Fluence GetOptimalFluence()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.Fluence.html">Fluence</a></dt>
+    <dd><p>Returns the optimized fluence, if it exists. Otherwise null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_GetSourceLocation_" data-uid="VMS.TPS.Common.Model.API.Beam.GetSourceLocation*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_GetSourceLocation_System_Double_" data-uid="VMS.TPS.Common.Model.API.Beam.GetSourceLocation(System.Double)">
+  GetSourceLocation(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the location of the radiation source at a given gantry angle
+of the beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VVector GetSourceLocation(double gantryAngle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gantryAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Gantry angle</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Source location</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_GetSourceToBolusDistance_" data-uid="VMS.TPS.Common.Model.API.Beam.GetSourceToBolusDistance*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_GetSourceToBolusDistance_VMS_TPS_Common_Model_API_Bolus_" data-uid="VMS.TPS.Common.Model.API.Beam.GetSourceToBolusDistance(VMS.TPS.Common.Model.API.Bolus)">
+  GetSourceToBolusDistance(Bolus)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates Source To Bolus distance in mm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetSourceToBolusDistance(Bolus bolus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bolus</code> <a class="xref" href="VMS.TPS.Common.Model.API.Bolus.html">Bolus</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_GetStructureOutlines_" data-uid="VMS.TPS.Common.Model.API.Beam.GetStructureOutlines*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_GetStructureOutlines_VMS_TPS_Common_Model_API_Structure_System_Boolean_" data-uid="VMS.TPS.Common.Model.API.Beam.GetStructureOutlines(VMS.TPS.Common.Model.API.Structure,System.Boolean)">
+  GetStructureOutlines(Structure, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>If the structure has a segment, gets the outline of the structure on the isocenter plane of the beam.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point[][] GetStructureOutlines(Structure structure, bool inBEV)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>The structure to be projected to the isocenter plane.</p>
+</dd>
+    <dt><code>inBEV</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, outlines are returned in the Beams Eye View (BEV) coordinates, where the collimator angle is 0.0 degrees. If false, outlines are returned in beam coordinates. Suitable for use with FitMLCToOutline(...).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Point</span>[][]</dt>
+    <dd><p>Outlines as points.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_JawPositionsToUserString_" data-uid="VMS.TPS.Common.Model.API.Beam.JawPositionsToUserString*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_JawPositionsToUserString_VMS_TPS_Common_Model_Types_VRect_System_Double__" data-uid="VMS.TPS.Common.Model.API.Beam.JawPositionsToUserString(VMS.TPS.Common.Model.Types.VRect{System.Double})">
+  JawPositionsToUserString(VRect&lt;double&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the given jaw positions from the internal IEC scale to a string in the user facing
+scale of the machine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string JawPositionsToUserString(VRect&lt;double&gt; val)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>val</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VRect-1.html">VRect</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>Jaw postitions</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The value in the user facing scale of the machine</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_PatientSupportAngleToUser_" data-uid="VMS.TPS.Common.Model.API.Beam.PatientSupportAngleToUser*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_PatientSupportAngleToUser_System_Double_" data-uid="VMS.TPS.Common.Model.API.Beam.PatientSupportAngleToUser(System.Double)">
+  PatientSupportAngleToUser(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the given patient support angle value from the internal IEC scale to the user facing
+scale of the machine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double PatientSupportAngleToUser(double val)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>val</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Patient support angle value</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The value in the user facing scale of the machine</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_RemoveBolus_" data-uid="VMS.TPS.Common.Model.API.Beam.RemoveBolus*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_RemoveBolus_System_String_" data-uid="VMS.TPS.Common.Model.API.Beam.RemoveBolus(System.String)">
+  RemoveBolus(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Removes the link to bolus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveBolus(string bolusId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bolusId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The ID of the bolus to remove from the beam.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True is successful. False if there was no matching bolus linked to the beam.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_RemoveBolus_" data-uid="VMS.TPS.Common.Model.API.Beam.RemoveBolus*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_RemoveBolus_VMS_TPS_Common_Model_API_Bolus_" data-uid="VMS.TPS.Common.Model.API.Beam.RemoveBolus(VMS.TPS.Common.Model.API.Bolus)">
+  RemoveBolus(Bolus)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license] Removes the link to bolus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveBolus(Bolus bolus)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bolus</code> <a class="xref" href="VMS.TPS.Common.Model.API.Bolus.html">Bolus</a></dt>
+    <dd><p>The bolus to remove from the beam.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True is successful. False if there was no matching bolus linked to the beam.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_RemoveFlatteningSequence_" data-uid="VMS.TPS.Common.Model.API.Beam.RemoveFlatteningSequence*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_RemoveFlatteningSequence" data-uid="VMS.TPS.Common.Model.API.Beam.RemoveFlatteningSequence">
+  RemoveFlatteningSequence()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Removes the flattening sequence from a Halcyon field.
+Throws an exception if the field is not a Halcyon field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveFlatteningSequence()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if flattening sequence was removed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_SetOptimalFluence_" data-uid="VMS.TPS.Common.Model.API.Beam.SetOptimalFluence*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_SetOptimalFluence_VMS_TPS_Common_Model_Types_Fluence_" data-uid="VMS.TPS.Common.Model.API.Beam.SetOptimalFluence(VMS.TPS.Common.Model.Types.Fluence)">
+  SetOptimalFluence(Fluence)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Sets the optimal fluence for this beam.
+If the fluence is empty (the fluence is null or the dimensions of the fluence matrix are zero) an ArgumentException will be thrown.
+Setting the optimal fluence for the beam does not clear DVH Estimations of the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOptimalFluence(Fluence fluence)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fluence</code> <a class="xref" href="VMS.TPS.Common.Model.Types.Fluence.html">Fluence</a></dt>
+    <dd><p>The optimal fluence to be set.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Beam_WriteXml_" data-uid="VMS.TPS.Common.Model.API.Beam.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Beam_WriteXml_System_Xml_XmlWriter_" data-uid="VMS.TPS.Common.Model.API.Beam.WriteXml(System.Xml.XmlWriter)">
+  WriteXml(XmlWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an object into its XML representation.
+For more information on how to serialize an object into an XML document, see <span class="xref">System.Xml.Serialization.XmlSerializer</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>The System.Xml.XmlWriter stream, to which the object is serialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

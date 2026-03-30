@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.DVHEstimationStructureType
+  commentId: T:VMS.TPS.Common.Model.Types.DVHEstimationStructureType
+  id: DVHEstimationStructureType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.DVHEstimationStructureType.AVOIDANCE
+  - VMS.TPS.Common.Model.Types.DVHEstimationStructureType.Null
+  - VMS.TPS.Common.Model.Types.DVHEstimationStructureType.PTV
+  langs:
+  - csharp
+  - vb
+  name: DVHEstimationStructureType
+  nameWithType: DVHEstimationStructureType
+  fullName: VMS.TPS.Common.Model.Types.DVHEstimationStructureType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'Structure type as defined in Planning Model Library: PTV or OAR'
+  example: []
+  syntax:
+    content: public enum DVHEstimationStructureType
+    content.vb: Public Enum DVHEstimationStructureType
+- uid: VMS.TPS.Common.Model.Types.DVHEstimationStructureType.Null
+  commentId: F:VMS.TPS.Common.Model.Types.DVHEstimationStructureType.Null
+  id: "Null"
+  parent: VMS.TPS.Common.Model.Types.DVHEstimationStructureType
+  langs:
+  - csharp
+  - vb
+  name: "Null"
+  nameWithType: DVHEstimationStructureType.Null
+  fullName: VMS.TPS.Common.Model.Types.DVHEstimationStructureType.Null
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Not Defined
+  example: []
+  syntax:
+    content: Null = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.DVHEstimationStructureType
+- uid: VMS.TPS.Common.Model.Types.DVHEstimationStructureType.PTV
+  commentId: F:VMS.TPS.Common.Model.Types.DVHEstimationStructureType.PTV
+  id: PTV
+  parent: VMS.TPS.Common.Model.Types.DVHEstimationStructureType
+  langs:
+  - csharp
+  - vb
+  name: PTV
+  nameWithType: DVHEstimationStructureType.PTV
+  fullName: VMS.TPS.Common.Model.Types.DVHEstimationStructureType.PTV
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: PTV
+  example: []
+  syntax:
+    content: PTV = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.DVHEstimationStructureType
+- uid: VMS.TPS.Common.Model.Types.DVHEstimationStructureType.AVOIDANCE
+  commentId: F:VMS.TPS.Common.Model.Types.DVHEstimationStructureType.AVOIDANCE
+  id: AVOIDANCE
+  parent: VMS.TPS.Common.Model.Types.DVHEstimationStructureType
+  langs:
+  - csharp
+  - vb
+  name: AVOIDANCE
+  nameWithType: DVHEstimationStructureType.AVOIDANCE
+  fullName: VMS.TPS.Common.Model.Types.DVHEstimationStructureType.AVOIDANCE
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Avoidance
+  example: []
+  syntax:
+    content: AVOIDANCE = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.DVHEstimationStructureType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.DVHEstimationStructureType
+  commentId: T:VMS.TPS.Common.Model.Types.DVHEstimationStructureType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DVHEstimationStructureType.html
+  name: DVHEstimationStructureType
+  nameWithType: DVHEstimationStructureType
+  fullName: VMS.TPS.Common.Model.Types.DVHEstimationStructureType

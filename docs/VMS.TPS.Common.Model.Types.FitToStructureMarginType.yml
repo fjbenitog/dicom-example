@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.FitToStructureMarginType
+  commentId: T:VMS.TPS.Common.Model.Types.FitToStructureMarginType
+  id: FitToStructureMarginType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.FitToStructureMarginType.Circular
+  - VMS.TPS.Common.Model.Types.FitToStructureMarginType.Elliptical
+  langs:
+  - csharp
+  - vb
+  name: FitToStructureMarginType
+  nameWithType: FitToStructureMarginType
+  fullName: VMS.TPS.Common.Model.Types.FitToStructureMarginType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Margin type
+  example: []
+  syntax:
+    content: public enum FitToStructureMarginType
+    content.vb: Public Enum FitToStructureMarginType
+- uid: VMS.TPS.Common.Model.Types.FitToStructureMarginType.Circular
+  commentId: F:VMS.TPS.Common.Model.Types.FitToStructureMarginType.Circular
+  id: Circular
+  parent: VMS.TPS.Common.Model.Types.FitToStructureMarginType
+  langs:
+  - csharp
+  - vb
+  name: Circular
+  nameWithType: FitToStructureMarginType.Circular
+  fullName: VMS.TPS.Common.Model.Types.FitToStructureMarginType.Circular
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Uniform margin on all directions
+  example: []
+  syntax:
+    content: Circular = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.FitToStructureMarginType
+- uid: VMS.TPS.Common.Model.Types.FitToStructureMarginType.Elliptical
+  commentId: F:VMS.TPS.Common.Model.Types.FitToStructureMarginType.Elliptical
+  id: Elliptical
+  parent: VMS.TPS.Common.Model.Types.FitToStructureMarginType
+  langs:
+  - csharp
+  - vb
+  name: Elliptical
+  nameWithType: FitToStructureMarginType.Elliptical
+  fullName: VMS.TPS.Common.Model.Types.FitToStructureMarginType.Elliptical
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Variable margin for different directions
+  example: []
+  syntax:
+    content: Elliptical = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.FitToStructureMarginType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.FitToStructureMarginType
+  commentId: T:VMS.TPS.Common.Model.Types.FitToStructureMarginType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.FitToStructureMarginType.html
+  name: FitToStructureMarginType
+  nameWithType: FitToStructureMarginType
+  fullName: VMS.TPS.Common.Model.Types.FitToStructureMarginType

@@ -1,0 +1,319 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.BeamTechnique
+  commentId: T:VMS.TPS.Common.Model.Types.BeamTechnique
+  id: BeamTechnique
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.BeamTechnique.Arc
+  - VMS.TPS.Common.Model.Types.BeamTechnique.ConformalArc
+  - VMS.TPS.Common.Model.Types.BeamTechnique.Invalid
+  - VMS.TPS.Common.Model.Types.BeamTechnique.MLC
+  - VMS.TPS.Common.Model.Types.BeamTechnique.MLCArc
+  - VMS.TPS.Common.Model.Types.BeamTechnique.MultipleStaticSegmentIMRT
+  - VMS.TPS.Common.Model.Types.BeamTechnique.ScanningProton
+  - VMS.TPS.Common.Model.Types.BeamTechnique.ScatteringProton
+  - VMS.TPS.Common.Model.Types.BeamTechnique.SlidingWindowIMRT
+  - VMS.TPS.Common.Model.Types.BeamTechnique.Static
+  - VMS.TPS.Common.Model.Types.BeamTechnique.VMAT
+  langs:
+  - csharp
+  - vb
+  name: BeamTechnique
+  nameWithType: BeamTechnique
+  fullName: VMS.TPS.Common.Model.Types.BeamTechnique
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: An enumeration of beam techniques.
+  example: []
+  syntax:
+    content: public enum BeamTechnique
+    content.vb: Public Enum BeamTechnique
+- uid: VMS.TPS.Common.Model.Types.BeamTechnique.Invalid
+  commentId: F:VMS.TPS.Common.Model.Types.BeamTechnique.Invalid
+  id: Invalid
+  parent: VMS.TPS.Common.Model.Types.BeamTechnique
+  langs:
+  - csharp
+  - vb
+  name: Invalid
+  nameWithType: BeamTechnique.Invalid
+  fullName: VMS.TPS.Common.Model.Types.BeamTechnique.Invalid
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'TODO: add documentation.'
+  example: []
+  syntax:
+    content: Invalid = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.BeamTechnique
+- uid: VMS.TPS.Common.Model.Types.BeamTechnique.Static
+  commentId: F:VMS.TPS.Common.Model.Types.BeamTechnique.Static
+  id: Static
+  parent: VMS.TPS.Common.Model.Types.BeamTechnique
+  langs:
+  - csharp
+  - vb
+  name: Static
+  nameWithType: BeamTechnique.Static
+  fullName: VMS.TPS.Common.Model.Types.BeamTechnique.Static
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'TODO: add documentation.'
+  example: []
+  syntax:
+    content: Static = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.BeamTechnique
+- uid: VMS.TPS.Common.Model.Types.BeamTechnique.MLC
+  commentId: F:VMS.TPS.Common.Model.Types.BeamTechnique.MLC
+  id: MLC
+  parent: VMS.TPS.Common.Model.Types.BeamTechnique
+  langs:
+  - csharp
+  - vb
+  name: MLC
+  nameWithType: BeamTechnique.MLC
+  fullName: VMS.TPS.Common.Model.Types.BeamTechnique.MLC
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'TODO: add documentation.'
+  example: []
+  syntax:
+    content: MLC = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.BeamTechnique
+- uid: VMS.TPS.Common.Model.Types.BeamTechnique.Arc
+  commentId: F:VMS.TPS.Common.Model.Types.BeamTechnique.Arc
+  id: Arc
+  parent: VMS.TPS.Common.Model.Types.BeamTechnique
+  langs:
+  - csharp
+  - vb
+  name: Arc
+  nameWithType: BeamTechnique.Arc
+  fullName: VMS.TPS.Common.Model.Types.BeamTechnique.Arc
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'TODO: add documentation.'
+  example: []
+  syntax:
+    content: Arc = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.BeamTechnique
+- uid: VMS.TPS.Common.Model.Types.BeamTechnique.MLCArc
+  commentId: F:VMS.TPS.Common.Model.Types.BeamTechnique.MLCArc
+  id: MLCArc
+  parent: VMS.TPS.Common.Model.Types.BeamTechnique
+  langs:
+  - csharp
+  - vb
+  name: MLCArc
+  nameWithType: BeamTechnique.MLCArc
+  fullName: VMS.TPS.Common.Model.Types.BeamTechnique.MLCArc
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'TODO: add documentation.'
+  example: []
+  syntax:
+    content: MLCArc = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.BeamTechnique
+- uid: VMS.TPS.Common.Model.Types.BeamTechnique.ConformalArc
+  commentId: F:VMS.TPS.Common.Model.Types.BeamTechnique.ConformalArc
+  id: ConformalArc
+  parent: VMS.TPS.Common.Model.Types.BeamTechnique
+  langs:
+  - csharp
+  - vb
+  name: ConformalArc
+  nameWithType: BeamTechnique.ConformalArc
+  fullName: VMS.TPS.Common.Model.Types.BeamTechnique.ConformalArc
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'TODO: add documentation.'
+  example: []
+  syntax:
+    content: ConformalArc = 5
+    return:
+      type: VMS.TPS.Common.Model.Types.BeamTechnique
+- uid: VMS.TPS.Common.Model.Types.BeamTechnique.VMAT
+  commentId: F:VMS.TPS.Common.Model.Types.BeamTechnique.VMAT
+  id: VMAT
+  parent: VMS.TPS.Common.Model.Types.BeamTechnique
+  langs:
+  - csharp
+  - vb
+  name: VMAT
+  nameWithType: BeamTechnique.VMAT
+  fullName: VMS.TPS.Common.Model.Types.BeamTechnique.VMAT
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'TODO: add documentation.'
+  example: []
+  syntax:
+    content: VMAT = 6
+    return:
+      type: VMS.TPS.Common.Model.Types.BeamTechnique
+- uid: VMS.TPS.Common.Model.Types.BeamTechnique.MultipleStaticSegmentIMRT
+  commentId: F:VMS.TPS.Common.Model.Types.BeamTechnique.MultipleStaticSegmentIMRT
+  id: MultipleStaticSegmentIMRT
+  parent: VMS.TPS.Common.Model.Types.BeamTechnique
+  langs:
+  - csharp
+  - vb
+  name: MultipleStaticSegmentIMRT
+  nameWithType: BeamTechnique.MultipleStaticSegmentIMRT
+  fullName: VMS.TPS.Common.Model.Types.BeamTechnique.MultipleStaticSegmentIMRT
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'TODO: add documentation.'
+  example: []
+  syntax:
+    content: MultipleStaticSegmentIMRT = 7
+    return:
+      type: VMS.TPS.Common.Model.Types.BeamTechnique
+- uid: VMS.TPS.Common.Model.Types.BeamTechnique.SlidingWindowIMRT
+  commentId: F:VMS.TPS.Common.Model.Types.BeamTechnique.SlidingWindowIMRT
+  id: SlidingWindowIMRT
+  parent: VMS.TPS.Common.Model.Types.BeamTechnique
+  langs:
+  - csharp
+  - vb
+  name: SlidingWindowIMRT
+  nameWithType: BeamTechnique.SlidingWindowIMRT
+  fullName: VMS.TPS.Common.Model.Types.BeamTechnique.SlidingWindowIMRT
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'TODO: add documentation.'
+  example: []
+  syntax:
+    content: SlidingWindowIMRT = 8
+    return:
+      type: VMS.TPS.Common.Model.Types.BeamTechnique
+- uid: VMS.TPS.Common.Model.Types.BeamTechnique.ScanningProton
+  commentId: F:VMS.TPS.Common.Model.Types.BeamTechnique.ScanningProton
+  id: ScanningProton
+  parent: VMS.TPS.Common.Model.Types.BeamTechnique
+  langs:
+  - csharp
+  - vb
+  name: ScanningProton
+  nameWithType: BeamTechnique.ScanningProton
+  fullName: VMS.TPS.Common.Model.Types.BeamTechnique.ScanningProton
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'TODO: add documentation.'
+  example: []
+  syntax:
+    content: ScanningProton = 9
+    return:
+      type: VMS.TPS.Common.Model.Types.BeamTechnique
+- uid: VMS.TPS.Common.Model.Types.BeamTechnique.ScatteringProton
+  commentId: F:VMS.TPS.Common.Model.Types.BeamTechnique.ScatteringProton
+  id: ScatteringProton
+  parent: VMS.TPS.Common.Model.Types.BeamTechnique
+  langs:
+  - csharp
+  - vb
+  name: ScatteringProton
+  nameWithType: BeamTechnique.ScatteringProton
+  fullName: VMS.TPS.Common.Model.Types.BeamTechnique.ScatteringProton
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'TODO: add documentation.'
+  example: []
+  syntax:
+    content: ScatteringProton = 10
+    return:
+      type: VMS.TPS.Common.Model.Types.BeamTechnique
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.BeamTechnique
+  commentId: T:VMS.TPS.Common.Model.Types.BeamTechnique
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BeamTechnique.html
+  name: BeamTechnique
+  nameWithType: BeamTechnique
+  fullName: VMS.TPS.Common.Model.Types.BeamTechnique

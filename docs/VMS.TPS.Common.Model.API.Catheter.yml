@@ -1,0 +1,2076 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.API.Catheter
+  commentId: T:VMS.TPS.Common.Model.API.Catheter
+  id: Catheter
+  parent: VMS.TPS.Common.Model.API
+  children:
+  - VMS.TPS.Common.Model.API.Catheter.ApplicatorLength
+  - VMS.TPS.Common.Model.API.Catheter.BrachyFieldReferencePoints
+  - VMS.TPS.Common.Model.API.Catheter.BrachySolidApplicatorPartID
+  - VMS.TPS.Common.Model.API.Catheter.ChannelNumber
+  - VMS.TPS.Common.Model.API.Catheter.Color
+  - VMS.TPS.Common.Model.API.Catheter.DeadSpaceLength
+  - VMS.TPS.Common.Model.API.Catheter.FirstSourcePosition
+  - VMS.TPS.Common.Model.API.Catheter.GetSourcePosCenterDistanceFromTip(VMS.TPS.Common.Model.API.SourcePosition)
+  - VMS.TPS.Common.Model.API.Catheter.GetTotalDwellTime
+  - VMS.TPS.Common.Model.API.Catheter.GroupNumber
+  - VMS.TPS.Common.Model.API.Catheter.LastSourcePosition
+  - VMS.TPS.Common.Model.API.Catheter.LinkRefLine(VMS.TPS.Common.Model.API.Structure)
+  - VMS.TPS.Common.Model.API.Catheter.LinkRefPoint(VMS.TPS.Common.Model.API.ReferencePoint)
+  - VMS.TPS.Common.Model.API.Catheter.SetId(System.String,System.String@)
+  - VMS.TPS.Common.Model.API.Catheter.SetSourcePositions(System.Double,System.Double,System.Double)
+  - VMS.TPS.Common.Model.API.Catheter.Shape
+  - VMS.TPS.Common.Model.API.Catheter.SourcePositions
+  - VMS.TPS.Common.Model.API.Catheter.StepSize
+  - VMS.TPS.Common.Model.API.Catheter.TreatmentUnit
+  - VMS.TPS.Common.Model.API.Catheter.UnlinkRefLine(VMS.TPS.Common.Model.API.Structure)
+  - VMS.TPS.Common.Model.API.Catheter.UnlinkRefPoint(VMS.TPS.Common.Model.API.ReferencePoint)
+  - VMS.TPS.Common.Model.API.Catheter.WriteXml(System.Xml.XmlWriter)
+  langs:
+  - csharp
+  - vb
+  name: Catheter
+  nameWithType: Catheter
+  fullName: VMS.TPS.Common.Model.API.Catheter
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Represents a brachytherapy catheter or an applicator channel centerline. Catheters are associated with a <xref href="VMS.TPS.Common.Model.API.BrachyTreatmentUnit?text=brachytherapy+treatment+unit" data-throw-if-not-resolved="false"></xref>,
+
+    a <xref href="VMS.TPS.Common.Model.API.Catheter.ChannelNumber?text=+channel+number" data-throw-if-not-resolved="false"></xref>, and possibly a <xref href="VMS.TPS.Common.Model.API.Catheter.BrachySolidApplicatorPartID?text=unique+identifier" data-throw-if-not-resolved="false"></xref>
+
+    of the <xref href="VMS.TPS.Common.Model.API.BrachySolidApplicator?text=solid+applicator+part" data-throw-if-not-resolved="false"></xref> they belong to. Most notably, catheters encapsulate the <xref href="VMS.TPS.Common.Model.API.Catheter.Shape?text=shape" data-throw-if-not-resolved="false"></xref>
+
+    of the applicator channel centerline and its <xref href="VMS.TPS.Common.Model.API.Catheter.SourcePositions?text=source+positions" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public class Catheter : ApiDataObject, IXmlSerializable'
+    content.vb: Public Class Catheter Inherits ApiDataObject Implements IXmlSerializable
+  inheritance:
+  - System.Object
+  - VMS.TPS.Common.Model.API.SerializableObject
+  - VMS.TPS.Common.Model.API.ApiDataObject
+  implements:
+  - System.Xml.Serialization.IXmlSerializable
+  inheritedMembers:
+  - VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  - VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  - VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  - VMS.TPS.Common.Model.API.ApiDataObject.Id
+  - VMS.TPS.Common.Model.API.ApiDataObject.Name
+  - VMS.TPS.Common.Model.API.ApiDataObject.Comment
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  - VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  - VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  - VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  - VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.API.Catheter.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.Catheter.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  nameWithType: Catheter.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.Catheter.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Converts an object into its XML representation.
+
+    For more information on how to serialize an object into an XML document, see <xref href="System.Xml.Serialization.XmlSerializer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override void WriteXml(XmlWriter writer)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The System.Xml.XmlWriter stream, to which the object is serialized.
+    content.vb: Public Overrides Sub WriteXml(writer As XmlWriter)
+  overridden: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+  overload: VMS.TPS.Common.Model.API.Catheter.WriteXml*
+- uid: VMS.TPS.Common.Model.API.Catheter.GetSourcePosCenterDistanceFromTip(VMS.TPS.Common.Model.API.SourcePosition)
+  commentId: M:VMS.TPS.Common.Model.API.Catheter.GetSourcePosCenterDistanceFromTip(VMS.TPS.Common.Model.API.SourcePosition)
+  id: GetSourcePosCenterDistanceFromTip(VMS.TPS.Common.Model.API.SourcePosition)
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: GetSourcePosCenterDistanceFromTip(SourcePosition)
+  nameWithType: Catheter.GetSourcePosCenterDistanceFromTip(SourcePosition)
+  fullName: VMS.TPS.Common.Model.API.Catheter.GetSourcePosCenterDistanceFromTip(VMS.TPS.Common.Model.API.SourcePosition)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    The distance (in millimeters) from the tip of the catheter (in the first possible source position) to the center of the source position.
+
+    This is an offset from the actual catheter inner lumen tip by half of the source length and encapsulation.
+  example: []
+  syntax:
+    content: public double GetSourcePosCenterDistanceFromTip(SourcePosition sourcePosition)
+    parameters:
+    - id: sourcePosition
+      type: VMS.TPS.Common.Model.API.SourcePosition
+      description: The source position for which the distance from the catheter tip is got.
+    return:
+      type: System.Double
+      description: The distance from the tip of the catheter to the source position center, in millimeters.
+    content.vb: Public Function GetSourcePosCenterDistanceFromTip(sourcePosition As SourcePosition) As Double
+  overload: VMS.TPS.Common.Model.API.Catheter.GetSourcePosCenterDistanceFromTip*
+  seealso:
+  - linkId: VMS.TPS.Common.Model.API.BrachyTreatmentUnit.SourceCenterOffsetFromTip
+    commentId: P:VMS.TPS.Common.Model.API.BrachyTreatmentUnit.SourceCenterOffsetFromTip
+- uid: VMS.TPS.Common.Model.API.Catheter.GetTotalDwellTime
+  commentId: M:VMS.TPS.Common.Model.API.Catheter.GetTotalDwellTime
+  id: GetTotalDwellTime
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: GetTotalDwellTime()
+  nameWithType: Catheter.GetTotalDwellTime()
+  fullName: VMS.TPS.Common.Model.API.Catheter.GetTotalDwellTime()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The total dwell time in this catheter in seconds.
+  example: []
+  syntax:
+    content: public double GetTotalDwellTime()
+    return:
+      type: System.Double
+      description: The total dwell time in this catheter in seconds.
+    content.vb: Public Function GetTotalDwellTime() As Double
+  overload: VMS.TPS.Common.Model.API.Catheter.GetTotalDwellTime*
+- uid: VMS.TPS.Common.Model.API.Catheter.LinkRefLine(VMS.TPS.Common.Model.API.Structure)
+  commentId: M:VMS.TPS.Common.Model.API.Catheter.LinkRefLine(VMS.TPS.Common.Model.API.Structure)
+  id: LinkRefLine(VMS.TPS.Common.Model.API.Structure)
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: LinkRefLine(Structure)
+  nameWithType: Catheter.LinkRefLine(Structure)
+  fullName: VMS.TPS.Common.Model.API.Catheter.LinkRefLine(VMS.TPS.Common.Model.API.Structure)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Link reference line to applicator.'
+  example: []
+  syntax:
+    content: public void LinkRefLine(Structure refLine)
+    parameters:
+    - id: refLine
+      type: VMS.TPS.Common.Model.API.Structure
+      description: Reference line to link with applicator.
+    content.vb: Public Sub LinkRefLine(refLine As [Structure])
+  overload: VMS.TPS.Common.Model.API.Catheter.LinkRefLine*
+- uid: VMS.TPS.Common.Model.API.Catheter.LinkRefPoint(VMS.TPS.Common.Model.API.ReferencePoint)
+  commentId: M:VMS.TPS.Common.Model.API.Catheter.LinkRefPoint(VMS.TPS.Common.Model.API.ReferencePoint)
+  id: LinkRefPoint(VMS.TPS.Common.Model.API.ReferencePoint)
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: LinkRefPoint(ReferencePoint)
+  nameWithType: Catheter.LinkRefPoint(ReferencePoint)
+  fullName: VMS.TPS.Common.Model.API.Catheter.LinkRefPoint(VMS.TPS.Common.Model.API.ReferencePoint)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Link reference point to applicator.'
+  example: []
+  syntax:
+    content: public void LinkRefPoint(ReferencePoint refPoint)
+    parameters:
+    - id: refPoint
+      type: VMS.TPS.Common.Model.API.ReferencePoint
+      description: Reference point to link with applicator.
+    content.vb: Public Sub LinkRefPoint(refPoint As ReferencePoint)
+  overload: VMS.TPS.Common.Model.API.Catheter.LinkRefPoint*
+- uid: VMS.TPS.Common.Model.API.Catheter.SetId(System.String,System.String@)
+  commentId: M:VMS.TPS.Common.Model.API.Catheter.SetId(System.String,System.String@)
+  id: SetId(System.String,System.String@)
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: SetId(string, out string)
+  nameWithType: Catheter.SetId(string, out string)
+  fullName: VMS.TPS.Common.Model.API.Catheter.SetId(string, out string)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Sets the ID of the applicator.'
+  example: []
+  syntax:
+    content: public bool SetId(string id, out string message)
+    parameters:
+    - id: id
+      type: System.String
+      description: The new ID for the applicator.
+    - id: message
+      type: System.String
+      description: May be populated with a reason why setting the ID failed.
+    return:
+      type: System.Boolean
+      description: True if the ID was modified.
+    content.vb: Public Function SetId(id As String, message As String) As Boolean
+  overload: VMS.TPS.Common.Model.API.Catheter.SetId*
+  nameWithType.vb: Catheter.SetId(String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.Catheter.SetId(String, String)
+  name.vb: SetId(String, String)
+- uid: VMS.TPS.Common.Model.API.Catheter.SetSourcePositions(System.Double,System.Double,System.Double)
+  commentId: M:VMS.TPS.Common.Model.API.Catheter.SetSourcePositions(System.Double,System.Double,System.Double)
+  id: SetSourcePositions(System.Double,System.Double,System.Double)
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: SetSourcePositions(double, double, double)
+  nameWithType: Catheter.SetSourcePositions(double, double, double)
+  fullName: VMS.TPS.Common.Model.API.Catheter.SetSourcePositions(double, double, double)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Sets the step size, first source position, and last source position, and resets the source positions of the catheter.'
+  example: []
+  syntax:
+    content: public SetSourcePositionsResult SetSourcePositions(double stepSize, double firstSourcePosition, double lastSourcePosition)
+    parameters:
+    - id: stepSize
+      type: System.Double
+      description: Step size in millimeters.
+    - id: firstSourcePosition
+      type: System.Double
+      description: First source position in millimeters.
+    - id: lastSourcePosition
+      type: System.Double
+      description: Last source position in millimeters.
+    return:
+      type: VMS.TPS.Common.Model.Types.SetSourcePositionsResult
+      description: SetSourcePositionsResult struct, with its Boolean members populated according to effects of the call.
+    content.vb: Public Function SetSourcePositions(stepSize As Double, firstSourcePosition As Double, lastSourcePosition As Double) As SetSourcePositionsResult
+  overload: VMS.TPS.Common.Model.API.Catheter.SetSourcePositions*
+  nameWithType.vb: Catheter.SetSourcePositions(Double, Double, Double)
+  fullName.vb: VMS.TPS.Common.Model.API.Catheter.SetSourcePositions(Double, Double, Double)
+  name.vb: SetSourcePositions(Double, Double, Double)
+- uid: VMS.TPS.Common.Model.API.Catheter.UnlinkRefLine(VMS.TPS.Common.Model.API.Structure)
+  commentId: M:VMS.TPS.Common.Model.API.Catheter.UnlinkRefLine(VMS.TPS.Common.Model.API.Structure)
+  id: UnlinkRefLine(VMS.TPS.Common.Model.API.Structure)
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: UnlinkRefLine(Structure)
+  nameWithType: Catheter.UnlinkRefLine(Structure)
+  fullName: VMS.TPS.Common.Model.API.Catheter.UnlinkRefLine(VMS.TPS.Common.Model.API.Structure)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Unlink reference line from applicator.'
+  example: []
+  syntax:
+    content: public void UnlinkRefLine(Structure refLine)
+    parameters:
+    - id: refLine
+      type: VMS.TPS.Common.Model.API.Structure
+      description: Reference line to unlink from applicator
+    content.vb: Public Sub UnlinkRefLine(refLine As [Structure])
+  overload: VMS.TPS.Common.Model.API.Catheter.UnlinkRefLine*
+- uid: VMS.TPS.Common.Model.API.Catheter.UnlinkRefPoint(VMS.TPS.Common.Model.API.ReferencePoint)
+  commentId: M:VMS.TPS.Common.Model.API.Catheter.UnlinkRefPoint(VMS.TPS.Common.Model.API.ReferencePoint)
+  id: UnlinkRefPoint(VMS.TPS.Common.Model.API.ReferencePoint)
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: UnlinkRefPoint(ReferencePoint)
+  nameWithType: Catheter.UnlinkRefPoint(ReferencePoint)
+  fullName: VMS.TPS.Common.Model.API.Catheter.UnlinkRefPoint(VMS.TPS.Common.Model.API.ReferencePoint)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Unlink reference point from applicator.'
+  example: []
+  syntax:
+    content: public void UnlinkRefPoint(ReferencePoint refPoint)
+    parameters:
+    - id: refPoint
+      type: VMS.TPS.Common.Model.API.ReferencePoint
+      description: Reference point to unlink from applicator
+    content.vb: Public Sub UnlinkRefPoint(refPoint As ReferencePoint)
+  overload: VMS.TPS.Common.Model.API.Catheter.UnlinkRefPoint*
+- uid: VMS.TPS.Common.Model.API.Catheter.ApplicatorLength
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.ApplicatorLength
+  id: ApplicatorLength
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: ApplicatorLength
+  nameWithType: Catheter.ApplicatorLength
+  fullName: VMS.TPS.Common.Model.API.Catheter.ApplicatorLength
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The total length from the tip of the catheter to the treatment unit in millimeters.
+  example: []
+  syntax:
+    content: public double ApplicatorLength { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ApplicatorLength As Double
+  overload: VMS.TPS.Common.Model.API.Catheter.ApplicatorLength*
+- uid: VMS.TPS.Common.Model.API.Catheter.BrachyFieldReferencePoints
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.BrachyFieldReferencePoints
+  id: BrachyFieldReferencePoints
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: BrachyFieldReferencePoints
+  nameWithType: Catheter.BrachyFieldReferencePoints
+  fullName: VMS.TPS.Common.Model.API.Catheter.BrachyFieldReferencePoints
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: A collection of brachy field reference points.
+  example: []
+  syntax:
+    content: public IEnumerable<BrachyFieldReferencePoint> BrachyFieldReferencePoints { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.BrachyFieldReferencePoint}
+    content.vb: Public ReadOnly Property BrachyFieldReferencePoints As IEnumerable(Of BrachyFieldReferencePoint)
+  overload: VMS.TPS.Common.Model.API.Catheter.BrachyFieldReferencePoints*
+- uid: VMS.TPS.Common.Model.API.Catheter.BrachySolidApplicatorPartID
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.BrachySolidApplicatorPartID
+  id: BrachySolidApplicatorPartID
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: BrachySolidApplicatorPartID
+  nameWithType: Catheter.BrachySolidApplicatorPartID
+  fullName: VMS.TPS.Common.Model.API.Catheter.BrachySolidApplicatorPartID
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The unique identifier of the <xref href="VMS.TPS.Common.Model.API.BrachySolidApplicator?text=brachytherapy+solid+applicator" data-throw-if-not-resolved="false"></xref> part associated with the channel.
+  example: []
+  syntax:
+    content: public int BrachySolidApplicatorPartID { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property BrachySolidApplicatorPartID As Integer
+  overload: VMS.TPS.Common.Model.API.Catheter.BrachySolidApplicatorPartID*
+- uid: VMS.TPS.Common.Model.API.Catheter.ChannelNumber
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.ChannelNumber
+  id: ChannelNumber
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: ChannelNumber
+  nameWithType: Catheter.ChannelNumber
+  fullName: VMS.TPS.Common.Model.API.Catheter.ChannelNumber
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The channel number of this catheter.
+  example: []
+  syntax:
+    content: public int ChannelNumber { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ChannelNumber As Integer
+  overload: VMS.TPS.Common.Model.API.Catheter.ChannelNumber*
+- uid: VMS.TPS.Common.Model.API.Catheter.Color
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.Color
+  id: Color
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: Color
+  nameWithType: Catheter.Color
+  fullName: VMS.TPS.Common.Model.API.Catheter.Color
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The color of the catheter in 2D views.
+  example: []
+  syntax:
+    content: public Color Color { get; }
+    parameters: []
+    return:
+      type: System.Windows.Media.Color
+    content.vb: Public ReadOnly Property Color As Color
+  overload: VMS.TPS.Common.Model.API.Catheter.Color*
+- uid: VMS.TPS.Common.Model.API.Catheter.DeadSpaceLength
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.DeadSpaceLength
+  id: DeadSpaceLength
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: DeadSpaceLength
+  nameWithType: Catheter.DeadSpaceLength
+  fullName: VMS.TPS.Common.Model.API.Catheter.DeadSpaceLength
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The total length from the tip of the catheter to the start of the inner lumen in millimeters.
+  example: []
+  syntax:
+    content: public double DeadSpaceLength { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property DeadSpaceLength As Double
+  overload: VMS.TPS.Common.Model.API.Catheter.DeadSpaceLength*
+- uid: VMS.TPS.Common.Model.API.Catheter.FirstSourcePosition
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.FirstSourcePosition
+  id: FirstSourcePosition
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: FirstSourcePosition
+  nameWithType: Catheter.FirstSourcePosition
+  fullName: VMS.TPS.Common.Model.API.Catheter.FirstSourcePosition
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The first source position in millimeters in this catheter. This is the source position closest to the tip of the catheter.
+  example: []
+  syntax:
+    content: public double FirstSourcePosition { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property FirstSourcePosition As Double
+  overload: VMS.TPS.Common.Model.API.Catheter.FirstSourcePosition*
+- uid: VMS.TPS.Common.Model.API.Catheter.GroupNumber
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.GroupNumber
+  id: GroupNumber
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: GroupNumber
+  nameWithType: Catheter.GroupNumber
+  fullName: VMS.TPS.Common.Model.API.Catheter.GroupNumber
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Catheter Group number.
+  example: []
+  syntax:
+    content: public int GroupNumber { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property GroupNumber As Integer
+  overload: VMS.TPS.Common.Model.API.Catheter.GroupNumber*
+- uid: VMS.TPS.Common.Model.API.Catheter.LastSourcePosition
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.LastSourcePosition
+  id: LastSourcePosition
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: LastSourcePosition
+  nameWithType: Catheter.LastSourcePosition
+  fullName: VMS.TPS.Common.Model.API.Catheter.LastSourcePosition
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The last source position in millimeters in this catheter. This is the source position furthest away from the tip of the catheter.
+  example: []
+  syntax:
+    content: public double LastSourcePosition { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property LastSourcePosition As Double
+  overload: VMS.TPS.Common.Model.API.Catheter.LastSourcePosition*
+- uid: VMS.TPS.Common.Model.API.Catheter.Shape
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.Shape
+  id: Shape
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: Shape
+  nameWithType: Catheter.Shape
+  fullName: VMS.TPS.Common.Model.API.Catheter.Shape
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The DICOM coordinates of the applicator shape starting from the tip.
+  example: []
+  syntax:
+    content: public VVector[] Shape { get; set; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector[]
+    content.vb: Public Property Shape As VVector()
+  overload: VMS.TPS.Common.Model.API.Catheter.Shape*
+- uid: VMS.TPS.Common.Model.API.Catheter.SourcePositions
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.SourcePositions
+  id: SourcePositions
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: SourcePositions
+  nameWithType: Catheter.SourcePositions
+  fullName: VMS.TPS.Common.Model.API.Catheter.SourcePositions
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The source positions in the catheter starting from the tip.
+  example: []
+  syntax:
+    content: public IEnumerable<SourcePosition> SourcePositions { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.SourcePosition}
+    content.vb: Public ReadOnly Property SourcePositions As IEnumerable(Of SourcePosition)
+  overload: VMS.TPS.Common.Model.API.Catheter.SourcePositions*
+- uid: VMS.TPS.Common.Model.API.Catheter.StepSize
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.StepSize
+  id: StepSize
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: StepSize
+  nameWithType: Catheter.StepSize
+  fullName: VMS.TPS.Common.Model.API.Catheter.StepSize
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The step size of the catheter in millimeters.
+  example: []
+  syntax:
+    content: public double StepSize { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property StepSize As Double
+  overload: VMS.TPS.Common.Model.API.Catheter.StepSize*
+- uid: VMS.TPS.Common.Model.API.Catheter.TreatmentUnit
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.TreatmentUnit
+  id: TreatmentUnit
+  parent: VMS.TPS.Common.Model.API.Catheter
+  langs:
+  - csharp
+  - vb
+  name: TreatmentUnit
+  nameWithType: Catheter.TreatmentUnit
+  fullName: VMS.TPS.Common.Model.API.Catheter.TreatmentUnit
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The brachytherapy treatment unit associated with this catheter.
+  example: []
+  syntax:
+    content: public BrachyTreatmentUnit TreatmentUnit { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.BrachyTreatmentUnit
+    content.vb: Public ReadOnly Property TreatmentUnit As BrachyTreatmentUnit
+  overload: VMS.TPS.Common.Model.API.Catheter.TreatmentUnit*
+references:
+- uid: VMS.TPS.Common.Model.API.BrachyTreatmentUnit
+  commentId: T:VMS.TPS.Common.Model.API.BrachyTreatmentUnit
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.BrachyTreatmentUnit.html
+  name: BrachyTreatmentUnit
+  nameWithType: BrachyTreatmentUnit
+  fullName: VMS.TPS.Common.Model.API.BrachyTreatmentUnit
+- uid: VMS.TPS.Common.Model.API.Catheter.ChannelNumber
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.ChannelNumber
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_ChannelNumber
+  name: ChannelNumber
+  nameWithType: Catheter.ChannelNumber
+  fullName: VMS.TPS.Common.Model.API.Catheter.ChannelNumber
+- uid: VMS.TPS.Common.Model.API.Catheter.BrachySolidApplicatorPartID
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.BrachySolidApplicatorPartID
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_BrachySolidApplicatorPartID
+  name: BrachySolidApplicatorPartID
+  nameWithType: Catheter.BrachySolidApplicatorPartID
+  fullName: VMS.TPS.Common.Model.API.Catheter.BrachySolidApplicatorPartID
+- uid: VMS.TPS.Common.Model.API.BrachySolidApplicator
+  commentId: T:VMS.TPS.Common.Model.API.BrachySolidApplicator
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.BrachySolidApplicator.html
+  name: BrachySolidApplicator
+  nameWithType: BrachySolidApplicator
+  fullName: VMS.TPS.Common.Model.API.BrachySolidApplicator
+- uid: VMS.TPS.Common.Model.API.Catheter.Shape
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.Shape
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_Shape
+  name: Shape
+  nameWithType: Catheter.Shape
+  fullName: VMS.TPS.Common.Model.API.Catheter.Shape
+- uid: VMS.TPS.Common.Model.API.Catheter.SourcePositions
+  commentId: P:VMS.TPS.Common.Model.API.Catheter.SourcePositions
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_SourcePositions
+  name: SourcePositions
+  nameWithType: Catheter.SourcePositions
+  fullName: VMS.TPS.Common.Model.API.Catheter.SourcePositions
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: VMS.TPS.Common.Model.API.SerializableObject
+  commentId: T:VMS.TPS.Common.Model.API.SerializableObject
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: VMS.TPS.Common.Model.API.SerializableObject
+- uid: VMS.TPS.Common.Model.API.ApiDataObject
+  commentId: T:VMS.TPS.Common.Model.API.ApiDataObject
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html
+  name: ApiDataObject
+  nameWithType: ApiDataObject
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject
+- uid: System.Xml.Serialization.IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  nameWithType: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  name: ToString()
+  nameWithType: ApiDataObject.ToString()
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.ToString()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+    name: ToString
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+    name: ToString
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: ApiDataObject.Equals(object)
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.Equals(object)
+  nameWithType.vb: ApiDataObject.Equals(Object)
+  fullName.vb: VMS.TPS.Common.Model.API.ApiDataObject.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  name: GetHashCode()
+  nameWithType: ApiDataObject.GetHashCode()
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.Id
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.Id
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Id
+  name: Id
+  nameWithType: ApiDataObject.Id
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.Id
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.Name
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.Name
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Name
+  name: Name
+  nameWithType: ApiDataObject.Name
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.Name
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.Comment
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.Comment
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Comment
+  name: Comment
+  nameWithType: ApiDataObject.Comment
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.Comment
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName
+  name: HistoryUserName
+  nameWithType: ApiDataObject.HistoryUserName
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName
+  name: HistoryUserDisplayName
+  nameWithType: ApiDataObject.HistoryUserDisplayName
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime
+  name: HistoryDateTime
+  nameWithType: ApiDataObject.HistoryDateTime
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+- uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  name: GetSchema()
+  nameWithType: SerializableObject.GetSchema()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.GetSchema()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  name: ReadXml(XmlReader)
+  nameWithType: SerializableObject.ReadXml(XmlReader)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  name: WriteXml(XmlWriter, string, object)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, object)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, object)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, Object)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, Object)
+  name.vb: WriteXml(XmlWriter, String, Object)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  name: WriteXml(XmlWriter, string, string)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, string)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, String)
+  name.vb: WriteXml(XmlWriter, String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  name: StartSerialization(string, string)
+  nameWithType: SerializableObject.StartSerialization(string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(string, string)
+  nameWithType.vb: SerializableObject.StartSerialization(String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(String, String)
+  name.vb: StartSerialization(String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  name: EndSerialization()
+  nameWithType: SerializableObject.EndSerialization()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  name: ClearSerializationHistory()
+  nameWithType: SerializableObject.ClearSerializationHistory()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: System.Xml.Serialization.XmlSerializer
+  commentId: T:System.Xml.Serialization.XmlSerializer
+  isExternal: true
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml(XmlWriter)
+  nameWithType: ApiDataObject.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Catheter.WriteXml*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.WriteXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml
+  nameWithType: Catheter.WriteXml
+  fullName: VMS.TPS.Common.Model.API.Catheter.WriteXml
+- uid: System.Xml.XmlWriter
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: VMS.TPS.Common.Model.API.BrachyTreatmentUnit.SourceCenterOffsetFromTip
+  commentId: P:VMS.TPS.Common.Model.API.BrachyTreatmentUnit.SourceCenterOffsetFromTip
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.BrachyTreatmentUnit.html#VMS_TPS_Common_Model_API_BrachyTreatmentUnit_SourceCenterOffsetFromTip
+  name: SourceCenterOffsetFromTip
+  nameWithType: BrachyTreatmentUnit.SourceCenterOffsetFromTip
+  fullName: VMS.TPS.Common.Model.API.BrachyTreatmentUnit.SourceCenterOffsetFromTip
+- uid: VMS.TPS.Common.Model.API.Catheter.GetSourcePosCenterDistanceFromTip*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.GetSourcePosCenterDistanceFromTip
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_GetSourcePosCenterDistanceFromTip_VMS_TPS_Common_Model_API_SourcePosition_
+  name: GetSourcePosCenterDistanceFromTip
+  nameWithType: Catheter.GetSourcePosCenterDistanceFromTip
+  fullName: VMS.TPS.Common.Model.API.Catheter.GetSourcePosCenterDistanceFromTip
+- uid: VMS.TPS.Common.Model.API.SourcePosition
+  commentId: T:VMS.TPS.Common.Model.API.SourcePosition
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SourcePosition.html
+  name: SourcePosition
+  nameWithType: SourcePosition
+  fullName: VMS.TPS.Common.Model.API.SourcePosition
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: VMS.TPS.Common.Model.API.Catheter.GetTotalDwellTime*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.GetTotalDwellTime
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_GetTotalDwellTime
+  name: GetTotalDwellTime
+  nameWithType: Catheter.GetTotalDwellTime
+  fullName: VMS.TPS.Common.Model.API.Catheter.GetTotalDwellTime
+- uid: VMS.TPS.Common.Model.API.Catheter.LinkRefLine*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.LinkRefLine
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_LinkRefLine_VMS_TPS_Common_Model_API_Structure_
+  name: LinkRefLine
+  nameWithType: Catheter.LinkRefLine
+  fullName: VMS.TPS.Common.Model.API.Catheter.LinkRefLine
+- uid: VMS.TPS.Common.Model.API.Structure
+  commentId: T:VMS.TPS.Common.Model.API.Structure
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Structure.html
+  name: Structure
+  nameWithType: Structure
+  fullName: VMS.TPS.Common.Model.API.Structure
+- uid: VMS.TPS.Common.Model.API.Catheter.LinkRefPoint*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.LinkRefPoint
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_LinkRefPoint_VMS_TPS_Common_Model_API_ReferencePoint_
+  name: LinkRefPoint
+  nameWithType: Catheter.LinkRefPoint
+  fullName: VMS.TPS.Common.Model.API.Catheter.LinkRefPoint
+- uid: VMS.TPS.Common.Model.API.ReferencePoint
+  commentId: T:VMS.TPS.Common.Model.API.ReferencePoint
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ReferencePoint.html
+  name: ReferencePoint
+  nameWithType: ReferencePoint
+  fullName: VMS.TPS.Common.Model.API.ReferencePoint
+- uid: VMS.TPS.Common.Model.API.Catheter.SetId*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.SetId
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_SetId_System_String_System_String__
+  name: SetId
+  nameWithType: Catheter.SetId
+  fullName: VMS.TPS.Common.Model.API.Catheter.SetId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: VMS.TPS.Common.Model.API.Catheter.SetSourcePositions*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.SetSourcePositions
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_SetSourcePositions_System_Double_System_Double_System_Double_
+  name: SetSourcePositions
+  nameWithType: Catheter.SetSourcePositions
+  fullName: VMS.TPS.Common.Model.API.Catheter.SetSourcePositions
+- uid: VMS.TPS.Common.Model.Types.SetSourcePositionsResult
+  commentId: T:VMS.TPS.Common.Model.Types.SetSourcePositionsResult
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.SetSourcePositionsResult.html
+  name: SetSourcePositionsResult
+  nameWithType: SetSourcePositionsResult
+  fullName: VMS.TPS.Common.Model.Types.SetSourcePositionsResult
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.API.Catheter.UnlinkRefLine*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.UnlinkRefLine
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_UnlinkRefLine_VMS_TPS_Common_Model_API_Structure_
+  name: UnlinkRefLine
+  nameWithType: Catheter.UnlinkRefLine
+  fullName: VMS.TPS.Common.Model.API.Catheter.UnlinkRefLine
+- uid: VMS.TPS.Common.Model.API.Catheter.UnlinkRefPoint*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.UnlinkRefPoint
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_UnlinkRefPoint_VMS_TPS_Common_Model_API_ReferencePoint_
+  name: UnlinkRefPoint
+  nameWithType: Catheter.UnlinkRefPoint
+  fullName: VMS.TPS.Common.Model.API.Catheter.UnlinkRefPoint
+- uid: VMS.TPS.Common.Model.API.Catheter.ApplicatorLength*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.ApplicatorLength
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_ApplicatorLength
+  name: ApplicatorLength
+  nameWithType: Catheter.ApplicatorLength
+  fullName: VMS.TPS.Common.Model.API.Catheter.ApplicatorLength
+- uid: VMS.TPS.Common.Model.API.Catheter.BrachyFieldReferencePoints*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.BrachyFieldReferencePoints
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_BrachyFieldReferencePoints
+  name: BrachyFieldReferencePoints
+  nameWithType: Catheter.BrachyFieldReferencePoints
+  fullName: VMS.TPS.Common.Model.API.Catheter.BrachyFieldReferencePoints
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.BrachyFieldReferencePoint}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.BrachyFieldReferencePoint}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<BrachyFieldReferencePoint>
+  nameWithType: IEnumerable<BrachyFieldReferencePoint>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.BrachyFieldReferencePoint>
+  nameWithType.vb: IEnumerable(Of BrachyFieldReferencePoint)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.BrachyFieldReferencePoint)
+  name.vb: IEnumerable(Of BrachyFieldReferencePoint)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.BrachyFieldReferencePoint
+    name: BrachyFieldReferencePoint
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.BrachyFieldReferencePoint.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.BrachyFieldReferencePoint
+    name: BrachyFieldReferencePoint
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.BrachyFieldReferencePoint.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: VMS.TPS.Common.Model.API.Catheter.BrachySolidApplicatorPartID*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.BrachySolidApplicatorPartID
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_BrachySolidApplicatorPartID
+  name: BrachySolidApplicatorPartID
+  nameWithType: Catheter.BrachySolidApplicatorPartID
+  fullName: VMS.TPS.Common.Model.API.Catheter.BrachySolidApplicatorPartID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: VMS.TPS.Common.Model.API.Catheter.ChannelNumber*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.ChannelNumber
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_ChannelNumber
+  name: ChannelNumber
+  nameWithType: Catheter.ChannelNumber
+  fullName: VMS.TPS.Common.Model.API.Catheter.ChannelNumber
+- uid: VMS.TPS.Common.Model.API.Catheter.Color*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.Color
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_Color
+  name: Color
+  nameWithType: Catheter.Color
+  fullName: VMS.TPS.Common.Model.API.Catheter.Color
+- uid: System.Windows.Media.Color
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: System.Windows.Media.Color
+- uid: VMS.TPS.Common.Model.API.Catheter.DeadSpaceLength*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.DeadSpaceLength
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_DeadSpaceLength
+  name: DeadSpaceLength
+  nameWithType: Catheter.DeadSpaceLength
+  fullName: VMS.TPS.Common.Model.API.Catheter.DeadSpaceLength
+- uid: VMS.TPS.Common.Model.API.Catheter.FirstSourcePosition*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.FirstSourcePosition
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_FirstSourcePosition
+  name: FirstSourcePosition
+  nameWithType: Catheter.FirstSourcePosition
+  fullName: VMS.TPS.Common.Model.API.Catheter.FirstSourcePosition
+- uid: VMS.TPS.Common.Model.API.Catheter.GroupNumber*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.GroupNumber
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_GroupNumber
+  name: GroupNumber
+  nameWithType: Catheter.GroupNumber
+  fullName: VMS.TPS.Common.Model.API.Catheter.GroupNumber
+- uid: VMS.TPS.Common.Model.API.Catheter.LastSourcePosition*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.LastSourcePosition
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_LastSourcePosition
+  name: LastSourcePosition
+  nameWithType: Catheter.LastSourcePosition
+  fullName: VMS.TPS.Common.Model.API.Catheter.LastSourcePosition
+- uid: VMS.TPS.Common.Model.API.Catheter.Shape*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.Shape
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_Shape
+  name: Shape
+  nameWithType: Catheter.Shape
+  fullName: VMS.TPS.Common.Model.API.Catheter.Shape
+- uid: VMS.TPS.Common.Model.Types.VVector[]
+  isExternal: true
+  name: VVector[]
+  nameWithType: VVector[]
+  fullName: VMS.TPS.Common.Model.Types.VVector[]
+  nameWithType.vb: VVector()
+  fullName.vb: VMS.TPS.Common.Model.Types.VVector()
+  name.vb: VVector()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Catheter.SourcePositions*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.SourcePositions
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_SourcePositions
+  name: SourcePositions
+  nameWithType: Catheter.SourcePositions
+  fullName: VMS.TPS.Common.Model.API.Catheter.SourcePositions
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.SourcePosition}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.SourcePosition}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<SourcePosition>
+  nameWithType: IEnumerable<SourcePosition>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.SourcePosition>
+  nameWithType.vb: IEnumerable(Of SourcePosition)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.SourcePosition)
+  name.vb: IEnumerable(Of SourcePosition)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.SourcePosition
+    name: SourcePosition
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SourcePosition.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.SourcePosition
+    name: SourcePosition
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SourcePosition.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Catheter.StepSize*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.StepSize
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_StepSize
+  name: StepSize
+  nameWithType: Catheter.StepSize
+  fullName: VMS.TPS.Common.Model.API.Catheter.StepSize
+- uid: VMS.TPS.Common.Model.API.Catheter.TreatmentUnit*
+  commentId: Overload:VMS.TPS.Common.Model.API.Catheter.TreatmentUnit
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_TreatmentUnit
+  name: TreatmentUnit
+  nameWithType: Catheter.TreatmentUnit
+  fullName: VMS.TPS.Common.Model.API.Catheter.TreatmentUnit

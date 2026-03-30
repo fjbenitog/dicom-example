@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct VVector | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct VVector | Example ">
+      
+      <meta name="description" content="Represents a displacement in 3D space.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.Types.VVector">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_Types_VVector" data-uid="VMS.TPS.Common.Model.Types.VVector" class="text-break">
+Struct VVector  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.Types.html">Types</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.Types.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a displacement in 3D space.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct VVector : IEquatable&lt;VVector&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector__ctor_" data-uid="VMS.TPS.Common.Model.Types.VVector.#ctor*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector__ctor_System_Double_System_Double_System_Double_" data-uid="VMS.TPS.Common.Model.Types.VVector.#ctor(System.Double,System.Double,System.Double)">
+  VVector(double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a VVector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VVector(double xi, double yi, double zi)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>X component.</p>
+</dd>
+    <dt><code>yi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Y component.</p>
+</dd>
+    <dt><code>zi</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Z component.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_DefaultEpsilon" data-uid="VMS.TPS.Common.Model.Types.VVector.DefaultEpsilon">
+  DefaultEpsilon
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>DefaultEpsilon value for epsilon equality checking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const double DefaultEpsilon = 1E-06</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_Undefined" data-uid="VMS.TPS.Common.Model.Types.VVector.Undefined">
+  Undefined
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Undefined vector</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly VVector Undefined</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_Item_" data-uid="VMS.TPS.Common.Model.Types.VVector.Item*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_Item_System_Int32_" data-uid="VMS.TPS.Common.Model.Types.VVector.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indexing for the x, y and z components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double this[int i] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Value of 0,1 or 2 that correspond to x,y and z components.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Returns the given component of this VVector.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_Item_" data-uid="VMS.TPS.Common.Model.Types.VVector.Item*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_Item_VMS_TPS_Common_Model_Types_VVector_Component_" data-uid="VMS.TPS.Common.Model.Types.VVector.Item(VMS.TPS.Common.Model.Types.VVector.Component)">
+  this[Component]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indexing for the x, y and z components.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double this[VVector.Component vc] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vc</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a>.<a class="xref" href="VMS.TPS.Common.Model.Types.VVector.Component.html">Component</a></dt>
+    <dd><p>Enumeration of vector component corresponding to x,y and z components.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Returns the given component of this VVector.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_Length_" data-uid="VMS.TPS.Common.Model.Types.VVector.Length*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_Length" data-uid="VMS.TPS.Common.Model.Types.VVector.Length">
+  Length
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The length of the VVector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Length { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_LengthSquared_" data-uid="VMS.TPS.Common.Model.Types.VVector.LengthSquared*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_LengthSquared" data-uid="VMS.TPS.Common.Model.Types.VVector.LengthSquared">
+  LengthSquared
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The square of the length of the VVector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double LengthSquared { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_x_" data-uid="VMS.TPS.Common.Model.Types.VVector.x*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_x" data-uid="VMS.TPS.Common.Model.Types.VVector.x">
+  x
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The X component of the VVector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double x { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_y_" data-uid="VMS.TPS.Common.Model.Types.VVector.y*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_y" data-uid="VMS.TPS.Common.Model.Types.VVector.y">
+  y
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Y component of the VVector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double y { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_z_" data-uid="VMS.TPS.Common.Model.Types.VVector.z*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_z" data-uid="VMS.TPS.Common.Model.Types.VVector.z">
+  z
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Z component of the VVector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double z { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_Distance_" data-uid="VMS.TPS.Common.Model.Types.VVector.Distance*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_Distance_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.Types.VVector.Distance(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)">
+  Distance(VVector, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The distance between the locations represented by the given VVectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double Distance(VVector left, VVector right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>First operand.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Second operand</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Returns the distance between the locations represented by the given VVectors.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_EpsilonEqual_" data-uid="VMS.TPS.Common.Model.Types.VVector.EpsilonEqual*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_EpsilonEqual_VMS_TPS_Common_Model_Types_VVector_System_Double_" data-uid="VMS.TPS.Common.Model.Types.VVector.EpsilonEqual(VMS.TPS.Common.Model.Types.VVector,System.Double)">
+  EpsilonEqual(VVector, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Epsilon-equality comparison of vectors.
+This method considers two instances of VVector.Undefined to be equal to each other.
+Otherwise, two vectors are equal only if the vectors components are within epsilon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EpsilonEqual(VVector other, double epsilon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Vector to compare this to.</p>
+</dd>
+    <dt><code>epsilon</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Epsilon to use for the vector component comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the vector components are within epsilon, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_Equals_" data-uid="VMS.TPS.Common.Model.Types.VVector.Equals*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_Equals_System_Object_" data-uid="VMS.TPS.Common.Model.Types.VVector.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Equality comparison of VVector and Object.
+This method considers two instances of VVector.Undefined to be equal to each other.
+Otherwise, a vector is equal to an object only if the object is a VVector and vectors are equal.
+For epsilon-equal comparison, use <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_EpsilonEqual_VMS_TPS_Common_Model_Types_VVector_System_Double_">EpsilonEqual(VVector, double)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Object to compare this to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the Object is also VVector and equal to this (vectors are equal), false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_Equals_" data-uid="VMS.TPS.Common.Model.Types.VVector.Equals*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_Equals_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.Types.VVector.Equals(VMS.TPS.Common.Model.Types.VVector)">
+  Equals(VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Equality comparison of vectors.
+This method considers two instances of VVector.Undefined to be equal to each other.
+Otherwise, two vectors are equal only if the vectors components are equal.
+a == b, b == c, =&gt; a has to be equal to c. Epsilon equality comparison does not fulfill this condition with epsilon &gt; 0.0.
+For epsilon-equal comparison, use <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_EpsilonEqual_VMS_TPS_Common_Model_Types_VVector_System_Double_">EpsilonEqual(VVector, double)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(VVector other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>vector to compare this to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the vectors are equal, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_GetHashCode_" data-uid="VMS.TPS.Common.Model.Types.VVector.GetHashCode*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_GetHashCode" data-uid="VMS.TPS.Common.Model.Types.VVector.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A hash code for the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_GetUnitLengthScaledVector_" data-uid="VMS.TPS.Common.Model.Types.VVector.GetUnitLengthScaledVector*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_GetUnitLengthScaledVector" data-uid="VMS.TPS.Common.Model.Types.VVector.GetUnitLengthScaledVector">
+  GetUnitLengthScaledVector()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Scales this VVector so that its length becomes equal to unity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VVector GetUnitLengthScaledVector()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_IsUndefined_" data-uid="VMS.TPS.Common.Model.Types.VVector.IsUndefined*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_IsUndefined" data-uid="VMS.TPS.Common.Model.Types.VVector.IsUndefined">
+  IsUndefined()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if at least one of this vector components are equal to double.IsNaN or double.IsInfinity, false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUndefined()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if at least one of the vector component is not defined or is infinity, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_ScalarProduct_" data-uid="VMS.TPS.Common.Model.Types.VVector.ScalarProduct*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_ScalarProduct_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.Types.VVector.ScalarProduct(VMS.TPS.Common.Model.Types.VVector)">
+  ScalarProduct(VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The scalar product of this VVector and the given VVector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ScalarProduct(VVector left)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>VVector that is second operand of the scalar product.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Returns the scalar product of this VVector with the given VVector.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_ScaleToUnitLength_" data-uid="VMS.TPS.Common.Model.Types.VVector.ScaleToUnitLength*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_ScaleToUnitLength" data-uid="VMS.TPS.Common.Model.Types.VVector.ScaleToUnitLength">
+  ScaleToUnitLength()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Scales this VVector so that its length becomes equal to unity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScaleToUnitLength()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_Update_" data-uid="VMS.TPS.Common.Model.Types.VVector.Update*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_Update_VMS_TPS_Common_Model_Types_VVector_Component_System_Double_" data-uid="VMS.TPS.Common.Model.Types.VVector.Update(VMS.TPS.Common.Model.Types.VVector.Component,System.Double)">
+  Update(Component, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updating VVector component value using VectorComponent indexing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VVector Update(VVector.Component vc, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vc</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a>.<a class="xref" href="VMS.TPS.Common.Model.Types.VVector.Component.html">Component</a></dt>
+    <dd><p>Component enum that correspond to x,y and z components.</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Value of 0,1 or 2 that correspond to x,y and z components.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Returns a new VVector with updated value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_op_Addition_" data-uid="VMS.TPS.Common.Model.Types.VVector.op_Addition*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_op_Addition_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.Types.VVector.op_Addition(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)">
+  operator +(VVector, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The addition of VVectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VVector operator +(VVector left, VVector right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>First operand.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Second operand.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Result of addition.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_op_Division_" data-uid="VMS.TPS.Common.Model.Types.VVector.op_Division*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_op_Division_VMS_TPS_Common_Model_Types_VVector_System_Double_" data-uid="VMS.TPS.Common.Model.Types.VVector.op_Division(VMS.TPS.Common.Model.Types.VVector,System.Double)">
+  operator /(VVector, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The division of a VVector by a double.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VVector operator /(VVector val, double div)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>val</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>VVector to divide.</p>
+</dd>
+    <dt><code>div</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Divisor.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Result of division.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_op_Equality_" data-uid="VMS.TPS.Common.Model.Types.VVector.op_Equality*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_op_Equality_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.Types.VVector.op_Equality(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)">
+  operator ==(VVector, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Equality operator for vectors.
+This method considers two instances of VVector.Undefined to be equal to each other.
+Otherwise, two vectors are equal only if the vectors components are equal.
+For epsilon-equal comparison, use <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_EpsilonEqual_VMS_TPS_Common_Model_Types_VVector_System_Double_">EpsilonEqual(VVector, double)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(VVector vv1, VVector vv2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vv1</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>First operand.</p>
+</dd>
+    <dt><code>vv2</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Second operand.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the vectors are equal, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_op_Inequality_" data-uid="VMS.TPS.Common.Model.Types.VVector.op_Inequality*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_op_Inequality_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.Types.VVector.op_Inequality(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)">
+  operator !=(VVector, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inequality operator for vectors.
+This method considers two instances of VVector.Undefined to be equal to each other.
+This operator considers two instances of vectors with undefined components to be inequal.
+For epsilon-equal comparison, use <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html#VMS_TPS_Common_Model_Types_VVector_EpsilonEqual_VMS_TPS_Common_Model_Types_VVector_System_Double_">EpsilonEqual(VVector, double)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(VVector vv1, VVector vv2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vv1</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>First operand.</p>
+</dd>
+    <dt><code>vv2</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Second operand.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the vectors are inequal, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_op_Multiply_" data-uid="VMS.TPS.Common.Model.Types.VVector.op_Multiply*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_op_Multiply_System_Double_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.Types.VVector.op_Multiply(System.Double,VMS.TPS.Common.Model.Types.VVector)">
+  operator *(double, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The multiplication of a VVector and a double.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VVector operator *(double mul, VVector val)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mul</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Multiplier.</p>
+</dd>
+    <dt><code>val</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>VVector to multiply.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Result of multiplication.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_op_Multiply_" data-uid="VMS.TPS.Common.Model.Types.VVector.op_Multiply*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_op_Multiply_VMS_TPS_Common_Model_Types_VVector_System_Double_" data-uid="VMS.TPS.Common.Model.Types.VVector.op_Multiply(VMS.TPS.Common.Model.Types.VVector,System.Double)">
+  operator *(VVector, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The multiplication of a VVector and a double.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VVector operator *(VVector val, double mul)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>val</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>VVector to multiply.</p>
+</dd>
+    <dt><code>mul</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Multiplier.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Result of multiplication.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_VVector_op_Subtraction_" data-uid="VMS.TPS.Common.Model.Types.VVector.op_Subtraction*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_VVector_op_Subtraction_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.Types.VVector.op_Subtraction(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector)">
+  operator -(VVector, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The subtraction of VVectors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VVector operator -(VVector left, VVector right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>First operand.</p>
+</dd>
+    <dt><code>right</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Second operand.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Result of subtraction.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

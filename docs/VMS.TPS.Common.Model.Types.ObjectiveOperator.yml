@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.ObjectiveOperator
+  commentId: T:VMS.TPS.Common.Model.Types.ObjectiveOperator
+  id: ObjectiveOperator
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.ObjectiveOperator.Equals
+  - VMS.TPS.Common.Model.Types.ObjectiveOperator.GreaterThan
+  - VMS.TPS.Common.Model.Types.ObjectiveOperator.GreaterThanOrEqual
+  - VMS.TPS.Common.Model.Types.ObjectiveOperator.LessThan
+  - VMS.TPS.Common.Model.Types.ObjectiveOperator.LessThanOrEqual
+  - VMS.TPS.Common.Model.Types.ObjectiveOperator.None
+  langs:
+  - csharp
+  - vb
+  name: ObjectiveOperator
+  nameWithType: ObjectiveOperator
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveOperator
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Clinical goal Objective operator
+  example: []
+  syntax:
+    content: public enum ObjectiveOperator
+    content.vb: Public Enum ObjectiveOperator
+- uid: VMS.TPS.Common.Model.Types.ObjectiveOperator.LessThan
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveOperator.LessThan
+  id: LessThan
+  parent: VMS.TPS.Common.Model.Types.ObjectiveOperator
+  langs:
+  - csharp
+  - vb
+  name: LessThan
+  nameWithType: ObjectiveOperator.LessThan
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveOperator.LessThan
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Less Than operator
+  example: []
+  syntax:
+    content: LessThan = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveOperator
+- uid: VMS.TPS.Common.Model.Types.ObjectiveOperator.LessThanOrEqual
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveOperator.LessThanOrEqual
+  id: LessThanOrEqual
+  parent: VMS.TPS.Common.Model.Types.ObjectiveOperator
+  langs:
+  - csharp
+  - vb
+  name: LessThanOrEqual
+  nameWithType: ObjectiveOperator.LessThanOrEqual
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveOperator.LessThanOrEqual
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Less Or Equal operator
+  example: []
+  syntax:
+    content: LessThanOrEqual = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveOperator
+- uid: VMS.TPS.Common.Model.Types.ObjectiveOperator.GreaterThan
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveOperator.GreaterThan
+  id: GreaterThan
+  parent: VMS.TPS.Common.Model.Types.ObjectiveOperator
+  langs:
+  - csharp
+  - vb
+  name: GreaterThan
+  nameWithType: ObjectiveOperator.GreaterThan
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveOperator.GreaterThan
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Greater Than operator
+  example: []
+  syntax:
+    content: GreaterThan = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveOperator
+- uid: VMS.TPS.Common.Model.Types.ObjectiveOperator.GreaterThanOrEqual
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveOperator.GreaterThanOrEqual
+  id: GreaterThanOrEqual
+  parent: VMS.TPS.Common.Model.Types.ObjectiveOperator
+  langs:
+  - csharp
+  - vb
+  name: GreaterThanOrEqual
+  nameWithType: ObjectiveOperator.GreaterThanOrEqual
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveOperator.GreaterThanOrEqual
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Greater or Equal operator
+  example: []
+  syntax:
+    content: GreaterThanOrEqual = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveOperator
+- uid: VMS.TPS.Common.Model.Types.ObjectiveOperator.Equals
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveOperator.Equals
+  id: Equals
+  parent: VMS.TPS.Common.Model.Types.ObjectiveOperator
+  langs:
+  - csharp
+  - vb
+  name: Equals
+  nameWithType: ObjectiveOperator.Equals
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveOperator.Equals
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Equals operator
+  example: []
+  syntax:
+    content: Equals = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveOperator
+- uid: VMS.TPS.Common.Model.Types.ObjectiveOperator.None
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveOperator.None
+  id: None
+  parent: VMS.TPS.Common.Model.Types.ObjectiveOperator
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ObjectiveOperator.None
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveOperator.None
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Undefined
+  example: []
+  syntax:
+    content: None = 5
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveOperator
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.ObjectiveOperator
+  commentId: T:VMS.TPS.Common.Model.Types.ObjectiveOperator
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ObjectiveOperator.html
+  name: ObjectiveOperator
+  nameWithType: ObjectiveOperator
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveOperator

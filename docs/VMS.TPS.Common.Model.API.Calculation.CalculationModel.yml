@@ -1,0 +1,458 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.API.Calculation.CalculationModel
+  commentId: T:VMS.TPS.Common.Model.API.Calculation.CalculationModel
+  id: Calculation.CalculationModel
+  parent: VMS.TPS.Common.Model.API
+  children:
+  - VMS.TPS.Common.Model.API.Calculation.CalculationModel.AlgorithmName
+  - VMS.TPS.Common.Model.API.Calculation.CalculationModel.AlgorithmVersion
+  - VMS.TPS.Common.Model.API.Calculation.CalculationModel.BeamDataDirectory
+  - VMS.TPS.Common.Model.API.Calculation.CalculationModel.DefaultOptionsFilePath
+  - VMS.TPS.Common.Model.API.Calculation.CalculationModel.EnabledFlag
+  - VMS.TPS.Common.Model.API.Calculation.CalculationModel.ModelName
+  langs:
+  - csharp
+  - vb
+  name: Calculation.CalculationModel
+  nameWithType: Calculation.CalculationModel
+  fullName: VMS.TPS.Common.Model.API.Calculation.CalculationModel
+  type: Struct
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Calculation Model
+  example: []
+  syntax:
+    content: public struct Calculation.CalculationModel
+    content.vb: Public Structure Calculation.CalculationModel
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.API.Calculation.CalculationModel.ModelName
+  commentId: F:VMS.TPS.Common.Model.API.Calculation.CalculationModel.ModelName
+  id: ModelName
+  parent: VMS.TPS.Common.Model.API.Calculation.CalculationModel
+  langs:
+  - csharp
+  - vb
+  name: ModelName
+  nameWithType: Calculation.CalculationModel.ModelName
+  fullName: VMS.TPS.Common.Model.API.Calculation.CalculationModel.ModelName
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Model name
+  example: []
+  syntax:
+    content: public string ModelName
+    return:
+      type: System.String
+    content.vb: Public ModelName As String
+- uid: VMS.TPS.Common.Model.API.Calculation.CalculationModel.AlgorithmName
+  commentId: F:VMS.TPS.Common.Model.API.Calculation.CalculationModel.AlgorithmName
+  id: AlgorithmName
+  parent: VMS.TPS.Common.Model.API.Calculation.CalculationModel
+  langs:
+  - csharp
+  - vb
+  name: AlgorithmName
+  nameWithType: Calculation.CalculationModel.AlgorithmName
+  fullName: VMS.TPS.Common.Model.API.Calculation.CalculationModel.AlgorithmName
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Algorithm name
+  example: []
+  syntax:
+    content: public string AlgorithmName
+    return:
+      type: System.String
+    content.vb: Public AlgorithmName As String
+- uid: VMS.TPS.Common.Model.API.Calculation.CalculationModel.AlgorithmVersion
+  commentId: F:VMS.TPS.Common.Model.API.Calculation.CalculationModel.AlgorithmVersion
+  id: AlgorithmVersion
+  parent: VMS.TPS.Common.Model.API.Calculation.CalculationModel
+  langs:
+  - csharp
+  - vb
+  name: AlgorithmVersion
+  nameWithType: Calculation.CalculationModel.AlgorithmVersion
+  fullName: VMS.TPS.Common.Model.API.Calculation.CalculationModel.AlgorithmVersion
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Algorithm version
+  example: []
+  syntax:
+    content: public string AlgorithmVersion
+    return:
+      type: System.String
+    content.vb: Public AlgorithmVersion As String
+- uid: VMS.TPS.Common.Model.API.Calculation.CalculationModel.BeamDataDirectory
+  commentId: F:VMS.TPS.Common.Model.API.Calculation.CalculationModel.BeamDataDirectory
+  id: BeamDataDirectory
+  parent: VMS.TPS.Common.Model.API.Calculation.CalculationModel
+  langs:
+  - csharp
+  - vb
+  name: BeamDataDirectory
+  nameWithType: Calculation.CalculationModel.BeamDataDirectory
+  fullName: VMS.TPS.Common.Model.API.Calculation.CalculationModel.BeamDataDirectory
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Beam data directory
+  example: []
+  syntax:
+    content: public string BeamDataDirectory
+    return:
+      type: System.String
+    content.vb: Public BeamDataDirectory As String
+- uid: VMS.TPS.Common.Model.API.Calculation.CalculationModel.DefaultOptionsFilePath
+  commentId: F:VMS.TPS.Common.Model.API.Calculation.CalculationModel.DefaultOptionsFilePath
+  id: DefaultOptionsFilePath
+  parent: VMS.TPS.Common.Model.API.Calculation.CalculationModel
+  langs:
+  - csharp
+  - vb
+  name: DefaultOptionsFilePath
+  nameWithType: Calculation.CalculationModel.DefaultOptionsFilePath
+  fullName: VMS.TPS.Common.Model.API.Calculation.CalculationModel.DefaultOptionsFilePath
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Default Options file path
+  example: []
+  syntax:
+    content: public string DefaultOptionsFilePath
+    return:
+      type: System.String
+    content.vb: Public DefaultOptionsFilePath As String
+- uid: VMS.TPS.Common.Model.API.Calculation.CalculationModel.EnabledFlag
+  commentId: F:VMS.TPS.Common.Model.API.Calculation.CalculationModel.EnabledFlag
+  id: EnabledFlag
+  parent: VMS.TPS.Common.Model.API.Calculation.CalculationModel
+  langs:
+  - csharp
+  - vb
+  name: EnabledFlag
+  nameWithType: Calculation.CalculationModel.EnabledFlag
+  fullName: VMS.TPS.Common.Model.API.Calculation.CalculationModel.EnabledFlag
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Enabled flag
+  example: []
+  syntax:
+    content: public bool EnabledFlag
+    return:
+      type: System.Boolean
+    content.vb: Public EnabledFlag As Boolean
+references:
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

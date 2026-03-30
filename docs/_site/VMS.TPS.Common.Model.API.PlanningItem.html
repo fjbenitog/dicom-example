@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PlanningItem | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PlanningItem | Example ">
+      
+      <meta name="description" content="Common properties of a treatment plan and a plan sum.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API.PlanningItem">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_API_PlanningItem" data-uid="VMS.TPS.Common.Model.API.PlanningItem" class="text-break">
+Class PlanningItem  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Common properties of a treatment plan and a plan sum.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PlanningItem : ApiDataObject, IXmlSerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html">SerializableObject</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html">ApiDataObject</a></div>
+      <div><span class="xref">PlanningItem</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IXmlSerializable</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.PlanSum.html">PlanSum</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString">ApiDataObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_">ApiDataObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode">ApiDataObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Id">ApiDataObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Name">ApiDataObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Comment">ApiDataObject.Comment</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName">ApiDataObject.HistoryUserName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName">ApiDataObject.HistoryUserDisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime">ApiDataObject.HistoryDateTime</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema">SerializableObject.GetSchema()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_">SerializableObject.ReadXml(XmlReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_">SerializableObject.WriteXml(XmlWriter, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_">SerializableObject.WriteXml(XmlWriter, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__">SerializableObject.WriteXml&lt;T&gt;(XmlWriter, string, IEnumerable&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__">SerializableObject.WriteXml&lt;T1, T2&gt;(XmlWriter, string, IDictionary&lt;T1, T2&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_">SerializableObject.StartSerialization(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization">SerializableObject.EndSerialization()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory">SerializableObject.ClearSerializationHistory()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanningItem_Course_" data-uid="VMS.TPS.Common.Model.API.PlanningItem.Course*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanningItem_Course" data-uid="VMS.TPS.Common.Model.API.PlanningItem.Course">
+  Course
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Used for navigating to parent course.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Course Course { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Course.html">Course</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanningItem_CreationDateTime_" data-uid="VMS.TPS.Common.Model.API.PlanningItem.CreationDateTime*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanningItem_CreationDateTime" data-uid="VMS.TPS.Common.Model.API.PlanningItem.CreationDateTime">
+  CreationDateTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The date when this object was created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? CreationDateTime { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanningItem_Dose_" data-uid="VMS.TPS.Common.Model.API.PlanningItem.Dose*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanningItem_Dose" data-uid="VMS.TPS.Common.Model.API.PlanningItem.Dose">
+  Dose
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The total dose. The total dose is the dose of all planned fractions together.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanningItemDose Dose { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanningItemDose.html">PlanningItemDose</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanningItem_DoseValuePresentation_" data-uid="VMS.TPS.Common.Model.API.PlanningItem.DoseValuePresentation*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanningItem_DoseValuePresentation" data-uid="VMS.TPS.Common.Model.API.PlanningItem.DoseValuePresentation">
+  DoseValuePresentation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The presentation of the dose as absolute or relative.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoseValuePresentation DoseValuePresentation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.DoseValuePresentation.html">DoseValuePresentation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanningItem_StructureSet_" data-uid="VMS.TPS.Common.Model.API.PlanningItem.StructureSet*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanningItem_StructureSet" data-uid="VMS.TPS.Common.Model.API.PlanningItem.StructureSet">
+  StructureSet
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The structure set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StructureSet StructureSet { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.StructureSet.html">StructureSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanningItem_StructuresSelectedForDvh_" data-uid="VMS.TPS.Common.Model.API.PlanningItem.StructuresSelectedForDvh*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanningItem_StructuresSelectedForDvh" data-uid="VMS.TPS.Common.Model.API.PlanningItem.StructuresSelectedForDvh">
+  StructuresSelectedForDvh
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The collection of the structures that have been selected for DVH evaluation in Eclipse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Structure&gt; StructuresSelectedForDvh { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanningItem_GetClinicalGoals_" data-uid="VMS.TPS.Common.Model.API.PlanningItem.GetClinicalGoals*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanningItem_GetClinicalGoals" data-uid="VMS.TPS.Common.Model.API.PlanningItem.GetClinicalGoals">
+  GetClinicalGoals()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the list of clinical goals assigned to a planning item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ClinicalGoal&gt; GetClinicalGoals()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.Types.ClinicalGoal.html">ClinicalGoal</a>&gt;</dt>
+    <dd><p>The list of clinical goals attached to the plan.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanningItem_GetDVHCumulativeData_" data-uid="VMS.TPS.Common.Model.API.PlanningItem.GetDVHCumulativeData*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanningItem_GetDVHCumulativeData_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_Types_DoseValuePresentation_VMS_TPS_Common_Model_Types_VolumePresentation_System_Double_" data-uid="VMS.TPS.Common.Model.API.PlanningItem.GetDVHCumulativeData(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.DoseValuePresentation,VMS.TPS.Common.Model.Types.VolumePresentation,System.Double)">
+  GetDVHCumulativeData(Structure, DoseValuePresentation, VolumePresentation, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns cumulative Dose Volume Histogram (DVH) data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DVHData GetDVHCumulativeData(Structure structure, DoseValuePresentation dosePresentation, VolumePresentation volumePresentation, double binWidth)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>Structure for which the DVH data is requested.</p>
+</dd>
+    <dt><code>dosePresentation</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValuePresentation.html">DoseValuePresentation</a></dt>
+    <dd><p>Requested dose presentation mode (absolute or relative). Note, that only
+absolute dose is supported for PlanSums.</p>
+</dd>
+    <dt><code>volumePresentation</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VolumePresentation.html">VolumePresentation</a></dt>
+    <dd><p>Requested volume presentation mode.</p>
+</dd>
+    <dt><code>binWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Requested width of the bin.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.DVHData.html">DVHData</a></dt>
+    <dd><p>DVHData object that contains the requested DVH information or null if DVH calculation was not possible.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanningItem_GetDoseAtVolume_" data-uid="VMS.TPS.Common.Model.API.PlanningItem.GetDoseAtVolume*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanningItem_GetDoseAtVolume_VMS_TPS_Common_Model_API_Structure_System_Double_VMS_TPS_Common_Model_Types_VolumePresentation_VMS_TPS_Common_Model_Types_DoseValuePresentation_" data-uid="VMS.TPS.Common.Model.API.PlanningItem.GetDoseAtVolume(VMS.TPS.Common.Model.API.Structure,System.Double,VMS.TPS.Common.Model.Types.VolumePresentation,VMS.TPS.Common.Model.Types.DoseValuePresentation)">
+  GetDoseAtVolume(Structure, double, VolumePresentation, DoseValuePresentation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the dose at a volume.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoseValue GetDoseAtVolume(Structure structure, double volume, VolumePresentation volumePresentation, DoseValuePresentation requestedDosePresentation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>Structure for which the value is requested.</p>
+</dd>
+    <dt><code>volume</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Volume at which the dose is requested.</p>
+</dd>
+    <dt><code>volumePresentation</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VolumePresentation.html">VolumePresentation</a></dt>
+    <dd><p>Presentation mode of the volume parameter.</p>
+</dd>
+    <dt><code>requestedDosePresentation</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValuePresentation.html">DoseValuePresentation</a></dt>
+    <dd><p>Requested dose presentation mode (absolute or relative).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>The dose value at the given structure volume.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanningItem_GetVolumeAtDose_" data-uid="VMS.TPS.Common.Model.API.PlanningItem.GetVolumeAtDose*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanningItem_GetVolumeAtDose_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_VolumePresentation_" data-uid="VMS.TPS.Common.Model.API.PlanningItem.GetVolumeAtDose(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.VolumePresentation)">
+  GetVolumeAtDose(Structure, DoseValue, VolumePresentation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the volume at the dose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetVolumeAtDose(Structure structure, DoseValue dose, VolumePresentation requestedVolumePresentation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>structure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>Structure for which the value is requested.</p>
+</dd>
+    <dt><code>dose</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Dose at which the volume is requested.</p>
+</dd>
+    <dt><code>requestedVolumePresentation</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VolumePresentation.html">VolumePresentation</a></dt>
+    <dd><p>Requested volume presentation mode.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The volume at the given dose.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanningItem_WriteXml_" data-uid="VMS.TPS.Common.Model.API.PlanningItem.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanningItem_WriteXml_System_Xml_XmlWriter_" data-uid="VMS.TPS.Common.Model.API.PlanningItem.WriteXml(System.Xml.XmlWriter)">
+  WriteXml(XmlWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an object into its XML representation.
+For more information on how to serialize an object into an XML document, see <span class="xref">System.Xml.Serialization.XmlSerializer</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>The System.Xml.XmlWriter stream, to which the object is serialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

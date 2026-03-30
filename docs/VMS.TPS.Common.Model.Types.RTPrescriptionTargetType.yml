@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType
+  commentId: T:VMS.TPS.Common.Model.Types.RTPrescriptionTargetType
+  id: RTPrescriptionTargetType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.Depth
+  - VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.Isocenter
+  - VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.IsodoseLine
+  - VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.Undefined
+  - VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.Volume
+  langs:
+  - csharp
+  - vb
+  name: RTPrescriptionTargetType
+  nameWithType: RTPrescriptionTargetType
+  fullName: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The type of the prescription target definition
+  example: []
+  syntax:
+    content: public enum RTPrescriptionTargetType
+    content.vb: Public Enum RTPrescriptionTargetType
+- uid: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.Volume
+  commentId: F:VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.Volume
+  id: Volume
+  parent: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType
+  langs:
+  - csharp
+  - vb
+  name: Volume
+  nameWithType: RTPrescriptionTargetType.Volume
+  fullName: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.Volume
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Prescribe to a volume.
+  example: []
+  syntax:
+    content: Volume = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType
+- uid: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.Depth
+  commentId: F:VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.Depth
+  id: Depth
+  parent: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType
+  langs:
+  - csharp
+  - vb
+  name: Depth
+  nameWithType: RTPrescriptionTargetType.Depth
+  fullName: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.Depth
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Prescribe to a certain depth.
+  example: []
+  syntax:
+    content: Depth = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType
+- uid: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.Isocenter
+  commentId: F:VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.Isocenter
+  id: Isocenter
+  parent: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType
+  langs:
+  - csharp
+  - vb
+  name: Isocenter
+  nameWithType: RTPrescriptionTargetType.Isocenter
+  fullName: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.Isocenter
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Prescribe to the isocenter.
+  example: []
+  syntax:
+    content: Isocenter = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType
+- uid: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.IsodoseLine
+  commentId: F:VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.IsodoseLine
+  id: IsodoseLine
+  parent: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType
+  langs:
+  - csharp
+  - vb
+  name: IsodoseLine
+  nameWithType: RTPrescriptionTargetType.IsodoseLine
+  fullName: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.IsodoseLine
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Prescribe to an isodose line.
+  example: []
+  syntax:
+    content: IsodoseLine = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType
+- uid: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.Undefined
+  commentId: F:VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.Undefined
+  id: Undefined
+  parent: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType
+  langs:
+  - csharp
+  - vb
+  name: Undefined
+  nameWithType: RTPrescriptionTargetType.Undefined
+  fullName: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.Undefined
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Undefined.
+  example: []
+  syntax:
+    content: Undefined = 99
+    return:
+      type: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType
+  commentId: T:VMS.TPS.Common.Model.Types.RTPrescriptionTargetType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.html
+  name: RTPrescriptionTargetType
+  nameWithType: RTPrescriptionTargetType
+  fullName: VMS.TPS.Common.Model.Types.RTPrescriptionTargetType

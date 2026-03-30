@@ -1,0 +1,235 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.SetupTechnique
+  commentId: T:VMS.TPS.Common.Model.Types.SetupTechnique
+  id: SetupTechnique
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.SetupTechnique.BreastBridge
+  - VMS.TPS.Common.Model.Types.SetupTechnique.FixedSSD
+  - VMS.TPS.Common.Model.Types.SetupTechnique.HyperArc
+  - VMS.TPS.Common.Model.Types.SetupTechnique.Isocentric
+  - VMS.TPS.Common.Model.Types.SetupTechnique.SkinApposition
+  - VMS.TPS.Common.Model.Types.SetupTechnique.TBI
+  - VMS.TPS.Common.Model.Types.SetupTechnique.Unknown
+  langs:
+  - csharp
+  - vb
+  name: SetupTechnique
+  nameWithType: SetupTechnique
+  fullName: VMS.TPS.Common.Model.Types.SetupTechnique
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The enumeration of setup techniques for a beam.
+  example: []
+  syntax:
+    content: public enum SetupTechnique
+    content.vb: Public Enum SetupTechnique
+- uid: VMS.TPS.Common.Model.Types.SetupTechnique.Unknown
+  commentId: F:VMS.TPS.Common.Model.Types.SetupTechnique.Unknown
+  id: Unknown
+  parent: VMS.TPS.Common.Model.Types.SetupTechnique
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: SetupTechnique.Unknown
+  fullName: VMS.TPS.Common.Model.Types.SetupTechnique.Unknown
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Unknown.
+  example: []
+  syntax:
+    content: Unknown = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.SetupTechnique
+- uid: VMS.TPS.Common.Model.Types.SetupTechnique.Isocentric
+  commentId: F:VMS.TPS.Common.Model.Types.SetupTechnique.Isocentric
+  id: Isocentric
+  parent: VMS.TPS.Common.Model.Types.SetupTechnique
+  langs:
+  - csharp
+  - vb
+  name: Isocentric
+  nameWithType: SetupTechnique.Isocentric
+  fullName: VMS.TPS.Common.Model.Types.SetupTechnique.Isocentric
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Isocentric.
+  example: []
+  syntax:
+    content: Isocentric = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.SetupTechnique
+- uid: VMS.TPS.Common.Model.Types.SetupTechnique.FixedSSD
+  commentId: F:VMS.TPS.Common.Model.Types.SetupTechnique.FixedSSD
+  id: FixedSSD
+  parent: VMS.TPS.Common.Model.Types.SetupTechnique
+  langs:
+  - csharp
+  - vb
+  name: FixedSSD
+  nameWithType: SetupTechnique.FixedSSD
+  fullName: VMS.TPS.Common.Model.Types.SetupTechnique.FixedSSD
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Fixed SSD.
+  example: []
+  syntax:
+    content: FixedSSD = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.SetupTechnique
+- uid: VMS.TPS.Common.Model.Types.SetupTechnique.TBI
+  commentId: F:VMS.TPS.Common.Model.Types.SetupTechnique.TBI
+  id: TBI
+  parent: VMS.TPS.Common.Model.Types.SetupTechnique
+  langs:
+  - csharp
+  - vb
+  name: TBI
+  nameWithType: SetupTechnique.TBI
+  fullName: VMS.TPS.Common.Model.Types.SetupTechnique.TBI
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: TBI.
+  example: []
+  syntax:
+    content: TBI = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.SetupTechnique
+- uid: VMS.TPS.Common.Model.Types.SetupTechnique.BreastBridge
+  commentId: F:VMS.TPS.Common.Model.Types.SetupTechnique.BreastBridge
+  id: BreastBridge
+  parent: VMS.TPS.Common.Model.Types.SetupTechnique
+  langs:
+  - csharp
+  - vb
+  name: BreastBridge
+  nameWithType: SetupTechnique.BreastBridge
+  fullName: VMS.TPS.Common.Model.Types.SetupTechnique.BreastBridge
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Breast Bridge.
+  example: []
+  syntax:
+    content: BreastBridge = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.SetupTechnique
+- uid: VMS.TPS.Common.Model.Types.SetupTechnique.SkinApposition
+  commentId: F:VMS.TPS.Common.Model.Types.SetupTechnique.SkinApposition
+  id: SkinApposition
+  parent: VMS.TPS.Common.Model.Types.SetupTechnique
+  langs:
+  - csharp
+  - vb
+  name: SkinApposition
+  nameWithType: SetupTechnique.SkinApposition
+  fullName: VMS.TPS.Common.Model.Types.SetupTechnique.SkinApposition
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Skin Apposition.
+  example: []
+  syntax:
+    content: SkinApposition = 5
+    return:
+      type: VMS.TPS.Common.Model.Types.SetupTechnique
+- uid: VMS.TPS.Common.Model.Types.SetupTechnique.HyperArc
+  commentId: F:VMS.TPS.Common.Model.Types.SetupTechnique.HyperArc
+  id: HyperArc
+  parent: VMS.TPS.Common.Model.Types.SetupTechnique
+  langs:
+  - csharp
+  - vb
+  name: HyperArc
+  nameWithType: SetupTechnique.HyperArc
+  fullName: VMS.TPS.Common.Model.Types.SetupTechnique.HyperArc
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: HyperArc.
+  example: []
+  syntax:
+    content: HyperArc = 6
+    return:
+      type: VMS.TPS.Common.Model.Types.SetupTechnique
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.SetupTechnique
+  commentId: T:VMS.TPS.Common.Model.Types.SetupTechnique
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.SetupTechnique.html
+  name: SetupTechnique
+  nameWithType: SetupTechnique
+  fullName: VMS.TPS.Common.Model.Types.SetupTechnique

@@ -1,0 +1,2342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ExternalPlanSetup | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ExternalPlanSetup | Example ">
+      
+      <meta name="description" content="Represents an external beam plan. For more information, see the definition of the DICOM RT Plan.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_API_ExternalPlanSetup" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup" class="text-break">
+Class ExternalPlanSetup  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents an external beam plan. For more information, see the definition of the DICOM RT Plan.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ExternalPlanSetup : PlanSetup, IXmlSerializable, IDVHEstimationCalculator</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html">SerializableObject</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html">ApiDataObject</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html">PlanningItem</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></div>
+      <div><span class="xref">ExternalPlanSetup</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IXmlSerializable</span></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.IDVHEstimationCalculator.html">IDVHEstimationCalculator</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_m_errorsOnCalculationCompleted">PlanSetup.m_errorsOnCalculationCompleted</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_GetProtocolPrescriptionsAndMeasures_System_Collections_Generic_List_VMS_TPS_Common_Model_API_ProtocolPhasePrescription___System_Collections_Generic_List_VMS_TPS_Common_Model_API_ProtocolPhaseMeasure___">PlanSetup.GetProtocolPrescriptionsAndMeasures(ref List&lt;ProtocolPhasePrescription&gt;, ref List&lt;ProtocolPhaseMeasure&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_AddReferencePoint_System_Boolean_System_Nullable_VMS_TPS_Common_Model_Types_VVector__System_String_">PlanSetup.AddReferencePoint(bool, VVector?, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_AttachToCalcClient_VMS_TPS_Common_Calculation_ICalculationClient_">PlanSetup.AttachToCalcClient(ICalculationClient)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_DetachFromCalcClient_VMS_TPS_Common_Calculation_ICalculationClient_">PlanSetup.DetachFromCalcClient(ICalculationClient)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_Report_System_String_">PlanSetup.Report(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_CalculateDVHEstimatesImpl_VMS_TPS_Common_Calculation_IPhotonCalculation_VMS_TPS_Common_Calculation_ICalculationClient_System_String_System_Collections_Generic_Dictionary_System_String_VMS_TPS_Common_Model_Types_DoseValue__System_Collections_Generic_Dictionary_System_String_System_String__VMS_TPS_Common_Model_LicenseId_">PlanSetup.CalculateDVHEstimatesImpl(IPhotonCalculation, ICalculationClient, string, Dictionary&lt;string, DoseValue&gt;, Dictionary&lt;string, string&gt;, LicenseId)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_IsValidForPlanApproval_System_Collections_Generic_List_VMS_TPS_Common_Model_Types_PlanValidationResultEsapiDetail___">PlanSetup.IsValidForPlanApproval(out List&lt;PlanValidationResultEsapiDetail&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_AddPlanUncertaintyWithParameters_VMS_TPS_Common_Model_Types_PlanUncertaintyType_System_Boolean_System_Double_VMS_TPS_Common_Model_Types_VVector_">PlanSetup.AddPlanUncertaintyWithParameters(PlanUncertaintyType, bool, double, VVector)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetTreatmentOrder_System_Collections_Generic_IEnumerable_VMS_TPS_Common_Model_API_Beam__">PlanSetup.SetTreatmentOrder(IEnumerable&lt;Beam&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_AddReferencePoint_VMS_TPS_Common_Model_API_ReferencePoint_">PlanSetup.AddReferencePoint(ReferencePoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_ClearCalculationModel_VMS_TPS_Common_Model_Types_CalculationType_">PlanSetup.ClearCalculationModel(CalculationType)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_GetCalculationModel_VMS_TPS_Common_Model_Types_CalculationType_">PlanSetup.GetCalculationModel(CalculationType)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_GetCalculationOption_System_String_System_String_System_String__">PlanSetup.GetCalculationOption(string, string, out string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_GetCalculationOptions_System_String_">PlanSetup.GetCalculationOptions(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_GetDvhEstimationModelName">PlanSetup.GetDvhEstimationModelName()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_IsEntireBodyAndBolusesCoveredByCalculationArea">PlanSetup.IsEntireBodyAndBolusesCoveredByCalculationArea()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_MoveToCourse_VMS_TPS_Common_Model_API_Course_">PlanSetup.MoveToCourse(Course)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_RemoveReferencePoint_VMS_TPS_Common_Model_API_ReferencePoint_">PlanSetup.RemoveReferencePoint(ReferencePoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetCalculationModel_VMS_TPS_Common_Model_Types_CalculationType_System_String_">PlanSetup.SetCalculationModel(CalculationType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetCalculationOption_System_String_System_String_System_String_">PlanSetup.SetCalculationOption(string, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetPrescription_System_Int32_VMS_TPS_Common_Model_Types_DoseValue_System_Double_">PlanSetup.SetPrescription(int, DoseValue, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetTargetStructureIfNoDose_VMS_TPS_Common_Model_API_Structure_System_Text_StringBuilder_">PlanSetup.SetTargetStructureIfNoDose(Structure, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_Id">PlanSetup.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_Name">PlanSetup.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_Comment">PlanSetup.Comment</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PlanNormalizationValue">PlanSetup.PlanNormalizationValue</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PlanUncertainties">PlanSetup.PlanUncertainties</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PlanObjectiveStructures">PlanSetup.PlanObjectiveStructures</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_ApprovalHistory">PlanSetup.ApprovalHistory</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_ApprovalHistoryLocalized">PlanSetup.ApprovalHistoryLocalized</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_DosePerFractionInPrimaryRefPoint">PlanSetup.DosePerFractionInPrimaryRefPoint</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PrescribedDosePerFraction">PlanSetup.PrescribedDosePerFraction</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PrescribedPercentage">PlanSetup.PrescribedPercentage</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_TotalPrescribedDose">PlanSetup.TotalPrescribedDose</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_ApplicationScriptLogs">PlanSetup.ApplicationScriptLogs</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_ApprovalStatus">PlanSetup.ApprovalStatus</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_ApprovalStatusAsString">PlanSetup.ApprovalStatusAsString</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_BaseDosePlanningItem">PlanSetup.BaseDosePlanningItem</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_Beams">PlanSetup.Beams</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_BeamsInTreatmentOrder">PlanSetup.BeamsInTreatmentOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_CreationUserName">PlanSetup.CreationUserName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_DBKey">PlanSetup.DBKey</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_DosePerFraction">PlanSetup.DosePerFraction</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_DVHEstimates">PlanSetup.DVHEstimates</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_ElectronCalculationModel">PlanSetup.ElectronCalculationModel</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_ElectronCalculationOptions">PlanSetup.ElectronCalculationOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_IntegrityHash">PlanSetup.IntegrityHash</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_IsDoseValid">PlanSetup.IsDoseValid</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_IsTreated">PlanSetup.IsTreated</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_NumberOfFractions">PlanSetup.NumberOfFractions</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_OptimizationSetup">PlanSetup.OptimizationSetup</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PatientSupportDevice">PlanSetup.PatientSupportDevice</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PhotonCalculationModel">PlanSetup.PhotonCalculationModel</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PhotonCalculationOptions">PlanSetup.PhotonCalculationOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PlanIntent">PlanSetup.PlanIntent</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PlanIsInTreatment">PlanSetup.PlanIsInTreatment</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PlannedDosePerFraction">PlanSetup.PlannedDosePerFraction</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PlanningApprovalDate">PlanSetup.PlanningApprovalDate</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PlanningApprover">PlanSetup.PlanningApprover</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PlanningApproverDisplayName">PlanSetup.PlanningApproverDisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PlanNormalizationMethod">PlanSetup.PlanNormalizationMethod</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PlanNormalizationPoint">PlanSetup.PlanNormalizationPoint</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PlanType">PlanSetup.PlanType</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PredecessorPlan">PlanSetup.PredecessorPlan</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PredecessorPlanUID">PlanSetup.PredecessorPlanUID</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_PrimaryReferencePoint">PlanSetup.PrimaryReferencePoint</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_ProtocolID">PlanSetup.ProtocolID</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_ProtocolPhaseID">PlanSetup.ProtocolPhaseID</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_ProtonCalculationModel">PlanSetup.ProtonCalculationModel</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_ProtonCalculationOptions">PlanSetup.ProtonCalculationOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_ReferencePoints">PlanSetup.ReferencePoints</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_RTPrescription">PlanSetup.RTPrescription</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_Series">PlanSetup.Series</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SeriesUID">PlanSetup.SeriesUID</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_TargetVolumeID">PlanSetup.TargetVolumeID</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_TotalDose">PlanSetup.TotalDose</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_TreatmentApprovalDate">PlanSetup.TreatmentApprovalDate</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_TreatmentApprover">PlanSetup.TreatmentApprover</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_TreatmentApproverDisplayName">PlanSetup.TreatmentApproverDisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_TreatmentOrientation">PlanSetup.TreatmentOrientation</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_TreatmentOrientationAsString">PlanSetup.TreatmentOrientationAsString</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_TreatmentPercentage">PlanSetup.TreatmentPercentage</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_TreatmentSessions">PlanSetup.TreatmentSessions</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_UID">PlanSetup.UID</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_UseGating">PlanSetup.UseGating</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_VerifiedPlan">PlanSetup.VerifiedPlan</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_GetClinicalGoals">PlanningItem.GetClinicalGoals()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_GetDVHCumulativeData_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_Types_DoseValuePresentation_VMS_TPS_Common_Model_Types_VolumePresentation_System_Double_">PlanningItem.GetDVHCumulativeData(Structure, DoseValuePresentation, VolumePresentation, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_GetDoseAtVolume_VMS_TPS_Common_Model_API_Structure_System_Double_VMS_TPS_Common_Model_Types_VolumePresentation_VMS_TPS_Common_Model_Types_DoseValuePresentation_">PlanningItem.GetDoseAtVolume(Structure, double, VolumePresentation, DoseValuePresentation)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_GetVolumeAtDose_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_VolumePresentation_">PlanningItem.GetVolumeAtDose(Structure, DoseValue, VolumePresentation)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_Course">PlanningItem.Course</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_CreationDateTime">PlanningItem.CreationDateTime</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_Dose">PlanningItem.Dose</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_DoseValuePresentation">PlanningItem.DoseValuePresentation</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_StructureSet">PlanningItem.StructureSet</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_StructuresSelectedForDvh">PlanningItem.StructuresSelectedForDvh</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString">ApiDataObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_">ApiDataObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode">ApiDataObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName">ApiDataObject.HistoryUserName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName">ApiDataObject.HistoryUserDisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime">ApiDataObject.HistoryDateTime</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema">SerializableObject.GetSchema()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_">SerializableObject.ReadXml(XmlReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_">SerializableObject.WriteXml(XmlWriter, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_">SerializableObject.WriteXml(XmlWriter, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__">SerializableObject.WriteXml&lt;T&gt;(XmlWriter, string, IEnumerable&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__">SerializableObject.WriteXml&lt;T1, T2&gt;(XmlWriter, string, IDictionary&lt;T1, T2&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_">SerializableObject.StartSerialization(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization">SerializableObject.EndSerialization()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory">SerializableObject.ClearSerializationHistory()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_DoseAsEvaluationDose_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.DoseAsEvaluationDose*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_DoseAsEvaluationDose" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.DoseAsEvaluationDose">
+  DoseAsEvaluationDose
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The evaluation dose is connected to the plan and contains voxels that are set by
+<a class="xref" href="VMS.TPS.Common.Model.API.EvaluationDose.html#VMS_TPS_Common_Model_API_EvaluationDose_SetVoxels_System_Int32_System_Int32_0__0___">SetVoxels</a>
+instead of the dose calculation algorithm. Returns null if the plan has no evaluation dose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EvaluationDose DoseAsEvaluationDose { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.EvaluationDose.html">EvaluationDose</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_TradeoffExplorationContext_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.TradeoffExplorationContext*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_TradeoffExplorationContext" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.TradeoffExplorationContext">
+  TradeoffExplorationContext
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license]
+Gets the <a class="xref" href="VMS.TPS.Common.Model.API.TradeoffExplorationContext.html">TradeoffExplorationContext</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TradeoffExplorationContext TradeoffExplorationContext { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.TradeoffExplorationContext.html">TradeoffExplorationContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ExternalPlanSetup_TradeoffExplorationContext_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To be able to get the <a class="xref" href="VMS.TPS.Common.Model.API.TradeoffExplorationContext.html">TradeoffExplorationContext</a> class, the plan needs to have the optimization objectives set.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddArcBeam_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddArcBeam*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddArcBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_VMS_TPS_Common_Model_Types_VRect_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_GantryDirection_System_Double_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddArcBeam(VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters,VMS.TPS.Common.Model.Types.VRect{System.Double},System.Double,System.Double,System.Double,VMS.TPS.Common.Model.Types.GantryDirection,System.Double,VMS.TPS.Common.Model.Types.VVector)">
+  AddArcBeam(ExternalBeamMachineParameters, VRect&lt;double&gt;, double, double, double, GantryDirection, double, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new arc beam to the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Beam AddArcBeam(ExternalBeamMachineParameters machineParameters, VRect&lt;double&gt; jawPositions, double collimatorAngle, double gantryAngle, double gantryStop, GantryDirection gantryDirection, double patientSupportAngle, VVector isocenter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>machineParameters</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a></dt>
+    <dd><p>Configuration of the used treatment unit. See <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a>.</p>
+</dd>
+    <dt><code>jawPositions</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VRect-1.html">VRect</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>The jaw positions of the treatment beam in millimeters, and
+in IEC BEAM LIMITING DEVICE coordinates.</p>
+</dd>
+    <dt><code>collimatorAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC BEAM LIMITING DEVICE
+coordinate system with respect to the IEC GANTRY coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC GANTRY coordinate system with
+respect to the IEC FIXED REFERENCE coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryStop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The stop angle of the gantry, in degrees.</p>
+</dd>
+    <dt><code>gantryDirection</code> <a class="xref" href="VMS.TPS.Common.Model.Types.GantryDirection.html">GantryDirection</a></dt>
+    <dd><p>The rotation direction of the arc.</p>
+</dd>
+    <dt><code>patientSupportAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC PATIENT SUPPORT
+(turntable) coordinate system with respect to the IEC FIXED REFERENCE coordinate
+system (in degrees).</p>
+</dd>
+    <dt><code>isocenter</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>The isocenter position, in millimeters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+    <dd><p>The created Beam.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddArcBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_VMS_TPS_Common_Model_Types_VRect_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_GantryDirection_System_Double_VMS_TPS_Common_Model_Types_VVector__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>All angles must be specified in the range [0, 360[.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddConformalArcBeam_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddConformalArcBeam*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddConformalArcBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Double_System_Int32_System_Double_System_Double_VMS_TPS_Common_Model_Types_GantryDirection_System_Double_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddConformalArcBeam(VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters,System.Double,System.Int32,System.Double,System.Double,VMS.TPS.Common.Model.Types.GantryDirection,System.Double,VMS.TPS.Common.Model.Types.VVector)">
+  AddConformalArcBeam(ExternalBeamMachineParameters, double, int, double, double, GantryDirection, double, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new conformal arc beam to the plan. Halcyon machines are not supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Beam AddConformalArcBeam(ExternalBeamMachineParameters machineParameters, double collimatorAngle, int controlPointCount, double gantryAngle, double gantryStop, GantryDirection gantryDirection, double patientSupportAngle, VVector isocenter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>machineParameters</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a></dt>
+    <dd><p>Configuration of the used treatment unit. See <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a>.</p>
+</dd>
+    <dt><code>collimatorAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC BEAM LIMITING DEVICE
+coordinate system with respect to the IEC GANTRY coordinate system (in degrees).</p>
+</dd>
+    <dt><code>controlPointCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of control points to use.</p>
+</dd>
+    <dt><code>gantryAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC GANTRY coordinate system with
+respect to the IEC FIXED REFERENCE coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryStop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The stop angle of the gantry, in degrees.</p>
+</dd>
+    <dt><code>gantryDirection</code> <a class="xref" href="VMS.TPS.Common.Model.Types.GantryDirection.html">GantryDirection</a></dt>
+    <dd><p>The rotation direction of the arc.</p>
+</dd>
+    <dt><code>patientSupportAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC PATIENT SUPPORT
+(turntable) coordinate system with respect to the IEC FIXED REFERENCE coordinate
+system (in degrees).</p>
+</dd>
+    <dt><code>isocenter</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>The isocenter position, in millimeters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+    <dd><p>The created beam.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddConformalArcBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Double_System_Int32_System_Double_System_Double_VMS_TPS_Common_Model_Types_GantryDirection_System_Double_VMS_TPS_Common_Model_Types_VVector__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>All angles must be specified in the range [0, 360[.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddFixedSequenceBeam_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddFixedSequenceBeam*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddFixedSequenceBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Double_System_Double_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddFixedSequenceBeam(VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters,System.Double,System.Double,VMS.TPS.Common.Model.Types.VVector)">
+  AddFixedSequenceBeam(ExternalBeamMachineParameters, double, double, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new fixed sequence (flattening sequence) beam to the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Beam AddFixedSequenceBeam(ExternalBeamMachineParameters machineParameters, double collimatorAngle, double gantryAngle, VVector isocenter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>machineParameters</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a></dt>
+    <dd><p>Configuration of the used treatment unit. See <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a>. The machine must be Halcyon.</p>
+</dd>
+    <dt><code>collimatorAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC BEAM LIMITING DEVICE
+coordinate system with respect to the IEC GANTRY coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC GANTRY coordinate system with
+respect to the IEC FIXED REFERENCE coordinate system (in degrees).</p>
+</dd>
+    <dt><code>isocenter</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>The isocenter position, in millimeters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+    <dd><p>The created beam.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddImagingSetup_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddImagingSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddImagingSetup_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_VMS_TPS_Common_Model_Types_ImagingBeamSetupParameters_VMS_TPS_Common_Model_API_Structure_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddImagingSetup(VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters,VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters,VMS.TPS.Common.Model.API.Structure)">
+  AddImagingSetup(ExternalBeamMachineParameters, ImagingBeamSetupParameters, Structure)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds new imaging beam or beams to the plan. First removes the existing imaging beams. If MV imaging beams are involved, the plan should be optimized again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddImagingSetup(ExternalBeamMachineParameters machineParameters, ImagingBeamSetupParameters setupParameters, Structure targetStructure)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>machineParameters</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a></dt>
+    <dd><p>Configuration of the used treatment unit. See <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a>.</p>
+</dd>
+    <dt><code>setupParameters</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.html">ImagingBeamSetupParameters</a></dt>
+    <dd><p>Setup parameters for the imaging beam. See <a class="xref" href="VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.html">ImagingBeamSetupParameters</a>.</p>
+</dd>
+    <dt><code>targetStructure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>Target structure for imaging. If not specified, the target structure in the plan is used.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if imaging beams were successfully created.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddMLCArcBeam_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddMLCArcBeam*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddMLCArcBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Single_0__0___VMS_TPS_Common_Model_Types_VRect_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_GantryDirection_System_Double_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddMLCArcBeam(VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters,System.Single[0:,0:],VMS.TPS.Common.Model.Types.VRect{System.Double},System.Double,System.Double,System.Double,VMS.TPS.Common.Model.Types.GantryDirection,System.Double,VMS.TPS.Common.Model.Types.VVector)">
+  AddMLCArcBeam(ExternalBeamMachineParameters, float[,], VRect&lt;double&gt;, double, double, double, GantryDirection, double, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new arc beam with an MLC to the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Beam AddMLCArcBeam(ExternalBeamMachineParameters machineParameters, float[,] leafPositions, VRect&lt;double&gt; jawPositions, double collimatorAngle, double gantryAngle, double gantryStop, GantryDirection gantryDirection, double patientSupportAngle, VVector isocenter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>machineParameters</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a></dt>
+    <dd><p>Configuration of the used treatment unit. See <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a>.</p>
+</dd>
+    <dt><code>leafPositions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[,]</dt>
+    <dd><p>The positions of the beam collimator leaf pairs in millimeters, and in
+the IEC BEAMLIMITING DEVICE coordinate axis appropriate to the MLC device type. For example,
+the X-axis for MLCX and the Y-axis for MLCY. The two-dimensional array is
+indexed [bank, leaf], where the bank is either 0 or 1. Bank 0 represents
+the leaf bank to the negative MLC X direction, and bank 1 to the
+positive MLC X direction. Passing null selects the default.</p>
+</dd>
+    <dt><code>jawPositions</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VRect-1.html">VRect</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>The jaw positions of the treatment beam in millimeters, and
+in IEC BEAM LIMITING DEVICE coordinates.</p>
+</dd>
+    <dt><code>collimatorAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC BEAM LIMITING DEVICE
+coordinate system with respect to the IEC GANTRY coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC GANTRY coordinate system with
+respect to the IEC FIXED REFERENCE coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryStop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The stop angle of the gantry, in degrees.</p>
+</dd>
+    <dt><code>gantryDirection</code> <a class="xref" href="VMS.TPS.Common.Model.Types.GantryDirection.html">GantryDirection</a></dt>
+    <dd><p>The direction of the arc.</p>
+</dd>
+    <dt><code>patientSupportAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC PATIENT SUPPORT
+(turntable) coordinate system with respect to the IEC FIXED REFERENCE coordinate
+system (in degrees).</p>
+</dd>
+    <dt><code>isocenter</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>The isocenter position, in millimeters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+    <dd><p>The created beam.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddMLCArcBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Single_0__0___VMS_TPS_Common_Model_Types_VRect_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_GantryDirection_System_Double_VMS_TPS_Common_Model_Types_VVector__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>All angles must be specified in the range [0, 360[.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddMLCBeam_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddMLCBeam*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddMLCBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Single_0__0___VMS_TPS_Common_Model_Types_VRect_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddMLCBeam(VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters,System.Single[0:,0:],VMS.TPS.Common.Model.Types.VRect{System.Double},System.Double,System.Double,System.Double,VMS.TPS.Common.Model.Types.VVector)">
+  AddMLCBeam(ExternalBeamMachineParameters, float[,], VRect&lt;double&gt;, double, double, double, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new beam with an MLC to the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Beam AddMLCBeam(ExternalBeamMachineParameters machineParameters, float[,] leafPositions, VRect&lt;double&gt; jawPositions, double collimatorAngle, double gantryAngle, double patientSupportAngle, VVector isocenter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>machineParameters</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a></dt>
+    <dd><p>Configuration of the used treatment unit. See <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a>.</p>
+</dd>
+    <dt><code>leafPositions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[,]</dt>
+    <dd><p>The positions of the beam collimator leaf pairs in millimeters, and in
+the IEC BEAMLIMITING DEVICE coordinate axis appropriate to the MLC device type. For example,
+the X-axis for MLCX and the Y-axis for MLCY. The two-dimensional array is
+indexed [bank, leaf] where the bank is either 0 or 1. Bank 0 represents
+the leaf bank to the negative MLC X direction, and bank 1 to the
+positive MLC X direction. Passing null selects the default.</p>
+</dd>
+    <dt><code>jawPositions</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VRect-1.html">VRect</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>The jaw positions of the treatment beam in millimeters, and
+in IEC BEAM LIMITING DEVICE coordinates.</p>
+</dd>
+    <dt><code>collimatorAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC BEAM LIMITING DEVICE
+coordinate system with respect to the IEC GANTRY coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC GANTRY coordinate system with
+respect to the IEC FIXED REFERENCE coordinate system (in degrees).</p>
+</dd>
+    <dt><code>patientSupportAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC PATIENT SUPPORT
+(turntable) coordinate system with respect to the IEC FIXED REFERENCE coordinate
+system (in degrees).</p>
+</dd>
+    <dt><code>isocenter</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>The isocenter position, in millimeters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+    <dd><p>The created beam.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddMLCBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Single_0__0___VMS_TPS_Common_Model_Types_VRect_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_VVector__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>All angles must be specified in the range [0, 360[.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddMLCSetupBeam_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddMLCSetupBeam*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddMLCSetupBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Single_0__0___VMS_TPS_Common_Model_Types_VRect_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddMLCSetupBeam(VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters,System.Single[0:,0:],VMS.TPS.Common.Model.Types.VRect{System.Double},System.Double,System.Double,System.Double,VMS.TPS.Common.Model.Types.VVector)">
+  AddMLCSetupBeam(ExternalBeamMachineParameters, float[,], VRect&lt;double&gt;, double, double, double, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new static setup field with an MLC to the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Beam AddMLCSetupBeam(ExternalBeamMachineParameters machineParameters, float[,] leafPositions, VRect&lt;double&gt; jawPositions, double collimatorAngle, double gantryAngle, double patientSupportAngle, VVector isocenter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>machineParameters</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a></dt>
+    <dd><p>Configuration of the used treatment unit. See <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a>.</p>
+</dd>
+    <dt><code>leafPositions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[,]</dt>
+    <dd><p>The positions of the beam collimator leaf pairs in millimeters, and in
+the IEC BEAMLIMITING DEVICE coordinate axis appropriate to the MLC device type. For example,
+the X-axis for MLCX and the Y-axis for MLCY. The two-dimensional array is
+indexed [bank, leaf] where the bank is either 0 or 1. Bank 0 represents
+the leaf bank to the negative MLC X direction, and bank 1 to the
+positive MLC X direction. Passing null selects the default.</p>
+</dd>
+    <dt><code>jawPositions</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VRect-1.html">VRect</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>The jaw positions of the setup field in millimeters, and
+in IEC BEAM LIMITING DEVICE coordinates.</p>
+</dd>
+    <dt><code>collimatorAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC BEAM LIMITING DEVICE
+coordinate system with respect to the IEC GANTRY coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC GANTRY coordinate system with
+respect to the IEC FIXED REFERENCE coordinate system (in degrees).</p>
+</dd>
+    <dt><code>patientSupportAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC PATIENT SUPPORT
+(turntable) coordinate system with respect to the IEC FIXED REFERENCE coordinate
+system (in degrees).</p>
+</dd>
+    <dt><code>isocenter</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>The isocenter position, in millimeters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+    <dd><p>The created beam.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddMLCSetupBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Single_0__0___VMS_TPS_Common_Model_Types_VRect_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_VVector__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>All angles must be specified in the range [0, 360[.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddMultipleStaticSegmentBeam_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddMultipleStaticSegmentBeam*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddMultipleStaticSegmentBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Collections_Generic_IEnumerable_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddMultipleStaticSegmentBeam(VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters,System.Collections.Generic.IEnumerable{System.Double},System.Double,System.Double,System.Double,VMS.TPS.Common.Model.Types.VVector)">
+  AddMultipleStaticSegmentBeam(ExternalBeamMachineParameters, IEnumerable&lt;double&gt;, double, double, double, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new IMRT beam to the plan and defines Multiple Static Segments as the delivery technique.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Beam AddMultipleStaticSegmentBeam(ExternalBeamMachineParameters machineParameters, IEnumerable&lt;double&gt; metersetWeights, double collimatorAngle, double gantryAngle, double patientSupportAngle, VVector isocenter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>machineParameters</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a></dt>
+    <dd><p>Configuration of the used treatment unit. See <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a>.</p>
+</dd>
+    <dt><code>metersetWeights</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>The meterset weight for each control point of the beam. The number of meterset weight items defines the number of created control points.</p>
+</dd>
+    <dt><code>collimatorAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC BEAM LIMITING DEVICE
+coordinate system with respect to the IEC GANTRY coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC GANTRY coordinate system with
+respect to the IEC FIXED REFERENCE coordinate system (in degrees).</p>
+</dd>
+    <dt><code>patientSupportAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC PATIENT SUPPORT
+(turntable) coordinate system with respect to the IEC FIXED REFERENCE coordinate
+system (in degrees).</p>
+</dd>
+    <dt><code>isocenter</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>The isocenter position, in millimeters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+    <dd><p>The created beam.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddMultipleStaticSegmentBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Collections_Generic_IEnumerable_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_VVector__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>All angles must be specified in the range [0, 360[.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddSetupBeam_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddSetupBeam*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddSetupBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_VMS_TPS_Common_Model_Types_VRect_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddSetupBeam(VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters,VMS.TPS.Common.Model.Types.VRect{System.Double},System.Double,System.Double,System.Double,VMS.TPS.Common.Model.Types.VVector)">
+  AddSetupBeam(ExternalBeamMachineParameters, VRect&lt;double&gt;, double, double, double, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new static setup field to the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Beam AddSetupBeam(ExternalBeamMachineParameters machineParameters, VRect&lt;double&gt; jawPositions, double collimatorAngle, double gantryAngle, double patientSupportAngle, VVector isocenter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>machineParameters</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a></dt>
+    <dd><p>Configuration of the used treatment unit. See <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a>.</p>
+</dd>
+    <dt><code>jawPositions</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VRect-1.html">VRect</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>The jaw positions of the setup field in millimeters, and
+in IEC BEAM LIMITING DEVICE coordinates.</p>
+</dd>
+    <dt><code>collimatorAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC BEAM LIMITING DEVICE
+coordinate system with respect to the IEC GANTRY coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC GANTRY coordinate system with
+respect to the IEC FIXED REFERENCE coordinate system (in degrees).</p>
+</dd>
+    <dt><code>patientSupportAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC PATIENT SUPPORT
+(turntable) coordinate system with respect to the IEC FIXED REFERENCE coordinate
+system (in degrees).</p>
+</dd>
+    <dt><code>isocenter</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>The isocenter position, in millimeters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+    <dd><p>The created beam.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddSetupBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_VMS_TPS_Common_Model_Types_VRect_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_VVector__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>All angles must be specified in the range [0, 360[.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddSlidingWindowBeam_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddSlidingWindowBeam*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddSlidingWindowBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Collections_Generic_IEnumerable_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddSlidingWindowBeam(VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters,System.Collections.Generic.IEnumerable{System.Double},System.Double,System.Double,System.Double,VMS.TPS.Common.Model.Types.VVector)">
+  AddSlidingWindowBeam(ExternalBeamMachineParameters, IEnumerable&lt;double&gt;, double, double, double, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new IMRT beam to the plan and defines Sliding Window as the delivery technique.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Beam AddSlidingWindowBeam(ExternalBeamMachineParameters machineParameters, IEnumerable&lt;double&gt; metersetWeights, double collimatorAngle, double gantryAngle, double patientSupportAngle, VVector isocenter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>machineParameters</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a></dt>
+    <dd><p>Configuration of the used treatment unit. See <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a>.</p>
+</dd>
+    <dt><code>metersetWeights</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>The meterset weight for each control point of the beam. The number of meterset weight items defines the number of created control points.</p>
+</dd>
+    <dt><code>collimatorAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC BEAM LIMITING DEVICE
+coordinate system with respect to the IEC GANTRY coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC GANTRY coordinate system with
+respect to the IEC FIXED REFERENCE coordinate system (in degrees).</p>
+</dd>
+    <dt><code>patientSupportAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC PATIENT SUPPORT
+(turntable) coordinate system with respect to the IEC FIXED REFERENCE coordinate
+system (in degrees).</p>
+</dd>
+    <dt><code>isocenter</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>The isocenter position, in millimeters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+    <dd><p>The created beam.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddSlidingWindowBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Collections_Generic_IEnumerable_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_VVector__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>All angles must be specified in the range [0, 360[.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddSlidingWindowBeamForFixedJaws_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddSlidingWindowBeamForFixedJaws*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddSlidingWindowBeamForFixedJaws_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Collections_Generic_IEnumerable_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddSlidingWindowBeamForFixedJaws(VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters,System.Collections.Generic.IEnumerable{System.Double},System.Double,System.Double,System.Double,VMS.TPS.Common.Model.Types.VVector)">
+  AddSlidingWindowBeamForFixedJaws(ExternalBeamMachineParameters, IEnumerable&lt;double&gt;, double, double, double, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new sliding window IMRT beam and takes jaw positions from machine configuration. In case of a Halcyon machine, the special leaf position requirements are taken into account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Beam AddSlidingWindowBeamForFixedJaws(ExternalBeamMachineParameters machineParameters, IEnumerable&lt;double&gt; metersetWeights, double collimatorAngle, double gantryAngle, double patientSupportAngle, VVector isocenter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>machineParameters</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a></dt>
+    <dd><p>Configuration of the used treatment unit. See <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a>.</p>
+</dd>
+    <dt><code>metersetWeights</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>The meterset weight for each control point of the beam. The number of meterset weight items defines the number of created control points.</p>
+</dd>
+    <dt><code>collimatorAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC BEAM LIMITING DEVICE
+coordinate system with respect to the IEC GANTRY coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Gantry angle in the IEC GANTRY coordinate system (in degrees).</p>
+</dd>
+    <dt><code>patientSupportAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC PATIENT SUPPORT
+(turntable) coordinate system with respect to the IEC FIXED REFERENCE coordinate
+system (in degrees).</p>
+</dd>
+    <dt><code>isocenter</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>The isocenter position in millimeters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+    <dd><p>The created beam.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddSlidingWindowBeamForFixedJaws_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Collections_Generic_IEnumerable_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_VVector__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>All angles must be specified in the range [0, 360[.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddStaticBeam_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddStaticBeam*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddStaticBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_VMS_TPS_Common_Model_Types_VRect_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddStaticBeam(VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters,VMS.TPS.Common.Model.Types.VRect{System.Double},System.Double,System.Double,System.Double,VMS.TPS.Common.Model.Types.VVector)">
+  AddStaticBeam(ExternalBeamMachineParameters, VRect&lt;double&gt;, double, double, double, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new static beam to the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Beam AddStaticBeam(ExternalBeamMachineParameters machineParameters, VRect&lt;double&gt; jawPositions, double collimatorAngle, double gantryAngle, double patientSupportAngle, VVector isocenter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>machineParameters</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a></dt>
+    <dd><p>Configuration of the used treatment unit. See <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a>.</p>
+</dd>
+    <dt><code>jawPositions</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VRect-1.html">VRect</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>The jaw positions of the treatment beam in millimeters, and
+in IEC BEAM LIMITING DEVICE coordinates.</p>
+</dd>
+    <dt><code>collimatorAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC BEAM LIMITING DEVICE
+coordinate system with respect to the IEC GANTRY coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC GANTRY coordinate system with
+respect to the IEC FIXED REFERENCE coordinate system (in degrees).</p>
+</dd>
+    <dt><code>patientSupportAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC PATIENT SUPPORT
+(turntable) coordinate system with respect to the IEC FIXED REFERENCE coordinate
+system (in degrees).</p>
+</dd>
+    <dt><code>isocenter</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>The isocenter position, in millimeters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+    <dd><p>The created beam.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddStaticBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_VMS_TPS_Common_Model_Types_VRect_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_VVector__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>All angles must be specified in the range [0, 360[.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddVMATBeam_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddVMATBeam*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddVMATBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Collections_Generic_IEnumerable_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_GantryDirection_System_Double_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddVMATBeam(VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters,System.Collections.Generic.IEnumerable{System.Double},System.Double,System.Double,System.Double,VMS.TPS.Common.Model.Types.GantryDirection,System.Double,VMS.TPS.Common.Model.Types.VVector)">
+  AddVMATBeam(ExternalBeamMachineParameters, IEnumerable&lt;double&gt;, double, double, double, GantryDirection, double, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new VMAT beam to the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Beam AddVMATBeam(ExternalBeamMachineParameters machineParameters, IEnumerable&lt;double&gt; metersetWeights, double collimatorAngle, double gantryAngle, double gantryStop, GantryDirection gantryDirection, double patientSupportAngle, VVector isocenter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>machineParameters</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a></dt>
+    <dd><p>Configuration of the used treatment unit. See <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a>.</p>
+</dd>
+    <dt><code>metersetWeights</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>The meterset weight for each control point of the beam. The number of meterset weight items defines the number of created control points.</p>
+</dd>
+    <dt><code>collimatorAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC BEAM LIMITING DEVICE
+coordinate system with respect to the IEC GANTRY coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC GANTRY coordinate system with
+respect to the IEC FIXED REFERENCE coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryStop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The stop angle of the gantry, in degrees.</p>
+</dd>
+    <dt><code>gantryDirection</code> <a class="xref" href="VMS.TPS.Common.Model.Types.GantryDirection.html">GantryDirection</a></dt>
+    <dd><p>The rotation direction of the arc.</p>
+</dd>
+    <dt><code>patientSupportAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC PATIENT SUPPORT
+(turntable) coordinate system with respect to the IEC FIXED REFERENCE coordinate
+system (in degrees).</p>
+</dd>
+    <dt><code>isocenter</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>The isocenter position, in millimeters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+    <dd><p>The created beam.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddVMATBeam_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Collections_Generic_IEnumerable_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_GantryDirection_System_Double_VMS_TPS_Common_Model_Types_VVector__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>All angles must be specified in the range [0, 360[.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddVMATBeamForFixedJaws_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddVMATBeamForFixedJaws*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddVMATBeamForFixedJaws_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Collections_Generic_IEnumerable_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_GantryDirection_System_Double_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.AddVMATBeamForFixedJaws(VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters,System.Collections.Generic.IEnumerable{System.Double},System.Double,System.Double,System.Double,VMS.TPS.Common.Model.Types.GantryDirection,System.Double,VMS.TPS.Common.Model.Types.VVector)">
+  AddVMATBeamForFixedJaws(ExternalBeamMachineParameters, IEnumerable&lt;double&gt;, double, double, double, GantryDirection, double, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Adds a new VMAT beam and takes jaw positions from machine configuration. In case of a Halcyon machine, the special leaf position requirements are taken into account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Beam AddVMATBeamForFixedJaws(ExternalBeamMachineParameters machineParameters, IEnumerable&lt;double&gt; metersetWeights, double collimatorAngle, double gantryStartAngle, double gantryStopAngle, GantryDirection gantryDir, double patientSupportAngle, VVector isocenter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>machineParameters</code> <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a></dt>
+    <dd><p>Configuration of the used treatment unit. See <a class="xref" href="VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html">ExternalBeamMachineParameters</a>.</p>
+</dd>
+    <dt><code>metersetWeights</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd><p>The meterset weight for each control point of the beam. The number of meterset weight items defines the number of created control points.</p>
+</dd>
+    <dt><code>collimatorAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC BEAM LIMITING DEVICE
+coordinate system with respect to the IEC GANTRY coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryStartAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Gantry start angle in the IEC GANTRY coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryStopAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Gantry stop angle in the IEC GANTRY coordinate system (in degrees).</p>
+</dd>
+    <dt><code>gantryDir</code> <a class="xref" href="VMS.TPS.Common.Model.Types.GantryDirection.html">GantryDirection</a></dt>
+    <dd><p>Gantry direction</p>
+</dd>
+    <dt><code>patientSupportAngle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The orientation of the IEC PATIENT SUPPORT
+(turntable) coordinate system with respect to the IEC FIXED REFERENCE coordinate
+system (in degrees).</p>
+</dd>
+    <dt><code>isocenter</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>The isocenter position in millimeters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+    <dd><p>The created beam.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ExternalPlanSetup_AddVMATBeamForFixedJaws_VMS_TPS_Common_Model_Types_ExternalBeamMachineParameters_System_Collections_Generic_IEnumerable_System_Double__System_Double_System_Double_System_Double_VMS_TPS_Common_Model_Types_GantryDirection_System_Double_VMS_TPS_Common_Model_Types_VVector__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>All angles must be specified in the range [0, 360[.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculateDVHEstimates_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculateDVHEstimates*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculateDVHEstimates_System_String_System_Collections_Generic_Dictionary_System_String_VMS_TPS_Common_Model_Types_DoseValue__System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculateDVHEstimates(System.String,System.Collections.Generic.Dictionary{System.String,VMS.TPS.Common.Model.Types.DoseValue},System.Collections.Generic.Dictionary{System.String,System.String})">
+  CalculateDVHEstimates(string, Dictionary&lt;string, DoseValue&gt;, Dictionary&lt;string, string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Calculates DVH estimates for the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalculationResult CalculateDVHEstimates(string modelId, Dictionary&lt;string, DoseValue&gt; targetDoseLevels, Dictionary&lt;string, string&gt; structureMatches)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modelId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>DVH estimation model ID.</p>
+</dd>
+    <dt><code>targetDoseLevels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a>&gt;</dt>
+    <dd><p>Dose levels for the target structures.</p>
+</dd>
+    <dt><code>structureMatches</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Matching between the IDs of the structures contained in the structure set used in the plan (the Key in the Dictionary)
+and the structures used in the DVH estimation model (the Value in the Dictionary).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.CalculationResult.html">CalculationResult</a></dt>
+    <dd><p>The calculation result. See the calculation details <a class="xref" href="VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CalculationLogs"> in the calculation logs</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculateDose_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculateDose*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculateDose" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculateDose">
+  CalculateDose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Calculates the dose for the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalculationResult CalculateDose()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.CalculationResult.html">CalculationResult</a></dt>
+    <dd><p>The calculation result. See calculation details from <a class="xref" href="VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CalculationLogs">the calculation logs</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculateDoseWithPresetValues_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculateDoseWithPresetValues*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculateDoseWithPresetValues_System_Collections_Generic_List_System_Collections_Generic_KeyValuePair_System_String_VMS_TPS_Common_Model_Types_MetersetValue___" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculateDoseWithPresetValues(System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,VMS.TPS.Common.Model.Types.MetersetValue}})">
+  CalculateDoseWithPresetValues(List&lt;KeyValuePair&lt;string, MetersetValue&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates the dose for the plan with preset meterset values.
+This applies only to IMRT beams.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalculationResult CalculateDoseWithPresetValues(List&lt;KeyValuePair&lt;string, MetersetValue&gt;&gt; presetValues)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>presetValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="VMS.TPS.Common.Model.Types.MetersetValue.html">MetersetValue</a>&gt;&gt;</dt>
+    <dd><p>The list of preset meterset values for the beams. An element of the list should contain a pair consisting of the
+beam identifier (as the key) and the corresponding preset meterset value for the beam.
+Each beam in the plan must have one entry in the list.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.CalculationResult.html">CalculationResult</a></dt>
+    <dd><p>The calculation result. See calculation details from <a class="xref" href="VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CalculationLogs">the calculation logs</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculateLeafMotions_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculateLeafMotions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculateLeafMotions" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculateLeafMotions">
+  CalculateLeafMotions()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Calculates leaf motions using the calculation options of the plan setup.
+Before calling this method, set the calculation models for leaf motions and dose calculation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalculationResult CalculateLeafMotions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.CalculationResult.html">CalculationResult</a></dt>
+    <dd><p>The calculation result. See calculation details from <a class="xref" href="VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CalculationLogs">the calculation logs</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetCalculationModel_VMS_TPS_Common_Model_Types_CalculationType_System_String_">SetCalculationModel</a>(<a class="xref" href="VMS.TPS.Common.Model.Types.CalculationType.html">CalculationType</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)</div>
+    <div><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetCalculationOption_System_String_System_String_System_String_">SetCalculationOption</a>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)</div>
+    </dd>
+  </dl>
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculateLeafMotions_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculateLeafMotions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculateLeafMotions_VMS_TPS_Common_Model_Types_LMCMSSOptions_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculateLeafMotions(VMS.TPS.Common.Model.Types.LMCMSSOptions)">
+  CalculateLeafMotions(LMCMSSOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Calculates leaf motions using the given calculation options, which override the calculation options defined for the plan setup.
+Before calling this method, set the calculation models for leaf motions and dose calculation.
+The used leaf motion calculation algorithm must be MSS Leaf Motion Calculator (LMCMSS).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalculationResult CalculateLeafMotions(LMCMSSOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="VMS.TPS.Common.Model.Types.LMCMSSOptions.html">LMCMSSOptions</a></dt>
+    <dd><p>Calculation options for the MSS Leaf Motion Calculator (LMCMSS) algorithm.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.CalculationResult.html">CalculationResult</a></dt>
+    <dd><p>The calculation result. See calculation details from <a class="xref" href="VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CalculationLogs">the calculation logs</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetCalculationModel_VMS_TPS_Common_Model_Types_CalculationType_System_String_">SetCalculationModel</a>(<a class="xref" href="VMS.TPS.Common.Model.Types.CalculationType.html">CalculationType</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)</div>
+    <div><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetCalculationOption_System_String_System_String_System_String_">SetCalculationOption</a>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)</div>
+    </dd>
+  </dl>
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculateLeafMotions_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculateLeafMotions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculateLeafMotions_VMS_TPS_Common_Model_Types_LMCVOptions_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculateLeafMotions(VMS.TPS.Common.Model.Types.LMCVOptions)">
+  CalculateLeafMotions(LMCVOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Calculates leaf motions using the given calculation options, which override the calculation options defined for the plan setup.
+Before calling this method, set the calculation models for leaf motions and dose calculation.
+The used leaf motion calculation algorithm must be Varian Leaf Motion Calculator (LMCV).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalculationResult CalculateLeafMotions(LMCVOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="VMS.TPS.Common.Model.Types.LMCVOptions.html">LMCVOptions</a></dt>
+    <dd><p>Calculation options for the Varian Leaf Motion Calculator (LMCV) algorithm.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.CalculationResult.html">CalculationResult</a></dt>
+    <dd><p>The calculation result. See calculation details from <a class="xref" href="VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CalculationLogs">the calculation logs</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetCalculationModel_VMS_TPS_Common_Model_Types_CalculationType_System_String_">SetCalculationModel</a>(<a class="xref" href="VMS.TPS.Common.Model.Types.CalculationType.html">CalculationType</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)</div>
+    <div><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetCalculationOption_System_String_System_String_System_String_">SetCalculationOption</a>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)</div>
+    </dd>
+  </dl>
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculateLeafMotions_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculateLeafMotions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculateLeafMotions_VMS_TPS_Common_Model_Types_SmartLMCOptions_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculateLeafMotions(VMS.TPS.Common.Model.Types.SmartLMCOptions)">
+  CalculateLeafMotions(SmartLMCOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates leaf motions using the given calculation options, which override the calculation options defined for the plan setup.
+Before calling this method, set the calculation models for leaf motions and dose calculation.
+The used leaf motion calculation algorithm must be Varian Smart LMC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalculationResult CalculateLeafMotions(SmartLMCOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="VMS.TPS.Common.Model.Types.SmartLMCOptions.html">SmartLMCOptions</a></dt>
+    <dd><p>Calculation options for the Varian Smart LMC algorithm.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.CalculationResult.html">CalculationResult</a></dt>
+    <dd><p>The calculation result. See calculation details from <a class="xref" href="VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CalculationLogs">the calculation logs</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetCalculationModel_VMS_TPS_Common_Model_Types_CalculationType_System_String_">SetCalculationModel</a>(<a class="xref" href="VMS.TPS.Common.Model.Types.CalculationType.html">CalculationType</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)</div>
+    <div><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetCalculationOption_System_String_System_String_System_String_">SetCalculationOption</a>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>)</div>
+    </dd>
+  </dl>
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculateLeafMotionsAndDose_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculateLeafMotionsAndDose*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculateLeafMotionsAndDose" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculateLeafMotionsAndDose">
+  CalculateLeafMotionsAndDose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate leaf motions and dose using the calculation models defined in the plan setup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalculationResult CalculateLeafMotionsAndDose()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.CalculationResult.html">CalculationResult</a></dt>
+    <dd><p>Result of the intermediate dose calculation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculatePlanUncertaintyDoses_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculatePlanUncertaintyDoses*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CalculatePlanUncertaintyDoses" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CalculatePlanUncertaintyDoses">
+  CalculatePlanUncertaintyDoses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Calculates the plan uncertainty dose for the photon plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CalculationResult CalculatePlanUncertaintyDoses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.CalculationResult.html">CalculationResult</a></dt>
+    <dd><p>The calculation result. See calculation details in <a class="xref" href="VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CalculationLogs">the calculation logs</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CopyEvaluationDose_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CopyEvaluationDose*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CopyEvaluationDose_VMS_TPS_Common_Model_API_Dose_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CopyEvaluationDose(VMS.TPS.Common.Model.API.Dose)">
+  CopyEvaluationDose(Dose)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Creates an evaluation dose for the plan. The voxels in an evaluation dose
+are copied from the existing dose matrix.
+To create an evaluation dose, the plan must not contain any beams.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EvaluationDose CopyEvaluationDose(Dose existing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>existing</code> <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html">Dose</a></dt>
+    <dd><p>The dose matrix is copied from this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.EvaluationDose.html">EvaluationDose</a></dt>
+    <dd><p>A new evaluation dose object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CreateEvaluationDose_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CreateEvaluationDose*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CreateEvaluationDose" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.CreateEvaluationDose">
+  CreateEvaluationDose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Creates an evaluation dose for the plan. The voxels in an evaluation dose
+can be set using the Eclipse Scripting API instead of a dose calculation algorithm.
+To create an evaluation dose, the plan must not contain any beams.
+To set the evaluation dose voxels, retrieve the dose matrix using the <a class="xref" href="VMS.TPS.Common.Model.API.ExternalPlanSetup.html#VMS_TPS_Common_Model_API_ExternalPlanSetup_DoseAsEvaluationDose">DoseAsEvaluationDose</a> property of the plan
+and then use <a class="xref" href="VMS.TPS.Common.Model.API.EvaluationDose.html#VMS_TPS_Common_Model_API_EvaluationDose_SetVoxels_System_Int32_System_Int32_0__0___">SetVoxels</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EvaluationDose CreateEvaluationDose()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.EvaluationDose.html">EvaluationDose</a></dt>
+    <dd><p>A new evaluation dose object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ExternalPlanSetup_CreateEvaluationDose_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Saving modifications to the database is not possible if the evaluation dose has been created but voxels have not been set.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_GetModelsForCalculationType_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.GetModelsForCalculationType*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_GetModelsForCalculationType_VMS_TPS_Common_Model_Types_CalculationType_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.GetModelsForCalculationType(VMS.TPS.Common.Model.Types.CalculationType)">
+  GetModelsForCalculationType(CalculationType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a list of calculation models for the given calculation type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; GetModelsForCalculationType(CalculationType calculationType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>calculationType</code> <a class="xref" href="VMS.TPS.Common.Model.Types.CalculationType.html">CalculationType</a></dt>
+    <dd><p>The type of calculation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>The list of calculation models.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_Optimize_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.Optimize*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_Optimize" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.Optimize">
+  Optimize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Runs IMRT optimization for the plan setup. The Multileaf Collimator (MLC) is determined automatically. If there are more than one MLC or no MLC at all,
+an exception is thrown.
+Plan normalization method is changed to 'No plan normalization' after successful optimization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizerResult Optimize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizerResult.html">OptimizerResult</a></dt>
+    <dd><p>The result of the optimization.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_Optimize_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.Optimize*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_Optimize_System_Int32_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.Optimize(System.Int32)">
+  Optimize(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Runs IMRT optimization for the plan setup.
+All existing optimal fluences are removed from the beams.
+Fails if the method cannot select an MLC for the beams.
+Plan normalization method is changed to 'No plan normalization' after successful optimization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizerResult Optimize(int maxIterations)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxIterations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The maximum number of iterations.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizerResult.html">OptimizerResult</a></dt>
+    <dd><p>The result of the optimization.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_Optimize_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.Optimize*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_Optimize_System_Int32_VMS_TPS_Common_Model_Types_OptimizationOption_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.Optimize(System.Int32,VMS.TPS.Common.Model.Types.OptimizationOption)">
+  Optimize(int, OptimizationOption)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Runs IMRT optimization for the plan setup.
+Fails if the method cannot select an MLC for the beams.
+Plan normalization method is changed to 'No plan normalization' after successful optimization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizerResult Optimize(int maxIterations, OptimizationOption optimizationOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxIterations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The maximum number of iterations.</p>
+</dd>
+    <dt><code>optimizationOption</code> <a class="xref" href="VMS.TPS.Common.Model.Types.OptimizationOption.html">OptimizationOption</a></dt>
+    <dd><p>Optimization options.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizerResult.html">OptimizerResult</a></dt>
+    <dd><p>The result of the optimization.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_Optimize_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.Optimize*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_Optimize_System_Int32_VMS_TPS_Common_Model_Types_OptimizationOption_System_String_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.Optimize(System.Int32,VMS.TPS.Common.Model.Types.OptimizationOption,System.String)">
+  Optimize(int, OptimizationOption, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Runs IMRT optimization for the plan setup.
+You can add the Multileaf Collimator (MLC) as a parameter.
+Plan normalization method is changed to 'No plan normalization' after successful optimization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizerResult Optimize(int maxIterations, OptimizationOption optimizationOption, string mlcId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>maxIterations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The maximum number of iterations.</p>
+</dd>
+    <dt><code>optimizationOption</code> <a class="xref" href="VMS.TPS.Common.Model.Types.OptimizationOption.html">OptimizationOption</a></dt>
+    <dd><p>Optimization option specifying the initial state.</p>
+</dd>
+    <dt><code>mlcId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The identifier for the Multileaf Collimator (MLC).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizerResult.html">OptimizerResult</a></dt>
+    <dd><p>The result of the optimization.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_Optimize_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.Optimize*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_Optimize_VMS_TPS_Common_Model_Types_OptimizationOptionsIMRT_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.Optimize(VMS.TPS.Common.Model.Types.OptimizationOptionsIMRT)">
+  Optimize(OptimizationOptionsIMRT)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Runs IMRT optimization for the plan setup.
+Plan normalization method is changed to 'No plan normalization' after successful optimization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizerResult Optimize(OptimizationOptionsIMRT options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="VMS.TPS.Common.Model.Types.OptimizationOptionsIMRT.html">OptimizationOptionsIMRT</a></dt>
+    <dd><p>Options specifying initial state, intermediate dose, and termination upon convergence.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizerResult.html">OptimizerResult</a></dt>
+    <dd><p>Result of the optimization.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_OptimizeVMAT_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.OptimizeVMAT*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_OptimizeVMAT" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.OptimizeVMAT">
+  OptimizeVMAT()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Runs VMAT optimization for the plan setup.
+The Multileaf Collimator (MLC) is determined automatically. If there are more than one MLC or no MLC at all,
+an exception is thrown.
+Plan normalization method is changed to 'No plan normalization' after successful optimization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizerResult OptimizeVMAT()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizerResult.html">OptimizerResult</a></dt>
+    <dd><p>The result of the optimization.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_OptimizeVMAT_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.OptimizeVMAT*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_OptimizeVMAT_System_String_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.OptimizeVMAT(System.String)">
+  OptimizeVMAT(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Runs VMAT optimization for the plan setup.
+You can add the MLC as a parameter.
+Plan normalization method is changed to 'No plan normalization' after successful optimization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizerResult OptimizeVMAT(string mlcId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mlcId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The identifier for the Multileaf Collimator (MLC).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizerResult.html">OptimizerResult</a></dt>
+    <dd><p>The result of the optimization.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_OptimizeVMAT_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.OptimizeVMAT*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_OptimizeVMAT_VMS_TPS_Common_Model_Types_OptimizationOptionsVMAT_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.OptimizeVMAT(VMS.TPS.Common.Model.Types.OptimizationOptionsVMAT)">
+  OptimizeVMAT(OptimizationOptionsVMAT)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Runs VMAT optimization for the plan setup using intermediate dose calculation.
+Plan normalization method is changed to 'No plan normalization' after successful optimization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizerResult OptimizeVMAT(OptimizationOptionsVMAT options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="VMS.TPS.Common.Model.Types.OptimizationOptionsVMAT.html">OptimizationOptionsVMAT</a></dt>
+    <dd><p>VMAT optimization options.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizerResult.html">OptimizerResult</a></dt>
+    <dd><p>The result of the optimization.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_RemoveBeam_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.RemoveBeam*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_RemoveBeam_VMS_TPS_Common_Model_API_Beam_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.RemoveBeam(VMS.TPS.Common.Model.API.Beam)">
+  RemoveBeam(Beam)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Removes a beam from the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveBeam(Beam beam)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>beam</code> <a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+    <dd><p>The beam that will be removed from the plan.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ExternalPlanSetup_WriteXml_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ExternalPlanSetup_WriteXml_System_Xml_XmlWriter_" data-uid="VMS.TPS.Common.Model.API.ExternalPlanSetup.WriteXml(System.Xml.XmlWriter)">
+  WriteXml(XmlWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an object into its XML representation.
+For more information on how to serialize an object into an XML document, see <span class="xref">System.Xml.Serialization.XmlSerializer</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>The System.Xml.XmlWriter stream, to which the object is serialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

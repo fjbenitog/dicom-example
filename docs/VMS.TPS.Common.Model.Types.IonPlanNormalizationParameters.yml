@@ -1,0 +1,575 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters
+  commentId: T:VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters
+  id: IonPlanNormalizationParameters
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.#ctor(VMS.TPS.Common.Model.Types.PlanNormalizationMode)
+  - VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.#ctor(VMS.TPS.Common.Model.Types.PlanNormalizationMode,System.Double)
+  - VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.#ctor(VMS.TPS.Common.Model.Types.PlanNormalizationMode,System.Double,System.Double)
+  - VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.NormalizationMode
+  - VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.NormalizationValue
+  - VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.VolumePercentage
+  langs:
+  - csharp
+  - vb
+  name: IonPlanNormalizationParameters
+  nameWithType: IonPlanNormalizationParameters
+  fullName: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The parameters for proton plan normalization.
+  example: []
+  syntax:
+    content: public class IonPlanNormalizationParameters
+    content.vb: Public Class IonPlanNormalizationParameters
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.#ctor(VMS.TPS.Common.Model.Types.PlanNormalizationMode,System.Double,System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.#ctor(VMS.TPS.Common.Model.Types.PlanNormalizationMode,System.Double,System.Double)
+  id: '#ctor(VMS.TPS.Common.Model.Types.PlanNormalizationMode,System.Double,System.Double)'
+  parent: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters
+  langs:
+  - csharp
+  - vb
+  name: IonPlanNormalizationParameters(PlanNormalizationMode, double, double)
+  nameWithType: IonPlanNormalizationParameters.IonPlanNormalizationParameters(PlanNormalizationMode, double, double)
+  fullName: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.IonPlanNormalizationParameters(VMS.TPS.Common.Model.Types.PlanNormalizationMode, double, double)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Plan normalization parameters for user-defined target volume percentage and plan normalization value.
+
+    For more information refer to the plan normalization options in the Eclipse Proton Reference Guide.
+  remarks: >-
+    Provide <code>normalizationValue</code> and <code>volumePercentage</code> if <code>normalizationMode</code> is <code>PlanNormalizationMode.TargetDVH</code>.
+
+    <code>normalizationValue</code> and <code>volumePercentage</code> will be set to <code>NaN</code> if the <code>normalizationMode</code> is not <code>PlanNormalizationMode.TargetDVH</code>.
+  example: []
+  syntax:
+    content: public IonPlanNormalizationParameters(PlanNormalizationMode normalizationMode, double normalizationValue, double volumePercentage)
+    parameters:
+    - id: normalizationMode
+      type: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+      description: ''
+    - id: normalizationValue
+      type: System.Double
+      description: ''
+    - id: volumePercentage
+      type: System.Double
+      description: ''
+    content.vb: Public Sub New(normalizationMode As PlanNormalizationMode, normalizationValue As Double, volumePercentage As Double)
+  overload: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: An exception is thrown if either the <code>normalizationValue</code> and/or <code>volumePercentage</code> are invalid, or the <code>normalizationMode</code> is not <code>PlanNormalizationMode.TargetDVH</code>.
+  nameWithType.vb: IonPlanNormalizationParameters.New(PlanNormalizationMode, Double, Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.New(VMS.TPS.Common.Model.Types.PlanNormalizationMode, Double, Double)
+  name.vb: New(PlanNormalizationMode, Double, Double)
+- uid: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.#ctor(VMS.TPS.Common.Model.Types.PlanNormalizationMode,System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.#ctor(VMS.TPS.Common.Model.Types.PlanNormalizationMode,System.Double)
+  id: '#ctor(VMS.TPS.Common.Model.Types.PlanNormalizationMode,System.Double)'
+  parent: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters
+  langs:
+  - csharp
+  - vb
+  name: IonPlanNormalizationParameters(PlanNormalizationMode, double)
+  nameWithType: IonPlanNormalizationParameters.IonPlanNormalizationParameters(PlanNormalizationMode, double)
+  fullName: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.IonPlanNormalizationParameters(VMS.TPS.Common.Model.Types.PlanNormalizationMode, double)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Plan normalization parameters user-defined plan normalization value.
+
+    For more information refer to the plan normalization options in the Eclipse Proton Reference Guide.
+  remarks: >-
+    Provide <code>normalizationValue</code> if <code>normalizationMode</code> is <code>PlanNormalizationMode.UserDefined</code>.
+
+    <code>normalizationValue</code> will be set to <code>NaN</code> if <code>normalizationMode</code> is not <code>PlanNormalizationMode.UserDefined</code>.
+  example: []
+  syntax:
+    content: public IonPlanNormalizationParameters(PlanNormalizationMode normalizationMode, double normalizationValue)
+    parameters:
+    - id: normalizationMode
+      type: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+      description: ''
+    - id: normalizationValue
+      type: System.Double
+      description: ''
+    content.vb: Public Sub New(normalizationMode As PlanNormalizationMode, normalizationValue As Double)
+  overload: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.#ctor*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: An exception is thrown if the <code>normalizationValue</code> is invalid or the <code>normalizationMode</code> is not <code>PlanNormalizationMode.UserDefined</code>.
+  nameWithType.vb: IonPlanNormalizationParameters.New(PlanNormalizationMode, Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.New(VMS.TPS.Common.Model.Types.PlanNormalizationMode, Double)
+  name.vb: New(PlanNormalizationMode, Double)
+- uid: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.#ctor(VMS.TPS.Common.Model.Types.PlanNormalizationMode)
+  commentId: M:VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.#ctor(VMS.TPS.Common.Model.Types.PlanNormalizationMode)
+  id: '#ctor(VMS.TPS.Common.Model.Types.PlanNormalizationMode)'
+  parent: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters
+  langs:
+  - csharp
+  - vb
+  name: IonPlanNormalizationParameters(PlanNormalizationMode)
+  nameWithType: IonPlanNormalizationParameters.IonPlanNormalizationParameters(PlanNormalizationMode)
+  fullName: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.IonPlanNormalizationParameters(VMS.TPS.Common.Model.Types.PlanNormalizationMode)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Plan normalization parameters for normalizing the maximum, mean, minimum dose of the target volume to 100%, or to no normalization.
+
+    For more information refer to the plan normalization options in the Eclipse Proton Reference Guide.
+  remarks: Supported plan normalization modes are <code>PlanNormalizationMode.TargetMax, PlanNormalizationMode.TargetMean, PlanNormalizationMode.TargetMin, PlanNormalizationMode.NoNormalization</code>.
+  example: []
+  syntax:
+    content: public IonPlanNormalizationParameters(PlanNormalizationMode normalizationMode)
+    parameters:
+    - id: normalizationMode
+      type: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+      description: ''
+    content.vb: Public Sub New(normalizationMode As PlanNormalizationMode)
+  overload: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.#ctor*
+  nameWithType.vb: IonPlanNormalizationParameters.New(PlanNormalizationMode)
+  fullName.vb: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.New(VMS.TPS.Common.Model.Types.PlanNormalizationMode)
+  name.vb: New(PlanNormalizationMode)
+- uid: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.NormalizationMode
+  commentId: P:VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.NormalizationMode
+  id: NormalizationMode
+  parent: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters
+  langs:
+  - csharp
+  - vb
+  name: NormalizationMode
+  nameWithType: IonPlanNormalizationParameters.NormalizationMode
+  fullName: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.NormalizationMode
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Normalization mode.
+  example: []
+  syntax:
+    content: public PlanNormalizationMode NormalizationMode { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+    content.vb: Public ReadOnly Property NormalizationMode As PlanNormalizationMode
+  overload: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.NormalizationMode*
+- uid: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.NormalizationValue
+  commentId: P:VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.NormalizationValue
+  id: NormalizationValue
+  parent: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters
+  langs:
+  - csharp
+  - vb
+  name: NormalizationValue
+  nameWithType: IonPlanNormalizationParameters.NormalizationValue
+  fullName: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.NormalizationValue
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The treatment unit identifier.
+  example: []
+  syntax:
+    content: public double NormalizationValue { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property NormalizationValue As Double
+  overload: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.NormalizationValue*
+- uid: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.VolumePercentage
+  commentId: P:VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.VolumePercentage
+  id: VolumePercentage
+  parent: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters
+  langs:
+  - csharp
+  - vb
+  name: VolumePercentage
+  nameWithType: IonPlanNormalizationParameters.VolumePercentage
+  fullName: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.VolumePercentage
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Volume percentage factor.
+  example: []
+  syntax:
+    content: public double VolumePercentage { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property VolumePercentage As Double
+  overload: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.VolumePercentage*
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.html#VMS_TPS_Common_Model_Types_IonPlanNormalizationParameters__ctor_VMS_TPS_Common_Model_Types_PlanNormalizationMode_System_Double_System_Double_
+  name: IonPlanNormalizationParameters
+  nameWithType: IonPlanNormalizationParameters.IonPlanNormalizationParameters
+  fullName: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.IonPlanNormalizationParameters
+  nameWithType.vb: IonPlanNormalizationParameters.New
+  fullName.vb: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.New
+  name.vb: New
+- uid: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+  commentId: T:VMS.TPS.Common.Model.Types.PlanNormalizationMode
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.PlanNormalizationMode.html
+  name: PlanNormalizationMode
+  nameWithType: PlanNormalizationMode
+  fullName: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.NormalizationMode*
+  commentId: Overload:VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.NormalizationMode
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.html#VMS_TPS_Common_Model_Types_IonPlanNormalizationParameters_NormalizationMode
+  name: NormalizationMode
+  nameWithType: IonPlanNormalizationParameters.NormalizationMode
+  fullName: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.NormalizationMode
+- uid: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.NormalizationValue*
+  commentId: Overload:VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.NormalizationValue
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.html#VMS_TPS_Common_Model_Types_IonPlanNormalizationParameters_NormalizationValue
+  name: NormalizationValue
+  nameWithType: IonPlanNormalizationParameters.NormalizationValue
+  fullName: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.NormalizationValue
+- uid: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.VolumePercentage*
+  commentId: Overload:VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.VolumePercentage
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.html#VMS_TPS_Common_Model_Types_IonPlanNormalizationParameters_VolumePercentage
+  name: VolumePercentage
+  nameWithType: IonPlanNormalizationParameters.VolumePercentage
+  fullName: VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.VolumePercentage

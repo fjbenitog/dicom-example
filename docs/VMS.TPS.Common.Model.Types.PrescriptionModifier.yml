@@ -1,0 +1,424 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  commentId: T:VMS.TPS.Common.Model.Types.PrescriptionModifier
+  id: PrescriptionModifier
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierAtLeast
+  - VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierAtMost
+  - VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierDMax
+  - VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierEUD
+  - VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierIsodose
+  - VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMaxDose
+  - VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMaxDoseAtMost
+  - VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMeanDose
+  - VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMeanDoseAtLeast
+  - VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMeanDoseAtMost
+  - VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMidPoint
+  - VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMinDose
+  - VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMinDoseAtLeast
+  - VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierNone
+  - VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierRefPoint
+  - VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierUser
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifier
+  nameWithType: PrescriptionModifier
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Prescription modifier.
+  example: []
+  syntax:
+    content: public enum PrescriptionModifier
+    content.vb: Public Enum PrescriptionModifier
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierAtLeast
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierAtLeast
+  id: PrescriptionModifierAtLeast
+  parent: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifierAtLeast
+  nameWithType: PrescriptionModifier.PrescriptionModifierAtLeast
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierAtLeast
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: At least.
+  example: []
+  syntax:
+    content: PrescriptionModifierAtLeast = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionModifier
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierAtMost
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierAtMost
+  id: PrescriptionModifierAtMost
+  parent: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifierAtMost
+  nameWithType: PrescriptionModifier.PrescriptionModifierAtMost
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierAtMost
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: At most.
+  example: []
+  syntax:
+    content: PrescriptionModifierAtMost = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionModifier
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMeanDose
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMeanDose
+  id: PrescriptionModifierMeanDose
+  parent: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifierMeanDose
+  nameWithType: PrescriptionModifier.PrescriptionModifierMeanDose
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMeanDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Mean dose.
+  example: []
+  syntax:
+    content: PrescriptionModifierMeanDose = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionModifier
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMaxDose
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMaxDose
+  id: PrescriptionModifierMaxDose
+  parent: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifierMaxDose
+  nameWithType: PrescriptionModifier.PrescriptionModifierMaxDose
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMaxDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Maximum dose.
+  example: []
+  syntax:
+    content: PrescriptionModifierMaxDose = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionModifier
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMinDose
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMinDose
+  id: PrescriptionModifierMinDose
+  parent: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifierMinDose
+  nameWithType: PrescriptionModifier.PrescriptionModifierMinDose
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMinDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Minimum dose.
+  example: []
+  syntax:
+    content: PrescriptionModifierMinDose = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionModifier
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierRefPoint
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierRefPoint
+  id: PrescriptionModifierRefPoint
+  parent: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifierRefPoint
+  nameWithType: PrescriptionModifier.PrescriptionModifierRefPoint
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierRefPoint
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Reference point.
+  example: []
+  syntax:
+    content: PrescriptionModifierRefPoint = 5
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionModifier
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierEUD
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierEUD
+  id: PrescriptionModifierEUD
+  parent: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifierEUD
+  nameWithType: PrescriptionModifier.PrescriptionModifierEUD
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierEUD
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: EUD.
+  example: []
+  syntax:
+    content: PrescriptionModifierEUD = 6
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionModifier
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMeanDoseAtLeast
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMeanDoseAtLeast
+  id: PrescriptionModifierMeanDoseAtLeast
+  parent: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifierMeanDoseAtLeast
+  nameWithType: PrescriptionModifier.PrescriptionModifierMeanDoseAtLeast
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMeanDoseAtLeast
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Mean dose at least.
+  example: []
+  syntax:
+    content: PrescriptionModifierMeanDoseAtLeast = 7
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionModifier
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMeanDoseAtMost
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMeanDoseAtMost
+  id: PrescriptionModifierMeanDoseAtMost
+  parent: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifierMeanDoseAtMost
+  nameWithType: PrescriptionModifier.PrescriptionModifierMeanDoseAtMost
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMeanDoseAtMost
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Mean dose at most.
+  example: []
+  syntax:
+    content: PrescriptionModifierMeanDoseAtMost = 8
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionModifier
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMinDoseAtLeast
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMinDoseAtLeast
+  id: PrescriptionModifierMinDoseAtLeast
+  parent: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifierMinDoseAtLeast
+  nameWithType: PrescriptionModifier.PrescriptionModifierMinDoseAtLeast
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMinDoseAtLeast
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Minimum dose at least.
+  example: []
+  syntax:
+    content: PrescriptionModifierMinDoseAtLeast = 9
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionModifier
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMaxDoseAtMost
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMaxDoseAtMost
+  id: PrescriptionModifierMaxDoseAtMost
+  parent: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifierMaxDoseAtMost
+  nameWithType: PrescriptionModifier.PrescriptionModifierMaxDoseAtMost
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMaxDoseAtMost
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Maximum dose at most.
+  example: []
+  syntax:
+    content: PrescriptionModifierMaxDoseAtMost = 10
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionModifier
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierDMax
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierDMax
+  id: PrescriptionModifierDMax
+  parent: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifierDMax
+  nameWithType: PrescriptionModifier.PrescriptionModifierDMax
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierDMax
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Dose received at the DMax depth.
+  example: []
+  syntax:
+    content: PrescriptionModifierDMax = 20
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionModifier
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMidPoint
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMidPoint
+  id: PrescriptionModifierMidPoint
+  parent: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifierMidPoint
+  nameWithType: PrescriptionModifier.PrescriptionModifierMidPoint
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierMidPoint
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Dose received at the midpoint depth.
+  example: []
+  syntax:
+    content: PrescriptionModifierMidPoint = 21
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionModifier
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierUser
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierUser
+  id: PrescriptionModifierUser
+  parent: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifierUser
+  nameWithType: PrescriptionModifier.PrescriptionModifierUser
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierUser
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Dose received at a user-defined depth.
+  example: []
+  syntax:
+    content: PrescriptionModifierUser = 22
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionModifier
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierIsodose
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierIsodose
+  id: PrescriptionModifierIsodose
+  parent: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifierIsodose
+  nameWithType: PrescriptionModifier.PrescriptionModifierIsodose
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierIsodose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Dose received by an isodose line.
+  example: []
+  syntax:
+    content: PrescriptionModifierIsodose = 40
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionModifier
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierNone
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierNone
+  id: PrescriptionModifierNone
+  parent: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionModifierNone
+  nameWithType: PrescriptionModifier.PrescriptionModifierNone
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier.PrescriptionModifierNone
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Undefined.
+  example: []
+  syntax:
+    content: PrescriptionModifierNone = 99
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionModifier
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.PrescriptionModifier
+  commentId: T:VMS.TPS.Common.Model.Types.PrescriptionModifier
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.PrescriptionModifier.html
+  name: PrescriptionModifier
+  nameWithType: PrescriptionModifier
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionModifier

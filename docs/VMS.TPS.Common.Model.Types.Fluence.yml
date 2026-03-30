@@ -1,0 +1,928 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.Fluence
+  commentId: T:VMS.TPS.Common.Model.Types.Fluence
+  id: Fluence
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.Fluence.#ctor(System.Single[0:,0:],System.Double,System.Double)
+  - VMS.TPS.Common.Model.Types.Fluence.#ctor(System.Single[0:,0:],System.Double,System.Double,System.String)
+  - VMS.TPS.Common.Model.Types.Fluence.GetPixels
+  - VMS.TPS.Common.Model.Types.Fluence.MLCId
+  - VMS.TPS.Common.Model.Types.Fluence.MaxSizePixel
+  - VMS.TPS.Common.Model.Types.Fluence.XOrigin
+  - VMS.TPS.Common.Model.Types.Fluence.XSizeMM
+  - VMS.TPS.Common.Model.Types.Fluence.XSizePixel
+  - VMS.TPS.Common.Model.Types.Fluence.YOrigin
+  - VMS.TPS.Common.Model.Types.Fluence.YSizeMM
+  - VMS.TPS.Common.Model.Types.Fluence.YSizePixel
+  langs:
+  - csharp
+  - vb
+  name: Fluence
+  nameWithType: Fluence
+  fullName: VMS.TPS.Common.Model.Types.Fluence
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Represents the fluence for a beam.
+
+    The resolution in the fluence matrix is 2.5 mm in x and y directions.
+
+    In the fluence matrix, x dimension is the number of columns, and y dimension is the number of rows.
+  example: []
+  syntax:
+    content: public class Fluence
+    content.vb: Public Class Fluence
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: VMS.TPS.Common.Model.Types.Fluence.#ctor(System.Single[0:,0:],System.Double,System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.Fluence.#ctor(System.Single[0:,0:],System.Double,System.Double)
+  id: '#ctor(System.Single[0:,0:],System.Double,System.Double)'
+  parent: VMS.TPS.Common.Model.Types.Fluence
+  langs:
+  - csharp
+  - vb
+  name: Fluence(float[,], double, double)
+  nameWithType: Fluence.Fluence(float[,], double, double)
+  fullName: VMS.TPS.Common.Model.Types.Fluence.Fluence(float[,], double, double)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Constructor.
+  example: []
+  syntax:
+    content: public Fluence(float[,] fluenceMatrix, double xOrigin, double yOrigin)
+    parameters:
+    - id: fluenceMatrix
+      type: System.Single[,]
+      description: >-
+        Contains the pixel values for the fluence.
+                    x dimension is the number of columns, and y dimension is the number of rows in the matrix.
+                    The minimum number of rows and columns is 2, and the maximum is 1024.
+                    For the optimal fluence of a beam, the values in the fluence matrix are floats, 4 bytes per pixel.
+                    The pixel values are determined as follows: fluence value 1 produces a dose of 1 Gy at the depth of 10 cm in a water phantom with a 10 x 10 cm open field. 
+                    Correspondingly, fluence value 2 produces 2 Gy, fluence value 3 produces 3 Gy, etc. at the depth of 10 cm in a water phantom with a 10 x 10 cm open field.
+                    Pixel values are positive.
+    - id: xOrigin
+      type: System.Double
+      description: >-
+        The x coordinate of the first pixel in a fluence map. 
+                    The value is measured in millimeters from the field isocenter to the center of the first pixel. 
+                    The coordinate axes are the same as in the IEC BEAM LIMITING DEVICE coordinate system.
+    - id: yOrigin
+      type: System.Double
+      description: >-
+        The y coordinate of the first pixel in a fluence map. 
+                    The value is measured in millimeters from the field isocenter to the center of the first pixel.
+                    The coordinate axes are the same as in the IEC BEAM LIMITING DEVICE coordinate system.
+    content.vb: Public Sub New(fluenceMatrix As Single(,), xOrigin As Double, yOrigin As Double)
+  overload: VMS.TPS.Common.Model.Types.Fluence.#ctor*
+  nameWithType.vb: Fluence.New(Single(,), Double, Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.Fluence.New(Single(,), Double, Double)
+  name.vb: New(Single(,), Double, Double)
+- uid: VMS.TPS.Common.Model.Types.Fluence.#ctor(System.Single[0:,0:],System.Double,System.Double,System.String)
+  commentId: M:VMS.TPS.Common.Model.Types.Fluence.#ctor(System.Single[0:,0:],System.Double,System.Double,System.String)
+  id: '#ctor(System.Single[0:,0:],System.Double,System.Double,System.String)'
+  parent: VMS.TPS.Common.Model.Types.Fluence
+  langs:
+  - csharp
+  - vb
+  name: Fluence(float[,], double, double, string)
+  nameWithType: Fluence.Fluence(float[,], double, double, string)
+  fullName: VMS.TPS.Common.Model.Types.Fluence.Fluence(float[,], double, double, string)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Constructor.
+  example: []
+  syntax:
+    content: public Fluence(float[,] fluenceMatrix, double xOrigin, double yOrigin, string mlcId)
+    parameters:
+    - id: fluenceMatrix
+      type: System.Single[,]
+      description: >-
+        Contains the pixel values for the fluence.
+                    x dimension is the number of columns, and y dimension is the number of rows in the matrix.
+                    The minimum number of rows and columns is 2, and the maximum is 1024.
+                    The pixel values are determined as follows: fluence value 1 produces a dose of 1 Gy at the depth of 10 cm in a water phantom with a 10 x 10 cm open field. 
+                    Correspondingly, fluence value 2 produces 2 Gy, fluence value 3 produces 3 Gy, etc. at the depth of 10 cm in a water phantom with a 10 x 10 cm open field.
+                    Pixel values are positive.
+    - id: xOrigin
+      type: System.Double
+      description: >-
+        The x coordinate of the first pixel in a fluence map. 
+                    The value is measured in millimeters from the field isocenter to the center of the first pixel. 
+                    The coordinate axes are the same as in the IEC BEAM LIMITING DEVICE coordinate system.
+    - id: yOrigin
+      type: System.Double
+      description: >-
+        The y coordinate of the first pixel in a fluence map. 
+                    The value is measured in millimeters from the field isocenter to the center of the first pixel. 
+                    The coordinate axes are the same as in the IEC BEAM LIMITING DEVICE coordinate system.
+    - id: mlcId
+      type: System.String
+      description: >-
+        The identifier of the MLC that is related to the fluence. This parameter is optional. 
+                    If the identifier is empty, the system tries to find the MLC from the treatment unit configuration. 
+                    This happens when you call one of the <xref href="VMS.TPS.Common.Model.API.ExternalPlanSetup.Optimize(System.Int32)?text=Optimize" data-throw-if-not-resolved="false"></xref> methods in the
+                    <xref href="VMS.TPS.Common.Model.API.ExternalPlanSetup?text=ExternalPlanSetup" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub New(fluenceMatrix As Single(,), xOrigin As Double, yOrigin As Double, mlcId As String)
+  overload: VMS.TPS.Common.Model.Types.Fluence.#ctor*
+  nameWithType.vb: Fluence.New(Single(,), Double, Double, String)
+  fullName.vb: VMS.TPS.Common.Model.Types.Fluence.New(Single(,), Double, Double, String)
+  name.vb: New(Single(,), Double, Double, String)
+- uid: VMS.TPS.Common.Model.Types.Fluence.GetPixels
+  commentId: M:VMS.TPS.Common.Model.Types.Fluence.GetPixels
+  id: GetPixels
+  parent: VMS.TPS.Common.Model.Types.Fluence
+  langs:
+  - csharp
+  - vb
+  name: GetPixels()
+  nameWithType: Fluence.GetPixels()
+  fullName: VMS.TPS.Common.Model.Types.Fluence.GetPixels()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Returns the fluence matrix.
+  example: []
+  syntax:
+    content: public float[,] GetPixels()
+    return:
+      type: System.Single[,]
+      description: The pixel values for the fluence as described in <xref href="VMS.TPS.Common.Model.Types.Fluence.%23ctor(System.Single%5b0%3a%2c0%3a%5d%2cSystem.Double%2cSystem.Double)?text=constructor" data-throw-if-not-resolved="false"></xref>&gt;.
+    content.vb: Public Function GetPixels() As Single(,)
+  overload: VMS.TPS.Common.Model.Types.Fluence.GetPixels*
+- uid: VMS.TPS.Common.Model.Types.Fluence.MaxSizePixel
+  commentId: P:VMS.TPS.Common.Model.Types.Fluence.MaxSizePixel
+  id: MaxSizePixel
+  parent: VMS.TPS.Common.Model.Types.Fluence
+  langs:
+  - csharp
+  - vb
+  name: MaxSizePixel
+  nameWithType: Fluence.MaxSizePixel
+  fullName: VMS.TPS.Common.Model.Types.Fluence.MaxSizePixel
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The maximum size of pixels for x or y dimension in the fluence.
+  example: []
+  syntax:
+    content: public static int MaxSizePixel { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly Property MaxSizePixel As Integer
+  overload: VMS.TPS.Common.Model.Types.Fluence.MaxSizePixel*
+- uid: VMS.TPS.Common.Model.Types.Fluence.XSizePixel
+  commentId: P:VMS.TPS.Common.Model.Types.Fluence.XSizePixel
+  id: XSizePixel
+  parent: VMS.TPS.Common.Model.Types.Fluence
+  langs:
+  - csharp
+  - vb
+  name: XSizePixel
+  nameWithType: Fluence.XSizePixel
+  fullName: VMS.TPS.Common.Model.Types.Fluence.XSizePixel
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    The size of x dimension in pixels for the fluence.
+
+    This corresponds to the number of columns in the pixels matrix.
+  example: []
+  syntax:
+    content: public int XSizePixel { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property XSizePixel As Integer
+  overload: VMS.TPS.Common.Model.Types.Fluence.XSizePixel*
+- uid: VMS.TPS.Common.Model.Types.Fluence.YSizePixel
+  commentId: P:VMS.TPS.Common.Model.Types.Fluence.YSizePixel
+  id: YSizePixel
+  parent: VMS.TPS.Common.Model.Types.Fluence
+  langs:
+  - csharp
+  - vb
+  name: YSizePixel
+  nameWithType: Fluence.YSizePixel
+  fullName: VMS.TPS.Common.Model.Types.Fluence.YSizePixel
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    The size of y dimension in pixels for the fluence.
+
+    This corresponds to the number of rows in the pixels matrix.
+  example: []
+  syntax:
+    content: public int YSizePixel { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property YSizePixel As Integer
+  overload: VMS.TPS.Common.Model.Types.Fluence.YSizePixel*
+- uid: VMS.TPS.Common.Model.Types.Fluence.XSizeMM
+  commentId: P:VMS.TPS.Common.Model.Types.Fluence.XSizeMM
+  id: XSizeMM
+  parent: VMS.TPS.Common.Model.Types.Fluence
+  langs:
+  - csharp
+  - vb
+  name: XSizeMM
+  nameWithType: Fluence.XSizeMM
+  fullName: VMS.TPS.Common.Model.Types.Fluence.XSizeMM
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    The size of x dimension in mm for the fluence.
+
+    The resolution is 2.5 mm in x and y directions.
+  example: []
+  syntax:
+    content: public double XSizeMM { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property XSizeMM As Double
+  overload: VMS.TPS.Common.Model.Types.Fluence.XSizeMM*
+- uid: VMS.TPS.Common.Model.Types.Fluence.YSizeMM
+  commentId: P:VMS.TPS.Common.Model.Types.Fluence.YSizeMM
+  id: YSizeMM
+  parent: VMS.TPS.Common.Model.Types.Fluence
+  langs:
+  - csharp
+  - vb
+  name: YSizeMM
+  nameWithType: Fluence.YSizeMM
+  fullName: VMS.TPS.Common.Model.Types.Fluence.YSizeMM
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    The size of y dimension in mm for the fluence.
+
+    The resolution is 2.5 mm in x and y directions.
+  example: []
+  syntax:
+    content: public double YSizeMM { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property YSizeMM As Double
+  overload: VMS.TPS.Common.Model.Types.Fluence.YSizeMM*
+- uid: VMS.TPS.Common.Model.Types.Fluence.XOrigin
+  commentId: P:VMS.TPS.Common.Model.Types.Fluence.XOrigin
+  id: XOrigin
+  parent: VMS.TPS.Common.Model.Types.Fluence
+  langs:
+  - csharp
+  - vb
+  name: XOrigin
+  nameWithType: Fluence.XOrigin
+  fullName: VMS.TPS.Common.Model.Types.Fluence.XOrigin
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    The x coordinate of the first pixel in a fluence map. 
+
+    The value is measured in millimeters from the field isocenter to the center of the first pixel. 
+
+    The coordinate axes are the same as in the IEC BEAM LIMITING DEVICE coordinate system.
+  example: []
+  syntax:
+    content: public double XOrigin { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property XOrigin As Double
+  overload: VMS.TPS.Common.Model.Types.Fluence.XOrigin*
+- uid: VMS.TPS.Common.Model.Types.Fluence.YOrigin
+  commentId: P:VMS.TPS.Common.Model.Types.Fluence.YOrigin
+  id: YOrigin
+  parent: VMS.TPS.Common.Model.Types.Fluence
+  langs:
+  - csharp
+  - vb
+  name: YOrigin
+  nameWithType: Fluence.YOrigin
+  fullName: VMS.TPS.Common.Model.Types.Fluence.YOrigin
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    The y coordinate of the first pixel in a fluence map. 
+
+    The value is measured in millimeters from the field isocenter to the center of the first pixel. 
+
+    The coordinate axes are the same as in the IEC BEAM LIMITING DEVICE coordinate system.
+  example: []
+  syntax:
+    content: public double YOrigin { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property YOrigin As Double
+  overload: VMS.TPS.Common.Model.Types.Fluence.YOrigin*
+- uid: VMS.TPS.Common.Model.Types.Fluence.MLCId
+  commentId: P:VMS.TPS.Common.Model.Types.Fluence.MLCId
+  id: MLCId
+  parent: VMS.TPS.Common.Model.Types.Fluence
+  langs:
+  - csharp
+  - vb
+  name: MLCId
+  nameWithType: Fluence.MLCId
+  fullName: VMS.TPS.Common.Model.Types.Fluence.MLCId
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The identifier of the MLC that is related to the fluence. The value can be empty or null.
+  example: []
+  syntax:
+    content: public string MLCId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property MLCId As String
+  overload: VMS.TPS.Common.Model.Types.Fluence.MLCId*
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.Types.Fluence.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Fluence.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Fluence.html#VMS_TPS_Common_Model_Types_Fluence__ctor_System_Single_0
+  name: Fluence
+  nameWithType: Fluence.Fluence
+  fullName: VMS.TPS.Common.Model.Types.Fluence.Fluence
+  nameWithType.vb: Fluence.New
+  fullName.vb: VMS.TPS.Common.Model.Types.Fluence.New
+  name.vb: New
+- uid: System.Single[,]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[,]
+  nameWithType: float[,]
+  fullName: float[,]
+  nameWithType.vb: Single(,)
+  fullName.vb: Single(,)
+  name.vb: Single(,)
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: ','
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: VMS.TPS.Common.Model.API.ExternalPlanSetup.Optimize(System.Int32)
+  commentId: M:VMS.TPS.Common.Model.API.ExternalPlanSetup.Optimize(System.Int32)
+  isExternal: true
+- uid: VMS.TPS.Common.Model.API.ExternalPlanSetup
+  commentId: T:VMS.TPS.Common.Model.API.ExternalPlanSetup
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ExternalPlanSetup.html
+  name: ExternalPlanSetup
+  nameWithType: ExternalPlanSetup
+  fullName: VMS.TPS.Common.Model.API.ExternalPlanSetup
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: VMS.TPS.Common.Model.Types.Fluence.#ctor(System.Single[0:,0:],System.Double,System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.Fluence.#ctor(System.Single[0:,0:],System.Double,System.Double)
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Fluence.html#VMS_TPS_Common_Model_Types_Fluence__ctor_System_Single_0
+  name: Fluence(float[,], double, double)
+  nameWithType: Fluence.Fluence(float[,], double, double)
+  fullName: VMS.TPS.Common.Model.Types.Fluence.Fluence(float[,], double, double)
+  nameWithType.vb: Fluence.New(Single(,), Double, Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.Fluence.New(Single(,), Double, Double)
+  name.vb: New(Single(,), Double, Double)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.Types.Fluence.#ctor(System.Single[0:,0:],System.Double,System.Double)
+    name: Fluence
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.Fluence.html#VMS_TPS_Common_Model_Types_Fluence__ctor_System_Single_0
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ','
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - name: New
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: ','
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.Fluence.GetPixels*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Fluence.GetPixels
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Fluence.html#VMS_TPS_Common_Model_Types_Fluence_GetPixels
+  name: GetPixels
+  nameWithType: Fluence.GetPixels
+  fullName: VMS.TPS.Common.Model.Types.Fluence.GetPixels
+- uid: VMS.TPS.Common.Model.Types.Fluence.MaxSizePixel*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Fluence.MaxSizePixel
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Fluence.html#VMS_TPS_Common_Model_Types_Fluence_MaxSizePixel
+  name: MaxSizePixel
+  nameWithType: Fluence.MaxSizePixel
+  fullName: VMS.TPS.Common.Model.Types.Fluence.MaxSizePixel
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: VMS.TPS.Common.Model.Types.Fluence.XSizePixel*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Fluence.XSizePixel
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Fluence.html#VMS_TPS_Common_Model_Types_Fluence_XSizePixel
+  name: XSizePixel
+  nameWithType: Fluence.XSizePixel
+  fullName: VMS.TPS.Common.Model.Types.Fluence.XSizePixel
+- uid: VMS.TPS.Common.Model.Types.Fluence.YSizePixel*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Fluence.YSizePixel
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Fluence.html#VMS_TPS_Common_Model_Types_Fluence_YSizePixel
+  name: YSizePixel
+  nameWithType: Fluence.YSizePixel
+  fullName: VMS.TPS.Common.Model.Types.Fluence.YSizePixel
+- uid: VMS.TPS.Common.Model.Types.Fluence.XSizeMM*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Fluence.XSizeMM
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Fluence.html#VMS_TPS_Common_Model_Types_Fluence_XSizeMM
+  name: XSizeMM
+  nameWithType: Fluence.XSizeMM
+  fullName: VMS.TPS.Common.Model.Types.Fluence.XSizeMM
+- uid: VMS.TPS.Common.Model.Types.Fluence.YSizeMM*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Fluence.YSizeMM
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Fluence.html#VMS_TPS_Common_Model_Types_Fluence_YSizeMM
+  name: YSizeMM
+  nameWithType: Fluence.YSizeMM
+  fullName: VMS.TPS.Common.Model.Types.Fluence.YSizeMM
+- uid: VMS.TPS.Common.Model.Types.Fluence.XOrigin*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Fluence.XOrigin
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Fluence.html#VMS_TPS_Common_Model_Types_Fluence_XOrigin
+  name: XOrigin
+  nameWithType: Fluence.XOrigin
+  fullName: VMS.TPS.Common.Model.Types.Fluence.XOrigin
+- uid: VMS.TPS.Common.Model.Types.Fluence.YOrigin*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Fluence.YOrigin
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Fluence.html#VMS_TPS_Common_Model_Types_Fluence_YOrigin
+  name: YOrigin
+  nameWithType: Fluence.YOrigin
+  fullName: VMS.TPS.Common.Model.Types.Fluence.YOrigin
+- uid: VMS.TPS.Common.Model.Types.Fluence.MLCId*
+  commentId: Overload:VMS.TPS.Common.Model.Types.Fluence.MLCId
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Fluence.html#VMS_TPS_Common_Model_Types_Fluence_MLCId
+  name: MLCId
+  nameWithType: Fluence.MLCId
+  fullName: VMS.TPS.Common.Model.Types.Fluence.MLCId

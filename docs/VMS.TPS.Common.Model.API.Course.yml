@@ -1,0 +1,3051 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.API.Course
+  commentId: T:VMS.TPS.Common.Model.API.Course
+  id: Course
+  parent: VMS.TPS.Common.Model.API
+  children:
+  - VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.API.ReferencePoint,VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint})
+  - VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType)
+  - VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup(VMS.TPS.Common.Model.API.StructureSet)
+  - VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.API.ReferencePoint,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint})
+  - VMS.TPS.Common.Model.API.Course.AddExternalPlanSetupAsVerificationPlan(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.ExternalPlanSetup)
+  - VMS.TPS.Common.Model.API.Course.AddIonPlanSetup(VMS.TPS.Common.Model.API.StructureSet,System.String)
+  - VMS.TPS.Common.Model.API.Course.AddIonPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.API.ReferencePoint,System.String,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint})
+  - VMS.TPS.Common.Model.API.Course.AddIonPlanSetupAsVerificationPlan(VMS.TPS.Common.Model.API.StructureSet,System.String,VMS.TPS.Common.Model.API.IonPlanSetup)
+  - VMS.TPS.Common.Model.API.Course.BrachyPlanSetups
+  - VMS.TPS.Common.Model.API.Course.CanAddPlanSetup(VMS.TPS.Common.Model.API.StructureSet)
+  - VMS.TPS.Common.Model.API.Course.CanRemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  - VMS.TPS.Common.Model.API.Course.ClinicalStatus
+  - VMS.TPS.Common.Model.API.Course.Comment
+  - VMS.TPS.Common.Model.API.Course.CompletedDateTime
+  - VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup(VMS.TPS.Common.Model.API.BrachyPlanSetup,System.Text.StringBuilder)
+  - VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup(VMS.TPS.Common.Model.API.BrachyPlanSetup,VMS.TPS.Common.Model.API.StructureSet,System.Text.StringBuilder)
+  - VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  - VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.Image,System.Text.StringBuilder)
+  - VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.Image,VMS.TPS.Common.Model.API.Registration,System.Text.StringBuilder)
+  - VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.StructureSet,System.Text.StringBuilder)
+  - VMS.TPS.Common.Model.API.Course.CreatePlanSum(System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanningItem},VMS.TPS.Common.Model.API.Image)
+  - VMS.TPS.Common.Model.API.Course.Diagnoses
+  - VMS.TPS.Common.Model.API.Course.ExternalPlanSetups
+  - VMS.TPS.Common.Model.API.Course.Id
+  - VMS.TPS.Common.Model.API.Course.Intent
+  - VMS.TPS.Common.Model.API.Course.IonPlanSetups
+  - VMS.TPS.Common.Model.API.Course.IsCompleted
+  - VMS.TPS.Common.Model.API.Course.Patient
+  - VMS.TPS.Common.Model.API.Course.PlanSetups
+  - VMS.TPS.Common.Model.API.Course.PlanSums
+  - VMS.TPS.Common.Model.API.Course.RemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  - VMS.TPS.Common.Model.API.Course.RemovePlanSum(VMS.TPS.Common.Model.API.PlanSum)
+  - VMS.TPS.Common.Model.API.Course.StartDateTime
+  - VMS.TPS.Common.Model.API.Course.TreatmentPhases
+  - VMS.TPS.Common.Model.API.Course.TreatmentSessions
+  - VMS.TPS.Common.Model.API.Course.WriteXml(System.Xml.XmlWriter)
+  langs:
+  - csharp
+  - vb
+  name: Course
+  nameWithType: Course
+  fullName: VMS.TPS.Common.Model.API.Course
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    A course represents the course of treatment that a patient will be given.
+
+    Every patient must have a course, and all plans always belong to a course.
+  example: []
+  syntax:
+    content: 'public class Course : ApiDataObject, IXmlSerializable'
+    content.vb: Public Class Course Inherits ApiDataObject Implements IXmlSerializable
+  inheritance:
+  - System.Object
+  - VMS.TPS.Common.Model.API.SerializableObject
+  - VMS.TPS.Common.Model.API.ApiDataObject
+  implements:
+  - System.Xml.Serialization.IXmlSerializable
+  inheritedMembers:
+  - VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  - VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  - VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  - VMS.TPS.Common.Model.API.ApiDataObject.Name
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  - VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  - VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  - VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  - VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.API.Course.CreatePlanSum(System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanningItem},VMS.TPS.Common.Model.API.Image)
+  commentId: M:VMS.TPS.Common.Model.API.Course.CreatePlanSum(System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanningItem},VMS.TPS.Common.Model.API.Image)
+  id: CreatePlanSum(System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanningItem},VMS.TPS.Common.Model.API.Image)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: CreatePlanSum(IEnumerable<PlanningItem>, Image)
+  nameWithType: Course.CreatePlanSum(IEnumerable<PlanningItem>, Image)
+  fullName: VMS.TPS.Common.Model.API.Course.CreatePlanSum(System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.PlanningItem>, VMS.TPS.Common.Model.API.Image)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Creates a plan sum from given planning items.'
+  example: []
+  syntax:
+    content: public PlanSum CreatePlanSum(IEnumerable<PlanningItem> planningItems, Image image)
+    parameters:
+    - id: planningItems
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanningItem}
+      description: Items to create sum from. All plans must share the same image, otherwise please use <xref href="VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup%2cVMS.TPS.Common.Model.API.Image%2cVMS.TPS.Common.Model.API.Registration%2cSystem.Text.StringBuilder)?text=CopyPlanSetup" data-throw-if-not-resolved="false"></xref> method before adding plan to Plan sum.
+    - id: image
+      type: VMS.TPS.Common.Model.API.Image
+      description: Plan Sum image
+    return:
+      type: VMS.TPS.Common.Model.API.PlanSum
+      description: Plan sum if creation was possible.
+    content.vb: Public Function CreatePlanSum(planningItems As IEnumerable(Of PlanningItem), image As Image) As PlanSum
+  overload: VMS.TPS.Common.Model.API.Course.CreatePlanSum*
+  nameWithType.vb: Course.CreatePlanSum(IEnumerable(Of PlanningItem), Image)
+  fullName.vb: VMS.TPS.Common.Model.API.Course.CreatePlanSum(System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.PlanningItem), VMS.TPS.Common.Model.API.Image)
+  name.vb: CreatePlanSum(IEnumerable(Of PlanningItem), Image)
+- uid: VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.API.ReferencePoint,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint})
+  commentId: M:VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.API.ReferencePoint,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint})
+  id: AddExternalPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.API.ReferencePoint,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint})
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: AddExternalPlanSetup(StructureSet, Structure, ReferencePoint, IEnumerable<ReferencePoint>)
+  nameWithType: Course.AddExternalPlanSetup(StructureSet, Structure, ReferencePoint, IEnumerable<ReferencePoint>)
+  fullName: VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup(VMS.TPS.Common.Model.API.StructureSet, VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.API.ReferencePoint, System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.ReferencePoint>)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Attaches a new plan to this course with target, primary reference point and additional reference points in arguments'
+  example: []
+  syntax:
+    content: public ExternalPlanSetup AddExternalPlanSetup(StructureSet structureSet, Structure targetStructure, ReferencePoint primaryReferencePoint, IEnumerable<ReferencePoint> additionalReferencePoints = null)
+    parameters:
+    - id: structureSet
+      type: VMS.TPS.Common.Model.API.StructureSet
+      description: Valid StructureSet to connected with the plan
+    - id: targetStructure
+      type: VMS.TPS.Common.Model.API.Structure
+      description: Target structure, if defined must be from 'structureSet', if left null target will remain unset.
+    - id: primaryReferencePoint
+      type: VMS.TPS.Common.Model.API.ReferencePoint
+      description: Valid reference point to be connected as primary.
+    - id: additionalReferencePoints
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint}
+      description: Collection of additional valid reference points
+    return:
+      type: VMS.TPS.Common.Model.API.ExternalPlanSetup
+      description: New external beam plan with primary reference point, additional reference points, target structure set as specified in arguments.
+    content.vb: Public Function AddExternalPlanSetup(structureSet As StructureSet, targetStructure As [Structure], primaryReferencePoint As ReferencePoint, additionalReferencePoints As IEnumerable(Of ReferencePoint) = Nothing) As ExternalPlanSetup
+  overload: VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup*
+  nameWithType.vb: Course.AddExternalPlanSetup(StructureSet, Structure, ReferencePoint, IEnumerable(Of ReferencePoint))
+  fullName.vb: VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup(VMS.TPS.Common.Model.API.StructureSet, VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.API.ReferencePoint, System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.ReferencePoint))
+  name.vb: AddExternalPlanSetup(StructureSet, Structure, ReferencePoint, IEnumerable(Of ReferencePoint))
+- uid: VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.API.ReferencePoint,VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint})
+  commentId: M:VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.API.ReferencePoint,VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint})
+  id: AddBrachyPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.API.ReferencePoint,VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint})
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: AddBrachyPlanSetup(StructureSet, Structure, ReferencePoint, DoseValue, BrachyTreatmentTechniqueType, IEnumerable<ReferencePoint>)
+  nameWithType: Course.AddBrachyPlanSetup(StructureSet, Structure, ReferencePoint, DoseValue, BrachyTreatmentTechniqueType, IEnumerable<ReferencePoint>)
+  fullName: VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup(VMS.TPS.Common.Model.API.StructureSet, VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.API.ReferencePoint, VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType, System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.ReferencePoint>)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Attaches a new brachytherapy plan to this course with the target structure, primary reference point and additional reference points specified in arguments.'
+  example: []
+  syntax:
+    content: public BrachyPlanSetup AddBrachyPlanSetup(StructureSet structureSet, Structure targetStructure, ReferencePoint primaryReferencePoint, DoseValue dosePerFraction, BrachyTreatmentTechniqueType brachyTreatmentTechnique, IEnumerable<ReferencePoint> additionalReferencePoints = null)
+    parameters:
+    - id: structureSet
+      type: VMS.TPS.Common.Model.API.StructureSet
+      description: Valid StructureSet to be connected to the plan
+    - id: targetStructure
+      type: VMS.TPS.Common.Model.API.Structure
+      description: Target structure. If defined, the value must be from 'structureSet'. If the value is null, the target will remain unset.
+    - id: primaryReferencePoint
+      type: VMS.TPS.Common.Model.API.ReferencePoint
+      description: Valid reference point to be connected as primary reference point.
+    - id: dosePerFraction
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Dose per fraction
+    - id: brachyTreatmentTechnique
+      type: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+      description: Brachytherapy treatment technique
+    - id: additionalReferencePoints
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint}
+      description: Collection of additional valid reference points
+    return:
+      type: VMS.TPS.Common.Model.API.BrachyPlanSetup
+      description: New brachytherapy plan with primary reference point and target structure set as specified in arguments.
+    content.vb: Public Function AddBrachyPlanSetup(structureSet As StructureSet, targetStructure As [Structure], primaryReferencePoint As ReferencePoint, dosePerFraction As DoseValue, brachyTreatmentTechnique As BrachyTreatmentTechniqueType, additionalReferencePoints As IEnumerable(Of ReferencePoint) = Nothing) As BrachyPlanSetup
+  overload: VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup*
+  nameWithType.vb: Course.AddBrachyPlanSetup(StructureSet, Structure, ReferencePoint, DoseValue, BrachyTreatmentTechniqueType, IEnumerable(Of ReferencePoint))
+  fullName.vb: VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup(VMS.TPS.Common.Model.API.StructureSet, VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.API.ReferencePoint, VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType, System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.ReferencePoint))
+  name.vb: AddBrachyPlanSetup(StructureSet, Structure, ReferencePoint, DoseValue, BrachyTreatmentTechniqueType, IEnumerable(Of ReferencePoint))
+- uid: VMS.TPS.Common.Model.API.Course.AddIonPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.API.ReferencePoint,System.String,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint})
+  commentId: M:VMS.TPS.Common.Model.API.Course.AddIonPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.API.ReferencePoint,System.String,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint})
+  id: AddIonPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.API.ReferencePoint,System.String,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint})
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: AddIonPlanSetup(StructureSet, Structure, ReferencePoint, string, IEnumerable<ReferencePoint>)
+  nameWithType: Course.AddIonPlanSetup(StructureSet, Structure, ReferencePoint, string, IEnumerable<ReferencePoint>)
+  fullName: VMS.TPS.Common.Model.API.Course.AddIonPlanSetup(VMS.TPS.Common.Model.API.StructureSet, VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.API.ReferencePoint, string, System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.ReferencePoint>)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Attaches a new proton plan to this course.'
+  example: []
+  syntax:
+    content: public IonPlanSetup AddIonPlanSetup(StructureSet structureSet, Structure targetStructure, ReferencePoint primaryReferencePoint, string patientSupportDeviceId, IEnumerable<ReferencePoint> additionalReferencePoints = null)
+    parameters:
+    - id: structureSet
+      type: VMS.TPS.Common.Model.API.StructureSet
+      description: A valid structure set.
+    - id: targetStructure
+      type: VMS.TPS.Common.Model.API.Structure
+      description: Target structure. If defined, the value must be from 'structureSet'. If the value is null, the target will remain unset.
+    - id: primaryReferencePoint
+      type: VMS.TPS.Common.Model.API.ReferencePoint
+      description: Valid reference point to be connected as primary.
+    - id: patientSupportDeviceId
+      type: System.String
+      description: Id of the patient support device.
+    - id: additionalReferencePoints
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint}
+      description: Collection of additional valid reference points
+    return:
+      type: VMS.TPS.Common.Model.API.IonPlanSetup
+      description: New proton plan with primary reference point, additional reference points and target structure set as specified in arguments.
+    content.vb: Public Function AddIonPlanSetup(structureSet As StructureSet, targetStructure As [Structure], primaryReferencePoint As ReferencePoint, patientSupportDeviceId As String, additionalReferencePoints As IEnumerable(Of ReferencePoint) = Nothing) As IonPlanSetup
+  overload: VMS.TPS.Common.Model.API.Course.AddIonPlanSetup*
+  nameWithType.vb: Course.AddIonPlanSetup(StructureSet, Structure, ReferencePoint, String, IEnumerable(Of ReferencePoint))
+  fullName.vb: VMS.TPS.Common.Model.API.Course.AddIonPlanSetup(VMS.TPS.Common.Model.API.StructureSet, VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.API.ReferencePoint, String, System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.ReferencePoint))
+  name.vb: AddIonPlanSetup(StructureSet, Structure, ReferencePoint, String, IEnumerable(Of ReferencePoint))
+- uid: VMS.TPS.Common.Model.API.Course.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.Course.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  nameWithType: Course.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.Course.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Converts an object into its XML representation.
+
+    For more information on how to serialize an object into an XML document, see <xref href="System.Xml.Serialization.XmlSerializer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override void WriteXml(XmlWriter writer)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The System.Xml.XmlWriter stream, to which the object is serialized.
+    content.vb: Public Overrides Sub WriteXml(writer As XmlWriter)
+  overridden: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+  overload: VMS.TPS.Common.Model.API.Course.WriteXml*
+- uid: VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType)
+  commentId: M:VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType)
+  id: AddBrachyPlanSetup(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: AddBrachyPlanSetup(StructureSet, DoseValue, BrachyTreatmentTechniqueType)
+  nameWithType: Course.AddBrachyPlanSetup(StructureSet, DoseValue, BrachyTreatmentTechniqueType)
+  fullName: VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup(VMS.TPS.Common.Model.API.StructureSet, VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Attaches a new brachytherapy plan to this course. A new primary reference point is always created for the new brachytherapy plan.'
+  example: []
+  syntax:
+    content: public BrachyPlanSetup AddBrachyPlanSetup(StructureSet structureSet, DoseValue dosePerFraction, BrachyTreatmentTechniqueType brachyTreatmentTechnique)
+    parameters:
+    - id: structureSet
+      type: VMS.TPS.Common.Model.API.StructureSet
+      description: A valid StructureSet to be connected to the plan.
+    - id: dosePerFraction
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Dose per fraction
+    - id: brachyTreatmentTechnique
+      type: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+      description: Brachytherapy treatment technique
+    return:
+      type: VMS.TPS.Common.Model.API.BrachyPlanSetup
+      description: A new brachytherapy plan.
+    content.vb: Public Function AddBrachyPlanSetup(structureSet As StructureSet, dosePerFraction As DoseValue, brachyTreatmentTechnique As BrachyTreatmentTechniqueType) As BrachyPlanSetup
+  overload: VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup*
+- uid: VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup(VMS.TPS.Common.Model.API.StructureSet)
+  commentId: M:VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup(VMS.TPS.Common.Model.API.StructureSet)
+  id: AddExternalPlanSetup(VMS.TPS.Common.Model.API.StructureSet)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: AddExternalPlanSetup(StructureSet)
+  nameWithType: Course.AddExternalPlanSetup(StructureSet)
+  fullName: VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup(VMS.TPS.Common.Model.API.StructureSet)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Attaches a new plan to this course. A new primary reference point is always created for the new plan.'
+  example: []
+  syntax:
+    content: public ExternalPlanSetup AddExternalPlanSetup(StructureSet structureSet)
+    parameters:
+    - id: structureSet
+      type: VMS.TPS.Common.Model.API.StructureSet
+      description: A valid structure set.
+    return:
+      type: VMS.TPS.Common.Model.API.ExternalPlanSetup
+      description: A new plan.
+    content.vb: Public Function AddExternalPlanSetup(structureSet As StructureSet) As ExternalPlanSetup
+  overload: VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup*
+- uid: VMS.TPS.Common.Model.API.Course.AddExternalPlanSetupAsVerificationPlan(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.ExternalPlanSetup)
+  commentId: M:VMS.TPS.Common.Model.API.Course.AddExternalPlanSetupAsVerificationPlan(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.ExternalPlanSetup)
+  id: AddExternalPlanSetupAsVerificationPlan(VMS.TPS.Common.Model.API.StructureSet,VMS.TPS.Common.Model.API.ExternalPlanSetup)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: AddExternalPlanSetupAsVerificationPlan(StructureSet, ExternalPlanSetup)
+  nameWithType: Course.AddExternalPlanSetupAsVerificationPlan(StructureSet, ExternalPlanSetup)
+  fullName: VMS.TPS.Common.Model.API.Course.AddExternalPlanSetupAsVerificationPlan(VMS.TPS.Common.Model.API.StructureSet, VMS.TPS.Common.Model.API.ExternalPlanSetup)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] Attaches a new verification plan to this course and adds the relationship between the verified plan and a new plan. Data is not copied from the verified plan.
+
+    A new primary reference point is always created for the new plan.
+  example: []
+  syntax:
+    content: public ExternalPlanSetup AddExternalPlanSetupAsVerificationPlan(StructureSet structureSet, ExternalPlanSetup verifiedPlan)
+    parameters:
+    - id: structureSet
+      type: VMS.TPS.Common.Model.API.StructureSet
+      description: A valid structure set.
+    - id: verifiedPlan
+      type: VMS.TPS.Common.Model.API.ExternalPlanSetup
+      description: The verified plan.
+    return:
+      type: VMS.TPS.Common.Model.API.ExternalPlanSetup
+      description: A new verification plan.
+    content.vb: Public Function AddExternalPlanSetupAsVerificationPlan(structureSet As StructureSet, verifiedPlan As ExternalPlanSetup) As ExternalPlanSetup
+  overload: VMS.TPS.Common.Model.API.Course.AddExternalPlanSetupAsVerificationPlan*
+- uid: VMS.TPS.Common.Model.API.Course.AddIonPlanSetup(VMS.TPS.Common.Model.API.StructureSet,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.Course.AddIonPlanSetup(VMS.TPS.Common.Model.API.StructureSet,System.String)
+  id: AddIonPlanSetup(VMS.TPS.Common.Model.API.StructureSet,System.String)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: AddIonPlanSetup(StructureSet, string)
+  nameWithType: Course.AddIonPlanSetup(StructureSet, string)
+  fullName: VMS.TPS.Common.Model.API.Course.AddIonPlanSetup(VMS.TPS.Common.Model.API.StructureSet, string)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Attaches a new proton plan to this course.'
+  example: []
+  syntax:
+    content: public IonPlanSetup AddIonPlanSetup(StructureSet structureSet, string patientSupportDeviceId)
+    parameters:
+    - id: structureSet
+      type: VMS.TPS.Common.Model.API.StructureSet
+      description: A valid structure set.
+    - id: patientSupportDeviceId
+      type: System.String
+      description: Id of the patient support device.
+    return:
+      type: VMS.TPS.Common.Model.API.IonPlanSetup
+      description: A new proton plan.
+    content.vb: Public Function AddIonPlanSetup(structureSet As StructureSet, patientSupportDeviceId As String) As IonPlanSetup
+  overload: VMS.TPS.Common.Model.API.Course.AddIonPlanSetup*
+  nameWithType.vb: Course.AddIonPlanSetup(StructureSet, String)
+  fullName.vb: VMS.TPS.Common.Model.API.Course.AddIonPlanSetup(VMS.TPS.Common.Model.API.StructureSet, String)
+  name.vb: AddIonPlanSetup(StructureSet, String)
+- uid: VMS.TPS.Common.Model.API.Course.AddIonPlanSetupAsVerificationPlan(VMS.TPS.Common.Model.API.StructureSet,System.String,VMS.TPS.Common.Model.API.IonPlanSetup)
+  commentId: M:VMS.TPS.Common.Model.API.Course.AddIonPlanSetupAsVerificationPlan(VMS.TPS.Common.Model.API.StructureSet,System.String,VMS.TPS.Common.Model.API.IonPlanSetup)
+  id: AddIonPlanSetupAsVerificationPlan(VMS.TPS.Common.Model.API.StructureSet,System.String,VMS.TPS.Common.Model.API.IonPlanSetup)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: AddIonPlanSetupAsVerificationPlan(StructureSet, string, IonPlanSetup)
+  nameWithType: Course.AddIonPlanSetupAsVerificationPlan(StructureSet, string, IonPlanSetup)
+  fullName: VMS.TPS.Common.Model.API.Course.AddIonPlanSetupAsVerificationPlan(VMS.TPS.Common.Model.API.StructureSet, string, VMS.TPS.Common.Model.API.IonPlanSetup)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] Attaches a new verification plan to this course and adds the relationship between the proton plan to be verified and the new verification plan. Data is not copied from the verified plan.
+
+    A new primary reference point is always created for the new plan.
+  example: []
+  syntax:
+    content: public IonPlanSetup AddIonPlanSetupAsVerificationPlan(StructureSet structureSet, string patientSupportDeviceId, IonPlanSetup verifiedPlan)
+    parameters:
+    - id: structureSet
+      type: VMS.TPS.Common.Model.API.StructureSet
+      description: A valid structure set.
+    - id: patientSupportDeviceId
+      type: System.String
+      description: Id of the patient support device.
+    - id: verifiedPlan
+      type: VMS.TPS.Common.Model.API.IonPlanSetup
+      description: The verified plan.
+    return:
+      type: VMS.TPS.Common.Model.API.IonPlanSetup
+      description: A new proton verification plan.
+    content.vb: Public Function AddIonPlanSetupAsVerificationPlan(structureSet As StructureSet, patientSupportDeviceId As String, verifiedPlan As IonPlanSetup) As IonPlanSetup
+  overload: VMS.TPS.Common.Model.API.Course.AddIonPlanSetupAsVerificationPlan*
+  nameWithType.vb: Course.AddIonPlanSetupAsVerificationPlan(StructureSet, String, IonPlanSetup)
+  fullName.vb: VMS.TPS.Common.Model.API.Course.AddIonPlanSetupAsVerificationPlan(VMS.TPS.Common.Model.API.StructureSet, String, VMS.TPS.Common.Model.API.IonPlanSetup)
+  name.vb: AddIonPlanSetupAsVerificationPlan(StructureSet, String, IonPlanSetup)
+- uid: VMS.TPS.Common.Model.API.Course.CanAddPlanSetup(VMS.TPS.Common.Model.API.StructureSet)
+  commentId: M:VMS.TPS.Common.Model.API.Course.CanAddPlanSetup(VMS.TPS.Common.Model.API.StructureSet)
+  id: CanAddPlanSetup(VMS.TPS.Common.Model.API.StructureSet)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: CanAddPlanSetup(StructureSet)
+  nameWithType: Course.CanAddPlanSetup(StructureSet)
+  fullName: VMS.TPS.Common.Model.API.Course.CanAddPlanSetup(VMS.TPS.Common.Model.API.StructureSet)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Checks if a new plan can be added to this course using the given structure set.
+  example: []
+  syntax:
+    content: public bool CanAddPlanSetup(StructureSet structureSet)
+    parameters:
+    - id: structureSet
+      type: VMS.TPS.Common.Model.API.StructureSet
+      description: The structure set used by the plan.
+    return:
+      type: System.Boolean
+      description: true if a new plan can be added.
+    content.vb: Public Function CanAddPlanSetup(structureSet As StructureSet) As Boolean
+  overload: VMS.TPS.Common.Model.API.Course.CanAddPlanSetup*
+- uid: VMS.TPS.Common.Model.API.Course.CanRemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  commentId: M:VMS.TPS.Common.Model.API.Course.CanRemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  id: CanRemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: CanRemovePlanSetup(PlanSetup)
+  nameWithType: Course.CanRemovePlanSetup(PlanSetup)
+  fullName: VMS.TPS.Common.Model.API.Course.CanRemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Checks if the plan setup can be removed from this course.
+  example: []
+  syntax:
+    content: public bool CanRemovePlanSetup(PlanSetup planSetup)
+    parameters:
+    - id: planSetup
+      type: VMS.TPS.Common.Model.API.PlanSetup
+      description: The plan setup to check.
+    return:
+      type: System.Boolean
+      description: true if the plan can be removed.
+    content.vb: Public Function CanRemovePlanSetup(planSetup As PlanSetup) As Boolean
+  overload: VMS.TPS.Common.Model.API.Course.CanRemovePlanSetup*
+- uid: VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup(VMS.TPS.Common.Model.API.BrachyPlanSetup,System.Text.StringBuilder)
+  commentId: M:VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup(VMS.TPS.Common.Model.API.BrachyPlanSetup,System.Text.StringBuilder)
+  id: CopyBrachyPlanSetup(VMS.TPS.Common.Model.API.BrachyPlanSetup,System.Text.StringBuilder)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: CopyBrachyPlanSetup(BrachyPlanSetup, StringBuilder)
+  nameWithType: Course.CopyBrachyPlanSetup(BrachyPlanSetup, StringBuilder)
+  fullName: VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup(VMS.TPS.Common.Model.API.BrachyPlanSetup, System.Text.StringBuilder)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Copies brachytherapy plan (the planning image will be the same for both plans).'
+  example: []
+  syntax:
+    content: public BrachyPlanSetup CopyBrachyPlanSetup(BrachyPlanSetup sourcePlan, StringBuilder outputDiagnostics)
+    parameters:
+    - id: sourcePlan
+      type: VMS.TPS.Common.Model.API.BrachyPlanSetup
+      description: Brachy plan to copy from
+    - id: outputDiagnostics
+      type: System.Text.StringBuilder
+      description: Information about copying, this needs to be shown to the user.
+    return:
+      type: VMS.TPS.Common.Model.API.BrachyPlanSetup
+      description: New plan
+    content.vb: Public Function CopyBrachyPlanSetup(sourcePlan As BrachyPlanSetup, outputDiagnostics As StringBuilder) As BrachyPlanSetup
+  overload: VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup*
+- uid: VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup(VMS.TPS.Common.Model.API.BrachyPlanSetup,VMS.TPS.Common.Model.API.StructureSet,System.Text.StringBuilder)
+  commentId: M:VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup(VMS.TPS.Common.Model.API.BrachyPlanSetup,VMS.TPS.Common.Model.API.StructureSet,System.Text.StringBuilder)
+  id: CopyBrachyPlanSetup(VMS.TPS.Common.Model.API.BrachyPlanSetup,VMS.TPS.Common.Model.API.StructureSet,System.Text.StringBuilder)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: CopyBrachyPlanSetup(BrachyPlanSetup, StructureSet, StringBuilder)
+  nameWithType: Course.CopyBrachyPlanSetup(BrachyPlanSetup, StructureSet, StringBuilder)
+  fullName: VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup(VMS.TPS.Common.Model.API.BrachyPlanSetup, VMS.TPS.Common.Model.API.StructureSet, System.Text.StringBuilder)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] Copies brachytherapy plan from sourcePlan to the target Image associated with the given structure set.
+
+    TargetImage must be registered with the primary image of the sourcePlan.
+
+    First copies image and then changes planning image.
+  example: []
+  syntax:
+    content: public BrachyPlanSetup CopyBrachyPlanSetup(BrachyPlanSetup sourcePlan, StructureSet structureset, StringBuilder outputDiagnostics)
+    parameters:
+    - id: sourcePlan
+      type: VMS.TPS.Common.Model.API.BrachyPlanSetup
+      description: Brachy plan to copy from
+    - id: structureset
+      type: VMS.TPS.Common.Model.API.StructureSet
+      description: The structure set along with its associated image that will be assigned to the copied plan
+    - id: outputDiagnostics
+      type: System.Text.StringBuilder
+      description: Information about copying, this needs to be shown to the user.
+    return:
+      type: VMS.TPS.Common.Model.API.BrachyPlanSetup
+      description: New plan
+    content.vb: Public Function CopyBrachyPlanSetup(sourcePlan As BrachyPlanSetup, structureset As StructureSet, outputDiagnostics As StringBuilder) As BrachyPlanSetup
+  overload: VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup*
+- uid: VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  commentId: M:VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  id: CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: CopyPlanSetup(PlanSetup)
+  nameWithType: Course.CopyPlanSetup(PlanSetup)
+  fullName: VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Copies plan (the planning image will be the same for both plans).'
+  example: []
+  syntax:
+    content: public PlanSetup CopyPlanSetup(PlanSetup sourcePlan)
+    parameters:
+    - id: sourcePlan
+      type: VMS.TPS.Common.Model.API.PlanSetup
+      description: Plan to copy from
+    return:
+      type: VMS.TPS.Common.Model.API.PlanSetup
+      description: New plan
+    content.vb: Public Function CopyPlanSetup(sourcePlan As PlanSetup) As PlanSetup
+  overload: VMS.TPS.Common.Model.API.Course.CopyPlanSetup*
+- uid: VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.Image,System.Text.StringBuilder)
+  commentId: M:VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.Image,System.Text.StringBuilder)
+  id: CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.Image,System.Text.StringBuilder)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: CopyPlanSetup(PlanSetup, Image, StringBuilder)
+  nameWithType: Course.CopyPlanSetup(PlanSetup, Image, StringBuilder)
+  fullName: VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup, VMS.TPS.Common.Model.API.Image, System.Text.StringBuilder)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] Copies plan from sourcePlan to targetImage. targetImage must be registered with
+
+    primary image of the sourcePlan.
+
+    First copies image and then changes planning image. If there are multiple registrations,
+
+    just copies isocenter locations and shows a message about this.
+  example: []
+  syntax:
+    content: public PlanSetup CopyPlanSetup(PlanSetup sourcePlan, Image targetImage, StringBuilder outputDiagnostics)
+    parameters:
+    - id: sourcePlan
+      type: VMS.TPS.Common.Model.API.PlanSetup
+      description: Plan to copy from
+    - id: targetImage
+      type: VMS.TPS.Common.Model.API.Image
+      description: Image to copy plan to
+    - id: outputDiagnostics
+      type: System.Text.StringBuilder
+      description: Information about copying, this needs to be shown to the user.
+    return:
+      type: VMS.TPS.Common.Model.API.PlanSetup
+      description: New plan
+    content.vb: Public Function CopyPlanSetup(sourcePlan As PlanSetup, targetImage As Image, outputDiagnostics As StringBuilder) As PlanSetup
+  overload: VMS.TPS.Common.Model.API.Course.CopyPlanSetup*
+- uid: VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.Image,VMS.TPS.Common.Model.API.Registration,System.Text.StringBuilder)
+  commentId: M:VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.Image,VMS.TPS.Common.Model.API.Registration,System.Text.StringBuilder)
+  id: CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.Image,VMS.TPS.Common.Model.API.Registration,System.Text.StringBuilder)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: CopyPlanSetup(PlanSetup, Image, Registration, StringBuilder)
+  nameWithType: Course.CopyPlanSetup(PlanSetup, Image, Registration, StringBuilder)
+  fullName: VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup, VMS.TPS.Common.Model.API.Image, VMS.TPS.Common.Model.API.Registration, System.Text.StringBuilder)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] Copies plan from sourcePlan to targetImage. targetImage must be registered with
+
+    primary image of the sourcePlan.
+
+    First copies image and then changes planning image.
+  example: []
+  syntax:
+    content: public PlanSetup CopyPlanSetup(PlanSetup sourcePlan, Image targetImage, Registration registration, StringBuilder outputDiagnostics)
+    parameters:
+    - id: sourcePlan
+      type: VMS.TPS.Common.Model.API.PlanSetup
+      description: Plan to copy from
+    - id: targetImage
+      type: VMS.TPS.Common.Model.API.Image
+      description: Image to copy plan to
+    - id: registration
+      type: VMS.TPS.Common.Model.API.Registration
+      description: Registration to use to map geometry from source to target
+    - id: outputDiagnostics
+      type: System.Text.StringBuilder
+      description: Information about copying, this needs to be shown to the user.
+    return:
+      type: VMS.TPS.Common.Model.API.PlanSetup
+      description: New plan
+    content.vb: Public Function CopyPlanSetup(sourcePlan As PlanSetup, targetImage As Image, registration As Registration, outputDiagnostics As StringBuilder) As PlanSetup
+  overload: VMS.TPS.Common.Model.API.Course.CopyPlanSetup*
+- uid: VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.StructureSet,System.Text.StringBuilder)
+  commentId: M:VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.StructureSet,System.Text.StringBuilder)
+  id: CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.StructureSet,System.Text.StringBuilder)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: CopyPlanSetup(PlanSetup, StructureSet, StringBuilder)
+  nameWithType: Course.CopyPlanSetup(PlanSetup, StructureSet, StringBuilder)
+  fullName: VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup, VMS.TPS.Common.Model.API.StructureSet, System.Text.StringBuilder)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] Copies plan from sourcePlan to the target Image associated with the given structure set.
+
+    TargetImage must be registered with primary image of the sourcePlan.
+
+    First copies image and then changes planning image.
+  example: []
+  syntax:
+    content: public PlanSetup CopyPlanSetup(PlanSetup sourcePlan, StructureSet structureset, StringBuilder outputDiagnostics)
+    parameters:
+    - id: sourcePlan
+      type: VMS.TPS.Common.Model.API.PlanSetup
+      description: Plan to copy from
+    - id: structureset
+      type: VMS.TPS.Common.Model.API.StructureSet
+      description: The structure set along with its associated image that will be assigned to the copied plan
+    - id: outputDiagnostics
+      type: System.Text.StringBuilder
+      description: Information about copying, this needs to be shown to the user.
+    return:
+      type: VMS.TPS.Common.Model.API.PlanSetup
+      description: New plan
+    content.vb: Public Function CopyPlanSetup(sourcePlan As PlanSetup, structureset As StructureSet, outputDiagnostics As StringBuilder) As PlanSetup
+  overload: VMS.TPS.Common.Model.API.Course.CopyPlanSetup*
+- uid: VMS.TPS.Common.Model.API.Course.IsCompleted
+  commentId: M:VMS.TPS.Common.Model.API.Course.IsCompleted
+  id: IsCompleted
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: IsCompleted()
+  nameWithType: Course.IsCompleted()
+  fullName: VMS.TPS.Common.Model.API.Course.IsCompleted()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Checks if the clinical status of the course is completed or restored.
+  example: []
+  syntax:
+    content: public bool IsCompleted()
+    return:
+      type: System.Boolean
+      description: true if the clinical status of the course is completed or restored.
+    content.vb: Public Function IsCompleted() As Boolean
+  overload: VMS.TPS.Common.Model.API.Course.IsCompleted*
+- uid: VMS.TPS.Common.Model.API.Course.RemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  commentId: M:VMS.TPS.Common.Model.API.Course.RemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  id: RemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: RemovePlanSetup(PlanSetup)
+  nameWithType: Course.RemovePlanSetup(PlanSetup)
+  fullName: VMS.TPS.Common.Model.API.Course.RemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] Removes the plan setup from the database. Use <xref href="VMS.TPS.Common.Model.API.Course.CanRemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)?text=CanRemovePlanSetup" data-throw-if-not-resolved="false"></xref> to check if it is possible to remove the plan. The
+
+    PlanSetup object given as a parameter is not usable anymore after this operation.
+  example: []
+  syntax:
+    content: public void RemovePlanSetup(PlanSetup planSetup)
+    parameters:
+    - id: planSetup
+      type: VMS.TPS.Common.Model.API.PlanSetup
+      description: The plan setup that is removed.
+    content.vb: Public Sub RemovePlanSetup(planSetup As PlanSetup)
+  overload: VMS.TPS.Common.Model.API.Course.RemovePlanSetup*
+- uid: VMS.TPS.Common.Model.API.Course.RemovePlanSum(VMS.TPS.Common.Model.API.PlanSum)
+  commentId: M:VMS.TPS.Common.Model.API.Course.RemovePlanSum(VMS.TPS.Common.Model.API.PlanSum)
+  id: RemovePlanSum(VMS.TPS.Common.Model.API.PlanSum)
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: RemovePlanSum(PlanSum)
+  nameWithType: Course.RemovePlanSum(PlanSum)
+  fullName: VMS.TPS.Common.Model.API.Course.RemovePlanSum(VMS.TPS.Common.Model.API.PlanSum)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Removes the plan sum from the database. The PlanSum object given as a parameter is not usable anymore after this operation.'
+  example: []
+  syntax:
+    content: public void RemovePlanSum(PlanSum planSum)
+    parameters:
+    - id: planSum
+      type: VMS.TPS.Common.Model.API.PlanSum
+      description: The plan sum that is removed.
+    content.vb: Public Sub RemovePlanSum(planSum As PlanSum)
+  overload: VMS.TPS.Common.Model.API.Course.RemovePlanSum*
+- uid: VMS.TPS.Common.Model.API.Course.Id
+  commentId: P:VMS.TPS.Common.Model.API.Course.Id
+  id: Id
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Course.Id
+  fullName: VMS.TPS.Common.Model.API.Course.Id
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this property depends on your Eclipse Scripting API license] The identifier of the Course.'
+  example: []
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: VMS.TPS.Common.Model.API.Course.Id*
+- uid: VMS.TPS.Common.Model.API.Course.Comment
+  commentId: P:VMS.TPS.Common.Model.API.Course.Comment
+  id: Comment
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: Comment
+  nameWithType: Course.Comment
+  fullName: VMS.TPS.Common.Model.API.Course.Comment
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this property depends on your Eclipse Scripting API license] A comment about the Course.'
+  example: []
+  syntax:
+    content: public string Comment { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Comment As String
+  overload: VMS.TPS.Common.Model.API.Course.Comment*
+- uid: VMS.TPS.Common.Model.API.Course.ExternalPlanSetups
+  commentId: P:VMS.TPS.Common.Model.API.Course.ExternalPlanSetups
+  id: ExternalPlanSetups
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: ExternalPlanSetups
+  nameWithType: Course.ExternalPlanSetups
+  fullName: VMS.TPS.Common.Model.API.Course.ExternalPlanSetups
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: A collection of external beam plans for the course.
+  example: []
+  syntax:
+    content: public IEnumerable<ExternalPlanSetup> ExternalPlanSetups { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ExternalPlanSetup}
+    content.vb: Public ReadOnly Property ExternalPlanSetups As IEnumerable(Of ExternalPlanSetup)
+  overload: VMS.TPS.Common.Model.API.Course.ExternalPlanSetups*
+- uid: VMS.TPS.Common.Model.API.Course.BrachyPlanSetups
+  commentId: P:VMS.TPS.Common.Model.API.Course.BrachyPlanSetups
+  id: BrachyPlanSetups
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: BrachyPlanSetups
+  nameWithType: Course.BrachyPlanSetups
+  fullName: VMS.TPS.Common.Model.API.Course.BrachyPlanSetups
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: A collection of brachytherapy plans for the course.
+  example: []
+  syntax:
+    content: public IEnumerable<BrachyPlanSetup> BrachyPlanSetups { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.BrachyPlanSetup}
+    content.vb: Public ReadOnly Property BrachyPlanSetups As IEnumerable(Of BrachyPlanSetup)
+  overload: VMS.TPS.Common.Model.API.Course.BrachyPlanSetups*
+- uid: VMS.TPS.Common.Model.API.Course.IonPlanSetups
+  commentId: P:VMS.TPS.Common.Model.API.Course.IonPlanSetups
+  id: IonPlanSetups
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: IonPlanSetups
+  nameWithType: Course.IonPlanSetups
+  fullName: VMS.TPS.Common.Model.API.Course.IonPlanSetups
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: A collection of proton plans for the course.
+  example: []
+  syntax:
+    content: public IEnumerable<IonPlanSetup> IonPlanSetups { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.IonPlanSetup}
+    content.vb: Public ReadOnly Property IonPlanSetups As IEnumerable(Of IonPlanSetup)
+  overload: VMS.TPS.Common.Model.API.Course.IonPlanSetups*
+- uid: VMS.TPS.Common.Model.API.Course.ClinicalStatus
+  commentId: P:VMS.TPS.Common.Model.API.Course.ClinicalStatus
+  id: ClinicalStatus
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: ClinicalStatus
+  nameWithType: Course.ClinicalStatus
+  fullName: VMS.TPS.Common.Model.API.Course.ClinicalStatus
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Clinical Status of Course.
+  example: []
+  syntax:
+    content: public CourseClinicalStatus ClinicalStatus { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.CourseClinicalStatus
+    content.vb: Public ReadOnly Property ClinicalStatus As CourseClinicalStatus
+  overload: VMS.TPS.Common.Model.API.Course.ClinicalStatus*
+- uid: VMS.TPS.Common.Model.API.Course.CompletedDateTime
+  commentId: P:VMS.TPS.Common.Model.API.Course.CompletedDateTime
+  id: CompletedDateTime
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: CompletedDateTime
+  nameWithType: Course.CompletedDateTime
+  fullName: VMS.TPS.Common.Model.API.Course.CompletedDateTime
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The date and time when the course was completed.
+  example: []
+  syntax:
+    content: public DateTime? CompletedDateTime { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public ReadOnly Property CompletedDateTime As Date?
+  overload: VMS.TPS.Common.Model.API.Course.CompletedDateTime*
+- uid: VMS.TPS.Common.Model.API.Course.Diagnoses
+  commentId: P:VMS.TPS.Common.Model.API.Course.Diagnoses
+  id: Diagnoses
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: Diagnoses
+  nameWithType: Course.Diagnoses
+  fullName: VMS.TPS.Common.Model.API.Course.Diagnoses
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The diagnoses that are attached to the course.
+  example: []
+  syntax:
+    content: public IEnumerable<Diagnosis> Diagnoses { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.Diagnosis}
+    content.vb: Public ReadOnly Property Diagnoses As IEnumerable(Of Diagnosis)
+  overload: VMS.TPS.Common.Model.API.Course.Diagnoses*
+- uid: VMS.TPS.Common.Model.API.Course.Intent
+  commentId: P:VMS.TPS.Common.Model.API.Course.Intent
+  id: Intent
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: Intent
+  nameWithType: Course.Intent
+  fullName: VMS.TPS.Common.Model.API.Course.Intent
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The intent of the course.
+  example: []
+  syntax:
+    content: public string Intent { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Intent As String
+  overload: VMS.TPS.Common.Model.API.Course.Intent*
+- uid: VMS.TPS.Common.Model.API.Course.Patient
+  commentId: P:VMS.TPS.Common.Model.API.Course.Patient
+  id: Patient
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: Patient
+  nameWithType: Course.Patient
+  fullName: VMS.TPS.Common.Model.API.Course.Patient
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Patient in which the course is defined.
+  example: []
+  syntax:
+    content: public Patient Patient { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.Patient
+    content.vb: Public ReadOnly Property Patient As Patient
+  overload: VMS.TPS.Common.Model.API.Course.Patient*
+- uid: VMS.TPS.Common.Model.API.Course.PlanSetups
+  commentId: P:VMS.TPS.Common.Model.API.Course.PlanSetups
+  id: PlanSetups
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: PlanSetups
+  nameWithType: Course.PlanSetups
+  fullName: VMS.TPS.Common.Model.API.Course.PlanSetups
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: A collection of plans for the course. The plans can be of any type (external beam or brachytherapy).
+  example: []
+  syntax:
+    content: public IEnumerable<PlanSetup> PlanSetups { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanSetup}
+    content.vb: Public ReadOnly Property PlanSetups As IEnumerable(Of PlanSetup)
+  overload: VMS.TPS.Common.Model.API.Course.PlanSetups*
+- uid: VMS.TPS.Common.Model.API.Course.PlanSums
+  commentId: P:VMS.TPS.Common.Model.API.Course.PlanSums
+  id: PlanSums
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: PlanSums
+  nameWithType: Course.PlanSums
+  fullName: VMS.TPS.Common.Model.API.Course.PlanSums
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: A collection of plan sums for the course.
+  example: []
+  syntax:
+    content: public IEnumerable<PlanSum> PlanSums { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanSum}
+    content.vb: Public ReadOnly Property PlanSums As IEnumerable(Of PlanSum)
+  overload: VMS.TPS.Common.Model.API.Course.PlanSums*
+- uid: VMS.TPS.Common.Model.API.Course.StartDateTime
+  commentId: P:VMS.TPS.Common.Model.API.Course.StartDateTime
+  id: StartDateTime
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: StartDateTime
+  nameWithType: Course.StartDateTime
+  fullName: VMS.TPS.Common.Model.API.Course.StartDateTime
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The date and time when the course was started.
+  example: []
+  syntax:
+    content: public DateTime? StartDateTime { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public ReadOnly Property StartDateTime As Date?
+  overload: VMS.TPS.Common.Model.API.Course.StartDateTime*
+- uid: VMS.TPS.Common.Model.API.Course.TreatmentPhases
+  commentId: P:VMS.TPS.Common.Model.API.Course.TreatmentPhases
+  id: TreatmentPhases
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: TreatmentPhases
+  nameWithType: Course.TreatmentPhases
+  fullName: VMS.TPS.Common.Model.API.Course.TreatmentPhases
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: All treatment phases in the course.
+  example: []
+  syntax:
+    content: public IEnumerable<TreatmentPhase> TreatmentPhases { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.TreatmentPhase}
+    content.vb: Public ReadOnly Property TreatmentPhases As IEnumerable(Of TreatmentPhase)
+  overload: VMS.TPS.Common.Model.API.Course.TreatmentPhases*
+- uid: VMS.TPS.Common.Model.API.Course.TreatmentSessions
+  commentId: P:VMS.TPS.Common.Model.API.Course.TreatmentSessions
+  id: TreatmentSessions
+  parent: VMS.TPS.Common.Model.API.Course
+  langs:
+  - csharp
+  - vb
+  name: TreatmentSessions
+  nameWithType: Course.TreatmentSessions
+  fullName: VMS.TPS.Common.Model.API.Course.TreatmentSessions
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Treatment sessions of the course.
+  example: []
+  syntax:
+    content: public IEnumerable<TreatmentSession> TreatmentSessions { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.TreatmentSession}
+    content.vb: Public ReadOnly Property TreatmentSessions As IEnumerable(Of TreatmentSession)
+  overload: VMS.TPS.Common.Model.API.Course.TreatmentSessions*
+references:
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: VMS.TPS.Common.Model.API.SerializableObject
+  commentId: T:VMS.TPS.Common.Model.API.SerializableObject
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: VMS.TPS.Common.Model.API.SerializableObject
+- uid: VMS.TPS.Common.Model.API.ApiDataObject
+  commentId: T:VMS.TPS.Common.Model.API.ApiDataObject
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html
+  name: ApiDataObject
+  nameWithType: ApiDataObject
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject
+- uid: System.Xml.Serialization.IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  nameWithType: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  name: ToString()
+  nameWithType: ApiDataObject.ToString()
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.ToString()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+    name: ToString
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+    name: ToString
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: ApiDataObject.Equals(object)
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.Equals(object)
+  nameWithType.vb: ApiDataObject.Equals(Object)
+  fullName.vb: VMS.TPS.Common.Model.API.ApiDataObject.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  name: GetHashCode()
+  nameWithType: ApiDataObject.GetHashCode()
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.Name
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.Name
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Name
+  name: Name
+  nameWithType: ApiDataObject.Name
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.Name
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName
+  name: HistoryUserName
+  nameWithType: ApiDataObject.HistoryUserName
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName
+  name: HistoryUserDisplayName
+  nameWithType: ApiDataObject.HistoryUserDisplayName
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime
+  name: HistoryDateTime
+  nameWithType: ApiDataObject.HistoryDateTime
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+- uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  name: GetSchema()
+  nameWithType: SerializableObject.GetSchema()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.GetSchema()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  name: ReadXml(XmlReader)
+  nameWithType: SerializableObject.ReadXml(XmlReader)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  name: WriteXml(XmlWriter, string, object)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, object)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, object)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, Object)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, Object)
+  name.vb: WriteXml(XmlWriter, String, Object)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  name: WriteXml(XmlWriter, string, string)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, string)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, String)
+  name.vb: WriteXml(XmlWriter, String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  name: StartSerialization(string, string)
+  nameWithType: SerializableObject.StartSerialization(string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(string, string)
+  nameWithType.vb: SerializableObject.StartSerialization(String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(String, String)
+  name.vb: StartSerialization(String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  name: EndSerialization()
+  nameWithType: SerializableObject.EndSerialization()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  name: ClearSerializationHistory()
+  nameWithType: SerializableObject.ClearSerializationHistory()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.Image,VMS.TPS.Common.Model.API.Registration,System.Text.StringBuilder)
+  commentId: M:VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.Image,VMS.TPS.Common.Model.API.Registration,System.Text.StringBuilder)
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_CopyPlanSetup_VMS_TPS_Common_Model_API_PlanSetup_VMS_TPS_Common_Model_API_Image_VMS_TPS_Common_Model_API_Registration_System_Text_StringBuilder_
+  name: CopyPlanSetup(PlanSetup, Image, Registration, StringBuilder)
+  nameWithType: Course.CopyPlanSetup(PlanSetup, Image, Registration, StringBuilder)
+  fullName: VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup, VMS.TPS.Common.Model.API.Image, VMS.TPS.Common.Model.API.Registration, System.Text.StringBuilder)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.Image,VMS.TPS.Common.Model.API.Registration,System.Text.StringBuilder)
+    name: CopyPlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_CopyPlanSetup_VMS_TPS_Common_Model_API_PlanSetup_VMS_TPS_Common_Model_API_Image_VMS_TPS_Common_Model_API_Registration_System_Text_StringBuilder_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.PlanSetup
+    name: PlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.PlanSetup.html
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.Image
+    name: Image
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Image.html
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.Registration
+    name: Registration
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Registration.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Course.CopyPlanSetup(VMS.TPS.Common.Model.API.PlanSetup,VMS.TPS.Common.Model.API.Image,VMS.TPS.Common.Model.API.Registration,System.Text.StringBuilder)
+    name: CopyPlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_CopyPlanSetup_VMS_TPS_Common_Model_API_PlanSetup_VMS_TPS_Common_Model_API_Image_VMS_TPS_Common_Model_API_Registration_System_Text_StringBuilder_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.PlanSetup
+    name: PlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.PlanSetup.html
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.Image
+    name: Image
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Image.html
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.Registration
+    name: Registration
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Registration.html
+  - name: ','
+  - name: " "
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Course.CreatePlanSum*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.CreatePlanSum
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_CreatePlanSum_System_Collections_Generic_IEnumerable_VMS_TPS_Common_Model_API_PlanningItem__VMS_TPS_Common_Model_API_Image_
+  name: CreatePlanSum
+  nameWithType: Course.CreatePlanSum
+  fullName: VMS.TPS.Common.Model.API.Course.CreatePlanSum
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanningItem}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanningItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<PlanningItem>
+  nameWithType: IEnumerable<PlanningItem>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.PlanningItem>
+  nameWithType.vb: IEnumerable(Of PlanningItem)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.PlanningItem)
+  name.vb: IEnumerable(Of PlanningItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.PlanningItem
+    name: PlanningItem
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.PlanningItem.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.PlanningItem
+    name: PlanningItem
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.PlanningItem.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Image
+  commentId: T:VMS.TPS.Common.Model.API.Image
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html
+  name: Image
+  nameWithType: Image
+  fullName: VMS.TPS.Common.Model.API.Image
+- uid: VMS.TPS.Common.Model.API.PlanSum
+  commentId: T:VMS.TPS.Common.Model.API.PlanSum
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.PlanSum.html
+  name: PlanSum
+  nameWithType: PlanSum
+  fullName: VMS.TPS.Common.Model.API.PlanSum
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_AddExternalPlanSetup_VMS_TPS_Common_Model_API_StructureSet_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_API_ReferencePoint_System_Collections_Generic_IEnumerable_VMS_TPS_Common_Model_API_ReferencePoint__
+  name: AddExternalPlanSetup
+  nameWithType: Course.AddExternalPlanSetup
+  fullName: VMS.TPS.Common.Model.API.Course.AddExternalPlanSetup
+- uid: VMS.TPS.Common.Model.API.StructureSet
+  commentId: T:VMS.TPS.Common.Model.API.StructureSet
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html
+  name: StructureSet
+  nameWithType: StructureSet
+  fullName: VMS.TPS.Common.Model.API.StructureSet
+- uid: VMS.TPS.Common.Model.API.Structure
+  commentId: T:VMS.TPS.Common.Model.API.Structure
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Structure.html
+  name: Structure
+  nameWithType: Structure
+  fullName: VMS.TPS.Common.Model.API.Structure
+- uid: VMS.TPS.Common.Model.API.ReferencePoint
+  commentId: T:VMS.TPS.Common.Model.API.ReferencePoint
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ReferencePoint.html
+  name: ReferencePoint
+  nameWithType: ReferencePoint
+  fullName: VMS.TPS.Common.Model.API.ReferencePoint
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ReferencePoint}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ReferencePoint>
+  nameWithType: IEnumerable<ReferencePoint>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.ReferencePoint>
+  nameWithType.vb: IEnumerable(Of ReferencePoint)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.ReferencePoint)
+  name.vb: IEnumerable(Of ReferencePoint)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.ReferencePoint
+    name: ReferencePoint
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ReferencePoint.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.ReferencePoint
+    name: ReferencePoint
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ReferencePoint.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ExternalPlanSetup
+  commentId: T:VMS.TPS.Common.Model.API.ExternalPlanSetup
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ExternalPlanSetup.html
+  name: ExternalPlanSetup
+  nameWithType: ExternalPlanSetup
+  fullName: VMS.TPS.Common.Model.API.ExternalPlanSetup
+- uid: VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_AddBrachyPlanSetup_VMS_TPS_Common_Model_API_StructureSet_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_API_ReferencePoint_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_BrachyTreatmentTechniqueType_System_Collections_Generic_IEnumerable_VMS_TPS_Common_Model_API_ReferencePoint__
+  name: AddBrachyPlanSetup
+  nameWithType: Course.AddBrachyPlanSetup
+  fullName: VMS.TPS.Common.Model.API.Course.AddBrachyPlanSetup
+- uid: VMS.TPS.Common.Model.Types.DoseValue
+  commentId: T:VMS.TPS.Common.Model.Types.DoseValue
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html
+  name: DoseValue
+  nameWithType: DoseValue
+  fullName: VMS.TPS.Common.Model.Types.DoseValue
+- uid: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+  commentId: T:VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.html
+  name: BrachyTreatmentTechniqueType
+  nameWithType: BrachyTreatmentTechniqueType
+  fullName: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+- uid: VMS.TPS.Common.Model.API.BrachyPlanSetup
+  commentId: T:VMS.TPS.Common.Model.API.BrachyPlanSetup
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.BrachyPlanSetup.html
+  name: BrachyPlanSetup
+  nameWithType: BrachyPlanSetup
+  fullName: VMS.TPS.Common.Model.API.BrachyPlanSetup
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.API.Course.AddIonPlanSetup*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.AddIonPlanSetup
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_AddIonPlanSetup_VMS_TPS_Common_Model_API_StructureSet_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_API_ReferencePoint_System_String_System_Collections_Generic_IEnumerable_VMS_TPS_Common_Model_API_ReferencePoint__
+  name: AddIonPlanSetup
+  nameWithType: Course.AddIonPlanSetup
+  fullName: VMS.TPS.Common.Model.API.Course.AddIonPlanSetup
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: VMS.TPS.Common.Model.API.IonPlanSetup
+  commentId: T:VMS.TPS.Common.Model.API.IonPlanSetup
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonPlanSetup.html
+  name: IonPlanSetup
+  nameWithType: IonPlanSetup
+  fullName: VMS.TPS.Common.Model.API.IonPlanSetup
+- uid: System.Xml.Serialization.XmlSerializer
+  commentId: T:System.Xml.Serialization.XmlSerializer
+  isExternal: true
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml(XmlWriter)
+  nameWithType: ApiDataObject.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Course.WriteXml*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.WriteXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml
+  nameWithType: Course.WriteXml
+  fullName: VMS.TPS.Common.Model.API.Course.WriteXml
+- uid: System.Xml.XmlWriter
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: VMS.TPS.Common.Model.API.Course.AddExternalPlanSetupAsVerificationPlan*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.AddExternalPlanSetupAsVerificationPlan
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_AddExternalPlanSetupAsVerificationPlan_VMS_TPS_Common_Model_API_StructureSet_VMS_TPS_Common_Model_API_ExternalPlanSetup_
+  name: AddExternalPlanSetupAsVerificationPlan
+  nameWithType: Course.AddExternalPlanSetupAsVerificationPlan
+  fullName: VMS.TPS.Common.Model.API.Course.AddExternalPlanSetupAsVerificationPlan
+- uid: VMS.TPS.Common.Model.API.Course.AddIonPlanSetupAsVerificationPlan*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.AddIonPlanSetupAsVerificationPlan
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_AddIonPlanSetupAsVerificationPlan_VMS_TPS_Common_Model_API_StructureSet_System_String_VMS_TPS_Common_Model_API_IonPlanSetup_
+  name: AddIonPlanSetupAsVerificationPlan
+  nameWithType: Course.AddIonPlanSetupAsVerificationPlan
+  fullName: VMS.TPS.Common.Model.API.Course.AddIonPlanSetupAsVerificationPlan
+- uid: VMS.TPS.Common.Model.API.Course.CanAddPlanSetup*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.CanAddPlanSetup
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_CanAddPlanSetup_VMS_TPS_Common_Model_API_StructureSet_
+  name: CanAddPlanSetup
+  nameWithType: Course.CanAddPlanSetup
+  fullName: VMS.TPS.Common.Model.API.Course.CanAddPlanSetup
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: VMS.TPS.Common.Model.API.Course.CanRemovePlanSetup*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.CanRemovePlanSetup
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_CanRemovePlanSetup_VMS_TPS_Common_Model_API_PlanSetup_
+  name: CanRemovePlanSetup
+  nameWithType: Course.CanRemovePlanSetup
+  fullName: VMS.TPS.Common.Model.API.Course.CanRemovePlanSetup
+- uid: VMS.TPS.Common.Model.API.PlanSetup
+  commentId: T:VMS.TPS.Common.Model.API.PlanSetup
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.PlanSetup.html
+  name: PlanSetup
+  nameWithType: PlanSetup
+  fullName: VMS.TPS.Common.Model.API.PlanSetup
+- uid: VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_CopyBrachyPlanSetup_VMS_TPS_Common_Model_API_BrachyPlanSetup_System_Text_StringBuilder_
+  name: CopyBrachyPlanSetup
+  nameWithType: Course.CopyBrachyPlanSetup
+  fullName: VMS.TPS.Common.Model.API.Course.CopyBrachyPlanSetup
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: VMS.TPS.Common.Model.API.Course.CopyPlanSetup*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.CopyPlanSetup
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_CopyPlanSetup_VMS_TPS_Common_Model_API_PlanSetup_
+  name: CopyPlanSetup
+  nameWithType: Course.CopyPlanSetup
+  fullName: VMS.TPS.Common.Model.API.Course.CopyPlanSetup
+- uid: VMS.TPS.Common.Model.API.Registration
+  commentId: T:VMS.TPS.Common.Model.API.Registration
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Registration.html
+  name: Registration
+  nameWithType: Registration
+  fullName: VMS.TPS.Common.Model.API.Registration
+- uid: VMS.TPS.Common.Model.API.Course.IsCompleted*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.IsCompleted
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_IsCompleted
+  name: IsCompleted
+  nameWithType: Course.IsCompleted
+  fullName: VMS.TPS.Common.Model.API.Course.IsCompleted
+- uid: VMS.TPS.Common.Model.API.Course.CanRemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  commentId: M:VMS.TPS.Common.Model.API.Course.CanRemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_CanRemovePlanSetup_VMS_TPS_Common_Model_API_PlanSetup_
+  name: CanRemovePlanSetup(PlanSetup)
+  nameWithType: Course.CanRemovePlanSetup(PlanSetup)
+  fullName: VMS.TPS.Common.Model.API.Course.CanRemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Course.CanRemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+    name: CanRemovePlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_CanRemovePlanSetup_VMS_TPS_Common_Model_API_PlanSetup_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.PlanSetup
+    name: PlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.PlanSetup.html
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Course.CanRemovePlanSetup(VMS.TPS.Common.Model.API.PlanSetup)
+    name: CanRemovePlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_CanRemovePlanSetup_VMS_TPS_Common_Model_API_PlanSetup_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.PlanSetup
+    name: PlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.PlanSetup.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Course.RemovePlanSetup*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.RemovePlanSetup
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_RemovePlanSetup_VMS_TPS_Common_Model_API_PlanSetup_
+  name: RemovePlanSetup
+  nameWithType: Course.RemovePlanSetup
+  fullName: VMS.TPS.Common.Model.API.Course.RemovePlanSetup
+- uid: VMS.TPS.Common.Model.API.Course.RemovePlanSum*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.RemovePlanSum
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_RemovePlanSum_VMS_TPS_Common_Model_API_PlanSum_
+  name: RemovePlanSum
+  nameWithType: Course.RemovePlanSum
+  fullName: VMS.TPS.Common.Model.API.Course.RemovePlanSum
+- uid: VMS.TPS.Common.Model.API.Course.Id*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.Id
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_Id
+  name: Id
+  nameWithType: Course.Id
+  fullName: VMS.TPS.Common.Model.API.Course.Id
+- uid: VMS.TPS.Common.Model.API.Course.Comment*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.Comment
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_Comment
+  name: Comment
+  nameWithType: Course.Comment
+  fullName: VMS.TPS.Common.Model.API.Course.Comment
+- uid: VMS.TPS.Common.Model.API.Course.ExternalPlanSetups*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.ExternalPlanSetups
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_ExternalPlanSetups
+  name: ExternalPlanSetups
+  nameWithType: Course.ExternalPlanSetups
+  fullName: VMS.TPS.Common.Model.API.Course.ExternalPlanSetups
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ExternalPlanSetup}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ExternalPlanSetup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ExternalPlanSetup>
+  nameWithType: IEnumerable<ExternalPlanSetup>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.ExternalPlanSetup>
+  nameWithType.vb: IEnumerable(Of ExternalPlanSetup)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.ExternalPlanSetup)
+  name.vb: IEnumerable(Of ExternalPlanSetup)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.ExternalPlanSetup
+    name: ExternalPlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ExternalPlanSetup.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.ExternalPlanSetup
+    name: ExternalPlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ExternalPlanSetup.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Course.BrachyPlanSetups*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.BrachyPlanSetups
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_BrachyPlanSetups
+  name: BrachyPlanSetups
+  nameWithType: Course.BrachyPlanSetups
+  fullName: VMS.TPS.Common.Model.API.Course.BrachyPlanSetups
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.BrachyPlanSetup}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.BrachyPlanSetup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<BrachyPlanSetup>
+  nameWithType: IEnumerable<BrachyPlanSetup>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.BrachyPlanSetup>
+  nameWithType.vb: IEnumerable(Of BrachyPlanSetup)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.BrachyPlanSetup)
+  name.vb: IEnumerable(Of BrachyPlanSetup)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.BrachyPlanSetup
+    name: BrachyPlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.BrachyPlanSetup.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.BrachyPlanSetup
+    name: BrachyPlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.BrachyPlanSetup.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Course.IonPlanSetups*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.IonPlanSetups
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_IonPlanSetups
+  name: IonPlanSetups
+  nameWithType: Course.IonPlanSetups
+  fullName: VMS.TPS.Common.Model.API.Course.IonPlanSetups
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.IonPlanSetup}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.IonPlanSetup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IonPlanSetup>
+  nameWithType: IEnumerable<IonPlanSetup>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.IonPlanSetup>
+  nameWithType.vb: IEnumerable(Of IonPlanSetup)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.IonPlanSetup)
+  name.vb: IEnumerable(Of IonPlanSetup)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.IonPlanSetup
+    name: IonPlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.IonPlanSetup.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.IonPlanSetup
+    name: IonPlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.IonPlanSetup.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Course.ClinicalStatus*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.ClinicalStatus
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_ClinicalStatus
+  name: ClinicalStatus
+  nameWithType: Course.ClinicalStatus
+  fullName: VMS.TPS.Common.Model.API.Course.ClinicalStatus
+- uid: VMS.TPS.Common.Model.Types.CourseClinicalStatus
+  commentId: T:VMS.TPS.Common.Model.Types.CourseClinicalStatus
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.CourseClinicalStatus.html
+  name: CourseClinicalStatus
+  nameWithType: CourseClinicalStatus
+  fullName: VMS.TPS.Common.Model.Types.CourseClinicalStatus
+- uid: VMS.TPS.Common.Model.API.Course.CompletedDateTime*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.CompletedDateTime
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_CompletedDateTime
+  name: CompletedDateTime
+  nameWithType: Course.CompletedDateTime
+  fullName: VMS.TPS.Common.Model.API.Course.CompletedDateTime
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Course.Diagnoses*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.Diagnoses
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_Diagnoses
+  name: Diagnoses
+  nameWithType: Course.Diagnoses
+  fullName: VMS.TPS.Common.Model.API.Course.Diagnoses
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.Diagnosis}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.Diagnosis}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Diagnosis>
+  nameWithType: IEnumerable<Diagnosis>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.Diagnosis>
+  nameWithType.vb: IEnumerable(Of Diagnosis)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.Diagnosis)
+  name.vb: IEnumerable(Of Diagnosis)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.Diagnosis
+    name: Diagnosis
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Diagnosis.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.Diagnosis
+    name: Diagnosis
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Diagnosis.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Course.Intent*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.Intent
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_Intent
+  name: Intent
+  nameWithType: Course.Intent
+  fullName: VMS.TPS.Common.Model.API.Course.Intent
+- uid: VMS.TPS.Common.Model.API.Course.Patient*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.Patient
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_Patient
+  name: Patient
+  nameWithType: Course.Patient
+  fullName: VMS.TPS.Common.Model.API.Course.Patient
+- uid: VMS.TPS.Common.Model.API.Patient
+  commentId: T:VMS.TPS.Common.Model.API.Patient
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Patient.html
+  name: Patient
+  nameWithType: Patient
+  fullName: VMS.TPS.Common.Model.API.Patient
+- uid: VMS.TPS.Common.Model.API.Course.PlanSetups*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.PlanSetups
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_PlanSetups
+  name: PlanSetups
+  nameWithType: Course.PlanSetups
+  fullName: VMS.TPS.Common.Model.API.Course.PlanSetups
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanSetup}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanSetup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<PlanSetup>
+  nameWithType: IEnumerable<PlanSetup>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.PlanSetup>
+  nameWithType.vb: IEnumerable(Of PlanSetup)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.PlanSetup)
+  name.vb: IEnumerable(Of PlanSetup)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.PlanSetup
+    name: PlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.PlanSetup.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.PlanSetup
+    name: PlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.PlanSetup.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Course.PlanSums*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.PlanSums
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_PlanSums
+  name: PlanSums
+  nameWithType: Course.PlanSums
+  fullName: VMS.TPS.Common.Model.API.Course.PlanSums
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanSum}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanSum}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<PlanSum>
+  nameWithType: IEnumerable<PlanSum>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.PlanSum>
+  nameWithType.vb: IEnumerable(Of PlanSum)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.PlanSum)
+  name.vb: IEnumerable(Of PlanSum)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.PlanSum
+    name: PlanSum
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.PlanSum.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.PlanSum
+    name: PlanSum
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.PlanSum.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Course.StartDateTime*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.StartDateTime
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_StartDateTime
+  name: StartDateTime
+  nameWithType: Course.StartDateTime
+  fullName: VMS.TPS.Common.Model.API.Course.StartDateTime
+- uid: VMS.TPS.Common.Model.API.Course.TreatmentPhases*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.TreatmentPhases
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_TreatmentPhases
+  name: TreatmentPhases
+  nameWithType: Course.TreatmentPhases
+  fullName: VMS.TPS.Common.Model.API.Course.TreatmentPhases
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.TreatmentPhase}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.TreatmentPhase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TreatmentPhase>
+  nameWithType: IEnumerable<TreatmentPhase>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.TreatmentPhase>
+  nameWithType.vb: IEnumerable(Of TreatmentPhase)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.TreatmentPhase)
+  name.vb: IEnumerable(Of TreatmentPhase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.TreatmentPhase
+    name: TreatmentPhase
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.TreatmentPhase.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.TreatmentPhase
+    name: TreatmentPhase
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.TreatmentPhase.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Course.TreatmentSessions*
+  commentId: Overload:VMS.TPS.Common.Model.API.Course.TreatmentSessions
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html#VMS_TPS_Common_Model_API_Course_TreatmentSessions
+  name: TreatmentSessions
+  nameWithType: Course.TreatmentSessions
+  fullName: VMS.TPS.Common.Model.API.Course.TreatmentSessions
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.TreatmentSession}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.TreatmentSession}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TreatmentSession>
+  nameWithType: IEnumerable<TreatmentSession>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.TreatmentSession>
+  nameWithType.vb: IEnumerable(Of TreatmentSession)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.TreatmentSession)
+  name.vb: IEnumerable(Of TreatmentSession)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.TreatmentSession
+    name: TreatmentSession
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.TreatmentSession.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.TreatmentSession
+    name: TreatmentSession
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.TreatmentSession.html
+  - name: )

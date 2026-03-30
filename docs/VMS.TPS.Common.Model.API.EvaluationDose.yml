@@ -1,0 +1,1565 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.API.EvaluationDose
+  commentId: T:VMS.TPS.Common.Model.API.EvaluationDose
+  id: EvaluationDose
+  parent: VMS.TPS.Common.Model.API
+  children:
+  - VMS.TPS.Common.Model.API.EvaluationDose.DoseValueToVoxel(VMS.TPS.Common.Model.Types.DoseValue)
+  - VMS.TPS.Common.Model.API.EvaluationDose.SetVoxels(System.Int32,System.Int32[0:,0:])
+  - VMS.TPS.Common.Model.API.EvaluationDose.WriteXml(System.Xml.XmlWriter)
+  langs:
+  - csharp
+  - vb
+  name: EvaluationDose
+  nameWithType: EvaluationDose
+  fullName: VMS.TPS.Common.Model.API.EvaluationDose
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Represents an evaluation dose that is connected to a plan that has no beams.
+  example: []
+  syntax:
+    content: 'public class EvaluationDose : Dose, IXmlSerializable'
+    content.vb: Public Class EvaluationDose Inherits Dose Implements IXmlSerializable
+  inheritance:
+  - System.Object
+  - VMS.TPS.Common.Model.API.SerializableObject
+  - VMS.TPS.Common.Model.API.ApiDataObject
+  - VMS.TPS.Common.Model.API.Dose
+  implements:
+  - System.Xml.Serialization.IXmlSerializable
+  inheritedMembers:
+  - VMS.TPS.Common.Model.API.Dose.GetDoseProfile(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector,System.Double[])
+  - VMS.TPS.Common.Model.API.Dose.GetDoseToPoint(VMS.TPS.Common.Model.Types.VVector)
+  - VMS.TPS.Common.Model.API.Dose.GetVoxels(System.Int32,System.Int32[0:,0:])
+  - VMS.TPS.Common.Model.API.Dose.VoxelToDoseValue(System.Int32)
+  - VMS.TPS.Common.Model.API.Dose.DoseMax3D
+  - VMS.TPS.Common.Model.API.Dose.DoseMax3DLocation
+  - VMS.TPS.Common.Model.API.Dose.Isodoses
+  - VMS.TPS.Common.Model.API.Dose.Origin
+  - VMS.TPS.Common.Model.API.Dose.Series
+  - VMS.TPS.Common.Model.API.Dose.SeriesUID
+  - VMS.TPS.Common.Model.API.Dose.UID
+  - VMS.TPS.Common.Model.API.Dose.XDirection
+  - VMS.TPS.Common.Model.API.Dose.XRes
+  - VMS.TPS.Common.Model.API.Dose.XSize
+  - VMS.TPS.Common.Model.API.Dose.YDirection
+  - VMS.TPS.Common.Model.API.Dose.YRes
+  - VMS.TPS.Common.Model.API.Dose.YSize
+  - VMS.TPS.Common.Model.API.Dose.ZDirection
+  - VMS.TPS.Common.Model.API.Dose.ZRes
+  - VMS.TPS.Common.Model.API.Dose.ZSize
+  - VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  - VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  - VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  - VMS.TPS.Common.Model.API.ApiDataObject.Id
+  - VMS.TPS.Common.Model.API.ApiDataObject.Name
+  - VMS.TPS.Common.Model.API.ApiDataObject.Comment
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  - VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  - VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  - VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  - VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.API.EvaluationDose.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.EvaluationDose.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.EvaluationDose
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  nameWithType: EvaluationDose.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.EvaluationDose.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Converts an object into its XML representation.
+
+    For more information on how to serialize an object into an XML document, see <xref href="System.Xml.Serialization.XmlSerializer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override void WriteXml(XmlWriter writer)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The System.Xml.XmlWriter stream, to which the object is serialized.
+    content.vb: Public Overrides Sub WriteXml(writer As XmlWriter)
+  overridden: VMS.TPS.Common.Model.API.Dose.WriteXml(System.Xml.XmlWriter)
+  overload: VMS.TPS.Common.Model.API.EvaluationDose.WriteXml*
+- uid: VMS.TPS.Common.Model.API.EvaluationDose.DoseValueToVoxel(VMS.TPS.Common.Model.Types.DoseValue)
+  commentId: M:VMS.TPS.Common.Model.API.EvaluationDose.DoseValueToVoxel(VMS.TPS.Common.Model.Types.DoseValue)
+  id: DoseValueToVoxel(VMS.TPS.Common.Model.Types.DoseValue)
+  parent: VMS.TPS.Common.Model.API.EvaluationDose
+  langs:
+  - csharp
+  - vb
+  name: DoseValueToVoxel(DoseValue)
+  nameWithType: EvaluationDose.DoseValueToVoxel(DoseValue)
+  fullName: VMS.TPS.Common.Model.API.EvaluationDose.DoseValueToVoxel(VMS.TPS.Common.Model.Types.DoseValue)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Converts the given dose value to the corresponding
+
+    raw voxel value.
+  example: []
+  syntax:
+    content: public int DoseValueToVoxel(DoseValue doseValue)
+    parameters:
+    - id: doseValue
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Dose value.
+    return:
+      type: System.Int32
+      description: Value converted to voxel value.
+    content.vb: Public Function DoseValueToVoxel(doseValue As DoseValue) As Integer
+  overload: VMS.TPS.Common.Model.API.EvaluationDose.DoseValueToVoxel*
+- uid: VMS.TPS.Common.Model.API.EvaluationDose.SetVoxels(System.Int32,System.Int32[0:,0:])
+  commentId: M:VMS.TPS.Common.Model.API.EvaluationDose.SetVoxels(System.Int32,System.Int32[0:,0:])
+  id: SetVoxels(System.Int32,System.Int32[0:,0:])
+  parent: VMS.TPS.Common.Model.API.EvaluationDose
+  langs:
+  - csharp
+  - vb
+  name: SetVoxels(int, int[,])
+  nameWithType: EvaluationDose.SetVoxels(int, int[,])
+  fullName: VMS.TPS.Common.Model.API.EvaluationDose.SetVoxels(int, int[,])
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] For an evaluation dose (the dose of a plan that has no beams), sets the voxels of the given dose plane.
+
+    Create the evaluation dose first using <xref href="VMS.TPS.Common.Model.API.ExternalPlanSetup.CreateEvaluationDose?text=CreateEvaluationDose" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void SetVoxels(int planeIndex, int[,] values)
+    parameters:
+    - id: planeIndex
+      type: System.Int32
+      description: Zero-based index of the plane.
+    - id: values
+      type: System.Int32[,]
+      description: The plane of voxel values. The size of the array must conform to the X-size and Y-size of the dose.
+    content.vb: Public Sub SetVoxels(planeIndex As Integer, values As Integer(,))
+  overload: VMS.TPS.Common.Model.API.EvaluationDose.SetVoxels*
+  nameWithType.vb: EvaluationDose.SetVoxels(Integer, Integer(,))
+  fullName.vb: VMS.TPS.Common.Model.API.EvaluationDose.SetVoxels(Integer, Integer(,))
+  name.vb: SetVoxels(Integer, Integer(,))
+references:
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: VMS.TPS.Common.Model.API.SerializableObject
+  commentId: T:VMS.TPS.Common.Model.API.SerializableObject
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: VMS.TPS.Common.Model.API.SerializableObject
+- uid: VMS.TPS.Common.Model.API.ApiDataObject
+  commentId: T:VMS.TPS.Common.Model.API.ApiDataObject
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html
+  name: ApiDataObject
+  nameWithType: ApiDataObject
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject
+- uid: VMS.TPS.Common.Model.API.Dose
+  commentId: T:VMS.TPS.Common.Model.API.Dose
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html
+  name: Dose
+  nameWithType: Dose
+  fullName: VMS.TPS.Common.Model.API.Dose
+- uid: System.Xml.Serialization.IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  nameWithType: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+- uid: VMS.TPS.Common.Model.API.Dose.GetDoseProfile(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector,System.Double[])
+  commentId: M:VMS.TPS.Common.Model.API.Dose.GetDoseProfile(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector,System.Double[])
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_GetDoseProfile_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_System_Double___
+  name: GetDoseProfile(VVector, VVector, double[])
+  nameWithType: Dose.GetDoseProfile(VVector, VVector, double[])
+  fullName: VMS.TPS.Common.Model.API.Dose.GetDoseProfile(VMS.TPS.Common.Model.Types.VVector, VMS.TPS.Common.Model.Types.VVector, double[])
+  nameWithType.vb: Dose.GetDoseProfile(VVector, VVector, Double())
+  fullName.vb: VMS.TPS.Common.Model.API.Dose.GetDoseProfile(VMS.TPS.Common.Model.Types.VVector, VMS.TPS.Common.Model.Types.VVector, Double())
+  name.vb: GetDoseProfile(VVector, VVector, Double())
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Dose.GetDoseProfile(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector,System.Double[])
+    name: GetDoseProfile
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_GetDoseProfile_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_System_Double___
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Dose.GetDoseProfile(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector,System.Double[])
+    name: GetDoseProfile
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_GetDoseProfile_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_System_Double___
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Dose.GetDoseToPoint(VMS.TPS.Common.Model.Types.VVector)
+  commentId: M:VMS.TPS.Common.Model.API.Dose.GetDoseToPoint(VMS.TPS.Common.Model.Types.VVector)
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_GetDoseToPoint_VMS_TPS_Common_Model_Types_VVector_
+  name: GetDoseToPoint(VVector)
+  nameWithType: Dose.GetDoseToPoint(VVector)
+  fullName: VMS.TPS.Common.Model.API.Dose.GetDoseToPoint(VMS.TPS.Common.Model.Types.VVector)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Dose.GetDoseToPoint(VMS.TPS.Common.Model.Types.VVector)
+    name: GetDoseToPoint
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_GetDoseToPoint_VMS_TPS_Common_Model_Types_VVector_
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Dose.GetDoseToPoint(VMS.TPS.Common.Model.Types.VVector)
+    name: GetDoseToPoint
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_GetDoseToPoint_VMS_TPS_Common_Model_Types_VVector_
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Dose.GetVoxels(System.Int32,System.Int32[0:,0:])
+  commentId: M:VMS.TPS.Common.Model.API.Dose.GetVoxels(System.Int32,System.Int32[0:,0:])
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_GetVoxels_System_Int32_System_Int32_0
+  name: GetVoxels(int, int[,])
+  nameWithType: Dose.GetVoxels(int, int[,])
+  fullName: VMS.TPS.Common.Model.API.Dose.GetVoxels(int, int[,])
+  nameWithType.vb: Dose.GetVoxels(Integer, Integer(,))
+  fullName.vb: VMS.TPS.Common.Model.API.Dose.GetVoxels(Integer, Integer(,))
+  name.vb: GetVoxels(Integer, Integer(,))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Dose.GetVoxels(System.Int32,System.Int32[0:,0:])
+    name: GetVoxels
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_GetVoxels_System_Int32_System_Int32_0
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ','
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Dose.GetVoxels(System.Int32,System.Int32[0:,0:])
+    name: GetVoxels
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_GetVoxels_System_Int32_System_Int32_0
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: ','
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Dose.VoxelToDoseValue(System.Int32)
+  commentId: M:VMS.TPS.Common.Model.API.Dose.VoxelToDoseValue(System.Int32)
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_VoxelToDoseValue_System_Int32_
+  name: VoxelToDoseValue(int)
+  nameWithType: Dose.VoxelToDoseValue(int)
+  fullName: VMS.TPS.Common.Model.API.Dose.VoxelToDoseValue(int)
+  nameWithType.vb: Dose.VoxelToDoseValue(Integer)
+  fullName.vb: VMS.TPS.Common.Model.API.Dose.VoxelToDoseValue(Integer)
+  name.vb: VoxelToDoseValue(Integer)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Dose.VoxelToDoseValue(System.Int32)
+    name: VoxelToDoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_VoxelToDoseValue_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Dose.VoxelToDoseValue(System.Int32)
+    name: VoxelToDoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_VoxelToDoseValue_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Dose.DoseMax3D
+  commentId: P:VMS.TPS.Common.Model.API.Dose.DoseMax3D
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_DoseMax3D
+  name: DoseMax3D
+  nameWithType: Dose.DoseMax3D
+  fullName: VMS.TPS.Common.Model.API.Dose.DoseMax3D
+- uid: VMS.TPS.Common.Model.API.Dose.DoseMax3DLocation
+  commentId: P:VMS.TPS.Common.Model.API.Dose.DoseMax3DLocation
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_DoseMax3DLocation
+  name: DoseMax3DLocation
+  nameWithType: Dose.DoseMax3DLocation
+  fullName: VMS.TPS.Common.Model.API.Dose.DoseMax3DLocation
+- uid: VMS.TPS.Common.Model.API.Dose.Isodoses
+  commentId: P:VMS.TPS.Common.Model.API.Dose.Isodoses
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_Isodoses
+  name: Isodoses
+  nameWithType: Dose.Isodoses
+  fullName: VMS.TPS.Common.Model.API.Dose.Isodoses
+- uid: VMS.TPS.Common.Model.API.Dose.Origin
+  commentId: P:VMS.TPS.Common.Model.API.Dose.Origin
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_Origin
+  name: Origin
+  nameWithType: Dose.Origin
+  fullName: VMS.TPS.Common.Model.API.Dose.Origin
+- uid: VMS.TPS.Common.Model.API.Dose.Series
+  commentId: P:VMS.TPS.Common.Model.API.Dose.Series
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_Series
+  name: Series
+  nameWithType: Dose.Series
+  fullName: VMS.TPS.Common.Model.API.Dose.Series
+- uid: VMS.TPS.Common.Model.API.Dose.SeriesUID
+  commentId: P:VMS.TPS.Common.Model.API.Dose.SeriesUID
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_SeriesUID
+  name: SeriesUID
+  nameWithType: Dose.SeriesUID
+  fullName: VMS.TPS.Common.Model.API.Dose.SeriesUID
+- uid: VMS.TPS.Common.Model.API.Dose.UID
+  commentId: P:VMS.TPS.Common.Model.API.Dose.UID
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_UID
+  name: UID
+  nameWithType: Dose.UID
+  fullName: VMS.TPS.Common.Model.API.Dose.UID
+- uid: VMS.TPS.Common.Model.API.Dose.XDirection
+  commentId: P:VMS.TPS.Common.Model.API.Dose.XDirection
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_XDirection
+  name: XDirection
+  nameWithType: Dose.XDirection
+  fullName: VMS.TPS.Common.Model.API.Dose.XDirection
+- uid: VMS.TPS.Common.Model.API.Dose.XRes
+  commentId: P:VMS.TPS.Common.Model.API.Dose.XRes
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_XRes
+  name: XRes
+  nameWithType: Dose.XRes
+  fullName: VMS.TPS.Common.Model.API.Dose.XRes
+- uid: VMS.TPS.Common.Model.API.Dose.XSize
+  commentId: P:VMS.TPS.Common.Model.API.Dose.XSize
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_XSize
+  name: XSize
+  nameWithType: Dose.XSize
+  fullName: VMS.TPS.Common.Model.API.Dose.XSize
+- uid: VMS.TPS.Common.Model.API.Dose.YDirection
+  commentId: P:VMS.TPS.Common.Model.API.Dose.YDirection
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_YDirection
+  name: YDirection
+  nameWithType: Dose.YDirection
+  fullName: VMS.TPS.Common.Model.API.Dose.YDirection
+- uid: VMS.TPS.Common.Model.API.Dose.YRes
+  commentId: P:VMS.TPS.Common.Model.API.Dose.YRes
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_YRes
+  name: YRes
+  nameWithType: Dose.YRes
+  fullName: VMS.TPS.Common.Model.API.Dose.YRes
+- uid: VMS.TPS.Common.Model.API.Dose.YSize
+  commentId: P:VMS.TPS.Common.Model.API.Dose.YSize
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_YSize
+  name: YSize
+  nameWithType: Dose.YSize
+  fullName: VMS.TPS.Common.Model.API.Dose.YSize
+- uid: VMS.TPS.Common.Model.API.Dose.ZDirection
+  commentId: P:VMS.TPS.Common.Model.API.Dose.ZDirection
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_ZDirection
+  name: ZDirection
+  nameWithType: Dose.ZDirection
+  fullName: VMS.TPS.Common.Model.API.Dose.ZDirection
+- uid: VMS.TPS.Common.Model.API.Dose.ZRes
+  commentId: P:VMS.TPS.Common.Model.API.Dose.ZRes
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_ZRes
+  name: ZRes
+  nameWithType: Dose.ZRes
+  fullName: VMS.TPS.Common.Model.API.Dose.ZRes
+- uid: VMS.TPS.Common.Model.API.Dose.ZSize
+  commentId: P:VMS.TPS.Common.Model.API.Dose.ZSize
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_ZSize
+  name: ZSize
+  nameWithType: Dose.ZSize
+  fullName: VMS.TPS.Common.Model.API.Dose.ZSize
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  name: ToString()
+  nameWithType: ApiDataObject.ToString()
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.ToString()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+    name: ToString
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+    name: ToString
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: ApiDataObject.Equals(object)
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.Equals(object)
+  nameWithType.vb: ApiDataObject.Equals(Object)
+  fullName.vb: VMS.TPS.Common.Model.API.ApiDataObject.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  name: GetHashCode()
+  nameWithType: ApiDataObject.GetHashCode()
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.Id
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.Id
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Id
+  name: Id
+  nameWithType: ApiDataObject.Id
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.Id
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.Name
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.Name
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Name
+  name: Name
+  nameWithType: ApiDataObject.Name
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.Name
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.Comment
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.Comment
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Comment
+  name: Comment
+  nameWithType: ApiDataObject.Comment
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.Comment
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName
+  name: HistoryUserName
+  nameWithType: ApiDataObject.HistoryUserName
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName
+  name: HistoryUserDisplayName
+  nameWithType: ApiDataObject.HistoryUserDisplayName
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime
+  name: HistoryDateTime
+  nameWithType: ApiDataObject.HistoryDateTime
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+- uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  name: GetSchema()
+  nameWithType: SerializableObject.GetSchema()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.GetSchema()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  name: ReadXml(XmlReader)
+  nameWithType: SerializableObject.ReadXml(XmlReader)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  name: WriteXml(XmlWriter, string, object)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, object)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, object)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, Object)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, Object)
+  name.vb: WriteXml(XmlWriter, String, Object)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  name: WriteXml(XmlWriter, string, string)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, string)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, String)
+  name.vb: WriteXml(XmlWriter, String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  name: StartSerialization(string, string)
+  nameWithType: SerializableObject.StartSerialization(string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(string, string)
+  nameWithType.vb: SerializableObject.StartSerialization(String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(String, String)
+  name.vb: StartSerialization(String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  name: EndSerialization()
+  nameWithType: SerializableObject.EndSerialization()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  name: ClearSerializationHistory()
+  nameWithType: SerializableObject.ClearSerializationHistory()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: System.Xml.Serialization.XmlSerializer
+  commentId: T:System.Xml.Serialization.XmlSerializer
+  isExternal: true
+- uid: VMS.TPS.Common.Model.API.Dose.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.Dose.WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml(XmlWriter)
+  nameWithType: Dose.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.Dose.WriteXml(System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Dose.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Dose.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.EvaluationDose.WriteXml*
+  commentId: Overload:VMS.TPS.Common.Model.API.EvaluationDose.WriteXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.EvaluationDose.html#VMS_TPS_Common_Model_API_EvaluationDose_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml
+  nameWithType: EvaluationDose.WriteXml
+  fullName: VMS.TPS.Common.Model.API.EvaluationDose.WriteXml
+- uid: System.Xml.XmlWriter
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: VMS.TPS.Common.Model.API.EvaluationDose.DoseValueToVoxel*
+  commentId: Overload:VMS.TPS.Common.Model.API.EvaluationDose.DoseValueToVoxel
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.EvaluationDose.html#VMS_TPS_Common_Model_API_EvaluationDose_DoseValueToVoxel_VMS_TPS_Common_Model_Types_DoseValue_
+  name: DoseValueToVoxel
+  nameWithType: EvaluationDose.DoseValueToVoxel
+  fullName: VMS.TPS.Common.Model.API.EvaluationDose.DoseValueToVoxel
+- uid: VMS.TPS.Common.Model.Types.DoseValue
+  commentId: T:VMS.TPS.Common.Model.Types.DoseValue
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html
+  name: DoseValue
+  nameWithType: DoseValue
+  fullName: VMS.TPS.Common.Model.Types.DoseValue
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.API.ExternalPlanSetup.CreateEvaluationDose
+  commentId: M:VMS.TPS.Common.Model.API.ExternalPlanSetup.CreateEvaluationDose
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ExternalPlanSetup.html#VMS_TPS_Common_Model_API_ExternalPlanSetup_CreateEvaluationDose
+  name: CreateEvaluationDose()
+  nameWithType: ExternalPlanSetup.CreateEvaluationDose()
+  fullName: VMS.TPS.Common.Model.API.ExternalPlanSetup.CreateEvaluationDose()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ExternalPlanSetup.CreateEvaluationDose
+    name: CreateEvaluationDose
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ExternalPlanSetup.html#VMS_TPS_Common_Model_API_ExternalPlanSetup_CreateEvaluationDose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ExternalPlanSetup.CreateEvaluationDose
+    name: CreateEvaluationDose
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ExternalPlanSetup.html#VMS_TPS_Common_Model_API_ExternalPlanSetup_CreateEvaluationDose
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.EvaluationDose.SetVoxels*
+  commentId: Overload:VMS.TPS.Common.Model.API.EvaluationDose.SetVoxels
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.EvaluationDose.html#VMS_TPS_Common_Model_API_EvaluationDose_SetVoxels_System_Int32_System_Int32_0
+  name: SetVoxels
+  nameWithType: EvaluationDose.SetVoxels
+  fullName: VMS.TPS.Common.Model.API.EvaluationDose.SetVoxels
+- uid: System.Int32[,]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[,]
+  nameWithType: int[,]
+  fullName: int[,]
+  nameWithType.vb: Integer(,)
+  fullName.vb: Integer(,)
+  name.vb: Integer(,)
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: ','
+  - name: )

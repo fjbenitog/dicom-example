@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ScriptContext | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ScriptContext | Example ">
+      
+      <meta name="description" content="Contains the runtime context information of the active application for the script.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API.ScriptContext">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_API_ScriptContext" data-uid="VMS.TPS.Common.Model.API.ScriptContext" class="text-break">
+Class ScriptContext  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Contains the runtime context information of the active application for the script.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ScriptContext</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ScriptContext</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext__ctor_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.#ctor*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext__ctor_System_Object_System_Object_System_Object_System_String_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.#ctor(System.Object,System.Object,System.Object,System.String)">
+  ScriptContext(object, object, object, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Provides scripts an access to the current data context.
+A context instance is given as a parameter in the Execute function of the script.
+The script itself does not instantiate the context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptContext(object context, object user, object dvhEstimation, string appName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The internal data context.</p>
+</dd>
+    <dt><code>user</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The internal user object.</p>
+</dd>
+    <dt><code>dvhEstimation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The internal dvh estimation model library object.</p>
+</dd>
+    <dt><code>appName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The application name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext__ctor_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.#ctor*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext__ctor_VMS_TPS_Common_Model_API_Application_VMS_TPS_Common_Model_API_PlanSetup_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.#ctor(VMS.TPS.Common.Model.API.Application,VMS.TPS.Common.Model.API.PlanSetup)">
+  ScriptContext(Application, PlanSetup)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Provides scripts an access to the current data context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScriptContext(Application app, PlanSetup planSetup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>app</code> <a class="xref" href="VMS.TPS.Common.Model.API.Application.html">Application</a></dt>
+    <dd><p>Application that requested data context</p>
+</dd>
+    <dt><code>planSetup</code> <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd><p>Active Plan Setup</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_ApplicationName_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.ApplicationName*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_ApplicationName" data-uid="VMS.TPS.Common.Model.API.ScriptContext.ApplicationName">
+  ApplicationName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the active application.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ApplicationName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_BrachyPlanSetup_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.BrachyPlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_BrachyPlanSetup" data-uid="VMS.TPS.Common.Model.API.ScriptContext.BrachyPlanSetup">
+  BrachyPlanSetup
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The active brachytherapy plan setup. The value is null if the active object is not a brachytherapy plan setup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BrachyPlanSetup BrachyPlanSetup { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.BrachyPlanSetup.html">BrachyPlanSetup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_BrachyPlansInScope_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.BrachyPlansInScope*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_BrachyPlansInScope" data-uid="VMS.TPS.Common.Model.API.ScriptContext.BrachyPlansInScope">
+  BrachyPlansInScope
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a list of all brachytherapy plans in the Scope window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;BrachyPlanSetup&gt; BrachyPlansInScope { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.BrachyPlanSetup.html">BrachyPlanSetup</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_Calculation_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.Calculation*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_Calculation" data-uid="VMS.TPS.Common.Model.API.ScriptContext.Calculation">
+  Calculation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculation related functions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Calculation Calculation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Calculation.html">Calculation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_Course_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.Course*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_Course" data-uid="VMS.TPS.Common.Model.API.ScriptContext.Course">
+  Course
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The course. The value may be null if the context has no course.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Course Course { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Course.html">Course</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_CurrentUser_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.CurrentUser*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_CurrentUser" data-uid="VMS.TPS.Common.Model.API.ScriptContext.CurrentUser">
+  CurrentUser
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The current user of the application.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public User CurrentUser { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.User.html">User</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_Equipment_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.Equipment*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_Equipment" data-uid="VMS.TPS.Common.Model.API.ScriptContext.Equipment">
+  Equipment
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Provides access to clinical devices and accessories.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Equipment Equipment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Equipment.html">Equipment</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_ExternalPlanSetup_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.ExternalPlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_ExternalPlanSetup" data-uid="VMS.TPS.Common.Model.API.ScriptContext.ExternalPlanSetup">
+  ExternalPlanSetup
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The active external beam plan setup. The value is null if the active object is not an external beam plan setup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExternalPlanSetup ExternalPlanSetup { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.ExternalPlanSetup.html">ExternalPlanSetup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_ExternalPlansInScope_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.ExternalPlansInScope*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_ExternalPlansInScope" data-uid="VMS.TPS.Common.Model.API.ScriptContext.ExternalPlansInScope">
+  ExternalPlansInScope
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a list of all external beam plans in the Scope window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ExternalPlanSetup&gt; ExternalPlansInScope { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.ExternalPlanSetup.html">ExternalPlanSetup</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_Image_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.Image*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_Image" data-uid="VMS.TPS.Common.Model.API.ScriptContext.Image">
+  Image
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The 3D image. The value may be null if the context has no image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image Image { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_IonPlanSetup_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.IonPlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_IonPlanSetup" data-uid="VMS.TPS.Common.Model.API.ScriptContext.IonPlanSetup">
+  IonPlanSetup
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The active proton plan setup. The value is null if the active object is not a proton plan setup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IonPlanSetup IonPlanSetup { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.IonPlanSetup.html">IonPlanSetup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_IonPlansInScope_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.IonPlansInScope*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_IonPlansInScope" data-uid="VMS.TPS.Common.Model.API.ScriptContext.IonPlansInScope">
+  IonPlansInScope
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a list of all proton plans in the Scope window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IonPlanSetup&gt; IonPlansInScope { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.IonPlanSetup.html">IonPlanSetup</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_Patient_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.Patient*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_Patient" data-uid="VMS.TPS.Common.Model.API.ScriptContext.Patient">
+  Patient
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The patient. The value may be null if the context has no patient.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Patient Patient { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Patient.html">Patient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_PlanSetup_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.PlanSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_PlanSetup" data-uid="VMS.TPS.Common.Model.API.ScriptContext.PlanSetup">
+  PlanSetup
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The plan setup. The value may be null if the context has no plan setup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanSetup PlanSetup { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_PlanSum_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.PlanSum*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_PlanSum" data-uid="VMS.TPS.Common.Model.API.ScriptContext.PlanSum">
+  PlanSum
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the active plan sum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanSum PlanSum { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanSum.html">PlanSum</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_PlanSumsInScope_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.PlanSumsInScope*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_PlanSumsInScope" data-uid="VMS.TPS.Common.Model.API.ScriptContext.PlanSumsInScope">
+  PlanSumsInScope
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a list of all plan sums in the Scope window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;PlanSum&gt; PlanSumsInScope { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.PlanSum.html">PlanSum</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_PlansInScope_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.PlansInScope*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_PlansInScope" data-uid="VMS.TPS.Common.Model.API.ScriptContext.PlansInScope">
+  PlansInScope
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves a list of all plans in the Scope window.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;PlanSetup&gt; PlansInScope { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_StructureCodes_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.StructureCodes*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_StructureCodes" data-uid="VMS.TPS.Common.Model.API.ScriptContext.StructureCodes">
+  StructureCodes
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Provides access to the structure code dictionaries with the active structure codes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActiveStructureCodeDictionaries StructureCodes { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.ActiveStructureCodeDictionaries.html">ActiveStructureCodeDictionaries</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_StructureSet_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.StructureSet*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_StructureSet" data-uid="VMS.TPS.Common.Model.API.ScriptContext.StructureSet">
+  StructureSet
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The structure set. The value may be null if the context has no structure set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StructureSet StructureSet { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.StructureSet.html">StructureSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ScriptContext_VersionInfo_" data-uid="VMS.TPS.Common.Model.API.ScriptContext.VersionInfo*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ScriptContext_VersionInfo" data-uid="VMS.TPS.Common.Model.API.ScriptContext.VersionInfo">
+  VersionInfo
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The version number of Eclipse.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string VersionInfo { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

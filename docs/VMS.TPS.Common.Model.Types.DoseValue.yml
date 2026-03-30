@@ -1,0 +1,2086 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.DoseValue
+  commentId: T:VMS.TPS.Common.Model.Types.DoseValue
+  id: DoseValue
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.DoseValue.#ctor(System.Double,System.String)
+  - VMS.TPS.Common.Model.Types.DoseValue.#ctor(System.Double,VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  - VMS.TPS.Common.Model.Types.DoseValue.CompareTo(VMS.TPS.Common.Model.Types.DoseValue)
+  - VMS.TPS.Common.Model.Types.DoseValue.Decimals
+  - VMS.TPS.Common.Model.Types.DoseValue.Dose
+  - VMS.TPS.Common.Model.Types.DoseValue.Equals(System.Object)
+  - VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue)
+  - VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  - VMS.TPS.Common.Model.Types.DoseValue.GetHashCode
+  - VMS.TPS.Common.Model.Types.DoseValue.GetSchema
+  - VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseUnit(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  - VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseValue
+  - VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseUnit(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  - VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseValue
+  - VMS.TPS.Common.Model.Types.DoseValue.IsUndefined
+  - VMS.TPS.Common.Model.Types.DoseValue.ReadXml(System.Xml.XmlReader)
+  - VMS.TPS.Common.Model.Types.DoseValue.ToString
+  - VMS.TPS.Common.Model.Types.DoseValue.Undefined
+  - VMS.TPS.Common.Model.Types.DoseValue.UndefinedDose
+  - VMS.TPS.Common.Model.Types.DoseValue.Unit
+  - VMS.TPS.Common.Model.Types.DoseValue.UnitAsString
+  - VMS.TPS.Common.Model.Types.DoseValue.ValueAsString
+  - VMS.TPS.Common.Model.Types.DoseValue.WriteXml(System.Xml.XmlWriter)
+  - VMS.TPS.Common.Model.Types.DoseValue.op_Addition(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  - VMS.TPS.Common.Model.Types.DoseValue.op_Division(VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  - VMS.TPS.Common.Model.Types.DoseValue.op_Division(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  - VMS.TPS.Common.Model.Types.DoseValue.op_Equality(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  - VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThan(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  - VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThanOrEqual(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  - VMS.TPS.Common.Model.Types.DoseValue.op_Inequality(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  - VMS.TPS.Common.Model.Types.DoseValue.op_LessThan(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  - VMS.TPS.Common.Model.Types.DoseValue.op_LessThanOrEqual(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  - VMS.TPS.Common.Model.Types.DoseValue.op_Multiply(System.Double,VMS.TPS.Common.Model.Types.DoseValue)
+  - VMS.TPS.Common.Model.Types.DoseValue.op_Multiply(VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  - VMS.TPS.Common.Model.Types.DoseValue.op_Subtraction(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  langs:
+  - csharp
+  - vb
+  name: DoseValue
+  nameWithType: DoseValue
+  fullName: VMS.TPS.Common.Model.Types.DoseValue
+  type: Struct
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Represents a dose value. DoseValue semantics follows the semantics of System.Double, with DoseValue.Undefined corresponding to Double.NaN.
+  example: []
+  syntax:
+    content: 'public struct DoseValue : IXmlSerializable, IComparable<DoseValue>, IEquatable<DoseValue>'
+    content.vb: Public Structure DoseValue Implements IXmlSerializable, IComparable(Of DoseValue), IEquatable(Of DoseValue)
+  implements:
+  - System.Xml.Serialization.IXmlSerializable
+  - System.IComparable{VMS.TPS.Common.Model.Types.DoseValue}
+  - System.IEquatable{VMS.TPS.Common.Model.Types.DoseValue}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.Types.DoseValue.Undefined
+  commentId: F:VMS.TPS.Common.Model.Types.DoseValue.Undefined
+  id: Undefined
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: Undefined
+  nameWithType: DoseValue.Undefined
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.Undefined
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    A dose value, for which the value is Double.NaN and  
+
+    the unit is unknown.
+  example: []
+  syntax:
+    content: public static readonly DoseValue Undefined
+    return:
+      type: VMS.TPS.Common.Model.Types.DoseValue
+    content.vb: Public Shared ReadOnly Undefined As DoseValue
+- uid: VMS.TPS.Common.Model.Types.DoseValue.#ctor(System.Double,System.String)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.#ctor(System.Double,System.String)
+  id: '#ctor(System.Double,System.String)'
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: DoseValue(double, string)
+  nameWithType: DoseValue.DoseValue(double, string)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.DoseValue(double, string)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Constructs a DoseValue.
+  example: []
+  syntax:
+    content: public DoseValue(double value, string unitName)
+    parameters:
+    - id: value
+      type: System.Double
+      description: Value for this instance.
+    - id: unitName
+      type: System.String
+      description: String that corresponds to one of the enumeration values of DoseUnit.
+    content.vb: Public Sub New(value As Double, unitName As String)
+  overload: VMS.TPS.Common.Model.Types.DoseValue.#ctor*
+  nameWithType.vb: DoseValue.New(Double, String)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.New(Double, String)
+  name.vb: New(Double, String)
+- uid: VMS.TPS.Common.Model.Types.DoseValue.#ctor(System.Double,VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.#ctor(System.Double,VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  id: '#ctor(System.Double,VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)'
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: DoseValue(double, DoseUnit)
+  nameWithType: DoseValue.DoseValue(double, DoseValue.DoseUnit)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.DoseValue(double, VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Constructs a DoseValue.
+  example: []
+  syntax:
+    content: public DoseValue(double value, DoseValue.DoseUnit unit)
+    parameters:
+    - id: value
+      type: System.Double
+      description: Value for this instance
+    - id: unit
+      type: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+      description: Unit of this instance.
+    content.vb: Public Sub New(value As Double, unit As DoseValue.DoseUnit)
+  overload: VMS.TPS.Common.Model.Types.DoseValue.#ctor*
+  nameWithType.vb: DoseValue.New(Double, DoseValue.DoseUnit)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.New(Double, VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  name.vb: New(Double, DoseUnit)
+- uid: VMS.TPS.Common.Model.Types.DoseValue.Equals(System.Object)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: DoseValue.Equals(object)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.Equals(object)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Equality comparison of DoseValue and Object.
+
+    This method considers two instances of DoseValue.Undefined to be equal to each other.
+
+    Otherwise, a dose value is equal to an object only if the object is a DoseValue and the units and the values are equal.
+
+    For epsilon-equal comparison, use <xref href="VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue%2cSystem.Double)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: Object to compare this to.
+    return:
+      type: System.Boolean
+      description: True if the Object is also DoseValue and equal to this (value and unit), false otherwise.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: VMS.TPS.Common.Model.Types.DoseValue.Equals*
+  nameWithType.vb: DoseValue.Equals(Object)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.Equals(Object)
+  name.vb: Equals(Object)
+- uid: VMS.TPS.Common.Model.Types.DoseValue.GetHashCode
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.GetHashCode
+  id: GetHashCode
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: DoseValue.GetHashCode()
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.GetHashCode()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: A hash code for the current object.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: A hash code for the current object.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: VMS.TPS.Common.Model.Types.DoseValue.GetHashCode*
+- uid: VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue)
+  id: Equals(VMS.TPS.Common.Model.Types.DoseValue)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: Equals(DoseValue)
+  nameWithType: DoseValue.Equals(DoseValue)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Equality comparison of dose values.
+
+    This method considers two instances of DoseValue.Undefined to be equal to each other.
+
+    Otherwise, two dose values are equal only if the units and the values are equal.
+
+    For epsilon-equal comparison, use <xref href="VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue%2cSystem.Double)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public bool Equals(DoseValue other)
+    parameters:
+    - id: other
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Dose value to compare this to.
+    return:
+      type: System.Boolean
+      description: True if the units and values are equal, false otherwise.
+    content.vb: Public Function Equals(other As DoseValue) As Boolean
+  overload: VMS.TPS.Common.Model.Types.DoseValue.Equals*
+  implements:
+  - System.IEquatable{VMS.TPS.Common.Model.Types.DoseValue}.Equals(VMS.TPS.Common.Model.Types.DoseValue)
+- uid: VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  id: Equals(VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: Equals(DoseValue, double)
+  nameWithType: DoseValue.Equals(DoseValue, double)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue, double)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Epsilon-equality comparison of dose values.
+
+    This method considers two instances of DoseValue.Undefined to be equal to each other.
+
+    Otherwise, two dose values are equal only if the units are equal and the values are within epsilon.
+  example: []
+  syntax:
+    content: public bool Equals(DoseValue other, double epsilon)
+    parameters:
+    - id: other
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Dose value to compare this to.
+    - id: epsilon
+      type: System.Double
+      description: Epsilon to use for the dose value comparison.
+    return:
+      type: System.Boolean
+      description: True if the units are equal and values are within epsilon, false otherwise.
+    content.vb: Public Function Equals(other As DoseValue, epsilon As Double) As Boolean
+  overload: VMS.TPS.Common.Model.Types.DoseValue.Equals*
+  nameWithType.vb: DoseValue.Equals(DoseValue, Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue, Double)
+  name.vb: Equals(DoseValue, Double)
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_Equality(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.op_Equality(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  id: op_Equality(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: operator ==(DoseValue, DoseValue)
+  nameWithType: DoseValue.operator ==(DoseValue, DoseValue)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator ==(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Equality operator for dose values. 
+
+    This operator considers two instances of DoseValue.Undefined to be inequal.
+
+    For epsilon-equal comparison, use <xref href="VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue%2cSystem.Double)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static bool operator ==(DoseValue dv1, DoseValue dv2)
+    parameters:
+    - id: dv1
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: First operand.
+    - id: dv2
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Second operand.
+    return:
+      type: System.Boolean
+      description: True if the units and values are equal, false otherwise.
+    content.vb: Public Shared Operator =(dv1 As DoseValue, dv2 As DoseValue) As Boolean
+  overload: VMS.TPS.Common.Model.Types.DoseValue.op_Equality*
+  nameWithType.vb: DoseValue.=(DoseValue, DoseValue)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.=(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  name.vb: =(DoseValue, DoseValue)
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_Inequality(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.op_Inequality(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  id: op_Inequality(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: operator !=(DoseValue, DoseValue)
+  nameWithType: DoseValue.operator !=(DoseValue, DoseValue)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator !=(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Inequality operator for dose values.
+
+    This operator considers two instances of DoseValue.Undefined to be inequal.
+
+    For epsilon-equal comparison, use <xref href="VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue%2cSystem.Double)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static bool operator !=(DoseValue dv1, DoseValue dv2)
+    parameters:
+    - id: dv1
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: First operand.
+    - id: dv2
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Second operand.
+    return:
+      type: System.Boolean
+      description: True if the units, values, or both of them are inequal, false otherwise.
+    content.vb: Public Shared Operator <>(dv1 As DoseValue, dv2 As DoseValue) As Boolean
+  overload: VMS.TPS.Common.Model.Types.DoseValue.op_Inequality*
+  nameWithType.vb: DoseValue.<>(DoseValue, DoseValue)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.<>(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  name.vb: <>(DoseValue, DoseValue)
+- uid: VMS.TPS.Common.Model.Types.DoseValue.CompareTo(VMS.TPS.Common.Model.Types.DoseValue)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.CompareTo(VMS.TPS.Common.Model.Types.DoseValue)
+  id: CompareTo(VMS.TPS.Common.Model.Types.DoseValue)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(DoseValue)
+  nameWithType: DoseValue.CompareTo(DoseValue)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.CompareTo(VMS.TPS.Common.Model.Types.DoseValue)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Comparison of dose values. DoseValue.Undefined preceeds other values. Otherwise, different units cause an exception to be thrown.
+
+    The values are compared using Double.CompareTo(Double).
+  example: []
+  syntax:
+    content: public int CompareTo(DoseValue other)
+    parameters:
+    - id: other
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Dose value to compare this to.
+    return:
+      type: System.Int32
+      description: Comparison result.
+    content.vb: Public Function CompareTo(other As DoseValue) As Integer
+  overload: VMS.TPS.Common.Model.Types.DoseValue.CompareTo*
+  exceptions:
+  - type: System.ArithmeticException
+    commentId: T:System.ArithmeticException
+    description: Thrown if units are different.
+  implements:
+  - System.IComparable{VMS.TPS.Common.Model.Types.DoseValue}.CompareTo(VMS.TPS.Common.Model.Types.DoseValue)
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_LessThan(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.op_LessThan(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  id: op_LessThan(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: operator <(DoseValue, DoseValue)
+  nameWithType: DoseValue.operator <(DoseValue, DoseValue)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator <(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Less-than comparison of dose values. Comparison with DoseValue.Undefined is false.
+  example: []
+  syntax:
+    content: public static bool operator <(DoseValue dv1, DoseValue dv2)
+    parameters:
+    - id: dv1
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: First operand.
+    - id: dv2
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Second operand.
+    return:
+      type: System.Boolean
+      description: Comparison result.
+    content.vb: Public Shared Operator <(dv1 As DoseValue, dv2 As DoseValue) As Boolean
+  overload: VMS.TPS.Common.Model.Types.DoseValue.op_LessThan*
+  exceptions:
+  - type: System.ArithmeticException
+    commentId: T:System.ArithmeticException
+    description: Thrown if units are different.
+  nameWithType.vb: DoseValue.<(DoseValue, DoseValue)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.<(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  name.vb: <(DoseValue, DoseValue)
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_LessThanOrEqual(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.op_LessThanOrEqual(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  id: op_LessThanOrEqual(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: operator <=(DoseValue, DoseValue)
+  nameWithType: DoseValue.operator <=(DoseValue, DoseValue)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator <=(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Less-than-or-equal comparison of dose values. Comparison with DoseValue.Undefined is false.
+  example: []
+  syntax:
+    content: public static bool operator <=(DoseValue dv1, DoseValue dv2)
+    parameters:
+    - id: dv1
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: First operand.
+    - id: dv2
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Second operand.
+    return:
+      type: System.Boolean
+      description: Comparison result.
+    content.vb: Public Shared Operator <=(dv1 As DoseValue, dv2 As DoseValue) As Boolean
+  overload: VMS.TPS.Common.Model.Types.DoseValue.op_LessThanOrEqual*
+  exceptions:
+  - type: System.ArithmeticException
+    commentId: T:System.ArithmeticException
+    description: Thrown if units are different.
+  nameWithType.vb: DoseValue.<=(DoseValue, DoseValue)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.<=(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  name.vb: <=(DoseValue, DoseValue)
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThan(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThan(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  id: op_GreaterThan(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: operator >(DoseValue, DoseValue)
+  nameWithType: DoseValue.operator >(DoseValue, DoseValue)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator >(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Greater-than comparison of dose values. Comparison with DoseValue.Undefined is false.
+  example: []
+  syntax:
+    content: public static bool operator >(DoseValue dv1, DoseValue dv2)
+    parameters:
+    - id: dv1
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: First operand.
+    - id: dv2
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Second operand.
+    return:
+      type: System.Boolean
+      description: Comparison result.
+    content.vb: Public Shared Operator >(dv1 As DoseValue, dv2 As DoseValue) As Boolean
+  overload: VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThan*
+  exceptions:
+  - type: System.ArithmeticException
+    commentId: T:System.ArithmeticException
+    description: Thrown if units are different.
+  nameWithType.vb: DoseValue.>(DoseValue, DoseValue)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.>(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  name.vb: '>(DoseValue, DoseValue)'
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThanOrEqual(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThanOrEqual(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  id: op_GreaterThanOrEqual(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: operator >=(DoseValue, DoseValue)
+  nameWithType: DoseValue.operator >=(DoseValue, DoseValue)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator >=(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Greater-than comparison of dose values. Comparison with DoseValue.Undefined is false.
+  example: []
+  syntax:
+    content: public static bool operator >=(DoseValue dv1, DoseValue dv2)
+    parameters:
+    - id: dv1
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: First operand.
+    - id: dv2
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Second operand.
+    return:
+      type: System.Boolean
+      description: Comparison result.
+    content.vb: Public Shared Operator >=(dv1 As DoseValue, dv2 As DoseValue) As Boolean
+  overload: VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThanOrEqual*
+  exceptions:
+  - type: System.ArithmeticException
+    commentId: T:System.ArithmeticException
+    description: Thrown if units are different.
+  nameWithType.vb: DoseValue.>=(DoseValue, DoseValue)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.>=(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  name.vb: '>=(DoseValue, DoseValue)'
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_Subtraction(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.op_Subtraction(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  id: op_Subtraction(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: operator -(DoseValue, DoseValue)
+  nameWithType: DoseValue.operator -(DoseValue, DoseValue)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator -(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Subtraction of dose values. If either of the operands is DoseValue.Undefined, the result will be DoseValue.Undefined.
+  example: []
+  syntax:
+    content: public static DoseValue operator -(DoseValue dv1, DoseValue dv2)
+    parameters:
+    - id: dv1
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: First operand.
+    - id: dv2
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Second operand.
+    return:
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Subtraction result.
+    content.vb: Public Shared Operator -(dv1 As DoseValue, dv2 As DoseValue) As DoseValue
+  overload: VMS.TPS.Common.Model.Types.DoseValue.op_Subtraction*
+  exceptions:
+  - type: System.ArithmeticException
+    commentId: T:System.ArithmeticException
+    description: Thrown if units are different.
+  nameWithType.vb: DoseValue.-(DoseValue, DoseValue)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.-(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  name.vb: -(DoseValue, DoseValue)
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_Addition(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.op_Addition(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  id: op_Addition(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: operator +(DoseValue, DoseValue)
+  nameWithType: DoseValue.operator +(DoseValue, DoseValue)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator +(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Addition of dose values. If either of the operands is DoseValue.Undefined, the result will be DoseValue.Undefined.
+  example: []
+  syntax:
+    content: public static DoseValue operator +(DoseValue dv1, DoseValue dv2)
+    parameters:
+    - id: dv1
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: First operand.
+    - id: dv2
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Second operand.
+    return:
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Result of addition.
+    content.vb: Public Shared Operator +(dv1 As DoseValue, dv2 As DoseValue) As DoseValue
+  overload: VMS.TPS.Common.Model.Types.DoseValue.op_Addition*
+  exceptions:
+  - type: System.ArithmeticException
+    commentId: T:System.ArithmeticException
+    description: Thrown if units are different.
+  nameWithType.vb: DoseValue.+(DoseValue, DoseValue)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.+(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  name.vb: +(DoseValue, DoseValue)
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_Multiply(VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.op_Multiply(VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  id: op_Multiply(VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: operator *(DoseValue, double)
+  nameWithType: DoseValue.operator *(DoseValue, double)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator *(VMS.TPS.Common.Model.Types.DoseValue, double)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Multiplication of a dose value and a double. If the dose value is DoseValue.Undefined, the result will be DoseValue.Undefined.
+  example: []
+  syntax:
+    content: public static DoseValue operator *(DoseValue dv, double dbl)
+    parameters:
+    - id: dv
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: DoseValue to multiply.
+    - id: dbl
+      type: System.Double
+      description: Multiplier.
+    return:
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Result of multiplication.
+    content.vb: Public Shared Operator *(dv As DoseValue, dbl As Double) As DoseValue
+  overload: VMS.TPS.Common.Model.Types.DoseValue.op_Multiply*
+  nameWithType.vb: DoseValue.*(DoseValue, Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.*(VMS.TPS.Common.Model.Types.DoseValue, Double)
+  name.vb: '*(DoseValue, Double)'
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_Multiply(System.Double,VMS.TPS.Common.Model.Types.DoseValue)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.op_Multiply(System.Double,VMS.TPS.Common.Model.Types.DoseValue)
+  id: op_Multiply(System.Double,VMS.TPS.Common.Model.Types.DoseValue)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: operator *(double, DoseValue)
+  nameWithType: DoseValue.operator *(double, DoseValue)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator *(double, VMS.TPS.Common.Model.Types.DoseValue)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Multiplication of a dose value and a double. If the dose value is DoseValue.Undefined, the result will be DoseValue.Undefined.
+  example: []
+  syntax:
+    content: public static DoseValue operator *(double dbl, DoseValue dv)
+    parameters:
+    - id: dbl
+      type: System.Double
+      description: Multiplier.
+    - id: dv
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: DoseValue to multiply.
+    return:
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Result of multiplication.
+    content.vb: Public Shared Operator *(dbl As Double, dv As DoseValue) As DoseValue
+  overload: VMS.TPS.Common.Model.Types.DoseValue.op_Multiply*
+  nameWithType.vb: DoseValue.*(Double, DoseValue)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.*(Double, VMS.TPS.Common.Model.Types.DoseValue)
+  name.vb: '*(Double, DoseValue)'
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_Division(VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.op_Division(VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  id: op_Division(VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: operator /(DoseValue, double)
+  nameWithType: DoseValue.operator /(DoseValue, double)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator /(VMS.TPS.Common.Model.Types.DoseValue, double)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Division of a dose value by a double. If the dose value is DoseValue.Undefined, the result will be DoseValue.Undefined.
+  example: []
+  syntax:
+    content: public static DoseValue operator /(DoseValue dv, double dbl)
+    parameters:
+    - id: dv
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Dividend.
+    - id: dbl
+      type: System.Double
+      description: Divisor.
+    return:
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Result of division.
+    content.vb: Public Shared Operator /(dv As DoseValue, dbl As Double) As DoseValue
+  overload: VMS.TPS.Common.Model.Types.DoseValue.op_Division*
+  nameWithType.vb: DoseValue./(DoseValue, Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue./(VMS.TPS.Common.Model.Types.DoseValue, Double)
+  name.vb: /(DoseValue, Double)
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_Division(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.op_Division(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  id: op_Division(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: operator /(DoseValue, DoseValue)
+  nameWithType: DoseValue.operator /(DoseValue, DoseValue)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator /(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Division of two dose values. If either of the operands is DoseValue.Undefined, the result will be Double.NaN.
+  example: []
+  syntax:
+    content: public static double operator /(DoseValue dv1, DoseValue dv2)
+    parameters:
+    - id: dv1
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Dividend.
+    - id: dv2
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Divisor.
+    return:
+      type: System.Double
+      description: Result of division.
+    content.vb: Public Shared Operator /(dv1 As DoseValue, dv2 As DoseValue) As Double
+  overload: VMS.TPS.Common.Model.Types.DoseValue.op_Division*
+  exceptions:
+  - type: System.ArithmeticException
+    commentId: T:System.ArithmeticException
+    description: Thrown if units are different.
+  nameWithType.vb: DoseValue./(DoseValue, DoseValue)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue./(VMS.TPS.Common.Model.Types.DoseValue, VMS.TPS.Common.Model.Types.DoseValue)
+  name.vb: /(DoseValue, DoseValue)
+- uid: VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseUnit(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseUnit(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  id: IsAbsoluteDoseUnit(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: IsAbsoluteDoseUnit(DoseUnit)
+  nameWithType: DoseValue.IsAbsoluteDoseUnit(DoseValue.DoseUnit)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseUnit(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Returns true if the dose unit is absolute (Gy or cGy).
+  example: []
+  syntax:
+    content: public static bool IsAbsoluteDoseUnit(DoseValue.DoseUnit doseUnit)
+    parameters:
+    - id: doseUnit
+      type: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+      description: The dose unit that is evaluated.
+    return:
+      type: System.Boolean
+      description: True if the dose unit is absolute (Gy or cGy). Otherwise returns false.
+    content.vb: Public Shared Function IsAbsoluteDoseUnit(doseUnit As DoseValue.DoseUnit) As Boolean
+  overload: VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseUnit*
+- uid: VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseUnit(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseUnit(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  id: IsRelativeDoseUnit(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: IsRelativeDoseUnit(DoseUnit)
+  nameWithType: DoseValue.IsRelativeDoseUnit(DoseValue.DoseUnit)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseUnit(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Returns true if the dose unit is relative (%).
+  example: []
+  syntax:
+    content: public static bool IsRelativeDoseUnit(DoseValue.DoseUnit doseUnit)
+    parameters:
+    - id: doseUnit
+      type: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+      description: The dose unit that is evaluated.
+    return:
+      type: System.Boolean
+      description: True if the dose unit is relative (%). Otherwise returns false.
+    content.vb: Public Shared Function IsRelativeDoseUnit(doseUnit As DoseValue.DoseUnit) As Boolean
+  overload: VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseUnit*
+- uid: VMS.TPS.Common.Model.Types.DoseValue.ToString
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.ToString
+  id: ToString
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: DoseValue.ToString()
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.ToString()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: A string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: VMS.TPS.Common.Model.Types.DoseValue.ToString*
+- uid: VMS.TPS.Common.Model.Types.DoseValue.UndefinedDose
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.UndefinedDose
+  id: UndefinedDose
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: UndefinedDose()
+  nameWithType: DoseValue.UndefinedDose()
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.UndefinedDose()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    A dose value, for which the value is Double.NaN and  
+
+    the unit is unknown.
+  example: []
+  syntax:
+    content: public static DoseValue UndefinedDose()
+    return:
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: Undefined dose value.
+    content.vb: Public Shared Function UndefinedDose() As DoseValue
+  overload: VMS.TPS.Common.Model.Types.DoseValue.UndefinedDose*
+- uid: VMS.TPS.Common.Model.Types.DoseValue.IsUndefined
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.IsUndefined
+  id: IsUndefined
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: IsUndefined()
+  nameWithType: DoseValue.IsUndefined()
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.IsUndefined()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Returns true if this dose value is equal to DoseValue.Undefined, false otherwise.
+  example: []
+  syntax:
+    content: public bool IsUndefined()
+    return:
+      type: System.Boolean
+      description: True if this dose value is not defined, false otherwise.
+    content.vb: Public Function IsUndefined() As Boolean
+  overload: VMS.TPS.Common.Model.Types.DoseValue.IsUndefined*
+- uid: VMS.TPS.Common.Model.Types.DoseValue.GetSchema
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.GetSchema
+  id: GetSchema
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: GetSchema()
+  nameWithType: DoseValue.GetSchema()
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.GetSchema()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: This member is internal to the Eclipse Scripting API.
+  example: []
+  syntax:
+    content: public XmlSchema GetSchema()
+    return:
+      type: System.Xml.Schema.XmlSchema
+      description: XmlSchema.
+    content.vb: Public Function GetSchema() As XmlSchema
+  overload: VMS.TPS.Common.Model.Types.DoseValue.GetSchema*
+- uid: VMS.TPS.Common.Model.Types.DoseValue.ReadXml(System.Xml.XmlReader)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.ReadXml(System.Xml.XmlReader)
+  id: ReadXml(System.Xml.XmlReader)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: ReadXml(XmlReader)
+  nameWithType: DoseValue.ReadXml(XmlReader)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.ReadXml(System.Xml.XmlReader)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: This member is internal to the Eclipse Scripting API.
+  example: []
+  syntax:
+    content: public void ReadXml(XmlReader reader)
+    parameters:
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader.
+    content.vb: Public Sub ReadXml(reader As XmlReader)
+  overload: VMS.TPS.Common.Model.Types.DoseValue.ReadXml*
+- uid: VMS.TPS.Common.Model.Types.DoseValue.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  nameWithType: DoseValue.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Serialization support.
+  example: []
+  syntax:
+    content: public void WriteXml(XmlWriter writer)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The System.Xml.XmlWriter stream to which the object is serialized.
+    content.vb: Public Sub WriteXml(writer As XmlWriter)
+  overload: VMS.TPS.Common.Model.Types.DoseValue.WriteXml*
+- uid: VMS.TPS.Common.Model.Types.DoseValue.Dose
+  commentId: P:VMS.TPS.Common.Model.Types.DoseValue.Dose
+  id: Dose
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: Dose
+  nameWithType: DoseValue.Dose
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.Dose
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The value of this instance.
+  example: []
+  syntax:
+    content: public double Dose { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Dose As Double
+  overload: VMS.TPS.Common.Model.Types.DoseValue.Dose*
+- uid: VMS.TPS.Common.Model.Types.DoseValue.Unit
+  commentId: P:VMS.TPS.Common.Model.Types.DoseValue.Unit
+  id: Unit
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: Unit
+  nameWithType: DoseValue.Unit
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.Unit
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The unit of this instance.
+  example: []
+  syntax:
+    content: public DoseValue.DoseUnit Unit { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+    content.vb: Public ReadOnly Property Unit As DoseValue.DoseUnit
+  overload: VMS.TPS.Common.Model.Types.DoseValue.Unit*
+- uid: VMS.TPS.Common.Model.Types.DoseValue.UnitAsString
+  commentId: P:VMS.TPS.Common.Model.Types.DoseValue.UnitAsString
+  id: UnitAsString
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: UnitAsString
+  nameWithType: DoseValue.UnitAsString
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.UnitAsString
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The unit of this instance as a string.
+  example: []
+  syntax:
+    content: public string UnitAsString { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property UnitAsString As String
+  overload: VMS.TPS.Common.Model.Types.DoseValue.UnitAsString*
+- uid: VMS.TPS.Common.Model.Types.DoseValue.ValueAsString
+  commentId: P:VMS.TPS.Common.Model.Types.DoseValue.ValueAsString
+  id: ValueAsString
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: ValueAsString
+  nameWithType: DoseValue.ValueAsString
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.ValueAsString
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The value of this instance as a string.
+  example: []
+  syntax:
+    content: public string ValueAsString { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ValueAsString As String
+  overload: VMS.TPS.Common.Model.Types.DoseValue.ValueAsString*
+- uid: VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseValue
+  commentId: P:VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseValue
+  id: IsAbsoluteDoseValue
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: IsAbsoluteDoseValue
+  nameWithType: DoseValue.IsAbsoluteDoseValue
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseValue
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Returns true if the unit of the dose value is absolute (Gy or cGy).
+  example: []
+  syntax:
+    content: public bool IsAbsoluteDoseValue { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsAbsoluteDoseValue As Boolean
+  overload: VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseValue*
+- uid: VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseValue
+  commentId: P:VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseValue
+  id: IsRelativeDoseValue
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: IsRelativeDoseValue
+  nameWithType: DoseValue.IsRelativeDoseValue
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseValue
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Returns true if the unit of the dose value is relative (%).
+  example: []
+  syntax:
+    content: public bool IsRelativeDoseValue { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsRelativeDoseValue As Boolean
+  overload: VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseValue*
+- uid: VMS.TPS.Common.Model.Types.DoseValue.Decimals
+  commentId: P:VMS.TPS.Common.Model.Types.DoseValue.Decimals
+  id: Decimals
+  parent: VMS.TPS.Common.Model.Types.DoseValue
+  langs:
+  - csharp
+  - vb
+  name: Decimals
+  nameWithType: DoseValue.Decimals
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.Decimals
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The display precision of this value
+  example: []
+  syntax:
+    content: public int Decimals { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Decimals As Integer
+  overload: VMS.TPS.Common.Model.Types.DoseValue.Decimals*
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.Xml.Serialization.IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  nameWithType: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+- uid: System.IComparable{VMS.TPS.Common.Model.Types.DoseValue}
+  commentId: T:System.IComparable{VMS.TPS.Common.Model.Types.DoseValue}
+  parent: System
+  definition: System.IComparable`1
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<DoseValue>
+  nameWithType: IComparable<DoseValue>
+  fullName: System.IComparable<VMS.TPS.Common.Model.Types.DoseValue>
+  nameWithType.vb: IComparable(Of DoseValue)
+  fullName.vb: System.IComparable(Of VMS.TPS.Common.Model.Types.DoseValue)
+  name.vb: IComparable(Of DoseValue)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html
+  - name: )
+- uid: System.IEquatable{VMS.TPS.Common.Model.Types.DoseValue}
+  commentId: T:System.IEquatable{VMS.TPS.Common.Model.Types.DoseValue}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<DoseValue>
+  nameWithType: IEquatable<DoseValue>
+  fullName: System.IEquatable<VMS.TPS.Common.Model.Types.DoseValue>
+  nameWithType.vb: IEquatable(Of DoseValue)
+  fullName.vb: System.IEquatable(Of VMS.TPS.Common.Model.Types.DoseValue)
+  name.vb: IEquatable(Of DoseValue)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IComparable`1
+  commentId: T:System.IComparable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  name: IComparable<T>
+  nameWithType: IComparable<T>
+  fullName: System.IComparable<T>
+  nameWithType.vb: IComparable(Of T)
+  fullName.vb: System.IComparable(Of T)
+  name.vb: IComparable(Of T)
+  spec.csharp:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IComparable`1
+    name: IComparable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: VMS.TPS.Common.Model.Types.DoseValue
+  commentId: T:VMS.TPS.Common.Model.Types.DoseValue
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html
+  name: DoseValue
+  nameWithType: DoseValue
+  fullName: VMS.TPS.Common.Model.Types.DoseValue
+- uid: VMS.TPS.Common.Model.Types.DoseValue.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue__ctor_System_Double_System_String_
+  name: DoseValue
+  nameWithType: DoseValue.DoseValue
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.DoseValue
+  nameWithType.vb: DoseValue.New
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.New
+  name.vb: New
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+  commentId: T:VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html
+  name: DoseValue.DoseUnit
+  nameWithType: DoseValue.DoseUnit
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+    name: DoseUnit
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.html
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit
+    name: DoseUnit
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.html
+- uid: VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_Equals_VMS_TPS_Common_Model_Types_DoseValue_System_Double_
+  name: Equals(DoseValue, double)
+  nameWithType: DoseValue.Equals(DoseValue, double)
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue, double)
+  nameWithType.vb: DoseValue.Equals(DoseValue, Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue, Double)
+  name.vb: Equals(DoseValue, Double)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+    name: Equals
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_Equals_VMS_TPS_Common_Model_Types_DoseValue_System_Double_
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+    name: Equals
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_Equals_VMS_TPS_Common_Model_Types_DoseValue_System_Double_
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.DoseValue.Equals*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.Equals
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_Equals_System_Object_
+  name: Equals
+  nameWithType: DoseValue.Equals
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.DoseValue.GetHashCode*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.GetHashCode
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_GetHashCode
+  name: GetHashCode
+  nameWithType: DoseValue.GetHashCode
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.IEquatable{VMS.TPS.Common.Model.Types.DoseValue}.Equals(VMS.TPS.Common.Model.Types.DoseValue)
+  commentId: M:System.IEquatable{VMS.TPS.Common.Model.Types.DoseValue}.Equals(VMS.TPS.Common.Model.Types.DoseValue)
+  parent: System.IEquatable{VMS.TPS.Common.Model.Types.DoseValue}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(DoseValue)
+  nameWithType: IEquatable<DoseValue>.Equals(DoseValue)
+  fullName: System.IEquatable<VMS.TPS.Common.Model.Types.DoseValue>.Equals(VMS.TPS.Common.Model.Types.DoseValue)
+  nameWithType.vb: IEquatable(Of DoseValue).Equals(DoseValue)
+  fullName.vb: System.IEquatable(Of VMS.TPS.Common.Model.Types.DoseValue).Equals(VMS.TPS.Common.Model.Types.DoseValue)
+  spec.csharp:
+  - uid: System.IEquatable{VMS.TPS.Common.Model.Types.DoseValue}.Equals(VMS.TPS.Common.Model.Types.DoseValue)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{VMS.TPS.Common.Model.Types.DoseValue}.Equals(VMS.TPS.Common.Model.Types.DoseValue)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_Equality*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.op_Equality
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_Equality_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_
+  name: operator ==
+  nameWithType: DoseValue.operator ==
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator ==
+  nameWithType.vb: DoseValue.=
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.op_Equality*
+    name: ==
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_Equality_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_Inequality*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.op_Inequality
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_Inequality_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_
+  name: operator !=
+  nameWithType: DoseValue.operator !=
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator !=
+  nameWithType.vb: DoseValue.<>
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_Inequality_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_
+- uid: System.ArithmeticException
+  commentId: T:System.ArithmeticException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.arithmeticexception
+  name: ArithmeticException
+  nameWithType: ArithmeticException
+  fullName: System.ArithmeticException
+- uid: VMS.TPS.Common.Model.Types.DoseValue.CompareTo*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.CompareTo
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_CompareTo_VMS_TPS_Common_Model_Types_DoseValue_
+  name: CompareTo
+  nameWithType: DoseValue.CompareTo
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.CompareTo
+- uid: System.IComparable{VMS.TPS.Common.Model.Types.DoseValue}.CompareTo(VMS.TPS.Common.Model.Types.DoseValue)
+  commentId: M:System.IComparable{VMS.TPS.Common.Model.Types.DoseValue}.CompareTo(VMS.TPS.Common.Model.Types.DoseValue)
+  parent: System.IComparable{VMS.TPS.Common.Model.Types.DoseValue}
+  definition: System.IComparable`1.CompareTo(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(DoseValue)
+  nameWithType: IComparable<DoseValue>.CompareTo(DoseValue)
+  fullName: System.IComparable<VMS.TPS.Common.Model.Types.DoseValue>.CompareTo(VMS.TPS.Common.Model.Types.DoseValue)
+  nameWithType.vb: IComparable(Of DoseValue).CompareTo(DoseValue)
+  fullName.vb: System.IComparable(Of VMS.TPS.Common.Model.Types.DoseValue).CompareTo(VMS.TPS.Common.Model.Types.DoseValue)
+  spec.csharp:
+  - uid: System.IComparable{VMS.TPS.Common.Model.Types.DoseValue}.CompareTo(VMS.TPS.Common.Model.Types.DoseValue)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html
+  - name: )
+  spec.vb:
+  - uid: System.IComparable{VMS.TPS.Common.Model.Types.DoseValue}.CompareTo(VMS.TPS.Common.Model.Types.DoseValue)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.DoseValue
+    name: DoseValue
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html
+  - name: )
+- uid: System.IComparable`1.CompareTo(`0)
+  commentId: M:System.IComparable`1.CompareTo(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  name: CompareTo(T)
+  nameWithType: IComparable<T>.CompareTo(T)
+  fullName: System.IComparable<T>.CompareTo(T)
+  nameWithType.vb: IComparable(Of T).CompareTo(T)
+  fullName.vb: System.IComparable(Of T).CompareTo(T)
+  spec.csharp:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IComparable`1.CompareTo(`0)
+    name: CompareTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icomparable-1.compareto
+  - name: (
+  - name: T
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_LessThan*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.op_LessThan
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_LessThan_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_
+  name: operator <
+  nameWithType: DoseValue.operator <
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator <
+  nameWithType.vb: DoseValue.<
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.<
+  name.vb: <
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.op_LessThan*
+    name: <
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_LessThan_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_LessThanOrEqual*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.op_LessThanOrEqual
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_LessThanOrEqual_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_
+  name: operator <=
+  nameWithType: DoseValue.operator <=
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator <=
+  nameWithType.vb: DoseValue.<=
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.<=
+  name.vb: <=
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.op_LessThanOrEqual*
+    name: <=
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_LessThanOrEqual_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThan*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThan
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_GreaterThan_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_
+  name: operator >
+  nameWithType: DoseValue.operator >
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator >
+  nameWithType.vb: DoseValue.>
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.>
+  name.vb: '>'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThan*
+    name: '>'
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_GreaterThan_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThanOrEqual*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThanOrEqual
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_GreaterThanOrEqual_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_
+  name: operator >=
+  nameWithType: DoseValue.operator >=
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator >=
+  nameWithType.vb: DoseValue.>=
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.>=
+  name.vb: '>='
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThanOrEqual*
+    name: '>='
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_GreaterThanOrEqual_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_Subtraction*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.op_Subtraction
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_Subtraction_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_
+  name: operator -
+  nameWithType: DoseValue.operator -
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator -
+  nameWithType.vb: DoseValue.-
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.op_Subtraction*
+    name: '-'
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_Subtraction_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_Addition*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.op_Addition
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_Addition_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_
+  name: operator +
+  nameWithType: DoseValue.operator +
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator +
+  nameWithType.vb: DoseValue.+
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.op_Addition*
+    name: +
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_Addition_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_Multiply*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.op_Multiply
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_Multiply_VMS_TPS_Common_Model_Types_DoseValue_System_Double_
+  name: operator *
+  nameWithType: DoseValue.operator *
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator *
+  nameWithType.vb: DoseValue.*
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.op_Multiply*
+    name: '*'
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_Multiply_VMS_TPS_Common_Model_Types_DoseValue_System_Double_
+- uid: VMS.TPS.Common.Model.Types.DoseValue.op_Division*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.op_Division
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_Division_VMS_TPS_Common_Model_Types_DoseValue_System_Double_
+  name: operator /
+  nameWithType: DoseValue.operator /
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.operator /
+  nameWithType.vb: DoseValue./
+  fullName.vb: VMS.TPS.Common.Model.Types.DoseValue./
+  name.vb: /
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.DoseValue.op_Division*
+    name: /
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_op_Division_VMS_TPS_Common_Model_Types_DoseValue_System_Double_
+- uid: VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseUnit*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseUnit
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_IsAbsoluteDoseUnit_VMS_TPS_Common_Model_Types_DoseValue_DoseUnit_
+  name: IsAbsoluteDoseUnit
+  nameWithType: DoseValue.IsAbsoluteDoseUnit
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseUnit
+- uid: VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseUnit*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseUnit
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_IsRelativeDoseUnit_VMS_TPS_Common_Model_Types_DoseValue_DoseUnit_
+  name: IsRelativeDoseUnit
+  nameWithType: DoseValue.IsRelativeDoseUnit
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseUnit
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.DoseValue.ToString*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.ToString
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_ToString
+  name: ToString
+  nameWithType: DoseValue.ToString
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.ToString
+- uid: VMS.TPS.Common.Model.Types.DoseValue.UndefinedDose*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.UndefinedDose
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_UndefinedDose
+  name: UndefinedDose
+  nameWithType: DoseValue.UndefinedDose
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.UndefinedDose
+- uid: VMS.TPS.Common.Model.Types.DoseValue.IsUndefined*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.IsUndefined
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_IsUndefined
+  name: IsUndefined
+  nameWithType: DoseValue.IsUndefined
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.IsUndefined
+- uid: VMS.TPS.Common.Model.Types.DoseValue.GetSchema*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.GetSchema
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_GetSchema
+  name: GetSchema
+  nameWithType: DoseValue.GetSchema
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.GetSchema
+- uid: System.Xml.Schema.XmlSchema
+  isExternal: true
+  name: XmlSchema
+  nameWithType: XmlSchema
+  fullName: System.Xml.Schema.XmlSchema
+- uid: VMS.TPS.Common.Model.Types.DoseValue.ReadXml*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.ReadXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_ReadXml_System_Xml_XmlReader_
+  name: ReadXml
+  nameWithType: DoseValue.ReadXml
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.ReadXml
+- uid: System.Xml.XmlReader
+  isExternal: true
+  name: XmlReader
+  nameWithType: XmlReader
+  fullName: System.Xml.XmlReader
+- uid: VMS.TPS.Common.Model.Types.DoseValue.WriteXml*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.WriteXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml
+  nameWithType: DoseValue.WriteXml
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.WriteXml
+- uid: System.Xml.XmlWriter
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: VMS.TPS.Common.Model.Types.DoseValue.Dose*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.Dose
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_Dose
+  name: Dose
+  nameWithType: DoseValue.Dose
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.Dose
+- uid: VMS.TPS.Common.Model.Types.DoseValue.Unit*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.Unit
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_Unit
+  name: Unit
+  nameWithType: DoseValue.Unit
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.Unit
+- uid: VMS.TPS.Common.Model.Types.DoseValue.UnitAsString*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.UnitAsString
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_UnitAsString
+  name: UnitAsString
+  nameWithType: DoseValue.UnitAsString
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.UnitAsString
+- uid: VMS.TPS.Common.Model.Types.DoseValue.ValueAsString*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.ValueAsString
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_ValueAsString
+  name: ValueAsString
+  nameWithType: DoseValue.ValueAsString
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.ValueAsString
+- uid: VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseValue*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseValue
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_IsAbsoluteDoseValue
+  name: IsAbsoluteDoseValue
+  nameWithType: DoseValue.IsAbsoluteDoseValue
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseValue
+- uid: VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseValue*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseValue
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_IsRelativeDoseValue
+  name: IsRelativeDoseValue
+  nameWithType: DoseValue.IsRelativeDoseValue
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseValue
+- uid: VMS.TPS.Common.Model.Types.DoseValue.Decimals*
+  commentId: Overload:VMS.TPS.Common.Model.Types.DoseValue.Decimals
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_Decimals
+  name: Decimals
+  nameWithType: DoseValue.Decimals
+  fullName: VMS.TPS.Common.Model.Types.DoseValue.Decimals

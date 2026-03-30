@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct BeamNumber | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct BeamNumber | Example ">
+      
+      <meta name="description" content="Represents a unique identifier for a beam of a plan. The identifier is unique within the scope of the plan.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.Types.BeamNumber">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_Types_BeamNumber" data-uid="VMS.TPS.Common.Model.Types.BeamNumber" class="text-break">
+Struct BeamNumber  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.Types.html">Types</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.Types.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a unique identifier for a beam of a plan. The identifier is unique within the scope of the plan.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct BeamNumber : IXmlSerializable, IEquatable&lt;BeamNumber&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IXmlSerializable</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber__ctor_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.#ctor*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber__ctor_System_Int32_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.#ctor(System.Int32)">
+  BeamNumber(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a new beam number from a numeric beam number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BeamNumber(int number)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Make sure that the beam number corresponds to the real beam number, otherwise use NotABeamNumber.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber__ctor_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.#ctor*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber__ctor_VMS_TPS_Common_Model_Types_BeamNumber_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.#ctor(VMS.TPS.Common.Model.Types.BeamNumber)">
+  BeamNumber(BeamNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a new beam number from another BeamNumber.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BeamNumber(BeamNumber other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a></dt>
+    <dd><p>Another BeamNumber.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber_NotABeamNumber" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.NotABeamNumber">
+  NotABeamNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Represents an undefined BeamNumber that does not have a corresponding beam.
+The IsValid property of the Invalid BeamNumber always returns false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly BeamNumber NotABeamNumber</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber_IsValid_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.IsValid*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber_IsValid" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.IsValid">
+  IsValid
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if the given BeamNumber is valid. Otherwise false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber_Number_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.Number*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber_Number" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.Number">
+  Number
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The beam number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Number { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber_Equals_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.Equals*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber_Equals_System_Object_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The other object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if this object equals to the other object. Otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber_Equals_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.Equals*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber_Equals_VMS_TPS_Common_Model_Types_BeamNumber_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.Equals(VMS.TPS.Common.Model.Types.BeamNumber)">
+  Equals(BeamNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(BeamNumber other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the current object is equal to the other object. Otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber_GetHashCode_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.GetHashCode*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber_GetHashCode" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Provides a hash code for the item, see <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">Object.GetHashCode()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The hash code for this instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber_GetSchema_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.GetSchema*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber_GetSchema" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.GetSchema">
+  GetSchema()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This member is internal to the Eclipse Scripting API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlSchema GetSchema()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">XmlSchema</span></dt>
+    <dd><p>XmlSchema.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber_ReadXml_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.ReadXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber_ReadXml_System_Xml_XmlReader_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.ReadXml(System.Xml.XmlReader)">
+  ReadXml(XmlReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This member is internal to the Eclipse Scripting API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadXml(XmlReader reader)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reader</code> <span class="xref">XmlReader</span></dt>
+    <dd><p>The XmlReader stream from which the object is deserialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber_WriteXml_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber_WriteXml_System_Xml_XmlWriter_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.WriteXml(System.Xml.XmlWriter)">
+  WriteXml(XmlWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serialization support.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>The System.Xml.XmlWriter stream to which the object is serialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber_op_Equality_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.op_Equality*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber_op_Equality_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.op_Equality(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)">
+  operator ==(BeamNumber, BeamNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares two beam numbers for equality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(BeamNumber a, BeamNumber b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a></dt>
+    <dd><p>The first object to compare.</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a></dt>
+    <dd><p>The second object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if a and b represent the same beam number. Otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber_op_GreaterThan_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThan*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber_op_GreaterThan_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThan(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)">
+  operator &gt;(BeamNumber, BeamNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares two BeamNumbers, a and b, to determine if a is greater than b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;(BeamNumber a, BeamNumber b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a></dt>
+    <dd><p>The first object to compare.</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a></dt>
+    <dd><p>The second object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if a is greater than b. Otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber_op_GreaterThanOrEqual_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThanOrEqual*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber_op_GreaterThanOrEqual_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.op_GreaterThanOrEqual(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)">
+  operator &gt;=(BeamNumber, BeamNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares two BeamNumbers, a and b, to determine if a is greater than or equal to b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(BeamNumber a, BeamNumber b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a></dt>
+    <dd><p>The first object to compare.</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a></dt>
+    <dd><p>The second object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if a is greater than or equal to b. Otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber_op_Implicit_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.op_Implicit*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber_op_Implicit_VMS_TPS_Common_Model_Types_BeamNumber__System_Int32" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.op_Implicit(VMS.TPS.Common.Model.Types.BeamNumber)~System.Int32">
+  implicit operator int(BeamNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a BeamNumber to an int.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator int(BeamNumber bn)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bn</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a></dt>
+    <dd><p>The converted BeamNumber object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The beam number as an integer.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber_op_Inequality_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.op_Inequality*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber_op_Inequality_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.op_Inequality(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)">
+  operator !=(BeamNumber, BeamNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares two BeamNumbers for inequality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(BeamNumber a, BeamNumber b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a></dt>
+    <dd><p>The first object to compare.</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a></dt>
+    <dd><p>The second object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if a and b represent a different beam number. Otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber_op_LessThan_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.op_LessThan*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber_op_LessThan_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.op_LessThan(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)">
+  operator &lt;(BeamNumber, BeamNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares two BeamNumbers, a and b, to determine if a is smaller than b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(BeamNumber a, BeamNumber b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a></dt>
+    <dd><p>The first object to compare.</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a></dt>
+    <dd><p>The second object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if a is smaller than b. Otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_BeamNumber_op_LessThanOrEqual_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.op_LessThanOrEqual*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_BeamNumber_op_LessThanOrEqual_VMS_TPS_Common_Model_Types_BeamNumber_VMS_TPS_Common_Model_Types_BeamNumber_" data-uid="VMS.TPS.Common.Model.Types.BeamNumber.op_LessThanOrEqual(VMS.TPS.Common.Model.Types.BeamNumber,VMS.TPS.Common.Model.Types.BeamNumber)">
+  operator &lt;=(BeamNumber, BeamNumber)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compares two BeamNumbers, a and b, to determine if a is smaller than or equal to b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(BeamNumber a, BeamNumber b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a></dt>
+    <dd><p>The first object to compare.</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="VMS.TPS.Common.Model.Types.BeamNumber.html">BeamNumber</a></dt>
+    <dd><p>The second object to compare.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if a is smaller than or equal to b. Otherwise false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

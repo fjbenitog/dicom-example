@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption
+  commentId: T:VMS.TPS.Common.Model.Types.OptimizationConvergenceOption
+  id: OptimizationConvergenceOption
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.OptimizationConvergenceOption.NoEarlyTermination
+  - VMS.TPS.Common.Model.Types.OptimizationConvergenceOption.TerminateIfConverged
+  langs:
+  - csharp
+  - vb
+  name: OptimizationConvergenceOption
+  nameWithType: OptimizationConvergenceOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Options for terminating optimization upon convergence.
+  example: []
+  syntax:
+    content: public enum OptimizationConvergenceOption
+    content.vb: Public Enum OptimizationConvergenceOption
+- uid: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption.NoEarlyTermination
+  commentId: F:VMS.TPS.Common.Model.Types.OptimizationConvergenceOption.NoEarlyTermination
+  id: NoEarlyTermination
+  parent: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption
+  langs:
+  - csharp
+  - vb
+  name: NoEarlyTermination
+  nameWithType: OptimizationConvergenceOption.NoEarlyTermination
+  fullName: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption.NoEarlyTermination
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Always perform the specified number of iterations.
+  example: []
+  syntax:
+    content: NoEarlyTermination = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption
+- uid: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption.TerminateIfConverged
+  commentId: F:VMS.TPS.Common.Model.Types.OptimizationConvergenceOption.TerminateIfConverged
+  id: TerminateIfConverged
+  parent: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption
+  langs:
+  - csharp
+  - vb
+  name: TerminateIfConverged
+  nameWithType: OptimizationConvergenceOption.TerminateIfConverged
+  fullName: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption.TerminateIfConverged
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Terminate optimization before the maximum number of iterations is reached if the optimization is already converged.
+  example: []
+  syntax:
+    content: TerminateIfConverged = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption
+  commentId: T:VMS.TPS.Common.Model.Types.OptimizationConvergenceOption
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption.html
+  name: OptimizationConvergenceOption
+  nameWithType: OptimizationConvergenceOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption

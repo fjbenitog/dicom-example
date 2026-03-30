@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.PlanType
+  commentId: T:VMS.TPS.Common.Model.Types.PlanType
+  id: PlanType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.PlanType.Brachy
+  - VMS.TPS.Common.Model.Types.PlanType.ExternalBeam
+  - VMS.TPS.Common.Model.Types.PlanType.ExternalBeam_IRREG
+  - VMS.TPS.Common.Model.Types.PlanType.ExternalBeam_Proton
+  langs:
+  - csharp
+  - vb
+  name: PlanType
+  nameWithType: PlanType
+  fullName: VMS.TPS.Common.Model.Types.PlanType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The enumeration of plan types.
+  example: []
+  syntax:
+    content: public enum PlanType
+    content.vb: Public Enum PlanType
+- uid: VMS.TPS.Common.Model.Types.PlanType.ExternalBeam
+  commentId: F:VMS.TPS.Common.Model.Types.PlanType.ExternalBeam
+  id: ExternalBeam
+  parent: VMS.TPS.Common.Model.Types.PlanType
+  langs:
+  - csharp
+  - vb
+  name: ExternalBeam
+  nameWithType: PlanType.ExternalBeam
+  fullName: VMS.TPS.Common.Model.Types.PlanType.ExternalBeam
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: External beam.
+  example: []
+  syntax:
+    content: ExternalBeam = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanType
+- uid: VMS.TPS.Common.Model.Types.PlanType.ExternalBeam_IRREG
+  commentId: F:VMS.TPS.Common.Model.Types.PlanType.ExternalBeam_IRREG
+  id: ExternalBeam_IRREG
+  parent: VMS.TPS.Common.Model.Types.PlanType
+  langs:
+  - csharp
+  - vb
+  name: ExternalBeam_IRREG
+  nameWithType: PlanType.ExternalBeam_IRREG
+  fullName: VMS.TPS.Common.Model.Types.PlanType.ExternalBeam_IRREG
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: External beam, Irregular field calculation.
+  example: []
+  syntax:
+    content: ExternalBeam_IRREG = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanType
+- uid: VMS.TPS.Common.Model.Types.PlanType.ExternalBeam_Proton
+  commentId: F:VMS.TPS.Common.Model.Types.PlanType.ExternalBeam_Proton
+  id: ExternalBeam_Proton
+  parent: VMS.TPS.Common.Model.Types.PlanType
+  langs:
+  - csharp
+  - vb
+  name: ExternalBeam_Proton
+  nameWithType: PlanType.ExternalBeam_Proton
+  fullName: VMS.TPS.Common.Model.Types.PlanType.ExternalBeam_Proton
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: External beam, Proton.
+  example: []
+  syntax:
+    content: ExternalBeam_Proton = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanType
+- uid: VMS.TPS.Common.Model.Types.PlanType.Brachy
+  commentId: F:VMS.TPS.Common.Model.Types.PlanType.Brachy
+  id: Brachy
+  parent: VMS.TPS.Common.Model.Types.PlanType
+  langs:
+  - csharp
+  - vb
+  name: Brachy
+  nameWithType: PlanType.Brachy
+  fullName: VMS.TPS.Common.Model.Types.PlanType.Brachy
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Brachytherapy.
+  example: []
+  syntax:
+    content: Brachy = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.PlanType
+  commentId: T:VMS.TPS.Common.Model.Types.PlanType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.PlanType.html
+  name: PlanType
+  nameWithType: PlanType
+  fullName: VMS.TPS.Common.Model.Types.PlanType

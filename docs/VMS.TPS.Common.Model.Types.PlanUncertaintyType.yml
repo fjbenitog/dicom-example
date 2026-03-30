@@ -1,0 +1,258 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.PlanUncertaintyType
+  commentId: T:VMS.TPS.Common.Model.Types.PlanUncertaintyType
+  id: PlanUncertaintyType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.PlanUncertaintyType.BaselineShiftUncertainty
+  - VMS.TPS.Common.Model.Types.PlanUncertaintyType.IsocenterShiftUncertainty
+  - VMS.TPS.Common.Model.Types.PlanUncertaintyType.RangeUncertainty
+  - VMS.TPS.Common.Model.Types.PlanUncertaintyType.RobustOptimizationUncertainty
+  - VMS.TPS.Common.Model.Types.PlanUncertaintyType.UncertaintyTypeNotDefined
+  langs:
+  - csharp
+  - vb
+  name: PlanUncertaintyType
+  nameWithType: PlanUncertaintyType
+  fullName: VMS.TPS.Common.Model.Types.PlanUncertaintyType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Plan uncertainty type indicates the usage of associated uncertainty parameters, see <xref href="VMS.TPS.Common.Model.API.PlanUncertainty?text=PlanUncertainty" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public enum PlanUncertaintyType
+    content.vb: Public Enum PlanUncertaintyType
+- uid: VMS.TPS.Common.Model.Types.PlanUncertaintyType.UncertaintyTypeNotDefined
+  commentId: F:VMS.TPS.Common.Model.Types.PlanUncertaintyType.UncertaintyTypeNotDefined
+  id: UncertaintyTypeNotDefined
+  parent: VMS.TPS.Common.Model.Types.PlanUncertaintyType
+  langs:
+  - csharp
+  - vb
+  name: UncertaintyTypeNotDefined
+  nameWithType: PlanUncertaintyType.UncertaintyTypeNotDefined
+  fullName: VMS.TPS.Common.Model.Types.PlanUncertaintyType.UncertaintyTypeNotDefined
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Indicates an undefined uncertainty type.
+  example: []
+  syntax:
+    content: UncertaintyTypeNotDefined = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanUncertaintyType
+- uid: VMS.TPS.Common.Model.Types.PlanUncertaintyType.RangeUncertainty
+  commentId: F:VMS.TPS.Common.Model.Types.PlanUncertaintyType.RangeUncertainty
+  id: RangeUncertainty
+  parent: VMS.TPS.Common.Model.Types.PlanUncertaintyType
+  langs:
+  - csharp
+  - vb
+  name: RangeUncertainty
+  nameWithType: PlanUncertaintyType.RangeUncertainty
+  fullName: VMS.TPS.Common.Model.Types.PlanUncertaintyType.RangeUncertainty
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Used for proton uncertainty plans.
+  example: []
+  syntax:
+    content: RangeUncertainty = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanUncertaintyType
+- uid: VMS.TPS.Common.Model.Types.PlanUncertaintyType.IsocenterShiftUncertainty
+  commentId: F:VMS.TPS.Common.Model.Types.PlanUncertaintyType.IsocenterShiftUncertainty
+  id: IsocenterShiftUncertainty
+  parent: VMS.TPS.Common.Model.Types.PlanUncertaintyType
+  langs:
+  - csharp
+  - vb
+  name: IsocenterShiftUncertainty
+  nameWithType: PlanUncertaintyType.IsocenterShiftUncertainty
+  fullName: VMS.TPS.Common.Model.Types.PlanUncertaintyType.IsocenterShiftUncertainty
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Used for patient setup uncertainty. It is assumed that all organs have shifted.
+  example: []
+  syntax:
+    content: IsocenterShiftUncertainty = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanUncertaintyType
+- uid: VMS.TPS.Common.Model.Types.PlanUncertaintyType.BaselineShiftUncertainty
+  commentId: F:VMS.TPS.Common.Model.Types.PlanUncertaintyType.BaselineShiftUncertainty
+  id: BaselineShiftUncertainty
+  parent: VMS.TPS.Common.Model.Types.PlanUncertaintyType
+  langs:
+  - csharp
+  - vb
+  name: BaselineShiftUncertainty
+  nameWithType: PlanUncertaintyType.BaselineShiftUncertainty
+  fullName: VMS.TPS.Common.Model.Types.PlanUncertaintyType.BaselineShiftUncertainty
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Used for target shift. The target is positioned correctly, but other organs have been moved in relation to the target.
+  example: []
+  syntax:
+    content: BaselineShiftUncertainty = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanUncertaintyType
+- uid: VMS.TPS.Common.Model.Types.PlanUncertaintyType.RobustOptimizationUncertainty
+  commentId: F:VMS.TPS.Common.Model.Types.PlanUncertaintyType.RobustOptimizationUncertainty
+  id: RobustOptimizationUncertainty
+  parent: VMS.TPS.Common.Model.Types.PlanUncertaintyType
+  langs:
+  - csharp
+  - vb
+  name: RobustOptimizationUncertainty
+  nameWithType: PlanUncertaintyType.RobustOptimizationUncertainty
+  fullName: VMS.TPS.Common.Model.Types.PlanUncertaintyType.RobustOptimizationUncertainty
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Uncertainty parameters used in robust optimization.
+  example: []
+  syntax:
+    content: RobustOptimizationUncertainty = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanUncertaintyType
+references:
+- uid: VMS.TPS.Common.Model.API.PlanUncertainty
+  commentId: T:VMS.TPS.Common.Model.API.PlanUncertainty
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.PlanUncertainty.html
+  name: PlanUncertainty
+  nameWithType: PlanUncertainty
+  fullName: VMS.TPS.Common.Model.API.PlanUncertainty
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: VMS.TPS.Common.Model.Types.PlanUncertaintyType
+  commentId: T:VMS.TPS.Common.Model.Types.PlanUncertaintyType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.PlanUncertaintyType.html
+  name: PlanUncertaintyType
+  nameWithType: PlanUncertaintyType
+  fullName: VMS.TPS.Common.Model.Types.PlanUncertaintyType

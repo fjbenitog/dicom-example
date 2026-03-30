@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.StructureApprovalStatus
+  commentId: T:VMS.TPS.Common.Model.Types.StructureApprovalStatus
+  id: StructureApprovalStatus
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.StructureApprovalStatus.Approved
+  - VMS.TPS.Common.Model.Types.StructureApprovalStatus.Rejected
+  - VMS.TPS.Common.Model.Types.StructureApprovalStatus.Reviewed
+  - VMS.TPS.Common.Model.Types.StructureApprovalStatus.UnApproved
+  langs:
+  - csharp
+  - vb
+  name: StructureApprovalStatus
+  nameWithType: StructureApprovalStatus
+  fullName: VMS.TPS.Common.Model.Types.StructureApprovalStatus
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The enumeration of structure approval statuses.
+  example: []
+  syntax:
+    content: public enum StructureApprovalStatus
+    content.vb: Public Enum StructureApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.StructureApprovalStatus.UnApproved
+  commentId: F:VMS.TPS.Common.Model.Types.StructureApprovalStatus.UnApproved
+  id: UnApproved
+  parent: VMS.TPS.Common.Model.Types.StructureApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: UnApproved
+  nameWithType: StructureApprovalStatus.UnApproved
+  fullName: VMS.TPS.Common.Model.Types.StructureApprovalStatus.UnApproved
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Unapproved.
+  example: []
+  syntax:
+    content: UnApproved = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.StructureApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.StructureApprovalStatus.Approved
+  commentId: F:VMS.TPS.Common.Model.Types.StructureApprovalStatus.Approved
+  id: Approved
+  parent: VMS.TPS.Common.Model.Types.StructureApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Approved
+  nameWithType: StructureApprovalStatus.Approved
+  fullName: VMS.TPS.Common.Model.Types.StructureApprovalStatus.Approved
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Approved.
+  example: []
+  syntax:
+    content: Approved = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.StructureApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.StructureApprovalStatus.Rejected
+  commentId: F:VMS.TPS.Common.Model.Types.StructureApprovalStatus.Rejected
+  id: Rejected
+  parent: VMS.TPS.Common.Model.Types.StructureApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Rejected
+  nameWithType: StructureApprovalStatus.Rejected
+  fullName: VMS.TPS.Common.Model.Types.StructureApprovalStatus.Rejected
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Rejected.
+  example: []
+  syntax:
+    content: Rejected = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.StructureApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.StructureApprovalStatus.Reviewed
+  commentId: F:VMS.TPS.Common.Model.Types.StructureApprovalStatus.Reviewed
+  id: Reviewed
+  parent: VMS.TPS.Common.Model.Types.StructureApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Reviewed
+  nameWithType: StructureApprovalStatus.Reviewed
+  fullName: VMS.TPS.Common.Model.Types.StructureApprovalStatus.Reviewed
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Reviewed.
+  example: []
+  syntax:
+    content: Reviewed = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.StructureApprovalStatus
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.StructureApprovalStatus
+  commentId: T:VMS.TPS.Common.Model.Types.StructureApprovalStatus
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.StructureApprovalStatus.html
+  name: StructureApprovalStatus
+  nameWithType: StructureApprovalStatus
+  fullName: VMS.TPS.Common.Model.Types.StructureApprovalStatus

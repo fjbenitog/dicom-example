@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus
+  commentId: T:VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus
+  id: ProtonDeliveryTimeStatus
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.Deliverable
+  - VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.NotCalculated
+  - VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.Undeliverable
+  langs:
+  - csharp
+  - vb
+  name: ProtonDeliveryTimeStatus
+  nameWithType: ProtonDeliveryTimeStatus
+  fullName: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The enumeration of proton delivery time statuses.
+  example: []
+  syntax:
+    content: public enum ProtonDeliveryTimeStatus
+    content.vb: Public Enum ProtonDeliveryTimeStatus
+- uid: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.Deliverable
+  commentId: F:VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.Deliverable
+  id: Deliverable
+  parent: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus
+  langs:
+  - csharp
+  - vb
+  name: Deliverable
+  nameWithType: ProtonDeliveryTimeStatus.Deliverable
+  fullName: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.Deliverable
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Delivery time is deliverable.
+  example: []
+  syntax:
+    content: Deliverable = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus
+- uid: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.Undeliverable
+  commentId: F:VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.Undeliverable
+  id: Undeliverable
+  parent: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus
+  langs:
+  - csharp
+  - vb
+  name: Undeliverable
+  nameWithType: ProtonDeliveryTimeStatus.Undeliverable
+  fullName: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.Undeliverable
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Delivery time is undeliverable.
+  example: []
+  syntax:
+    content: Undeliverable = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus
+- uid: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.NotCalculated
+  commentId: F:VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.NotCalculated
+  id: NotCalculated
+  parent: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus
+  langs:
+  - csharp
+  - vb
+  name: NotCalculated
+  nameWithType: ProtonDeliveryTimeStatus.NotCalculated
+  fullName: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.NotCalculated
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Delivery time is not calculated.
+  example: []
+  syntax:
+    content: NotCalculated = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus
+  commentId: T:VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.html
+  name: ProtonDeliveryTimeStatus
+  nameWithType: ProtonDeliveryTimeStatus
+  fullName: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus

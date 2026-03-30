@@ -1,0 +1,277 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+  commentId: T:VMS.TPS.Common.Model.Types.ObjectiveGoalType
+  id: ObjectiveGoalType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.ObjectiveGoalType.ConformityIndex
+  - VMS.TPS.Common.Model.Types.ObjectiveGoalType.Dose
+  - VMS.TPS.Common.Model.Types.ObjectiveGoalType.GradientMeasure
+  - VMS.TPS.Common.Model.Types.ObjectiveGoalType.Invalid
+  - VMS.TPS.Common.Model.Types.ObjectiveGoalType.Maximum_Dose
+  - VMS.TPS.Common.Model.Types.ObjectiveGoalType.Mean_Dose
+  - VMS.TPS.Common.Model.Types.ObjectiveGoalType.Minimum_Dose
+  - VMS.TPS.Common.Model.Types.ObjectiveGoalType.Prescription
+  - VMS.TPS.Common.Model.Types.ObjectiveGoalType.Volume
+  langs:
+  - csharp
+  - vb
+  name: ObjectiveGoalType
+  nameWithType: ObjectiveGoalType
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Clinical goal Objective type
+  example: []
+  syntax:
+    content: public enum ObjectiveGoalType
+    content.vb: Public Enum ObjectiveGoalType
+- uid: VMS.TPS.Common.Model.Types.ObjectiveGoalType.Invalid
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveGoalType.Invalid
+  id: Invalid
+  parent: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+  langs:
+  - csharp
+  - vb
+  name: Invalid
+  nameWithType: ObjectiveGoalType.Invalid
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveGoalType.Invalid
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Uninitialized or partially filled Objective
+  example: []
+  syntax:
+    content: Invalid = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+- uid: VMS.TPS.Common.Model.Types.ObjectiveGoalType.Dose
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveGoalType.Dose
+  id: Dose
+  parent: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+  langs:
+  - csharp
+  - vb
+  name: Dose
+  nameWithType: ObjectiveGoalType.Dose
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveGoalType.Dose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Dose objective
+  example: []
+  syntax:
+    content: Dose = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+- uid: VMS.TPS.Common.Model.Types.ObjectiveGoalType.Volume
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveGoalType.Volume
+  id: Volume
+  parent: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+  langs:
+  - csharp
+  - vb
+  name: Volume
+  nameWithType: ObjectiveGoalType.Volume
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveGoalType.Volume
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Volume objective
+  example: []
+  syntax:
+    content: Volume = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+- uid: VMS.TPS.Common.Model.Types.ObjectiveGoalType.Prescription
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveGoalType.Prescription
+  id: Prescription
+  parent: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+  langs:
+  - csharp
+  - vb
+  name: Prescription
+  nameWithType: ObjectiveGoalType.Prescription
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveGoalType.Prescription
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'Specialized type: Uses only Objective::limit and Objective::limitUnit, Objective::Oper is always Operator::Equals'
+  example: []
+  syntax:
+    content: Prescription = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+- uid: VMS.TPS.Common.Model.Types.ObjectiveGoalType.GradientMeasure
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveGoalType.GradientMeasure
+  id: GradientMeasure
+  parent: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+  langs:
+  - csharp
+  - vb
+  name: GradientMeasure
+  nameWithType: ObjectiveGoalType.GradientMeasure
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveGoalType.GradientMeasure
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'Specialised type: Uses only Objective::Oper and Objective::limit, Objective::limitUnit is always Unit::Absolute'
+  example: []
+  syntax:
+    content: GradientMeasure = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+- uid: VMS.TPS.Common.Model.Types.ObjectiveGoalType.ConformityIndex
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveGoalType.ConformityIndex
+  id: ConformityIndex
+  parent: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+  langs:
+  - csharp
+  - vb
+  name: ConformityIndex
+  nameWithType: ObjectiveGoalType.ConformityIndex
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveGoalType.ConformityIndex
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'Specialised type: Uses only Objective::Oper and Objective::limit'
+  example: []
+  syntax:
+    content: ConformityIndex = 5
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+- uid: VMS.TPS.Common.Model.Types.ObjectiveGoalType.Minimum_Dose
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveGoalType.Minimum_Dose
+  id: Minimum_Dose
+  parent: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+  langs:
+  - csharp
+  - vb
+  name: Minimum_Dose
+  nameWithType: ObjectiveGoalType.Minimum_Dose
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveGoalType.Minimum_Dose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Minimum dose objective
+  example: []
+  syntax:
+    content: Minimum_Dose = 6
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+- uid: VMS.TPS.Common.Model.Types.ObjectiveGoalType.Maximum_Dose
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveGoalType.Maximum_Dose
+  id: Maximum_Dose
+  parent: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+  langs:
+  - csharp
+  - vb
+  name: Maximum_Dose
+  nameWithType: ObjectiveGoalType.Maximum_Dose
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveGoalType.Maximum_Dose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Maximum dose objective
+  example: []
+  syntax:
+    content: Maximum_Dose = 7
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+- uid: VMS.TPS.Common.Model.Types.ObjectiveGoalType.Mean_Dose
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveGoalType.Mean_Dose
+  id: Mean_Dose
+  parent: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+  langs:
+  - csharp
+  - vb
+  name: Mean_Dose
+  nameWithType: ObjectiveGoalType.Mean_Dose
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveGoalType.Mean_Dose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Mean dose objective
+  example: []
+  syntax:
+    content: Mean_Dose = 8
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.ObjectiveGoalType
+  commentId: T:VMS.TPS.Common.Model.Types.ObjectiveGoalType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ObjectiveGoalType.html
+  name: ObjectiveGoalType
+  nameWithType: ObjectiveGoalType
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveGoalType

@@ -1,0 +1,850 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal
+  commentId: T:VMS.TPS.Common.Model.Types.ClinicalGoal
+  id: ClinicalGoal
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.ClinicalGoal.#ctor(VMS.TPS.Common.Model.Types.MeasureType,System.String,VMS.TPS.Common.Model.Types.Objective,System.String,VMS.TPS.Common.Model.Types.GoalPriority,System.Double,System.String,System.Double,System.String,VMS.TPS.Common.Model.Types.GoalEvalResult)
+  - VMS.TPS.Common.Model.Types.ClinicalGoal.ActualValue
+  - VMS.TPS.Common.Model.Types.ClinicalGoal.ActualValueAsString
+  - VMS.TPS.Common.Model.Types.ClinicalGoal.EvaluationResult
+  - VMS.TPS.Common.Model.Types.ClinicalGoal.GetSchema
+  - VMS.TPS.Common.Model.Types.ClinicalGoal.MeasureType
+  - VMS.TPS.Common.Model.Types.ClinicalGoal.Objective
+  - VMS.TPS.Common.Model.Types.ClinicalGoal.ObjectiveAsString
+  - VMS.TPS.Common.Model.Types.ClinicalGoal.Priority
+  - VMS.TPS.Common.Model.Types.ClinicalGoal.ReadXml(System.Xml.XmlReader)
+  - VMS.TPS.Common.Model.Types.ClinicalGoal.StructureId
+  - VMS.TPS.Common.Model.Types.ClinicalGoal.VariationAcceptable
+  - VMS.TPS.Common.Model.Types.ClinicalGoal.VariationAcceptableAsString
+  - VMS.TPS.Common.Model.Types.ClinicalGoal.WriteXml(System.Xml.XmlWriter)
+  langs:
+  - csharp
+  - vb
+  name: ClinicalGoal
+  nameWithType: ClinicalGoal
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal
+  type: Struct
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Represents a clinical goal.
+  example: []
+  syntax:
+    content: 'public struct ClinicalGoal : IXmlSerializable'
+    content.vb: Public Structure ClinicalGoal Implements IXmlSerializable
+  implements:
+  - System.Xml.Serialization.IXmlSerializable
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.#ctor(VMS.TPS.Common.Model.Types.MeasureType,System.String,VMS.TPS.Common.Model.Types.Objective,System.String,VMS.TPS.Common.Model.Types.GoalPriority,System.Double,System.String,System.Double,System.String,VMS.TPS.Common.Model.Types.GoalEvalResult)
+  commentId: M:VMS.TPS.Common.Model.Types.ClinicalGoal.#ctor(VMS.TPS.Common.Model.Types.MeasureType,System.String,VMS.TPS.Common.Model.Types.Objective,System.String,VMS.TPS.Common.Model.Types.GoalPriority,System.Double,System.String,System.Double,System.String,VMS.TPS.Common.Model.Types.GoalEvalResult)
+  id: '#ctor(VMS.TPS.Common.Model.Types.MeasureType,System.String,VMS.TPS.Common.Model.Types.Objective,System.String,VMS.TPS.Common.Model.Types.GoalPriority,System.Double,System.String,System.Double,System.String,VMS.TPS.Common.Model.Types.GoalEvalResult)'
+  parent: VMS.TPS.Common.Model.Types.ClinicalGoal
+  langs:
+  - csharp
+  - vb
+  name: ClinicalGoal(MeasureType, string, Objective, string, GoalPriority, double, string, double, string, GoalEvalResult)
+  nameWithType: ClinicalGoal.ClinicalGoal(MeasureType, string, Objective, string, GoalPriority, double, string, double, string, GoalEvalResult)
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.ClinicalGoal(VMS.TPS.Common.Model.Types.MeasureType, string, VMS.TPS.Common.Model.Types.Objective, string, VMS.TPS.Common.Model.Types.GoalPriority, double, string, double, string, VMS.TPS.Common.Model.Types.GoalEvalResult)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Construct a ClinicalGoal
+  example: []
+  syntax:
+    content: public ClinicalGoal(MeasureType measureType, string structureId, Objective objective, string objAsString, GoalPriority priority, double tolerance, string toleranceAsString, double actual, string actualAsString, GoalEvalResult evalResult)
+    parameters:
+    - id: measureType
+      type: VMS.TPS.Common.Model.Types.MeasureType
+      description: Measure Type.
+    - id: structureId
+      type: System.String
+      description: Structure ID.
+    - id: objective
+      type: VMS.TPS.Common.Model.Types.Objective
+      description: Objective.
+    - id: objAsString
+      type: System.String
+      description: Objective as a string.
+    - id: priority
+      type: VMS.TPS.Common.Model.Types.GoalPriority
+      description: Priority.
+    - id: tolerance
+      type: System.Double
+      description: Tolerance.
+    - id: toleranceAsString
+      type: System.String
+      description: Tolerance as a string.
+    - id: actual
+      type: System.Double
+      description: Actual value.
+    - id: actualAsString
+      type: System.String
+      description: Actual value as a string.
+    - id: evalResult
+      type: VMS.TPS.Common.Model.Types.GoalEvalResult
+      description: Goal evaluation result.
+    content.vb: Public Sub New(measureType As MeasureType, structureId As String, objective As Objective, objAsString As String, priority As GoalPriority, tolerance As Double, toleranceAsString As String, actual As Double, actualAsString As String, evalResult As GoalEvalResult)
+  overload: VMS.TPS.Common.Model.Types.ClinicalGoal.#ctor*
+  nameWithType.vb: ClinicalGoal.New(MeasureType, String, Objective, String, GoalPriority, Double, String, Double, String, GoalEvalResult)
+  fullName.vb: VMS.TPS.Common.Model.Types.ClinicalGoal.New(VMS.TPS.Common.Model.Types.MeasureType, String, VMS.TPS.Common.Model.Types.Objective, String, VMS.TPS.Common.Model.Types.GoalPriority, Double, String, Double, String, VMS.TPS.Common.Model.Types.GoalEvalResult)
+  name.vb: New(MeasureType, String, Objective, String, GoalPriority, Double, String, Double, String, GoalEvalResult)
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.GetSchema
+  commentId: M:VMS.TPS.Common.Model.Types.ClinicalGoal.GetSchema
+  id: GetSchema
+  parent: VMS.TPS.Common.Model.Types.ClinicalGoal
+  langs:
+  - csharp
+  - vb
+  name: GetSchema()
+  nameWithType: ClinicalGoal.GetSchema()
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.GetSchema()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: This member is internal to the Eclipse Scripting API.
+  example: []
+  syntax:
+    content: public XmlSchema GetSchema()
+    return:
+      type: System.Xml.Schema.XmlSchema
+      description: XmlSchema.
+    content.vb: Public Function GetSchema() As XmlSchema
+  overload: VMS.TPS.Common.Model.Types.ClinicalGoal.GetSchema*
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.ReadXml(System.Xml.XmlReader)
+  commentId: M:VMS.TPS.Common.Model.Types.ClinicalGoal.ReadXml(System.Xml.XmlReader)
+  id: ReadXml(System.Xml.XmlReader)
+  parent: VMS.TPS.Common.Model.Types.ClinicalGoal
+  langs:
+  - csharp
+  - vb
+  name: ReadXml(XmlReader)
+  nameWithType: ClinicalGoal.ReadXml(XmlReader)
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.ReadXml(System.Xml.XmlReader)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: This member is internal to the Eclipse Scripting API.
+  example: []
+  syntax:
+    content: public void ReadXml(XmlReader reader)
+    parameters:
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader.
+    content.vb: Public Sub ReadXml(reader As XmlReader)
+  overload: VMS.TPS.Common.Model.Types.ClinicalGoal.ReadXml*
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.Types.ClinicalGoal.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.Types.ClinicalGoal
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  nameWithType: ClinicalGoal.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Serialization support.
+  example: []
+  syntax:
+    content: public void WriteXml(XmlWriter writer)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The System.Xml.XmlWriter stream to which the object is serialized.
+    content.vb: Public Sub WriteXml(writer As XmlWriter)
+  overload: VMS.TPS.Common.Model.Types.ClinicalGoal.WriteXml*
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.MeasureType
+  commentId: P:VMS.TPS.Common.Model.Types.ClinicalGoal.MeasureType
+  id: MeasureType
+  parent: VMS.TPS.Common.Model.Types.ClinicalGoal
+  langs:
+  - csharp
+  - vb
+  name: MeasureType
+  nameWithType: ClinicalGoal.MeasureType
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.MeasureType
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Clinical goal measure type
+  example: []
+  syntax:
+    content: public MeasureType MeasureType { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.MeasureType
+    content.vb: Public ReadOnly Property MeasureType As MeasureType
+  overload: VMS.TPS.Common.Model.Types.ClinicalGoal.MeasureType*
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.StructureId
+  commentId: P:VMS.TPS.Common.Model.Types.ClinicalGoal.StructureId
+  id: StructureId
+  parent: VMS.TPS.Common.Model.Types.ClinicalGoal
+  langs:
+  - csharp
+  - vb
+  name: StructureId
+  nameWithType: ClinicalGoal.StructureId
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.StructureId
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Clinical goal structure Id
+  example: []
+  syntax:
+    content: public string StructureId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property StructureId As String
+  overload: VMS.TPS.Common.Model.Types.ClinicalGoal.StructureId*
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.Objective
+  commentId: P:VMS.TPS.Common.Model.Types.ClinicalGoal.Objective
+  id: Objective
+  parent: VMS.TPS.Common.Model.Types.ClinicalGoal
+  langs:
+  - csharp
+  - vb
+  name: Objective
+  nameWithType: ClinicalGoal.Objective
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.Objective
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Clinical goal objective
+  example: []
+  syntax:
+    content: public Objective Objective { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.Objective
+    content.vb: Public ReadOnly Property Objective As Objective
+  overload: VMS.TPS.Common.Model.Types.ClinicalGoal.Objective*
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.ObjectiveAsString
+  commentId: P:VMS.TPS.Common.Model.Types.ClinicalGoal.ObjectiveAsString
+  id: ObjectiveAsString
+  parent: VMS.TPS.Common.Model.Types.ClinicalGoal
+  langs:
+  - csharp
+  - vb
+  name: ObjectiveAsString
+  nameWithType: ClinicalGoal.ObjectiveAsString
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.ObjectiveAsString
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: String representation of clinical goal objective
+  example: []
+  syntax:
+    content: public string ObjectiveAsString { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ObjectiveAsString As String
+  overload: VMS.TPS.Common.Model.Types.ClinicalGoal.ObjectiveAsString*
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.Priority
+  commentId: P:VMS.TPS.Common.Model.Types.ClinicalGoal.Priority
+  id: Priority
+  parent: VMS.TPS.Common.Model.Types.ClinicalGoal
+  langs:
+  - csharp
+  - vb
+  name: Priority
+  nameWithType: ClinicalGoal.Priority
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.Priority
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Goal priority (0-4), where 0 is Most Important
+  example: []
+  syntax:
+    content: public GoalPriority Priority { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.GoalPriority
+    content.vb: Public ReadOnly Property Priority As GoalPriority
+  overload: VMS.TPS.Common.Model.Types.ClinicalGoal.Priority*
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.VariationAcceptable
+  commentId: P:VMS.TPS.Common.Model.Types.ClinicalGoal.VariationAcceptable
+  id: VariationAcceptable
+  parent: VMS.TPS.Common.Model.Types.ClinicalGoal
+  langs:
+  - csharp
+  - vb
+  name: VariationAcceptable
+  nameWithType: ClinicalGoal.VariationAcceptable
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.VariationAcceptable
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Clinical goal Variation Acceptable (tolerance)
+  example: []
+  syntax:
+    content: public double VariationAcceptable { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property VariationAcceptable As Double
+  overload: VMS.TPS.Common.Model.Types.ClinicalGoal.VariationAcceptable*
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.VariationAcceptableAsString
+  commentId: P:VMS.TPS.Common.Model.Types.ClinicalGoal.VariationAcceptableAsString
+  id: VariationAcceptableAsString
+  parent: VMS.TPS.Common.Model.Types.ClinicalGoal
+  langs:
+  - csharp
+  - vb
+  name: VariationAcceptableAsString
+  nameWithType: ClinicalGoal.VariationAcceptableAsString
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.VariationAcceptableAsString
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: String representation of clinical goal Variation Acceptable (tolerance)
+  example: []
+  syntax:
+    content: public string VariationAcceptableAsString { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property VariationAcceptableAsString As String
+  overload: VMS.TPS.Common.Model.Types.ClinicalGoal.VariationAcceptableAsString*
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.ActualValue
+  commentId: P:VMS.TPS.Common.Model.Types.ClinicalGoal.ActualValue
+  id: ActualValue
+  parent: VMS.TPS.Common.Model.Types.ClinicalGoal
+  langs:
+  - csharp
+  - vb
+  name: ActualValue
+  nameWithType: ClinicalGoal.ActualValue
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.ActualValue
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Clinical goal actual value
+  example: []
+  syntax:
+    content: public double ActualValue { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property ActualValue As Double
+  overload: VMS.TPS.Common.Model.Types.ClinicalGoal.ActualValue*
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.ActualValueAsString
+  commentId: P:VMS.TPS.Common.Model.Types.ClinicalGoal.ActualValueAsString
+  id: ActualValueAsString
+  parent: VMS.TPS.Common.Model.Types.ClinicalGoal
+  langs:
+  - csharp
+  - vb
+  name: ActualValueAsString
+  nameWithType: ClinicalGoal.ActualValueAsString
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.ActualValueAsString
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: String representation of clinical goal actual value
+  example: []
+  syntax:
+    content: public string ActualValueAsString { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ActualValueAsString As String
+  overload: VMS.TPS.Common.Model.Types.ClinicalGoal.ActualValueAsString*
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.EvaluationResult
+  commentId: P:VMS.TPS.Common.Model.Types.ClinicalGoal.EvaluationResult
+  id: EvaluationResult
+  parent: VMS.TPS.Common.Model.Types.ClinicalGoal
+  langs:
+  - csharp
+  - vb
+  name: EvaluationResult
+  nameWithType: ClinicalGoal.EvaluationResult
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.EvaluationResult
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Evaluation result.
+  example: []
+  syntax:
+    content: public GoalEvalResult EvaluationResult { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.GoalEvalResult
+    content.vb: Public ReadOnly Property EvaluationResult As GoalEvalResult
+  overload: VMS.TPS.Common.Model.Types.ClinicalGoal.EvaluationResult*
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.Xml.Serialization.IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  nameWithType: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ClinicalGoal.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ClinicalGoal.html#VMS_TPS_Common_Model_Types_ClinicalGoal__ctor_VMS_TPS_Common_Model_Types_MeasureType_System_String_VMS_TPS_Common_Model_Types_Objective_System_String_VMS_TPS_Common_Model_Types_GoalPriority_System_Double_System_String_System_Double_System_String_VMS_TPS_Common_Model_Types_GoalEvalResult_
+  name: ClinicalGoal
+  nameWithType: ClinicalGoal.ClinicalGoal
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.ClinicalGoal
+  nameWithType.vb: ClinicalGoal.New
+  fullName.vb: VMS.TPS.Common.Model.Types.ClinicalGoal.New
+  name.vb: New
+- uid: VMS.TPS.Common.Model.Types.MeasureType
+  commentId: T:VMS.TPS.Common.Model.Types.MeasureType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.MeasureType.html
+  name: MeasureType
+  nameWithType: MeasureType
+  fullName: VMS.TPS.Common.Model.Types.MeasureType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: VMS.TPS.Common.Model.Types.Objective
+  commentId: T:VMS.TPS.Common.Model.Types.Objective
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.Objective.html
+  name: Objective
+  nameWithType: Objective
+  fullName: VMS.TPS.Common.Model.Types.Objective
+- uid: VMS.TPS.Common.Model.Types.GoalPriority
+  commentId: T:VMS.TPS.Common.Model.Types.GoalPriority
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.GoalPriority.html
+  name: GoalPriority
+  nameWithType: GoalPriority
+  fullName: VMS.TPS.Common.Model.Types.GoalPriority
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: VMS.TPS.Common.Model.Types.GoalEvalResult
+  commentId: T:VMS.TPS.Common.Model.Types.GoalEvalResult
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.GoalEvalResult.html
+  name: GoalEvalResult
+  nameWithType: GoalEvalResult
+  fullName: VMS.TPS.Common.Model.Types.GoalEvalResult
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.GetSchema*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ClinicalGoal.GetSchema
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ClinicalGoal.html#VMS_TPS_Common_Model_Types_ClinicalGoal_GetSchema
+  name: GetSchema
+  nameWithType: ClinicalGoal.GetSchema
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.GetSchema
+- uid: System.Xml.Schema.XmlSchema
+  isExternal: true
+  name: XmlSchema
+  nameWithType: XmlSchema
+  fullName: System.Xml.Schema.XmlSchema
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.ReadXml*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ClinicalGoal.ReadXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ClinicalGoal.html#VMS_TPS_Common_Model_Types_ClinicalGoal_ReadXml_System_Xml_XmlReader_
+  name: ReadXml
+  nameWithType: ClinicalGoal.ReadXml
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.ReadXml
+- uid: System.Xml.XmlReader
+  isExternal: true
+  name: XmlReader
+  nameWithType: XmlReader
+  fullName: System.Xml.XmlReader
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.WriteXml*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ClinicalGoal.WriteXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ClinicalGoal.html#VMS_TPS_Common_Model_Types_ClinicalGoal_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml
+  nameWithType: ClinicalGoal.WriteXml
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.WriteXml
+- uid: System.Xml.XmlWriter
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.MeasureType*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ClinicalGoal.MeasureType
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ClinicalGoal.html#VMS_TPS_Common_Model_Types_ClinicalGoal_MeasureType
+  name: MeasureType
+  nameWithType: ClinicalGoal.MeasureType
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.MeasureType
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.StructureId*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ClinicalGoal.StructureId
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ClinicalGoal.html#VMS_TPS_Common_Model_Types_ClinicalGoal_StructureId
+  name: StructureId
+  nameWithType: ClinicalGoal.StructureId
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.StructureId
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.Objective*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ClinicalGoal.Objective
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ClinicalGoal.html#VMS_TPS_Common_Model_Types_ClinicalGoal_Objective
+  name: Objective
+  nameWithType: ClinicalGoal.Objective
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.Objective
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.ObjectiveAsString*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ClinicalGoal.ObjectiveAsString
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ClinicalGoal.html#VMS_TPS_Common_Model_Types_ClinicalGoal_ObjectiveAsString
+  name: ObjectiveAsString
+  nameWithType: ClinicalGoal.ObjectiveAsString
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.ObjectiveAsString
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.Priority*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ClinicalGoal.Priority
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ClinicalGoal.html#VMS_TPS_Common_Model_Types_ClinicalGoal_Priority
+  name: Priority
+  nameWithType: ClinicalGoal.Priority
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.Priority
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.VariationAcceptable*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ClinicalGoal.VariationAcceptable
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ClinicalGoal.html#VMS_TPS_Common_Model_Types_ClinicalGoal_VariationAcceptable
+  name: VariationAcceptable
+  nameWithType: ClinicalGoal.VariationAcceptable
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.VariationAcceptable
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.VariationAcceptableAsString*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ClinicalGoal.VariationAcceptableAsString
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ClinicalGoal.html#VMS_TPS_Common_Model_Types_ClinicalGoal_VariationAcceptableAsString
+  name: VariationAcceptableAsString
+  nameWithType: ClinicalGoal.VariationAcceptableAsString
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.VariationAcceptableAsString
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.ActualValue*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ClinicalGoal.ActualValue
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ClinicalGoal.html#VMS_TPS_Common_Model_Types_ClinicalGoal_ActualValue
+  name: ActualValue
+  nameWithType: ClinicalGoal.ActualValue
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.ActualValue
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.ActualValueAsString*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ClinicalGoal.ActualValueAsString
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ClinicalGoal.html#VMS_TPS_Common_Model_Types_ClinicalGoal_ActualValueAsString
+  name: ActualValueAsString
+  nameWithType: ClinicalGoal.ActualValueAsString
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.ActualValueAsString
+- uid: VMS.TPS.Common.Model.Types.ClinicalGoal.EvaluationResult*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ClinicalGoal.EvaluationResult
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ClinicalGoal.html#VMS_TPS_Common_Model_Types_ClinicalGoal_EvaluationResult
+  name: EvaluationResult
+  nameWithType: ClinicalGoal.EvaluationResult
+  fullName: VMS.TPS.Common.Model.Types.ClinicalGoal.EvaluationResult

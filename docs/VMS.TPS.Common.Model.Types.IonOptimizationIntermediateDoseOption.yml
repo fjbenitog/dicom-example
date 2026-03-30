@@ -1,0 +1,196 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+  commentId: T:VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+  id: IonOptimizationIntermediateDoseOption
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.ApplyIntermediateDoseAfterNIterations
+  - VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.AutomaticIntermediateDose
+  - VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.FieldDosesAsIntermediateDose
+  - VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.NoIntermediateDose
+  - VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.PeriodicIntermediateDoseEveryNIterations
+  langs:
+  - csharp
+  - vb
+  name: IonOptimizationIntermediateDoseOption
+  nameWithType: IonOptimizationIntermediateDoseOption
+  fullName: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Options for using intermediate dose in proton optimization.
+  example: []
+  syntax:
+    content: public enum IonOptimizationIntermediateDoseOption
+    content.vb: Public Enum IonOptimizationIntermediateDoseOption
+- uid: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.NoIntermediateDose
+  commentId: F:VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.NoIntermediateDose
+  id: NoIntermediateDose
+  parent: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+  langs:
+  - csharp
+  - vb
+  name: NoIntermediateDose
+  nameWithType: IonOptimizationIntermediateDoseOption.NoIntermediateDose
+  fullName: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.NoIntermediateDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: No intermediate dose for optimization.
+  example: []
+  syntax:
+    content: NoIntermediateDose = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+- uid: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.AutomaticIntermediateDose
+  commentId: F:VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.AutomaticIntermediateDose
+  id: AutomaticIntermediateDose
+  parent: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+  langs:
+  - csharp
+  - vb
+  name: AutomaticIntermediateDose
+  nameWithType: IonOptimizationIntermediateDoseOption.AutomaticIntermediateDose
+  fullName: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.AutomaticIntermediateDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Calculate intermediate dose after optimization has either converged or reached the maximum number of iterations. After intermediate dose has been applied, optimization continues until convergence or until the maximum number of iterations is reached.
+  example: []
+  syntax:
+    content: AutomaticIntermediateDose = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+- uid: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.ApplyIntermediateDoseAfterNIterations
+  commentId: F:VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.ApplyIntermediateDoseAfterNIterations
+  id: ApplyIntermediateDoseAfterNIterations
+  parent: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+  langs:
+  - csharp
+  - vb
+  name: ApplyIntermediateDoseAfterNIterations
+  nameWithType: IonOptimizationIntermediateDoseOption.ApplyIntermediateDoseAfterNIterations
+  fullName: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.ApplyIntermediateDoseAfterNIterations
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Calculate intermediate dose after optimization has reached a user-specified number of iterations. After intermediate dose has been applied, optimization continues until convergence or until the maximum number of iterations is reached.
+  example: []
+  syntax:
+    content: ApplyIntermediateDoseAfterNIterations = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+- uid: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.PeriodicIntermediateDoseEveryNIterations
+  commentId: F:VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.PeriodicIntermediateDoseEveryNIterations
+  id: PeriodicIntermediateDoseEveryNIterations
+  parent: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+  langs:
+  - csharp
+  - vb
+  name: PeriodicIntermediateDoseEveryNIterations
+  nameWithType: IonOptimizationIntermediateDoseOption.PeriodicIntermediateDoseEveryNIterations
+  fullName: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.PeriodicIntermediateDoseEveryNIterations
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Calculate intermediate dose multiple times, repeating the calculation after a user-specified number of iterations. The last optimization round is triggered when the next set of user-specified number of iterations would exceed the maximum number of iterations.
+
+    In the last optimization round, optimization continues until convergence or until the maximum number of iterations is reached.
+  example: []
+  syntax:
+    content: PeriodicIntermediateDoseEveryNIterations = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+- uid: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.FieldDosesAsIntermediateDose
+  commentId: F:VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.FieldDosesAsIntermediateDose
+  id: FieldDosesAsIntermediateDose
+  parent: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+  langs:
+  - csharp
+  - vb
+  name: FieldDosesAsIntermediateDose
+  nameWithType: IonOptimizationIntermediateDoseOption.FieldDosesAsIntermediateDose
+  fullName: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.FieldDosesAsIntermediateDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Apply field doses as intermediate dose in the optimization. The optimization continues until convergence or until the maximum number of iterations is reached.
+  example: []
+  syntax:
+    content: FieldDosesAsIntermediateDose = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+  commentId: T:VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.html
+  name: IonOptimizationIntermediateDoseOption
+  nameWithType: IonOptimizationIntermediateDoseOption
+  fullName: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption

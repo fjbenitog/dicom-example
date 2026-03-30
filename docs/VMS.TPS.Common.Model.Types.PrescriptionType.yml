@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.PrescriptionType
+  commentId: T:VMS.TPS.Common.Model.Types.PrescriptionType
+  id: PrescriptionType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.PrescriptionType.PrescriptionTypeDepth
+  - VMS.TPS.Common.Model.Types.PrescriptionType.PrescriptionTypeIsodose
+  - VMS.TPS.Common.Model.Types.PrescriptionType.PrescriptionTypeNone
+  - VMS.TPS.Common.Model.Types.PrescriptionType.PrescriptionTypeVolume
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionType
+  nameWithType: PrescriptionType
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Enumeration of prescription types.
+  example: []
+  syntax:
+    content: public enum PrescriptionType
+    content.vb: Public Enum PrescriptionType
+- uid: VMS.TPS.Common.Model.Types.PrescriptionType.PrescriptionTypeVolume
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionType.PrescriptionTypeVolume
+  id: PrescriptionTypeVolume
+  parent: VMS.TPS.Common.Model.Types.PrescriptionType
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionTypeVolume
+  nameWithType: PrescriptionType.PrescriptionTypeVolume
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionType.PrescriptionTypeVolume
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Volume.
+  example: []
+  syntax:
+    content: PrescriptionTypeVolume = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionType
+- uid: VMS.TPS.Common.Model.Types.PrescriptionType.PrescriptionTypeDepth
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionType.PrescriptionTypeDepth
+  id: PrescriptionTypeDepth
+  parent: VMS.TPS.Common.Model.Types.PrescriptionType
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionTypeDepth
+  nameWithType: PrescriptionType.PrescriptionTypeDepth
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionType.PrescriptionTypeDepth
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Depth.
+  example: []
+  syntax:
+    content: PrescriptionTypeDepth = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionType
+- uid: VMS.TPS.Common.Model.Types.PrescriptionType.PrescriptionTypeIsodose
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionType.PrescriptionTypeIsodose
+  id: PrescriptionTypeIsodose
+  parent: VMS.TPS.Common.Model.Types.PrescriptionType
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionTypeIsodose
+  nameWithType: PrescriptionType.PrescriptionTypeIsodose
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionType.PrescriptionTypeIsodose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Isodose.
+  example: []
+  syntax:
+    content: PrescriptionTypeIsodose = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionType
+- uid: VMS.TPS.Common.Model.Types.PrescriptionType.PrescriptionTypeNone
+  commentId: F:VMS.TPS.Common.Model.Types.PrescriptionType.PrescriptionTypeNone
+  id: PrescriptionTypeNone
+  parent: VMS.TPS.Common.Model.Types.PrescriptionType
+  langs:
+  - csharp
+  - vb
+  name: PrescriptionTypeNone
+  nameWithType: PrescriptionType.PrescriptionTypeNone
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionType.PrescriptionTypeNone
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Undefined.
+  example: []
+  syntax:
+    content: PrescriptionTypeNone = 99
+    return:
+      type: VMS.TPS.Common.Model.Types.PrescriptionType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.PrescriptionType
+  commentId: T:VMS.TPS.Common.Model.Types.PrescriptionType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.PrescriptionType.html
+  name: PrescriptionType
+  nameWithType: PrescriptionType
+  fullName: VMS.TPS.Common.Model.Types.PrescriptionType

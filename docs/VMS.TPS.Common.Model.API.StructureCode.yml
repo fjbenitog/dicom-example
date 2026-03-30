@@ -1,0 +1,1623 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.API.StructureCode
+  commentId: T:VMS.TPS.Common.Model.API.StructureCode
+  id: StructureCode
+  parent: VMS.TPS.Common.Model.API
+  children:
+  - VMS.TPS.Common.Model.API.StructureCode.Code
+  - VMS.TPS.Common.Model.API.StructureCode.CodeMeaning
+  - VMS.TPS.Common.Model.API.StructureCode.CodingScheme
+  - VMS.TPS.Common.Model.API.StructureCode.DisplayName
+  - VMS.TPS.Common.Model.API.StructureCode.Equals(System.Object)
+  - VMS.TPS.Common.Model.API.StructureCode.Equals(VMS.TPS.Common.Model.API.StructureCode)
+  - VMS.TPS.Common.Model.API.StructureCode.GetHashCode
+  - VMS.TPS.Common.Model.API.StructureCode.IsEncompassStructureCode
+  - VMS.TPS.Common.Model.API.StructureCode.ToString
+  - VMS.TPS.Common.Model.API.StructureCode.ToStructureCodeInfo
+  - VMS.TPS.Common.Model.API.StructureCode.WriteXml(System.Xml.XmlWriter)
+  - VMS.TPS.Common.Model.API.StructureCode.op_Equality(VMS.TPS.Common.Model.API.StructureCode,VMS.TPS.Common.Model.API.StructureCode)
+  - VMS.TPS.Common.Model.API.StructureCode.op_Inequality(VMS.TPS.Common.Model.API.StructureCode,VMS.TPS.Common.Model.API.StructureCode)
+  langs:
+  - csharp
+  - vb
+  name: StructureCode
+  nameWithType: StructureCode
+  fullName: VMS.TPS.Common.Model.API.StructureCode
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Represents a structure code and its coding scheme.
+  example: []
+  syntax:
+    content: 'public class StructureCode : SerializableObject, IXmlSerializable, IEquatable<StructureCode>'
+    content.vb: Public Class StructureCode Inherits SerializableObject Implements IXmlSerializable, IEquatable(Of StructureCode)
+  inheritance:
+  - System.Object
+  - VMS.TPS.Common.Model.API.SerializableObject
+  implements:
+  - System.Xml.Serialization.IXmlSerializable
+  - System.IEquatable{VMS.TPS.Common.Model.API.StructureCode}
+  inheritedMembers:
+  - VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  - VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  - VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  - VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.API.StructureCode.ToStructureCodeInfo
+  commentId: M:VMS.TPS.Common.Model.API.StructureCode.ToStructureCodeInfo
+  id: ToStructureCodeInfo
+  parent: VMS.TPS.Common.Model.API.StructureCode
+  langs:
+  - csharp
+  - vb
+  name: ToStructureCodeInfo()
+  nameWithType: StructureCode.ToStructureCodeInfo()
+  fullName: VMS.TPS.Common.Model.API.StructureCode.ToStructureCodeInfo()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Returns a StructureCodeInfo object with the same coding scheme and code as in the current structure code object.
+  example: []
+  syntax:
+    content: public StructureCodeInfo ToStructureCodeInfo()
+    return:
+      type: VMS.TPS.Common.Model.Types.StructureCodeInfo
+      description: ''
+    content.vb: Public Function ToStructureCodeInfo() As StructureCodeInfo
+  overload: VMS.TPS.Common.Model.API.StructureCode.ToStructureCodeInfo*
+- uid: VMS.TPS.Common.Model.API.StructureCode.Equals(VMS.TPS.Common.Model.API.StructureCode)
+  commentId: M:VMS.TPS.Common.Model.API.StructureCode.Equals(VMS.TPS.Common.Model.API.StructureCode)
+  id: Equals(VMS.TPS.Common.Model.API.StructureCode)
+  parent: VMS.TPS.Common.Model.API.StructureCode
+  langs:
+  - csharp
+  - vb
+  name: Equals(StructureCode)
+  nameWithType: StructureCode.Equals(StructureCode)
+  fullName: VMS.TPS.Common.Model.API.StructureCode.Equals(VMS.TPS.Common.Model.API.StructureCode)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Determines whether this structure code is considered equal to the specified structure code.
+  example: []
+  syntax:
+    content: public bool Equals(StructureCode other)
+    parameters:
+    - id: other
+      type: VMS.TPS.Common.Model.API.StructureCode
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function Equals(other As StructureCode) As Boolean
+  overload: VMS.TPS.Common.Model.API.StructureCode.Equals*
+  implements:
+  - System.IEquatable{VMS.TPS.Common.Model.API.StructureCode}.Equals(VMS.TPS.Common.Model.API.StructureCode)
+- uid: VMS.TPS.Common.Model.API.StructureCode.Equals(System.Object)
+  commentId: M:VMS.TPS.Common.Model.API.StructureCode.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: VMS.TPS.Common.Model.API.StructureCode
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: StructureCode.Equals(object)
+  fullName: VMS.TPS.Common.Model.API.StructureCode.Equals(object)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Determines whether the current object is considered equal to the specified object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: VMS.TPS.Common.Model.API.StructureCode.Equals*
+  nameWithType.vb: StructureCode.Equals(Object)
+  fullName.vb: VMS.TPS.Common.Model.API.StructureCode.Equals(Object)
+  name.vb: Equals(Object)
+- uid: VMS.TPS.Common.Model.API.StructureCode.op_Equality(VMS.TPS.Common.Model.API.StructureCode,VMS.TPS.Common.Model.API.StructureCode)
+  commentId: M:VMS.TPS.Common.Model.API.StructureCode.op_Equality(VMS.TPS.Common.Model.API.StructureCode,VMS.TPS.Common.Model.API.StructureCode)
+  id: op_Equality(VMS.TPS.Common.Model.API.StructureCode,VMS.TPS.Common.Model.API.StructureCode)
+  parent: VMS.TPS.Common.Model.API.StructureCode
+  langs:
+  - csharp
+  - vb
+  name: operator ==(StructureCode, StructureCode)
+  nameWithType: StructureCode.operator ==(StructureCode, StructureCode)
+  fullName: VMS.TPS.Common.Model.API.StructureCode.operator ==(VMS.TPS.Common.Model.API.StructureCode, VMS.TPS.Common.Model.API.StructureCode)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The equality operator.
+  example: []
+  syntax:
+    content: public static bool operator ==(StructureCode sc1, StructureCode sc2)
+    parameters:
+    - id: sc1
+      type: VMS.TPS.Common.Model.API.StructureCode
+      description: ''
+    - id: sc2
+      type: VMS.TPS.Common.Model.API.StructureCode
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Operator =(sc1 As StructureCode, sc2 As StructureCode) As Boolean
+  overload: VMS.TPS.Common.Model.API.StructureCode.op_Equality*
+  nameWithType.vb: StructureCode.=(StructureCode, StructureCode)
+  fullName.vb: VMS.TPS.Common.Model.API.StructureCode.=(VMS.TPS.Common.Model.API.StructureCode, VMS.TPS.Common.Model.API.StructureCode)
+  name.vb: =(StructureCode, StructureCode)
+- uid: VMS.TPS.Common.Model.API.StructureCode.op_Inequality(VMS.TPS.Common.Model.API.StructureCode,VMS.TPS.Common.Model.API.StructureCode)
+  commentId: M:VMS.TPS.Common.Model.API.StructureCode.op_Inequality(VMS.TPS.Common.Model.API.StructureCode,VMS.TPS.Common.Model.API.StructureCode)
+  id: op_Inequality(VMS.TPS.Common.Model.API.StructureCode,VMS.TPS.Common.Model.API.StructureCode)
+  parent: VMS.TPS.Common.Model.API.StructureCode
+  langs:
+  - csharp
+  - vb
+  name: operator !=(StructureCode, StructureCode)
+  nameWithType: StructureCode.operator !=(StructureCode, StructureCode)
+  fullName: VMS.TPS.Common.Model.API.StructureCode.operator !=(VMS.TPS.Common.Model.API.StructureCode, VMS.TPS.Common.Model.API.StructureCode)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The inequality operator.
+  example: []
+  syntax:
+    content: public static bool operator !=(StructureCode sc1, StructureCode sc2)
+    parameters:
+    - id: sc1
+      type: VMS.TPS.Common.Model.API.StructureCode
+      description: ''
+    - id: sc2
+      type: VMS.TPS.Common.Model.API.StructureCode
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Operator <>(sc1 As StructureCode, sc2 As StructureCode) As Boolean
+  overload: VMS.TPS.Common.Model.API.StructureCode.op_Inequality*
+  nameWithType.vb: StructureCode.<>(StructureCode, StructureCode)
+  fullName.vb: VMS.TPS.Common.Model.API.StructureCode.<>(VMS.TPS.Common.Model.API.StructureCode, VMS.TPS.Common.Model.API.StructureCode)
+  name.vb: <>(StructureCode, StructureCode)
+- uid: VMS.TPS.Common.Model.API.StructureCode.ToString
+  commentId: M:VMS.TPS.Common.Model.API.StructureCode.ToString
+  id: ToString
+  parent: VMS.TPS.Common.Model.API.StructureCode
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: StructureCode.ToString()
+  fullName: VMS.TPS.Common.Model.API.StructureCode.ToString()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Returns a string that represents this object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents this object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: VMS.TPS.Common.Model.API.StructureCode.ToString*
+- uid: VMS.TPS.Common.Model.API.StructureCode.GetHashCode
+  commentId: M:VMS.TPS.Common.Model.API.StructureCode.GetHashCode
+  id: GetHashCode
+  parent: VMS.TPS.Common.Model.API.StructureCode
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: StructureCode.GetHashCode()
+  fullName: VMS.TPS.Common.Model.API.StructureCode.GetHashCode()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Returns the hash code for this structure code.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: VMS.TPS.Common.Model.API.StructureCode.GetHashCode*
+- uid: VMS.TPS.Common.Model.API.StructureCode.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.StructureCode.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.StructureCode
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  nameWithType: StructureCode.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.StructureCode.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Converts an object into its XML representation.
+
+    For more information on how to serialize an object into an XML document, see <xref href="System.Xml.Serialization.XmlSerializer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override void WriteXml(XmlWriter writer)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The System.Xml.XmlWriter stream, to which the object is serialized.
+    content.vb: Public Overrides Sub WriteXml(writer As XmlWriter)
+  overridden: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter)
+  overload: VMS.TPS.Common.Model.API.StructureCode.WriteXml*
+- uid: VMS.TPS.Common.Model.API.StructureCode.Code
+  commentId: P:VMS.TPS.Common.Model.API.StructureCode.Code
+  id: Code
+  parent: VMS.TPS.Common.Model.API.StructureCode
+  langs:
+  - csharp
+  - vb
+  name: Code
+  nameWithType: StructureCode.Code
+  fullName: VMS.TPS.Common.Model.API.StructureCode.Code
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The structure code as defined in the associated coding scheme.
+  example: []
+  syntax:
+    content: public string Code { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Code As String
+  overload: VMS.TPS.Common.Model.API.StructureCode.Code*
+- uid: VMS.TPS.Common.Model.API.StructureCode.CodeMeaning
+  commentId: P:VMS.TPS.Common.Model.API.StructureCode.CodeMeaning
+  id: CodeMeaning
+  parent: VMS.TPS.Common.Model.API.StructureCode
+  langs:
+  - csharp
+  - vb
+  name: CodeMeaning
+  nameWithType: StructureCode.CodeMeaning
+  fullName: VMS.TPS.Common.Model.API.StructureCode.CodeMeaning
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The meaning of the structure code.
+  example: []
+  syntax:
+    content: public string CodeMeaning { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CodeMeaning As String
+  overload: VMS.TPS.Common.Model.API.StructureCode.CodeMeaning*
+- uid: VMS.TPS.Common.Model.API.StructureCode.CodingScheme
+  commentId: P:VMS.TPS.Common.Model.API.StructureCode.CodingScheme
+  id: CodingScheme
+  parent: VMS.TPS.Common.Model.API.StructureCode
+  langs:
+  - csharp
+  - vb
+  name: CodingScheme
+  nameWithType: StructureCode.CodingScheme
+  fullName: VMS.TPS.Common.Model.API.StructureCode.CodingScheme
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The coding scheme of the structure code.
+  example: []
+  syntax:
+    content: public string CodingScheme { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CodingScheme As String
+  overload: VMS.TPS.Common.Model.API.StructureCode.CodingScheme*
+- uid: VMS.TPS.Common.Model.API.StructureCode.DisplayName
+  commentId: P:VMS.TPS.Common.Model.API.StructureCode.DisplayName
+  id: DisplayName
+  parent: VMS.TPS.Common.Model.API.StructureCode
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: StructureCode.DisplayName
+  fullName: VMS.TPS.Common.Model.API.StructureCode.DisplayName
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The display name of the code.
+  example: []
+  syntax:
+    content: public string DisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DisplayName As String
+  overload: VMS.TPS.Common.Model.API.StructureCode.DisplayName*
+- uid: VMS.TPS.Common.Model.API.StructureCode.IsEncompassStructureCode
+  commentId: P:VMS.TPS.Common.Model.API.StructureCode.IsEncompassStructureCode
+  id: IsEncompassStructureCode
+  parent: VMS.TPS.Common.Model.API.StructureCode
+  langs:
+  - csharp
+  - vb
+  name: IsEncompassStructureCode
+  nameWithType: StructureCode.IsEncompassStructureCode
+  fullName: VMS.TPS.Common.Model.API.StructureCode.IsEncompassStructureCode
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Indicates whether the structure code is an encompass structure code.
+  example: []
+  syntax:
+    content: public bool IsEncompassStructureCode { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsEncompassStructureCode As Boolean
+  overload: VMS.TPS.Common.Model.API.StructureCode.IsEncompassStructureCode*
+references:
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: VMS.TPS.Common.Model.API.SerializableObject
+  commentId: T:VMS.TPS.Common.Model.API.SerializableObject
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: VMS.TPS.Common.Model.API.SerializableObject
+- uid: System.Xml.Serialization.IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  nameWithType: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+- uid: System.IEquatable{VMS.TPS.Common.Model.API.StructureCode}
+  commentId: T:System.IEquatable{VMS.TPS.Common.Model.API.StructureCode}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<StructureCode>
+  nameWithType: IEquatable<StructureCode>
+  fullName: System.IEquatable<VMS.TPS.Common.Model.API.StructureCode>
+  nameWithType.vb: IEquatable(Of StructureCode)
+  fullName.vb: System.IEquatable(Of VMS.TPS.Common.Model.API.StructureCode)
+  name.vb: IEquatable(Of StructureCode)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.StructureCode
+    name: StructureCode
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.StructureCode.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.StructureCode
+    name: StructureCode
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.StructureCode.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  name: GetSchema()
+  nameWithType: SerializableObject.GetSchema()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.GetSchema()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  name: ReadXml(XmlReader)
+  nameWithType: SerializableObject.ReadXml(XmlReader)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  name: WriteXml(XmlWriter, string, object)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, object)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, object)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, Object)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, Object)
+  name.vb: WriteXml(XmlWriter, String, Object)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  name: WriteXml(XmlWriter, string, string)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, string)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, String)
+  name.vb: WriteXml(XmlWriter, String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  name: StartSerialization(string, string)
+  nameWithType: SerializableObject.StartSerialization(string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(string, string)
+  nameWithType.vb: SerializableObject.StartSerialization(String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(String, String)
+  name.vb: StartSerialization(String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  name: EndSerialization()
+  nameWithType: SerializableObject.EndSerialization()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  name: ClearSerializationHistory()
+  nameWithType: SerializableObject.ClearSerializationHistory()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.StructureCode.ToStructureCodeInfo*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureCode.ToStructureCodeInfo
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureCode.html#VMS_TPS_Common_Model_API_StructureCode_ToStructureCodeInfo
+  name: ToStructureCodeInfo
+  nameWithType: StructureCode.ToStructureCodeInfo
+  fullName: VMS.TPS.Common.Model.API.StructureCode.ToStructureCodeInfo
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  commentId: T:VMS.TPS.Common.Model.Types.StructureCodeInfo
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html
+  name: StructureCodeInfo
+  nameWithType: StructureCodeInfo
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.API.StructureCode.Equals*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureCode.Equals
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureCode.html#VMS_TPS_Common_Model_API_StructureCode_Equals_VMS_TPS_Common_Model_API_StructureCode_
+  name: Equals
+  nameWithType: StructureCode.Equals
+  fullName: VMS.TPS.Common.Model.API.StructureCode.Equals
+- uid: System.IEquatable{VMS.TPS.Common.Model.API.StructureCode}.Equals(VMS.TPS.Common.Model.API.StructureCode)
+  commentId: M:System.IEquatable{VMS.TPS.Common.Model.API.StructureCode}.Equals(VMS.TPS.Common.Model.API.StructureCode)
+  parent: System.IEquatable{VMS.TPS.Common.Model.API.StructureCode}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(StructureCode)
+  nameWithType: IEquatable<StructureCode>.Equals(StructureCode)
+  fullName: System.IEquatable<VMS.TPS.Common.Model.API.StructureCode>.Equals(VMS.TPS.Common.Model.API.StructureCode)
+  nameWithType.vb: IEquatable(Of StructureCode).Equals(StructureCode)
+  fullName.vb: System.IEquatable(Of VMS.TPS.Common.Model.API.StructureCode).Equals(VMS.TPS.Common.Model.API.StructureCode)
+  spec.csharp:
+  - uid: System.IEquatable{VMS.TPS.Common.Model.API.StructureCode}.Equals(VMS.TPS.Common.Model.API.StructureCode)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.StructureCode
+    name: StructureCode
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.StructureCode.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{VMS.TPS.Common.Model.API.StructureCode}.Equals(VMS.TPS.Common.Model.API.StructureCode)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.StructureCode
+    name: StructureCode
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.StructureCode.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.StructureCode
+  commentId: T:VMS.TPS.Common.Model.API.StructureCode
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureCode.html
+  name: StructureCode
+  nameWithType: StructureCode
+  fullName: VMS.TPS.Common.Model.API.StructureCode
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.API.StructureCode.op_Equality*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureCode.op_Equality
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureCode.html#VMS_TPS_Common_Model_API_StructureCode_op_Equality_VMS_TPS_Common_Model_API_StructureCode_VMS_TPS_Common_Model_API_StructureCode_
+  name: operator ==
+  nameWithType: StructureCode.operator ==
+  fullName: VMS.TPS.Common.Model.API.StructureCode.operator ==
+  nameWithType.vb: StructureCode.=
+  fullName.vb: VMS.TPS.Common.Model.API.StructureCode.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.StructureCode.op_Equality*
+    name: ==
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.StructureCode.html#VMS_TPS_Common_Model_API_StructureCode_op_Equality_VMS_TPS_Common_Model_API_StructureCode_VMS_TPS_Common_Model_API_StructureCode_
+- uid: VMS.TPS.Common.Model.API.StructureCode.op_Inequality*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureCode.op_Inequality
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureCode.html#VMS_TPS_Common_Model_API_StructureCode_op_Inequality_VMS_TPS_Common_Model_API_StructureCode_VMS_TPS_Common_Model_API_StructureCode_
+  name: operator !=
+  nameWithType: StructureCode.operator !=
+  fullName: VMS.TPS.Common.Model.API.StructureCode.operator !=
+  nameWithType.vb: StructureCode.<>
+  fullName.vb: VMS.TPS.Common.Model.API.StructureCode.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.StructureCode.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.StructureCode.html#VMS_TPS_Common_Model_API_StructureCode_op_Inequality_VMS_TPS_Common_Model_API_StructureCode_VMS_TPS_Common_Model_API_StructureCode_
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.StructureCode.ToString*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureCode.ToString
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureCode.html#VMS_TPS_Common_Model_API_StructureCode_ToString
+  name: ToString
+  nameWithType: StructureCode.ToString
+  fullName: VMS.TPS.Common.Model.API.StructureCode.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.StructureCode.GetHashCode*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureCode.GetHashCode
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureCode.html#VMS_TPS_Common_Model_API_StructureCode_GetHashCode
+  name: GetHashCode
+  nameWithType: StructureCode.GetHashCode
+  fullName: VMS.TPS.Common.Model.API.StructureCode.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Xml.Serialization.XmlSerializer
+  commentId: T:System.Xml.Serialization.XmlSerializer
+  isExternal: true
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml(XmlWriter)
+  nameWithType: SerializableObject.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.StructureCode.WriteXml*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureCode.WriteXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureCode.html#VMS_TPS_Common_Model_API_StructureCode_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml
+  nameWithType: StructureCode.WriteXml
+  fullName: VMS.TPS.Common.Model.API.StructureCode.WriteXml
+- uid: System.Xml.XmlWriter
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: VMS.TPS.Common.Model.API.StructureCode.Code*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureCode.Code
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureCode.html#VMS_TPS_Common_Model_API_StructureCode_Code
+  name: Code
+  nameWithType: StructureCode.Code
+  fullName: VMS.TPS.Common.Model.API.StructureCode.Code
+- uid: VMS.TPS.Common.Model.API.StructureCode.CodeMeaning*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureCode.CodeMeaning
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureCode.html#VMS_TPS_Common_Model_API_StructureCode_CodeMeaning
+  name: CodeMeaning
+  nameWithType: StructureCode.CodeMeaning
+  fullName: VMS.TPS.Common.Model.API.StructureCode.CodeMeaning
+- uid: VMS.TPS.Common.Model.API.StructureCode.CodingScheme*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureCode.CodingScheme
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureCode.html#VMS_TPS_Common_Model_API_StructureCode_CodingScheme
+  name: CodingScheme
+  nameWithType: StructureCode.CodingScheme
+  fullName: VMS.TPS.Common.Model.API.StructureCode.CodingScheme
+- uid: VMS.TPS.Common.Model.API.StructureCode.DisplayName*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureCode.DisplayName
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureCode.html#VMS_TPS_Common_Model_API_StructureCode_DisplayName
+  name: DisplayName
+  nameWithType: StructureCode.DisplayName
+  fullName: VMS.TPS.Common.Model.API.StructureCode.DisplayName
+- uid: VMS.TPS.Common.Model.API.StructureCode.IsEncompassStructureCode*
+  commentId: Overload:VMS.TPS.Common.Model.API.StructureCode.IsEncompassStructureCode
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureCode.html#VMS_TPS_Common_Model_API_StructureCode_IsEncompassStructureCode
+  name: IsEncompassStructureCode
+  nameWithType: StructureCode.IsEncompassStructureCode
+  fullName: VMS.TPS.Common.Model.API.StructureCode.IsEncompassStructureCode

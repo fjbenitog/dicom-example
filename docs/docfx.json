@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../lib/18.0",
+          "files": [
+            "VMS.TPS.Common.Model.API.dll",
+            "VMS.TPS.Common.Model.API.xml",
+            "VMS.TPS.Common.Model.Types.dll",
+            "VMS.TPS.Common.Model.Types.xml"
+          ]
+        }
+      ]
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appName": "Example",
+      "_appTitle": "Example",
+      "_enableSearch": false,
+      "pdf": false
+    }
+  }
+}

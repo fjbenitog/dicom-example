@@ -1,0 +1,607 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT
+  commentId: T:VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT
+  id: OptimizationOptionsIMPT
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.#ctor(System.Int32,VMS.TPS.Common.Model.Types.OptimizationOption)
+  - VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.#ctor(System.Int32,VMS.TPS.Common.Model.Types.OptimizationOption,VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption,System.Int32)
+  - VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.ConvergenceOption
+  - VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.IntermediateDoseOption
+  - VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.MaximumNumberOfIterations
+  - VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.NumberOfIterationsBeforeIDose
+  langs:
+  - csharp
+  - vb
+  name: OptimizationOptionsIMPT
+  nameWithType: OptimizationOptionsIMPT
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Options for IMPT optimization.
+  example: []
+  syntax:
+    content: 'public class OptimizationOptionsIMPT : OptimizationOptionsBase'
+    content.vb: Public Class OptimizationOptionsIMPT Inherits OptimizationOptionsBase
+  inheritance:
+  - System.Object
+  - VMS.TPS.Common.Model.Types.OptimizationOptionsBase
+  inheritedMembers:
+  - VMS.TPS.Common.Model.Types.OptimizationOptionsBase.MLC
+  - VMS.TPS.Common.Model.Types.OptimizationOptionsBase.StartOption
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.#ctor(System.Int32,VMS.TPS.Common.Model.Types.OptimizationOption,VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption,System.Int32)
+  commentId: M:VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.#ctor(System.Int32,VMS.TPS.Common.Model.Types.OptimizationOption,VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption,System.Int32)
+  id: '#ctor(System.Int32,VMS.TPS.Common.Model.Types.OptimizationOption,VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption,System.Int32)'
+  parent: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT
+  langs:
+  - csharp
+  - vb
+  name: OptimizationOptionsIMPT(int, OptimizationOption, IonOptimizationIntermediateDoseOption, int)
+  nameWithType: OptimizationOptionsIMPT.OptimizationOptionsIMPT(int, OptimizationOption, IonOptimizationIntermediateDoseOption, int)
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.OptimizationOptionsIMPT(int, VMS.TPS.Common.Model.Types.OptimizationOption, VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption, int)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Constructor for setting proton optimization options for optimizing with intermediate dose.
+
+    Initial state defines whether proton optimization uses an existing scan list or starts from zero. 
+
+    Intermediate dose option defines whether optimizer gets to converge before intermediate dose calculation or whether it runs for a user-specified number of iterations.
+
+    Also having multiple intermediate dose calculation rounds or using existing field dose as intermediate dose is possible.
+
+    Regardless of the intermediate dose option, the final optimization round runs until convergence or until a maximum number of iterations is reached.
+  example: []
+  syntax:
+    content: public OptimizationOptionsIMPT(int maxIterations, OptimizationOption initialState, IonOptimizationIntermediateDoseOption intermediateDoseOption, int numberOfIterationsBeforeIDose = 0)
+    parameters:
+    - id: maxIterations
+      type: System.Int32
+      description: Maximum number of iterations for optimization.
+    - id: initialState
+      type: VMS.TPS.Common.Model.Types.OptimizationOption
+      description: Initial state at the beginning of optimization.
+    - id: intermediateDoseOption
+      type: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+      description: Used option for calculating and applying intermediate dose.
+    - id: numberOfIterationsBeforeIDose
+      type: System.Int32
+      description: Number of steps before the intermediate dose is calculated.
+    content.vb: Public Sub New(maxIterations As Integer, initialState As OptimizationOption, intermediateDoseOption As IonOptimizationIntermediateDoseOption, numberOfIterationsBeforeIDose As Integer = 0)
+  overload: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.#ctor*
+  nameWithType.vb: OptimizationOptionsIMPT.New(Integer, OptimizationOption, IonOptimizationIntermediateDoseOption, Integer)
+  fullName.vb: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.New(Integer, VMS.TPS.Common.Model.Types.OptimizationOption, VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption, Integer)
+  name.vb: New(Integer, OptimizationOption, IonOptimizationIntermediateDoseOption, Integer)
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.#ctor(System.Int32,VMS.TPS.Common.Model.Types.OptimizationOption)
+  commentId: M:VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.#ctor(System.Int32,VMS.TPS.Common.Model.Types.OptimizationOption)
+  id: '#ctor(System.Int32,VMS.TPS.Common.Model.Types.OptimizationOption)'
+  parent: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT
+  langs:
+  - csharp
+  - vb
+  name: OptimizationOptionsIMPT(int, OptimizationOption)
+  nameWithType: OptimizationOptionsIMPT.OptimizationOptionsIMPT(int, OptimizationOption)
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.OptimizationOptionsIMPT(int, VMS.TPS.Common.Model.Types.OptimizationOption)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Constructor for setting proton optimization options.
+
+    Initial state defines whether proton optimization uses an existing scan list or starts from zero. 
+
+    The optimization continues until convergence or until a maximum number of iterations is reached. 
+
+    Intermediate dose is not used in the optimization.
+  example: []
+  syntax:
+    content: public OptimizationOptionsIMPT(int maxIterations, OptimizationOption initialState)
+    parameters:
+    - id: maxIterations
+      type: System.Int32
+      description: Maximum number of iterations for optimization.
+    - id: initialState
+      type: VMS.TPS.Common.Model.Types.OptimizationOption
+      description: Initial state at the beginning of optimization.
+    content.vb: Public Sub New(maxIterations As Integer, initialState As OptimizationOption)
+  overload: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.#ctor*
+  nameWithType.vb: OptimizationOptionsIMPT.New(Integer, OptimizationOption)
+  fullName.vb: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.New(Integer, VMS.TPS.Common.Model.Types.OptimizationOption)
+  name.vb: New(Integer, OptimizationOption)
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.MaximumNumberOfIterations
+  commentId: P:VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.MaximumNumberOfIterations
+  id: MaximumNumberOfIterations
+  parent: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT
+  langs:
+  - csharp
+  - vb
+  name: MaximumNumberOfIterations
+  nameWithType: OptimizationOptionsIMPT.MaximumNumberOfIterations
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.MaximumNumberOfIterations
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Maximum number of iterations for the IMPT optimizer.
+  example: []
+  syntax:
+    content: public int MaximumNumberOfIterations { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MaximumNumberOfIterations As Integer
+  overload: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.MaximumNumberOfIterations*
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.NumberOfIterationsBeforeIDose
+  commentId: P:VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.NumberOfIterationsBeforeIDose
+  id: NumberOfIterationsBeforeIDose
+  parent: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT
+  langs:
+  - csharp
+  - vb
+  name: NumberOfIterationsBeforeIDose
+  nameWithType: OptimizationOptionsIMPT.NumberOfIterationsBeforeIDose
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.NumberOfIterationsBeforeIDose
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Number of iterations before the intermediate dose is calculated.
+  example: []
+  syntax:
+    content: public int NumberOfIterationsBeforeIDose { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property NumberOfIterationsBeforeIDose As Integer
+  overload: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.NumberOfIterationsBeforeIDose*
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.ConvergenceOption
+  commentId: P:VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.ConvergenceOption
+  id: ConvergenceOption
+  parent: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT
+  langs:
+  - csharp
+  - vb
+  name: ConvergenceOption
+  nameWithType: OptimizationOptionsIMPT.ConvergenceOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.ConvergenceOption
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Terminate the optimization early if it is converged.
+  example: []
+  syntax:
+    content: public OptimizationConvergenceOption ConvergenceOption { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption
+    content.vb: Public ReadOnly Property ConvergenceOption As OptimizationConvergenceOption
+  overload: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.ConvergenceOption*
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.IntermediateDoseOption
+  commentId: P:VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.IntermediateDoseOption
+  id: IntermediateDoseOption
+  parent: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT
+  langs:
+  - csharp
+  - vb
+  name: IntermediateDoseOption
+  nameWithType: OptimizationOptionsIMPT.IntermediateDoseOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.IntermediateDoseOption
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Use of intermediate dose in proton optimization.
+  example: []
+  syntax:
+    content: public IonOptimizationIntermediateDoseOption IntermediateDoseOption { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+    content.vb: Public ReadOnly Property IntermediateDoseOption As IonOptimizationIntermediateDoseOption
+  overload: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.IntermediateDoseOption*
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsBase
+  commentId: T:VMS.TPS.Common.Model.Types.OptimizationOptionsBase
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.html
+  name: OptimizationOptionsBase
+  nameWithType: OptimizationOptionsBase
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsBase
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.MLC
+  commentId: P:VMS.TPS.Common.Model.Types.OptimizationOptionsBase.MLC
+  parent: VMS.TPS.Common.Model.Types.OptimizationOptionsBase
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.html#VMS_TPS_Common_Model_Types_OptimizationOptionsBase_MLC
+  name: MLC
+  nameWithType: OptimizationOptionsBase.MLC
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.MLC
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.StartOption
+  commentId: P:VMS.TPS.Common.Model.Types.OptimizationOptionsBase.StartOption
+  parent: VMS.TPS.Common.Model.Types.OptimizationOptionsBase
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.html#VMS_TPS_Common_Model_Types_OptimizationOptionsBase_StartOption
+  name: StartOption
+  nameWithType: OptimizationOptionsBase.StartOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsBase.StartOption
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.html#VMS_TPS_Common_Model_Types_OptimizationOptionsIMPT__ctor_System_Int32_VMS_TPS_Common_Model_Types_OptimizationOption_VMS_TPS_Common_Model_Types_IonOptimizationIntermediateDoseOption_System_Int32_
+  name: OptimizationOptionsIMPT
+  nameWithType: OptimizationOptionsIMPT.OptimizationOptionsIMPT
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.OptimizationOptionsIMPT
+  nameWithType.vb: OptimizationOptionsIMPT.New
+  fullName.vb: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: VMS.TPS.Common.Model.Types.OptimizationOption
+  commentId: T:VMS.TPS.Common.Model.Types.OptimizationOption
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationOption.html
+  name: OptimizationOption
+  nameWithType: OptimizationOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOption
+- uid: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+  commentId: T:VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.html
+  name: IonOptimizationIntermediateDoseOption
+  nameWithType: IonOptimizationIntermediateDoseOption
+  fullName: VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.MaximumNumberOfIterations*
+  commentId: Overload:VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.MaximumNumberOfIterations
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.html#VMS_TPS_Common_Model_Types_OptimizationOptionsIMPT_MaximumNumberOfIterations
+  name: MaximumNumberOfIterations
+  nameWithType: OptimizationOptionsIMPT.MaximumNumberOfIterations
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.MaximumNumberOfIterations
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.NumberOfIterationsBeforeIDose*
+  commentId: Overload:VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.NumberOfIterationsBeforeIDose
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.html#VMS_TPS_Common_Model_Types_OptimizationOptionsIMPT_NumberOfIterationsBeforeIDose
+  name: NumberOfIterationsBeforeIDose
+  nameWithType: OptimizationOptionsIMPT.NumberOfIterationsBeforeIDose
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.NumberOfIterationsBeforeIDose
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.ConvergenceOption*
+  commentId: Overload:VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.ConvergenceOption
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.html#VMS_TPS_Common_Model_Types_OptimizationOptionsIMPT_ConvergenceOption
+  name: ConvergenceOption
+  nameWithType: OptimizationOptionsIMPT.ConvergenceOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.ConvergenceOption
+- uid: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption
+  commentId: T:VMS.TPS.Common.Model.Types.OptimizationConvergenceOption
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption.html
+  name: OptimizationConvergenceOption
+  nameWithType: OptimizationConvergenceOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationConvergenceOption
+- uid: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.IntermediateDoseOption*
+  commentId: Overload:VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.IntermediateDoseOption
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.html#VMS_TPS_Common_Model_Types_OptimizationOptionsIMPT_IntermediateDoseOption
+  name: IntermediateDoseOption
+  nameWithType: OptimizationOptionsIMPT.IntermediateDoseOption
+  fullName: VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.IntermediateDoseOption

@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus
+  commentId: T:VMS.TPS.Common.Model.Types.RegistrationApprovalStatus
+  id: RegistrationApprovalStatus
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.Approved
+  - VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.Retired
+  - VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.Reviewed
+  - VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.Unapproved
+  langs:
+  - csharp
+  - vb
+  name: RegistrationApprovalStatus
+  nameWithType: RegistrationApprovalStatus
+  fullName: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The enumeration of registration approval statuses.
+  example: []
+  syntax:
+    content: public enum RegistrationApprovalStatus
+    content.vb: Public Enum RegistrationApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.Unapproved
+  commentId: F:VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.Unapproved
+  id: Unapproved
+  parent: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Unapproved
+  nameWithType: RegistrationApprovalStatus.Unapproved
+  fullName: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.Unapproved
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Unapproved registration.
+  example: []
+  syntax:
+    content: Unapproved = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.Approved
+  commentId: F:VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.Approved
+  id: Approved
+  parent: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Approved
+  nameWithType: RegistrationApprovalStatus.Approved
+  fullName: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.Approved
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Approved registration.
+  example: []
+  syntax:
+    content: Approved = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.Retired
+  commentId: F:VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.Retired
+  id: Retired
+  parent: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Retired
+  nameWithType: RegistrationApprovalStatus.Retired
+  fullName: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.Retired
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Retired registration.
+  example: []
+  syntax:
+    content: Retired = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.Reviewed
+  commentId: F:VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.Reviewed
+  id: Reviewed
+  parent: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Reviewed
+  nameWithType: RegistrationApprovalStatus.Reviewed
+  fullName: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.Reviewed
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Reviewed registration.
+  example: []
+  syntax:
+    content: Reviewed = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus
+  commentId: T:VMS.TPS.Common.Model.Types.RegistrationApprovalStatus
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.html
+  name: RegistrationApprovalStatus
+  nameWithType: RegistrationApprovalStatus
+  fullName: VMS.TPS.Common.Model.Types.RegistrationApprovalStatus

@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.PatientSupportType
+  commentId: T:VMS.TPS.Common.Model.Types.PatientSupportType
+  id: PatientSupportType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.PatientSupportType.Chair
+  - VMS.TPS.Common.Model.Types.PatientSupportType.Table
+  langs:
+  - csharp
+  - vb
+  name: PatientSupportType
+  nameWithType: PatientSupportType
+  fullName: VMS.TPS.Common.Model.Types.PatientSupportType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Patient support type.
+  example: []
+  syntax:
+    content: public enum PatientSupportType
+    content.vb: Public Enum PatientSupportType
+- uid: VMS.TPS.Common.Model.Types.PatientSupportType.Table
+  commentId: F:VMS.TPS.Common.Model.Types.PatientSupportType.Table
+  id: Table
+  parent: VMS.TPS.Common.Model.Types.PatientSupportType
+  langs:
+  - csharp
+  - vb
+  name: Table
+  nameWithType: PatientSupportType.Table
+  fullName: VMS.TPS.Common.Model.Types.PatientSupportType.Table
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Treatment delivery system table.
+  example: []
+  syntax:
+    content: Table = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.PatientSupportType
+- uid: VMS.TPS.Common.Model.Types.PatientSupportType.Chair
+  commentId: F:VMS.TPS.Common.Model.Types.PatientSupportType.Chair
+  id: Chair
+  parent: VMS.TPS.Common.Model.Types.PatientSupportType
+  langs:
+  - csharp
+  - vb
+  name: Chair
+  nameWithType: PatientSupportType.Chair
+  fullName: VMS.TPS.Common.Model.Types.PatientSupportType.Chair
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Treatment delivery system chair.
+  example: []
+  syntax:
+    content: Chair = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.PatientSupportType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.PatientSupportType
+  commentId: T:VMS.TPS.Common.Model.Types.PatientSupportType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.PatientSupportType.html
+  name: PatientSupportType
+  nameWithType: PatientSupportType
+  fullName: VMS.TPS.Common.Model.Types.PatientSupportType

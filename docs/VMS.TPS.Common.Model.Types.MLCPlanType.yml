@@ -1,0 +1,217 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.MLCPlanType
+  commentId: T:VMS.TPS.Common.Model.Types.MLCPlanType
+  id: MLCPlanType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.MLCPlanType.ArcDynamic
+  - VMS.TPS.Common.Model.Types.MLCPlanType.DoseDynamic
+  - VMS.TPS.Common.Model.Types.MLCPlanType.NotDefined
+  - VMS.TPS.Common.Model.Types.MLCPlanType.ProtonLayerStacking
+  - VMS.TPS.Common.Model.Types.MLCPlanType.Static
+  - VMS.TPS.Common.Model.Types.MLCPlanType.VMAT
+  langs:
+  - csharp
+  - vb
+  name: MLCPlanType
+  nameWithType: MLCPlanType
+  fullName: VMS.TPS.Common.Model.Types.MLCPlanType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The enumeration of Multileaf Collimator (MLC) techniques.
+  example: []
+  syntax:
+    content: public enum MLCPlanType
+    content.vb: Public Enum MLCPlanType
+- uid: VMS.TPS.Common.Model.Types.MLCPlanType.Static
+  commentId: F:VMS.TPS.Common.Model.Types.MLCPlanType.Static
+  id: Static
+  parent: VMS.TPS.Common.Model.Types.MLCPlanType
+  langs:
+  - csharp
+  - vb
+  name: Static
+  nameWithType: MLCPlanType.Static
+  fullName: VMS.TPS.Common.Model.Types.MLCPlanType.Static
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The MLC shape is static during the beam-on.
+  example: []
+  syntax:
+    content: Static = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.MLCPlanType
+- uid: VMS.TPS.Common.Model.Types.MLCPlanType.DoseDynamic
+  commentId: F:VMS.TPS.Common.Model.Types.MLCPlanType.DoseDynamic
+  id: DoseDynamic
+  parent: VMS.TPS.Common.Model.Types.MLCPlanType
+  langs:
+  - csharp
+  - vb
+  name: DoseDynamic
+  nameWithType: MLCPlanType.DoseDynamic
+  fullName: VMS.TPS.Common.Model.Types.MLCPlanType.DoseDynamic
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The MLC shape and dose per degree are changed dynamically during the beam-on. The gantry does not rotate.
+  example: []
+  syntax:
+    content: DoseDynamic = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.MLCPlanType
+- uid: VMS.TPS.Common.Model.Types.MLCPlanType.ArcDynamic
+  commentId: F:VMS.TPS.Common.Model.Types.MLCPlanType.ArcDynamic
+  id: ArcDynamic
+  parent: VMS.TPS.Common.Model.Types.MLCPlanType
+  langs:
+  - csharp
+  - vb
+  name: ArcDynamic
+  nameWithType: MLCPlanType.ArcDynamic
+  fullName: VMS.TPS.Common.Model.Types.MLCPlanType.ArcDynamic
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The MLC shape is changed dynamically during the beam-on. The dose per degree is kept constant. The gantry rotates.
+  example: []
+  syntax:
+    content: ArcDynamic = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.MLCPlanType
+- uid: VMS.TPS.Common.Model.Types.MLCPlanType.VMAT
+  commentId: F:VMS.TPS.Common.Model.Types.MLCPlanType.VMAT
+  id: VMAT
+  parent: VMS.TPS.Common.Model.Types.MLCPlanType
+  langs:
+  - csharp
+  - vb
+  name: VMAT
+  nameWithType: MLCPlanType.VMAT
+  fullName: VMS.TPS.Common.Model.Types.MLCPlanType.VMAT
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    The MLC shape and dose per degree are changed dynamically during the beam-on.
+
+    This MLC type is used in RapidArc and other VMAT fields.
+  example: []
+  syntax:
+    content: VMAT = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.MLCPlanType
+- uid: VMS.TPS.Common.Model.Types.MLCPlanType.ProtonLayerStacking
+  commentId: F:VMS.TPS.Common.Model.Types.MLCPlanType.ProtonLayerStacking
+  id: ProtonLayerStacking
+  parent: VMS.TPS.Common.Model.Types.MLCPlanType
+  langs:
+  - csharp
+  - vb
+  name: ProtonLayerStacking
+  nameWithType: MLCPlanType.ProtonLayerStacking
+  fullName: VMS.TPS.Common.Model.Types.MLCPlanType.ProtonLayerStacking
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Proton layer stacking.
+  example: []
+  syntax:
+    content: ProtonLayerStacking = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.MLCPlanType
+- uid: VMS.TPS.Common.Model.Types.MLCPlanType.NotDefined
+  commentId: F:VMS.TPS.Common.Model.Types.MLCPlanType.NotDefined
+  id: NotDefined
+  parent: VMS.TPS.Common.Model.Types.MLCPlanType
+  langs:
+  - csharp
+  - vb
+  name: NotDefined
+  nameWithType: MLCPlanType.NotDefined
+  fullName: VMS.TPS.Common.Model.Types.MLCPlanType.NotDefined
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Undefined MLC Plan type.
+  example: []
+  syntax:
+    content: NotDefined = 999
+    return:
+      type: VMS.TPS.Common.Model.Types.MLCPlanType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.MLCPlanType
+  commentId: T:VMS.TPS.Common.Model.Types.MLCPlanType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.MLCPlanType.html
+  name: MLCPlanType
+  nameWithType: MLCPlanType
+  fullName: VMS.TPS.Common.Model.Types.MLCPlanType

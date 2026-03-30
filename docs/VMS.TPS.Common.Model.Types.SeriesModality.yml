@@ -1,0 +1,277 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.SeriesModality
+  commentId: T:VMS.TPS.Common.Model.Types.SeriesModality
+  id: SeriesModality
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.SeriesModality.CT
+  - VMS.TPS.Common.Model.Types.SeriesModality.MR
+  - VMS.TPS.Common.Model.Types.SeriesModality.Other
+  - VMS.TPS.Common.Model.Types.SeriesModality.PT
+  - VMS.TPS.Common.Model.Types.SeriesModality.REG
+  - VMS.TPS.Common.Model.Types.SeriesModality.RTDOSE
+  - VMS.TPS.Common.Model.Types.SeriesModality.RTIMAGE
+  - VMS.TPS.Common.Model.Types.SeriesModality.RTPLAN
+  - VMS.TPS.Common.Model.Types.SeriesModality.RTSTRUCT
+  langs:
+  - csharp
+  - vb
+  name: SeriesModality
+  nameWithType: SeriesModality
+  fullName: VMS.TPS.Common.Model.Types.SeriesModality
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The enumeration of series modalities.
+  example: []
+  syntax:
+    content: public enum SeriesModality
+    content.vb: Public Enum SeriesModality
+- uid: VMS.TPS.Common.Model.Types.SeriesModality.CT
+  commentId: F:VMS.TPS.Common.Model.Types.SeriesModality.CT
+  id: CT
+  parent: VMS.TPS.Common.Model.Types.SeriesModality
+  langs:
+  - csharp
+  - vb
+  name: CT
+  nameWithType: SeriesModality.CT
+  fullName: VMS.TPS.Common.Model.Types.SeriesModality.CT
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Computed Tomography (CT).
+  example: []
+  syntax:
+    content: CT = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.SeriesModality
+- uid: VMS.TPS.Common.Model.Types.SeriesModality.MR
+  commentId: F:VMS.TPS.Common.Model.Types.SeriesModality.MR
+  id: MR
+  parent: VMS.TPS.Common.Model.Types.SeriesModality
+  langs:
+  - csharp
+  - vb
+  name: MR
+  nameWithType: SeriesModality.MR
+  fullName: VMS.TPS.Common.Model.Types.SeriesModality.MR
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Magnetic Resonance (MR).
+  example: []
+  syntax:
+    content: MR = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.SeriesModality
+- uid: VMS.TPS.Common.Model.Types.SeriesModality.PT
+  commentId: F:VMS.TPS.Common.Model.Types.SeriesModality.PT
+  id: PT
+  parent: VMS.TPS.Common.Model.Types.SeriesModality
+  langs:
+  - csharp
+  - vb
+  name: PT
+  nameWithType: SeriesModality.PT
+  fullName: VMS.TPS.Common.Model.Types.SeriesModality.PT
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Positron Emission Tomography (PET).
+  example: []
+  syntax:
+    content: PT = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.SeriesModality
+- uid: VMS.TPS.Common.Model.Types.SeriesModality.RTIMAGE
+  commentId: F:VMS.TPS.Common.Model.Types.SeriesModality.RTIMAGE
+  id: RTIMAGE
+  parent: VMS.TPS.Common.Model.Types.SeriesModality
+  langs:
+  - csharp
+  - vb
+  name: RTIMAGE
+  nameWithType: SeriesModality.RTIMAGE
+  fullName: VMS.TPS.Common.Model.Types.SeriesModality.RTIMAGE
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Radiotherapy Image.
+  example: []
+  syntax:
+    content: RTIMAGE = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.SeriesModality
+- uid: VMS.TPS.Common.Model.Types.SeriesModality.RTSTRUCT
+  commentId: F:VMS.TPS.Common.Model.Types.SeriesModality.RTSTRUCT
+  id: RTSTRUCT
+  parent: VMS.TPS.Common.Model.Types.SeriesModality
+  langs:
+  - csharp
+  - vb
+  name: RTSTRUCT
+  nameWithType: SeriesModality.RTSTRUCT
+  fullName: VMS.TPS.Common.Model.Types.SeriesModality.RTSTRUCT
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Radiotherapy Structure Set.
+  example: []
+  syntax:
+    content: RTSTRUCT = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.SeriesModality
+- uid: VMS.TPS.Common.Model.Types.SeriesModality.RTPLAN
+  commentId: F:VMS.TPS.Common.Model.Types.SeriesModality.RTPLAN
+  id: RTPLAN
+  parent: VMS.TPS.Common.Model.Types.SeriesModality
+  langs:
+  - csharp
+  - vb
+  name: RTPLAN
+  nameWithType: SeriesModality.RTPLAN
+  fullName: VMS.TPS.Common.Model.Types.SeriesModality.RTPLAN
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Radiotherapy Plan.
+  example: []
+  syntax:
+    content: RTPLAN = 5
+    return:
+      type: VMS.TPS.Common.Model.Types.SeriesModality
+- uid: VMS.TPS.Common.Model.Types.SeriesModality.RTDOSE
+  commentId: F:VMS.TPS.Common.Model.Types.SeriesModality.RTDOSE
+  id: RTDOSE
+  parent: VMS.TPS.Common.Model.Types.SeriesModality
+  langs:
+  - csharp
+  - vb
+  name: RTDOSE
+  nameWithType: SeriesModality.RTDOSE
+  fullName: VMS.TPS.Common.Model.Types.SeriesModality.RTDOSE
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Radiotherapy Dose.
+  example: []
+  syntax:
+    content: RTDOSE = 6
+    return:
+      type: VMS.TPS.Common.Model.Types.SeriesModality
+- uid: VMS.TPS.Common.Model.Types.SeriesModality.REG
+  commentId: F:VMS.TPS.Common.Model.Types.SeriesModality.REG
+  id: REG
+  parent: VMS.TPS.Common.Model.Types.SeriesModality
+  langs:
+  - csharp
+  - vb
+  name: REG
+  nameWithType: SeriesModality.REG
+  fullName: VMS.TPS.Common.Model.Types.SeriesModality.REG
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Registration.
+  example: []
+  syntax:
+    content: REG = 7
+    return:
+      type: VMS.TPS.Common.Model.Types.SeriesModality
+- uid: VMS.TPS.Common.Model.Types.SeriesModality.Other
+  commentId: F:VMS.TPS.Common.Model.Types.SeriesModality.Other
+  id: Other
+  parent: VMS.TPS.Common.Model.Types.SeriesModality
+  langs:
+  - csharp
+  - vb
+  name: Other
+  nameWithType: SeriesModality.Other
+  fullName: VMS.TPS.Common.Model.Types.SeriesModality.Other
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Other.
+  example: []
+  syntax:
+    content: Other = 8
+    return:
+      type: VMS.TPS.Common.Model.Types.SeriesModality
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.SeriesModality
+  commentId: T:VMS.TPS.Common.Model.Types.SeriesModality
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.SeriesModality.html
+  name: SeriesModality
+  nameWithType: SeriesModality
+  fullName: VMS.TPS.Common.Model.Types.SeriesModality

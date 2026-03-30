@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ControlPointParameters | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ControlPointParameters | Example ">
+      
+      <meta name="description" content="An editable copy of the parameters of a control point.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API.ControlPointParameters">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_API_ControlPointParameters" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters" class="text-break">
+Class ControlPointParameters  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>An editable copy of the parameters of a control point.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ControlPointParameters</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ControlPointParameters</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.IonControlPointParameters.html">IonControlPointParameters</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="VMS_TPS_Common_Model_API_ControlPointParameters_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>To apply the parameters, call the ApplyParameters method of the
+Beam class. Because the parameters are simple copies, they do not
+reflect the current state of the data model.</p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPointParameters_CollimatorAngle_" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.CollimatorAngle*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPointParameters_CollimatorAngle" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.CollimatorAngle">
+  CollimatorAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A copy of the collimator angle at this control point, in degrees, in the range [0, 360[.
+It is defined as the orientation of the IEC BEAM LIMITING DEVICE coordinate system with
+respect to the IEC GANTRY coordinate system (in degrees).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double CollimatorAngle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPointParameters_GantryAngle_" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.GantryAngle*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPointParameters_GantryAngle" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.GantryAngle">
+  GantryAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A copy of the gantry angle at this control point, in degrees, in the range [0, 360[. It is
+defined as the orientation of the IEC GANTRY coordinate system with respect to the IEC FIXED
+REFERENCE coordinate system (in degrees).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GantryAngle { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ControlPointParameters_GantryAngle_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Gantry angle can only be modified for VMAT and trajectory plans.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPointParameters_Index_" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.Index*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPointParameters_Index" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.Index">
+  Index
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Control point index starting with zero. Even numbers represent start control points, and odd numbers represent stop control points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Index { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPointParameters_JawPositions_" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.JawPositions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPointParameters_JawPositions" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.JawPositions">
+  JawPositions
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A copy of the jaw positions of the treatment beams at this control point in millimeters, and
+in IEC BEAM LIMITING DEVICE coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VRect&lt;double&gt; JawPositions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VRect-1.html">VRect</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ControlPointParameters_JawPositions_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To set the same leaf positions for all control points (as is required if you
+use a static beam), use the
+<a class="xref" href="VMS.TPS.Common.Model.API.BeamParameters.html#VMS_TPS_Common_Model_API_BeamParameters_SetJawPositions_VMS_TPS_Common_Model_Types_VRect_System_Double__">SetJawPositions</a>
+method in BeamParameters.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPointParameters_LeafPositions_" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.LeafPositions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPointParameters_LeafPositions" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.LeafPositions">
+  LeafPositions
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A copy of the positions of the MLC leaf pairs (in millimeters) in the IEC BEAMLIMITING
+DEVICE coordinate axis appropriate to the MLC device type: the X-axis
+for MLCX and the Y-axis for MLCY. The two-dimensional array is
+indexed [bank, leaf], where the bank is either 0 or 1. Bank 0 represents
+the leaf bank to the negative MLC X direction, and bank 1 to the
+positive MLC X direction. If no MLC exists, a (0,0)-length array is
+returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[,] LeafPositions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_ControlPointParameters_LeafPositions_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>To set the same leaf positions for all control points (as is required if you
+use a static MLC), use the
+<a class="xref" href="VMS.TPS.Common.Model.API.BeamParameters.html#VMS_TPS_Common_Model_API_BeamParameters_SetAllLeafPositions_System_Single_0__0___">SetAllLeafPositions</a>
+method in BeamParameters.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPointParameters_MetersetWeight_" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.MetersetWeight*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPointParameters_MetersetWeight" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.MetersetWeight">
+  MetersetWeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A copy of the cumulative meterset weight to this control point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double MetersetWeight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPointParameters_PatientSupportAngle_" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.PatientSupportAngle*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPointParameters_PatientSupportAngle" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.PatientSupportAngle">
+  PatientSupportAngle
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A copy of the patient support angle at this control point, in degrees, in the range [0, 360[.
+It is defined as the orientation of the IEC PATIENT SUPPORT (turntable) coordinate system
+with respect to the IEC FIXED REFERENCE coordinate system (in degrees).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double PatientSupportAngle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPointParameters_TableTopLateralPosition_" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.TableTopLateralPosition*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPointParameters_TableTopLateralPosition" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.TableTopLateralPosition">
+  TableTopLateralPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Table top lateral position in millimeters, in the IEC TABLE TOP coordinate system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TableTopLateralPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPointParameters_TableTopLongitudinalPosition_" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.TableTopLongitudinalPosition*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPointParameters_TableTopLongitudinalPosition" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.TableTopLongitudinalPosition">
+  TableTopLongitudinalPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Table top longitudinal position in millimeters, in the IEC TABLE TOP coordinate system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TableTopLongitudinalPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_ControlPointParameters_TableTopVerticalPosition_" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.TableTopVerticalPosition*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_ControlPointParameters_TableTopVerticalPosition" data-uid="VMS.TPS.Common.Model.API.ControlPointParameters.TableTopVerticalPosition">
+  TableTopVerticalPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Table top vertical position in millimeters, in the IEC TABLE TOP coordinate system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TableTopVerticalPosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

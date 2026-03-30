@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+  commentId: T:VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+  id: RTPrescriptionConstraintType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.FreeText
+  - VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MaximumDose
+  - VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MaximumDvhDose
+  - VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MaximumMeanDose
+  - VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MinimumDose
+  - VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MinimumDvhDose
+  langs:
+  - csharp
+  - vb
+  name: RTPrescriptionConstraintType
+  nameWithType: RTPrescriptionConstraintType
+  fullName: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Type of the RT prescription constraint.
+  example: []
+  syntax:
+    content: public enum RTPrescriptionConstraintType
+    content.vb: Public Enum RTPrescriptionConstraintType
+- uid: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MinimumDose
+  commentId: F:VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MinimumDose
+  id: MinimumDose
+  parent: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+  langs:
+  - csharp
+  - vb
+  name: MinimumDose
+  nameWithType: RTPrescriptionConstraintType.MinimumDose
+  fullName: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MinimumDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Minimum dose for the target.
+  example: []
+  syntax:
+    content: MinimumDose = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+- uid: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MaximumDose
+  commentId: F:VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MaximumDose
+  id: MaximumDose
+  parent: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+  langs:
+  - csharp
+  - vb
+  name: MaximumDose
+  nameWithType: RTPrescriptionConstraintType.MaximumDose
+  fullName: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MaximumDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Maximum dose for the target or for the organ risk.
+  example: []
+  syntax:
+    content: MaximumDose = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+- uid: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MinimumDvhDose
+  commentId: F:VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MinimumDvhDose
+  id: MinimumDvhDose
+  parent: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+  langs:
+  - csharp
+  - vb
+  name: MinimumDvhDose
+  nameWithType: RTPrescriptionConstraintType.MinimumDvhDose
+  fullName: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MinimumDvhDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Minimum DVH dose for the target.
+  example: []
+  syntax:
+    content: MinimumDvhDose = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+- uid: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MaximumDvhDose
+  commentId: F:VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MaximumDvhDose
+  id: MaximumDvhDose
+  parent: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+  langs:
+  - csharp
+  - vb
+  name: MaximumDvhDose
+  nameWithType: RTPrescriptionConstraintType.MaximumDvhDose
+  fullName: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MaximumDvhDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Maximum DVH dose for the target.
+  example: []
+  syntax:
+    content: MaximumDvhDose = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+- uid: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MaximumMeanDose
+  commentId: F:VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MaximumMeanDose
+  id: MaximumMeanDose
+  parent: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+  langs:
+  - csharp
+  - vb
+  name: MaximumMeanDose
+  nameWithType: RTPrescriptionConstraintType.MaximumMeanDose
+  fullName: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MaximumMeanDose
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Maximum mean dose for the organ at risk.
+  example: []
+  syntax:
+    content: MaximumMeanDose = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+- uid: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.FreeText
+  commentId: F:VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.FreeText
+  id: FreeText
+  parent: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+  langs:
+  - csharp
+  - vb
+  name: FreeText
+  nameWithType: RTPrescriptionConstraintType.FreeText
+  fullName: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.FreeText
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Free-text constraint for the organ at risk.
+  example: []
+  syntax:
+    content: FreeText = 5
+    return:
+      type: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+  commentId: T:VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.html
+  name: RTPrescriptionConstraintType
+  nameWithType: RTPrescriptionConstraintType
+  fullName: VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType

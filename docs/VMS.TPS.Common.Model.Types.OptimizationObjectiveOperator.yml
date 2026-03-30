@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+  commentId: T:VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+  id: OptimizationObjectiveOperator
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.Exact
+  - VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.Lower
+  - VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.None
+  - VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.Upper
+  langs:
+  - csharp
+  - vb
+  name: OptimizationObjectiveOperator
+  nameWithType: OptimizationObjectiveOperator
+  fullName: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Optimization Objective Operator, which is used for setting the upper and lower optimization objectives.
+  example: []
+  syntax:
+    content: public enum OptimizationObjectiveOperator
+    content.vb: Public Enum OptimizationObjectiveOperator
+- uid: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.Upper
+  commentId: F:VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.Upper
+  id: Upper
+  parent: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+  langs:
+  - csharp
+  - vb
+  name: Upper
+  nameWithType: OptimizationObjectiveOperator.Upper
+  fullName: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.Upper
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Less than.
+  example: []
+  syntax:
+    content: Upper = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+- uid: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.Lower
+  commentId: F:VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.Lower
+  id: Lower
+  parent: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+  langs:
+  - csharp
+  - vb
+  name: Lower
+  nameWithType: OptimizationObjectiveOperator.Lower
+  fullName: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.Lower
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Greater or equal.
+  example: []
+  syntax:
+    content: Lower = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+- uid: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.Exact
+  commentId: F:VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.Exact
+  id: Exact
+  parent: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+  langs:
+  - csharp
+  - vb
+  name: Exact
+  nameWithType: OptimizationObjectiveOperator.Exact
+  fullName: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.Exact
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Exact (target).
+  example: []
+  syntax:
+    content: Exact = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+- uid: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.None
+  commentId: F:VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.None
+  id: None
+  parent: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: OptimizationObjectiveOperator.None
+  fullName: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.None
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: None.
+  example: []
+  syntax:
+    content: None = 99
+    return:
+      type: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+  commentId: T:VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.html
+  name: OptimizationObjectiveOperator
+  nameWithType: OptimizationObjectiveOperator
+  fullName: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator

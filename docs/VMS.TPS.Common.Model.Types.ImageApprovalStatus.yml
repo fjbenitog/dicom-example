@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+  commentId: T:VMS.TPS.Common.Model.Types.ImageApprovalStatus
+  id: ImageApprovalStatus
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.ImageApprovalStatus.ActionRequired
+  - VMS.TPS.Common.Model.Types.ImageApprovalStatus.Approved
+  - VMS.TPS.Common.Model.Types.ImageApprovalStatus.Disposed
+  - VMS.TPS.Common.Model.Types.ImageApprovalStatus.New
+  - VMS.TPS.Common.Model.Types.ImageApprovalStatus.Reviewed
+  langs:
+  - csharp
+  - vb
+  name: ImageApprovalStatus
+  nameWithType: ImageApprovalStatus
+  fullName: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The enumeration of image approval statuses.
+  example: []
+  syntax:
+    content: public enum ImageApprovalStatus
+    content.vb: Public Enum ImageApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.ImageApprovalStatus.New
+  commentId: F:VMS.TPS.Common.Model.Types.ImageApprovalStatus.New
+  id: New
+  parent: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: New
+  nameWithType: ImageApprovalStatus.New
+  fullName: VMS.TPS.Common.Model.Types.ImageApprovalStatus.New
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: New.
+  example: []
+  syntax:
+    content: New = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.ImageApprovalStatus.Reviewed
+  commentId: F:VMS.TPS.Common.Model.Types.ImageApprovalStatus.Reviewed
+  id: Reviewed
+  parent: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Reviewed
+  nameWithType: ImageApprovalStatus.Reviewed
+  fullName: VMS.TPS.Common.Model.Types.ImageApprovalStatus.Reviewed
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Reviewed.
+  example: []
+  syntax:
+    content: Reviewed = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.ImageApprovalStatus.Approved
+  commentId: F:VMS.TPS.Common.Model.Types.ImageApprovalStatus.Approved
+  id: Approved
+  parent: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Approved
+  nameWithType: ImageApprovalStatus.Approved
+  fullName: VMS.TPS.Common.Model.Types.ImageApprovalStatus.Approved
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Approved.
+  example: []
+  syntax:
+    content: Approved = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.ImageApprovalStatus.ActionRequired
+  commentId: F:VMS.TPS.Common.Model.Types.ImageApprovalStatus.ActionRequired
+  id: ActionRequired
+  parent: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: ActionRequired
+  nameWithType: ImageApprovalStatus.ActionRequired
+  fullName: VMS.TPS.Common.Model.Types.ImageApprovalStatus.ActionRequired
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Action required.
+  example: []
+  syntax:
+    content: ActionRequired = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+- uid: VMS.TPS.Common.Model.Types.ImageApprovalStatus.Disposed
+  commentId: F:VMS.TPS.Common.Model.Types.ImageApprovalStatus.Disposed
+  id: Disposed
+  parent: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+  langs:
+  - csharp
+  - vb
+  name: Disposed
+  nameWithType: ImageApprovalStatus.Disposed
+  fullName: VMS.TPS.Common.Model.Types.ImageApprovalStatus.Disposed
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Disposed.
+  example: []
+  syntax:
+    content: Disposed = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.ImageApprovalStatus
+  commentId: T:VMS.TPS.Common.Model.Types.ImageApprovalStatus
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ImageApprovalStatus.html
+  name: ImageApprovalStatus
+  nameWithType: ImageApprovalStatus
+  fullName: VMS.TPS.Common.Model.Types.ImageApprovalStatus

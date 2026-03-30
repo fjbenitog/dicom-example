@@ -1,0 +1,154 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint
+  commentId: T:VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint
+  id: ClosedLeavesMeetingPoint
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.ClosedLeavesMeetingPoint_BankOne
+  - VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.ClosedLeavesMeetingPoint_BankTwo
+  - VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.ClosedLeavesMeetingPoint_Center
+  langs:
+  - csharp
+  - vb
+  name: ClosedLeavesMeetingPoint
+  nameWithType: ClosedLeavesMeetingPoint
+  fullName: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Specifies where the closed MLC leaf pairs are parked in an MLC leaf fit operation.
+
+    Bank_One: Varian = B, IEC MLCX = X1, IEC MLCY = Y1; Bank_Two: Varian = A, IEC MLCX = X2, IEC MLCY = Y2
+  example: []
+  syntax:
+    content: public enum ClosedLeavesMeetingPoint
+    content.vb: Public Enum ClosedLeavesMeetingPoint
+- uid: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.ClosedLeavesMeetingPoint_BankOne
+  commentId: F:VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.ClosedLeavesMeetingPoint_BankOne
+  id: ClosedLeavesMeetingPoint_BankOne
+  parent: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint
+  langs:
+  - csharp
+  - vb
+  name: ClosedLeavesMeetingPoint_BankOne
+  nameWithType: ClosedLeavesMeetingPoint.ClosedLeavesMeetingPoint_BankOne
+  fullName: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.ClosedLeavesMeetingPoint_BankOne
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Park closed MLC leaves to Bank One.
+  example: []
+  syntax:
+    content: ClosedLeavesMeetingPoint_BankOne = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint
+- uid: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.ClosedLeavesMeetingPoint_BankTwo
+  commentId: F:VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.ClosedLeavesMeetingPoint_BankTwo
+  id: ClosedLeavesMeetingPoint_BankTwo
+  parent: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint
+  langs:
+  - csharp
+  - vb
+  name: ClosedLeavesMeetingPoint_BankTwo
+  nameWithType: ClosedLeavesMeetingPoint.ClosedLeavesMeetingPoint_BankTwo
+  fullName: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.ClosedLeavesMeetingPoint_BankTwo
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Park closed MLC leaves to Bank Two.
+  example: []
+  syntax:
+    content: ClosedLeavesMeetingPoint_BankTwo = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint
+- uid: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.ClosedLeavesMeetingPoint_Center
+  commentId: F:VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.ClosedLeavesMeetingPoint_Center
+  id: ClosedLeavesMeetingPoint_Center
+  parent: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint
+  langs:
+  - csharp
+  - vb
+  name: ClosedLeavesMeetingPoint_Center
+  nameWithType: ClosedLeavesMeetingPoint.ClosedLeavesMeetingPoint_Center
+  fullName: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.ClosedLeavesMeetingPoint_Center
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Park closed MLC leaves to the field center line.
+  example: []
+  syntax:
+    content: ClosedLeavesMeetingPoint_Center = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint
+  commentId: T:VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.html
+  name: ClosedLeavesMeetingPoint
+  nameWithType: ClosedLeavesMeetingPoint
+  fullName: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint

@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Catheter | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Catheter | Example ">
+      
+      <meta name="description" content="Represents a brachytherapy catheter or an applicator channel centerline. Catheters are associated with a , a , and possibly a  of the  they belong to. Most notably, catheters encapsulate the  of the applicator channel centerline and its .">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API.Catheter">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_API_Catheter" data-uid="VMS.TPS.Common.Model.API.Catheter" class="text-break">
+Class Catheter  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a brachytherapy catheter or an applicator channel centerline. Catheters are associated with a <a class="xref" href="VMS.TPS.Common.Model.API.BrachyTreatmentUnit.html">brachytherapy treatment unit</a>,
+a <a class="xref" href="VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_ChannelNumber"> channel number</a>, and possibly a <a class="xref" href="VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_BrachySolidApplicatorPartID">unique identifier</a>
+of the <a class="xref" href="VMS.TPS.Common.Model.API.BrachySolidApplicator.html">solid applicator part</a> they belong to. Most notably, catheters encapsulate the <a class="xref" href="VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_Shape">shape</a>
+of the applicator channel centerline and its <a class="xref" href="VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_SourcePositions">source positions</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Catheter : ApiDataObject, IXmlSerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html">SerializableObject</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html">ApiDataObject</a></div>
+      <div><span class="xref">Catheter</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IXmlSerializable</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString">ApiDataObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_">ApiDataObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode">ApiDataObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Id">ApiDataObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Name">ApiDataObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Comment">ApiDataObject.Comment</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName">ApiDataObject.HistoryUserName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName">ApiDataObject.HistoryUserDisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime">ApiDataObject.HistoryDateTime</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema">SerializableObject.GetSchema()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_">SerializableObject.ReadXml(XmlReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_">SerializableObject.WriteXml(XmlWriter, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_">SerializableObject.WriteXml(XmlWriter, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__">SerializableObject.WriteXml&lt;T&gt;(XmlWriter, string, IEnumerable&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__">SerializableObject.WriteXml&lt;T1, T2&gt;(XmlWriter, string, IDictionary&lt;T1, T2&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_">SerializableObject.StartSerialization(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization">SerializableObject.EndSerialization()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory">SerializableObject.ClearSerializationHistory()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_ApplicatorLength_" data-uid="VMS.TPS.Common.Model.API.Catheter.ApplicatorLength*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_ApplicatorLength" data-uid="VMS.TPS.Common.Model.API.Catheter.ApplicatorLength">
+  ApplicatorLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The total length from the tip of the catheter to the treatment unit in millimeters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ApplicatorLength { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_BrachyFieldReferencePoints_" data-uid="VMS.TPS.Common.Model.API.Catheter.BrachyFieldReferencePoints*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_BrachyFieldReferencePoints" data-uid="VMS.TPS.Common.Model.API.Catheter.BrachyFieldReferencePoints">
+  BrachyFieldReferencePoints
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A collection of brachy field reference points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;BrachyFieldReferencePoint&gt; BrachyFieldReferencePoints { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.BrachyFieldReferencePoint.html">BrachyFieldReferencePoint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_BrachySolidApplicatorPartID_" data-uid="VMS.TPS.Common.Model.API.Catheter.BrachySolidApplicatorPartID*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_BrachySolidApplicatorPartID" data-uid="VMS.TPS.Common.Model.API.Catheter.BrachySolidApplicatorPartID">
+  BrachySolidApplicatorPartID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The unique identifier of the <a class="xref" href="VMS.TPS.Common.Model.API.BrachySolidApplicator.html">brachytherapy solid applicator</a> part associated with the channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BrachySolidApplicatorPartID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_ChannelNumber_" data-uid="VMS.TPS.Common.Model.API.Catheter.ChannelNumber*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_ChannelNumber" data-uid="VMS.TPS.Common.Model.API.Catheter.ChannelNumber">
+  ChannelNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The channel number of this catheter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ChannelNumber { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_Color_" data-uid="VMS.TPS.Common.Model.API.Catheter.Color*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_Color" data-uid="VMS.TPS.Common.Model.API.Catheter.Color">
+  Color
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The color of the catheter in 2D views.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color Color { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_DeadSpaceLength_" data-uid="VMS.TPS.Common.Model.API.Catheter.DeadSpaceLength*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_DeadSpaceLength" data-uid="VMS.TPS.Common.Model.API.Catheter.DeadSpaceLength">
+  DeadSpaceLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The total length from the tip of the catheter to the start of the inner lumen in millimeters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double DeadSpaceLength { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_FirstSourcePosition_" data-uid="VMS.TPS.Common.Model.API.Catheter.FirstSourcePosition*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_FirstSourcePosition" data-uid="VMS.TPS.Common.Model.API.Catheter.FirstSourcePosition">
+  FirstSourcePosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The first source position in millimeters in this catheter. This is the source position closest to the tip of the catheter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double FirstSourcePosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_GroupNumber_" data-uid="VMS.TPS.Common.Model.API.Catheter.GroupNumber*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_GroupNumber" data-uid="VMS.TPS.Common.Model.API.Catheter.GroupNumber">
+  GroupNumber
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Catheter Group number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GroupNumber { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_LastSourcePosition_" data-uid="VMS.TPS.Common.Model.API.Catheter.LastSourcePosition*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_LastSourcePosition" data-uid="VMS.TPS.Common.Model.API.Catheter.LastSourcePosition">
+  LastSourcePosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The last source position in millimeters in this catheter. This is the source position furthest away from the tip of the catheter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double LastSourcePosition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_Shape_" data-uid="VMS.TPS.Common.Model.API.Catheter.Shape*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_Shape" data-uid="VMS.TPS.Common.Model.API.Catheter.Shape">
+  Shape
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The DICOM coordinates of the applicator shape starting from the tip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VVector[] Shape { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_SourcePositions_" data-uid="VMS.TPS.Common.Model.API.Catheter.SourcePositions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_SourcePositions" data-uid="VMS.TPS.Common.Model.API.Catheter.SourcePositions">
+  SourcePositions
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The source positions in the catheter starting from the tip.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;SourcePosition&gt; SourcePositions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.SourcePosition.html">SourcePosition</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_StepSize_" data-uid="VMS.TPS.Common.Model.API.Catheter.StepSize*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_StepSize" data-uid="VMS.TPS.Common.Model.API.Catheter.StepSize">
+  StepSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The step size of the catheter in millimeters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double StepSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_TreatmentUnit_" data-uid="VMS.TPS.Common.Model.API.Catheter.TreatmentUnit*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_TreatmentUnit" data-uid="VMS.TPS.Common.Model.API.Catheter.TreatmentUnit">
+  TreatmentUnit
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The brachytherapy treatment unit associated with this catheter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BrachyTreatmentUnit TreatmentUnit { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.BrachyTreatmentUnit.html">BrachyTreatmentUnit</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_GetSourcePosCenterDistanceFromTip_" data-uid="VMS.TPS.Common.Model.API.Catheter.GetSourcePosCenterDistanceFromTip*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_GetSourcePosCenterDistanceFromTip_VMS_TPS_Common_Model_API_SourcePosition_" data-uid="VMS.TPS.Common.Model.API.Catheter.GetSourcePosCenterDistanceFromTip(VMS.TPS.Common.Model.API.SourcePosition)">
+  GetSourcePosCenterDistanceFromTip(SourcePosition)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The distance (in millimeters) from the tip of the catheter (in the first possible source position) to the center of the source position.
+This is an offset from the actual catheter inner lumen tip by half of the source length and encapsulation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetSourcePosCenterDistanceFromTip(SourcePosition sourcePosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourcePosition</code> <a class="xref" href="VMS.TPS.Common.Model.API.SourcePosition.html">SourcePosition</a></dt>
+    <dd><p>The source position for which the distance from the catheter tip is got.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The distance from the tip of the catheter to the source position center, in millimeters.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="VMS.TPS.Common.Model.API.BrachyTreatmentUnit.html#VMS_TPS_Common_Model_API_BrachyTreatmentUnit_SourceCenterOffsetFromTip">SourceCenterOffsetFromTip</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_GetTotalDwellTime_" data-uid="VMS.TPS.Common.Model.API.Catheter.GetTotalDwellTime*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_GetTotalDwellTime" data-uid="VMS.TPS.Common.Model.API.Catheter.GetTotalDwellTime">
+  GetTotalDwellTime()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The total dwell time in this catheter in seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetTotalDwellTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The total dwell time in this catheter in seconds.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_LinkRefLine_" data-uid="VMS.TPS.Common.Model.API.Catheter.LinkRefLine*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_LinkRefLine_VMS_TPS_Common_Model_API_Structure_" data-uid="VMS.TPS.Common.Model.API.Catheter.LinkRefLine(VMS.TPS.Common.Model.API.Structure)">
+  LinkRefLine(Structure)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Link reference line to applicator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LinkRefLine(Structure refLine)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>refLine</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>Reference line to link with applicator.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_LinkRefPoint_" data-uid="VMS.TPS.Common.Model.API.Catheter.LinkRefPoint*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_LinkRefPoint_VMS_TPS_Common_Model_API_ReferencePoint_" data-uid="VMS.TPS.Common.Model.API.Catheter.LinkRefPoint(VMS.TPS.Common.Model.API.ReferencePoint)">
+  LinkRefPoint(ReferencePoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Link reference point to applicator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LinkRefPoint(ReferencePoint refPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>refPoint</code> <a class="xref" href="VMS.TPS.Common.Model.API.ReferencePoint.html">ReferencePoint</a></dt>
+    <dd><p>Reference point to link with applicator.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_SetId_" data-uid="VMS.TPS.Common.Model.API.Catheter.SetId*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_SetId_System_String_System_String__" data-uid="VMS.TPS.Common.Model.API.Catheter.SetId(System.String,System.String@)">
+  SetId(string, out string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Sets the ID of the applicator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetId(string id, out string message)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The new ID for the applicator.</p>
+</dd>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>May be populated with a reason why setting the ID failed.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the ID was modified.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_SetSourcePositions_" data-uid="VMS.TPS.Common.Model.API.Catheter.SetSourcePositions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_SetSourcePositions_System_Double_System_Double_System_Double_" data-uid="VMS.TPS.Common.Model.API.Catheter.SetSourcePositions(System.Double,System.Double,System.Double)">
+  SetSourcePositions(double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Sets the step size, first source position, and last source position, and resets the source positions of the catheter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SetSourcePositionsResult SetSourcePositions(double stepSize, double firstSourcePosition, double lastSourcePosition)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stepSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Step size in millimeters.</p>
+</dd>
+    <dt><code>firstSourcePosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>First source position in millimeters.</p>
+</dd>
+    <dt><code>lastSourcePosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Last source position in millimeters.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.SetSourcePositionsResult.html">SetSourcePositionsResult</a></dt>
+    <dd><p>SetSourcePositionsResult struct, with its Boolean members populated according to effects of the call.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_UnlinkRefLine_" data-uid="VMS.TPS.Common.Model.API.Catheter.UnlinkRefLine*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_UnlinkRefLine_VMS_TPS_Common_Model_API_Structure_" data-uid="VMS.TPS.Common.Model.API.Catheter.UnlinkRefLine(VMS.TPS.Common.Model.API.Structure)">
+  UnlinkRefLine(Structure)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Unlink reference line from applicator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnlinkRefLine(Structure refLine)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>refLine</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>Reference line to unlink from applicator</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_UnlinkRefPoint_" data-uid="VMS.TPS.Common.Model.API.Catheter.UnlinkRefPoint*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_UnlinkRefPoint_VMS_TPS_Common_Model_API_ReferencePoint_" data-uid="VMS.TPS.Common.Model.API.Catheter.UnlinkRefPoint(VMS.TPS.Common.Model.API.ReferencePoint)">
+  UnlinkRefPoint(ReferencePoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Unlink reference point from applicator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnlinkRefPoint(ReferencePoint refPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>refPoint</code> <a class="xref" href="VMS.TPS.Common.Model.API.ReferencePoint.html">ReferencePoint</a></dt>
+    <dd><p>Reference point to unlink from applicator</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_Catheter_WriteXml_" data-uid="VMS.TPS.Common.Model.API.Catheter.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_Catheter_WriteXml_System_Xml_XmlWriter_" data-uid="VMS.TPS.Common.Model.API.Catheter.WriteXml(System.Xml.XmlWriter)">
+  WriteXml(XmlWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an object into its XML representation.
+For more information on how to serialize an object into an XML document, see <span class="xref">System.Xml.Serialization.XmlSerializer</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>The System.Xml.XmlWriter stream, to which the object is serialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

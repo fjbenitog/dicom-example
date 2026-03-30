@@ -1,0 +1,235 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+  commentId: T:VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+  id: BrachyTreatmentTechniqueType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.CONTACT
+  - VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.INTERSTITIAL
+  - VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.INTRACAVITARY
+  - VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.INTRALUMENARY
+  - VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.INTRAVASCULAR
+  - VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.NONE
+  - VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.PERMANENT
+  langs:
+  - csharp
+  - vb
+  name: BrachyTreatmentTechniqueType
+  nameWithType: BrachyTreatmentTechniqueType
+  fullName: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The enumeration of Brachytherapy treatment techniques.
+  example: []
+  syntax:
+    content: public enum BrachyTreatmentTechniqueType
+    content.vb: Public Enum BrachyTreatmentTechniqueType
+- uid: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.INTRALUMENARY
+  commentId: F:VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.INTRALUMENARY
+  id: INTRALUMENARY
+  parent: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+  langs:
+  - csharp
+  - vb
+  name: INTRALUMENARY
+  nameWithType: BrachyTreatmentTechniqueType.INTRALUMENARY
+  fullName: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.INTRALUMENARY
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Intralumenary.
+  example: []
+  syntax:
+    content: INTRALUMENARY = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+- uid: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.INTRACAVITARY
+  commentId: F:VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.INTRACAVITARY
+  id: INTRACAVITARY
+  parent: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+  langs:
+  - csharp
+  - vb
+  name: INTRACAVITARY
+  nameWithType: BrachyTreatmentTechniqueType.INTRACAVITARY
+  fullName: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.INTRACAVITARY
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Intracavitary.
+  example: []
+  syntax:
+    content: INTRACAVITARY = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+- uid: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.INTERSTITIAL
+  commentId: F:VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.INTERSTITIAL
+  id: INTERSTITIAL
+  parent: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+  langs:
+  - csharp
+  - vb
+  name: INTERSTITIAL
+  nameWithType: BrachyTreatmentTechniqueType.INTERSTITIAL
+  fullName: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.INTERSTITIAL
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Interstitial.
+  example: []
+  syntax:
+    content: INTERSTITIAL = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+- uid: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.CONTACT
+  commentId: F:VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.CONTACT
+  id: CONTACT
+  parent: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+  langs:
+  - csharp
+  - vb
+  name: CONTACT
+  nameWithType: BrachyTreatmentTechniqueType.CONTACT
+  fullName: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.CONTACT
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Contact.
+  example: []
+  syntax:
+    content: CONTACT = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+- uid: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.INTRAVASCULAR
+  commentId: F:VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.INTRAVASCULAR
+  id: INTRAVASCULAR
+  parent: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+  langs:
+  - csharp
+  - vb
+  name: INTRAVASCULAR
+  nameWithType: BrachyTreatmentTechniqueType.INTRAVASCULAR
+  fullName: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.INTRAVASCULAR
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Intravascular.
+  example: []
+  syntax:
+    content: INTRAVASCULAR = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+- uid: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.PERMANENT
+  commentId: F:VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.PERMANENT
+  id: PERMANENT
+  parent: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+  langs:
+  - csharp
+  - vb
+  name: PERMANENT
+  nameWithType: BrachyTreatmentTechniqueType.PERMANENT
+  fullName: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.PERMANENT
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Permanent.
+  example: []
+  syntax:
+    content: PERMANENT = 5
+    return:
+      type: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+- uid: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.NONE
+  commentId: F:VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.NONE
+  id: NONE
+  parent: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+  langs:
+  - csharp
+  - vb
+  name: NONE
+  nameWithType: BrachyTreatmentTechniqueType.NONE
+  fullName: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.NONE
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: None
+  example: []
+  syntax:
+    content: NONE = 6
+    return:
+      type: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+  commentId: T:VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.html
+  name: BrachyTreatmentTechniqueType
+  nameWithType: BrachyTreatmentTechniqueType
+  fullName: VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType

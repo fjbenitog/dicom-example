@@ -1,0 +1,1368 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.API.ScriptContext
+  commentId: T:VMS.TPS.Common.Model.API.ScriptContext
+  id: ScriptContext
+  parent: VMS.TPS.Common.Model.API
+  children:
+  - VMS.TPS.Common.Model.API.ScriptContext.#ctor(System.Object,System.Object,System.Object,System.String)
+  - VMS.TPS.Common.Model.API.ScriptContext.#ctor(VMS.TPS.Common.Model.API.Application,VMS.TPS.Common.Model.API.PlanSetup)
+  - VMS.TPS.Common.Model.API.ScriptContext.ApplicationName
+  - VMS.TPS.Common.Model.API.ScriptContext.BrachyPlanSetup
+  - VMS.TPS.Common.Model.API.ScriptContext.BrachyPlansInScope
+  - VMS.TPS.Common.Model.API.ScriptContext.Calculation
+  - VMS.TPS.Common.Model.API.ScriptContext.Course
+  - VMS.TPS.Common.Model.API.ScriptContext.CurrentUser
+  - VMS.TPS.Common.Model.API.ScriptContext.Equipment
+  - VMS.TPS.Common.Model.API.ScriptContext.ExternalPlanSetup
+  - VMS.TPS.Common.Model.API.ScriptContext.ExternalPlansInScope
+  - VMS.TPS.Common.Model.API.ScriptContext.Image
+  - VMS.TPS.Common.Model.API.ScriptContext.IonPlanSetup
+  - VMS.TPS.Common.Model.API.ScriptContext.IonPlansInScope
+  - VMS.TPS.Common.Model.API.ScriptContext.Patient
+  - VMS.TPS.Common.Model.API.ScriptContext.PlanSetup
+  - VMS.TPS.Common.Model.API.ScriptContext.PlanSum
+  - VMS.TPS.Common.Model.API.ScriptContext.PlanSumsInScope
+  - VMS.TPS.Common.Model.API.ScriptContext.PlansInScope
+  - VMS.TPS.Common.Model.API.ScriptContext.StructureCodes
+  - VMS.TPS.Common.Model.API.ScriptContext.StructureSet
+  - VMS.TPS.Common.Model.API.ScriptContext.VersionInfo
+  langs:
+  - csharp
+  - vb
+  name: ScriptContext
+  nameWithType: ScriptContext
+  fullName: VMS.TPS.Common.Model.API.ScriptContext
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Contains the runtime context information of the active application for the script.
+  example: []
+  syntax:
+    content: public sealed class ScriptContext
+    content.vb: Public NotInheritable Class ScriptContext
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: VMS.TPS.Common.Model.API.ScriptContext.#ctor(System.Object,System.Object,System.Object,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.ScriptContext.#ctor(System.Object,System.Object,System.Object,System.String)
+  id: '#ctor(System.Object,System.Object,System.Object,System.String)'
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: ScriptContext(object, object, object, string)
+  nameWithType: ScriptContext.ScriptContext(object, object, object, string)
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.ScriptContext(object, object, object, string)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Provides scripts an access to the current data context.
+
+    A context instance is given as a parameter in the Execute function of the script.
+
+    The script itself does not instantiate the context.
+  example: []
+  syntax:
+    content: public ScriptContext(object context, object user, object dvhEstimation, string appName)
+    parameters:
+    - id: context
+      type: System.Object
+      description: The internal data context.
+    - id: user
+      type: System.Object
+      description: The internal user object.
+    - id: dvhEstimation
+      type: System.Object
+      description: The internal dvh estimation model library object.
+    - id: appName
+      type: System.String
+      description: The application name.
+    content.vb: Public Sub New(context As Object, user As Object, dvhEstimation As Object, appName As String)
+  overload: VMS.TPS.Common.Model.API.ScriptContext.#ctor*
+  nameWithType.vb: ScriptContext.New(Object, Object, Object, String)
+  fullName.vb: VMS.TPS.Common.Model.API.ScriptContext.New(Object, Object, Object, String)
+  name.vb: New(Object, Object, Object, String)
+- uid: VMS.TPS.Common.Model.API.ScriptContext.#ctor(VMS.TPS.Common.Model.API.Application,VMS.TPS.Common.Model.API.PlanSetup)
+  commentId: M:VMS.TPS.Common.Model.API.ScriptContext.#ctor(VMS.TPS.Common.Model.API.Application,VMS.TPS.Common.Model.API.PlanSetup)
+  id: '#ctor(VMS.TPS.Common.Model.API.Application,VMS.TPS.Common.Model.API.PlanSetup)'
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: ScriptContext(Application, PlanSetup)
+  nameWithType: ScriptContext.ScriptContext(Application, PlanSetup)
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.ScriptContext(VMS.TPS.Common.Model.API.Application, VMS.TPS.Common.Model.API.PlanSetup)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Provides scripts an access to the current data context.
+  example: []
+  syntax:
+    content: public ScriptContext(Application app, PlanSetup planSetup)
+    parameters:
+    - id: app
+      type: VMS.TPS.Common.Model.API.Application
+      description: Application that requested data context
+    - id: planSetup
+      type: VMS.TPS.Common.Model.API.PlanSetup
+      description: Active Plan Setup
+    content.vb: Public Sub New(app As Application, planSetup As PlanSetup)
+  overload: VMS.TPS.Common.Model.API.ScriptContext.#ctor*
+  nameWithType.vb: ScriptContext.New(Application, PlanSetup)
+  fullName.vb: VMS.TPS.Common.Model.API.ScriptContext.New(VMS.TPS.Common.Model.API.Application, VMS.TPS.Common.Model.API.PlanSetup)
+  name.vb: New(Application, PlanSetup)
+- uid: VMS.TPS.Common.Model.API.ScriptContext.CurrentUser
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.CurrentUser
+  id: CurrentUser
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: CurrentUser
+  nameWithType: ScriptContext.CurrentUser
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.CurrentUser
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The current user of the application.
+  example: []
+  syntax:
+    content: public User CurrentUser { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.User
+    content.vb: Public ReadOnly Property CurrentUser As User
+  overload: VMS.TPS.Common.Model.API.ScriptContext.CurrentUser*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.Course
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.Course
+  id: Course
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: Course
+  nameWithType: ScriptContext.Course
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.Course
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The course. The value may be null if the context has no course.
+  example: []
+  syntax:
+    content: public Course Course { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.Course
+    content.vb: Public ReadOnly Property Course As Course
+  overload: VMS.TPS.Common.Model.API.ScriptContext.Course*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.Image
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.Image
+  id: Image
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: ScriptContext.Image
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.Image
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The 3D image. The value may be null if the context has no image.
+  example: []
+  syntax:
+    content: public Image Image { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.Image
+    content.vb: Public ReadOnly Property Image As Image
+  overload: VMS.TPS.Common.Model.API.ScriptContext.Image*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.StructureSet
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.StructureSet
+  id: StructureSet
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: StructureSet
+  nameWithType: ScriptContext.StructureSet
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.StructureSet
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The structure set. The value may be null if the context has no structure set.
+  example: []
+  syntax:
+    content: public StructureSet StructureSet { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.StructureSet
+    content.vb: Public ReadOnly Property StructureSet As StructureSet
+  overload: VMS.TPS.Common.Model.API.ScriptContext.StructureSet*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.Calculation
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.Calculation
+  id: Calculation
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: Calculation
+  nameWithType: ScriptContext.Calculation
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.Calculation
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Calculation related functions
+  example: []
+  syntax:
+    content: public Calculation Calculation { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.Calculation
+    content.vb: Public ReadOnly Property Calculation As Calculation
+  overload: VMS.TPS.Common.Model.API.ScriptContext.Calculation*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.StructureCodes
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.StructureCodes
+  id: StructureCodes
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: StructureCodes
+  nameWithType: ScriptContext.StructureCodes
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.StructureCodes
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Provides access to the structure code dictionaries with the active structure codes.
+  example: []
+  syntax:
+    content: public ActiveStructureCodeDictionaries StructureCodes { get; set; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.ActiveStructureCodeDictionaries
+    content.vb: Public Property StructureCodes As ActiveStructureCodeDictionaries
+  overload: VMS.TPS.Common.Model.API.ScriptContext.StructureCodes*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.Equipment
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.Equipment
+  id: Equipment
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: Equipment
+  nameWithType: ScriptContext.Equipment
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.Equipment
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Provides access to clinical devices and accessories.
+  example: []
+  syntax:
+    content: public Equipment Equipment { get; set; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.Equipment
+    content.vb: Public Property Equipment As Equipment
+  overload: VMS.TPS.Common.Model.API.ScriptContext.Equipment*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.Patient
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.Patient
+  id: Patient
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: Patient
+  nameWithType: ScriptContext.Patient
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.Patient
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The patient. The value may be null if the context has no patient.
+  example: []
+  syntax:
+    content: public Patient Patient { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.Patient
+    content.vb: Public ReadOnly Property Patient As Patient
+  overload: VMS.TPS.Common.Model.API.ScriptContext.Patient*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.PlanSetup
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.PlanSetup
+  id: PlanSetup
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: PlanSetup
+  nameWithType: ScriptContext.PlanSetup
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.PlanSetup
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The plan setup. The value may be null if the context has no plan setup.
+  example: []
+  syntax:
+    content: public PlanSetup PlanSetup { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.PlanSetup
+    content.vb: Public ReadOnly Property PlanSetup As PlanSetup
+  overload: VMS.TPS.Common.Model.API.ScriptContext.PlanSetup*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.ExternalPlanSetup
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.ExternalPlanSetup
+  id: ExternalPlanSetup
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: ExternalPlanSetup
+  nameWithType: ScriptContext.ExternalPlanSetup
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.ExternalPlanSetup
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The active external beam plan setup. The value is null if the active object is not an external beam plan setup.
+  example: []
+  syntax:
+    content: public ExternalPlanSetup ExternalPlanSetup { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.ExternalPlanSetup
+    content.vb: Public ReadOnly Property ExternalPlanSetup As ExternalPlanSetup
+  overload: VMS.TPS.Common.Model.API.ScriptContext.ExternalPlanSetup*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.BrachyPlanSetup
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.BrachyPlanSetup
+  id: BrachyPlanSetup
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: BrachyPlanSetup
+  nameWithType: ScriptContext.BrachyPlanSetup
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.BrachyPlanSetup
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The active brachytherapy plan setup. The value is null if the active object is not a brachytherapy plan setup.
+  example: []
+  syntax:
+    content: public BrachyPlanSetup BrachyPlanSetup { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.BrachyPlanSetup
+    content.vb: Public ReadOnly Property BrachyPlanSetup As BrachyPlanSetup
+  overload: VMS.TPS.Common.Model.API.ScriptContext.BrachyPlanSetup*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.IonPlanSetup
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.IonPlanSetup
+  id: IonPlanSetup
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: IonPlanSetup
+  nameWithType: ScriptContext.IonPlanSetup
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.IonPlanSetup
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The active proton plan setup. The value is null if the active object is not a proton plan setup.
+  example: []
+  syntax:
+    content: public IonPlanSetup IonPlanSetup { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.IonPlanSetup
+    content.vb: Public ReadOnly Property IonPlanSetup As IonPlanSetup
+  overload: VMS.TPS.Common.Model.API.ScriptContext.IonPlanSetup*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.PlansInScope
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.PlansInScope
+  id: PlansInScope
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: PlansInScope
+  nameWithType: ScriptContext.PlansInScope
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.PlansInScope
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Retrieves a list of all plans in the Scope window.
+  example: []
+  syntax:
+    content: public IEnumerable<PlanSetup> PlansInScope { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanSetup}
+    content.vb: Public ReadOnly Property PlansInScope As IEnumerable(Of PlanSetup)
+  overload: VMS.TPS.Common.Model.API.ScriptContext.PlansInScope*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.ExternalPlansInScope
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.ExternalPlansInScope
+  id: ExternalPlansInScope
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: ExternalPlansInScope
+  nameWithType: ScriptContext.ExternalPlansInScope
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.ExternalPlansInScope
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Retrieves a list of all external beam plans in the Scope window.
+  example: []
+  syntax:
+    content: public IEnumerable<ExternalPlanSetup> ExternalPlansInScope { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ExternalPlanSetup}
+    content.vb: Public ReadOnly Property ExternalPlansInScope As IEnumerable(Of ExternalPlanSetup)
+  overload: VMS.TPS.Common.Model.API.ScriptContext.ExternalPlansInScope*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.BrachyPlansInScope
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.BrachyPlansInScope
+  id: BrachyPlansInScope
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: BrachyPlansInScope
+  nameWithType: ScriptContext.BrachyPlansInScope
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.BrachyPlansInScope
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Retrieves a list of all brachytherapy plans in the Scope window.
+  example: []
+  syntax:
+    content: public IEnumerable<BrachyPlanSetup> BrachyPlansInScope { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.BrachyPlanSetup}
+    content.vb: Public ReadOnly Property BrachyPlansInScope As IEnumerable(Of BrachyPlanSetup)
+  overload: VMS.TPS.Common.Model.API.ScriptContext.BrachyPlansInScope*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.IonPlansInScope
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.IonPlansInScope
+  id: IonPlansInScope
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: IonPlansInScope
+  nameWithType: ScriptContext.IonPlansInScope
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.IonPlansInScope
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Retrieves a list of all proton plans in the Scope window.
+  example: []
+  syntax:
+    content: public IEnumerable<IonPlanSetup> IonPlansInScope { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.IonPlanSetup}
+    content.vb: Public ReadOnly Property IonPlansInScope As IEnumerable(Of IonPlanSetup)
+  overload: VMS.TPS.Common.Model.API.ScriptContext.IonPlansInScope*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.PlanSumsInScope
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.PlanSumsInScope
+  id: PlanSumsInScope
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: PlanSumsInScope
+  nameWithType: ScriptContext.PlanSumsInScope
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.PlanSumsInScope
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Retrieves a list of all plan sums in the Scope window.
+  example: []
+  syntax:
+    content: public IEnumerable<PlanSum> PlanSumsInScope { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanSum}
+    content.vb: Public ReadOnly Property PlanSumsInScope As IEnumerable(Of PlanSum)
+  overload: VMS.TPS.Common.Model.API.ScriptContext.PlanSumsInScope*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.PlanSum
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.PlanSum
+  id: PlanSum
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: PlanSum
+  nameWithType: ScriptContext.PlanSum
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.PlanSum
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Retrieves the active plan sum.
+  example: []
+  syntax:
+    content: public PlanSum PlanSum { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.PlanSum
+    content.vb: Public ReadOnly Property PlanSum As PlanSum
+  overload: VMS.TPS.Common.Model.API.ScriptContext.PlanSum*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.ApplicationName
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.ApplicationName
+  id: ApplicationName
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: ApplicationName
+  nameWithType: ScriptContext.ApplicationName
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.ApplicationName
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The name of the active application.
+  example: []
+  syntax:
+    content: public string ApplicationName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ApplicationName As String
+  overload: VMS.TPS.Common.Model.API.ScriptContext.ApplicationName*
+- uid: VMS.TPS.Common.Model.API.ScriptContext.VersionInfo
+  commentId: P:VMS.TPS.Common.Model.API.ScriptContext.VersionInfo
+  id: VersionInfo
+  parent: VMS.TPS.Common.Model.API.ScriptContext
+  langs:
+  - csharp
+  - vb
+  name: VersionInfo
+  nameWithType: ScriptContext.VersionInfo
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.VersionInfo
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The version number of Eclipse.
+  example: []
+  syntax:
+    content: public string VersionInfo { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property VersionInfo As String
+  overload: VMS.TPS.Common.Model.API.ScriptContext.VersionInfo*
+references:
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.API.ScriptContext.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext__ctor_System_Object_System_Object_System_Object_System_String_
+  name: ScriptContext
+  nameWithType: ScriptContext.ScriptContext
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.ScriptContext
+  nameWithType.vb: ScriptContext.New
+  fullName.vb: VMS.TPS.Common.Model.API.ScriptContext.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: VMS.TPS.Common.Model.API.Application
+  commentId: T:VMS.TPS.Common.Model.API.Application
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Application.html
+  name: Application
+  nameWithType: Application
+  fullName: VMS.TPS.Common.Model.API.Application
+- uid: VMS.TPS.Common.Model.API.PlanSetup
+  commentId: T:VMS.TPS.Common.Model.API.PlanSetup
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.PlanSetup.html
+  name: PlanSetup
+  nameWithType: PlanSetup
+  fullName: VMS.TPS.Common.Model.API.PlanSetup
+- uid: VMS.TPS.Common.Model.API.ScriptContext.CurrentUser*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.CurrentUser
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_CurrentUser
+  name: CurrentUser
+  nameWithType: ScriptContext.CurrentUser
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.CurrentUser
+- uid: VMS.TPS.Common.Model.API.User
+  commentId: T:VMS.TPS.Common.Model.API.User
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.User.html
+  name: User
+  nameWithType: User
+  fullName: VMS.TPS.Common.Model.API.User
+- uid: VMS.TPS.Common.Model.API.ScriptContext.Course*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.Course
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_Course
+  name: Course
+  nameWithType: ScriptContext.Course
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.Course
+- uid: VMS.TPS.Common.Model.API.Course
+  commentId: T:VMS.TPS.Common.Model.API.Course
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Course.html
+  name: Course
+  nameWithType: Course
+  fullName: VMS.TPS.Common.Model.API.Course
+- uid: VMS.TPS.Common.Model.API.ScriptContext.Image*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.Image
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_Image
+  name: Image
+  nameWithType: ScriptContext.Image
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.Image
+- uid: VMS.TPS.Common.Model.API.Image
+  commentId: T:VMS.TPS.Common.Model.API.Image
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html
+  name: Image
+  nameWithType: Image
+  fullName: VMS.TPS.Common.Model.API.Image
+- uid: VMS.TPS.Common.Model.API.ScriptContext.StructureSet*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.StructureSet
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_StructureSet
+  name: StructureSet
+  nameWithType: ScriptContext.StructureSet
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.StructureSet
+- uid: VMS.TPS.Common.Model.API.StructureSet
+  commentId: T:VMS.TPS.Common.Model.API.StructureSet
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html
+  name: StructureSet
+  nameWithType: StructureSet
+  fullName: VMS.TPS.Common.Model.API.StructureSet
+- uid: VMS.TPS.Common.Model.API.ScriptContext.Calculation*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.Calculation
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_Calculation
+  name: Calculation
+  nameWithType: ScriptContext.Calculation
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.Calculation
+- uid: VMS.TPS.Common.Model.API.Calculation
+  commentId: T:VMS.TPS.Common.Model.API.Calculation
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Calculation.html
+  name: Calculation
+  nameWithType: Calculation
+  fullName: VMS.TPS.Common.Model.API.Calculation
+- uid: VMS.TPS.Common.Model.API.ScriptContext.StructureCodes*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.StructureCodes
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_StructureCodes
+  name: StructureCodes
+  nameWithType: ScriptContext.StructureCodes
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.StructureCodes
+- uid: VMS.TPS.Common.Model.API.ActiveStructureCodeDictionaries
+  commentId: T:VMS.TPS.Common.Model.API.ActiveStructureCodeDictionaries
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ActiveStructureCodeDictionaries.html
+  name: ActiveStructureCodeDictionaries
+  nameWithType: ActiveStructureCodeDictionaries
+  fullName: VMS.TPS.Common.Model.API.ActiveStructureCodeDictionaries
+- uid: VMS.TPS.Common.Model.API.ScriptContext.Equipment*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.Equipment
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_Equipment
+  name: Equipment
+  nameWithType: ScriptContext.Equipment
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.Equipment
+- uid: VMS.TPS.Common.Model.API.Equipment
+  commentId: T:VMS.TPS.Common.Model.API.Equipment
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Equipment.html
+  name: Equipment
+  nameWithType: Equipment
+  fullName: VMS.TPS.Common.Model.API.Equipment
+- uid: VMS.TPS.Common.Model.API.ScriptContext.Patient*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.Patient
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_Patient
+  name: Patient
+  nameWithType: ScriptContext.Patient
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.Patient
+- uid: VMS.TPS.Common.Model.API.Patient
+  commentId: T:VMS.TPS.Common.Model.API.Patient
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Patient.html
+  name: Patient
+  nameWithType: Patient
+  fullName: VMS.TPS.Common.Model.API.Patient
+- uid: VMS.TPS.Common.Model.API.ScriptContext.PlanSetup*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.PlanSetup
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_PlanSetup
+  name: PlanSetup
+  nameWithType: ScriptContext.PlanSetup
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.PlanSetup
+- uid: VMS.TPS.Common.Model.API.ScriptContext.ExternalPlanSetup*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.ExternalPlanSetup
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_ExternalPlanSetup
+  name: ExternalPlanSetup
+  nameWithType: ScriptContext.ExternalPlanSetup
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.ExternalPlanSetup
+- uid: VMS.TPS.Common.Model.API.ExternalPlanSetup
+  commentId: T:VMS.TPS.Common.Model.API.ExternalPlanSetup
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ExternalPlanSetup.html
+  name: ExternalPlanSetup
+  nameWithType: ExternalPlanSetup
+  fullName: VMS.TPS.Common.Model.API.ExternalPlanSetup
+- uid: VMS.TPS.Common.Model.API.ScriptContext.BrachyPlanSetup*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.BrachyPlanSetup
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_BrachyPlanSetup
+  name: BrachyPlanSetup
+  nameWithType: ScriptContext.BrachyPlanSetup
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.BrachyPlanSetup
+- uid: VMS.TPS.Common.Model.API.BrachyPlanSetup
+  commentId: T:VMS.TPS.Common.Model.API.BrachyPlanSetup
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.BrachyPlanSetup.html
+  name: BrachyPlanSetup
+  nameWithType: BrachyPlanSetup
+  fullName: VMS.TPS.Common.Model.API.BrachyPlanSetup
+- uid: VMS.TPS.Common.Model.API.ScriptContext.IonPlanSetup*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.IonPlanSetup
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_IonPlanSetup
+  name: IonPlanSetup
+  nameWithType: ScriptContext.IonPlanSetup
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.IonPlanSetup
+- uid: VMS.TPS.Common.Model.API.IonPlanSetup
+  commentId: T:VMS.TPS.Common.Model.API.IonPlanSetup
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonPlanSetup.html
+  name: IonPlanSetup
+  nameWithType: IonPlanSetup
+  fullName: VMS.TPS.Common.Model.API.IonPlanSetup
+- uid: VMS.TPS.Common.Model.API.ScriptContext.PlansInScope*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.PlansInScope
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_PlansInScope
+  name: PlansInScope
+  nameWithType: ScriptContext.PlansInScope
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.PlansInScope
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanSetup}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanSetup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<PlanSetup>
+  nameWithType: IEnumerable<PlanSetup>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.PlanSetup>
+  nameWithType.vb: IEnumerable(Of PlanSetup)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.PlanSetup)
+  name.vb: IEnumerable(Of PlanSetup)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.PlanSetup
+    name: PlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.PlanSetup.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.PlanSetup
+    name: PlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.PlanSetup.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: VMS.TPS.Common.Model.API.ScriptContext.ExternalPlansInScope*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.ExternalPlansInScope
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_ExternalPlansInScope
+  name: ExternalPlansInScope
+  nameWithType: ScriptContext.ExternalPlansInScope
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.ExternalPlansInScope
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ExternalPlanSetup}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ExternalPlanSetup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ExternalPlanSetup>
+  nameWithType: IEnumerable<ExternalPlanSetup>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.ExternalPlanSetup>
+  nameWithType.vb: IEnumerable(Of ExternalPlanSetup)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.ExternalPlanSetup)
+  name.vb: IEnumerable(Of ExternalPlanSetup)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.ExternalPlanSetup
+    name: ExternalPlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ExternalPlanSetup.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.ExternalPlanSetup
+    name: ExternalPlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ExternalPlanSetup.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ScriptContext.BrachyPlansInScope*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.BrachyPlansInScope
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_BrachyPlansInScope
+  name: BrachyPlansInScope
+  nameWithType: ScriptContext.BrachyPlansInScope
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.BrachyPlansInScope
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.BrachyPlanSetup}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.BrachyPlanSetup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<BrachyPlanSetup>
+  nameWithType: IEnumerable<BrachyPlanSetup>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.BrachyPlanSetup>
+  nameWithType.vb: IEnumerable(Of BrachyPlanSetup)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.BrachyPlanSetup)
+  name.vb: IEnumerable(Of BrachyPlanSetup)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.BrachyPlanSetup
+    name: BrachyPlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.BrachyPlanSetup.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.BrachyPlanSetup
+    name: BrachyPlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.BrachyPlanSetup.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ScriptContext.IonPlansInScope*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.IonPlansInScope
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_IonPlansInScope
+  name: IonPlansInScope
+  nameWithType: ScriptContext.IonPlansInScope
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.IonPlansInScope
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.IonPlanSetup}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.IonPlanSetup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IonPlanSetup>
+  nameWithType: IEnumerable<IonPlanSetup>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.IonPlanSetup>
+  nameWithType.vb: IEnumerable(Of IonPlanSetup)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.IonPlanSetup)
+  name.vb: IEnumerable(Of IonPlanSetup)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.IonPlanSetup
+    name: IonPlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.IonPlanSetup.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.IonPlanSetup
+    name: IonPlanSetup
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.IonPlanSetup.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ScriptContext.PlanSumsInScope*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.PlanSumsInScope
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_PlanSumsInScope
+  name: PlanSumsInScope
+  nameWithType: ScriptContext.PlanSumsInScope
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.PlanSumsInScope
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanSum}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.PlanSum}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<PlanSum>
+  nameWithType: IEnumerable<PlanSum>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.PlanSum>
+  nameWithType.vb: IEnumerable(Of PlanSum)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.PlanSum)
+  name.vb: IEnumerable(Of PlanSum)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.PlanSum
+    name: PlanSum
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.PlanSum.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.PlanSum
+    name: PlanSum
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.PlanSum.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ScriptContext.PlanSum*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.PlanSum
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_PlanSum
+  name: PlanSum
+  nameWithType: ScriptContext.PlanSum
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.PlanSum
+- uid: VMS.TPS.Common.Model.API.PlanSum
+  commentId: T:VMS.TPS.Common.Model.API.PlanSum
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.PlanSum.html
+  name: PlanSum
+  nameWithType: PlanSum
+  fullName: VMS.TPS.Common.Model.API.PlanSum
+- uid: VMS.TPS.Common.Model.API.ScriptContext.ApplicationName*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.ApplicationName
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_ApplicationName
+  name: ApplicationName
+  nameWithType: ScriptContext.ApplicationName
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.ApplicationName
+- uid: VMS.TPS.Common.Model.API.ScriptContext.VersionInfo*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptContext.VersionInfo
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html#VMS_TPS_Common_Model_API_ScriptContext_VersionInfo
+  name: VersionInfo
+  nameWithType: ScriptContext.VersionInfo
+  fullName: VMS.TPS.Common.Model.API.ScriptContext.VersionInfo

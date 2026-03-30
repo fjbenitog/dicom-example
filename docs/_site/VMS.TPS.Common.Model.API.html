@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace VMS.TPS.Common.Model.API | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace VMS.TPS.Common.Model.API | Example ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API">
+
+  <h1 id="VMS_TPS_Common_Model_API" data-uid="VMS.TPS.Common.Model.API" class="text-break">Namespace VMS.TPS.Common.Model.API</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ActiveStructureCodeDictionaries.html">ActiveStructureCodeDictionaries</a></dt>
+      <dd><p>Provides access to the structure code dictionaries with the active structure codes.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.AddOn.html">AddOn</a></dt>
+      <dd><p>Represents an add-on, which is a beam modifying device that is inserted into a beam
+in an accessory slot of the external beam machine.
+An add-on is used to shape the beam or modulate its intensity or both.
+Add-ons are blocks, MLCs, wedges, compensators, applicators, a tray, and other devices
+or materials that can be fixed to a tray to be mounted into an accessory slot.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.AddOnMaterial.html">AddOnMaterial</a></dt>
+      <dd><p>Add-on material describes the dosimetric and physical properties of the metal alloy or other substance used to create the add-on.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html">ApiDataObject</a></dt>
+      <dd><p>The base class of objects in the Eclipse Scripting API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Application.html">Application</a></dt>
+      <dd><p>The main application interface.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ApplicationPackage.html">ApplicationPackage</a></dt>
+      <dd><p>Presents the application package information in the system.</p>
+<p>Note: not all methods are necessarily Published at the moment.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ApplicationScript.html">ApplicationScript</a></dt>
+      <dd><p>Presents the application script information in the system.</p>
+<p>The location of the script file is not stored in the system.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ApplicationScriptLog.html">ApplicationScriptLog</a></dt>
+      <dd><p>The log entry of the application script execution.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Applicator.html">Applicator</a></dt>
+      <dd><p>An applicator add-on, either an electron applicator or cone applicator.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a></dt>
+      <dd><p>Represents one beam (also referred to as &quot;field&quot;) of an external beam treatment plan. See the definition of DICOM RT Beam for more details.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.BeamCalculationLog.html">BeamCalculationLog</a></dt>
+      <dd><p>Represents a beam calculation log.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.BeamDose.html">BeamDose</a></dt>
+      <dd><p>Represents a dose that is connected to a Beam.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.BeamParameters.html">BeamParameters</a></dt>
+      <dd><p>An editable copy of the parameters of a treatment beam.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.BeamUncertainty.html">BeamUncertainty</a></dt>
+      <dd><p>Access to beam uncertainty.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Block.html">Block</a></dt>
+      <dd><p>Represents a block add-on, a custom-made beam collimating material fixed to a tray, used to shape the beam.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Bolus.html">Bolus</a></dt>
+      <dd><p>Represents a bolus, which is custom-made material that is usually fixed to the patient's skin for treatment.
+The bolus is used to modulate the depth dose profile of a beam.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.BrachyFieldReferencePoint.html">BrachyFieldReferencePoint</a></dt>
+      <dd><p>This object links a Brachy field to a reference point.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.BrachyPlanSetup.html">BrachyPlanSetup</a></dt>
+      <dd><p>Represents a brachytherapy treatment plan.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.BrachySolidApplicator.html">BrachySolidApplicator</a></dt>
+      <dd><p>Represents a brachytherapy solid applicator part, such as a tandem or ovoid in a Fletcher Suit Delclos (FSD) applicator set.
+This class holds only the metadata related to the solid applicator part, and links
+to the <a class="xref" href="VMS.TPS.Common.Model.API.Catheter.html">catheters</a> that are part of the solid applicator.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.BrachyTreatmentUnit.html">BrachyTreatmentUnit</a></dt>
+      <dd><p>Represents a brachytherapy afterloader.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.CalculateBrachy3DDoseResult.html">CalculateBrachy3DDoseResult</a></dt>
+      <dd><p>Brachy 3D dose calculation result</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Calculation.html">Calculation</a></dt>
+      <dd><p>Contains a calculation specific functions</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.CalculationResult.html">CalculationResult</a></dt>
+      <dd><p>Holds the result of the calculation (pass/fail).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Catheter.html">Catheter</a></dt>
+      <dd><p>Represents a brachytherapy catheter or an applicator channel centerline. Catheters are associated with a <a class="xref" href="VMS.TPS.Common.Model.API.BrachyTreatmentUnit.html">brachytherapy treatment unit</a>,
+a <a class="xref" href="VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_ChannelNumber"> channel number</a>, and possibly a <a class="xref" href="VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_BrachySolidApplicatorPartID">unique identifier</a>
+of the <a class="xref" href="VMS.TPS.Common.Model.API.BrachySolidApplicator.html">solid applicator part</a> they belong to. Most notably, catheters encapsulate the <a class="xref" href="VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_Shape">shape</a>
+of the applicator channel centerline and its <a class="xref" href="VMS.TPS.Common.Model.API.Catheter.html#VMS_TPS_Common_Model_API_Catheter_SourcePositions">source positions</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Compensator.html">Compensator</a></dt>
+      <dd><p>Represents a beam compensator add-on, a custom-made beam modulating material fixed to a tray, used to modulate the beam's intensity.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ControlPoint.html">ControlPoint</a></dt>
+      <dd><p>Represents a point in a planned sequence of treatment beam parameters. See the definition of control points in a DICOM RT Beam.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ControlPointCollection.html">ControlPointCollection</a></dt>
+      <dd><p>Represents a collection of machine parameters that describe the planned
+treatment beam.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ControlPointParameters.html">ControlPointParameters</a></dt>
+      <dd><p>An editable copy of the parameters of a control point.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Course.html">Course</a></dt>
+      <dd><p>A course represents the course of treatment that a patient will be given.
+Every patient must have a course, and all plans always belong to a course.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.CustomScriptExecutable.html">CustomScriptExecutable</a></dt>
+      <dd><p>A factory class for creating an application object for a custom script executable.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.DVHData.html">DVHData</a></dt>
+      <dd><p>Represents Dose Volume Histogram (DVH) data.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.DVHEstimationModelStructure.html">DVHEstimationModelStructure</a></dt>
+      <dd><p>Structure of a DVH estimation model in Planning Model Library</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.DVHEstimationModelSummary.html">DVHEstimationModelSummary</a></dt>
+      <dd><p>A summary of an DVH Estimation Model. Contains the needed information for selecting a model.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Department.html">Department</a></dt>
+      <dd><p>Represents a department in hospital.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Diagnosis.html">Diagnosis</a></dt>
+      <dd><p>Represents a diagnosis of the patient.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Dose.html">Dose</a></dt>
+      <dd><p>Represents a 3D dose grid.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.DynamicWedge.html">DynamicWedge</a></dt>
+      <dd><p>A Dynamic Wedge is formed by a moving jaw of a standard collimator
+during irradiation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ESAPIActionPackAttribute.html">ESAPIActionPackAttribute</a></dt>
+      <dd><p>Specifies the assembly as an Eclipse visual scripting action pack.
+Action packs are ESAPI scripts that are used by visual scripts.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ESAPIScriptAttribute.html">ESAPIScriptAttribute</a></dt>
+      <dd><p>Specifies the assembly as an Eclipse Scripting API (ESAPI) script.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.EnergyMode.html">EnergyMode</a></dt>
+      <dd><p>Represents an energy mode.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.EnhancedDynamicWedge.html">EnhancedDynamicWedge</a></dt>
+      <dd><p>An Enhanced Dynamic Wedge is similar to a Dynamic Wedge, but
+it features more wedge angles than a simple Dynamic Wedge.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Equipment.html">Equipment</a></dt>
+      <dd><p>Provides access to clinical devices and accessories.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.EstimatedDVH.html">EstimatedDVH</a></dt>
+      <dd><p>Represents an estimated Dose Volume Histogram (DVH) curve.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.EvaluationDose.html">EvaluationDose</a></dt>
+      <dd><p>Represents an evaluation dose that is connected to a plan that has no beams.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ExternalBeamTreatmentUnit.html">ExternalBeamTreatmentUnit</a></dt>
+      <dd><p>Represents a treatment machine used for delivering external beam radiotherapy.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ExternalPlanSetup.html">ExternalPlanSetup</a></dt>
+      <dd><p>Represents an external beam plan. For more information, see the definition of the DICOM RT Plan.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.FieldReferencePoint.html">FieldReferencePoint</a></dt>
+      <dd><p>This object links a treatment beam to a reference point.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Globals.html">Globals</a></dt>
+      <dd><p>This class is internal to the Eclipse Scripting API.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Hospital.html">Hospital</a></dt>
+      <dd><p>Represents a hospital.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Image.html">Image</a></dt>
+      <dd><p>Represents a 2D or 3D image, which can be a DRR, a CT, MR, or other volumetric dataset.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.IonBeam.html">IonBeam</a></dt>
+      <dd><p>Proton beam interface.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.IonBeamParameters.html">IonBeamParameters</a></dt>
+      <dd><p>An editable copy of the parameters of a proton beam.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.IonControlPoint.html">IonControlPoint</a></dt>
+      <dd><p>Proton control point interface.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.IonControlPointCollection.html">IonControlPointCollection</a></dt>
+      <dd><p>Represents a collection of machine parameters that describe
+the planned proton beam.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.IonControlPointPair.html">IonControlPointPair</a></dt>
+      <dd><p>An editable copy of a control point pair (the pair of the start control
+point with an even index, and the end control point with an odd index).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.IonControlPointPairCollection.html">IonControlPointPairCollection</a></dt>
+      <dd><p>A collection of editable copies of control point pairs that describe
+the planned proton beam.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.IonControlPointParameters.html">IonControlPointParameters</a></dt>
+      <dd><p>An editable copy of the parameters of a proton control point.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.IonPlanSetup.html">IonPlanSetup</a></dt>
+      <dd><p>Represents a proton treatment plan.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.IonSpot.html">IonSpot</a></dt>
+      <dd><p>The proton scanning spot interface that contains the 3D spot position and spot weight.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.IonSpotCollection.html">IonSpotCollection</a></dt>
+      <dd><p>Interface for the proton scanning spot list.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.IonSpotParameters.html">IonSpotParameters</a></dt>
+      <dd><p>Interface for the proton scanning spot that contains the 3D spot position and spot weight.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.IonSpotParametersCollection.html">IonSpotParametersCollection</a></dt>
+      <dd><p>Interface for the editable proton scanning spot list.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Isodose.html">Isodose</a></dt>
+      <dd><p>Represents an isodose level for a fixed absolute or relative dose value.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.LateralSpreadingDevice.html">LateralSpreadingDevice</a></dt>
+      <dd><p>The lateral spreading device.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.LateralSpreadingDeviceSettings.html">LateralSpreadingDeviceSettings</a></dt>
+      <dd><p>Settings for the lateral spreading device.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.MLC.html">MLC</a></dt>
+      <dd><p>Represents a Multileaf Collimator (MLC) add-on.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.MotorizedWedge.html">MotorizedWedge</a></dt>
+      <dd><p>A motorized wedge is a standard wedge placed in the beam for a
+user-defined fraction of the total treatment time.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OmniWedge.html">OmniWedge</a></dt>
+      <dd><p>An OmniWedge is a special type of wedge that combines an open
+field, a motorized wedge, and a virtual wedge to create the desired wedge
+effect.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationEUDObjective.html">OptimizationEUDObjective</a></dt>
+      <dd><p>A gEUD objective is an exact, upper or lower objective.
+An exact gEUD objective defines an exact dose value that a target structure should receive.
+An upper gEUD objective defines the maximum dose value that a structure should receive.
+A lower gEUD objective defines the minimum dose value that a target structure should receive.</p>
+<p>Generalized Equivalent Uniform Dose (gEUD) is a uniform dose that, if delivered
+over the same number of fractions, yields the same radiobiological effect as the
+non-uniform dose distribution of interest.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationExcludeStructureParameter.html">OptimizationExcludeStructureParameter</a></dt>
+      <dd><p>Structures that have this parameter are excluded from the optimization.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationIMRTBeamParameter.html">OptimizationIMRTBeamParameter</a></dt>
+      <dd><p>Beam-specific optimization parameter for IMRT optimization.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationJawTrackingUsedParameter.html">OptimizationJawTrackingUsedParameter</a></dt>
+      <dd><p>An optimization parameter for using jaw tracking in VMAT optimization.
+The parameter exists if OptimizationSetup.UseJawTracking has been set to true.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationLineObjective.html">OptimizationLineObjective</a></dt>
+      <dd><p>A line objective is a collection of point objectives that have the same priority.
+It is used to limit the dose in a given structure.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationMeanDoseObjective.html">OptimizationMeanDoseObjective</a></dt>
+      <dd><p>A mean objective defines the mean dose that should not be exceeded. The mean objective is
+used to decrease the dose that a structure receives.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter.html">OptimizationNormalTissueParameter</a></dt>
+      <dd><p>An optimization parameter for the normal tissue objective.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationObjective.html">OptimizationObjective</a></dt>
+      <dd><p>Provides a common base type for all structure-specific optimization objectives.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationParameter.html">OptimizationParameter</a></dt>
+      <dd><p>Provides a common base type for all optimization parameters.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationPointCloudParameter.html">OptimizationPointCloudParameter</a></dt>
+      <dd><p>Structure-specific parameter for point cloud optimization.</p>
+<p>Relevant if the optimization algorithm uses a point cloud.
+The point cloud parameters are automatically created with default values
+when you add other structure-specific parameters or objectives in the optimization setup.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationPointObjective.html">OptimizationPointObjective</a></dt>
+      <dd><p>A point objective is either an upper or lower objective.
+An upper objective is used to limit the dose in a given structure.
+A lower objective is used to define the desired dose levels in target structures.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationSetup.html">OptimizationSetup</a></dt>
+      <dd><p>Gives access to the optimization parameters and objectives.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationVMATAvoidanceSectors.html">OptimizationVMATAvoidanceSectors</a></dt>
+      <dd><p>Beam-specific optimization parameter for VMAT Avoidance sectors.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizerDVH.html">OptimizerDVH</a></dt>
+      <dd><p>Contains a structure-specific Dose Volume Histogram (DVH) curve generated in optimization.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizerObjectiveValue.html">OptimizerObjectiveValue</a></dt>
+      <dd><p>The optimizer objective function value for the structure.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizerResult.html">OptimizerResult</a></dt>
+      <dd><p>Holds the result of the optimization (pass/fail).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Patient.html">Patient</a></dt>
+      <dd><p>Represents a patient.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.PatientSummary.html">PatientSummary</a></dt>
+      <dd><p>Basic information about the patient.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.PatientSupportDevice.html">PatientSupportDevice</a></dt>
+      <dd><p>Represents a proton patient support device.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+      <dd><p>Represents a treatment plan. See the definition of a DICOM RT Plan for more information.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanSum.html">PlanSum</a></dt>
+      <dd><p>A plan sum describes the cumulative dose summation of several treatment plans.
+It can be used, for example, to evaluate the dose the patient received from a treatment plan and boost plan together.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanSumComponent.html">PlanSumComponent</a></dt>
+      <dd><p>Represents a component plan of a plan sum.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanTreatmentSession.html">PlanTreatmentSession</a></dt>
+      <dd><p>Plan in the treatment session.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanUncertainty.html">PlanUncertainty</a></dt>
+      <dd><p>Provides access to Plan Uncertainty parameters. For more information, see Eclipse Photon and Electron Instructions for Use.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html">PlanningItem</a></dt>
+      <dd><p>Common properties of a treatment plan and a plan sum.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanningItemDose.html">PlanningItemDose</a></dt>
+      <dd><p>Represents a dose that is connected to a plan setup or a plan sum.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ProtocolPhaseMeasure.html">ProtocolPhaseMeasure</a></dt>
+      <dd><p>Represents the plan measures (quality indices) of the clinical protocol.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ProtocolPhasePrescription.html">ProtocolPhasePrescription</a></dt>
+      <dd><p>Represents the prescriptions (plan objectives) of the clinical protocol.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.RTPrescription.html">RTPrescription</a></dt>
+      <dd><p>Represents a prescription.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.RTPrescriptionConstraint.html">RTPrescriptionConstraint</a></dt>
+      <dd><p>Represents a coverage constraint for an RT prescription.</p>
+<table><thead><tr><th class="term">Type of the constraint</th><th class="term">Applies to</th><th class="term">Example</th><th class="term">Value1</th><th class="term">Unit1</th><th class="term">Value2</th><th class="term">Unit2</th></tr></thead><tbody><tr><td class="term"><a class="xref" href="VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.html#VMS_TPS_Common_Model_Types_RTPrescriptionConstraintType_MinimumDose">MinimumDose</a></td><td class="term">Targets</td><td class="term">Minimum dose &gt; 95% (of the target dose).</td><td class="term">95</td><td class="term">%</td><td class="term">null</td><td class="term">null</td></tr><tr><td class="term"><a class="xref" href="VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.html#VMS_TPS_Common_Model_Types_RTPrescriptionConstraintType_MaximumDose">MaximumDose</a></td><td class="term">Targets</td><td class="term">Maximum dose &lt; 102% (of the target dose).</td><td class="term">102</td><td class="term">%</td><td class="term">null</td><td class="term">null</td></tr><tr><td class="term"><a class="xref" href="VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.html#VMS_TPS_Common_Model_Types_RTPrescriptionConstraintType_MaximumDose">MaximumDose</a></td><td class="term">Organs at risk</td><td class="term">Maximum dose &lt; 50 Gy.</td><td class="term">50</td><td class="term">Gy</td><td class="term">null</td><td class="term">null</td></tr><tr><td class="term"><a class="xref" href="VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.html#VMS_TPS_Common_Model_Types_RTPrescriptionConstraintType_MinimumDvhDose">MinimumDvhDose</a></td><td class="term">Targets</td><td class="term">At least 95% of structure gets 98% of the target dose, i.e. V98% &gt; 95%.</td><td class="term">98</td><td class="term">%</td><td class="term">95</td><td class="term">%</td></tr><tr><td class="term"><a class="xref" href="VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.html#VMS_TPS_Common_Model_Types_RTPrescriptionConstraintType_MaximumDvhDose">MaximumDvhDose</a></td><td class="term">Targets</td><td class="term">No more than 95% of structure gets 102% of the target dose, i.e. V102% &lt; 95%.</td><td class="term">102</td><td class="term">%</td><td class="term">95</td><td class="term">%</td></tr><tr><td class="term"><a class="xref" href="VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.html#VMS_TPS_Common_Model_Types_RTPrescriptionConstraintType_MaximumMeanDose">MaximumMeanDose</a></td><td class="term">Organs at risk</td><td class="term">Maximum mean dose &lt; 45 Gy.</td><td class="term">45</td><td class="term">Gy</td><td class="term">null</td><td class="term">null</td></tr><tr><td class="term"><a class="xref" href="VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.html#VMS_TPS_Common_Model_Types_RTPrescriptionConstraintType_FreeText">FreeText</a></td><td class="term">Organs at risk</td><td class="term">Free text constraint (a &lt; b).</td><td class="term">a</td><td class="term">null</td><td class="term">b</td><td class="term">null</td></tr></tbody></table>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.RTPrescriptionOrganAtRisk.html">RTPrescriptionOrganAtRisk</a></dt>
+      <dd><p>Represents an organ at risk structure.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.RTPrescriptionTarget.html">RTPrescriptionTarget</a></dt>
+      <dd><p>Represents a prescription target.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.RTPrescriptionTargetConstraints.html">RTPrescriptionTargetConstraints</a></dt>
+      <dd><p>Represents target structure constraints.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.RadioactiveSource.html">RadioactiveSource</a></dt>
+      <dd><p>Represents a radioactive source installed into a <a class="xref" href="VMS.TPS.Common.Model.API.BrachyTreatmentUnit.html">brachytherapy treatment unit</a>
+or a seed of a <a class="xref" href="VMS.TPS.Common.Model.API.SeedCollection.html">seed collection</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.RadioactiveSourceModel.html">RadioactiveSourceModel</a></dt>
+      <dd><p>The radioactive source model represents the details of the radioactive source used in brachytherapy. It encapsulates
+the source isotope, dimensions, and dose calculation parameters.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.RangeModulator.html">RangeModulator</a></dt>
+      <dd><p>The range modulator device.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.RangeModulatorSettings.html">RangeModulatorSettings</a></dt>
+      <dd><p>Range modulator settings.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.RangeShifter.html">RangeShifter</a></dt>
+      <dd><p>The range shifter device.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.RangeShifterSettings.html">RangeShifterSettings</a></dt>
+      <dd><p>Range shifter settings.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ReferencePoint.html">ReferencePoint</a></dt>
+      <dd><p>A reference point associated with a patient.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Registration.html">Registration</a></dt>
+      <dd><p>Represents the spatial registration matrix between two frames of reference.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ScriptContext.html">ScriptContext</a></dt>
+      <dd><p>Contains the runtime context information of the active application for the script.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.ScriptEnvironment.html">ScriptEnvironment</a></dt>
+      <dd><p>Contains the runtime information of the application environment for the script.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.SearchBodyParameters.html">SearchBodyParameters</a></dt>
+      <dd><p>Parameters for the Search Body feature.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.SeedCollection.html">SeedCollection</a></dt>
+      <dd><p>Represents a collection of brachytherapy <a class="xref" href="VMS.TPS.Common.Model.API.SourcePosition.html">seed positions</a>.
+Each position is also associated with a radioactive source.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.SegmentVolume.html">SegmentVolume</a></dt>
+      <dd><p>The volumetric representation of a structure.
+This object is used  when defining margins for structures, or when performing Boolean operations on structures.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html">SerializableObject</a></dt>
+      <dd><p>Base class for objects that can be serialized.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Series.html">Series</a></dt>
+      <dd><p>A series is a collection of radiation therapy objects of a patient.
+The series is part of a study. See the definition of a DICOM Series for more information.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Slot.html">Slot</a></dt>
+      <dd><p>A slot is the location (typically on the collimator head of the gantry) where an add-on, such as a wedge or block, is mounted.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.SourcePosition.html">SourcePosition</a></dt>
+      <dd><p>Represents a brachytherapy source dwell position in a <a class="xref" href="VMS.TPS.Common.Model.API.Catheter.html">catheter</a>
+or a seed position in a <a class="xref" href="VMS.TPS.Common.Model.API.SeedCollection.html">seed collection</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.StandardWedge.html">StandardWedge</a></dt>
+      <dd><p>A standard wedge is a physical piece of material with an angle that is
+static during treatment.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+      <dd><p>A structure is a geometrical representation of an anatomical organ, a treatment volume, a marker, or a support structure.
+See the definition of a DICOM Structure for more information.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.StructureCode.html">StructureCode</a></dt>
+      <dd><p>Represents a structure code and its coding scheme.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.StructureCodeDictionary.html">StructureCodeDictionary</a></dt>
+      <dd><p>Represents a set of structure codes as defined by a structure code scheme.
+The class exposes the structure codes that are available through the implemented <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary&lt;TKey, TValue&gt;</a> interface.
+Structure code schemes are managed in RT Administration.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.StructureSet.html">StructureSet</a></dt>
+      <dd><p>A structure set is a container for structures of a patient, including anatomical organs, treatment volumes and markers, and support structures.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Study.html">Study</a></dt>
+      <dd><p>A study is a collection of series.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Technique.html">Technique</a></dt>
+      <dd><p>Treatment technique used for a beam. Can be, for example, static or arc, or (for proton beams) modulated scanning.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.TradeoffExplorationContext.html">TradeoffExplorationContext</a></dt>
+      <dd><p>Context for performing multi-criteria optimization (MCO) to explore different trade-offs.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.TradeoffObjective.html">TradeoffObjective</a></dt>
+      <dd><p>Trade-off objective interface that consists of a set of optimization objectives.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Tray.html">Tray</a></dt>
+      <dd><p>A tray add-on is a plate where blocks, compensators, and other beam modifying materials can be fixed to.
+The tray is inserted into a slot during the treatment of a beam.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.TreatmentPhase.html">TreatmentPhase</a></dt>
+      <dd><p>Treatment phase.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.TreatmentSession.html">TreatmentSession</a></dt>
+      <dd><p>Treatment session.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.TreatmentUnitOperatingLimit.html">TreatmentUnitOperatingLimit</a></dt>
+      <dd><p>Describes the limits of a treatment unit parameter and provides descriptive information related to it.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.TreatmentUnitOperatingLimits.html">TreatmentUnitOperatingLimits</a></dt>
+      <dd><p>Provides operating limit information for treatment unit parameters.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.TypeBasedIdValidator.html">TypeBasedIdValidator</a></dt>
+      <dd><p>A utility class for validating the data object identifier.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.User.html">User</a></dt>
+      <dd><p>Represents a user.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Wedge.html">Wedge</a></dt>
+      <dd><p>A wedge is a beam modulating add-on that modifies the dose intensity over all or a part of a treatment beam.</p>
+</dd>
+    </dl>
+    <h3 id="structs">
+Structs
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Calculation.Algorithm.html">Calculation.Algorithm</a></dt>
+      <dd><p>Algorithm</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.Calculation.CalculationModel.html">Calculation.CalculationModel</a></dt>
+      <dd><p>Calculation Model</p>
+</dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.IDVHEstimationCalculator.html">IDVHEstimationCalculator</a></dt>
+      <dd><p>Interface to the calculation of the DVH Estimates</p>
+</dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="VMS.TPS.Common.Model.API.TradeoffPlanGenerationIntermediateDoseMode.html">TradeoffPlanGenerationIntermediateDoseMode</a></dt>
+      <dd><p>Enumeration that specifies the use of intermediate dose when optimizing a plan collection for trade-off exploring.</p>
+</dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

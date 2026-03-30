@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.VVector.Component
+  commentId: T:VMS.TPS.Common.Model.Types.VVector.Component
+  id: VVector.Component
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.VVector.Component.X
+  - VMS.TPS.Common.Model.Types.VVector.Component.Y
+  - VMS.TPS.Common.Model.Types.VVector.Component.Z
+  langs:
+  - csharp
+  - vb
+  name: VVector.Component
+  nameWithType: VVector.Component
+  fullName: VMS.TPS.Common.Model.Types.VVector.Component
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: VVector component indexing.
+  example: []
+  syntax:
+    content: public enum VVector.Component
+    content.vb: Public Enum VVector.Component
+- uid: VMS.TPS.Common.Model.Types.VVector.Component.X
+  commentId: F:VMS.TPS.Common.Model.Types.VVector.Component.X
+  id: X
+  parent: VMS.TPS.Common.Model.Types.VVector.Component
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: VVector.Component.X
+  fullName: VMS.TPS.Common.Model.Types.VVector.Component.X
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: VVector X component index.
+  example: []
+  syntax:
+    content: X = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector.Component
+- uid: VMS.TPS.Common.Model.Types.VVector.Component.Y
+  commentId: F:VMS.TPS.Common.Model.Types.VVector.Component.Y
+  id: Y
+  parent: VMS.TPS.Common.Model.Types.VVector.Component
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: VVector.Component.Y
+  fullName: VMS.TPS.Common.Model.Types.VVector.Component.Y
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: VVector Y component index.
+  example: []
+  syntax:
+    content: Y = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector.Component
+- uid: VMS.TPS.Common.Model.Types.VVector.Component.Z
+  commentId: F:VMS.TPS.Common.Model.Types.VVector.Component.Z
+  id: Z
+  parent: VMS.TPS.Common.Model.Types.VVector.Component
+  langs:
+  - csharp
+  - vb
+  name: Z
+  nameWithType: VVector.Component.Z
+  fullName: VMS.TPS.Common.Model.Types.VVector.Component.Z
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: VVector Z component index.
+  example: []
+  syntax:
+    content: Z = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector.Component
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.VVector.Component
+  commentId: T:VMS.TPS.Common.Model.Types.VVector.Component
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html
+  name: VVector.Component
+  nameWithType: VVector.Component
+  fullName: VMS.TPS.Common.Model.Types.VVector.Component
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types.VVector.Component
+    name: Component
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.Component.html
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.Types.VVector
+    name: VVector
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types.VVector.Component
+    name: Component
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VVector.Component.html

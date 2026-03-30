@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class EvaluationDose | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EvaluationDose | Example ">
+      
+      <meta name="description" content="Represents an evaluation dose that is connected to a plan that has no beams.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API.EvaluationDose">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_API_EvaluationDose" data-uid="VMS.TPS.Common.Model.API.EvaluationDose" class="text-break">
+Class EvaluationDose  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents an evaluation dose that is connected to a plan that has no beams.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EvaluationDose : Dose, IXmlSerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html">SerializableObject</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html">ApiDataObject</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.Dose.html">Dose</a></div>
+      <div><span class="xref">EvaluationDose</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IXmlSerializable</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_GetDoseProfile_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_System_Double___">Dose.GetDoseProfile(VVector, VVector, double[])</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_GetDoseToPoint_VMS_TPS_Common_Model_Types_VVector_">Dose.GetDoseToPoint(VVector)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_GetVoxels_System_Int32_System_Int32_0__0___">Dose.GetVoxels(int, int[,])</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_VoxelToDoseValue_System_Int32_">Dose.VoxelToDoseValue(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_DoseMax3D">Dose.DoseMax3D</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_DoseMax3DLocation">Dose.DoseMax3DLocation</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_Isodoses">Dose.Isodoses</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_Origin">Dose.Origin</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_Series">Dose.Series</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_SeriesUID">Dose.SeriesUID</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_UID">Dose.UID</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_XDirection">Dose.XDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_XRes">Dose.XRes</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_XSize">Dose.XSize</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_YDirection">Dose.YDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_YRes">Dose.YRes</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_YSize">Dose.YSize</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_ZDirection">Dose.ZDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_ZRes">Dose.ZRes</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.Dose.html#VMS_TPS_Common_Model_API_Dose_ZSize">Dose.ZSize</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString">ApiDataObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_">ApiDataObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode">ApiDataObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Id">ApiDataObject.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Name">ApiDataObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Comment">ApiDataObject.Comment</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName">ApiDataObject.HistoryUserName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName">ApiDataObject.HistoryUserDisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime">ApiDataObject.HistoryDateTime</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema">SerializableObject.GetSchema()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_">SerializableObject.ReadXml(XmlReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_">SerializableObject.WriteXml(XmlWriter, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_">SerializableObject.WriteXml(XmlWriter, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__">SerializableObject.WriteXml&lt;T&gt;(XmlWriter, string, IEnumerable&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__">SerializableObject.WriteXml&lt;T1, T2&gt;(XmlWriter, string, IDictionary&lt;T1, T2&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_">SerializableObject.StartSerialization(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization">SerializableObject.EndSerialization()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory">SerializableObject.ClearSerializationHistory()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_EvaluationDose_DoseValueToVoxel_" data-uid="VMS.TPS.Common.Model.API.EvaluationDose.DoseValueToVoxel*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_EvaluationDose_DoseValueToVoxel_VMS_TPS_Common_Model_Types_DoseValue_" data-uid="VMS.TPS.Common.Model.API.EvaluationDose.DoseValueToVoxel(VMS.TPS.Common.Model.Types.DoseValue)">
+  DoseValueToVoxel(DoseValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts the given dose value to the corresponding
+raw voxel value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DoseValueToVoxel(DoseValue doseValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doseValue</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Dose value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Value converted to voxel value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_EvaluationDose_SetVoxels_" data-uid="VMS.TPS.Common.Model.API.EvaluationDose.SetVoxels*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_EvaluationDose_SetVoxels_System_Int32_System_Int32_0__0___" data-uid="VMS.TPS.Common.Model.API.EvaluationDose.SetVoxels(System.Int32,System.Int32[0:,0:])">
+  SetVoxels(int, int[,])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] For an evaluation dose (the dose of a plan that has no beams), sets the voxels of the given dose plane.
+Create the evaluation dose first using <a class="xref" href="VMS.TPS.Common.Model.API.ExternalPlanSetup.html#VMS_TPS_Common_Model_API_ExternalPlanSetup_CreateEvaluationDose">CreateEvaluationDose</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVoxels(int planeIndex, int[,] values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>planeIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Zero-based index of the plane.</p>
+</dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[,]</dt>
+    <dd><p>The plane of voxel values. The size of the array must conform to the X-size and Y-size of the dose.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_EvaluationDose_WriteXml_" data-uid="VMS.TPS.Common.Model.API.EvaluationDose.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_EvaluationDose_WriteXml_System_Xml_XmlWriter_" data-uid="VMS.TPS.Common.Model.API.EvaluationDose.WriteXml(System.Xml.XmlWriter)">
+  WriteXml(XmlWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an object into its XML representation.
+For more information on how to serialize an object into an XML document, see <span class="xref">System.Xml.Serialization.XmlSerializer</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>The System.Xml.XmlWriter stream, to which the object is serialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

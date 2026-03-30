@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.VolumePresentation
+  commentId: T:VMS.TPS.Common.Model.Types.VolumePresentation
+  id: VolumePresentation
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.VolumePresentation.AbsoluteCm3
+  - VMS.TPS.Common.Model.Types.VolumePresentation.Relative
+  langs:
+  - csharp
+  - vb
+  name: VolumePresentation
+  nameWithType: VolumePresentation
+  fullName: VMS.TPS.Common.Model.Types.VolumePresentation
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Types of presentation for volume values.
+  example: []
+  syntax:
+    content: public enum VolumePresentation
+    content.vb: Public Enum VolumePresentation
+- uid: VMS.TPS.Common.Model.Types.VolumePresentation.Relative
+  commentId: F:VMS.TPS.Common.Model.Types.VolumePresentation.Relative
+  id: Relative
+  parent: VMS.TPS.Common.Model.Types.VolumePresentation
+  langs:
+  - csharp
+  - vb
+  name: Relative
+  nameWithType: VolumePresentation.Relative
+  fullName: VMS.TPS.Common.Model.Types.VolumePresentation.Relative
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The volume as a percentage.
+  example: []
+  syntax:
+    content: Relative = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.VolumePresentation
+- uid: VMS.TPS.Common.Model.Types.VolumePresentation.AbsoluteCm3
+  commentId: F:VMS.TPS.Common.Model.Types.VolumePresentation.AbsoluteCm3
+  id: AbsoluteCm3
+  parent: VMS.TPS.Common.Model.Types.VolumePresentation
+  langs:
+  - csharp
+  - vb
+  name: AbsoluteCm3
+  nameWithType: VolumePresentation.AbsoluteCm3
+  fullName: VMS.TPS.Common.Model.Types.VolumePresentation.AbsoluteCm3
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The volume as a cm3.
+  example: []
+  syntax:
+    content: AbsoluteCm3 = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.VolumePresentation
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.VolumePresentation
+  commentId: T:VMS.TPS.Common.Model.Types.VolumePresentation
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VolumePresentation.html
+  name: VolumePresentation
+  nameWithType: VolumePresentation
+  fullName: VMS.TPS.Common.Model.Types.VolumePresentation

@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.MeasureModifier
+  commentId: T:VMS.TPS.Common.Model.Types.MeasureModifier
+  id: MeasureModifier
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.MeasureModifier.MeasureModifierAtLeast
+  - VMS.TPS.Common.Model.Types.MeasureModifier.MeasureModifierAtMost
+  - VMS.TPS.Common.Model.Types.MeasureModifier.MeasureModifierNone
+  - VMS.TPS.Common.Model.Types.MeasureModifier.MeasureModifierTarget
+  langs:
+  - csharp
+  - vb
+  name: MeasureModifier
+  nameWithType: MeasureModifier
+  fullName: VMS.TPS.Common.Model.Types.MeasureModifier
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Measure modifier
+  example: []
+  syntax:
+    content: public enum MeasureModifier
+    content.vb: Public Enum MeasureModifier
+- uid: VMS.TPS.Common.Model.Types.MeasureModifier.MeasureModifierAtLeast
+  commentId: F:VMS.TPS.Common.Model.Types.MeasureModifier.MeasureModifierAtLeast
+  id: MeasureModifierAtLeast
+  parent: VMS.TPS.Common.Model.Types.MeasureModifier
+  langs:
+  - csharp
+  - vb
+  name: MeasureModifierAtLeast
+  nameWithType: MeasureModifier.MeasureModifierAtLeast
+  fullName: VMS.TPS.Common.Model.Types.MeasureModifier.MeasureModifierAtLeast
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: At least.
+  example: []
+  syntax:
+    content: MeasureModifierAtLeast = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.MeasureModifier
+- uid: VMS.TPS.Common.Model.Types.MeasureModifier.MeasureModifierAtMost
+  commentId: F:VMS.TPS.Common.Model.Types.MeasureModifier.MeasureModifierAtMost
+  id: MeasureModifierAtMost
+  parent: VMS.TPS.Common.Model.Types.MeasureModifier
+  langs:
+  - csharp
+  - vb
+  name: MeasureModifierAtMost
+  nameWithType: MeasureModifier.MeasureModifierAtMost
+  fullName: VMS.TPS.Common.Model.Types.MeasureModifier.MeasureModifierAtMost
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: At most.
+  example: []
+  syntax:
+    content: MeasureModifierAtMost = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.MeasureModifier
+- uid: VMS.TPS.Common.Model.Types.MeasureModifier.MeasureModifierTarget
+  commentId: F:VMS.TPS.Common.Model.Types.MeasureModifier.MeasureModifierTarget
+  id: MeasureModifierTarget
+  parent: VMS.TPS.Common.Model.Types.MeasureModifier
+  langs:
+  - csharp
+  - vb
+  name: MeasureModifierTarget
+  nameWithType: MeasureModifier.MeasureModifierTarget
+  fullName: VMS.TPS.Common.Model.Types.MeasureModifier.MeasureModifierTarget
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Is.
+  example: []
+  syntax:
+    content: MeasureModifierTarget = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.MeasureModifier
+- uid: VMS.TPS.Common.Model.Types.MeasureModifier.MeasureModifierNone
+  commentId: F:VMS.TPS.Common.Model.Types.MeasureModifier.MeasureModifierNone
+  id: MeasureModifierNone
+  parent: VMS.TPS.Common.Model.Types.MeasureModifier
+  langs:
+  - csharp
+  - vb
+  name: MeasureModifierNone
+  nameWithType: MeasureModifier.MeasureModifierNone
+  fullName: VMS.TPS.Common.Model.Types.MeasureModifier.MeasureModifierNone
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Undefined.
+  example: []
+  syntax:
+    content: MeasureModifierNone = 99
+    return:
+      type: VMS.TPS.Common.Model.Types.MeasureModifier
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.MeasureModifier
+  commentId: T:VMS.TPS.Common.Model.Types.MeasureModifier
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.MeasureModifier.html
+  name: MeasureModifier
+  nameWithType: MeasureModifier
+  fullName: VMS.TPS.Common.Model.Types.MeasureModifier

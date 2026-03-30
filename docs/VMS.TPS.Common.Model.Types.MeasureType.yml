@@ -1,0 +1,298 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.MeasureType
+  commentId: T:VMS.TPS.Common.Model.Types.MeasureType
+  id: MeasureType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDQP_DXXX
+  - VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDQP_DXXXcc
+  - VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDQP_VXXX
+  - VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDQP_VXXXGy
+  - VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDoseConformity
+  - VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDoseMax
+  - VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDoseMean
+  - VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDoseMin
+  - VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeGradient
+  - VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeNone
+  langs:
+  - csharp
+  - vb
+  name: MeasureType
+  nameWithType: MeasureType
+  fullName: VMS.TPS.Common.Model.Types.MeasureType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Enumeration of plan measure types.
+  example: []
+  syntax:
+    content: public enum MeasureType
+    content.vb: Public Enum MeasureType
+- uid: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDoseConformity
+  commentId: F:VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDoseConformity
+  id: MeasureTypeDoseConformity
+  parent: VMS.TPS.Common.Model.Types.MeasureType
+  langs:
+  - csharp
+  - vb
+  name: MeasureTypeDoseConformity
+  nameWithType: MeasureType.MeasureTypeDoseConformity
+  fullName: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDoseConformity
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Dose conformity index.
+  example: []
+  syntax:
+    content: MeasureTypeDoseConformity = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.MeasureType
+- uid: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeGradient
+  commentId: F:VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeGradient
+  id: MeasureTypeGradient
+  parent: VMS.TPS.Common.Model.Types.MeasureType
+  langs:
+  - csharp
+  - vb
+  name: MeasureTypeGradient
+  nameWithType: MeasureType.MeasureTypeGradient
+  fullName: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeGradient
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Gradient measure.
+  example: []
+  syntax:
+    content: MeasureTypeGradient = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.MeasureType
+- uid: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDQP_VXXX
+  commentId: F:VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDQP_VXXX
+  id: MeasureTypeDQP_VXXX
+  parent: VMS.TPS.Common.Model.Types.MeasureType
+  langs:
+  - csharp
+  - vb
+  name: MeasureTypeDQP_VXXX
+  nameWithType: MeasureType.MeasureTypeDQP_VXXX
+  fullName: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDQP_VXXX
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'Dosimetric Quality Parameter: Volume receiving XXX% dose.'
+  example: []
+  syntax:
+    content: MeasureTypeDQP_VXXX = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.MeasureType
+- uid: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDQP_VXXXGy
+  commentId: F:VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDQP_VXXXGy
+  id: MeasureTypeDQP_VXXXGy
+  parent: VMS.TPS.Common.Model.Types.MeasureType
+  langs:
+  - csharp
+  - vb
+  name: MeasureTypeDQP_VXXXGy
+  nameWithType: MeasureType.MeasureTypeDQP_VXXXGy
+  fullName: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDQP_VXXXGy
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'Dosimetric Quality Parameter: Volume receiving XXX Gy dose.'
+  example: []
+  syntax:
+    content: MeasureTypeDQP_VXXXGy = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.MeasureType
+- uid: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDQP_DXXX
+  commentId: F:VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDQP_DXXX
+  id: MeasureTypeDQP_DXXX
+  parent: VMS.TPS.Common.Model.Types.MeasureType
+  langs:
+  - csharp
+  - vb
+  name: MeasureTypeDQP_DXXX
+  nameWithType: MeasureType.MeasureTypeDQP_DXXX
+  fullName: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDQP_DXXX
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'Dosimetric Quality Parameter: Dose received by XXX% volume.'
+  example: []
+  syntax:
+    content: MeasureTypeDQP_DXXX = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.MeasureType
+- uid: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDQP_DXXXcc
+  commentId: F:VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDQP_DXXXcc
+  id: MeasureTypeDQP_DXXXcc
+  parent: VMS.TPS.Common.Model.Types.MeasureType
+  langs:
+  - csharp
+  - vb
+  name: MeasureTypeDQP_DXXXcc
+  nameWithType: MeasureType.MeasureTypeDQP_DXXXcc
+  fullName: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDQP_DXXXcc
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'Dosimetric Quality Parameter: Dose received by XXX cc volume.'
+  example: []
+  syntax:
+    content: MeasureTypeDQP_DXXXcc = 5
+    return:
+      type: VMS.TPS.Common.Model.Types.MeasureType
+- uid: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDoseMin
+  commentId: F:VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDoseMin
+  id: MeasureTypeDoseMin
+  parent: VMS.TPS.Common.Model.Types.MeasureType
+  langs:
+  - csharp
+  - vb
+  name: MeasureTypeDoseMin
+  nameWithType: MeasureType.MeasureTypeDoseMin
+  fullName: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDoseMin
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'TODO: Fill the description'
+  example: []
+  syntax:
+    content: MeasureTypeDoseMin = 6
+    return:
+      type: VMS.TPS.Common.Model.Types.MeasureType
+- uid: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDoseMax
+  commentId: F:VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDoseMax
+  id: MeasureTypeDoseMax
+  parent: VMS.TPS.Common.Model.Types.MeasureType
+  langs:
+  - csharp
+  - vb
+  name: MeasureTypeDoseMax
+  nameWithType: MeasureType.MeasureTypeDoseMax
+  fullName: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDoseMax
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'TODO: Fill the description'
+  example: []
+  syntax:
+    content: MeasureTypeDoseMax = 7
+    return:
+      type: VMS.TPS.Common.Model.Types.MeasureType
+- uid: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDoseMean
+  commentId: F:VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDoseMean
+  id: MeasureTypeDoseMean
+  parent: VMS.TPS.Common.Model.Types.MeasureType
+  langs:
+  - csharp
+  - vb
+  name: MeasureTypeDoseMean
+  nameWithType: MeasureType.MeasureTypeDoseMean
+  fullName: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeDoseMean
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: 'TODO: Fill the description'
+  example: []
+  syntax:
+    content: MeasureTypeDoseMean = 8
+    return:
+      type: VMS.TPS.Common.Model.Types.MeasureType
+- uid: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeNone
+  commentId: F:VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeNone
+  id: MeasureTypeNone
+  parent: VMS.TPS.Common.Model.Types.MeasureType
+  langs:
+  - csharp
+  - vb
+  name: MeasureTypeNone
+  nameWithType: MeasureType.MeasureTypeNone
+  fullName: VMS.TPS.Common.Model.Types.MeasureType.MeasureTypeNone
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Undefined.
+  example: []
+  syntax:
+    content: MeasureTypeNone = 99
+    return:
+      type: VMS.TPS.Common.Model.Types.MeasureType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.MeasureType
+  commentId: T:VMS.TPS.Common.Model.Types.MeasureType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.MeasureType.html
+  name: MeasureType
+  nameWithType: MeasureType
+  fullName: VMS.TPS.Common.Model.Types.MeasureType

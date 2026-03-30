@@ -1,0 +1,3240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PlanSetup | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PlanSetup | Example ">
+      
+      <meta name="description" content="Represents a treatment plan. See the definition of a DICOM RT Plan for more information.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.API.PlanSetup">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_API_PlanSetup" data-uid="VMS.TPS.Common.Model.API.PlanSetup" class="text-break">
+Class PlanSetup  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.API.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a treatment plan. See the definition of a DICOM RT Plan for more information.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PlanSetup : PlanningItem, IXmlSerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html">SerializableObject</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html">ApiDataObject</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html">PlanningItem</a></div>
+      <div><span class="xref">PlanSetup</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IXmlSerializable</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.BrachyPlanSetup.html">BrachyPlanSetup</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.ExternalPlanSetup.html">ExternalPlanSetup</a></div>
+      <div><a class="xref" href="VMS.TPS.Common.Model.API.IonPlanSetup.html">IonPlanSetup</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_GetClinicalGoals">PlanningItem.GetClinicalGoals()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_GetDVHCumulativeData_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_Types_DoseValuePresentation_VMS_TPS_Common_Model_Types_VolumePresentation_System_Double_">PlanningItem.GetDVHCumulativeData(Structure, DoseValuePresentation, VolumePresentation, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_GetDoseAtVolume_VMS_TPS_Common_Model_API_Structure_System_Double_VMS_TPS_Common_Model_Types_VolumePresentation_VMS_TPS_Common_Model_Types_DoseValuePresentation_">PlanningItem.GetDoseAtVolume(Structure, double, VolumePresentation, DoseValuePresentation)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_GetVolumeAtDose_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_VolumePresentation_">PlanningItem.GetVolumeAtDose(Structure, DoseValue, VolumePresentation)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_Course">PlanningItem.Course</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_CreationDateTime">PlanningItem.CreationDateTime</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_Dose">PlanningItem.Dose</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_DoseValuePresentation">PlanningItem.DoseValuePresentation</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_StructureSet">PlanningItem.StructureSet</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html#VMS_TPS_Common_Model_API_PlanningItem_StructuresSelectedForDvh">PlanningItem.StructuresSelectedForDvh</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString">ApiDataObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_">ApiDataObject.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode">ApiDataObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName">ApiDataObject.HistoryUserName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName">ApiDataObject.HistoryUserDisplayName</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime">ApiDataObject.HistoryDateTime</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema">SerializableObject.GetSchema()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_">SerializableObject.ReadXml(XmlReader)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_">SerializableObject.WriteXml(XmlWriter, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_">SerializableObject.WriteXml(XmlWriter, string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__">SerializableObject.WriteXml&lt;T&gt;(XmlWriter, string, IEnumerable&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__">SerializableObject.WriteXml&lt;T1, T2&gt;(XmlWriter, string, IDictionary&lt;T1, T2&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_">SerializableObject.StartSerialization(string, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization">SerializableObject.EndSerialization()</a>
+    </div>
+    <div>
+      <a class="xref" href="VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory">SerializableObject.ClearSerializationHistory()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_m_errorsOnCalculationCompleted" data-uid="VMS.TPS.Common.Model.API.PlanSetup.m_errorsOnCalculationCompleted">
+  m_errorsOnCalculationCompleted
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Flag that indicates whether there are errors upon calculation completion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_errorsOnCalculationCompleted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_ApplicationScriptLogs_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ApplicationScriptLogs*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_ApplicationScriptLogs" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ApplicationScriptLogs">
+  ApplicationScriptLogs
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The log entries of the script executions that have modified the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ApplicationScriptLog&gt; ApplicationScriptLogs { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.ApplicationScriptLog.html">ApplicationScriptLog</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_ApprovalHistory_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ApprovalHistory*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_ApprovalHistory" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ApprovalHistory">
+  ApprovalHistory
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the approval history of the plan setup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ApprovalHistoryEntry&gt; ApprovalHistory { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.Types.ApprovalHistoryEntry.html">ApprovalHistoryEntry</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_ApprovalHistoryLocalized_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ApprovalHistoryLocalized*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_ApprovalHistoryLocalized" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ApprovalHistoryLocalized">
+  ApprovalHistoryLocalized
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the localized approval history of the plan setup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ApprovalHistoryEntry&gt; ApprovalHistoryLocalized { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.Types.ApprovalHistoryEntry.html">ApprovalHistoryEntry</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_ApprovalStatus_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ApprovalStatus*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_ApprovalStatus" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ApprovalStatus">
+  ApprovalStatus
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The approval status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanSetupApprovalStatus ApprovalStatus { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.html">PlanSetupApprovalStatus</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_ApprovalStatusAsString_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ApprovalStatusAsString*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_ApprovalStatusAsString" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ApprovalStatusAsString">
+  ApprovalStatusAsString
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the approval status as a string (localized).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ApprovalStatusAsString { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_BaseDosePlanningItem_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.BaseDosePlanningItem*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_BaseDosePlanningItem" data-uid="VMS.TPS.Common.Model.API.PlanSetup.BaseDosePlanningItem">
+  BaseDosePlanningItem
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>BaseDose for the optimization, can be either plan or plan sum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanningItem BaseDosePlanningItem { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanningItem.html">PlanningItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_Beams_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.Beams*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_Beams" data-uid="VMS.TPS.Common.Model.API.PlanSetup.Beams">
+  Beams
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A collection of all the beams in the plan (including setup beams).
+Returns an empty collection if not applicable for the plan, for example, if the plan is a brachytherapy plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Beam&gt; Beams { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_BeamsInTreatmentOrder_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.BeamsInTreatmentOrder*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_BeamsInTreatmentOrder" data-uid="VMS.TPS.Common.Model.API.PlanSetup.BeamsInTreatmentOrder">
+  BeamsInTreatmentOrder
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A collection of all the beams in the plan (including setup beams) in treatment order.
+Returns an empty collection if not applicable for the plan, for example, if the plan is a brachytherapy plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Beam&gt; BeamsInTreatmentOrder { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_Comment_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.Comment*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_Comment" data-uid="VMS.TPS.Common.Model.API.PlanSetup.Comment">
+  Comment
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license] A comment about the Plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Comment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_CreationUserName_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.CreationUserName*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_CreationUserName" data-uid="VMS.TPS.Common.Model.API.PlanSetup.CreationUserName">
+  CreationUserName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the user who saved the plan for the first time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CreationUserName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_DBKey_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.DBKey*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_DBKey" data-uid="VMS.TPS.Common.Model.API.PlanSetup.DBKey">
+  DBKey
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>DataBase key of the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DBKey { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_DVHEstimates_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.DVHEstimates*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_DVHEstimates" data-uid="VMS.TPS.Common.Model.API.PlanSetup.DVHEstimates">
+  DVHEstimates
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a list of DVH estimate objects for this plan</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;EstimatedDVH&gt; DVHEstimates { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.EstimatedDVH.html">EstimatedDVH</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_DosePerFraction_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.DosePerFraction*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_DosePerFraction" data-uid="VMS.TPS.Common.Model.API.PlanSetup.DosePerFraction">
+  DosePerFraction
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The dose per fraction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoseValue DosePerFraction { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_DosePerFractionInPrimaryRefPoint_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.DosePerFractionInPrimaryRefPoint*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_DosePerFractionInPrimaryRefPoint" data-uid="VMS.TPS.Common.Model.API.PlanSetup.DosePerFractionInPrimaryRefPoint">
+  DosePerFractionInPrimaryRefPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The calculated fraction dose in the primary reference point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use PlannedDosePerFraction instead&quot;)]
+public DoseValue DosePerFractionInPrimaryRefPoint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_ElectronCalculationModel_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ElectronCalculationModel*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_ElectronCalculationModel" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ElectronCalculationModel">
+  ElectronCalculationModel
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the electron calculation model. Not applicable to brachytherapy plans.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ElectronCalculationModel { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_ElectronCalculationOptions_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ElectronCalculationOptions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_ElectronCalculationOptions" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ElectronCalculationOptions">
+  ElectronCalculationOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The electron calculation options. Not applicable to brachytherapy plans.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; ElectronCalculationOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_Id_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.Id*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_Id" data-uid="VMS.TPS.Common.Model.API.PlanSetup.Id">
+  Id
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license] The identifier of the PlanSetup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_IntegrityHash_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.IntegrityHash*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_IntegrityHash" data-uid="VMS.TPS.Common.Model.API.PlanSetup.IntegrityHash">
+  IntegrityHash
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the plan's integrity hash. Returns null if the plan's integrity hash has not been set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IntegrityHash { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_IsDoseValid_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.IsDoseValid*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_IsDoseValid" data-uid="VMS.TPS.Common.Model.API.PlanSetup.IsDoseValid">
+  IsDoseValid
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the value true if the plan dose is valid. This implies that the dose object returned
+from the dose property is not null and can therefore be used to query dose values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDoseValid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_IsTreated_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.IsTreated*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_IsTreated" data-uid="VMS.TPS.Common.Model.API.PlanSetup.IsTreated">
+  IsTreated
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the treatment plan has been delivered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsTreated { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_Name_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.Name*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_Name" data-uid="VMS.TPS.Common.Model.API.PlanSetup.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license] The name of the Plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_NumberOfFractions_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.NumberOfFractions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_NumberOfFractions" data-uid="VMS.TPS.Common.Model.API.PlanSetup.NumberOfFractions">
+  NumberOfFractions
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The number of fractions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? NumberOfFractions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_OptimizationSetup_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.OptimizationSetup*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_OptimizationSetup" data-uid="VMS.TPS.Common.Model.API.PlanSetup.OptimizationSetup">
+  OptimizationSetup
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Provides access to optimization objectives and parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptimizationSetup OptimizationSetup { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.OptimizationSetup.html">OptimizationSetup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PatientSupportDevice_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PatientSupportDevice*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PatientSupportDevice" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PatientSupportDevice">
+  PatientSupportDevice
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Patient support device.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PatientSupportDevice PatientSupportDevice { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.PatientSupportDevice.html">PatientSupportDevice</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PhotonCalculationModel_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PhotonCalculationModel*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PhotonCalculationModel" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PhotonCalculationModel">
+  PhotonCalculationModel
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the photon calculation model. Not applicable to brachytherapy plans.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PhotonCalculationModel { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PhotonCalculationOptions_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PhotonCalculationOptions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PhotonCalculationOptions" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PhotonCalculationOptions">
+  PhotonCalculationOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The photon calculation options. Not applicable to brachytherapy plans.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; PhotonCalculationOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PlanIntent_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanIntent*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PlanIntent" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanIntent">
+  PlanIntent
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The plan intent as in DICOM, or an empty string.
+The defined terms are &quot;CURATIVE&quot;, &quot;PALLIATIVE&quot;, &quot;PROPHYLACTIC&quot;, &quot;VERIFICATION&quot;, &quot;MACHINE_QA&quot;, &quot;RESEARCH&quot; and &quot;SERVICE&quot;,
+but the value can be different for imported plans.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PlanIntent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PlanIsInTreatment_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanIsInTreatment*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PlanIsInTreatment" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanIsInTreatment">
+  PlanIsInTreatment
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if plan is loaded into console.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PlanIsInTreatment { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PlanNormalizationMethod_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanNormalizationMethod*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PlanNormalizationMethod" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanNormalizationMethod">
+  PlanNormalizationMethod
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The user interface name for the current normalization method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PlanNormalizationMethod { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PlanNormalizationPoint_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanNormalizationPoint*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PlanNormalizationPoint" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanNormalizationPoint">
+  PlanNormalizationPoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The plan normalization point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VVector PlanNormalizationPoint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PlanNormalizationValue_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanNormalizationValue*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PlanNormalizationValue" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanNormalizationValue">
+  PlanNormalizationValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this property depends on your Eclipse Scripting API license] The plan normalization value in percentage. The plan is normalized according to the plan
+normalization value, for instance, 200%.
+The value is Double.NaN if it is not defined.
+<remarks>The property setter changes also the plan normalization method to Plan Normalization Value.</remarks></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double PlanNormalizationValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PlanObjectiveStructures_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanObjectiveStructures*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PlanObjectiveStructures" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanObjectiveStructures">
+  PlanObjectiveStructures
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The list of structure IDs that are present in the plan objectives (prescriptions and indices).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; PlanObjectiveStructures { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PlanType_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanType*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PlanType" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanType">
+  PlanType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The plan type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanType PlanType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.PlanType.html">PlanType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PlanUncertainties_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanUncertainties*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PlanUncertainties" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanUncertainties">
+  PlanUncertainties
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Plan uncertainties defined for the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;PlanUncertainty&gt; PlanUncertainties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.PlanUncertainty.html">PlanUncertainty</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PlannedDosePerFraction_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlannedDosePerFraction*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PlannedDosePerFraction" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlannedDosePerFraction">
+  PlannedDosePerFraction
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The calculated fraction dose in the primary reference point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoseValue PlannedDosePerFraction { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PlanningApprovalDate_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanningApprovalDate*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PlanningApprovalDate" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanningApprovalDate">
+  PlanningApprovalDate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The date when the plan was approved for planning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PlanningApprovalDate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PlanningApprover_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanningApprover*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PlanningApprover" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanningApprover">
+  PlanningApprover
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The identifier of the user who approved the plan for planning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PlanningApprover { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PlanningApproverDisplayName_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanningApproverDisplayName*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PlanningApproverDisplayName" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PlanningApproverDisplayName">
+  PlanningApproverDisplayName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The display name of the user who approved the plan for planning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PlanningApproverDisplayName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PredecessorPlan_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PredecessorPlan*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PredecessorPlan" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PredecessorPlan">
+  PredecessorPlan
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The prior revision of the plan</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanSetup PredecessorPlan { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PredecessorPlanUID_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PredecessorPlanUID*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PredecessorPlanUID" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PredecessorPlanUID">
+  PredecessorPlanUID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The UID of the predecessor plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PredecessorPlanUID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PrescribedDosePerFraction_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PrescribedDosePerFraction*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PrescribedDosePerFraction" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PrescribedDosePerFraction">
+  PrescribedDosePerFraction
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The prescribed fraction dose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use DosePerFraction instead&quot;)]
+public DoseValue PrescribedDosePerFraction { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PrescribedPercentage_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PrescribedPercentage*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PrescribedPercentage" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PrescribedPercentage">
+  PrescribedPercentage
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The prescribed dose percentage as a decimal number. For example, if the prescribed dose percentage shown in the Eclipse user interface is 80 %, returns 0.8</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use TreatmentPercentage instead&quot;)]
+public double PrescribedPercentage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_PrimaryReferencePoint_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PrimaryReferencePoint*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_PrimaryReferencePoint" data-uid="VMS.TPS.Common.Model.API.PlanSetup.PrimaryReferencePoint">
+  PrimaryReferencePoint
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The primary reference point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReferencePoint PrimaryReferencePoint { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.ReferencePoint.html">ReferencePoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_ProtocolID_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ProtocolID*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_ProtocolID" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ProtocolID">
+  ProtocolID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The protocol identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ProtocolID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_ProtocolPhaseID_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ProtocolPhaseID*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_ProtocolPhaseID" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ProtocolPhaseID">
+  ProtocolPhaseID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The protocol phase identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ProtocolPhaseID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_ProtonCalculationModel_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ProtonCalculationModel*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_ProtonCalculationModel" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ProtonCalculationModel">
+  ProtonCalculationModel
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the proton calculation model. Not applicable to brachytherapy plans.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ProtonCalculationModel { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_ProtonCalculationOptions_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ProtonCalculationOptions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_ProtonCalculationOptions" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ProtonCalculationOptions">
+  ProtonCalculationOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The proton calculation options. Not applicable to brachytherapy plans.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; ProtonCalculationOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_RTPrescription_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.RTPrescription*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_RTPrescription" data-uid="VMS.TPS.Common.Model.API.PlanSetup.RTPrescription">
+  RTPrescription
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Used for navigating to the linked prescription.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RTPrescription RTPrescription { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.RTPrescription.html">RTPrescription</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_ReferencePoints_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ReferencePoints*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_ReferencePoints" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ReferencePoints">
+  ReferencePoints
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Collection of reference points in the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ReferencePoint&gt; ReferencePoints { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.ReferencePoint.html">ReferencePoint</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_Series_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.Series*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_Series" data-uid="VMS.TPS.Common.Model.API.PlanSetup.Series">
+  Series
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The series that contains this plan. Null if the plan is not connected to a series.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Series Series { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.Series.html">Series</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_SeriesUID_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.SeriesUID*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_SeriesUID" data-uid="VMS.TPS.Common.Model.API.PlanSetup.SeriesUID">
+  SeriesUID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The DICOM UID of the series that contains this plan. Empty string if the plan is not connected to a series.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SeriesUID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_TargetVolumeID_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TargetVolumeID*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_TargetVolumeID" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TargetVolumeID">
+  TargetVolumeID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The target volume identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TargetVolumeID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_TotalDose_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TotalDose*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_TotalDose" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TotalDose">
+  TotalDose
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Planned total dose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoseValue TotalDose { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_TotalPrescribedDose_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TotalPrescribedDose*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_TotalPrescribedDose" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TotalPrescribedDose">
+  TotalPrescribedDose
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The total prescribed dose.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use TotalDose instead&quot;)]
+public DoseValue TotalPrescribedDose { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_TreatmentApprovalDate_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TreatmentApprovalDate*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_TreatmentApprovalDate" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TreatmentApprovalDate">
+  TreatmentApprovalDate
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The date when the plan was approved for treatment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TreatmentApprovalDate { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_TreatmentApprover_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TreatmentApprover*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_TreatmentApprover" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TreatmentApprover">
+  TreatmentApprover
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The identifier of the user who approved the plan for treatment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TreatmentApprover { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_TreatmentApproverDisplayName_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TreatmentApproverDisplayName*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_TreatmentApproverDisplayName" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TreatmentApproverDisplayName">
+  TreatmentApproverDisplayName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The display name of the user who approved the plan for treatment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TreatmentApproverDisplayName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_TreatmentOrientation_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TreatmentOrientation*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_TreatmentOrientation" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TreatmentOrientation">
+  TreatmentOrientation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The orientation of the treatment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PatientOrientation TreatmentOrientation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.PatientOrientation.html">PatientOrientation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_TreatmentOrientationAsString_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TreatmentOrientationAsString*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_TreatmentOrientationAsString" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TreatmentOrientationAsString">
+  TreatmentOrientationAsString
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The orientation of the treatment as a string (localized).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TreatmentOrientationAsString { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_TreatmentPercentage_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TreatmentPercentage*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_TreatmentPercentage" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TreatmentPercentage">
+  TreatmentPercentage
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The treatment percentage as a decimal number. For example, if the treatment percentage shown in the Eclipse user interface is 80%, returns 0.8.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double TreatmentPercentage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_TreatmentSessions_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TreatmentSessions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_TreatmentSessions" data-uid="VMS.TPS.Common.Model.API.PlanSetup.TreatmentSessions">
+  TreatmentSessions
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Treatment sessions for the plan, either scheduled sessions or treated sessions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;PlanTreatmentSession&gt; TreatmentSessions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.PlanTreatmentSession.html">PlanTreatmentSession</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_UID_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.UID*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_UID" data-uid="VMS.TPS.Common.Model.API.PlanSetup.UID">
+  UID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The DICOM UID of the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string UID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_UseGating_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.UseGating*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_UseGating" data-uid="VMS.TPS.Common.Model.API.PlanSetup.UseGating">
+  UseGating
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Boolean to mark if gating is used in the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseGating { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_VerifiedPlan_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.VerifiedPlan*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_VerifiedPlan" data-uid="VMS.TPS.Common.Model.API.PlanSetup.VerifiedPlan">
+  VerifiedPlan
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the verified plan if this is a verification plan, otherwise returns null.
+The verified plan is the clinical plan that was used to create the verification plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanSetup VerifiedPlan { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html">PlanSetup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_PlanSetup_VerifiedPlan_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Always returns null if the plan has multiple fractionations.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_AddPlanUncertaintyWithParameters_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.AddPlanUncertaintyWithParameters*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_AddPlanUncertaintyWithParameters_VMS_TPS_Common_Model_Types_PlanUncertaintyType_System_Boolean_System_Double_VMS_TPS_Common_Model_Types_VVector_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.AddPlanUncertaintyWithParameters(VMS.TPS.Common.Model.Types.PlanUncertaintyType,System.Boolean,System.Double,VMS.TPS.Common.Model.Types.VVector)">
+  AddPlanUncertaintyWithParameters(PlanUncertaintyType, bool, double, VVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Add a new plan or field uncertainty with parameters.
+In case of field specific uncertainty, HUConversionError is overwritten to be always zero.
+Supported uncertainty types: RangeUncertainty, IsocenterShiftUncertainty,
+BaselineShiftUncertainty, RobustOptimizationUncertainty (=Perturbation).
+RangeUncertainty and RobustOptimizationUncertainty are proton specific.
+IsocenterShiftUncertainty and BaselineShiftUncertainty are photon specific.
+Field specific plan uncertainty dose can be used only for RobustOptimizationUncertainty.
+In case of BaselineShiftUncertainty isocenterShift parameter is actually target shift.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanUncertainty AddPlanUncertaintyWithParameters(PlanUncertaintyType uncertaintyType, bool planSpecificUncertainty, double HUConversionError, VVector isocenterShift)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>uncertaintyType</code> <a class="xref" href="VMS.TPS.Common.Model.Types.PlanUncertaintyType.html">PlanUncertaintyType</a></dt>
+    <dd><p>Type of the plan uncertainty dose.</p>
+</dd>
+    <dt><code>planSpecificUncertainty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>The plan uncertainty dose is either plan specific (true) or field specific (false).</p>
+</dd>
+    <dt><code>HUConversionError</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Calibration curve error [%]</p>
+</dd>
+    <dt><code>isocenterShift</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a></dt>
+    <dd><p>Patient setup error [cm]</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.PlanUncertainty.html">PlanUncertainty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_AddReferencePoint_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.AddReferencePoint*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_AddReferencePoint_System_Boolean_System_Nullable_VMS_TPS_Common_Model_Types_VVector__System_String_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.AddReferencePoint(System.Boolean,System.Nullable{VMS.TPS.Common.Model.Types.VVector},System.String)">
+  AddReferencePoint(bool, VVector?, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Creates a new reference point and links it to the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReferencePoint AddReferencePoint(bool target, VVector? location, string id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Indicates whether the reference point tracks treatment target (true) or organ at risk (false).</p>
+</dd>
+    <dt><code>location</code> <a class="xref" href="VMS.TPS.Common.Model.Types.VVector.html">VVector</a>?</dt>
+    <dd><p>Reference point location in mm.</p>
+</dd>
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Reference point ID.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.ReferencePoint.html">ReferencePoint</a></dt>
+    <dd><p>Newly created reference point.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_AddReferencePoint_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.AddReferencePoint*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_AddReferencePoint_VMS_TPS_Common_Model_API_ReferencePoint_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.AddReferencePoint(VMS.TPS.Common.Model.API.ReferencePoint)">
+  AddReferencePoint(ReferencePoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Creates a new reference point and links it to the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddReferencePoint(ReferencePoint refPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>refPoint</code> <a class="xref" href="VMS.TPS.Common.Model.API.ReferencePoint.html">ReferencePoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_AttachToCalcClient_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.AttachToCalcClient*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_AttachToCalcClient_VMS_TPS_Common_Calculation_ICalculationClient_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.AttachToCalcClient(VMS.TPS.Common.Calculation.ICalculationClient)">
+  AttachToCalcClient(ICalculationClient)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attaches event handling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void AttachToCalcClient(ICalculationClient doseCalcClient)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doseCalcClient</code> <span class="xref">ICalculationClient</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_CalculateDVHEstimatesImpl_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.CalculateDVHEstimatesImpl*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_CalculateDVHEstimatesImpl_VMS_TPS_Common_Calculation_IPhotonCalculation_VMS_TPS_Common_Calculation_ICalculationClient_System_String_System_Collections_Generic_Dictionary_System_String_VMS_TPS_Common_Model_Types_DoseValue__System_Collections_Generic_Dictionary_System_String_System_String__VMS_TPS_Common_Model_LicenseId_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.CalculateDVHEstimatesImpl(VMS.TPS.Common.Calculation.IPhotonCalculation,VMS.TPS.Common.Calculation.ICalculationClient,System.String,System.Collections.Generic.Dictionary{System.String,VMS.TPS.Common.Model.Types.DoseValue},System.Collections.Generic.Dictionary{System.String,System.String},VMS.TPS.Common.Model.LicenseId)">
+  CalculateDVHEstimatesImpl(IPhotonCalculation, ICalculationClient, string, Dictionary&lt;string, DoseValue&gt;, Dictionary&lt;string, string&gt;, LicenseId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Calculates DVH estimates for the plan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CalculationResult CalculateDVHEstimatesImpl(IPhotonCalculation dvhCalculator, ICalculationClient client, string modelId, Dictionary&lt;string, DoseValue&gt; targetDoseLevels, Dictionary&lt;string, string&gt; structureMatches, LicenseId license)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dvhCalculator</code> <span class="xref">IPhotonCalculation</span></dt>
+    <dd><p>Interface for calculating the DVH estimates.</p>
+</dd>
+    <dt><code>client</code> <span class="xref">ICalculationClient</span></dt>
+    <dd><p>Calculation client.</p>
+</dd>
+    <dt><code>modelId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>DVH estimation model ID.</p>
+</dd>
+    <dt><code>targetDoseLevels</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a>&gt;</dt>
+    <dd><p>Dose levels for the target structures.</p>
+</dd>
+    <dt><code>structureMatches</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Matching between the IDs of the structures contained in the structure set used in the plan (the Key in the Dictionary)
+and the structures used in the DVH estimation model (the Value in the Dictionary).</p>
+</dd>
+    <dt><code>license</code> <span class="xref">LicenseId</span></dt>
+    <dd><p>License required for running the DVH estimation</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.API.CalculationResult.html">CalculationResult</a></dt>
+    <dd><p>The calculation result. See the calculation details <a class="xref" href="VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CalculationLogs"> in the calculation logs</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_ClearCalculationModel_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ClearCalculationModel*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_ClearCalculationModel_VMS_TPS_Common_Model_Types_CalculationType_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.ClearCalculationModel(VMS.TPS.Common.Model.Types.CalculationType)">
+  ClearCalculationModel(CalculationType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Clears the calculation model for the given calculation type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearCalculationModel(CalculationType calculationType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>calculationType</code> <a class="xref" href="VMS.TPS.Common.Model.Types.CalculationType.html">CalculationType</a></dt>
+    <dd><p>The type of calculation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_DetachFromCalcClient_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.DetachFromCalcClient*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_DetachFromCalcClient_VMS_TPS_Common_Calculation_ICalculationClient_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.DetachFromCalcClient(VMS.TPS.Common.Calculation.ICalculationClient)">
+  DetachFromCalcClient(ICalculationClient)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Detaches event handling for the calculation client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DetachFromCalcClient(ICalculationClient doseCalcClient)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doseCalcClient</code> <span class="xref">ICalculationClient</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_GetCalculationModel_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.GetCalculationModel*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_GetCalculationModel_VMS_TPS_Common_Model_Types_CalculationType_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.GetCalculationModel(VMS.TPS.Common.Model.Types.CalculationType)">
+  GetCalculationModel(CalculationType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the selected calculation model for the given calculation type.
+Returns null if no model has been selected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetCalculationModel(CalculationType calculationType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>calculationType</code> <a class="xref" href="VMS.TPS.Common.Model.Types.CalculationType.html">CalculationType</a></dt>
+    <dd><p>The type of calculation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Returns the selected calculation model for the given calculation type. Returns null if no model has been selected.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_GetCalculationOption_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.GetCalculationOption*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_GetCalculationOption_System_String_System_String_System_String__" data-uid="VMS.TPS.Common.Model.API.PlanSetup.GetCalculationOption(System.String,System.String,System.String@)">
+  GetCalculationOption(string, string, out string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the given calculation option value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetCalculationOption(string calculationModel, string optionName, out string optionValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>calculationModel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the calculation model.</p>
+</dd>
+    <dt><code>optionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The XPath or name of the option to set.</p>
+</dd>
+    <dt><code>optionValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The value of the given option.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns false if the method cannot find the given option.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_PlanSetup_GetCalculationOption_System_String_System_String_System_String___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Available options are stored in the schema files of the calculation model located on the Distributed Calculation Framework (DCF) server.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_GetCalculationOptions_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.GetCalculationOptions*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_GetCalculationOptions_System_String_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.GetCalculationOptions(System.String)">
+  GetCalculationOptions(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all the calculation options and their values for the given calculation model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; GetCalculationOptions(string calculationModel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>calculationModel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the calculation model.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>A list of key-value pairs where the key is the XPath of the option and the value is the option value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_GetDvhEstimationModelName_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.GetDvhEstimationModelName*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_GetDvhEstimationModelName" data-uid="VMS.TPS.Common.Model.API.PlanSetup.GetDvhEstimationModelName">
+  GetDvhEstimationModelName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the name of DVH Estimation Model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetDvhEstimationModelName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_GetProtocolPrescriptionsAndMeasures_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.GetProtocolPrescriptionsAndMeasures*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_GetProtocolPrescriptionsAndMeasures_System_Collections_Generic_List_VMS_TPS_Common_Model_API_ProtocolPhasePrescription___System_Collections_Generic_List_VMS_TPS_Common_Model_API_ProtocolPhaseMeasure___" data-uid="VMS.TPS.Common.Model.API.PlanSetup.GetProtocolPrescriptionsAndMeasures(System.Collections.Generic.List{VMS.TPS.Common.Model.API.ProtocolPhasePrescription}@,System.Collections.Generic.List{VMS.TPS.Common.Model.API.ProtocolPhaseMeasure}@)">
+  GetProtocolPrescriptionsAndMeasures(ref List&lt;ProtocolPhasePrescription&gt;, ref List&lt;ProtocolPhaseMeasure&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the prescriptions and measures in the protocol that is associated with this plan setup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetProtocolPrescriptionsAndMeasures(ref List&lt;ProtocolPhasePrescription&gt; prescriptions, ref List&lt;ProtocolPhaseMeasure&gt; measures)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prescriptions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.ProtocolPhasePrescription.html">ProtocolPhasePrescription</a>&gt;</dt>
+    <dd><p>Returned list of prescriptions (plan objectives).</p>
+</dd>
+    <dt><code>measures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.ProtocolPhaseMeasure.html">ProtocolPhaseMeasure</a>&gt;</dt>
+    <dd><p>Returned list of plan measures (quality indices).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_IsEntireBodyAndBolusesCoveredByCalculationArea_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.IsEntireBodyAndBolusesCoveredByCalculationArea*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_IsEntireBodyAndBolusesCoveredByCalculationArea" data-uid="VMS.TPS.Common.Model.API.PlanSetup.IsEntireBodyAndBolusesCoveredByCalculationArea">
+  IsEntireBodyAndBolusesCoveredByCalculationArea()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks the limits of the current calculation area.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEntireBodyAndBolusesCoveredByCalculationArea()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if calculation area covers entire body or, if no body defined, image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_IsValidForPlanApproval_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.IsValidForPlanApproval*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_IsValidForPlanApproval_System_Collections_Generic_List_VMS_TPS_Common_Model_Types_PlanValidationResultEsapiDetail___" data-uid="VMS.TPS.Common.Model.API.PlanSetup.IsValidForPlanApproval(System.Collections.Generic.List{VMS.TPS.Common.Model.Types.PlanValidationResultEsapiDetail}@)">
+  IsValidForPlanApproval(out List&lt;PlanValidationResultEsapiDetail&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Check if plan approval status is valid.
+Note: Configured approval extensions are not executed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValidForPlanApproval(out List&lt;PlanValidationResultEsapiDetail&gt; validationResults)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>validationResults</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.Types.PlanValidationResultEsapiDetail.html">PlanValidationResultEsapiDetail</a>&gt;</dt>
+    <dd><p>Validation results which contain detailed warning and error messages.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns true if no errors are found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_PlanSetup_IsValidForPlanApproval_System_Collections_Generic_List_VMS_TPS_Common_Model_Types_PlanValidationResultEsapiDetail____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This function will return true even if there were warnings found during validation.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_MoveToCourse_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.MoveToCourse*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_MoveToCourse_VMS_TPS_Common_Model_API_Course_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.MoveToCourse(VMS.TPS.Common.Model.API.Course)">
+  MoveToCourse(Course)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Moves the plan setup from its current course to the destination course, maintaining the plan UID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToCourse(Course destinationCourse)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>destinationCourse</code> <a class="xref" href="VMS.TPS.Common.Model.API.Course.html">Course</a></dt>
+    <dd><p>The destination course for the plan setup.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_RemoveReferencePoint_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.RemoveReferencePoint*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_RemoveReferencePoint_VMS_TPS_Common_Model_API_ReferencePoint_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.RemoveReferencePoint(VMS.TPS.Common.Model.API.ReferencePoint)">
+  RemoveReferencePoint(ReferencePoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Remove provided reference point from plan</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveReferencePoint(ReferencePoint refPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>refPoint</code> <a class="xref" href="VMS.TPS.Common.Model.API.ReferencePoint.html">ReferencePoint</a></dt>
+    <dd><p>Reference point to remove.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_Report_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.Report*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_Report_System_String_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.Report(System.String)">
+  Report(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reporting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Report(string str)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_SetCalculationModel_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.SetCalculationModel*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_SetCalculationModel_VMS_TPS_Common_Model_Types_CalculationType_System_String_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.SetCalculationModel(VMS.TPS.Common.Model.Types.CalculationType,System.String)">
+  SetCalculationModel(CalculationType, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Sets the calculation model for the given calculation type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCalculationModel(CalculationType calculationType, string model)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>calculationType</code> <a class="xref" href="VMS.TPS.Common.Model.Types.CalculationType.html">CalculationType</a></dt>
+    <dd><p>The type of calculation.</p>
+</dd>
+    <dt><code>model</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the calculation model.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_SetCalculationOption_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.SetCalculationOption*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_SetCalculationOption_System_String_System_String_System_String_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.SetCalculationOption(System.String,System.String,System.String)">
+  SetCalculationOption(string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Sets the given calculation option to the given value.
+Before setting the options for the model, set the calculation model.
+See <a class="xref" href="VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetCalculationModel_VMS_TPS_Common_Model_Types_CalculationType_System_String_">SetCalculationModel</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetCalculationOption(string calculationModel, string optionName, string optionValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>calculationModel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the calculation model.</p>
+</dd>
+    <dt><code>optionName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The XPath or name of the option to set. If this is not an XPath,
+the method sets the first attribute that matches the name.
+Example 1:
+CalculationGridSizeInCM in the Anisotropic Analytical Algorithm (AAA) sets the option /AAACalculationOptions/@CalculationGridSizeInCM.
+Example 2:
+MaximalDrillDepthInCM in the Proton Convolution Superposition (PCS) algorithm sets the option /ProtonCalculationOptions/ScatteringUniformScanning/CompensatorConversion/Drilling1/@MaximalDrillDepthInCM.
+To set the values, for example, for the Drilling2 settings, you have to specify the entire XPath /ProtonCalculationOptions/ScatteringUniformScanning/CompensatorConversion/Drilling2/@MaximalDrillDepthInCM.</p>
+</dd>
+    <dt><code>optionValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The value to set.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Returns false if the method cannot find the given option.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMS_TPS_Common_Model_API_PlanSetup_SetCalculationOption_System_String_System_String_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Available options are stored in the schema files of the calculation model located on the Distributed Calculation Framework (DCF) server.</p>
+</div>
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_SetPrescription_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.SetPrescription*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_SetPrescription_System_Int32_VMS_TPS_Common_Model_Types_DoseValue_System_Double_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.SetPrescription(System.Int32,VMS.TPS.Common.Model.Types.DoseValue,System.Double)">
+  SetPrescription(int, DoseValue, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Sets and validates the number of fractions and dose per fraction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPrescription(int numberOfFractions, DoseValue dosePerFraction, double treatmentPercentage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numberOfFractions</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of fractions.</p>
+</dd>
+    <dt><code>dosePerFraction</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>The dose per fraction.</p>
+</dd>
+    <dt><code>treatmentPercentage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The treatment percentage as a decimal number.
+For example, if the treatment percentage shown in the user interface is 80%, use 0.8.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_SetTargetStructureIfNoDose_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.SetTargetStructureIfNoDose*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_SetTargetStructureIfNoDose_VMS_TPS_Common_Model_API_Structure_System_Text_StringBuilder_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.SetTargetStructureIfNoDose(VMS.TPS.Common.Model.API.Structure,System.Text.StringBuilder)">
+  SetTargetStructureIfNoDose(Structure, StringBuilder)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Sets or changes target structure if valid dose is not affected by the change.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetTargetStructureIfNoDose(Structure newTargetStructure, StringBuilder errorHint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newTargetStructure</code> <a class="xref" href="VMS.TPS.Common.Model.API.Structure.html">Structure</a></dt>
+    <dd><p>New target structure.</p>
+</dd>
+    <dt><code>errorHint</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd><p>Holder for error message.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Boolean value indicating success (true) or failure (false).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_SetTreatmentOrder_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.SetTreatmentOrder*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_SetTreatmentOrder_System_Collections_Generic_IEnumerable_VMS_TPS_Common_Model_API_Beam__" data-uid="VMS.TPS.Common.Model.API.PlanSetup.SetTreatmentOrder(System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.Beam})">
+  SetTreatmentOrder(IEnumerable&lt;Beam&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>[Availability of this method depends on your Eclipse Scripting API license] Sets the treatment order of the beams.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTreatmentOrder(IEnumerable&lt;Beam&gt; orderedBeams)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>orderedBeams</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.API.Beam.html">Beam</a>&gt;</dt>
+    <dd><p>The beams in wanted order. All the beams of the plan must be present, otherwise the method fails.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_API_PlanSetup_WriteXml_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_API_PlanSetup_WriteXml_System_Xml_XmlWriter_" data-uid="VMS.TPS.Common.Model.API.PlanSetup.WriteXml(System.Xml.XmlWriter)">
+  WriteXml(XmlWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts an object into its XML representation.
+For more information on how to serialize an object into an XML document, see <span class="xref">System.Xml.Serialization.XmlSerializer</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>The System.Xml.XmlWriter stream, to which the object is serialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

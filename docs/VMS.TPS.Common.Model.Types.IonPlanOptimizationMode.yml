@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.IonPlanOptimizationMode
+  commentId: T:VMS.TPS.Common.Model.Types.IonPlanOptimizationMode
+  id: IonPlanOptimizationMode
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.IonPlanOptimizationMode.MultiFieldOptimization
+  - VMS.TPS.Common.Model.Types.IonPlanOptimizationMode.SingleFieldOptimization
+  langs:
+  - csharp
+  - vb
+  name: IonPlanOptimizationMode
+  nameWithType: IonPlanOptimizationMode
+  fullName: VMS.TPS.Common.Model.Types.IonPlanOptimizationMode
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Proton plan optimization mode.
+  example: []
+  syntax:
+    content: public enum IonPlanOptimizationMode
+    content.vb: Public Enum IonPlanOptimizationMode
+- uid: VMS.TPS.Common.Model.Types.IonPlanOptimizationMode.MultiFieldOptimization
+  commentId: F:VMS.TPS.Common.Model.Types.IonPlanOptimizationMode.MultiFieldOptimization
+  id: MultiFieldOptimization
+  parent: VMS.TPS.Common.Model.Types.IonPlanOptimizationMode
+  langs:
+  - csharp
+  - vb
+  name: MultiFieldOptimization
+  nameWithType: IonPlanOptimizationMode.MultiFieldOptimization
+  fullName: VMS.TPS.Common.Model.Types.IonPlanOptimizationMode.MultiFieldOptimization
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Multi-field optimization.
+  example: []
+  syntax:
+    content: MultiFieldOptimization = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.IonPlanOptimizationMode
+- uid: VMS.TPS.Common.Model.Types.IonPlanOptimizationMode.SingleFieldOptimization
+  commentId: F:VMS.TPS.Common.Model.Types.IonPlanOptimizationMode.SingleFieldOptimization
+  id: SingleFieldOptimization
+  parent: VMS.TPS.Common.Model.Types.IonPlanOptimizationMode
+  langs:
+  - csharp
+  - vb
+  name: SingleFieldOptimization
+  nameWithType: IonPlanOptimizationMode.SingleFieldOptimization
+  fullName: VMS.TPS.Common.Model.Types.IonPlanOptimizationMode.SingleFieldOptimization
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Single-field optimization.
+  example: []
+  syntax:
+    content: SingleFieldOptimization = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.IonPlanOptimizationMode
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.IonPlanOptimizationMode
+  commentId: T:VMS.TPS.Common.Model.Types.IonPlanOptimizationMode
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.IonPlanOptimizationMode.html
+  name: IonPlanOptimizationMode
+  nameWithType: IonPlanOptimizationMode
+  fullName: VMS.TPS.Common.Model.Types.IonPlanOptimizationMode

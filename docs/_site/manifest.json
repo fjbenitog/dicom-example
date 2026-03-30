@@ -1,0 +1,3510 @@
+{
+  "source_base_path": "/Users/jbenito/My Drive/Personal/dicom-example/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ActiveStructureCodeDictionaries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ActiveStructureCodeDictionaries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ActiveStructureCodeDictionaries",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ActiveStructureCodeDictionaries.yml\" sourcestartlinenumber=\"1\">Provides access to the structure code dictionaries with the active structure codes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.AddOn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.AddOn.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.AddOn",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.AddOn.yml\" sourcestartlinenumber=\"1\">Represents an add-on, which is a beam modifying device that is inserted into a beam\nin an accessory slot of the external beam machine.\nAn add-on is used to shape the beam or modulate its intensity or both.\nAdd-ons are blocks, MLCs, wedges, compensators, applicators, a tray, and other devices\nor materials that can be fixed to a tray to be mounted into an accessory slot.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.AddOnMaterial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.AddOnMaterial.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.AddOnMaterial",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.AddOnMaterial.yml\" sourcestartlinenumber=\"1\">Add-on material describes the dosimetric and physical properties of the metal alloy or other substance used to create the add-on.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ApiDataObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ApiDataObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ApiDataObject",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ApiDataObject.yml\" sourcestartlinenumber=\"1\">The base class of objects in the Eclipse Scripting API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Application.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Application",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Application.yml\" sourcestartlinenumber=\"1\">The main application interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ApplicationPackage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ApplicationPackage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ApplicationPackage",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ApplicationPackage.yml\" sourcestartlinenumber=\"1\">Presents the application package information in the system.</p>\n<p sourcefile=\"VMS.TPS.Common.Model.API.ApplicationPackage.yml\" sourcestartlinenumber=\"3\">Note: not all methods are necessarily Published at the moment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ApplicationScript.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ApplicationScript.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ApplicationScript",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ApplicationScript.yml\" sourcestartlinenumber=\"1\">Presents the application script information in the system.</p>\n<p sourcefile=\"VMS.TPS.Common.Model.API.ApplicationScript.yml\" sourcestartlinenumber=\"3\">The location of the script file is not stored in the system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ApplicationScriptLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ApplicationScriptLog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ApplicationScriptLog",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ApplicationScriptLog.yml\" sourcestartlinenumber=\"1\">The log entry of the application script execution.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Applicator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Applicator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Applicator",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Applicator.yml\" sourcestartlinenumber=\"1\">An applicator add-on, either an electron applicator or cone applicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Beam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Beam.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Beam",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Beam.yml\" sourcestartlinenumber=\"1\">Represents one beam (also referred to as &quot;field&quot;) of an external beam treatment plan. See the definition of DICOM RT Beam for more details.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.BeamCalculationLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.BeamCalculationLog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.BeamCalculationLog",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.BeamCalculationLog.yml\" sourcestartlinenumber=\"1\">Represents a beam calculation log.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.BeamDose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.BeamDose.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.BeamDose",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.BeamDose.yml\" sourcestartlinenumber=\"1\">Represents a dose that is connected to a Beam.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.BeamParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.BeamParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.BeamParameters",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.BeamParameters.yml\" sourcestartlinenumber=\"1\">An editable copy of the parameters of a treatment beam.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.BeamUncertainty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.BeamUncertainty.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.BeamUncertainty",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.BeamUncertainty.yml\" sourcestartlinenumber=\"1\">Access to beam uncertainty.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Block.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Block.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Block",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Block.yml\" sourcestartlinenumber=\"1\">Represents a block add-on, a custom-made beam collimating material fixed to a tray, used to shape the beam.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Bolus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Bolus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Bolus",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Bolus.yml\" sourcestartlinenumber=\"1\">Represents a bolus, which is custom-made material that is usually fixed to the patient's skin for treatment.\nThe bolus is used to modulate the depth dose profile of a beam.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.BrachyFieldReferencePoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.BrachyFieldReferencePoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.BrachyFieldReferencePoint",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.BrachyFieldReferencePoint.yml\" sourcestartlinenumber=\"1\">This object links a Brachy field to a reference point.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.BrachyPlanSetup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.BrachyPlanSetup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.BrachyPlanSetup",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.BrachyPlanSetup.yml\" sourcestartlinenumber=\"1\">Represents a brachytherapy treatment plan.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.BrachySolidApplicator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.BrachySolidApplicator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.BrachySolidApplicator",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.BrachySolidApplicator.yml\" sourcestartlinenumber=\"1\">Represents a brachytherapy solid applicator part, such as a tandem or ovoid in a Fletcher Suit Delclos (FSD) applicator set.\nThis class holds only the metadata related to the solid applicator part, and links\nto the <xref href=\"VMS.TPS.Common.Model.API.Catheter?text=catheters\" data-throw-if-not-resolved=\"false\"></xref> that are part of the solid applicator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.BrachyTreatmentUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.BrachyTreatmentUnit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.BrachyTreatmentUnit",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.BrachyTreatmentUnit.yml\" sourcestartlinenumber=\"1\">Represents a brachytherapy afterloader.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.CalculateBrachy3DDoseResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.CalculateBrachy3DDoseResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.CalculateBrachy3DDoseResult",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.CalculateBrachy3DDoseResult.yml\" sourcestartlinenumber=\"1\">Brachy 3D dose calculation result</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Calculation.Algorithm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Calculation.Algorithm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Calculation.Algorithm",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Calculation.Algorithm.yml\" sourcestartlinenumber=\"1\">Algorithm</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Calculation.CalculationModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Calculation.CalculationModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Calculation.CalculationModel",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Calculation.CalculationModel.yml\" sourcestartlinenumber=\"1\">Calculation Model</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Calculation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Calculation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Calculation",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Calculation.yml\" sourcestartlinenumber=\"1\">Contains a calculation specific functions</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.CalculationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.CalculationResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.CalculationResult",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.CalculationResult.yml\" sourcestartlinenumber=\"1\">Holds the result of the calculation (pass/fail).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Catheter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Catheter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Catheter",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Catheter.yml\" sourcestartlinenumber=\"1\">Represents a brachytherapy catheter or an applicator channel centerline. Catheters are associated with a <xref href=\"VMS.TPS.Common.Model.API.BrachyTreatmentUnit?text=brachytherapy+treatment+unit\" data-throw-if-not-resolved=\"false\"></xref>,\na <xref href=\"VMS.TPS.Common.Model.API.Catheter.ChannelNumber?text=+channel+number\" data-throw-if-not-resolved=\"false\"></xref>, and possibly a <xref href=\"VMS.TPS.Common.Model.API.Catheter.BrachySolidApplicatorPartID?text=unique+identifier\" data-throw-if-not-resolved=\"false\"></xref>\nof the <xref href=\"VMS.TPS.Common.Model.API.BrachySolidApplicator?text=solid+applicator+part\" data-throw-if-not-resolved=\"false\"></xref> they belong to. Most notably, catheters encapsulate the <xref href=\"VMS.TPS.Common.Model.API.Catheter.Shape?text=shape\" data-throw-if-not-resolved=\"false\"></xref>\nof the applicator channel centerline and its <xref href=\"VMS.TPS.Common.Model.API.Catheter.SourcePositions?text=source+positions\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Compensator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Compensator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Compensator",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Compensator.yml\" sourcestartlinenumber=\"1\">Represents a beam compensator add-on, a custom-made beam modulating material fixed to a tray, used to modulate the beam's intensity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ControlPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ControlPoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ControlPoint",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ControlPoint.yml\" sourcestartlinenumber=\"1\">Represents a point in a planned sequence of treatment beam parameters. See the definition of control points in a DICOM RT Beam.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ControlPointCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ControlPointCollection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ControlPointCollection",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ControlPointCollection.yml\" sourcestartlinenumber=\"1\">Represents a collection of machine parameters that describe the planned\ntreatment beam.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ControlPointParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ControlPointParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ControlPointParameters",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ControlPointParameters.yml\" sourcestartlinenumber=\"1\">An editable copy of the parameters of a control point.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Course.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Course.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Course",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Course.yml\" sourcestartlinenumber=\"1\">A course represents the course of treatment that a patient will be given.\nEvery patient must have a course, and all plans always belong to a course.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.CustomScriptExecutable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.CustomScriptExecutable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.CustomScriptExecutable",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.CustomScriptExecutable.yml\" sourcestartlinenumber=\"1\">A factory class for creating an application object for a custom script executable.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.DVHData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.DVHData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.DVHData",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.DVHData.yml\" sourcestartlinenumber=\"1\">Represents Dose Volume Histogram (DVH) data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.DVHEstimationModelStructure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.DVHEstimationModelStructure.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.DVHEstimationModelStructure",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.DVHEstimationModelStructure.yml\" sourcestartlinenumber=\"1\">Structure of a DVH estimation model in Planning Model Library</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.DVHEstimationModelSummary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.DVHEstimationModelSummary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.DVHEstimationModelSummary",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.DVHEstimationModelSummary.yml\" sourcestartlinenumber=\"1\">A summary of an DVH Estimation Model. Contains the needed information for selecting a model.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Department.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Department.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Department",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Department.yml\" sourcestartlinenumber=\"1\">Represents a department in hospital.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Diagnosis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Diagnosis.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Diagnosis",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Diagnosis.yml\" sourcestartlinenumber=\"1\">Represents a diagnosis of the patient.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Dose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Dose.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Dose",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Dose.yml\" sourcestartlinenumber=\"1\">Represents a 3D dose grid.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.DynamicWedge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.DynamicWedge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.DynamicWedge",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.DynamicWedge.yml\" sourcestartlinenumber=\"1\">A Dynamic Wedge is formed by a moving jaw of a standard collimator\nduring irradiation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ESAPIActionPackAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ESAPIActionPackAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ESAPIActionPackAttribute",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ESAPIActionPackAttribute.yml\" sourcestartlinenumber=\"1\">Specifies the assembly as an Eclipse visual scripting action pack.\nAction packs are ESAPI scripts that are used by visual scripts.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ESAPIScriptAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ESAPIScriptAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ESAPIScriptAttribute",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ESAPIScriptAttribute.yml\" sourcestartlinenumber=\"1\">Specifies the assembly as an Eclipse Scripting API (ESAPI) script.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.EnergyMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.EnergyMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.EnergyMode",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.EnergyMode.yml\" sourcestartlinenumber=\"1\">Represents an energy mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.EnhancedDynamicWedge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.EnhancedDynamicWedge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.EnhancedDynamicWedge",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.EnhancedDynamicWedge.yml\" sourcestartlinenumber=\"1\">An Enhanced Dynamic Wedge is similar to a Dynamic Wedge, but\nit features more wedge angles than a simple Dynamic Wedge.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Equipment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Equipment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Equipment",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Equipment.yml\" sourcestartlinenumber=\"1\">Provides access to clinical devices and accessories.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.EstimatedDVH.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.EstimatedDVH.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.EstimatedDVH",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.EstimatedDVH.yml\" sourcestartlinenumber=\"1\">Represents an estimated Dose Volume Histogram (DVH) curve.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.EvaluationDose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.EvaluationDose.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.EvaluationDose",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.EvaluationDose.yml\" sourcestartlinenumber=\"1\">Represents an evaluation dose that is connected to a plan that has no beams.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ExternalBeamTreatmentUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ExternalBeamTreatmentUnit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ExternalBeamTreatmentUnit",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ExternalBeamTreatmentUnit.yml\" sourcestartlinenumber=\"1\">Represents a treatment machine used for delivering external beam radiotherapy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ExternalPlanSetup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ExternalPlanSetup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ExternalPlanSetup",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ExternalPlanSetup.yml\" sourcestartlinenumber=\"1\">Represents an external beam plan. For more information, see the definition of the DICOM RT Plan.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.FieldReferencePoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.FieldReferencePoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.FieldReferencePoint",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.FieldReferencePoint.yml\" sourcestartlinenumber=\"1\">This object links a treatment beam to a reference point.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Globals.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Globals.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Globals",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Globals.yml\" sourcestartlinenumber=\"1\">This class is internal to the Eclipse Scripting API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Hospital.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Hospital.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Hospital",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Hospital.yml\" sourcestartlinenumber=\"1\">Represents a hospital.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.IDVHEstimationCalculator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.IDVHEstimationCalculator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.IDVHEstimationCalculator",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.IDVHEstimationCalculator.yml\" sourcestartlinenumber=\"1\">Interface to the calculation of the DVH Estimates</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Image.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Image",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Image.yml\" sourcestartlinenumber=\"1\">Represents a 2D or 3D image, which can be a DRR, a CT, MR, or other volumetric dataset.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.IonBeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.IonBeam.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.IonBeam",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.IonBeam.yml\" sourcestartlinenumber=\"1\">Proton beam interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.IonBeamParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.IonBeamParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.IonBeamParameters",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.IonBeamParameters.yml\" sourcestartlinenumber=\"1\">An editable copy of the parameters of a proton beam.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.IonControlPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.IonControlPoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.IonControlPoint",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.IonControlPoint.yml\" sourcestartlinenumber=\"1\">Proton control point interface.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.IonControlPointCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.IonControlPointCollection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.IonControlPointCollection",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.IonControlPointCollection.yml\" sourcestartlinenumber=\"1\">Represents a collection of machine parameters that describe\nthe planned proton beam.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.IonControlPointPair.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.IonControlPointPair.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.IonControlPointPair",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.IonControlPointPair.yml\" sourcestartlinenumber=\"1\">An editable copy of a control point pair (the pair of the start control\npoint with an even index, and the end control point with an odd index).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.IonControlPointPairCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.IonControlPointPairCollection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.IonControlPointPairCollection",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.IonControlPointPairCollection.yml\" sourcestartlinenumber=\"1\">A collection of editable copies of control point pairs that describe\nthe planned proton beam.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.IonControlPointParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.IonControlPointParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.IonControlPointParameters",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.IonControlPointParameters.yml\" sourcestartlinenumber=\"1\">An editable copy of the parameters of a proton control point.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.IonPlanSetup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.IonPlanSetup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.IonPlanSetup",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.IonPlanSetup.yml\" sourcestartlinenumber=\"1\">Represents a proton treatment plan.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.IonSpot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.IonSpot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.IonSpot",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.IonSpot.yml\" sourcestartlinenumber=\"1\">The proton scanning spot interface that contains the 3D spot position and spot weight.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.IonSpotCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.IonSpotCollection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.IonSpotCollection",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.IonSpotCollection.yml\" sourcestartlinenumber=\"1\">Interface for the proton scanning spot list.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.IonSpotParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.IonSpotParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.IonSpotParameters",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.IonSpotParameters.yml\" sourcestartlinenumber=\"1\">Interface for the proton scanning spot that contains the 3D spot position and spot weight.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.IonSpotParametersCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.IonSpotParametersCollection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.IonSpotParametersCollection",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.IonSpotParametersCollection.yml\" sourcestartlinenumber=\"1\">Interface for the editable proton scanning spot list.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Isodose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Isodose.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Isodose",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Isodose.yml\" sourcestartlinenumber=\"1\">Represents an isodose level for a fixed absolute or relative dose value.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.LateralSpreadingDevice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.LateralSpreadingDevice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.LateralSpreadingDevice",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.LateralSpreadingDevice.yml\" sourcestartlinenumber=\"1\">The lateral spreading device.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.LateralSpreadingDeviceSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.LateralSpreadingDeviceSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.LateralSpreadingDeviceSettings",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.LateralSpreadingDeviceSettings.yml\" sourcestartlinenumber=\"1\">Settings for the lateral spreading device.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.MLC.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.MLC.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.MLC",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.MLC.yml\" sourcestartlinenumber=\"1\">Represents a Multileaf Collimator (MLC) add-on.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.MotorizedWedge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.MotorizedWedge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.MotorizedWedge",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.MotorizedWedge.yml\" sourcestartlinenumber=\"1\">A motorized wedge is a standard wedge placed in the beam for a\nuser-defined fraction of the total treatment time.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OmniWedge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OmniWedge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OmniWedge",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OmniWedge.yml\" sourcestartlinenumber=\"1\">An OmniWedge is a special type of wedge that combines an open\nfield, a motorized wedge, and a virtual wedge to create the desired wedge\neffect.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OptimizationEUDObjective.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OptimizationEUDObjective.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OptimizationEUDObjective",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizationEUDObjective.yml\" sourcestartlinenumber=\"1\">A gEUD objective is an exact, upper or lower objective.\nAn exact gEUD objective defines an exact dose value that a target structure should receive.\nAn upper gEUD objective defines the maximum dose value that a structure should receive.\nA lower gEUD objective defines the minimum dose value that a target structure should receive.</p>\n<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizationEUDObjective.yml\" sourcestartlinenumber=\"6\">Generalized Equivalent Uniform Dose (gEUD) is a uniform dose that, if delivered\nover the same number of fractions, yields the same radiobiological effect as the\nnon-uniform dose distribution of interest.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OptimizationExcludeStructureParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OptimizationExcludeStructureParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OptimizationExcludeStructureParameter",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizationExcludeStructureParameter.yml\" sourcestartlinenumber=\"1\">Structures that have this parameter are excluded from the optimization.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OptimizationIMRTBeamParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OptimizationIMRTBeamParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OptimizationIMRTBeamParameter",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizationIMRTBeamParameter.yml\" sourcestartlinenumber=\"1\">Beam-specific optimization parameter for IMRT optimization.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OptimizationJawTrackingUsedParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OptimizationJawTrackingUsedParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OptimizationJawTrackingUsedParameter",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizationJawTrackingUsedParameter.yml\" sourcestartlinenumber=\"1\">An optimization parameter for using jaw tracking in VMAT optimization.\nThe parameter exists if OptimizationSetup.UseJawTracking has been set to true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OptimizationLineObjective.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OptimizationLineObjective.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OptimizationLineObjective",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizationLineObjective.yml\" sourcestartlinenumber=\"1\">A line objective is a collection of point objectives that have the same priority.\nIt is used to limit the dose in a given structure.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OptimizationMeanDoseObjective.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OptimizationMeanDoseObjective.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OptimizationMeanDoseObjective",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizationMeanDoseObjective.yml\" sourcestartlinenumber=\"1\">A mean objective defines the mean dose that should not be exceeded. The mean objective is\nused to decrease the dose that a structure receives.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter.yml\" sourcestartlinenumber=\"1\">An optimization parameter for the normal tissue objective.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OptimizationObjective.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OptimizationObjective.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OptimizationObjective",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizationObjective.yml\" sourcestartlinenumber=\"1\">Provides a common base type for all structure-specific optimization objectives.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OptimizationParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OptimizationParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OptimizationParameter",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizationParameter.yml\" sourcestartlinenumber=\"1\">Provides a common base type for all optimization parameters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OptimizationPointCloudParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OptimizationPointCloudParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OptimizationPointCloudParameter",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizationPointCloudParameter.yml\" sourcestartlinenumber=\"1\">Structure-specific parameter for point cloud optimization.</p>\n<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizationPointCloudParameter.yml\" sourcestartlinenumber=\"3\">Relevant if the optimization algorithm uses a point cloud.\nThe point cloud parameters are automatically created with default values\nwhen you add other structure-specific parameters or objectives in the optimization setup.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OptimizationPointObjective.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OptimizationPointObjective.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OptimizationPointObjective",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizationPointObjective.yml\" sourcestartlinenumber=\"1\">A point objective is either an upper or lower objective.\nAn upper objective is used to limit the dose in a given structure.\nA lower objective is used to define the desired dose levels in target structures.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OptimizationSetup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OptimizationSetup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OptimizationSetup",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizationSetup.yml\" sourcestartlinenumber=\"1\">Gives access to the optimization parameters and objectives.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OptimizationVMATAvoidanceSectors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OptimizationVMATAvoidanceSectors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OptimizationVMATAvoidanceSectors",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizationVMATAvoidanceSectors.yml\" sourcestartlinenumber=\"1\">Beam-specific optimization parameter for VMAT Avoidance sectors.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OptimizerDVH.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OptimizerDVH.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OptimizerDVH",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizerDVH.yml\" sourcestartlinenumber=\"1\">Contains a structure-specific Dose Volume Histogram (DVH) curve generated in optimization.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OptimizerObjectiveValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OptimizerObjectiveValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OptimizerObjectiveValue",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizerObjectiveValue.yml\" sourcestartlinenumber=\"1\">The optimizer objective function value for the structure.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.OptimizerResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.OptimizerResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.OptimizerResult",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.OptimizerResult.yml\" sourcestartlinenumber=\"1\">Holds the result of the optimization (pass/fail).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Patient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Patient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Patient",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Patient.yml\" sourcestartlinenumber=\"1\">Represents a patient.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.PatientSummary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.PatientSummary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.PatientSummary",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.PatientSummary.yml\" sourcestartlinenumber=\"1\">Basic information about the patient.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.PatientSupportDevice.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.PatientSupportDevice.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.PatientSupportDevice",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.PatientSupportDevice.yml\" sourcestartlinenumber=\"1\">Represents a proton patient support device.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.PlanSetup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.PlanSetup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.PlanSetup",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.PlanSetup.yml\" sourcestartlinenumber=\"1\">Represents a treatment plan. See the definition of a DICOM RT Plan for more information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.PlanSum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.PlanSum.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.PlanSum",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.PlanSum.yml\" sourcestartlinenumber=\"1\">A plan sum describes the cumulative dose summation of several treatment plans.\nIt can be used, for example, to evaluate the dose the patient received from a treatment plan and boost plan together.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.PlanSumComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.PlanSumComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.PlanSumComponent",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.PlanSumComponent.yml\" sourcestartlinenumber=\"1\">Represents a component plan of a plan sum.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.PlanTreatmentSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.PlanTreatmentSession.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.PlanTreatmentSession",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.PlanTreatmentSession.yml\" sourcestartlinenumber=\"1\">Plan in the treatment session.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.PlanUncertainty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.PlanUncertainty.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.PlanUncertainty",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.PlanUncertainty.yml\" sourcestartlinenumber=\"1\">Provides access to Plan Uncertainty parameters. For more information, see Eclipse Photon and Electron Instructions for Use.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.PlanningItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.PlanningItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.PlanningItem",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.PlanningItem.yml\" sourcestartlinenumber=\"1\">Common properties of a treatment plan and a plan sum.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.PlanningItemDose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.PlanningItemDose.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.PlanningItemDose",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.PlanningItemDose.yml\" sourcestartlinenumber=\"1\">Represents a dose that is connected to a plan setup or a plan sum.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ProtocolPhaseMeasure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ProtocolPhaseMeasure.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ProtocolPhaseMeasure",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ProtocolPhaseMeasure.yml\" sourcestartlinenumber=\"1\">Represents the plan measures (quality indices) of the clinical protocol.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ProtocolPhasePrescription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ProtocolPhasePrescription.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ProtocolPhasePrescription",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ProtocolPhasePrescription.yml\" sourcestartlinenumber=\"1\">Represents the prescriptions (plan objectives) of the clinical protocol.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.RTPrescription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.RTPrescription.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.RTPrescription",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.RTPrescription.yml\" sourcestartlinenumber=\"1\">Represents a prescription.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.RTPrescriptionConstraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.RTPrescriptionConstraint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.RTPrescriptionConstraint",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.RTPrescriptionConstraint.yml\" sourcestartlinenumber=\"1\">Represents a coverage constraint for an RT prescription.</p>\n<table><thead><tr><th class=\"term\">Type of the constraint</th><th class=\"term\">Applies to</th><th class=\"term\">Example</th><th class=\"term\">Value1</th><th class=\"term\">Unit1</th><th class=\"term\">Value2</th><th class=\"term\">Unit2</th></tr></thead><tbody><tr><td class=\"term\"><xref href=\"VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MinimumDose\" data-throw-if-not-resolved=\"false\"></xref></td><td class=\"term\">Targets</td><td class=\"term\">Minimum dose &gt; 95% (of the target dose).</td><td class=\"term\">95</td><td class=\"term\">%</td><td class=\"term\">null</td><td class=\"term\">null</td></tr><tr><td class=\"term\"><xref href=\"VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MaximumDose\" data-throw-if-not-resolved=\"false\"></xref></td><td class=\"term\">Targets</td><td class=\"term\">Maximum dose &lt; 102% (of the target dose).</td><td class=\"term\">102</td><td class=\"term\">%</td><td class=\"term\">null</td><td class=\"term\">null</td></tr><tr><td class=\"term\"><xref href=\"VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MaximumDose\" data-throw-if-not-resolved=\"false\"></xref></td><td class=\"term\">Organs at risk</td><td class=\"term\">Maximum dose &lt; 50 Gy.</td><td class=\"term\">50</td><td class=\"term\">Gy</td><td class=\"term\">null</td><td class=\"term\">null</td></tr><tr><td class=\"term\"><xref href=\"VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MinimumDvhDose\" data-throw-if-not-resolved=\"false\"></xref></td><td class=\"term\">Targets</td><td class=\"term\">At least 95% of structure gets 98% of the target dose, i.e. V98% &gt; 95%.</td><td class=\"term\">98</td><td class=\"term\">%</td><td class=\"term\">95</td><td class=\"term\">%</td></tr><tr><td class=\"term\"><xref href=\"VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MaximumDvhDose\" data-throw-if-not-resolved=\"false\"></xref></td><td class=\"term\">Targets</td><td class=\"term\">No more than 95% of structure gets 102% of the target dose, i.e. V102% &lt; 95%.</td><td class=\"term\">102</td><td class=\"term\">%</td><td class=\"term\">95</td><td class=\"term\">%</td></tr><tr><td class=\"term\"><xref href=\"VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.MaximumMeanDose\" data-throw-if-not-resolved=\"false\"></xref></td><td class=\"term\">Organs at risk</td><td class=\"term\">Maximum mean dose &lt; 45 Gy.</td><td class=\"term\">45</td><td class=\"term\">Gy</td><td class=\"term\">null</td><td class=\"term\">null</td></tr><tr><td class=\"term\"><xref href=\"VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.FreeText\" data-throw-if-not-resolved=\"false\"></xref></td><td class=\"term\">Organs at risk</td><td class=\"term\">Free text constraint (a &lt; b).</td><td class=\"term\">a</td><td class=\"term\">null</td><td class=\"term\">b</td><td class=\"term\">null</td></tr></tbody></table>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.RTPrescriptionOrganAtRisk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.RTPrescriptionOrganAtRisk.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.RTPrescriptionOrganAtRisk",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.RTPrescriptionOrganAtRisk.yml\" sourcestartlinenumber=\"1\">Represents an organ at risk structure.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.RTPrescriptionTarget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.RTPrescriptionTarget.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.RTPrescriptionTarget",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.RTPrescriptionTarget.yml\" sourcestartlinenumber=\"1\">Represents a prescription target.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.RTPrescriptionTargetConstraints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.RTPrescriptionTargetConstraints.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.RTPrescriptionTargetConstraints",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.RTPrescriptionTargetConstraints.yml\" sourcestartlinenumber=\"1\">Represents target structure constraints.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.RadioactiveSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.RadioactiveSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.RadioactiveSource",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.RadioactiveSource.yml\" sourcestartlinenumber=\"1\">Represents a radioactive source installed into a <xref href=\"VMS.TPS.Common.Model.API.BrachyTreatmentUnit?text=brachytherapy+treatment+unit\" data-throw-if-not-resolved=\"false\"></xref>\nor a seed of a <xref href=\"VMS.TPS.Common.Model.API.SeedCollection?text=seed+collection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.RadioactiveSourceModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.RadioactiveSourceModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.RadioactiveSourceModel",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.RadioactiveSourceModel.yml\" sourcestartlinenumber=\"1\">The radioactive source model represents the details of the radioactive source used in brachytherapy. It encapsulates\nthe source isotope, dimensions, and dose calculation parameters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.RangeModulator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.RangeModulator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.RangeModulator",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.RangeModulator.yml\" sourcestartlinenumber=\"1\">The range modulator device.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.RangeModulatorSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.RangeModulatorSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.RangeModulatorSettings",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.RangeModulatorSettings.yml\" sourcestartlinenumber=\"1\">Range modulator settings.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.RangeShifter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.RangeShifter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.RangeShifter",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.RangeShifter.yml\" sourcestartlinenumber=\"1\">The range shifter device.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.RangeShifterSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.RangeShifterSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.RangeShifterSettings",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.RangeShifterSettings.yml\" sourcestartlinenumber=\"1\">Range shifter settings.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ReferencePoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ReferencePoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ReferencePoint",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ReferencePoint.yml\" sourcestartlinenumber=\"1\">A reference point associated with a patient.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Registration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Registration.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Registration",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Registration.yml\" sourcestartlinenumber=\"1\">Represents the spatial registration matrix between two frames of reference.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ScriptContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ScriptContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ScriptContext",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ScriptContext.yml\" sourcestartlinenumber=\"1\">Contains the runtime context information of the active application for the script.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.ScriptEnvironment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.ScriptEnvironment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.ScriptEnvironment",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.ScriptEnvironment.yml\" sourcestartlinenumber=\"1\">Contains the runtime information of the application environment for the script.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.SearchBodyParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.SearchBodyParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.SearchBodyParameters",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.SearchBodyParameters.yml\" sourcestartlinenumber=\"1\">Parameters for the Search Body feature.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.SeedCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.SeedCollection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.SeedCollection",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.SeedCollection.yml\" sourcestartlinenumber=\"1\">Represents a collection of brachytherapy <xref href=\"VMS.TPS.Common.Model.API.SourcePosition?text=seed+positions\" data-throw-if-not-resolved=\"false\"></xref>.\nEach position is also associated with a radioactive source.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.SegmentVolume.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.SegmentVolume.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.SegmentVolume",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.SegmentVolume.yml\" sourcestartlinenumber=\"1\">The volumetric representation of a structure.\nThis object is used  when defining margins for structures, or when performing Boolean operations on structures.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.SerializableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.SerializableObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.SerializableObject",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.SerializableObject.yml\" sourcestartlinenumber=\"1\">Base class for objects that can be serialized.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Series.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Series.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Series",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Series.yml\" sourcestartlinenumber=\"1\">A series is a collection of radiation therapy objects of a patient.\nThe series is part of a study. See the definition of a DICOM Series for more information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Slot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Slot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Slot",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Slot.yml\" sourcestartlinenumber=\"1\">A slot is the location (typically on the collimator head of the gantry) where an add-on, such as a wedge or block, is mounted.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.SourcePosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.SourcePosition.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.SourcePosition",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.SourcePosition.yml\" sourcestartlinenumber=\"1\">Represents a brachytherapy source dwell position in a <xref href=\"VMS.TPS.Common.Model.API.Catheter?text=catheter\" data-throw-if-not-resolved=\"false\"></xref>\nor a seed position in a <xref href=\"VMS.TPS.Common.Model.API.SeedCollection?text=seed+collection\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.StandardWedge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.StandardWedge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.StandardWedge",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.StandardWedge.yml\" sourcestartlinenumber=\"1\">A standard wedge is a physical piece of material with an angle that is\nstatic during treatment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Structure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Structure.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Structure",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Structure.yml\" sourcestartlinenumber=\"1\">A structure is a geometrical representation of an anatomical organ, a treatment volume, a marker, or a support structure.\nSee the definition of a DICOM Structure for more information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.StructureCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.StructureCode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.StructureCode",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.StructureCode.yml\" sourcestartlinenumber=\"1\">Represents a structure code and its coding scheme.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.StructureCodeDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.StructureCodeDictionary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.StructureCodeDictionary",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.StructureCodeDictionary.yml\" sourcestartlinenumber=\"1\">Represents a set of structure codes as defined by a structure code scheme.\nThe class exposes the structure codes that are available through the implemented <xref href=\"System.Collections.Generic.IReadOnlyDictionary%602\" data-throw-if-not-resolved=\"false\"></xref> interface.\nStructure code schemes are managed in RT Administration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.StructureSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.StructureSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.StructureSet",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.StructureSet.yml\" sourcestartlinenumber=\"1\">A structure set is a container for structures of a patient, including anatomical organs, treatment volumes and markers, and support structures.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Study.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Study.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Study",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Study.yml\" sourcestartlinenumber=\"1\">A study is a collection of series.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Technique.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Technique.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Technique",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Technique.yml\" sourcestartlinenumber=\"1\">Treatment technique used for a beam. Can be, for example, static or arc, or (for proton beams) modulated scanning.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.TradeoffExplorationContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.TradeoffExplorationContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.TradeoffExplorationContext",
+      "Summary": "<p>Context for performing multi-criteria optimization (MCO) to explore different trade-offs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.TradeoffObjective.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.TradeoffObjective.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.TradeoffObjective",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.TradeoffObjective.yml\" sourcestartlinenumber=\"1\">Trade-off objective interface that consists of a set of optimization objectives.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.TradeoffPlanGenerationIntermediateDoseMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.TradeoffPlanGenerationIntermediateDoseMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.TradeoffPlanGenerationIntermediateDoseMode",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.TradeoffPlanGenerationIntermediateDoseMode.yml\" sourcestartlinenumber=\"1\">Enumeration that specifies the use of intermediate dose when optimizing a plan collection for trade-off exploring.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Tray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Tray.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Tray",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Tray.yml\" sourcestartlinenumber=\"1\">A tray add-on is a plate where blocks, compensators, and other beam modifying materials can be fixed to.\nThe tray is inserted into a slot during the treatment of a beam.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.TreatmentPhase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.TreatmentPhase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.TreatmentPhase",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.TreatmentPhase.yml\" sourcestartlinenumber=\"1\">Treatment phase.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.TreatmentSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.TreatmentSession.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.TreatmentSession",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.TreatmentSession.yml\" sourcestartlinenumber=\"1\">Treatment session.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.TreatmentUnitOperatingLimit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.TreatmentUnitOperatingLimit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.TreatmentUnitOperatingLimit",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.TreatmentUnitOperatingLimit.yml\" sourcestartlinenumber=\"1\">Describes the limits of a treatment unit parameter and provides descriptive information related to it.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.TreatmentUnitOperatingLimits.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.TreatmentUnitOperatingLimits.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.TreatmentUnitOperatingLimits",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.TreatmentUnitOperatingLimits.yml\" sourcestartlinenumber=\"1\">Provides operating limit information for treatment unit parameters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.TypeBasedIdValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.TypeBasedIdValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.TypeBasedIdValidator",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.TypeBasedIdValidator.yml\" sourcestartlinenumber=\"1\">A utility class for validating the data object identifier.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.User.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.User",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.User.yml\" sourcestartlinenumber=\"1\">Represents a user.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.Wedge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.Wedge.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API.Wedge",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.API.Wedge.yml\" sourcestartlinenumber=\"1\">A wedge is a beam modulating add-on that modifies the dose intensity over all or a part of a treatment beam.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.API.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.API.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.API",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ApplicationScriptApprovalStatus.yml\" sourcestartlinenumber=\"1\">The approval statuses of the application script.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ApplicationScriptType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ApplicationScriptType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ApplicationScriptType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ApplicationScriptType.yml\" sourcestartlinenumber=\"1\">The type of the application script.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ApprovalHistoryEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ApprovalHistoryEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ApprovalHistoryEntry",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ApprovalHistoryEntry.yml\" sourcestartlinenumber=\"1\">An entry in the plan approval history.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ArcOptimizationAperture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ArcOptimizationAperture.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ArcOptimizationAperture",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ArcOptimizationAperture.yml\" sourcestartlinenumber=\"1\">Arc optimization aperture defined as an abstract rectangle around the isocenter in cm.\nNamed according to IEC61217 but independent of any physical jaw collimators.  ///</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.AxisAlignedMargins.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.AxisAlignedMargins.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.AxisAlignedMargins",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.AxisAlignedMargins.yml\" sourcestartlinenumber=\"1\">Represents margins aligned to the axes of the image coordinate system, in mm.\nNegative margins are not allowed, but it is possible to specify whether the margins represent an inner or outer margin.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.BeamNumber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.BeamNumber.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.BeamNumber",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.BeamNumber.yml\" sourcestartlinenumber=\"1\">Represents a unique identifier for a beam of a plan. The identifier is unique within the scope of the plan.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.BeamTechnique.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.BeamTechnique.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.BeamTechnique",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.BeamTechnique.yml\" sourcestartlinenumber=\"1\">An enumeration of beam techniques.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.BlockType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.BlockType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.BlockType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.BlockType.yml\" sourcestartlinenumber=\"1\">A type flag that tells whether a block is an aperture block or a shielding\nblock. An aperture block is used to limit the radiated area while a\nshielding block is made to protect a sensitive organ.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.BrachyTreatmentTechniqueType.yml\" sourcestartlinenumber=\"1\">The enumeration of Brachytherapy treatment techniques.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.CalculationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.CalculationType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.CalculationType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.CalculationType.yml\" sourcestartlinenumber=\"1\">Calculation type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.yml\" sourcestartlinenumber=\"1\">Return value for <xref href=\"VMS.TPS.Common.Model.API.BrachyPlanSetup?text=BrachyPlanSetup\" data-throw-if-not-resolved=\"false\"></xref> method <xref href=\"VMS.TPS.Common.Model.API.BrachyPlanSetup.ChangeTreatmentUnit(VMS.TPS.Common.Model.API.BrachyTreatmentUnit%2cSystem.Boolean%2cSystem.Collections.Generic.List%7bSystem.String%7d%40)?text=ChangeTreatmentUnit\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ClinicalGoal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ClinicalGoal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ClinicalGoal",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ClinicalGoal.yml\" sourcestartlinenumber=\"1\">Represents a clinical goal.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint.yml\" sourcestartlinenumber=\"1\">Specifies where the closed MLC leaf pairs are parked in an MLC leaf fit operation.\nBank_One: Varian = B, IEC MLCX = X1, IEC MLCY = Y1; Bank_Two: Varian = A, IEC MLCX = X2, IEC MLCY = Y2</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.CourseClinicalStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.CourseClinicalStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.CourseClinicalStatus",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.CourseClinicalStatus.yml\" sourcestartlinenumber=\"1\">Clinical Status of Course</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.DRRCalculationParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.DRRCalculationParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.DRRCalculationParameters",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.DRRCalculationParameters.yml\" sourcestartlinenumber=\"1\">Parameters for DRR calculation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.DVHEstimateType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.DVHEstimateType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.DVHEstimateType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.DVHEstimateType.yml\" sourcestartlinenumber=\"1\">Represents the type of a DVH estimate curve</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.DVHEstimationStructureType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.DVHEstimationStructureType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.DVHEstimationStructureType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.DVHEstimationStructureType.yml\" sourcestartlinenumber=\"1\">Structure type as defined in Planning Model Library: PTV or OAR</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.DVHPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.DVHPoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.DVHPoint",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.DVHPoint.yml\" sourcestartlinenumber=\"1\">Represents a value on a Dose Volume Histogram (DVH) curve.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.DoseProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.DoseProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.DoseProfile",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.DoseProfile.yml\" sourcestartlinenumber=\"1\">Represents a dose profile.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.DoseValue.DoseUnit",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.yml\" sourcestartlinenumber=\"1\">The unit of the dose value.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.DoseValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.DoseValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.DoseValue",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.DoseValue.yml\" sourcestartlinenumber=\"1\">Represents a dose value. DoseValue semantics follows the semantics of System.Double, with DoseValue.Undefined corresponding to Double.NaN.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.DoseValueDisplayConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.DoseValueDisplayConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.DoseValueDisplayConfig",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.DoseValueDisplayConfig.yml\" sourcestartlinenumber=\"1\">Configure the settings related to the dose value display for the application.\nDefaults to the same settings as Eclipse.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.DoseValuePresentation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.DoseValuePresentation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.DoseValuePresentation",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.DoseValuePresentation.yml\" sourcestartlinenumber=\"1\">Types of presentation for dose values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.DosimeterUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.DosimeterUnit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.DosimeterUnit",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.DosimeterUnit.yml\" sourcestartlinenumber=\"1\">The dosimeter unit.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ExternalBeamMachineParameters.yml\" sourcestartlinenumber=\"1\">The parameters for the external beam treatment unit.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.FitToStructureMarginType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.FitToStructureMarginType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.FitToStructureMarginType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.FitToStructureMarginType.yml\" sourcestartlinenumber=\"1\">Margin type</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.FitToStructureMargins.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.FitToStructureMargins.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.FitToStructureMargins",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.FitToStructureMargins.yml\" sourcestartlinenumber=\"1\">Margins that are used when fitting a field device to a structure from the BEV perspective</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.Fluence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.Fluence.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.Fluence",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.Fluence.yml\" sourcestartlinenumber=\"1\">Represents the fluence for a beam.\nThe resolution in the fluence matrix is 2.5 mm in x and y directions.\nIn the fluence matrix, x dimension is the number of columns, and y dimension is the number of rows.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.GantryDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.GantryDirection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.GantryDirection",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.GantryDirection.yml\" sourcestartlinenumber=\"1\">The enumeration of gantry rotation directions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.GoalEvalResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.GoalEvalResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.GoalEvalResult",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.GoalEvalResult.yml\" sourcestartlinenumber=\"1\">Clinical Goal Evaluation Result</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.GoalPriority.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.GoalPriority.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.GoalPriority",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.GoalPriority.yml\" sourcestartlinenumber=\"1\">Clinical Goal Priority</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.IDoseValueDisplaySettings.yml\" sourcestartlinenumber=\"1\">Application specific dose value display settings.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry.yml\" sourcestartlinenumber=\"1\">An entry in the image approval history.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ImageApprovalStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ImageApprovalStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ImageApprovalStatus",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ImageApprovalStatus.yml\" sourcestartlinenumber=\"1\">The enumeration of image approval statuses.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ImageProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ImageProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ImageProfile",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ImageProfile.yml\" sourcestartlinenumber=\"1\">Represents an image line profile.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.yml\" sourcestartlinenumber=\"1\">Setup parameters for imaging fields.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ImagingSetup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ImagingSetup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ImagingSetup",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ImagingSetup.yml\" sourcestartlinenumber=\"1\">Set of available imaging setups.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.IonBeamScanMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.IonBeamScanMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.IonBeamScanMode",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.IonBeamScanMode.yml\" sourcestartlinenumber=\"1\">The method of beam scanning to be used during treatment. Used with IonBeams.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.IonOptimizationIntermediateDoseOption.yml\" sourcestartlinenumber=\"1\">Options for using intermediate dose in proton optimization.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.IonPlanNormalizationParameters.yml\" sourcestartlinenumber=\"1\">The parameters for proton plan normalization.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.IonPlanOptimizationMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.IonPlanOptimizationMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.IonPlanOptimizationMode",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.IonPlanOptimizationMode.yml\" sourcestartlinenumber=\"1\">Proton plan optimization mode.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.JawFitting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.JawFitting.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.JawFitting",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.JawFitting.yml\" sourcestartlinenumber=\"1\">Specifies where collimator jaws are positioned in an MLC leaf fit operation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.LMCMSSOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.LMCMSSOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.LMCMSSOptions",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.LMCMSSOptions.yml\" sourcestartlinenumber=\"1\">Options for calculating leaf motions using the non-Varian MSS Leaf Motion Calculator (LMCMSS) algorithm.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.LMCVOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.LMCVOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.LMCVOptions",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.LMCVOptions.yml\" sourcestartlinenumber=\"1\">Options for calculating leaf motions using the Varian Leaf Motion Calculator (LMCV) algorithm.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.LateralSpreadingDeviceType.yml\" sourcestartlinenumber=\"1\">Type of the lateral spreading device.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.LineProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.LineProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.LineProfile",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.LineProfile.yml\" sourcestartlinenumber=\"1\">Represents values along a line segment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.LogSeverity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.LogSeverity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.LogSeverity",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.LogSeverity.yml\" sourcestartlinenumber=\"1\">The enumeration of log severities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.MLCPlanType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.MLCPlanType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.MLCPlanType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.MLCPlanType.yml\" sourcestartlinenumber=\"1\">The enumeration of Multileaf Collimator (MLC) techniques.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.MeasureModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.MeasureModifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.MeasureModifier",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.MeasureModifier.yml\" sourcestartlinenumber=\"1\">Measure modifier</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.MeasureType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.MeasureType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.MeasureType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.MeasureType.yml\" sourcestartlinenumber=\"1\">Enumeration of plan measure types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.MetersetValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.MetersetValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.MetersetValue",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.MetersetValue.yml\" sourcestartlinenumber=\"1\">Represents a meterset value.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.Objective.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.Objective.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.Objective",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.Objective.yml\" sourcestartlinenumber=\"1\">Represents a clinical goal objective.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ObjectiveGoalType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ObjectiveGoalType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ObjectiveGoalType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ObjectiveGoalType.yml\" sourcestartlinenumber=\"1\">Clinical goal Objective type</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ObjectiveOperator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ObjectiveOperator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ObjectiveOperator",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ObjectiveOperator.yml\" sourcestartlinenumber=\"1\">Clinical goal Objective operator</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ObjectiveUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ObjectiveUnit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ObjectiveUnit",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ObjectiveUnit.yml\" sourcestartlinenumber=\"1\">Clinical goal Objective Unit</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint.yml\" sourcestartlinenumber=\"1\">Specifies where the open MLC leaves meet the structure outline in an MLC leaf fit operation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.OptimizationAvoidanceSector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.OptimizationAvoidanceSector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.OptimizationAvoidanceSector",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.OptimizationAvoidanceSector.yml\" sourcestartlinenumber=\"1\">Avoidance sector details.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.OptimizationConvergenceOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.OptimizationConvergenceOption.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.OptimizationConvergenceOption",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.OptimizationConvergenceOption.yml\" sourcestartlinenumber=\"1\">Options for terminating optimization upon convergence.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.OptimizationIntermediateDoseOption.yml\" sourcestartlinenumber=\"1\">Options for using intermediate dose in optimization.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.yml\" sourcestartlinenumber=\"1\">Optimization Objective Operator, which is used for setting the upper and lower optimization objectives.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.OptimizationOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.OptimizationOption.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.OptimizationOption",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.OptimizationOption.yml\" sourcestartlinenumber=\"1\">Options for Optimization.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.OptimizationOptionsBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.OptimizationOptionsBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.OptimizationOptionsBase",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.OptimizationOptionsBase.yml\" sourcestartlinenumber=\"1\">Abstract base class for IMRT and VMAT optimization options.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.OptimizationOptionsIMPT.yml\" sourcestartlinenumber=\"1\">Options for IMPT optimization.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.OptimizationOptionsIMRT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.OptimizationOptionsIMRT.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.OptimizationOptionsIMRT",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.OptimizationOptionsIMRT.yml\" sourcestartlinenumber=\"1\">Options for IMRT optimization.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.OptimizationOptionsVMAT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.OptimizationOptionsVMAT.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.OptimizationOptionsVMAT",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.OptimizationOptionsVMAT.yml\" sourcestartlinenumber=\"1\">Options for VMAT optimization.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ParticleType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ParticleType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ParticleType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ParticleType.yml\" sourcestartlinenumber=\"1\">Particle types</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.PatientOrientation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.PatientOrientation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.PatientOrientation",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.PatientOrientation.yml\" sourcestartlinenumber=\"1\">The enumeration of patient orientations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.PatientSupportType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.PatientSupportType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.PatientSupportType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.PatientSupportType.yml\" sourcestartlinenumber=\"1\">Patient support type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.PlanNormalizationMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.PlanNormalizationMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.PlanNormalizationMode",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.PlanNormalizationMode.yml\" sourcestartlinenumber=\"1\">Plan normalization options for SetPlanNormalization</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.PlanSetupApprovalStatus.yml\" sourcestartlinenumber=\"1\">The enumeration of plan approval statuses.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.PlanSumOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.PlanSumOperation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.PlanSumOperation",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.PlanSumOperation.yml\" sourcestartlinenumber=\"1\">PlanSum operation for PlanSetups in PlanSum.\nIndicates whether the plan is summed with (“+”) or subtracted from (“-”) the other plans in the sum.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.PlanType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.PlanType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.PlanType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.PlanType.yml\" sourcestartlinenumber=\"1\">The enumeration of plan types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.PlanUncertaintyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.PlanUncertaintyType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.PlanUncertaintyType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.PlanUncertaintyType.yml\" sourcestartlinenumber=\"1\">Plan uncertainty type indicates the usage of associated uncertainty parameters, see <xref href=\"VMS.TPS.Common.Model.API.PlanUncertainty?text=PlanUncertainty\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.PlanValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.PlanValidationResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.PlanValidationResult",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.PlanValidationResult.yml\" sourcestartlinenumber=\"1\">Represents plan validatation result</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.PlanValidationResultDetail.ResultClassification.yml\" sourcestartlinenumber=\"1\">Classification of plan validation detail.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.PlanValidationResultDetail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.PlanValidationResultDetail.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.PlanValidationResultDetail",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.PlanValidationResultDetail.yml\" sourcestartlinenumber=\"1\">Represents plan validation detail.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.PlanValidationResultEsapiDetail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.PlanValidationResultEsapiDetail.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.PlanValidationResultEsapiDetail",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.PlanValidationResultEsapiDetail.yml\" sourcestartlinenumber=\"1\">A class for detailed plan validation result</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.PrescriptionModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.PrescriptionModifier.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.PrescriptionModifier",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.PrescriptionModifier.yml\" sourcestartlinenumber=\"1\">Prescription modifier.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.PrescriptionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.PrescriptionType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.PrescriptionType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.PrescriptionType.yml\" sourcestartlinenumber=\"1\">Enumeration of prescription types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ProfilePoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ProfilePoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ProfilePoint",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ProfilePoint.yml\" sourcestartlinenumber=\"1\">Represents a point of a line profile.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ProtonBeamLineStatus",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.yml\" sourcestartlinenumber=\"1\">Status of proton beam line</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ProtonBeamMachineParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ProtonBeamMachineParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ProtonBeamMachineParameters",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ProtonBeamMachineParameters.yml\" sourcestartlinenumber=\"1\">The parameters for the proton beam treatment unit.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.yml\" sourcestartlinenumber=\"1\">The enumeration of proton delivery time statuses.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.RTPrescriptionConstraintType.yml\" sourcestartlinenumber=\"1\">Type of the RT prescription constraint.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.RTPrescriptionTargetType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.RTPrescriptionTargetType.yml\" sourcestartlinenumber=\"1\">The type of the prescription target definition</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.RailPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.RailPosition.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.RailPosition",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.RailPosition.yml\" sourcestartlinenumber=\"1\">Setting for the moveable rail position (in or out) used for couch modeling in Eclipse.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.RangeModulatorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.RangeModulatorType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.RangeModulatorType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.RangeModulatorType.yml\" sourcestartlinenumber=\"1\">Type of the range modulator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.RangeShifterType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.RangeShifterType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.RangeShifterType",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.RangeShifterType.yml\" sourcestartlinenumber=\"1\">Type of the range shifter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.RegistrationApprovalStatus",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.RegistrationApprovalStatus.yml\" sourcestartlinenumber=\"1\">The enumeration of registration approval statuses.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ResetSourcePositionsResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ResetSourcePositionsResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ResetSourcePositionsResult",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ResetSourcePositionsResult.yml\" sourcestartlinenumber=\"1\">Return value for <xref href=\"VMS.TPS.Common.Model.API.Catheter?text=Catheter\" data-throw-if-not-resolved=\"false\"></xref> method ResetSourcePositions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.SegmentProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.SegmentProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.SegmentProfile",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.SegmentProfile.yml\" sourcestartlinenumber=\"1\">Represents the segment values along a line segment.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.SegmentProfilePoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.SegmentProfilePoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.SegmentProfilePoint",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.SegmentProfilePoint.yml\" sourcestartlinenumber=\"1\">Represents a point of a segment profile.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.SeriesModality.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.SeriesModality.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.SeriesModality",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.SeriesModality.yml\" sourcestartlinenumber=\"1\">The enumeration of series modalities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.SetSourcePositionsResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.SetSourcePositionsResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.SetSourcePositionsResult",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.SetSourcePositionsResult.yml\" sourcestartlinenumber=\"1\">Return value for <xref href=\"VMS.TPS.Common.Model.API.Catheter?text=Catheter\" data-throw-if-not-resolved=\"false\"></xref> method <xref href=\"VMS.TPS.Common.Model.API.Catheter.SetSourcePositions(System.Double%2cSystem.Double%2cSystem.Double)?text=SetSourcePositions\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.SetupTechnique.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.SetupTechnique.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.SetupTechnique",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.SetupTechnique.yml\" sourcestartlinenumber=\"1\">The enumeration of setup techniques for a beam.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.SingleLayerParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.SingleLayerParameters.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.SingleLayerParameters",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.SingleLayerParameters.yml\" sourcestartlinenumber=\"1\">One layer or group of DRR calculation parameters.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.SmartLMCOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.SmartLMCOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.SmartLMCOptions",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.SmartLMCOptions.yml\" sourcestartlinenumber=\"1\">Options for calculating leaf motions using the Varian Smart LMC algorithm.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.StructureApprovalHistoryEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.StructureApprovalHistoryEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.StructureApprovalHistoryEntry",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.StructureApprovalHistoryEntry.yml\" sourcestartlinenumber=\"1\">An entry in the structure approval history.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.StructureApprovalStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.StructureApprovalStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.StructureApprovalStatus",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.StructureApprovalStatus.yml\" sourcestartlinenumber=\"1\">The enumeration of structure approval statuses.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.StructureCodeInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.StructureCodeInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.StructureCodeInfo",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.StructureCodeInfo.yml\" sourcestartlinenumber=\"1\">Represents structure code information.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.StructureMarginGeometry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.StructureMarginGeometry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.StructureMarginGeometry",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.StructureMarginGeometry.yml\" sourcestartlinenumber=\"1\">Specifies whether a margin operation expands (outer margin) or shrinks (inner margin) the volume.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.TreatmentSessionStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.TreatmentSessionStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.TreatmentSessionStatus",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.TreatmentSessionStatus.yml\" sourcestartlinenumber=\"1\">Status of the treatment session.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.UserIdentity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.UserIdentity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.UserIdentity",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.UserIdentity.yml\" sourcestartlinenumber=\"1\">Represents the identity of an user, including the identifier (username) and the display name.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.VRect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.VRect-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.VRect<T>",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.VRect-1.yml\" sourcestartlinenumber=\"1\">Represents a rectangle.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.VVector.Component.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.VVector.Component.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.VVector.Component",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.VVector.Component.yml\" sourcestartlinenumber=\"1\">VVector component indexing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.VVector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.VVector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.VVector",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.VVector.yml\" sourcestartlinenumber=\"1\">Represents a displacement in 3D space.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.ValidationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.ValidationException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.ValidationException",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.ValidationException.yml\" sourcestartlinenumber=\"1\">ValidationException.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.VolumePresentation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.VolumePresentation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types.VolumePresentation",
+      "Summary": "<p sourcefile=\"VMS.TPS.Common.Model.Types.VolumePresentation.yml\" sourcestartlinenumber=\"1\">Types of presentation for volume values.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "VMS.TPS.Common.Model.Types.yml",
+      "output": {
+        ".html": {
+          "relative_path": "VMS.TPS.Common.Model.Types.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMS.TPS.Common.Model.Types",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

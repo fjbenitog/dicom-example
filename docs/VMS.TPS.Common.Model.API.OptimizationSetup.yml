@@ -1,0 +1,1961 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup
+  commentId: T:VMS.TPS.Common.Model.API.OptimizationSetup
+  id: OptimizationSetup
+  parent: VMS.TPS.Common.Model.API
+  children:
+  - VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticNormalTissueObjective(System.Double)
+  - VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticSbrtNormalTissueObjective(System.Double)
+  - VMS.TPS.Common.Model.API.OptimizationSetup.AddBeamSpecificParameter(VMS.TPS.Common.Model.API.Beam,System.Double,System.Double,System.Boolean)
+  - VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double)
+  - VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double,System.Boolean)
+  - VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  - VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Boolean)
+  - VMS.TPS.Common.Model.API.OptimizationSetup.AddNormalTissueObjective(System.Double,System.Double,System.Double,System.Double,System.Double)
+  - VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double)
+  - VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double,System.Boolean)
+  - VMS.TPS.Common.Model.API.OptimizationSetup.AddProtonNormalTissueObjective(System.Double,System.Double,System.Double,System.Double)
+  - VMS.TPS.Common.Model.API.OptimizationSetup.Objectives
+  - VMS.TPS.Common.Model.API.OptimizationSetup.Parameters
+  - VMS.TPS.Common.Model.API.OptimizationSetup.RemoveObjective(VMS.TPS.Common.Model.API.OptimizationObjective)
+  - VMS.TPS.Common.Model.API.OptimizationSetup.RemoveParameter(VMS.TPS.Common.Model.API.OptimizationParameter)
+  - VMS.TPS.Common.Model.API.OptimizationSetup.UseJawTracking
+  - VMS.TPS.Common.Model.API.OptimizationSetup.WriteXml(System.Xml.XmlWriter)
+  langs:
+  - csharp
+  - vb
+  name: OptimizationSetup
+  nameWithType: OptimizationSetup
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Gives access to the optimization parameters and objectives.
+  example: []
+  syntax:
+    content: 'public class OptimizationSetup : SerializableObject, IXmlSerializable'
+    content.vb: Public Class OptimizationSetup Inherits SerializableObject Implements IXmlSerializable
+  inheritance:
+  - System.Object
+  - VMS.TPS.Common.Model.API.SerializableObject
+  implements:
+  - System.Xml.Serialization.IXmlSerializable
+  inheritedMembers:
+  - VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  - VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  - VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  - VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.OptimizationSetup.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  nameWithType: OptimizationSetup.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Converts an object into its XML representation.
+
+    For more information on how to serialize an object into an XML document, see <xref href="System.Xml.Serialization.XmlSerializer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override void WriteXml(XmlWriter writer)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The System.Xml.XmlWriter stream, to which the object is serialized.
+    content.vb: Public Overrides Sub WriteXml(writer As XmlWriter)
+  overridden: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter)
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.WriteXml*
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticNormalTissueObjective(System.Double)
+  commentId: M:VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticNormalTissueObjective(System.Double)
+  id: AddAutomaticNormalTissueObjective(System.Double)
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: AddAutomaticNormalTissueObjective(double)
+  nameWithType: OptimizationSetup.AddAutomaticNormalTissueObjective(double)
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticNormalTissueObjective(double)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] Adds a new automatic normal tissue objective (NTO) or updates the data of the existing objective. Only one
+
+    NTO can be added.
+  example: []
+  syntax:
+    content: public OptimizationNormalTissueParameter AddAutomaticNormalTissueObjective(double priority)
+    parameters:
+    - id: priority
+      type: System.Double
+      description: Determines the relative importance of the NTO in relation to other optimization objectives. The value is positive.
+    return:
+      type: VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter
+      description: The added parameter.
+    content.vb: Public Function AddAutomaticNormalTissueObjective(priority As Double) As OptimizationNormalTissueParameter
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticNormalTissueObjective*
+  nameWithType.vb: OptimizationSetup.AddAutomaticNormalTissueObjective(Double)
+  fullName.vb: VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticNormalTissueObjective(Double)
+  name.vb: AddAutomaticNormalTissueObjective(Double)
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticSbrtNormalTissueObjective(System.Double)
+  commentId: M:VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticSbrtNormalTissueObjective(System.Double)
+  id: AddAutomaticSbrtNormalTissueObjective(System.Double)
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: AddAutomaticSbrtNormalTissueObjective(double)
+  nameWithType: OptimizationSetup.AddAutomaticSbrtNormalTissueObjective(double)
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticSbrtNormalTissueObjective(double)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] Adds a new automatic SBRT normal tissue objective (NTO) or updates the data of the existing objective. Only one
+
+    NTO can be added.
+  example: []
+  syntax:
+    content: public OptimizationNormalTissueParameter AddAutomaticSbrtNormalTissueObjective(double priority)
+    parameters:
+    - id: priority
+      type: System.Double
+      description: Determines the relative importance of the NTO in relation to other optimization objectives. The value is positive.
+    return:
+      type: VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter
+      description: The added parameter.
+    content.vb: Public Function AddAutomaticSbrtNormalTissueObjective(priority As Double) As OptimizationNormalTissueParameter
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticSbrtNormalTissueObjective*
+  nameWithType.vb: OptimizationSetup.AddAutomaticSbrtNormalTissueObjective(Double)
+  fullName.vb: VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticSbrtNormalTissueObjective(Double)
+  name.vb: AddAutomaticSbrtNormalTissueObjective(Double)
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddBeamSpecificParameter(VMS.TPS.Common.Model.API.Beam,System.Double,System.Double,System.Boolean)
+  commentId: M:VMS.TPS.Common.Model.API.OptimizationSetup.AddBeamSpecificParameter(VMS.TPS.Common.Model.API.Beam,System.Double,System.Double,System.Boolean)
+  id: AddBeamSpecificParameter(VMS.TPS.Common.Model.API.Beam,System.Double,System.Double,System.Boolean)
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: AddBeamSpecificParameter(Beam, double, double, bool)
+  nameWithType: OptimizationSetup.AddBeamSpecificParameter(Beam, double, double, bool)
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddBeamSpecificParameter(VMS.TPS.Common.Model.API.Beam, double, double, bool)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Adds a new beam-specific parameter for IMRT optimization.'
+  example: []
+  syntax:
+    content: public OptimizationIMRTBeamParameter AddBeamSpecificParameter(Beam beam, double smoothX, double smoothY, bool fixedJaws)
+    parameters:
+    - id: beam
+      type: VMS.TPS.Common.Model.API.Beam
+      description: The beam for which the parameters are added.
+    - id: smoothX
+      type: System.Double
+      description: A fluence-smoothing parameter in X-direction.
+    - id: smoothY
+      type: System.Double
+      description: A fluence-smoothing parameter in Y-direction.
+    - id: fixedJaws
+      type: System.Boolean
+      description: If true, the collimator jaw positions of the beam remain the same during the optimization.
+    return:
+      type: VMS.TPS.Common.Model.API.OptimizationIMRTBeamParameter
+      description: The added parameter.
+    content.vb: Public Function AddBeamSpecificParameter(beam As Beam, smoothX As Double, smoothY As Double, fixedJaws As Boolean) As OptimizationIMRTBeamParameter
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.AddBeamSpecificParameter*
+  nameWithType.vb: OptimizationSetup.AddBeamSpecificParameter(Beam, Double, Double, Boolean)
+  fullName.vb: VMS.TPS.Common.Model.API.OptimizationSetup.AddBeamSpecificParameter(VMS.TPS.Common.Model.API.Beam, Double, Double, Boolean)
+  name.vb: AddBeamSpecificParameter(Beam, Double, Double, Boolean)
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double)
+  commentId: M:VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double)
+  id: AddEUDObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double)
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: AddEUDObjective(Structure, OptimizationObjectiveOperator, DoseValue, double, double)
+  nameWithType: OptimizationSetup.AddEUDObjective(Structure, OptimizationObjectiveOperator, DoseValue, double, double)
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective(VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator, VMS.TPS.Common.Model.Types.DoseValue, double, double)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Adds a new gEUD objective.'
+  example: []
+  syntax:
+    content: public OptimizationEUDObjective AddEUDObjective(Structure structure, OptimizationObjectiveOperator objectiveOperator, DoseValue dose, double parameterA, double priority)
+    parameters:
+    - id: structure
+      type: VMS.TPS.Common.Model.API.Structure
+      description: The target structure of the objective.
+    - id: objectiveOperator
+      type: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+      description: The type of the gEUD objective.
+    - id: dose
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: The dose value of the objective. The unit must be the same as defined in the system configuration.
+    - id: parameterA
+      type: System.Double
+      description: gEUD parameter a.
+    - id: priority
+      type: System.Double
+      description: The priority of the objective.
+    return:
+      type: VMS.TPS.Common.Model.API.OptimizationEUDObjective
+      description: The added objective.
+    content.vb: Public Function AddEUDObjective([structure] As [Structure], objectiveOperator As OptimizationObjectiveOperator, dose As DoseValue, parameterA As Double, priority As Double) As OptimizationEUDObjective
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective*
+  nameWithType.vb: OptimizationSetup.AddEUDObjective(Structure, OptimizationObjectiveOperator, DoseValue, Double, Double)
+  fullName.vb: VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective(VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator, VMS.TPS.Common.Model.Types.DoseValue, Double, Double)
+  name.vb: AddEUDObjective(Structure, OptimizationObjectiveOperator, DoseValue, Double, Double)
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double,System.Boolean)
+  commentId: M:VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double,System.Boolean)
+  id: AddEUDObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double,System.Boolean)
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: AddEUDObjective(Structure, OptimizationObjectiveOperator, DoseValue, double, double, bool)
+  nameWithType: OptimizationSetup.AddEUDObjective(Structure, OptimizationObjectiveOperator, DoseValue, double, double, bool)
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective(VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator, VMS.TPS.Common.Model.Types.DoseValue, double, double, bool)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Adds a new gEUD objective.'
+  example: []
+  syntax:
+    content: public OptimizationEUDObjective AddEUDObjective(Structure structure, OptimizationObjectiveOperator objectiveOperator, DoseValue dose, double parameterA, double priority, bool isRobustObjective)
+    parameters:
+    - id: structure
+      type: VMS.TPS.Common.Model.API.Structure
+      description: The target structure of the objective.
+    - id: objectiveOperator
+      type: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+      description: The type of the gEUD objective.
+    - id: dose
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: The dose value of the objective. The unit must be the same as defined in the system configuration.
+    - id: parameterA
+      type: System.Double
+      description: gEUD parameter a.
+    - id: priority
+      type: System.Double
+      description: The priority of the objective.
+    - id: isRobustObjective
+      type: System.Boolean
+      description: Is the objective a robust objective.
+    return:
+      type: VMS.TPS.Common.Model.API.OptimizationEUDObjective
+      description: The added objective.
+    content.vb: Public Function AddEUDObjective([structure] As [Structure], objectiveOperator As OptimizationObjectiveOperator, dose As DoseValue, parameterA As Double, priority As Double, isRobustObjective As Boolean) As OptimizationEUDObjective
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective*
+  nameWithType.vb: OptimizationSetup.AddEUDObjective(Structure, OptimizationObjectiveOperator, DoseValue, Double, Double, Boolean)
+  fullName.vb: VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective(VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator, VMS.TPS.Common.Model.Types.DoseValue, Double, Double, Boolean)
+  name.vb: AddEUDObjective(Structure, OptimizationObjectiveOperator, DoseValue, Double, Double, Boolean)
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  commentId: M:VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  id: AddMeanDoseObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.DoseValue,System.Double)
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: AddMeanDoseObjective(Structure, DoseValue, double)
+  nameWithType: OptimizationSetup.AddMeanDoseObjective(Structure, DoseValue, double)
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective(VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.Types.DoseValue, double)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Adds a new mean dose objective.'
+  example: []
+  syntax:
+    content: public OptimizationMeanDoseObjective AddMeanDoseObjective(Structure structure, DoseValue dose, double priority)
+    parameters:
+    - id: structure
+      type: VMS.TPS.Common.Model.API.Structure
+      description: The target structure of the objective.
+    - id: dose
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: The dose value of the objective. The unit must be the same as defined in the system configuration.
+    - id: priority
+      type: System.Double
+      description: The priority of the objective.
+    return:
+      type: VMS.TPS.Common.Model.API.OptimizationMeanDoseObjective
+      description: The added objective.
+    content.vb: Public Function AddMeanDoseObjective([structure] As [Structure], dose As DoseValue, priority As Double) As OptimizationMeanDoseObjective
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective*
+  nameWithType.vb: OptimizationSetup.AddMeanDoseObjective(Structure, DoseValue, Double)
+  fullName.vb: VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective(VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.Types.DoseValue, Double)
+  name.vb: AddMeanDoseObjective(Structure, DoseValue, Double)
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Boolean)
+  commentId: M:VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Boolean)
+  id: AddMeanDoseObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Boolean)
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: AddMeanDoseObjective(Structure, DoseValue, double, bool)
+  nameWithType: OptimizationSetup.AddMeanDoseObjective(Structure, DoseValue, double, bool)
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective(VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.Types.DoseValue, double, bool)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Adds a new mean dose objective.'
+  example: []
+  syntax:
+    content: public OptimizationMeanDoseObjective AddMeanDoseObjective(Structure structure, DoseValue dose, double priority, bool isRobustObjective)
+    parameters:
+    - id: structure
+      type: VMS.TPS.Common.Model.API.Structure
+      description: The target structure of the objective.
+    - id: dose
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: The dose value of the objective. The unit must be the same as defined in the system configuration.
+    - id: priority
+      type: System.Double
+      description: The priority of the objective.
+    - id: isRobustObjective
+      type: System.Boolean
+      description: Is the objective a robust objective.
+    return:
+      type: VMS.TPS.Common.Model.API.OptimizationMeanDoseObjective
+      description: The added objective.
+    content.vb: Public Function AddMeanDoseObjective([structure] As [Structure], dose As DoseValue, priority As Double, isRobustObjective As Boolean) As OptimizationMeanDoseObjective
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective*
+  nameWithType.vb: OptimizationSetup.AddMeanDoseObjective(Structure, DoseValue, Double, Boolean)
+  fullName.vb: VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective(VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.Types.DoseValue, Double, Boolean)
+  name.vb: AddMeanDoseObjective(Structure, DoseValue, Double, Boolean)
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddNormalTissueObjective(System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:VMS.TPS.Common.Model.API.OptimizationSetup.AddNormalTissueObjective(System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: AddNormalTissueObjective(System.Double,System.Double,System.Double,System.Double,System.Double)
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: AddNormalTissueObjective(double, double, double, double, double)
+  nameWithType: OptimizationSetup.AddNormalTissueObjective(double, double, double, double, double)
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddNormalTissueObjective(double, double, double, double, double)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] Adds a new normal tissue objective (NTO) or updates the data of the existing objective. Only one
+
+    NTO can be added. Calling this function disables the automatic NTO if it has been set previously.
+  example: []
+  syntax:
+    content: public OptimizationNormalTissueParameter AddNormalTissueObjective(double priority, double distanceFromTargetBorderInMM, double startDosePercentage, double endDosePercentage, double fallOff)
+    parameters:
+    - id: priority
+      type: System.Double
+      description: Determines the relative importance of the normal tissue objective in relation to other optimization objectives. The value is positive.
+    - id: distanceFromTargetBorderInMM
+      type: System.Double
+      description: Determines the distance in millimeters from the target border where the evaluation of the normal tissue objective dose begins.
+    - id: startDosePercentage
+      type: System.Double
+      description: >-
+        Determines the relative dose level in the normal tissue objective at the target border,
+                    expressed in percentage of the upper objective for the target.
+                    The value is positive. 100% is specified as 100.
+    - id: endDosePercentage
+      type: System.Double
+      description: >-
+        Determines the relative dose level in the normal tissue objective in the area furthest from the target border.
+                    Expressed in percentage. The value is positive. 100% is specified as 100.
+    - id: fallOff
+      type: System.Double
+      description: >-
+        Determines the steepness of the normal tissue objective fall-off.
+                    The value is positive.
+    return:
+      type: VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter
+      description: The added parameter.
+    content.vb: Public Function AddNormalTissueObjective(priority As Double, distanceFromTargetBorderInMM As Double, startDosePercentage As Double, endDosePercentage As Double, fallOff As Double) As OptimizationNormalTissueParameter
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.AddNormalTissueObjective*
+  nameWithType.vb: OptimizationSetup.AddNormalTissueObjective(Double, Double, Double, Double, Double)
+  fullName.vb: VMS.TPS.Common.Model.API.OptimizationSetup.AddNormalTissueObjective(Double, Double, Double, Double, Double)
+  name.vb: AddNormalTissueObjective(Double, Double, Double, Double, Double)
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double)
+  commentId: M:VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double)
+  id: AddPointObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double)
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: AddPointObjective(Structure, OptimizationObjectiveOperator, DoseValue, double, double)
+  nameWithType: OptimizationSetup.AddPointObjective(Structure, OptimizationObjectiveOperator, DoseValue, double, double)
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective(VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator, VMS.TPS.Common.Model.Types.DoseValue, double, double)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Adds a new point objective.'
+  example: []
+  syntax:
+    content: public OptimizationPointObjective AddPointObjective(Structure structure, OptimizationObjectiveOperator objectiveOperator, DoseValue dose, double volume, double priority)
+    parameters:
+    - id: structure
+      type: VMS.TPS.Common.Model.API.Structure
+      description: The target structure of the objective.
+    - id: objectiveOperator
+      type: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+      description: The type of the dose-volume objective.
+    - id: dose
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: The dose value of the objective. The unit must be the same as defined in the system configuration.
+    - id: volume
+      type: System.Double
+      description: The volume of the objective.
+    - id: priority
+      type: System.Double
+      description: The priority of the objective.
+    return:
+      type: VMS.TPS.Common.Model.API.OptimizationPointObjective
+      description: The added objective.
+    content.vb: Public Function AddPointObjective([structure] As [Structure], objectiveOperator As OptimizationObjectiveOperator, dose As DoseValue, volume As Double, priority As Double) As OptimizationPointObjective
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective*
+  nameWithType.vb: OptimizationSetup.AddPointObjective(Structure, OptimizationObjectiveOperator, DoseValue, Double, Double)
+  fullName.vb: VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective(VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator, VMS.TPS.Common.Model.Types.DoseValue, Double, Double)
+  name.vb: AddPointObjective(Structure, OptimizationObjectiveOperator, DoseValue, Double, Double)
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double,System.Boolean)
+  commentId: M:VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double,System.Boolean)
+  id: AddPointObjective(VMS.TPS.Common.Model.API.Structure,VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator,VMS.TPS.Common.Model.Types.DoseValue,System.Double,System.Double,System.Boolean)
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: AddPointObjective(Structure, OptimizationObjectiveOperator, DoseValue, double, double, bool)
+  nameWithType: OptimizationSetup.AddPointObjective(Structure, OptimizationObjectiveOperator, DoseValue, double, double, bool)
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective(VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator, VMS.TPS.Common.Model.Types.DoseValue, double, double, bool)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Adds a new point objective.'
+  example: []
+  syntax:
+    content: public OptimizationPointObjective AddPointObjective(Structure structure, OptimizationObjectiveOperator objectiveOperator, DoseValue dose, double volume, double priority, bool isRobustObjective)
+    parameters:
+    - id: structure
+      type: VMS.TPS.Common.Model.API.Structure
+      description: The target structure of the objective.
+    - id: objectiveOperator
+      type: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+      description: The type of the dose-volume objective.
+    - id: dose
+      type: VMS.TPS.Common.Model.Types.DoseValue
+      description: The dose value of the objective. The unit must be the same as defined in the system configuration.
+    - id: volume
+      type: System.Double
+      description: The volume of the objective.
+    - id: priority
+      type: System.Double
+      description: The priority of the objective.
+    - id: isRobustObjective
+      type: System.Boolean
+      description: Is the objective a robust objective.
+    return:
+      type: VMS.TPS.Common.Model.API.OptimizationPointObjective
+      description: The added objective.
+    content.vb: Public Function AddPointObjective([structure] As [Structure], objectiveOperator As OptimizationObjectiveOperator, dose As DoseValue, volume As Double, priority As Double, isRobustObjective As Boolean) As OptimizationPointObjective
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective*
+  nameWithType.vb: OptimizationSetup.AddPointObjective(Structure, OptimizationObjectiveOperator, DoseValue, Double, Double, Boolean)
+  fullName.vb: VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective(VMS.TPS.Common.Model.API.Structure, VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator, VMS.TPS.Common.Model.Types.DoseValue, Double, Double, Boolean)
+  name.vb: AddPointObjective(Structure, OptimizationObjectiveOperator, DoseValue, Double, Double, Boolean)
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddProtonNormalTissueObjective(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:VMS.TPS.Common.Model.API.OptimizationSetup.AddProtonNormalTissueObjective(System.Double,System.Double,System.Double,System.Double)
+  id: AddProtonNormalTissueObjective(System.Double,System.Double,System.Double,System.Double)
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: AddProtonNormalTissueObjective(double, double, double, double)
+  nameWithType: OptimizationSetup.AddProtonNormalTissueObjective(double, double, double, double)
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddProtonNormalTissueObjective(double, double, double, double)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] Adds a new normal tissue objective (NTO) for a proton plan or updates the data of the existing objective. Only one
+
+    NTO can be added. Calling this function disables the automatic NTO if it has been set previously.
+  example: []
+  syntax:
+    content: public OptimizationNormalTissueParameter AddProtonNormalTissueObjective(double priority, double distanceFromTargetBorderInMM, double startDosePercentage, double endDosePercentage)
+    parameters:
+    - id: priority
+      type: System.Double
+      description: Determines the relative importance of the normal tissue objective in relation to other optimization objectives. The value is positive.
+    - id: distanceFromTargetBorderInMM
+      type: System.Double
+      description: Determines the distance in millimeters from the target border where the evaluation of the normal tissue objective dose begins.
+    - id: startDosePercentage
+      type: System.Double
+      description: >-
+        Determines the relative dose level in the normal tissue objective at the target border,
+                    expressed in percentage of the upper objective for the target.
+                    The value is positive. 100% is specified as 100.
+    - id: endDosePercentage
+      type: System.Double
+      description: >-
+        Determines the relative dose level in the normal tissue objective in the area furthest from the target border.
+                    Expressed in percentage. The value is positive. 100% is specified as 100.
+    return:
+      type: VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter
+      description: The added parameter.
+    content.vb: Public Function AddProtonNormalTissueObjective(priority As Double, distanceFromTargetBorderInMM As Double, startDosePercentage As Double, endDosePercentage As Double) As OptimizationNormalTissueParameter
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.AddProtonNormalTissueObjective*
+  nameWithType.vb: OptimizationSetup.AddProtonNormalTissueObjective(Double, Double, Double, Double)
+  fullName.vb: VMS.TPS.Common.Model.API.OptimizationSetup.AddProtonNormalTissueObjective(Double, Double, Double, Double)
+  name.vb: AddProtonNormalTissueObjective(Double, Double, Double, Double)
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.RemoveObjective(VMS.TPS.Common.Model.API.OptimizationObjective)
+  commentId: M:VMS.TPS.Common.Model.API.OptimizationSetup.RemoveObjective(VMS.TPS.Common.Model.API.OptimizationObjective)
+  id: RemoveObjective(VMS.TPS.Common.Model.API.OptimizationObjective)
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: RemoveObjective(OptimizationObjective)
+  nameWithType: OptimizationSetup.RemoveObjective(OptimizationObjective)
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.RemoveObjective(VMS.TPS.Common.Model.API.OptimizationObjective)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Removes the specified optimization objective.'
+  example: []
+  syntax:
+    content: public void RemoveObjective(OptimizationObjective objective)
+    parameters:
+    - id: objective
+      type: VMS.TPS.Common.Model.API.OptimizationObjective
+      description: The objective that is removed.
+    content.vb: Public Sub RemoveObjective(objective As OptimizationObjective)
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.RemoveObjective*
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.RemoveParameter(VMS.TPS.Common.Model.API.OptimizationParameter)
+  commentId: M:VMS.TPS.Common.Model.API.OptimizationSetup.RemoveParameter(VMS.TPS.Common.Model.API.OptimizationParameter)
+  id: RemoveParameter(VMS.TPS.Common.Model.API.OptimizationParameter)
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: RemoveParameter(OptimizationParameter)
+  nameWithType: OptimizationSetup.RemoveParameter(OptimizationParameter)
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.RemoveParameter(VMS.TPS.Common.Model.API.OptimizationParameter)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this method depends on your Eclipse Scripting API license] Removes the specified optimization parameter.'
+  example: []
+  syntax:
+    content: public void RemoveParameter(OptimizationParameter parameter)
+    parameters:
+    - id: parameter
+      type: VMS.TPS.Common.Model.API.OptimizationParameter
+      description: The parameter that is removed.
+    content.vb: Public Sub RemoveParameter(parameter As OptimizationParameter)
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.RemoveParameter*
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.UseJawTracking
+  commentId: P:VMS.TPS.Common.Model.API.OptimizationSetup.UseJawTracking
+  id: UseJawTracking
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: UseJawTracking
+  nameWithType: OptimizationSetup.UseJawTracking
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.UseJawTracking
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this property depends on your Eclipse Scripting API license] Jaw tracking parameter for VMAT optimization.
+
+    The parameter can only be set for plans to be delivered with a treatment machine that supports jaw tracking.
+  example: []
+  syntax:
+    content: public bool UseJawTracking { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseJawTracking As Boolean
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.UseJawTracking*
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.Objectives
+  commentId: P:VMS.TPS.Common.Model.API.OptimizationSetup.Objectives
+  id: Objectives
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: Objectives
+  nameWithType: OptimizationSetup.Objectives
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.Objectives
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: A collection of optimization objectives.
+  example: []
+  syntax:
+    content: public IEnumerable<OptimizationObjective> Objectives { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.OptimizationObjective}
+    content.vb: Public ReadOnly Property Objectives As IEnumerable(Of OptimizationObjective)
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.Objectives*
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.Parameters
+  commentId: P:VMS.TPS.Common.Model.API.OptimizationSetup.Parameters
+  id: Parameters
+  parent: VMS.TPS.Common.Model.API.OptimizationSetup
+  langs:
+  - csharp
+  - vb
+  name: Parameters
+  nameWithType: OptimizationSetup.Parameters
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.Parameters
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: A collection of optimization parameters.
+  example: []
+  syntax:
+    content: public IEnumerable<OptimizationParameter> Parameters { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.OptimizationParameter}
+    content.vb: Public ReadOnly Property Parameters As IEnumerable(Of OptimizationParameter)
+  overload: VMS.TPS.Common.Model.API.OptimizationSetup.Parameters*
+references:
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: VMS.TPS.Common.Model.API.SerializableObject
+  commentId: T:VMS.TPS.Common.Model.API.SerializableObject
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: VMS.TPS.Common.Model.API.SerializableObject
+- uid: System.Xml.Serialization.IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  nameWithType: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+- uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  name: GetSchema()
+  nameWithType: SerializableObject.GetSchema()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.GetSchema()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  name: ReadXml(XmlReader)
+  nameWithType: SerializableObject.ReadXml(XmlReader)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  name: WriteXml(XmlWriter, string, object)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, object)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, object)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, Object)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, Object)
+  name.vb: WriteXml(XmlWriter, String, Object)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  name: WriteXml(XmlWriter, string, string)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, string)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, String)
+  name.vb: WriteXml(XmlWriter, String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  name: StartSerialization(string, string)
+  nameWithType: SerializableObject.StartSerialization(string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(string, string)
+  nameWithType.vb: SerializableObject.StartSerialization(String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(String, String)
+  name.vb: StartSerialization(String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  name: EndSerialization()
+  nameWithType: SerializableObject.EndSerialization()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  name: ClearSerializationHistory()
+  nameWithType: SerializableObject.ClearSerializationHistory()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: System.Xml.Serialization.XmlSerializer
+  commentId: T:System.Xml.Serialization.XmlSerializer
+  isExternal: true
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml(XmlWriter)
+  nameWithType: SerializableObject.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.WriteXml*
+  commentId: Overload:VMS.TPS.Common.Model.API.OptimizationSetup.WriteXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationSetup.html#VMS_TPS_Common_Model_API_OptimizationSetup_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml
+  nameWithType: OptimizationSetup.WriteXml
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.WriteXml
+- uid: System.Xml.XmlWriter
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticNormalTissueObjective*
+  commentId: Overload:VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticNormalTissueObjective
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationSetup.html#VMS_TPS_Common_Model_API_OptimizationSetup_AddAutomaticNormalTissueObjective_System_Double_
+  name: AddAutomaticNormalTissueObjective
+  nameWithType: OptimizationSetup.AddAutomaticNormalTissueObjective
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticNormalTissueObjective
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter
+  commentId: T:VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter.html
+  name: OptimizationNormalTissueParameter
+  nameWithType: OptimizationNormalTissueParameter
+  fullName: VMS.TPS.Common.Model.API.OptimizationNormalTissueParameter
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticSbrtNormalTissueObjective*
+  commentId: Overload:VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticSbrtNormalTissueObjective
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationSetup.html#VMS_TPS_Common_Model_API_OptimizationSetup_AddAutomaticSbrtNormalTissueObjective_System_Double_
+  name: AddAutomaticSbrtNormalTissueObjective
+  nameWithType: OptimizationSetup.AddAutomaticSbrtNormalTissueObjective
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddAutomaticSbrtNormalTissueObjective
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddBeamSpecificParameter*
+  commentId: Overload:VMS.TPS.Common.Model.API.OptimizationSetup.AddBeamSpecificParameter
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationSetup.html#VMS_TPS_Common_Model_API_OptimizationSetup_AddBeamSpecificParameter_VMS_TPS_Common_Model_API_Beam_System_Double_System_Double_System_Boolean_
+  name: AddBeamSpecificParameter
+  nameWithType: OptimizationSetup.AddBeamSpecificParameter
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddBeamSpecificParameter
+- uid: VMS.TPS.Common.Model.API.Beam
+  commentId: T:VMS.TPS.Common.Model.API.Beam
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html
+  name: Beam
+  nameWithType: Beam
+  fullName: VMS.TPS.Common.Model.API.Beam
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: VMS.TPS.Common.Model.API.OptimizationIMRTBeamParameter
+  commentId: T:VMS.TPS.Common.Model.API.OptimizationIMRTBeamParameter
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationIMRTBeamParameter.html
+  name: OptimizationIMRTBeamParameter
+  nameWithType: OptimizationIMRTBeamParameter
+  fullName: VMS.TPS.Common.Model.API.OptimizationIMRTBeamParameter
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective*
+  commentId: Overload:VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationSetup.html#VMS_TPS_Common_Model_API_OptimizationSetup_AddEUDObjective_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_Types_OptimizationObjectiveOperator_VMS_TPS_Common_Model_Types_DoseValue_System_Double_System_Double_
+  name: AddEUDObjective
+  nameWithType: OptimizationSetup.AddEUDObjective
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddEUDObjective
+- uid: VMS.TPS.Common.Model.API.Structure
+  commentId: T:VMS.TPS.Common.Model.API.Structure
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Structure.html
+  name: Structure
+  nameWithType: Structure
+  fullName: VMS.TPS.Common.Model.API.Structure
+- uid: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+  commentId: T:VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator.html
+  name: OptimizationObjectiveOperator
+  nameWithType: OptimizationObjectiveOperator
+  fullName: VMS.TPS.Common.Model.Types.OptimizationObjectiveOperator
+- uid: VMS.TPS.Common.Model.Types.DoseValue
+  commentId: T:VMS.TPS.Common.Model.Types.DoseValue
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DoseValue.html
+  name: DoseValue
+  nameWithType: DoseValue
+  fullName: VMS.TPS.Common.Model.Types.DoseValue
+- uid: VMS.TPS.Common.Model.API.OptimizationEUDObjective
+  commentId: T:VMS.TPS.Common.Model.API.OptimizationEUDObjective
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationEUDObjective.html
+  name: OptimizationEUDObjective
+  nameWithType: OptimizationEUDObjective
+  fullName: VMS.TPS.Common.Model.API.OptimizationEUDObjective
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective*
+  commentId: Overload:VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationSetup.html#VMS_TPS_Common_Model_API_OptimizationSetup_AddMeanDoseObjective_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_Types_DoseValue_System_Double_
+  name: AddMeanDoseObjective
+  nameWithType: OptimizationSetup.AddMeanDoseObjective
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddMeanDoseObjective
+- uid: VMS.TPS.Common.Model.API.OptimizationMeanDoseObjective
+  commentId: T:VMS.TPS.Common.Model.API.OptimizationMeanDoseObjective
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationMeanDoseObjective.html
+  name: OptimizationMeanDoseObjective
+  nameWithType: OptimizationMeanDoseObjective
+  fullName: VMS.TPS.Common.Model.API.OptimizationMeanDoseObjective
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddNormalTissueObjective*
+  commentId: Overload:VMS.TPS.Common.Model.API.OptimizationSetup.AddNormalTissueObjective
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationSetup.html#VMS_TPS_Common_Model_API_OptimizationSetup_AddNormalTissueObjective_System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: AddNormalTissueObjective
+  nameWithType: OptimizationSetup.AddNormalTissueObjective
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddNormalTissueObjective
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective*
+  commentId: Overload:VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationSetup.html#VMS_TPS_Common_Model_API_OptimizationSetup_AddPointObjective_VMS_TPS_Common_Model_API_Structure_VMS_TPS_Common_Model_Types_OptimizationObjectiveOperator_VMS_TPS_Common_Model_Types_DoseValue_System_Double_System_Double_
+  name: AddPointObjective
+  nameWithType: OptimizationSetup.AddPointObjective
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddPointObjective
+- uid: VMS.TPS.Common.Model.API.OptimizationPointObjective
+  commentId: T:VMS.TPS.Common.Model.API.OptimizationPointObjective
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationPointObjective.html
+  name: OptimizationPointObjective
+  nameWithType: OptimizationPointObjective
+  fullName: VMS.TPS.Common.Model.API.OptimizationPointObjective
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.AddProtonNormalTissueObjective*
+  commentId: Overload:VMS.TPS.Common.Model.API.OptimizationSetup.AddProtonNormalTissueObjective
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationSetup.html#VMS_TPS_Common_Model_API_OptimizationSetup_AddProtonNormalTissueObjective_System_Double_System_Double_System_Double_System_Double_
+  name: AddProtonNormalTissueObjective
+  nameWithType: OptimizationSetup.AddProtonNormalTissueObjective
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.AddProtonNormalTissueObjective
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.RemoveObjective*
+  commentId: Overload:VMS.TPS.Common.Model.API.OptimizationSetup.RemoveObjective
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationSetup.html#VMS_TPS_Common_Model_API_OptimizationSetup_RemoveObjective_VMS_TPS_Common_Model_API_OptimizationObjective_
+  name: RemoveObjective
+  nameWithType: OptimizationSetup.RemoveObjective
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.RemoveObjective
+- uid: VMS.TPS.Common.Model.API.OptimizationObjective
+  commentId: T:VMS.TPS.Common.Model.API.OptimizationObjective
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationObjective.html
+  name: OptimizationObjective
+  nameWithType: OptimizationObjective
+  fullName: VMS.TPS.Common.Model.API.OptimizationObjective
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.RemoveParameter*
+  commentId: Overload:VMS.TPS.Common.Model.API.OptimizationSetup.RemoveParameter
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationSetup.html#VMS_TPS_Common_Model_API_OptimizationSetup_RemoveParameter_VMS_TPS_Common_Model_API_OptimizationParameter_
+  name: RemoveParameter
+  nameWithType: OptimizationSetup.RemoveParameter
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.RemoveParameter
+- uid: VMS.TPS.Common.Model.API.OptimizationParameter
+  commentId: T:VMS.TPS.Common.Model.API.OptimizationParameter
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationParameter.html
+  name: OptimizationParameter
+  nameWithType: OptimizationParameter
+  fullName: VMS.TPS.Common.Model.API.OptimizationParameter
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.UseJawTracking*
+  commentId: Overload:VMS.TPS.Common.Model.API.OptimizationSetup.UseJawTracking
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationSetup.html#VMS_TPS_Common_Model_API_OptimizationSetup_UseJawTracking
+  name: UseJawTracking
+  nameWithType: OptimizationSetup.UseJawTracking
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.UseJawTracking
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.Objectives*
+  commentId: Overload:VMS.TPS.Common.Model.API.OptimizationSetup.Objectives
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationSetup.html#VMS_TPS_Common_Model_API_OptimizationSetup_Objectives
+  name: Objectives
+  nameWithType: OptimizationSetup.Objectives
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.Objectives
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.OptimizationObjective}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.OptimizationObjective}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<OptimizationObjective>
+  nameWithType: IEnumerable<OptimizationObjective>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.OptimizationObjective>
+  nameWithType.vb: IEnumerable(Of OptimizationObjective)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.OptimizationObjective)
+  name.vb: IEnumerable(Of OptimizationObjective)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.OptimizationObjective
+    name: OptimizationObjective
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.OptimizationObjective.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.OptimizationObjective
+    name: OptimizationObjective
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.OptimizationObjective.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: VMS.TPS.Common.Model.API.OptimizationSetup.Parameters*
+  commentId: Overload:VMS.TPS.Common.Model.API.OptimizationSetup.Parameters
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.OptimizationSetup.html#VMS_TPS_Common_Model_API_OptimizationSetup_Parameters
+  name: Parameters
+  nameWithType: OptimizationSetup.Parameters
+  fullName: VMS.TPS.Common.Model.API.OptimizationSetup.Parameters
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.OptimizationParameter}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.OptimizationParameter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<OptimizationParameter>
+  nameWithType: IEnumerable<OptimizationParameter>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.OptimizationParameter>
+  nameWithType.vb: IEnumerable(Of OptimizationParameter)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.OptimizationParameter)
+  name.vb: IEnumerable(Of OptimizationParameter)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.OptimizationParameter
+    name: OptimizationParameter
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.OptimizationParameter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.OptimizationParameter
+    name: OptimizationParameter
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.OptimizationParameter.html
+  - name: )

@@ -1,0 +1,519 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.LMCMSSOptions
+  commentId: T:VMS.TPS.Common.Model.Types.LMCMSSOptions
+  id: LMCMSSOptions
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.LMCMSSOptions.#ctor(System.Int32)
+  - VMS.TPS.Common.Model.Types.LMCMSSOptions.NumberOfIterations
+  langs:
+  - csharp
+  - vb
+  name: LMCMSSOptions
+  nameWithType: LMCMSSOptions
+  fullName: VMS.TPS.Common.Model.Types.LMCMSSOptions
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Options for calculating leaf motions using the non-Varian MSS Leaf Motion Calculator (LMCMSS) algorithm.
+  example: []
+  syntax:
+    content: public class LMCMSSOptions
+    content.vb: Public Class LMCMSSOptions
+  seealso:
+  - linkId: VMS.TPS.Common.Model.API.PlanSetup.SetCalculationModel(VMS.TPS.Common.Model.Types.CalculationType,System.String)
+    commentId: M:VMS.TPS.Common.Model.API.PlanSetup.SetCalculationModel(VMS.TPS.Common.Model.Types.CalculationType,System.String)
+    altText: SetCalculationOption
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: VMS.TPS.Common.Model.Types.LMCMSSOptions.#ctor(System.Int32)
+  commentId: M:VMS.TPS.Common.Model.Types.LMCMSSOptions.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: VMS.TPS.Common.Model.Types.LMCMSSOptions
+  langs:
+  - csharp
+  - vb
+  name: LMCMSSOptions(int)
+  nameWithType: LMCMSSOptions.LMCMSSOptions(int)
+  fullName: VMS.TPS.Common.Model.Types.LMCMSSOptions.LMCMSSOptions(int)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Constructor.
+  example: []
+  syntax:
+    content: public LMCMSSOptions(int numberOfIterations)
+    parameters:
+    - id: numberOfIterations
+      type: System.Int32
+      description: The number of calculation iterations.
+    content.vb: Public Sub New(numberOfIterations As Integer)
+  overload: VMS.TPS.Common.Model.Types.LMCMSSOptions.#ctor*
+  nameWithType.vb: LMCMSSOptions.New(Integer)
+  fullName.vb: VMS.TPS.Common.Model.Types.LMCMSSOptions.New(Integer)
+  name.vb: New(Integer)
+- uid: VMS.TPS.Common.Model.Types.LMCMSSOptions.NumberOfIterations
+  commentId: P:VMS.TPS.Common.Model.Types.LMCMSSOptions.NumberOfIterations
+  id: NumberOfIterations
+  parent: VMS.TPS.Common.Model.Types.LMCMSSOptions
+  langs:
+  - csharp
+  - vb
+  name: NumberOfIterations
+  nameWithType: LMCMSSOptions.NumberOfIterations
+  fullName: VMS.TPS.Common.Model.Types.LMCMSSOptions.NumberOfIterations
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The number of calculation iterations.
+  example: []
+  syntax:
+    content: public int NumberOfIterations { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property NumberOfIterations As Integer
+  overload: VMS.TPS.Common.Model.Types.LMCMSSOptions.NumberOfIterations*
+references:
+- uid: VMS.TPS.Common.Model.API.PlanSetup.SetCalculationModel(VMS.TPS.Common.Model.Types.CalculationType,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.PlanSetup.SetCalculationModel(VMS.TPS.Common.Model.Types.CalculationType,System.String)
+  parent: VMS.TPS.Common.Model.API.PlanSetup
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetCalculationModel_VMS_TPS_Common_Model_Types_CalculationType_System_String_
+  name: SetCalculationModel(CalculationType, string)
+  nameWithType: PlanSetup.SetCalculationModel(CalculationType, string)
+  fullName: VMS.TPS.Common.Model.API.PlanSetup.SetCalculationModel(VMS.TPS.Common.Model.Types.CalculationType, string)
+  nameWithType.vb: PlanSetup.SetCalculationModel(CalculationType, String)
+  fullName.vb: VMS.TPS.Common.Model.API.PlanSetup.SetCalculationModel(VMS.TPS.Common.Model.Types.CalculationType, String)
+  name.vb: SetCalculationModel(CalculationType, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.PlanSetup.SetCalculationModel(VMS.TPS.Common.Model.Types.CalculationType,System.String)
+    name: SetCalculationModel
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetCalculationModel_VMS_TPS_Common_Model_Types_CalculationType_System_String_
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.CalculationType
+    name: CalculationType
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.PlanSetup.SetCalculationModel(VMS.TPS.Common.Model.Types.CalculationType,System.String)
+    name: SetCalculationModel
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.PlanSetup.html#VMS_TPS_Common_Model_API_PlanSetup_SetCalculationModel_VMS_TPS_Common_Model_Types_CalculationType_System_String_
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.CalculationType
+    name: CalculationType
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.PlanSetup
+  commentId: T:VMS.TPS.Common.Model.API.PlanSetup
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.PlanSetup.html
+  name: PlanSetup
+  nameWithType: PlanSetup
+  fullName: VMS.TPS.Common.Model.API.PlanSetup
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: VMS.TPS.Common.Model.Types.LMCMSSOptions.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.Types.LMCMSSOptions.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.LMCMSSOptions.html#VMS_TPS_Common_Model_Types_LMCMSSOptions__ctor_System_Int32_
+  name: LMCMSSOptions
+  nameWithType: LMCMSSOptions.LMCMSSOptions
+  fullName: VMS.TPS.Common.Model.Types.LMCMSSOptions.LMCMSSOptions
+  nameWithType.vb: LMCMSSOptions.New
+  fullName.vb: VMS.TPS.Common.Model.Types.LMCMSSOptions.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: VMS.TPS.Common.Model.Types.LMCMSSOptions.NumberOfIterations*
+  commentId: Overload:VMS.TPS.Common.Model.Types.LMCMSSOptions.NumberOfIterations
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.LMCMSSOptions.html#VMS_TPS_Common_Model_Types_LMCMSSOptions_NumberOfIterations
+  name: NumberOfIterations
+  nameWithType: LMCMSSOptions.NumberOfIterations
+  fullName: VMS.TPS.Common.Model.Types.LMCMSSOptions.NumberOfIterations

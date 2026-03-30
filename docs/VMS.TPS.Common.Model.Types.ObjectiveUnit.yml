@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.ObjectiveUnit
+  commentId: T:VMS.TPS.Common.Model.Types.ObjectiveUnit
+  id: ObjectiveUnit
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.ObjectiveUnit.Absolute
+  - VMS.TPS.Common.Model.Types.ObjectiveUnit.None
+  - VMS.TPS.Common.Model.Types.ObjectiveUnit.Relative
+  langs:
+  - csharp
+  - vb
+  name: ObjectiveUnit
+  nameWithType: ObjectiveUnit
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveUnit
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Clinical goal Objective Unit
+  example: []
+  syntax:
+    content: public enum ObjectiveUnit
+    content.vb: Public Enum ObjectiveUnit
+- uid: VMS.TPS.Common.Model.Types.ObjectiveUnit.Relative
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveUnit.Relative
+  id: Relative
+  parent: VMS.TPS.Common.Model.Types.ObjectiveUnit
+  langs:
+  - csharp
+  - vb
+  name: Relative
+  nameWithType: ObjectiveUnit.Relative
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveUnit.Relative
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Relative value, percentage
+  example: []
+  syntax:
+    content: Relative = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveUnit
+- uid: VMS.TPS.Common.Model.Types.ObjectiveUnit.Absolute
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveUnit.Absolute
+  id: Absolute
+  parent: VMS.TPS.Common.Model.Types.ObjectiveUnit
+  langs:
+  - csharp
+  - vb
+  name: Absolute
+  nameWithType: ObjectiveUnit.Absolute
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveUnit.Absolute
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Absolute value
+  example: []
+  syntax:
+    content: Absolute = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveUnit
+- uid: VMS.TPS.Common.Model.Types.ObjectiveUnit.None
+  commentId: F:VMS.TPS.Common.Model.Types.ObjectiveUnit.None
+  id: None
+  parent: VMS.TPS.Common.Model.Types.ObjectiveUnit
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: ObjectiveUnit.None
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveUnit.None
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Undefined
+  example: []
+  syntax:
+    content: None = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.ObjectiveUnit
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.ObjectiveUnit
+  commentId: T:VMS.TPS.Common.Model.Types.ObjectiveUnit
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ObjectiveUnit.html
+  name: ObjectiveUnit
+  nameWithType: ObjectiveUnit
+  fullName: VMS.TPS.Common.Model.Types.ObjectiveUnit

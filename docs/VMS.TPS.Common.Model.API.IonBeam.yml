@@ -1,0 +1,3657 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.API.IonBeam
+  commentId: T:VMS.TPS.Common.Model.API.IonBeam
+  id: IonBeam
+  parent: VMS.TPS.Common.Model.API
+  children:
+  - VMS.TPS.Common.Model.API.IonBeam.AirGap
+  - VMS.TPS.Common.Model.API.IonBeam.ApplyParameters(VMS.TPS.Common.Model.API.BeamParameters)
+  - VMS.TPS.Common.Model.API.IonBeam.BeamLineStatus
+  - VMS.TPS.Common.Model.API.IonBeam.DistalTargetMargin
+  - VMS.TPS.Common.Model.API.IonBeam.GetDeliveryTimeStatusByRoomId(System.String)
+  - VMS.TPS.Common.Model.API.IonBeam.GetEditableParameters
+  - VMS.TPS.Common.Model.API.IonBeam.GetProtonDeliveryTimeByRoomIdAsNumber(System.String)
+  - VMS.TPS.Common.Model.API.IonBeam.IonControlPoints
+  - VMS.TPS.Common.Model.API.IonBeam.LateralMargins
+  - VMS.TPS.Common.Model.API.IonBeam.LateralSpreadingDevices
+  - VMS.TPS.Common.Model.API.IonBeam.NominalRange
+  - VMS.TPS.Common.Model.API.IonBeam.NominalSOBPWidth
+  - VMS.TPS.Common.Model.API.IonBeam.OptionId
+  - VMS.TPS.Common.Model.API.IonBeam.PatientSupportId
+  - VMS.TPS.Common.Model.API.IonBeam.PatientSupportType
+  - VMS.TPS.Common.Model.API.IonBeam.ProximalTargetMargin
+  - VMS.TPS.Common.Model.API.IonBeam.RangeModulators
+  - VMS.TPS.Common.Model.API.IonBeam.RangeShifters
+  - VMS.TPS.Common.Model.API.IonBeam.ScanMode
+  - VMS.TPS.Common.Model.API.IonBeam.SnoutId
+  - VMS.TPS.Common.Model.API.IonBeam.SnoutPosition
+  - VMS.TPS.Common.Model.API.IonBeam.TargetStructure
+  - VMS.TPS.Common.Model.API.IonBeam.VirtualSADX
+  - VMS.TPS.Common.Model.API.IonBeam.VirtualSADY
+  - VMS.TPS.Common.Model.API.IonBeam.WriteXml(System.Xml.XmlWriter)
+  langs:
+  - csharp
+  - vb
+  name: IonBeam
+  nameWithType: IonBeam
+  fullName: VMS.TPS.Common.Model.API.IonBeam
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Proton beam interface.
+  example: []
+  syntax:
+    content: 'public class IonBeam : Beam, IXmlSerializable'
+    content.vb: Public Class IonBeam Inherits Beam Implements IXmlSerializable
+  inheritance:
+  - System.Object
+  - VMS.TPS.Common.Model.API.SerializableObject
+  - VMS.TPS.Common.Model.API.ApiDataObject
+  - VMS.TPS.Common.Model.API.Beam
+  implements:
+  - System.Xml.Serialization.IXmlSerializable
+  inheritedMembers:
+  - VMS.TPS.Common.Model.API.Beam.AddBolus(VMS.TPS.Common.Model.API.Bolus)
+  - VMS.TPS.Common.Model.API.Beam.RemoveBolus(VMS.TPS.Common.Model.API.Bolus)
+  - VMS.TPS.Common.Model.API.Beam.AddBolus(System.String)
+  - VMS.TPS.Common.Model.API.Beam.AddFlatteningSequence
+  - VMS.TPS.Common.Model.API.Beam.CalculateAverageLeafPairOpenings
+  - VMS.TPS.Common.Model.API.Beam.CanSetOptimalFluence(VMS.TPS.Common.Model.Types.Fluence,System.String@)
+  - VMS.TPS.Common.Model.API.Beam.CollimatorAngleToUser(System.Double)
+  - VMS.TPS.Common.Model.API.Beam.CountSubfields
+  - VMS.TPS.Common.Model.API.Beam.CreateOrReplaceDRR(VMS.TPS.Common.Model.Types.DRRCalculationParameters)
+  - VMS.TPS.Common.Model.API.Beam.FitArcOptimizationApertureToCollimatorJaws
+  - VMS.TPS.Common.Model.API.Beam.FitCollimatorToStructure(VMS.TPS.Common.Model.Types.FitToStructureMargins,VMS.TPS.Common.Model.API.Structure,System.Boolean,System.Boolean,System.Boolean)
+  - VMS.TPS.Common.Model.API.Beam.FitMLCToOutline(System.Windows.Point[][])
+  - VMS.TPS.Common.Model.API.Beam.FitMLCToOutline(System.Windows.Point[][],System.Boolean,VMS.TPS.Common.Model.Types.JawFitting,VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint,VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint)
+  - VMS.TPS.Common.Model.API.Beam.FitMLCToStructure(VMS.TPS.Common.Model.API.Structure)
+  - VMS.TPS.Common.Model.API.Beam.FitMLCToStructure(VMS.TPS.Common.Model.Types.FitToStructureMargins,VMS.TPS.Common.Model.API.Structure,System.Boolean,VMS.TPS.Common.Model.Types.JawFitting,VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint,VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint)
+  - VMS.TPS.Common.Model.API.Beam.GantryAngleToUser(System.Double)
+  - VMS.TPS.Common.Model.API.Beam.GetCAXPathLengthInBolus(VMS.TPS.Common.Model.API.Bolus)
+  - VMS.TPS.Common.Model.API.Beam.GetOptimalFluence
+  - VMS.TPS.Common.Model.API.Beam.GetSourceLocation(System.Double)
+  - VMS.TPS.Common.Model.API.Beam.GetSourceToBolusDistance(VMS.TPS.Common.Model.API.Bolus)
+  - VMS.TPS.Common.Model.API.Beam.GetStructureOutlines(VMS.TPS.Common.Model.API.Structure,System.Boolean)
+  - VMS.TPS.Common.Model.API.Beam.JawPositionsToUserString(VMS.TPS.Common.Model.Types.VRect{System.Double})
+  - VMS.TPS.Common.Model.API.Beam.PatientSupportAngleToUser(System.Double)
+  - VMS.TPS.Common.Model.API.Beam.RemoveBolus(System.String)
+  - VMS.TPS.Common.Model.API.Beam.RemoveFlatteningSequence
+  - VMS.TPS.Common.Model.API.Beam.SetOptimalFluence(VMS.TPS.Common.Model.Types.Fluence)
+  - VMS.TPS.Common.Model.API.Beam.Id
+  - VMS.TPS.Common.Model.API.Beam.Name
+  - VMS.TPS.Common.Model.API.Beam.Comment
+  - VMS.TPS.Common.Model.API.Beam.Meterset
+  - VMS.TPS.Common.Model.API.Beam.BeamNumber
+  - VMS.TPS.Common.Model.API.Beam.Applicator
+  - VMS.TPS.Common.Model.API.Beam.ArcLength
+  - VMS.TPS.Common.Model.API.Beam.ArcOptimizationAperture
+  - VMS.TPS.Common.Model.API.Beam.AreControlPointJawsMoving
+  - VMS.TPS.Common.Model.API.Beam.AverageSSD
+  - VMS.TPS.Common.Model.API.Beam.BeamTechnique
+  - VMS.TPS.Common.Model.API.Beam.Blocks
+  - VMS.TPS.Common.Model.API.Beam.Boluses
+  - VMS.TPS.Common.Model.API.Beam.CalculationLogs
+  - VMS.TPS.Common.Model.API.Beam.CollimatorRotation
+  - VMS.TPS.Common.Model.API.Beam.CollimatorRotationAsString
+  - VMS.TPS.Common.Model.API.Beam.Compensator
+  - VMS.TPS.Common.Model.API.Beam.ControlPoints
+  - VMS.TPS.Common.Model.API.Beam.CreationDateTime
+  - VMS.TPS.Common.Model.API.Beam.Dose
+  - VMS.TPS.Common.Model.API.Beam.DoseRate
+  - VMS.TPS.Common.Model.API.Beam.DosimetricLeafGap
+  - VMS.TPS.Common.Model.API.Beam.EnergyMode
+  - VMS.TPS.Common.Model.API.Beam.EnergyModeDisplayName
+  - VMS.TPS.Common.Model.API.Beam.FieldReferencePoints
+  - VMS.TPS.Common.Model.API.Beam.GantryDirection
+  - VMS.TPS.Common.Model.API.Beam.HasAllMLCLeavesClosed
+  - VMS.TPS.Common.Model.API.Beam.IsGantryExtended
+  - VMS.TPS.Common.Model.API.Beam.IsGantryExtendedAtStopAngle
+  - VMS.TPS.Common.Model.API.Beam.IsImagingTreatmentField
+  - VMS.TPS.Common.Model.API.Beam.IsIMRT
+  - VMS.TPS.Common.Model.API.Beam.IsocenterPosition
+  - VMS.TPS.Common.Model.API.Beam.IsSetupField
+  - VMS.TPS.Common.Model.API.Beam.MetersetPerGy
+  - VMS.TPS.Common.Model.API.Beam.MLC
+  - VMS.TPS.Common.Model.API.Beam.MLCPlanType
+  - VMS.TPS.Common.Model.API.Beam.MLCTransmissionFactor
+  - VMS.TPS.Common.Model.API.Beam.MotionCompensationTechnique
+  - VMS.TPS.Common.Model.API.Beam.MotionSignalSource
+  - VMS.TPS.Common.Model.API.Beam.NormalizationFactor
+  - VMS.TPS.Common.Model.API.Beam.NormalizationMethod
+  - VMS.TPS.Common.Model.API.Beam.Plan
+  - VMS.TPS.Common.Model.API.Beam.PlannedSSD
+  - VMS.TPS.Common.Model.API.Beam.ReferenceImage
+  - VMS.TPS.Common.Model.API.Beam.SetupNote
+  - VMS.TPS.Common.Model.API.Beam.SetupTechnique
+  - VMS.TPS.Common.Model.API.Beam.SSD
+  - VMS.TPS.Common.Model.API.Beam.SSDAtStopAngle
+  - VMS.TPS.Common.Model.API.Beam.Technique
+  - VMS.TPS.Common.Model.API.Beam.ToleranceTableLabel
+  - VMS.TPS.Common.Model.API.Beam.Trays
+  - VMS.TPS.Common.Model.API.Beam.TreatmentTime
+  - VMS.TPS.Common.Model.API.Beam.TreatmentUnit
+  - VMS.TPS.Common.Model.API.Beam.Wedges
+  - VMS.TPS.Common.Model.API.Beam.WeightFactor
+  - VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  - VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  - VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  - VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  - VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  - VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  - VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.API.IonBeam.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.IonBeam.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  nameWithType: IonBeam.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.IonBeam.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Converts an object into its XML representation.
+
+    For more information on how to serialize an object into an XML document, see <xref href="System.Xml.Serialization.XmlSerializer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override void WriteXml(XmlWriter writer)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The System.Xml.XmlWriter stream, to which the object is serialized.
+    content.vb: Public Overrides Sub WriteXml(writer As XmlWriter)
+  overridden: VMS.TPS.Common.Model.API.Beam.WriteXml(System.Xml.XmlWriter)
+  overload: VMS.TPS.Common.Model.API.IonBeam.WriteXml*
+- uid: VMS.TPS.Common.Model.API.IonBeam.ApplyParameters(VMS.TPS.Common.Model.API.BeamParameters)
+  commentId: M:VMS.TPS.Common.Model.API.IonBeam.ApplyParameters(VMS.TPS.Common.Model.API.BeamParameters)
+  id: ApplyParameters(VMS.TPS.Common.Model.API.BeamParameters)
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: ApplyParameters(BeamParameters)
+  nameWithType: IonBeam.ApplyParameters(BeamParameters)
+  fullName: VMS.TPS.Common.Model.API.IonBeam.ApplyParameters(VMS.TPS.Common.Model.API.BeamParameters)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] Modifies the proton beam by applying the given parameters. This is the only
+
+    way to modify a beam using the Eclipse Scripting API. After a call to
+
+    ApplyParameters, the getters of this beam instance will return the new values.
+
+    An ApplicationException is thrown if the parameters form an invalid combination.
+
+    DVH Estimations of the plan, if any, are cleared.
+  example: []
+  syntax:
+    content: public void ApplyParameters(BeamParameters beamParams)
+    parameters:
+    - id: beamParams
+      type: VMS.TPS.Common.Model.API.BeamParameters
+      description: The parameters to apply to the beam.
+    content.vb: Public Sub ApplyParameters(beamParams As BeamParameters)
+  overload: VMS.TPS.Common.Model.API.IonBeam.ApplyParameters*
+- uid: VMS.TPS.Common.Model.API.IonBeam.GetDeliveryTimeStatusByRoomId(System.String)
+  commentId: M:VMS.TPS.Common.Model.API.IonBeam.GetDeliveryTimeStatusByRoomId(System.String)
+  id: GetDeliveryTimeStatusByRoomId(System.String)
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: GetDeliveryTimeStatusByRoomId(string)
+  nameWithType: IonBeam.GetDeliveryTimeStatusByRoomId(string)
+  fullName: VMS.TPS.Common.Model.API.IonBeam.GetDeliveryTimeStatusByRoomId(string)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Returns a proton field deliverability status by room ID.
+
+    Proton field deliverability status can be Deliverable, Undeliverable or NotCalculated.
+  example: []
+  syntax:
+    content: public ProtonDeliveryTimeStatus GetDeliveryTimeStatusByRoomId(string roomId)
+    parameters:
+    - id: roomId
+      type: System.String
+      description: Treatment room ID.
+    return:
+      type: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus
+      description: Returns a proton field deliverability status by room ID.
+    content.vb: Public Function GetDeliveryTimeStatusByRoomId(roomId As String) As ProtonDeliveryTimeStatus
+  overload: VMS.TPS.Common.Model.API.IonBeam.GetDeliveryTimeStatusByRoomId*
+  nameWithType.vb: IonBeam.GetDeliveryTimeStatusByRoomId(String)
+  fullName.vb: VMS.TPS.Common.Model.API.IonBeam.GetDeliveryTimeStatusByRoomId(String)
+  name.vb: GetDeliveryTimeStatusByRoomId(String)
+- uid: VMS.TPS.Common.Model.API.IonBeam.GetEditableParameters
+  commentId: M:VMS.TPS.Common.Model.API.IonBeam.GetEditableParameters
+  id: GetEditableParameters
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: GetEditableParameters()
+  nameWithType: IonBeam.GetEditableParameters()
+  fullName: VMS.TPS.Common.Model.API.IonBeam.GetEditableParameters()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Returns a new editable copy of the ion beam parameters.
+
+    The returned IonBeamParameters object is not updated if the beam parameters in the data model are changed,
+
+    for example, by using another IonBeamParameters object.
+  example: []
+  syntax:
+    content: public IonBeamParameters GetEditableParameters()
+    return:
+      type: VMS.TPS.Common.Model.API.IonBeamParameters
+      description: >-
+        Returns a new parameters object. Its values are copied from the
+                    corresponding properties of this object.
+    content.vb: Public Function GetEditableParameters() As IonBeamParameters
+  overload: VMS.TPS.Common.Model.API.IonBeam.GetEditableParameters*
+- uid: VMS.TPS.Common.Model.API.IonBeam.GetProtonDeliveryTimeByRoomIdAsNumber(System.String)
+  commentId: M:VMS.TPS.Common.Model.API.IonBeam.GetProtonDeliveryTimeByRoomIdAsNumber(System.String)
+  id: GetProtonDeliveryTimeByRoomIdAsNumber(System.String)
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: GetProtonDeliveryTimeByRoomIdAsNumber(string)
+  nameWithType: IonBeam.GetProtonDeliveryTimeByRoomIdAsNumber(string)
+  fullName: VMS.TPS.Common.Model.API.IonBeam.GetProtonDeliveryTimeByRoomIdAsNumber(string)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Returns a proton delivery time by room ID in seconds.
+
+    Returns System::Double::NaN if delivery time status is Undeliverable or NotCalculated.
+  example: []
+  syntax:
+    content: public double GetProtonDeliveryTimeByRoomIdAsNumber(string roomId)
+    parameters:
+    - id: roomId
+      type: System.String
+      description: Treatment room ID.
+    return:
+      type: System.Double
+      description: Returns a proton delivery time by room ID in seconds.
+    content.vb: Public Function GetProtonDeliveryTimeByRoomIdAsNumber(roomId As String) As Double
+  overload: VMS.TPS.Common.Model.API.IonBeam.GetProtonDeliveryTimeByRoomIdAsNumber*
+  nameWithType.vb: IonBeam.GetProtonDeliveryTimeByRoomIdAsNumber(String)
+  fullName.vb: VMS.TPS.Common.Model.API.IonBeam.GetProtonDeliveryTimeByRoomIdAsNumber(String)
+  name.vb: GetProtonDeliveryTimeByRoomIdAsNumber(String)
+- uid: VMS.TPS.Common.Model.API.IonBeam.AirGap
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.AirGap
+  id: AirGap
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: AirGap
+  nameWithType: IonBeam.AirGap
+  fullName: VMS.TPS.Common.Model.API.IonBeam.AirGap
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The user-defined air gap in mm.
+  example: []
+  syntax:
+    content: public double AirGap { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property AirGap As Double
+  overload: VMS.TPS.Common.Model.API.IonBeam.AirGap*
+- uid: VMS.TPS.Common.Model.API.IonBeam.BeamLineStatus
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.BeamLineStatus
+  id: BeamLineStatus
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: BeamLineStatus
+  nameWithType: IonBeam.BeamLineStatus
+  fullName: VMS.TPS.Common.Model.API.IonBeam.BeamLineStatus
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Determine beamline's status
+  example: []
+  syntax:
+    content: public ProtonBeamLineStatus BeamLineStatus { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus
+    content.vb: Public ReadOnly Property BeamLineStatus As ProtonBeamLineStatus
+  overload: VMS.TPS.Common.Model.API.IonBeam.BeamLineStatus*
+- uid: VMS.TPS.Common.Model.API.IonBeam.DistalTargetMargin
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.DistalTargetMargin
+  id: DistalTargetMargin
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: DistalTargetMargin
+  nameWithType: IonBeam.DistalTargetMargin
+  fullName: VMS.TPS.Common.Model.API.IonBeam.DistalTargetMargin
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Distal end margin, in mm.
+  example: []
+  syntax:
+    content: public double DistalTargetMargin { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property DistalTargetMargin As Double
+  overload: VMS.TPS.Common.Model.API.IonBeam.DistalTargetMargin*
+- uid: VMS.TPS.Common.Model.API.IonBeam.LateralMargins
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.LateralMargins
+  id: LateralMargins
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: LateralMargins
+  nameWithType: IonBeam.LateralMargins
+  fullName: VMS.TPS.Common.Model.API.IonBeam.LateralMargins
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The lateral margins of this field, in mm.
+  example: []
+  syntax:
+    content: public VRect<double> LateralMargins { get; set; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.VRect{System.Double}
+    content.vb: Public Property LateralMargins As VRect(Of Double)
+  overload: VMS.TPS.Common.Model.API.IonBeam.LateralMargins*
+- uid: VMS.TPS.Common.Model.API.IonBeam.LateralSpreadingDevices
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.LateralSpreadingDevices
+  id: LateralSpreadingDevices
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: LateralSpreadingDevices
+  nameWithType: IonBeam.LateralSpreadingDevices
+  fullName: VMS.TPS.Common.Model.API.IonBeam.LateralSpreadingDevices
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The lateral spreading devices in this beam.
+  example: []
+  syntax:
+    content: public IEnumerable<LateralSpreadingDevice> LateralSpreadingDevices { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.LateralSpreadingDevice}
+    content.vb: Public ReadOnly Property LateralSpreadingDevices As IEnumerable(Of LateralSpreadingDevice)
+  overload: VMS.TPS.Common.Model.API.IonBeam.LateralSpreadingDevices*
+- uid: VMS.TPS.Common.Model.API.IonBeam.NominalRange
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.NominalRange
+  id: NominalRange
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: NominalRange
+  nameWithType: IonBeam.NominalRange
+  fullName: VMS.TPS.Common.Model.API.IonBeam.NominalRange
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The nominal range of the beam line, in mm.
+  example: []
+  syntax:
+    content: public double NominalRange { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property NominalRange As Double
+  overload: VMS.TPS.Common.Model.API.IonBeam.NominalRange*
+- uid: VMS.TPS.Common.Model.API.IonBeam.NominalSOBPWidth
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.NominalSOBPWidth
+  id: NominalSOBPWidth
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: NominalSOBPWidth
+  nameWithType: IonBeam.NominalSOBPWidth
+  fullName: VMS.TPS.Common.Model.API.IonBeam.NominalSOBPWidth
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The nominal width of the Spread Out Bragg Peak, in mm.
+  example: []
+  syntax:
+    content: public double NominalSOBPWidth { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property NominalSOBPWidth As Double
+  overload: VMS.TPS.Common.Model.API.IonBeam.NominalSOBPWidth*
+- uid: VMS.TPS.Common.Model.API.IonBeam.OptionId
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.OptionId
+  id: OptionId
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: OptionId
+  nameWithType: IonBeam.OptionId
+  fullName: VMS.TPS.Common.Model.API.IonBeam.OptionId
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    The identifier of the selected beam-line setting for proton beams. For a typical double scattering system, for example,
+
+    an option is a combination of range modulator, second scatterer, and nominal energy that correspond to a broad proton beam
+
+    with a certain range in patient and field size. Returns null if the option is undefined.
+  example: []
+  syntax:
+    content: public string OptionId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property OptionId As String
+  overload: VMS.TPS.Common.Model.API.IonBeam.OptionId*
+- uid: VMS.TPS.Common.Model.API.IonBeam.PatientSupportId
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.PatientSupportId
+  id: PatientSupportId
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: PatientSupportId
+  nameWithType: IonBeam.PatientSupportId
+  fullName: VMS.TPS.Common.Model.API.IonBeam.PatientSupportId
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Patient support identifier. Returns null if undefined.
+  example: []
+  syntax:
+    content: public string PatientSupportId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property PatientSupportId As String
+  overload: VMS.TPS.Common.Model.API.IonBeam.PatientSupportId*
+- uid: VMS.TPS.Common.Model.API.IonBeam.PatientSupportType
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.PatientSupportType
+  id: PatientSupportType
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: PatientSupportType
+  nameWithType: IonBeam.PatientSupportType
+  fullName: VMS.TPS.Common.Model.API.IonBeam.PatientSupportType
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Patient support type.
+  example: []
+  syntax:
+    content: public PatientSupportType PatientSupportType { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.PatientSupportType
+    content.vb: Public ReadOnly Property PatientSupportType As PatientSupportType
+  overload: VMS.TPS.Common.Model.API.IonBeam.PatientSupportType*
+- uid: VMS.TPS.Common.Model.API.IonBeam.IonControlPoints
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.IonControlPoints
+  id: IonControlPoints
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: IonControlPoints
+  nameWithType: IonBeam.IonControlPoints
+  fullName: VMS.TPS.Common.Model.API.IonBeam.IonControlPoints
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Gets the proton control points.
+  example: []
+  syntax:
+    content: public IonControlPointCollection IonControlPoints { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.IonControlPointCollection
+    content.vb: Public ReadOnly Property IonControlPoints As IonControlPointCollection
+  overload: VMS.TPS.Common.Model.API.IonBeam.IonControlPoints*
+- uid: VMS.TPS.Common.Model.API.IonBeam.ProximalTargetMargin
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.ProximalTargetMargin
+  id: ProximalTargetMargin
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: ProximalTargetMargin
+  nameWithType: IonBeam.ProximalTargetMargin
+  fullName: VMS.TPS.Common.Model.API.IonBeam.ProximalTargetMargin
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Proximal end margin, in mm.
+  example: []
+  syntax:
+    content: public double ProximalTargetMargin { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ProximalTargetMargin As Double
+  overload: VMS.TPS.Common.Model.API.IonBeam.ProximalTargetMargin*
+- uid: VMS.TPS.Common.Model.API.IonBeam.RangeModulators
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.RangeModulators
+  id: RangeModulators
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: RangeModulators
+  nameWithType: IonBeam.RangeModulators
+  fullName: VMS.TPS.Common.Model.API.IonBeam.RangeModulators
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The range modulator devices in this beam.
+  example: []
+  syntax:
+    content: public IEnumerable<RangeModulator> RangeModulators { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.RangeModulator}
+    content.vb: Public ReadOnly Property RangeModulators As IEnumerable(Of RangeModulator)
+  overload: VMS.TPS.Common.Model.API.IonBeam.RangeModulators*
+- uid: VMS.TPS.Common.Model.API.IonBeam.RangeShifters
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.RangeShifters
+  id: RangeShifters
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: RangeShifters
+  nameWithType: IonBeam.RangeShifters
+  fullName: VMS.TPS.Common.Model.API.IonBeam.RangeShifters
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The range shifter devices in this beam.
+  example: []
+  syntax:
+    content: public IEnumerable<RangeShifter> RangeShifters { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.RangeShifter}
+    content.vb: Public ReadOnly Property RangeShifters As IEnumerable(Of RangeShifter)
+  overload: VMS.TPS.Common.Model.API.IonBeam.RangeShifters*
+- uid: VMS.TPS.Common.Model.API.IonBeam.ScanMode
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.ScanMode
+  id: ScanMode
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: ScanMode
+  nameWithType: IonBeam.ScanMode
+  fullName: VMS.TPS.Common.Model.API.IonBeam.ScanMode
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The method of beam scanning to be used during treatment.
+  example: []
+  syntax:
+    content: public IonBeamScanMode ScanMode { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.IonBeamScanMode
+    content.vb: Public ReadOnly Property ScanMode As IonBeamScanMode
+  overload: VMS.TPS.Common.Model.API.IonBeam.ScanMode*
+- uid: VMS.TPS.Common.Model.API.IonBeam.SnoutId
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.SnoutId
+  id: SnoutId
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: SnoutId
+  nameWithType: IonBeam.SnoutId
+  fullName: VMS.TPS.Common.Model.API.IonBeam.SnoutId
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The Snout identifier. Returns null if undefined.
+  example: []
+  syntax:
+    content: public string SnoutId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property SnoutId As String
+  overload: VMS.TPS.Common.Model.API.IonBeam.SnoutId*
+- uid: VMS.TPS.Common.Model.API.IonBeam.SnoutPosition
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.SnoutPosition
+  id: SnoutPosition
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: SnoutPosition
+  nameWithType: IonBeam.SnoutPosition
+  fullName: VMS.TPS.Common.Model.API.IonBeam.SnoutPosition
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The snout position in cm. Returns System::Double::NaN if undefined.
+  example: []
+  syntax:
+    content: public double SnoutPosition { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property SnoutPosition As Double
+  overload: VMS.TPS.Common.Model.API.IonBeam.SnoutPosition*
+- uid: VMS.TPS.Common.Model.API.IonBeam.TargetStructure
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.TargetStructure
+  id: TargetStructure
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: TargetStructure
+  nameWithType: IonBeam.TargetStructure
+  fullName: VMS.TPS.Common.Model.API.IonBeam.TargetStructure
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Returns the field target structure. Null if the field target is not defined (and axial margins are defined around the isocenter level).
+  example: []
+  syntax:
+    content: public Structure TargetStructure { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.Structure
+    content.vb: Public ReadOnly Property TargetStructure As [Structure]
+  overload: VMS.TPS.Common.Model.API.IonBeam.TargetStructure*
+- uid: VMS.TPS.Common.Model.API.IonBeam.VirtualSADX
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.VirtualSADX
+  id: VirtualSADX
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: VirtualSADX
+  nameWithType: IonBeam.VirtualSADX
+  fullName: VMS.TPS.Common.Model.API.IonBeam.VirtualSADX
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Virtual Source-to-Axis Distance X, in mm.
+  example: []
+  syntax:
+    content: public double VirtualSADX { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property VirtualSADX As Double
+  overload: VMS.TPS.Common.Model.API.IonBeam.VirtualSADX*
+- uid: VMS.TPS.Common.Model.API.IonBeam.VirtualSADY
+  commentId: P:VMS.TPS.Common.Model.API.IonBeam.VirtualSADY
+  id: VirtualSADY
+  parent: VMS.TPS.Common.Model.API.IonBeam
+  langs:
+  - csharp
+  - vb
+  name: VirtualSADY
+  nameWithType: IonBeam.VirtualSADY
+  fullName: VMS.TPS.Common.Model.API.IonBeam.VirtualSADY
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Virtual Source-to-Axis Distance Y, in mm.
+  example: []
+  syntax:
+    content: public double VirtualSADY { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property VirtualSADY As Double
+  overload: VMS.TPS.Common.Model.API.IonBeam.VirtualSADY*
+references:
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: VMS.TPS.Common.Model.API.SerializableObject
+  commentId: T:VMS.TPS.Common.Model.API.SerializableObject
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: VMS.TPS.Common.Model.API.SerializableObject
+- uid: VMS.TPS.Common.Model.API.ApiDataObject
+  commentId: T:VMS.TPS.Common.Model.API.ApiDataObject
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html
+  name: ApiDataObject
+  nameWithType: ApiDataObject
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject
+- uid: VMS.TPS.Common.Model.API.Beam
+  commentId: T:VMS.TPS.Common.Model.API.Beam
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html
+  name: Beam
+  nameWithType: Beam
+  fullName: VMS.TPS.Common.Model.API.Beam
+- uid: System.Xml.Serialization.IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  nameWithType: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+- uid: VMS.TPS.Common.Model.API.Beam.AddBolus(VMS.TPS.Common.Model.API.Bolus)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.AddBolus(VMS.TPS.Common.Model.API.Bolus)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_AddBolus_VMS_TPS_Common_Model_API_Bolus_
+  name: AddBolus(Bolus)
+  nameWithType: Beam.AddBolus(Bolus)
+  fullName: VMS.TPS.Common.Model.API.Beam.AddBolus(VMS.TPS.Common.Model.API.Bolus)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.AddBolus(VMS.TPS.Common.Model.API.Bolus)
+    name: AddBolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_AddBolus_VMS_TPS_Common_Model_API_Bolus_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.Bolus
+    name: Bolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Bolus.html
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.AddBolus(VMS.TPS.Common.Model.API.Bolus)
+    name: AddBolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_AddBolus_VMS_TPS_Common_Model_API_Bolus_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.Bolus
+    name: Bolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Bolus.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.RemoveBolus(VMS.TPS.Common.Model.API.Bolus)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.RemoveBolus(VMS.TPS.Common.Model.API.Bolus)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_RemoveBolus_VMS_TPS_Common_Model_API_Bolus_
+  name: RemoveBolus(Bolus)
+  nameWithType: Beam.RemoveBolus(Bolus)
+  fullName: VMS.TPS.Common.Model.API.Beam.RemoveBolus(VMS.TPS.Common.Model.API.Bolus)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.RemoveBolus(VMS.TPS.Common.Model.API.Bolus)
+    name: RemoveBolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_RemoveBolus_VMS_TPS_Common_Model_API_Bolus_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.Bolus
+    name: Bolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Bolus.html
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.RemoveBolus(VMS.TPS.Common.Model.API.Bolus)
+    name: RemoveBolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_RemoveBolus_VMS_TPS_Common_Model_API_Bolus_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.Bolus
+    name: Bolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Bolus.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.AddBolus(System.String)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.AddBolus(System.String)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_AddBolus_System_String_
+  name: AddBolus(string)
+  nameWithType: Beam.AddBolus(string)
+  fullName: VMS.TPS.Common.Model.API.Beam.AddBolus(string)
+  nameWithType.vb: Beam.AddBolus(String)
+  fullName.vb: VMS.TPS.Common.Model.API.Beam.AddBolus(String)
+  name.vb: AddBolus(String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.AddBolus(System.String)
+    name: AddBolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_AddBolus_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.AddBolus(System.String)
+    name: AddBolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_AddBolus_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.AddFlatteningSequence
+  commentId: M:VMS.TPS.Common.Model.API.Beam.AddFlatteningSequence
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_AddFlatteningSequence
+  name: AddFlatteningSequence()
+  nameWithType: Beam.AddFlatteningSequence()
+  fullName: VMS.TPS.Common.Model.API.Beam.AddFlatteningSequence()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.AddFlatteningSequence
+    name: AddFlatteningSequence
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_AddFlatteningSequence
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.AddFlatteningSequence
+    name: AddFlatteningSequence
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_AddFlatteningSequence
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.CalculateAverageLeafPairOpenings
+  commentId: M:VMS.TPS.Common.Model.API.Beam.CalculateAverageLeafPairOpenings
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CalculateAverageLeafPairOpenings
+  name: CalculateAverageLeafPairOpenings()
+  nameWithType: Beam.CalculateAverageLeafPairOpenings()
+  fullName: VMS.TPS.Common.Model.API.Beam.CalculateAverageLeafPairOpenings()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.CalculateAverageLeafPairOpenings
+    name: CalculateAverageLeafPairOpenings
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CalculateAverageLeafPairOpenings
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.CalculateAverageLeafPairOpenings
+    name: CalculateAverageLeafPairOpenings
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CalculateAverageLeafPairOpenings
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.CanSetOptimalFluence(VMS.TPS.Common.Model.Types.Fluence,System.String@)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.CanSetOptimalFluence(VMS.TPS.Common.Model.Types.Fluence,System.String@)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CanSetOptimalFluence_VMS_TPS_Common_Model_Types_Fluence_System_String__
+  name: CanSetOptimalFluence(Fluence, out string)
+  nameWithType: Beam.CanSetOptimalFluence(Fluence, out string)
+  fullName: VMS.TPS.Common.Model.API.Beam.CanSetOptimalFluence(VMS.TPS.Common.Model.Types.Fluence, out string)
+  nameWithType.vb: Beam.CanSetOptimalFluence(Fluence, String)
+  fullName.vb: VMS.TPS.Common.Model.API.Beam.CanSetOptimalFluence(VMS.TPS.Common.Model.Types.Fluence, String)
+  name.vb: CanSetOptimalFluence(Fluence, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.CanSetOptimalFluence(VMS.TPS.Common.Model.Types.Fluence,System.String@)
+    name: CanSetOptimalFluence
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CanSetOptimalFluence_VMS_TPS_Common_Model_Types_Fluence_System_String__
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.Fluence
+    name: Fluence
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.CanSetOptimalFluence(VMS.TPS.Common.Model.Types.Fluence,System.String@)
+    name: CanSetOptimalFluence
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CanSetOptimalFluence_VMS_TPS_Common_Model_Types_Fluence_System_String__
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.Fluence
+    name: Fluence
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.CollimatorAngleToUser(System.Double)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.CollimatorAngleToUser(System.Double)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CollimatorAngleToUser_System_Double_
+  name: CollimatorAngleToUser(double)
+  nameWithType: Beam.CollimatorAngleToUser(double)
+  fullName: VMS.TPS.Common.Model.API.Beam.CollimatorAngleToUser(double)
+  nameWithType.vb: Beam.CollimatorAngleToUser(Double)
+  fullName.vb: VMS.TPS.Common.Model.API.Beam.CollimatorAngleToUser(Double)
+  name.vb: CollimatorAngleToUser(Double)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.CollimatorAngleToUser(System.Double)
+    name: CollimatorAngleToUser
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CollimatorAngleToUser_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.CollimatorAngleToUser(System.Double)
+    name: CollimatorAngleToUser
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CollimatorAngleToUser_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.CountSubfields
+  commentId: M:VMS.TPS.Common.Model.API.Beam.CountSubfields
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CountSubfields
+  name: CountSubfields()
+  nameWithType: Beam.CountSubfields()
+  fullName: VMS.TPS.Common.Model.API.Beam.CountSubfields()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.CountSubfields
+    name: CountSubfields
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CountSubfields
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.CountSubfields
+    name: CountSubfields
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CountSubfields
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.CreateOrReplaceDRR(VMS.TPS.Common.Model.Types.DRRCalculationParameters)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.CreateOrReplaceDRR(VMS.TPS.Common.Model.Types.DRRCalculationParameters)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CreateOrReplaceDRR_VMS_TPS_Common_Model_Types_DRRCalculationParameters_
+  name: CreateOrReplaceDRR(DRRCalculationParameters)
+  nameWithType: Beam.CreateOrReplaceDRR(DRRCalculationParameters)
+  fullName: VMS.TPS.Common.Model.API.Beam.CreateOrReplaceDRR(VMS.TPS.Common.Model.Types.DRRCalculationParameters)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.CreateOrReplaceDRR(VMS.TPS.Common.Model.Types.DRRCalculationParameters)
+    name: CreateOrReplaceDRR
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CreateOrReplaceDRR_VMS_TPS_Common_Model_Types_DRRCalculationParameters_
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.DRRCalculationParameters
+    name: DRRCalculationParameters
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.CreateOrReplaceDRR(VMS.TPS.Common.Model.Types.DRRCalculationParameters)
+    name: CreateOrReplaceDRR
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CreateOrReplaceDRR_VMS_TPS_Common_Model_Types_DRRCalculationParameters_
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.DRRCalculationParameters
+    name: DRRCalculationParameters
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.FitArcOptimizationApertureToCollimatorJaws
+  commentId: M:VMS.TPS.Common.Model.API.Beam.FitArcOptimizationApertureToCollimatorJaws
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitArcOptimizationApertureToCollimatorJaws
+  name: FitArcOptimizationApertureToCollimatorJaws()
+  nameWithType: Beam.FitArcOptimizationApertureToCollimatorJaws()
+  fullName: VMS.TPS.Common.Model.API.Beam.FitArcOptimizationApertureToCollimatorJaws()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.FitArcOptimizationApertureToCollimatorJaws
+    name: FitArcOptimizationApertureToCollimatorJaws
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitArcOptimizationApertureToCollimatorJaws
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.FitArcOptimizationApertureToCollimatorJaws
+    name: FitArcOptimizationApertureToCollimatorJaws
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitArcOptimizationApertureToCollimatorJaws
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.FitCollimatorToStructure(VMS.TPS.Common.Model.Types.FitToStructureMargins,VMS.TPS.Common.Model.API.Structure,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.FitCollimatorToStructure(VMS.TPS.Common.Model.Types.FitToStructureMargins,VMS.TPS.Common.Model.API.Structure,System.Boolean,System.Boolean,System.Boolean)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitCollimatorToStructure_VMS_TPS_Common_Model_Types_FitToStructureMargins_VMS_TPS_Common_Model_API_Structure_System_Boolean_System_Boolean_System_Boolean_
+  name: FitCollimatorToStructure(FitToStructureMargins, Structure, bool, bool, bool)
+  nameWithType: Beam.FitCollimatorToStructure(FitToStructureMargins, Structure, bool, bool, bool)
+  fullName: VMS.TPS.Common.Model.API.Beam.FitCollimatorToStructure(VMS.TPS.Common.Model.Types.FitToStructureMargins, VMS.TPS.Common.Model.API.Structure, bool, bool, bool)
+  nameWithType.vb: Beam.FitCollimatorToStructure(FitToStructureMargins, Structure, Boolean, Boolean, Boolean)
+  fullName.vb: VMS.TPS.Common.Model.API.Beam.FitCollimatorToStructure(VMS.TPS.Common.Model.Types.FitToStructureMargins, VMS.TPS.Common.Model.API.Structure, Boolean, Boolean, Boolean)
+  name.vb: FitCollimatorToStructure(FitToStructureMargins, Structure, Boolean, Boolean, Boolean)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.FitCollimatorToStructure(VMS.TPS.Common.Model.Types.FitToStructureMargins,VMS.TPS.Common.Model.API.Structure,System.Boolean,System.Boolean,System.Boolean)
+    name: FitCollimatorToStructure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitCollimatorToStructure_VMS_TPS_Common_Model_Types_FitToStructureMargins_VMS_TPS_Common_Model_API_Structure_System_Boolean_System_Boolean_System_Boolean_
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.FitToStructureMargins
+    name: FitToStructureMargins
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.Structure
+    name: Structure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Structure.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.FitCollimatorToStructure(VMS.TPS.Common.Model.Types.FitToStructureMargins,VMS.TPS.Common.Model.API.Structure,System.Boolean,System.Boolean,System.Boolean)
+    name: FitCollimatorToStructure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitCollimatorToStructure_VMS_TPS_Common_Model_Types_FitToStructureMargins_VMS_TPS_Common_Model_API_Structure_System_Boolean_System_Boolean_System_Boolean_
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.FitToStructureMargins
+    name: FitToStructureMargins
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.Structure
+    name: Structure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Structure.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.FitMLCToOutline(System.Windows.Point[][])
+  commentId: M:VMS.TPS.Common.Model.API.Beam.FitMLCToOutline(System.Windows.Point[][])
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitMLCToOutline_System_Windows_Point_____
+  name: FitMLCToOutline(Point[][])
+  nameWithType: Beam.FitMLCToOutline(Point[][])
+  fullName: VMS.TPS.Common.Model.API.Beam.FitMLCToOutline(System.Windows.Point[][])
+  nameWithType.vb: Beam.FitMLCToOutline(Point()())
+  fullName.vb: VMS.TPS.Common.Model.API.Beam.FitMLCToOutline(System.Windows.Point()())
+  name.vb: FitMLCToOutline(Point()())
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.FitMLCToOutline(System.Windows.Point[][])
+    name: FitMLCToOutline
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitMLCToOutline_System_Windows_Point_____
+  - name: (
+  - uid: System.Windows.Point
+    name: Point
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.FitMLCToOutline(System.Windows.Point[][])
+    name: FitMLCToOutline
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitMLCToOutline_System_Windows_Point_____
+  - name: (
+  - uid: System.Windows.Point
+    name: Point
+    isExternal: true
+  - name: (
+  - name: )
+  - name: (
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.FitMLCToOutline(System.Windows.Point[][],System.Boolean,VMS.TPS.Common.Model.Types.JawFitting,VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint,VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.FitMLCToOutline(System.Windows.Point[][],System.Boolean,VMS.TPS.Common.Model.Types.JawFitting,VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint,VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitMLCToOutline_System_Windows_Point_____System_Boolean_VMS_TPS_Common_Model_Types_JawFitting_VMS_TPS_Common_Model_Types_OpenLeavesMeetingPoint_VMS_TPS_Common_Model_Types_ClosedLeavesMeetingPoint_
+  name: FitMLCToOutline(Point[][], bool, JawFitting, OpenLeavesMeetingPoint, ClosedLeavesMeetingPoint)
+  nameWithType: Beam.FitMLCToOutline(Point[][], bool, JawFitting, OpenLeavesMeetingPoint, ClosedLeavesMeetingPoint)
+  fullName: VMS.TPS.Common.Model.API.Beam.FitMLCToOutline(System.Windows.Point[][], bool, VMS.TPS.Common.Model.Types.JawFitting, VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint, VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint)
+  nameWithType.vb: Beam.FitMLCToOutline(Point()(), Boolean, JawFitting, OpenLeavesMeetingPoint, ClosedLeavesMeetingPoint)
+  fullName.vb: VMS.TPS.Common.Model.API.Beam.FitMLCToOutline(System.Windows.Point()(), Boolean, VMS.TPS.Common.Model.Types.JawFitting, VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint, VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint)
+  name.vb: FitMLCToOutline(Point()(), Boolean, JawFitting, OpenLeavesMeetingPoint, ClosedLeavesMeetingPoint)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.FitMLCToOutline(System.Windows.Point[][],System.Boolean,VMS.TPS.Common.Model.Types.JawFitting,VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint,VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint)
+    name: FitMLCToOutline
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitMLCToOutline_System_Windows_Point_____System_Boolean_VMS_TPS_Common_Model_Types_JawFitting_VMS_TPS_Common_Model_Types_OpenLeavesMeetingPoint_VMS_TPS_Common_Model_Types_ClosedLeavesMeetingPoint_
+  - name: (
+  - uid: System.Windows.Point
+    name: Point
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.JawFitting
+    name: JawFitting
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint
+    name: OpenLeavesMeetingPoint
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint
+    name: ClosedLeavesMeetingPoint
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.FitMLCToOutline(System.Windows.Point[][],System.Boolean,VMS.TPS.Common.Model.Types.JawFitting,VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint,VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint)
+    name: FitMLCToOutline
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitMLCToOutline_System_Windows_Point_____System_Boolean_VMS_TPS_Common_Model_Types_JawFitting_VMS_TPS_Common_Model_Types_OpenLeavesMeetingPoint_VMS_TPS_Common_Model_Types_ClosedLeavesMeetingPoint_
+  - name: (
+  - uid: System.Windows.Point
+    name: Point
+    isExternal: true
+  - name: (
+  - name: )
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.JawFitting
+    name: JawFitting
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint
+    name: OpenLeavesMeetingPoint
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint
+    name: ClosedLeavesMeetingPoint
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.FitMLCToStructure(VMS.TPS.Common.Model.API.Structure)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.FitMLCToStructure(VMS.TPS.Common.Model.API.Structure)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitMLCToStructure_VMS_TPS_Common_Model_API_Structure_
+  name: FitMLCToStructure(Structure)
+  nameWithType: Beam.FitMLCToStructure(Structure)
+  fullName: VMS.TPS.Common.Model.API.Beam.FitMLCToStructure(VMS.TPS.Common.Model.API.Structure)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.FitMLCToStructure(VMS.TPS.Common.Model.API.Structure)
+    name: FitMLCToStructure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitMLCToStructure_VMS_TPS_Common_Model_API_Structure_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.Structure
+    name: Structure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Structure.html
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.FitMLCToStructure(VMS.TPS.Common.Model.API.Structure)
+    name: FitMLCToStructure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitMLCToStructure_VMS_TPS_Common_Model_API_Structure_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.Structure
+    name: Structure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Structure.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.FitMLCToStructure(VMS.TPS.Common.Model.Types.FitToStructureMargins,VMS.TPS.Common.Model.API.Structure,System.Boolean,VMS.TPS.Common.Model.Types.JawFitting,VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint,VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.FitMLCToStructure(VMS.TPS.Common.Model.Types.FitToStructureMargins,VMS.TPS.Common.Model.API.Structure,System.Boolean,VMS.TPS.Common.Model.Types.JawFitting,VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint,VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitMLCToStructure_VMS_TPS_Common_Model_Types_FitToStructureMargins_VMS_TPS_Common_Model_API_Structure_System_Boolean_VMS_TPS_Common_Model_Types_JawFitting_VMS_TPS_Common_Model_Types_OpenLeavesMeetingPoint_VMS_TPS_Common_Model_Types_ClosedLeavesMeetingPoint_
+  name: FitMLCToStructure(FitToStructureMargins, Structure, bool, JawFitting, OpenLeavesMeetingPoint, ClosedLeavesMeetingPoint)
+  nameWithType: Beam.FitMLCToStructure(FitToStructureMargins, Structure, bool, JawFitting, OpenLeavesMeetingPoint, ClosedLeavesMeetingPoint)
+  fullName: VMS.TPS.Common.Model.API.Beam.FitMLCToStructure(VMS.TPS.Common.Model.Types.FitToStructureMargins, VMS.TPS.Common.Model.API.Structure, bool, VMS.TPS.Common.Model.Types.JawFitting, VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint, VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint)
+  nameWithType.vb: Beam.FitMLCToStructure(FitToStructureMargins, Structure, Boolean, JawFitting, OpenLeavesMeetingPoint, ClosedLeavesMeetingPoint)
+  fullName.vb: VMS.TPS.Common.Model.API.Beam.FitMLCToStructure(VMS.TPS.Common.Model.Types.FitToStructureMargins, VMS.TPS.Common.Model.API.Structure, Boolean, VMS.TPS.Common.Model.Types.JawFitting, VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint, VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint)
+  name.vb: FitMLCToStructure(FitToStructureMargins, Structure, Boolean, JawFitting, OpenLeavesMeetingPoint, ClosedLeavesMeetingPoint)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.FitMLCToStructure(VMS.TPS.Common.Model.Types.FitToStructureMargins,VMS.TPS.Common.Model.API.Structure,System.Boolean,VMS.TPS.Common.Model.Types.JawFitting,VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint,VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint)
+    name: FitMLCToStructure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitMLCToStructure_VMS_TPS_Common_Model_Types_FitToStructureMargins_VMS_TPS_Common_Model_API_Structure_System_Boolean_VMS_TPS_Common_Model_Types_JawFitting_VMS_TPS_Common_Model_Types_OpenLeavesMeetingPoint_VMS_TPS_Common_Model_Types_ClosedLeavesMeetingPoint_
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.FitToStructureMargins
+    name: FitToStructureMargins
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.Structure
+    name: Structure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Structure.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.JawFitting
+    name: JawFitting
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint
+    name: OpenLeavesMeetingPoint
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint
+    name: ClosedLeavesMeetingPoint
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.FitMLCToStructure(VMS.TPS.Common.Model.Types.FitToStructureMargins,VMS.TPS.Common.Model.API.Structure,System.Boolean,VMS.TPS.Common.Model.Types.JawFitting,VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint,VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint)
+    name: FitMLCToStructure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FitMLCToStructure_VMS_TPS_Common_Model_Types_FitToStructureMargins_VMS_TPS_Common_Model_API_Structure_System_Boolean_VMS_TPS_Common_Model_Types_JawFitting_VMS_TPS_Common_Model_Types_OpenLeavesMeetingPoint_VMS_TPS_Common_Model_Types_ClosedLeavesMeetingPoint_
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.FitToStructureMargins
+    name: FitToStructureMargins
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.Structure
+    name: Structure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Structure.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.JawFitting
+    name: JawFitting
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.OpenLeavesMeetingPoint
+    name: OpenLeavesMeetingPoint
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.ClosedLeavesMeetingPoint
+    name: ClosedLeavesMeetingPoint
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.GantryAngleToUser(System.Double)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.GantryAngleToUser(System.Double)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GantryAngleToUser_System_Double_
+  name: GantryAngleToUser(double)
+  nameWithType: Beam.GantryAngleToUser(double)
+  fullName: VMS.TPS.Common.Model.API.Beam.GantryAngleToUser(double)
+  nameWithType.vb: Beam.GantryAngleToUser(Double)
+  fullName.vb: VMS.TPS.Common.Model.API.Beam.GantryAngleToUser(Double)
+  name.vb: GantryAngleToUser(Double)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.GantryAngleToUser(System.Double)
+    name: GantryAngleToUser
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GantryAngleToUser_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.GantryAngleToUser(System.Double)
+    name: GantryAngleToUser
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GantryAngleToUser_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.GetCAXPathLengthInBolus(VMS.TPS.Common.Model.API.Bolus)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.GetCAXPathLengthInBolus(VMS.TPS.Common.Model.API.Bolus)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GetCAXPathLengthInBolus_VMS_TPS_Common_Model_API_Bolus_
+  name: GetCAXPathLengthInBolus(Bolus)
+  nameWithType: Beam.GetCAXPathLengthInBolus(Bolus)
+  fullName: VMS.TPS.Common.Model.API.Beam.GetCAXPathLengthInBolus(VMS.TPS.Common.Model.API.Bolus)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.GetCAXPathLengthInBolus(VMS.TPS.Common.Model.API.Bolus)
+    name: GetCAXPathLengthInBolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GetCAXPathLengthInBolus_VMS_TPS_Common_Model_API_Bolus_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.Bolus
+    name: Bolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Bolus.html
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.GetCAXPathLengthInBolus(VMS.TPS.Common.Model.API.Bolus)
+    name: GetCAXPathLengthInBolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GetCAXPathLengthInBolus_VMS_TPS_Common_Model_API_Bolus_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.Bolus
+    name: Bolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Bolus.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.GetOptimalFluence
+  commentId: M:VMS.TPS.Common.Model.API.Beam.GetOptimalFluence
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GetOptimalFluence
+  name: GetOptimalFluence()
+  nameWithType: Beam.GetOptimalFluence()
+  fullName: VMS.TPS.Common.Model.API.Beam.GetOptimalFluence()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.GetOptimalFluence
+    name: GetOptimalFluence
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GetOptimalFluence
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.GetOptimalFluence
+    name: GetOptimalFluence
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GetOptimalFluence
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.GetSourceLocation(System.Double)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.GetSourceLocation(System.Double)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GetSourceLocation_System_Double_
+  name: GetSourceLocation(double)
+  nameWithType: Beam.GetSourceLocation(double)
+  fullName: VMS.TPS.Common.Model.API.Beam.GetSourceLocation(double)
+  nameWithType.vb: Beam.GetSourceLocation(Double)
+  fullName.vb: VMS.TPS.Common.Model.API.Beam.GetSourceLocation(Double)
+  name.vb: GetSourceLocation(Double)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.GetSourceLocation(System.Double)
+    name: GetSourceLocation
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GetSourceLocation_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.GetSourceLocation(System.Double)
+    name: GetSourceLocation
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GetSourceLocation_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.GetSourceToBolusDistance(VMS.TPS.Common.Model.API.Bolus)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.GetSourceToBolusDistance(VMS.TPS.Common.Model.API.Bolus)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GetSourceToBolusDistance_VMS_TPS_Common_Model_API_Bolus_
+  name: GetSourceToBolusDistance(Bolus)
+  nameWithType: Beam.GetSourceToBolusDistance(Bolus)
+  fullName: VMS.TPS.Common.Model.API.Beam.GetSourceToBolusDistance(VMS.TPS.Common.Model.API.Bolus)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.GetSourceToBolusDistance(VMS.TPS.Common.Model.API.Bolus)
+    name: GetSourceToBolusDistance
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GetSourceToBolusDistance_VMS_TPS_Common_Model_API_Bolus_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.Bolus
+    name: Bolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Bolus.html
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.GetSourceToBolusDistance(VMS.TPS.Common.Model.API.Bolus)
+    name: GetSourceToBolusDistance
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GetSourceToBolusDistance_VMS_TPS_Common_Model_API_Bolus_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.Bolus
+    name: Bolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Bolus.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.GetStructureOutlines(VMS.TPS.Common.Model.API.Structure,System.Boolean)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.GetStructureOutlines(VMS.TPS.Common.Model.API.Structure,System.Boolean)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GetStructureOutlines_VMS_TPS_Common_Model_API_Structure_System_Boolean_
+  name: GetStructureOutlines(Structure, bool)
+  nameWithType: Beam.GetStructureOutlines(Structure, bool)
+  fullName: VMS.TPS.Common.Model.API.Beam.GetStructureOutlines(VMS.TPS.Common.Model.API.Structure, bool)
+  nameWithType.vb: Beam.GetStructureOutlines(Structure, Boolean)
+  fullName.vb: VMS.TPS.Common.Model.API.Beam.GetStructureOutlines(VMS.TPS.Common.Model.API.Structure, Boolean)
+  name.vb: GetStructureOutlines(Structure, Boolean)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.GetStructureOutlines(VMS.TPS.Common.Model.API.Structure,System.Boolean)
+    name: GetStructureOutlines
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GetStructureOutlines_VMS_TPS_Common_Model_API_Structure_System_Boolean_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.Structure
+    name: Structure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Structure.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.GetStructureOutlines(VMS.TPS.Common.Model.API.Structure,System.Boolean)
+    name: GetStructureOutlines
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GetStructureOutlines_VMS_TPS_Common_Model_API_Structure_System_Boolean_
+  - name: (
+  - uid: VMS.TPS.Common.Model.API.Structure
+    name: Structure
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Structure.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.JawPositionsToUserString(VMS.TPS.Common.Model.Types.VRect{System.Double})
+  commentId: M:VMS.TPS.Common.Model.API.Beam.JawPositionsToUserString(VMS.TPS.Common.Model.Types.VRect{System.Double})
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_JawPositionsToUserString_VMS_TPS_Common_Model_Types_VRect_System_Double__
+  name: JawPositionsToUserString(VRect<double>)
+  nameWithType: Beam.JawPositionsToUserString(VRect<double>)
+  fullName: VMS.TPS.Common.Model.API.Beam.JawPositionsToUserString(VMS.TPS.Common.Model.Types.VRect<double>)
+  nameWithType.vb: Beam.JawPositionsToUserString(VRect(Of Double))
+  fullName.vb: VMS.TPS.Common.Model.API.Beam.JawPositionsToUserString(VMS.TPS.Common.Model.Types.VRect(Of Double))
+  name.vb: JawPositionsToUserString(VRect(Of Double))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.JawPositionsToUserString(VMS.TPS.Common.Model.Types.VRect{System.Double})
+    name: JawPositionsToUserString
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_JawPositionsToUserString_VMS_TPS_Common_Model_Types_VRect_System_Double__
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.VRect`1
+    name: VRect
+    isExternal: true
+  - name: <
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.JawPositionsToUserString(VMS.TPS.Common.Model.Types.VRect{System.Double})
+    name: JawPositionsToUserString
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_JawPositionsToUserString_VMS_TPS_Common_Model_Types_VRect_System_Double__
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.VRect`1
+    name: VRect
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.PatientSupportAngleToUser(System.Double)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.PatientSupportAngleToUser(System.Double)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_PatientSupportAngleToUser_System_Double_
+  name: PatientSupportAngleToUser(double)
+  nameWithType: Beam.PatientSupportAngleToUser(double)
+  fullName: VMS.TPS.Common.Model.API.Beam.PatientSupportAngleToUser(double)
+  nameWithType.vb: Beam.PatientSupportAngleToUser(Double)
+  fullName.vb: VMS.TPS.Common.Model.API.Beam.PatientSupportAngleToUser(Double)
+  name.vb: PatientSupportAngleToUser(Double)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.PatientSupportAngleToUser(System.Double)
+    name: PatientSupportAngleToUser
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_PatientSupportAngleToUser_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.PatientSupportAngleToUser(System.Double)
+    name: PatientSupportAngleToUser
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_PatientSupportAngleToUser_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.RemoveBolus(System.String)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.RemoveBolus(System.String)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_RemoveBolus_System_String_
+  name: RemoveBolus(string)
+  nameWithType: Beam.RemoveBolus(string)
+  fullName: VMS.TPS.Common.Model.API.Beam.RemoveBolus(string)
+  nameWithType.vb: Beam.RemoveBolus(String)
+  fullName.vb: VMS.TPS.Common.Model.API.Beam.RemoveBolus(String)
+  name.vb: RemoveBolus(String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.RemoveBolus(System.String)
+    name: RemoveBolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_RemoveBolus_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.RemoveBolus(System.String)
+    name: RemoveBolus
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_RemoveBolus_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.RemoveFlatteningSequence
+  commentId: M:VMS.TPS.Common.Model.API.Beam.RemoveFlatteningSequence
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_RemoveFlatteningSequence
+  name: RemoveFlatteningSequence()
+  nameWithType: Beam.RemoveFlatteningSequence()
+  fullName: VMS.TPS.Common.Model.API.Beam.RemoveFlatteningSequence()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.RemoveFlatteningSequence
+    name: RemoveFlatteningSequence
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_RemoveFlatteningSequence
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.RemoveFlatteningSequence
+    name: RemoveFlatteningSequence
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_RemoveFlatteningSequence
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.SetOptimalFluence(VMS.TPS.Common.Model.Types.Fluence)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.SetOptimalFluence(VMS.TPS.Common.Model.Types.Fluence)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_SetOptimalFluence_VMS_TPS_Common_Model_Types_Fluence_
+  name: SetOptimalFluence(Fluence)
+  nameWithType: Beam.SetOptimalFluence(Fluence)
+  fullName: VMS.TPS.Common.Model.API.Beam.SetOptimalFluence(VMS.TPS.Common.Model.Types.Fluence)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.SetOptimalFluence(VMS.TPS.Common.Model.Types.Fluence)
+    name: SetOptimalFluence
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_SetOptimalFluence_VMS_TPS_Common_Model_Types_Fluence_
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.Fluence
+    name: Fluence
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.SetOptimalFluence(VMS.TPS.Common.Model.Types.Fluence)
+    name: SetOptimalFluence
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_SetOptimalFluence_VMS_TPS_Common_Model_Types_Fluence_
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.Fluence
+    name: Fluence
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Beam.Id
+  commentId: P:VMS.TPS.Common.Model.API.Beam.Id
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_Id
+  name: Id
+  nameWithType: Beam.Id
+  fullName: VMS.TPS.Common.Model.API.Beam.Id
+- uid: VMS.TPS.Common.Model.API.Beam.Name
+  commentId: P:VMS.TPS.Common.Model.API.Beam.Name
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_Name
+  name: Name
+  nameWithType: Beam.Name
+  fullName: VMS.TPS.Common.Model.API.Beam.Name
+- uid: VMS.TPS.Common.Model.API.Beam.Comment
+  commentId: P:VMS.TPS.Common.Model.API.Beam.Comment
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_Comment
+  name: Comment
+  nameWithType: Beam.Comment
+  fullName: VMS.TPS.Common.Model.API.Beam.Comment
+- uid: VMS.TPS.Common.Model.API.Beam.Meterset
+  commentId: P:VMS.TPS.Common.Model.API.Beam.Meterset
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_Meterset
+  name: Meterset
+  nameWithType: Beam.Meterset
+  fullName: VMS.TPS.Common.Model.API.Beam.Meterset
+- uid: VMS.TPS.Common.Model.API.Beam.BeamNumber
+  commentId: P:VMS.TPS.Common.Model.API.Beam.BeamNumber
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_BeamNumber
+  name: BeamNumber
+  nameWithType: Beam.BeamNumber
+  fullName: VMS.TPS.Common.Model.API.Beam.BeamNumber
+- uid: VMS.TPS.Common.Model.API.Beam.Applicator
+  commentId: P:VMS.TPS.Common.Model.API.Beam.Applicator
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_Applicator
+  name: Applicator
+  nameWithType: Beam.Applicator
+  fullName: VMS.TPS.Common.Model.API.Beam.Applicator
+- uid: VMS.TPS.Common.Model.API.Beam.ArcLength
+  commentId: P:VMS.TPS.Common.Model.API.Beam.ArcLength
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_ArcLength
+  name: ArcLength
+  nameWithType: Beam.ArcLength
+  fullName: VMS.TPS.Common.Model.API.Beam.ArcLength
+- uid: VMS.TPS.Common.Model.API.Beam.ArcOptimizationAperture
+  commentId: P:VMS.TPS.Common.Model.API.Beam.ArcOptimizationAperture
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_ArcOptimizationAperture
+  name: ArcOptimizationAperture
+  nameWithType: Beam.ArcOptimizationAperture
+  fullName: VMS.TPS.Common.Model.API.Beam.ArcOptimizationAperture
+- uid: VMS.TPS.Common.Model.API.Beam.AreControlPointJawsMoving
+  commentId: P:VMS.TPS.Common.Model.API.Beam.AreControlPointJawsMoving
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_AreControlPointJawsMoving
+  name: AreControlPointJawsMoving
+  nameWithType: Beam.AreControlPointJawsMoving
+  fullName: VMS.TPS.Common.Model.API.Beam.AreControlPointJawsMoving
+- uid: VMS.TPS.Common.Model.API.Beam.AverageSSD
+  commentId: P:VMS.TPS.Common.Model.API.Beam.AverageSSD
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_AverageSSD
+  name: AverageSSD
+  nameWithType: Beam.AverageSSD
+  fullName: VMS.TPS.Common.Model.API.Beam.AverageSSD
+- uid: VMS.TPS.Common.Model.API.Beam.BeamTechnique
+  commentId: P:VMS.TPS.Common.Model.API.Beam.BeamTechnique
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_BeamTechnique
+  name: BeamTechnique
+  nameWithType: Beam.BeamTechnique
+  fullName: VMS.TPS.Common.Model.API.Beam.BeamTechnique
+- uid: VMS.TPS.Common.Model.API.Beam.Blocks
+  commentId: P:VMS.TPS.Common.Model.API.Beam.Blocks
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_Blocks
+  name: Blocks
+  nameWithType: Beam.Blocks
+  fullName: VMS.TPS.Common.Model.API.Beam.Blocks
+- uid: VMS.TPS.Common.Model.API.Beam.Boluses
+  commentId: P:VMS.TPS.Common.Model.API.Beam.Boluses
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_Boluses
+  name: Boluses
+  nameWithType: Beam.Boluses
+  fullName: VMS.TPS.Common.Model.API.Beam.Boluses
+- uid: VMS.TPS.Common.Model.API.Beam.CalculationLogs
+  commentId: P:VMS.TPS.Common.Model.API.Beam.CalculationLogs
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CalculationLogs
+  name: CalculationLogs
+  nameWithType: Beam.CalculationLogs
+  fullName: VMS.TPS.Common.Model.API.Beam.CalculationLogs
+- uid: VMS.TPS.Common.Model.API.Beam.CollimatorRotation
+  commentId: P:VMS.TPS.Common.Model.API.Beam.CollimatorRotation
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CollimatorRotation
+  name: CollimatorRotation
+  nameWithType: Beam.CollimatorRotation
+  fullName: VMS.TPS.Common.Model.API.Beam.CollimatorRotation
+- uid: VMS.TPS.Common.Model.API.Beam.CollimatorRotationAsString
+  commentId: P:VMS.TPS.Common.Model.API.Beam.CollimatorRotationAsString
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CollimatorRotationAsString
+  name: CollimatorRotationAsString
+  nameWithType: Beam.CollimatorRotationAsString
+  fullName: VMS.TPS.Common.Model.API.Beam.CollimatorRotationAsString
+- uid: VMS.TPS.Common.Model.API.Beam.Compensator
+  commentId: P:VMS.TPS.Common.Model.API.Beam.Compensator
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_Compensator
+  name: Compensator
+  nameWithType: Beam.Compensator
+  fullName: VMS.TPS.Common.Model.API.Beam.Compensator
+- uid: VMS.TPS.Common.Model.API.Beam.ControlPoints
+  commentId: P:VMS.TPS.Common.Model.API.Beam.ControlPoints
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_ControlPoints
+  name: ControlPoints
+  nameWithType: Beam.ControlPoints
+  fullName: VMS.TPS.Common.Model.API.Beam.ControlPoints
+- uid: VMS.TPS.Common.Model.API.Beam.CreationDateTime
+  commentId: P:VMS.TPS.Common.Model.API.Beam.CreationDateTime
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_CreationDateTime
+  name: CreationDateTime
+  nameWithType: Beam.CreationDateTime
+  fullName: VMS.TPS.Common.Model.API.Beam.CreationDateTime
+- uid: VMS.TPS.Common.Model.API.Beam.Dose
+  commentId: P:VMS.TPS.Common.Model.API.Beam.Dose
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_Dose
+  name: Dose
+  nameWithType: Beam.Dose
+  fullName: VMS.TPS.Common.Model.API.Beam.Dose
+- uid: VMS.TPS.Common.Model.API.Beam.DoseRate
+  commentId: P:VMS.TPS.Common.Model.API.Beam.DoseRate
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_DoseRate
+  name: DoseRate
+  nameWithType: Beam.DoseRate
+  fullName: VMS.TPS.Common.Model.API.Beam.DoseRate
+- uid: VMS.TPS.Common.Model.API.Beam.DosimetricLeafGap
+  commentId: P:VMS.TPS.Common.Model.API.Beam.DosimetricLeafGap
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_DosimetricLeafGap
+  name: DosimetricLeafGap
+  nameWithType: Beam.DosimetricLeafGap
+  fullName: VMS.TPS.Common.Model.API.Beam.DosimetricLeafGap
+- uid: VMS.TPS.Common.Model.API.Beam.EnergyMode
+  commentId: P:VMS.TPS.Common.Model.API.Beam.EnergyMode
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_EnergyMode
+  name: EnergyMode
+  nameWithType: Beam.EnergyMode
+  fullName: VMS.TPS.Common.Model.API.Beam.EnergyMode
+- uid: VMS.TPS.Common.Model.API.Beam.EnergyModeDisplayName
+  commentId: P:VMS.TPS.Common.Model.API.Beam.EnergyModeDisplayName
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_EnergyModeDisplayName
+  name: EnergyModeDisplayName
+  nameWithType: Beam.EnergyModeDisplayName
+  fullName: VMS.TPS.Common.Model.API.Beam.EnergyModeDisplayName
+- uid: VMS.TPS.Common.Model.API.Beam.FieldReferencePoints
+  commentId: P:VMS.TPS.Common.Model.API.Beam.FieldReferencePoints
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_FieldReferencePoints
+  name: FieldReferencePoints
+  nameWithType: Beam.FieldReferencePoints
+  fullName: VMS.TPS.Common.Model.API.Beam.FieldReferencePoints
+- uid: VMS.TPS.Common.Model.API.Beam.GantryDirection
+  commentId: P:VMS.TPS.Common.Model.API.Beam.GantryDirection
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_GantryDirection
+  name: GantryDirection
+  nameWithType: Beam.GantryDirection
+  fullName: VMS.TPS.Common.Model.API.Beam.GantryDirection
+- uid: VMS.TPS.Common.Model.API.Beam.HasAllMLCLeavesClosed
+  commentId: P:VMS.TPS.Common.Model.API.Beam.HasAllMLCLeavesClosed
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_HasAllMLCLeavesClosed
+  name: HasAllMLCLeavesClosed
+  nameWithType: Beam.HasAllMLCLeavesClosed
+  fullName: VMS.TPS.Common.Model.API.Beam.HasAllMLCLeavesClosed
+- uid: VMS.TPS.Common.Model.API.Beam.IsGantryExtended
+  commentId: P:VMS.TPS.Common.Model.API.Beam.IsGantryExtended
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_IsGantryExtended
+  name: IsGantryExtended
+  nameWithType: Beam.IsGantryExtended
+  fullName: VMS.TPS.Common.Model.API.Beam.IsGantryExtended
+- uid: VMS.TPS.Common.Model.API.Beam.IsGantryExtendedAtStopAngle
+  commentId: P:VMS.TPS.Common.Model.API.Beam.IsGantryExtendedAtStopAngle
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_IsGantryExtendedAtStopAngle
+  name: IsGantryExtendedAtStopAngle
+  nameWithType: Beam.IsGantryExtendedAtStopAngle
+  fullName: VMS.TPS.Common.Model.API.Beam.IsGantryExtendedAtStopAngle
+- uid: VMS.TPS.Common.Model.API.Beam.IsImagingTreatmentField
+  commentId: P:VMS.TPS.Common.Model.API.Beam.IsImagingTreatmentField
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_IsImagingTreatmentField
+  name: IsImagingTreatmentField
+  nameWithType: Beam.IsImagingTreatmentField
+  fullName: VMS.TPS.Common.Model.API.Beam.IsImagingTreatmentField
+- uid: VMS.TPS.Common.Model.API.Beam.IsIMRT
+  commentId: P:VMS.TPS.Common.Model.API.Beam.IsIMRT
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_IsIMRT
+  name: IsIMRT
+  nameWithType: Beam.IsIMRT
+  fullName: VMS.TPS.Common.Model.API.Beam.IsIMRT
+- uid: VMS.TPS.Common.Model.API.Beam.IsocenterPosition
+  commentId: P:VMS.TPS.Common.Model.API.Beam.IsocenterPosition
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_IsocenterPosition
+  name: IsocenterPosition
+  nameWithType: Beam.IsocenterPosition
+  fullName: VMS.TPS.Common.Model.API.Beam.IsocenterPosition
+- uid: VMS.TPS.Common.Model.API.Beam.IsSetupField
+  commentId: P:VMS.TPS.Common.Model.API.Beam.IsSetupField
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_IsSetupField
+  name: IsSetupField
+  nameWithType: Beam.IsSetupField
+  fullName: VMS.TPS.Common.Model.API.Beam.IsSetupField
+- uid: VMS.TPS.Common.Model.API.Beam.MetersetPerGy
+  commentId: P:VMS.TPS.Common.Model.API.Beam.MetersetPerGy
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_MetersetPerGy
+  name: MetersetPerGy
+  nameWithType: Beam.MetersetPerGy
+  fullName: VMS.TPS.Common.Model.API.Beam.MetersetPerGy
+- uid: VMS.TPS.Common.Model.API.Beam.MLC
+  commentId: P:VMS.TPS.Common.Model.API.Beam.MLC
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_MLC
+  name: MLC
+  nameWithType: Beam.MLC
+  fullName: VMS.TPS.Common.Model.API.Beam.MLC
+- uid: VMS.TPS.Common.Model.API.Beam.MLCPlanType
+  commentId: P:VMS.TPS.Common.Model.API.Beam.MLCPlanType
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_MLCPlanType
+  name: MLCPlanType
+  nameWithType: Beam.MLCPlanType
+  fullName: VMS.TPS.Common.Model.API.Beam.MLCPlanType
+- uid: VMS.TPS.Common.Model.API.Beam.MLCTransmissionFactor
+  commentId: P:VMS.TPS.Common.Model.API.Beam.MLCTransmissionFactor
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_MLCTransmissionFactor
+  name: MLCTransmissionFactor
+  nameWithType: Beam.MLCTransmissionFactor
+  fullName: VMS.TPS.Common.Model.API.Beam.MLCTransmissionFactor
+- uid: VMS.TPS.Common.Model.API.Beam.MotionCompensationTechnique
+  commentId: P:VMS.TPS.Common.Model.API.Beam.MotionCompensationTechnique
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_MotionCompensationTechnique
+  name: MotionCompensationTechnique
+  nameWithType: Beam.MotionCompensationTechnique
+  fullName: VMS.TPS.Common.Model.API.Beam.MotionCompensationTechnique
+- uid: VMS.TPS.Common.Model.API.Beam.MotionSignalSource
+  commentId: P:VMS.TPS.Common.Model.API.Beam.MotionSignalSource
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_MotionSignalSource
+  name: MotionSignalSource
+  nameWithType: Beam.MotionSignalSource
+  fullName: VMS.TPS.Common.Model.API.Beam.MotionSignalSource
+- uid: VMS.TPS.Common.Model.API.Beam.NormalizationFactor
+  commentId: P:VMS.TPS.Common.Model.API.Beam.NormalizationFactor
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_NormalizationFactor
+  name: NormalizationFactor
+  nameWithType: Beam.NormalizationFactor
+  fullName: VMS.TPS.Common.Model.API.Beam.NormalizationFactor
+- uid: VMS.TPS.Common.Model.API.Beam.NormalizationMethod
+  commentId: P:VMS.TPS.Common.Model.API.Beam.NormalizationMethod
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_NormalizationMethod
+  name: NormalizationMethod
+  nameWithType: Beam.NormalizationMethod
+  fullName: VMS.TPS.Common.Model.API.Beam.NormalizationMethod
+- uid: VMS.TPS.Common.Model.API.Beam.Plan
+  commentId: P:VMS.TPS.Common.Model.API.Beam.Plan
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_Plan
+  name: Plan
+  nameWithType: Beam.Plan
+  fullName: VMS.TPS.Common.Model.API.Beam.Plan
+- uid: VMS.TPS.Common.Model.API.Beam.PlannedSSD
+  commentId: P:VMS.TPS.Common.Model.API.Beam.PlannedSSD
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_PlannedSSD
+  name: PlannedSSD
+  nameWithType: Beam.PlannedSSD
+  fullName: VMS.TPS.Common.Model.API.Beam.PlannedSSD
+- uid: VMS.TPS.Common.Model.API.Beam.ReferenceImage
+  commentId: P:VMS.TPS.Common.Model.API.Beam.ReferenceImage
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_ReferenceImage
+  name: ReferenceImage
+  nameWithType: Beam.ReferenceImage
+  fullName: VMS.TPS.Common.Model.API.Beam.ReferenceImage
+- uid: VMS.TPS.Common.Model.API.Beam.SetupNote
+  commentId: P:VMS.TPS.Common.Model.API.Beam.SetupNote
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_SetupNote
+  name: SetupNote
+  nameWithType: Beam.SetupNote
+  fullName: VMS.TPS.Common.Model.API.Beam.SetupNote
+- uid: VMS.TPS.Common.Model.API.Beam.SetupTechnique
+  commentId: P:VMS.TPS.Common.Model.API.Beam.SetupTechnique
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_SetupTechnique
+  name: SetupTechnique
+  nameWithType: Beam.SetupTechnique
+  fullName: VMS.TPS.Common.Model.API.Beam.SetupTechnique
+- uid: VMS.TPS.Common.Model.API.Beam.SSD
+  commentId: P:VMS.TPS.Common.Model.API.Beam.SSD
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_SSD
+  name: SSD
+  nameWithType: Beam.SSD
+  fullName: VMS.TPS.Common.Model.API.Beam.SSD
+- uid: VMS.TPS.Common.Model.API.Beam.SSDAtStopAngle
+  commentId: P:VMS.TPS.Common.Model.API.Beam.SSDAtStopAngle
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_SSDAtStopAngle
+  name: SSDAtStopAngle
+  nameWithType: Beam.SSDAtStopAngle
+  fullName: VMS.TPS.Common.Model.API.Beam.SSDAtStopAngle
+- uid: VMS.TPS.Common.Model.API.Beam.Technique
+  commentId: P:VMS.TPS.Common.Model.API.Beam.Technique
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_Technique
+  name: Technique
+  nameWithType: Beam.Technique
+  fullName: VMS.TPS.Common.Model.API.Beam.Technique
+- uid: VMS.TPS.Common.Model.API.Beam.ToleranceTableLabel
+  commentId: P:VMS.TPS.Common.Model.API.Beam.ToleranceTableLabel
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_ToleranceTableLabel
+  name: ToleranceTableLabel
+  nameWithType: Beam.ToleranceTableLabel
+  fullName: VMS.TPS.Common.Model.API.Beam.ToleranceTableLabel
+- uid: VMS.TPS.Common.Model.API.Beam.Trays
+  commentId: P:VMS.TPS.Common.Model.API.Beam.Trays
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_Trays
+  name: Trays
+  nameWithType: Beam.Trays
+  fullName: VMS.TPS.Common.Model.API.Beam.Trays
+- uid: VMS.TPS.Common.Model.API.Beam.TreatmentTime
+  commentId: P:VMS.TPS.Common.Model.API.Beam.TreatmentTime
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_TreatmentTime
+  name: TreatmentTime
+  nameWithType: Beam.TreatmentTime
+  fullName: VMS.TPS.Common.Model.API.Beam.TreatmentTime
+- uid: VMS.TPS.Common.Model.API.Beam.TreatmentUnit
+  commentId: P:VMS.TPS.Common.Model.API.Beam.TreatmentUnit
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_TreatmentUnit
+  name: TreatmentUnit
+  nameWithType: Beam.TreatmentUnit
+  fullName: VMS.TPS.Common.Model.API.Beam.TreatmentUnit
+- uid: VMS.TPS.Common.Model.API.Beam.Wedges
+  commentId: P:VMS.TPS.Common.Model.API.Beam.Wedges
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_Wedges
+  name: Wedges
+  nameWithType: Beam.Wedges
+  fullName: VMS.TPS.Common.Model.API.Beam.Wedges
+- uid: VMS.TPS.Common.Model.API.Beam.WeightFactor
+  commentId: P:VMS.TPS.Common.Model.API.Beam.WeightFactor
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_WeightFactor
+  name: WeightFactor
+  nameWithType: Beam.WeightFactor
+  fullName: VMS.TPS.Common.Model.API.Beam.WeightFactor
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  name: ToString()
+  nameWithType: ApiDataObject.ToString()
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.ToString()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+    name: ToString
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+    name: ToString
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: ApiDataObject.Equals(object)
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.Equals(object)
+  nameWithType.vb: ApiDataObject.Equals(Object)
+  fullName.vb: VMS.TPS.Common.Model.API.ApiDataObject.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  name: GetHashCode()
+  nameWithType: ApiDataObject.GetHashCode()
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName
+  name: HistoryUserName
+  nameWithType: ApiDataObject.HistoryUserName
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName
+  name: HistoryUserDisplayName
+  nameWithType: ApiDataObject.HistoryUserDisplayName
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime
+  name: HistoryDateTime
+  nameWithType: ApiDataObject.HistoryDateTime
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+- uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  name: GetSchema()
+  nameWithType: SerializableObject.GetSchema()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.GetSchema()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  name: ReadXml(XmlReader)
+  nameWithType: SerializableObject.ReadXml(XmlReader)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  name: WriteXml(XmlWriter, string, object)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, object)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, object)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, Object)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, Object)
+  name.vb: WriteXml(XmlWriter, String, Object)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  name: WriteXml(XmlWriter, string, string)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, string)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, String)
+  name.vb: WriteXml(XmlWriter, String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  name: StartSerialization(string, string)
+  nameWithType: SerializableObject.StartSerialization(string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(string, string)
+  nameWithType.vb: SerializableObject.StartSerialization(String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(String, String)
+  name.vb: StartSerialization(String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  name: EndSerialization()
+  nameWithType: SerializableObject.EndSerialization()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  name: ClearSerializationHistory()
+  nameWithType: SerializableObject.ClearSerializationHistory()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: System.Xml.Serialization.XmlSerializer
+  commentId: T:System.Xml.Serialization.XmlSerializer
+  isExternal: true
+- uid: VMS.TPS.Common.Model.API.Beam.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.Beam.WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.Beam
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml(XmlWriter)
+  nameWithType: Beam.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.Beam.WriteXml(System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.Beam.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.Beam.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.Beam.html#VMS_TPS_Common_Model_API_Beam_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.IonBeam.WriteXml*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.WriteXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml
+  nameWithType: IonBeam.WriteXml
+  fullName: VMS.TPS.Common.Model.API.IonBeam.WriteXml
+- uid: System.Xml.XmlWriter
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: VMS.TPS.Common.Model.API.IonBeam.ApplyParameters*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.ApplyParameters
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_ApplyParameters_VMS_TPS_Common_Model_API_BeamParameters_
+  name: ApplyParameters
+  nameWithType: IonBeam.ApplyParameters
+  fullName: VMS.TPS.Common.Model.API.IonBeam.ApplyParameters
+- uid: VMS.TPS.Common.Model.API.BeamParameters
+  commentId: T:VMS.TPS.Common.Model.API.BeamParameters
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.BeamParameters.html
+  name: BeamParameters
+  nameWithType: BeamParameters
+  fullName: VMS.TPS.Common.Model.API.BeamParameters
+- uid: VMS.TPS.Common.Model.API.IonBeam.GetDeliveryTimeStatusByRoomId*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.GetDeliveryTimeStatusByRoomId
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_GetDeliveryTimeStatusByRoomId_System_String_
+  name: GetDeliveryTimeStatusByRoomId
+  nameWithType: IonBeam.GetDeliveryTimeStatusByRoomId
+  fullName: VMS.TPS.Common.Model.API.IonBeam.GetDeliveryTimeStatusByRoomId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus
+  commentId: T:VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus.html
+  name: ProtonDeliveryTimeStatus
+  nameWithType: ProtonDeliveryTimeStatus
+  fullName: VMS.TPS.Common.Model.Types.ProtonDeliveryTimeStatus
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.API.IonBeam.GetEditableParameters*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.GetEditableParameters
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_GetEditableParameters
+  name: GetEditableParameters
+  nameWithType: IonBeam.GetEditableParameters
+  fullName: VMS.TPS.Common.Model.API.IonBeam.GetEditableParameters
+- uid: VMS.TPS.Common.Model.API.IonBeamParameters
+  commentId: T:VMS.TPS.Common.Model.API.IonBeamParameters
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeamParameters.html
+  name: IonBeamParameters
+  nameWithType: IonBeamParameters
+  fullName: VMS.TPS.Common.Model.API.IonBeamParameters
+- uid: VMS.TPS.Common.Model.API.IonBeam.GetProtonDeliveryTimeByRoomIdAsNumber*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.GetProtonDeliveryTimeByRoomIdAsNumber
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_GetProtonDeliveryTimeByRoomIdAsNumber_System_String_
+  name: GetProtonDeliveryTimeByRoomIdAsNumber
+  nameWithType: IonBeam.GetProtonDeliveryTimeByRoomIdAsNumber
+  fullName: VMS.TPS.Common.Model.API.IonBeam.GetProtonDeliveryTimeByRoomIdAsNumber
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: VMS.TPS.Common.Model.API.IonBeam.AirGap*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.AirGap
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_AirGap
+  name: AirGap
+  nameWithType: IonBeam.AirGap
+  fullName: VMS.TPS.Common.Model.API.IonBeam.AirGap
+- uid: VMS.TPS.Common.Model.API.IonBeam.BeamLineStatus*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.BeamLineStatus
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_BeamLineStatus
+  name: BeamLineStatus
+  nameWithType: IonBeam.BeamLineStatus
+  fullName: VMS.TPS.Common.Model.API.IonBeam.BeamLineStatus
+- uid: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus
+  commentId: T:VMS.TPS.Common.Model.Types.ProtonBeamLineStatus
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus.html
+  name: ProtonBeamLineStatus
+  nameWithType: ProtonBeamLineStatus
+  fullName: VMS.TPS.Common.Model.Types.ProtonBeamLineStatus
+- uid: VMS.TPS.Common.Model.API.IonBeam.DistalTargetMargin*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.DistalTargetMargin
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_DistalTargetMargin
+  name: DistalTargetMargin
+  nameWithType: IonBeam.DistalTargetMargin
+  fullName: VMS.TPS.Common.Model.API.IonBeam.DistalTargetMargin
+- uid: VMS.TPS.Common.Model.API.IonBeam.LateralMargins*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.LateralMargins
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_LateralMargins
+  name: LateralMargins
+  nameWithType: IonBeam.LateralMargins
+  fullName: VMS.TPS.Common.Model.API.IonBeam.LateralMargins
+- uid: VMS.TPS.Common.Model.Types.VRect{System.Double}
+  commentId: T:VMS.TPS.Common.Model.Types.VRect{System.Double}
+  parent: VMS.TPS.Common.Model.Types
+  definition: VMS.TPS.Common.Model.Types.VRect`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: VRect<double>
+  nameWithType: VRect<double>
+  fullName: VMS.TPS.Common.Model.Types.VRect<double>
+  nameWithType.vb: VRect(Of Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of Double)
+  name.vb: VRect(Of Double)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.Types.VRect`1
+    name: VRect
+    isExternal: true
+  - name: <
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.Types.VRect`1
+    name: VRect
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.VRect`1
+  commentId: T:VMS.TPS.Common.Model.Types.VRect`1
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VRect-1.html
+  name: VRect<T>
+  nameWithType: VRect<T>
+  fullName: VMS.TPS.Common.Model.Types.VRect<T>
+  nameWithType.vb: VRect(Of T)
+  fullName.vb: VMS.TPS.Common.Model.Types.VRect(Of T)
+  name.vb: VRect(Of T)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.Types.VRect`1
+    name: VRect
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VRect-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.Types.VRect`1
+    name: VRect
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.VRect-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: VMS.TPS.Common.Model.API.IonBeam.LateralSpreadingDevices*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.LateralSpreadingDevices
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_LateralSpreadingDevices
+  name: LateralSpreadingDevices
+  nameWithType: IonBeam.LateralSpreadingDevices
+  fullName: VMS.TPS.Common.Model.API.IonBeam.LateralSpreadingDevices
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.LateralSpreadingDevice}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.LateralSpreadingDevice}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<LateralSpreadingDevice>
+  nameWithType: IEnumerable<LateralSpreadingDevice>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.LateralSpreadingDevice>
+  nameWithType.vb: IEnumerable(Of LateralSpreadingDevice)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.LateralSpreadingDevice)
+  name.vb: IEnumerable(Of LateralSpreadingDevice)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.LateralSpreadingDevice
+    name: LateralSpreadingDevice
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.LateralSpreadingDevice.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.LateralSpreadingDevice
+    name: LateralSpreadingDevice
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.LateralSpreadingDevice.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: VMS.TPS.Common.Model.API.IonBeam.NominalRange*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.NominalRange
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_NominalRange
+  name: NominalRange
+  nameWithType: IonBeam.NominalRange
+  fullName: VMS.TPS.Common.Model.API.IonBeam.NominalRange
+- uid: VMS.TPS.Common.Model.API.IonBeam.NominalSOBPWidth*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.NominalSOBPWidth
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_NominalSOBPWidth
+  name: NominalSOBPWidth
+  nameWithType: IonBeam.NominalSOBPWidth
+  fullName: VMS.TPS.Common.Model.API.IonBeam.NominalSOBPWidth
+- uid: VMS.TPS.Common.Model.API.IonBeam.OptionId*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.OptionId
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_OptionId
+  name: OptionId
+  nameWithType: IonBeam.OptionId
+  fullName: VMS.TPS.Common.Model.API.IonBeam.OptionId
+- uid: VMS.TPS.Common.Model.API.IonBeam.PatientSupportId*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.PatientSupportId
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_PatientSupportId
+  name: PatientSupportId
+  nameWithType: IonBeam.PatientSupportId
+  fullName: VMS.TPS.Common.Model.API.IonBeam.PatientSupportId
+- uid: VMS.TPS.Common.Model.API.IonBeam.PatientSupportType*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.PatientSupportType
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_PatientSupportType
+  name: PatientSupportType
+  nameWithType: IonBeam.PatientSupportType
+  fullName: VMS.TPS.Common.Model.API.IonBeam.PatientSupportType
+- uid: VMS.TPS.Common.Model.Types.PatientSupportType
+  commentId: T:VMS.TPS.Common.Model.Types.PatientSupportType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.PatientSupportType.html
+  name: PatientSupportType
+  nameWithType: PatientSupportType
+  fullName: VMS.TPS.Common.Model.Types.PatientSupportType
+- uid: VMS.TPS.Common.Model.API.IonBeam.IonControlPoints*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.IonControlPoints
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_IonControlPoints
+  name: IonControlPoints
+  nameWithType: IonBeam.IonControlPoints
+  fullName: VMS.TPS.Common.Model.API.IonBeam.IonControlPoints
+- uid: VMS.TPS.Common.Model.API.IonControlPointCollection
+  commentId: T:VMS.TPS.Common.Model.API.IonControlPointCollection
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonControlPointCollection.html
+  name: IonControlPointCollection
+  nameWithType: IonControlPointCollection
+  fullName: VMS.TPS.Common.Model.API.IonControlPointCollection
+- uid: VMS.TPS.Common.Model.API.IonBeam.ProximalTargetMargin*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.ProximalTargetMargin
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_ProximalTargetMargin
+  name: ProximalTargetMargin
+  nameWithType: IonBeam.ProximalTargetMargin
+  fullName: VMS.TPS.Common.Model.API.IonBeam.ProximalTargetMargin
+- uid: VMS.TPS.Common.Model.API.IonBeam.RangeModulators*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.RangeModulators
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_RangeModulators
+  name: RangeModulators
+  nameWithType: IonBeam.RangeModulators
+  fullName: VMS.TPS.Common.Model.API.IonBeam.RangeModulators
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.RangeModulator}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.RangeModulator}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<RangeModulator>
+  nameWithType: IEnumerable<RangeModulator>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.RangeModulator>
+  nameWithType.vb: IEnumerable(Of RangeModulator)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.RangeModulator)
+  name.vb: IEnumerable(Of RangeModulator)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.RangeModulator
+    name: RangeModulator
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.RangeModulator.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.RangeModulator
+    name: RangeModulator
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.RangeModulator.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.IonBeam.RangeShifters*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.RangeShifters
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_RangeShifters
+  name: RangeShifters
+  nameWithType: IonBeam.RangeShifters
+  fullName: VMS.TPS.Common.Model.API.IonBeam.RangeShifters
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.RangeShifter}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.RangeShifter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<RangeShifter>
+  nameWithType: IEnumerable<RangeShifter>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.RangeShifter>
+  nameWithType.vb: IEnumerable(Of RangeShifter)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.RangeShifter)
+  name.vb: IEnumerable(Of RangeShifter)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.RangeShifter
+    name: RangeShifter
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.RangeShifter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.RangeShifter
+    name: RangeShifter
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.RangeShifter.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.IonBeam.ScanMode*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.ScanMode
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_ScanMode
+  name: ScanMode
+  nameWithType: IonBeam.ScanMode
+  fullName: VMS.TPS.Common.Model.API.IonBeam.ScanMode
+- uid: VMS.TPS.Common.Model.Types.IonBeamScanMode
+  commentId: T:VMS.TPS.Common.Model.Types.IonBeamScanMode
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.IonBeamScanMode.html
+  name: IonBeamScanMode
+  nameWithType: IonBeamScanMode
+  fullName: VMS.TPS.Common.Model.Types.IonBeamScanMode
+- uid: VMS.TPS.Common.Model.API.IonBeam.SnoutId*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.SnoutId
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_SnoutId
+  name: SnoutId
+  nameWithType: IonBeam.SnoutId
+  fullName: VMS.TPS.Common.Model.API.IonBeam.SnoutId
+- uid: VMS.TPS.Common.Model.API.IonBeam.SnoutPosition*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.SnoutPosition
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_SnoutPosition
+  name: SnoutPosition
+  nameWithType: IonBeam.SnoutPosition
+  fullName: VMS.TPS.Common.Model.API.IonBeam.SnoutPosition
+- uid: VMS.TPS.Common.Model.API.IonBeam.TargetStructure*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.TargetStructure
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_TargetStructure
+  name: TargetStructure
+  nameWithType: IonBeam.TargetStructure
+  fullName: VMS.TPS.Common.Model.API.IonBeam.TargetStructure
+- uid: VMS.TPS.Common.Model.API.Structure
+  commentId: T:VMS.TPS.Common.Model.API.Structure
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Structure.html
+  name: Structure
+  nameWithType: Structure
+  fullName: VMS.TPS.Common.Model.API.Structure
+- uid: VMS.TPS.Common.Model.API.IonBeam.VirtualSADX*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.VirtualSADX
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_VirtualSADX
+  name: VirtualSADX
+  nameWithType: IonBeam.VirtualSADX
+  fullName: VMS.TPS.Common.Model.API.IonBeam.VirtualSADX
+- uid: VMS.TPS.Common.Model.API.IonBeam.VirtualSADY*
+  commentId: Overload:VMS.TPS.Common.Model.API.IonBeam.VirtualSADY
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.IonBeam.html#VMS_TPS_Common_Model_API_IonBeam_VirtualSADY
+  name: VirtualSADY
+  nameWithType: IonBeam.VirtualSADY
+  fullName: VMS.TPS.Common.Model.API.IonBeam.VirtualSADY

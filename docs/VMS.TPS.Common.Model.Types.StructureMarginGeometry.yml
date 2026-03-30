@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.StructureMarginGeometry
+  commentId: T:VMS.TPS.Common.Model.Types.StructureMarginGeometry
+  id: StructureMarginGeometry
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.StructureMarginGeometry.Inner
+  - VMS.TPS.Common.Model.Types.StructureMarginGeometry.Outer
+  langs:
+  - csharp
+  - vb
+  name: StructureMarginGeometry
+  nameWithType: StructureMarginGeometry
+  fullName: VMS.TPS.Common.Model.Types.StructureMarginGeometry
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Specifies whether a margin operation expands (outer margin) or shrinks (inner margin) the volume.
+  example: []
+  syntax:
+    content: public enum StructureMarginGeometry
+    content.vb: Public Enum StructureMarginGeometry
+- uid: VMS.TPS.Common.Model.Types.StructureMarginGeometry.Outer
+  commentId: F:VMS.TPS.Common.Model.Types.StructureMarginGeometry.Outer
+  id: Outer
+  parent: VMS.TPS.Common.Model.Types.StructureMarginGeometry
+  langs:
+  - csharp
+  - vb
+  name: Outer
+  nameWithType: StructureMarginGeometry.Outer
+  fullName: VMS.TPS.Common.Model.Types.StructureMarginGeometry.Outer
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Specifies that the margin operation expands the volume.
+  example: []
+  syntax:
+    content: Outer = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.StructureMarginGeometry
+- uid: VMS.TPS.Common.Model.Types.StructureMarginGeometry.Inner
+  commentId: F:VMS.TPS.Common.Model.Types.StructureMarginGeometry.Inner
+  id: Inner
+  parent: VMS.TPS.Common.Model.Types.StructureMarginGeometry
+  langs:
+  - csharp
+  - vb
+  name: Inner
+  nameWithType: StructureMarginGeometry.Inner
+  fullName: VMS.TPS.Common.Model.Types.StructureMarginGeometry.Inner
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Specifies that the margin operation shrinks the volume.
+  example: []
+  syntax:
+    content: Inner = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.StructureMarginGeometry
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.StructureMarginGeometry
+  commentId: T:VMS.TPS.Common.Model.Types.StructureMarginGeometry
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.StructureMarginGeometry.html
+  name: StructureMarginGeometry
+  nameWithType: StructureMarginGeometry
+  fullName: VMS.TPS.Common.Model.Types.StructureMarginGeometry

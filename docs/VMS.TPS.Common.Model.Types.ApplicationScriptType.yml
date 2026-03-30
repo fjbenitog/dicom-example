@@ -1,0 +1,219 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.ApplicationScriptType
+  commentId: T:VMS.TPS.Common.Model.Types.ApplicationScriptType
+  id: ApplicationScriptType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.ApplicationScriptType.ESAPI
+  - VMS.TPS.Common.Model.Types.ApplicationScriptType.ESAPIActionPack
+  - VMS.TPS.Common.Model.Types.ApplicationScriptType.ESAPIApprovalHook
+  - VMS.TPS.Common.Model.Types.ApplicationScriptType.ESAPICustomExecutable
+  - VMS.TPS.Common.Model.Types.ApplicationScriptType.MIRS
+  - VMS.TPS.Common.Model.Types.ApplicationScriptType.Unknown
+  langs:
+  - csharp
+  - vb
+  name: ApplicationScriptType
+  nameWithType: ApplicationScriptType
+  fullName: VMS.TPS.Common.Model.Types.ApplicationScriptType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The type of the application script.
+  example: []
+  syntax:
+    content: public enum ApplicationScriptType
+    content.vb: Public Enum ApplicationScriptType
+- uid: VMS.TPS.Common.Model.Types.ApplicationScriptType.Unknown
+  commentId: F:VMS.TPS.Common.Model.Types.ApplicationScriptType.Unknown
+  id: Unknown
+  parent: VMS.TPS.Common.Model.Types.ApplicationScriptType
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: ApplicationScriptType.Unknown
+  fullName: VMS.TPS.Common.Model.Types.ApplicationScriptType.Unknown
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: This script type is not defined, or the application was not able to resolve the type.
+  example: []
+  syntax:
+    content: Unknown = -1
+    return:
+      type: VMS.TPS.Common.Model.Types.ApplicationScriptType
+- uid: VMS.TPS.Common.Model.Types.ApplicationScriptType.ESAPI
+  commentId: F:VMS.TPS.Common.Model.Types.ApplicationScriptType.ESAPI
+  id: ESAPI
+  parent: VMS.TPS.Common.Model.Types.ApplicationScriptType
+  langs:
+  - csharp
+  - vb
+  name: ESAPI
+  nameWithType: ApplicationScriptType.ESAPI
+  fullName: VMS.TPS.Common.Model.Types.ApplicationScriptType.ESAPI
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Eclipse Scripting API script.
+  example: []
+  syntax:
+    content: ESAPI = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.ApplicationScriptType
+- uid: VMS.TPS.Common.Model.Types.ApplicationScriptType.ESAPIActionPack
+  commentId: F:VMS.TPS.Common.Model.Types.ApplicationScriptType.ESAPIActionPack
+  id: ESAPIActionPack
+  parent: VMS.TPS.Common.Model.Types.ApplicationScriptType
+  langs:
+  - csharp
+  - vb
+  name: ESAPIActionPack
+  nameWithType: ApplicationScriptType.ESAPIActionPack
+  fullName: VMS.TPS.Common.Model.Types.ApplicationScriptType.ESAPIActionPack
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Eclipse Scripting API action pack.
+  example: []
+  syntax:
+    content: ESAPIActionPack = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.ApplicationScriptType
+- uid: VMS.TPS.Common.Model.Types.ApplicationScriptType.MIRS
+  commentId: F:VMS.TPS.Common.Model.Types.ApplicationScriptType.MIRS
+  id: MIRS
+  parent: VMS.TPS.Common.Model.Types.ApplicationScriptType
+  langs:
+  - csharp
+  - vb
+  name: MIRS
+  nameWithType: ApplicationScriptType.MIRS
+  fullName: VMS.TPS.Common.Model.Types.ApplicationScriptType.MIRS
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: MIRS Scripting API script.
+  example: []
+  syntax:
+    content: MIRS = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.ApplicationScriptType
+- uid: VMS.TPS.Common.Model.Types.ApplicationScriptType.ESAPICustomExecutable
+  commentId: F:VMS.TPS.Common.Model.Types.ApplicationScriptType.ESAPICustomExecutable
+  id: ESAPICustomExecutable
+  parent: VMS.TPS.Common.Model.Types.ApplicationScriptType
+  langs:
+  - csharp
+  - vb
+  name: ESAPICustomExecutable
+  nameWithType: ApplicationScriptType.ESAPICustomExecutable
+  fullName: VMS.TPS.Common.Model.Types.ApplicationScriptType.ESAPICustomExecutable
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: >-
+    Eclipse Scripting API script that is executed by an application that is not a script by itself.
+
+    For example, an interpreter of a high-level programming language, or a native C++ application that integrates into .NET and uses ESAPI.
+
+    Scripts of this type cannot be approved as they are unknown to the system.
+  example: []
+  syntax:
+    content: ESAPICustomExecutable = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.ApplicationScriptType
+- uid: VMS.TPS.Common.Model.Types.ApplicationScriptType.ESAPIApprovalHook
+  commentId: F:VMS.TPS.Common.Model.Types.ApplicationScriptType.ESAPIApprovalHook
+  id: ESAPIApprovalHook
+  parent: VMS.TPS.Common.Model.Types.ApplicationScriptType
+  langs:
+  - csharp
+  - vb
+  name: ESAPIApprovalHook
+  nameWithType: ApplicationScriptType.ESAPIApprovalHook
+  fullName: VMS.TPS.Common.Model.Types.ApplicationScriptType.ESAPIApprovalHook
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Eclipse approval hook script.
+  example: []
+  syntax:
+    content: ESAPIApprovalHook = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.ApplicationScriptType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.ApplicationScriptType
+  commentId: T:VMS.TPS.Common.Model.Types.ApplicationScriptType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ApplicationScriptType.html
+  name: ApplicationScriptType
+  nameWithType: ApplicationScriptType
+  fullName: VMS.TPS.Common.Model.Types.ApplicationScriptType

@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct DoseValue | Example </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct DoseValue | Example ">
+      
+      <meta name="description" content="Represents a dose value. DoseValue semantics follows the semantics of System.Double, with DoseValue.Undefined corresponding to Double.NaN.">
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="Example">
+            Example
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMS.TPS.Common.Model.Types.DoseValue">
+
+
+
+  <h1 id="VMS_TPS_Common_Model_Types_DoseValue" data-uid="VMS.TPS.Common.Model.Types.DoseValue" class="text-break">
+Struct DoseValue  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMS.html">VMS</a>.<a class="xref" href="VMS.TPS.html">TPS</a>.<a class="xref" href="VMS.TPS.Common.html">Common</a>.<a class="xref" href="VMS.TPS.Common.Model.html">Model</a>.<a class="xref" href="VMS.TPS.Common.Model.Types.html">Types</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VMS.TPS.Common.Model.Types.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a dose value. DoseValue semantics follows the semantics of System.Double, with DoseValue.Undefined corresponding to Double.NaN.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct DoseValue : IXmlSerializable, IComparable&lt;DoseValue&gt;, IEquatable&lt;DoseValue&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IXmlSerializable</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue__ctor_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.#ctor*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue__ctor_System_Double_System_String_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.#ctor(System.Double,System.String)">
+  DoseValue(double, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a DoseValue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoseValue(double value, string unitName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Value for this instance.</p>
+</dd>
+    <dt><code>unitName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>String that corresponds to one of the enumeration values of DoseUnit.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue__ctor_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.#ctor*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue__ctor_System_Double_VMS_TPS_Common_Model_Types_DoseValue_DoseUnit_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.#ctor(System.Double,VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)">
+  DoseValue(double, DoseUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a DoseValue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoseValue(double value, DoseValue.DoseUnit unit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Value for this instance</p>
+</dd>
+    <dt><code>unit</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a>.<a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.html">DoseUnit</a></dt>
+    <dd><p>Unit of this instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_Undefined" data-uid="VMS.TPS.Common.Model.Types.DoseValue.Undefined">
+  Undefined
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A dose value, for which the value is Double.NaN and<br>
+the unit is unknown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly DoseValue Undefined</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_Decimals_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.Decimals*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_Decimals" data-uid="VMS.TPS.Common.Model.Types.DoseValue.Decimals">
+  Decimals
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The display precision of this value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Decimals { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_Dose_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.Dose*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_Dose" data-uid="VMS.TPS.Common.Model.Types.DoseValue.Dose">
+  Dose
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The value of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Dose { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_IsAbsoluteDoseValue_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseValue*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_IsAbsoluteDoseValue" data-uid="VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseValue">
+  IsAbsoluteDoseValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if the unit of the dose value is absolute (Gy or cGy).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAbsoluteDoseValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_IsRelativeDoseValue_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseValue*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_IsRelativeDoseValue" data-uid="VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseValue">
+  IsRelativeDoseValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if the unit of the dose value is relative (%).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRelativeDoseValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_Unit_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.Unit*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_Unit" data-uid="VMS.TPS.Common.Model.Types.DoseValue.Unit">
+  Unit
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The unit of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoseValue.DoseUnit Unit { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a>.<a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.html">DoseUnit</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_UnitAsString_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.UnitAsString*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_UnitAsString" data-uid="VMS.TPS.Common.Model.Types.DoseValue.UnitAsString">
+  UnitAsString
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The unit of this instance as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string UnitAsString { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_ValueAsString_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.ValueAsString*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_ValueAsString" data-uid="VMS.TPS.Common.Model.Types.DoseValue.ValueAsString">
+  ValueAsString
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The value of this instance as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ValueAsString { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_CompareTo_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.CompareTo*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_CompareTo_VMS_TPS_Common_Model_Types_DoseValue_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.CompareTo(VMS.TPS.Common.Model.Types.DoseValue)">
+  CompareTo(DoseValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Comparison of dose values. DoseValue.Undefined preceeds other values. Otherwise, different units cause an exception to be thrown.
+The values are compared using Double.CompareTo(Double).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(DoseValue other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Dose value to compare this to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Comparison result.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arithmeticexception">ArithmeticException</a></dt>
+    <dd><p>Thrown if units are different.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_Equals_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.Equals*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_Equals_System_Object_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Equality comparison of DoseValue and Object.
+This method considers two instances of DoseValue.Undefined to be equal to each other.
+Otherwise, a dose value is equal to an object only if the object is a DoseValue and the units and the values are equal.
+For epsilon-equal comparison, use <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_Equals_VMS_TPS_Common_Model_Types_DoseValue_System_Double_">Equals(DoseValue, double)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Object to compare this to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the Object is also DoseValue and equal to this (value and unit), false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_Equals_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.Equals*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_Equals_VMS_TPS_Common_Model_Types_DoseValue_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue)">
+  Equals(DoseValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Equality comparison of dose values.
+This method considers two instances of DoseValue.Undefined to be equal to each other.
+Otherwise, two dose values are equal only if the units and the values are equal.
+For epsilon-equal comparison, use <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_Equals_VMS_TPS_Common_Model_Types_DoseValue_System_Double_">Equals(DoseValue, double)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(DoseValue other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Dose value to compare this to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the units and values are equal, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_Equals_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.Equals*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_Equals_VMS_TPS_Common_Model_Types_DoseValue_System_Double_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.Equals(VMS.TPS.Common.Model.Types.DoseValue,System.Double)">
+  Equals(DoseValue, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Epsilon-equality comparison of dose values.
+This method considers two instances of DoseValue.Undefined to be equal to each other.
+Otherwise, two dose values are equal only if the units are equal and the values are within epsilon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(DoseValue other, double epsilon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Dose value to compare this to.</p>
+</dd>
+    <dt><code>epsilon</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Epsilon to use for the dose value comparison.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the units are equal and values are within epsilon, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_GetHashCode_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.GetHashCode*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_GetHashCode" data-uid="VMS.TPS.Common.Model.Types.DoseValue.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A hash code for the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A hash code for the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_GetSchema_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.GetSchema*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_GetSchema" data-uid="VMS.TPS.Common.Model.Types.DoseValue.GetSchema">
+  GetSchema()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This member is internal to the Eclipse Scripting API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XmlSchema GetSchema()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">XmlSchema</span></dt>
+    <dd><p>XmlSchema.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_IsAbsoluteDoseUnit_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseUnit*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_IsAbsoluteDoseUnit_VMS_TPS_Common_Model_Types_DoseValue_DoseUnit_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.IsAbsoluteDoseUnit(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)">
+  IsAbsoluteDoseUnit(DoseUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if the dose unit is absolute (Gy or cGy).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsAbsoluteDoseUnit(DoseValue.DoseUnit doseUnit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doseUnit</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a>.<a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.html">DoseUnit</a></dt>
+    <dd><p>The dose unit that is evaluated.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the dose unit is absolute (Gy or cGy). Otherwise returns false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_IsRelativeDoseUnit_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseUnit*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_IsRelativeDoseUnit_VMS_TPS_Common_Model_Types_DoseValue_DoseUnit_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.IsRelativeDoseUnit(VMS.TPS.Common.Model.Types.DoseValue.DoseUnit)">
+  IsRelativeDoseUnit(DoseUnit)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if the dose unit is relative (%).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsRelativeDoseUnit(DoseValue.DoseUnit doseUnit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doseUnit</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a>.<a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.DoseUnit.html">DoseUnit</a></dt>
+    <dd><p>The dose unit that is evaluated.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the dose unit is relative (%). Otherwise returns false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_IsUndefined_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.IsUndefined*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_IsUndefined" data-uid="VMS.TPS.Common.Model.Types.DoseValue.IsUndefined">
+  IsUndefined()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if this dose value is equal to DoseValue.Undefined, false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUndefined()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if this dose value is not defined, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_ReadXml_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.ReadXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_ReadXml_System_Xml_XmlReader_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.ReadXml(System.Xml.XmlReader)">
+  ReadXml(XmlReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This member is internal to the Eclipse Scripting API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadXml(XmlReader reader)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reader</code> <span class="xref">XmlReader</span></dt>
+    <dd><p>XmlReader.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_ToString_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.ToString*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_ToString" data-uid="VMS.TPS.Common.Model.Types.DoseValue.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that represents the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_UndefinedDose_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.UndefinedDose*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_UndefinedDose" data-uid="VMS.TPS.Common.Model.Types.DoseValue.UndefinedDose">
+  UndefinedDose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A dose value, for which the value is Double.NaN and<br>
+the unit is unknown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DoseValue UndefinedDose()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Undefined dose value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_WriteXml_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.WriteXml*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_WriteXml_System_Xml_XmlWriter_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.WriteXml(System.Xml.XmlWriter)">
+  WriteXml(XmlWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serialization support.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteXml(XmlWriter writer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <span class="xref">XmlWriter</span></dt>
+    <dd><p>The System.Xml.XmlWriter stream to which the object is serialized.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_op_Addition_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_Addition*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_op_Addition_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_Addition(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)">
+  operator +(DoseValue, DoseValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Addition of dose values. If either of the operands is DoseValue.Undefined, the result will be DoseValue.Undefined.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DoseValue operator +(DoseValue dv1, DoseValue dv2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dv1</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>First operand.</p>
+</dd>
+    <dt><code>dv2</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Second operand.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Result of addition.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arithmeticexception">ArithmeticException</a></dt>
+    <dd><p>Thrown if units are different.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_op_Division_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_Division*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_op_Division_VMS_TPS_Common_Model_Types_DoseValue_System_Double_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_Division(VMS.TPS.Common.Model.Types.DoseValue,System.Double)">
+  operator /(DoseValue, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Division of a dose value by a double. If the dose value is DoseValue.Undefined, the result will be DoseValue.Undefined.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DoseValue operator /(DoseValue dv, double dbl)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dv</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Dividend.</p>
+</dd>
+    <dt><code>dbl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Divisor.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Result of division.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_op_Division_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_Division*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_op_Division_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_Division(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)">
+  operator /(DoseValue, DoseValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Division of two dose values. If either of the operands is DoseValue.Undefined, the result will be Double.NaN.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double operator /(DoseValue dv1, DoseValue dv2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dv1</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Dividend.</p>
+</dd>
+    <dt><code>dv2</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Divisor.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Result of division.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arithmeticexception">ArithmeticException</a></dt>
+    <dd><p>Thrown if units are different.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_op_Equality_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_Equality*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_op_Equality_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_Equality(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)">
+  operator ==(DoseValue, DoseValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Equality operator for dose values.
+This operator considers two instances of DoseValue.Undefined to be inequal.
+For epsilon-equal comparison, use <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_Equals_VMS_TPS_Common_Model_Types_DoseValue_System_Double_">Equals(DoseValue, double)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(DoseValue dv1, DoseValue dv2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dv1</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>First operand.</p>
+</dd>
+    <dt><code>dv2</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Second operand.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the units and values are equal, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_op_GreaterThan_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThan*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_op_GreaterThan_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThan(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)">
+  operator &gt;(DoseValue, DoseValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Greater-than comparison of dose values. Comparison with DoseValue.Undefined is false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;(DoseValue dv1, DoseValue dv2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dv1</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>First operand.</p>
+</dd>
+    <dt><code>dv2</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Second operand.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Comparison result.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arithmeticexception">ArithmeticException</a></dt>
+    <dd><p>Thrown if units are different.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_op_GreaterThanOrEqual_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThanOrEqual*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_op_GreaterThanOrEqual_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_GreaterThanOrEqual(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)">
+  operator &gt;=(DoseValue, DoseValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Greater-than comparison of dose values. Comparison with DoseValue.Undefined is false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(DoseValue dv1, DoseValue dv2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dv1</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>First operand.</p>
+</dd>
+    <dt><code>dv2</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Second operand.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Comparison result.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arithmeticexception">ArithmeticException</a></dt>
+    <dd><p>Thrown if units are different.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_op_Inequality_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_Inequality*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_op_Inequality_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_Inequality(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)">
+  operator !=(DoseValue, DoseValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inequality operator for dose values.
+This operator considers two instances of DoseValue.Undefined to be inequal.
+For epsilon-equal comparison, use <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html#VMS_TPS_Common_Model_Types_DoseValue_Equals_VMS_TPS_Common_Model_Types_DoseValue_System_Double_">Equals(DoseValue, double)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(DoseValue dv1, DoseValue dv2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dv1</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>First operand.</p>
+</dd>
+    <dt><code>dv2</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Second operand.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the units, values, or both of them are inequal, false otherwise.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_op_LessThan_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_LessThan*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_op_LessThan_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_LessThan(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)">
+  operator &lt;(DoseValue, DoseValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Less-than comparison of dose values. Comparison with DoseValue.Undefined is false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(DoseValue dv1, DoseValue dv2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dv1</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>First operand.</p>
+</dd>
+    <dt><code>dv2</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Second operand.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Comparison result.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arithmeticexception">ArithmeticException</a></dt>
+    <dd><p>Thrown if units are different.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_op_LessThanOrEqual_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_LessThanOrEqual*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_op_LessThanOrEqual_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_LessThanOrEqual(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)">
+  operator &lt;=(DoseValue, DoseValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Less-than-or-equal comparison of dose values. Comparison with DoseValue.Undefined is false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(DoseValue dv1, DoseValue dv2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dv1</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>First operand.</p>
+</dd>
+    <dt><code>dv2</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Second operand.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Comparison result.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arithmeticexception">ArithmeticException</a></dt>
+    <dd><p>Thrown if units are different.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_op_Multiply_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_Multiply*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_op_Multiply_System_Double_VMS_TPS_Common_Model_Types_DoseValue_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_Multiply(System.Double,VMS.TPS.Common.Model.Types.DoseValue)">
+  operator *(double, DoseValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Multiplication of a dose value and a double. If the dose value is DoseValue.Undefined, the result will be DoseValue.Undefined.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DoseValue operator *(double dbl, DoseValue dv)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dbl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Multiplier.</p>
+</dd>
+    <dt><code>dv</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>DoseValue to multiply.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Result of multiplication.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_op_Multiply_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_Multiply*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_op_Multiply_VMS_TPS_Common_Model_Types_DoseValue_System_Double_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_Multiply(VMS.TPS.Common.Model.Types.DoseValue,System.Double)">
+  operator *(DoseValue, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Multiplication of a dose value and a double. If the dose value is DoseValue.Undefined, the result will be DoseValue.Undefined.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DoseValue operator *(DoseValue dv, double dbl)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dv</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>DoseValue to multiply.</p>
+</dd>
+    <dt><code>dbl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Multiplier.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Result of multiplication.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMS_TPS_Common_Model_Types_DoseValue_op_Subtraction_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_Subtraction*"></a>
+
+  <h3 id="VMS_TPS_Common_Model_Types_DoseValue_op_Subtraction_VMS_TPS_Common_Model_Types_DoseValue_VMS_TPS_Common_Model_Types_DoseValue_" data-uid="VMS.TPS.Common.Model.Types.DoseValue.op_Subtraction(VMS.TPS.Common.Model.Types.DoseValue,VMS.TPS.Common.Model.Types.DoseValue)">
+  operator -(DoseValue, DoseValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Subtraction of dose values. If either of the operands is DoseValue.Undefined, the result will be DoseValue.Undefined.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DoseValue operator -(DoseValue dv1, DoseValue dv2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dv1</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>First operand.</p>
+</dd>
+    <dt><code>dv2</code> <a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Second operand.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMS.TPS.Common.Model.Types.DoseValue.html">DoseValue</a></dt>
+    <dd><p>Subtraction result.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.arithmeticexception">ArithmeticException</a></dt>
+    <dd><p>Thrown if units are different.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

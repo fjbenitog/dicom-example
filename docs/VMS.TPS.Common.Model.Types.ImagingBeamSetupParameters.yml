@@ -1,0 +1,619 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters
+  commentId: T:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters
+  id: ImagingBeamSetupParameters
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.#ctor(VMS.TPS.Common.Model.Types.ImagingSetup,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  - VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FieldSizeX
+  - VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FieldSizeY
+  - VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginX1
+  - VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginX2
+  - VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginY1
+  - VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginY2
+  - VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.ImagingSetup
+  langs:
+  - csharp
+  - vb
+  name: ImagingBeamSetupParameters
+  nameWithType: ImagingBeamSetupParameters
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Setup parameters for imaging fields.
+  example: []
+  syntax:
+    content: public class ImagingBeamSetupParameters
+    content.vb: Public Class ImagingBeamSetupParameters
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.#ctor(VMS.TPS.Common.Model.Types.ImagingSetup,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.#ctor(VMS.TPS.Common.Model.Types.ImagingSetup,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: '#ctor(VMS.TPS.Common.Model.Types.ImagingSetup,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)'
+  parent: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters
+  langs:
+  - csharp
+  - vb
+  name: ImagingBeamSetupParameters(ImagingSetup, double, double, double, double, double, double)
+  nameWithType: ImagingBeamSetupParameters.ImagingBeamSetupParameters(ImagingSetup, double, double, double, double, double, double)
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.ImagingBeamSetupParameters(VMS.TPS.Common.Model.Types.ImagingSetup, double, double, double, double, double, double)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Constructor for imaging beam setup parameters.
+  example: []
+  syntax:
+    content: public ImagingBeamSetupParameters(ImagingSetup imagingSetup, double fitMarginX1_mm, double fitMarginX2_mm, double fitMarginY1_mm, double fitMarginY2_mm, double fieldSizeX_mm, double fieldSizeY_mm)
+    parameters:
+    - id: imagingSetup
+      type: VMS.TPS.Common.Model.Types.ImagingSetup
+      description: Setup technique
+    - id: fitMarginX1_mm
+      type: System.Double
+      description: Fit margin left side (in mm)
+    - id: fitMarginX2_mm
+      type: System.Double
+      description: Fit margin right side (in mm)
+    - id: fitMarginY1_mm
+      type: System.Double
+      description: Fit margin top (in mm)
+    - id: fitMarginY2_mm
+      type: System.Double
+      description: Fit margin bottom (in mm)
+    - id: fieldSizeX_mm
+      type: System.Double
+      description: Field size in x direction (in mm)
+    - id: fieldSizeY_mm
+      type: System.Double
+      description: Field size in y direction (in mm)
+    content.vb: Public Sub New(imagingSetup As ImagingSetup, fitMarginX1_mm As Double, fitMarginX2_mm As Double, fitMarginY1_mm As Double, fitMarginY2_mm As Double, fieldSizeX_mm As Double, fieldSizeY_mm As Double)
+  overload: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.#ctor*
+  nameWithType.vb: ImagingBeamSetupParameters.New(ImagingSetup, Double, Double, Double, Double, Double, Double)
+  fullName.vb: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.New(VMS.TPS.Common.Model.Types.ImagingSetup, Double, Double, Double, Double, Double, Double)
+  name.vb: New(ImagingSetup, Double, Double, Double, Double, Double, Double)
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.ImagingSetup
+  commentId: P:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.ImagingSetup
+  id: ImagingSetup
+  parent: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters
+  langs:
+  - csharp
+  - vb
+  name: ImagingSetup
+  nameWithType: ImagingBeamSetupParameters.ImagingSetup
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.ImagingSetup
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Identifier for the imaging setup.
+  example: []
+  syntax:
+    content: public ImagingSetup ImagingSetup { get; set; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.ImagingSetup
+    content.vb: Public Property ImagingSetup As ImagingSetup
+  overload: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.ImagingSetup*
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginX1
+  commentId: P:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginX1
+  id: FitMarginX1
+  parent: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters
+  langs:
+  - csharp
+  - vb
+  name: FitMarginX1
+  nameWithType: ImagingBeamSetupParameters.FitMarginX1
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginX1
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Fit margin in x-direction in mm.
+  example: []
+  syntax:
+    content: public double FitMarginX1 { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property FitMarginX1 As Double
+  overload: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginX1*
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginX2
+  commentId: P:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginX2
+  id: FitMarginX2
+  parent: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters
+  langs:
+  - csharp
+  - vb
+  name: FitMarginX2
+  nameWithType: ImagingBeamSetupParameters.FitMarginX2
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginX2
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Fit margin in x-direction in mm.
+  example: []
+  syntax:
+    content: public double FitMarginX2 { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property FitMarginX2 As Double
+  overload: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginX2*
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginY1
+  commentId: P:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginY1
+  id: FitMarginY1
+  parent: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters
+  langs:
+  - csharp
+  - vb
+  name: FitMarginY1
+  nameWithType: ImagingBeamSetupParameters.FitMarginY1
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginY1
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Fit margin in y-direction in mm.
+  example: []
+  syntax:
+    content: public double FitMarginY1 { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property FitMarginY1 As Double
+  overload: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginY1*
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginY2
+  commentId: P:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginY2
+  id: FitMarginY2
+  parent: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters
+  langs:
+  - csharp
+  - vb
+  name: FitMarginY2
+  nameWithType: ImagingBeamSetupParameters.FitMarginY2
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginY2
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Fit margin in y-direction in mm.
+  example: []
+  syntax:
+    content: public double FitMarginY2 { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property FitMarginY2 As Double
+  overload: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginY2*
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FieldSizeX
+  commentId: P:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FieldSizeX
+  id: FieldSizeX
+  parent: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters
+  langs:
+  - csharp
+  - vb
+  name: FieldSizeX
+  nameWithType: ImagingBeamSetupParameters.FieldSizeX
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FieldSizeX
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Field size in x-direction in mm.
+  example: []
+  syntax:
+    content: public double FieldSizeX { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property FieldSizeX As Double
+  overload: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FieldSizeX*
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FieldSizeY
+  commentId: P:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FieldSizeY
+  id: FieldSizeY
+  parent: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters
+  langs:
+  - csharp
+  - vb
+  name: FieldSizeY
+  nameWithType: ImagingBeamSetupParameters.FieldSizeY
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FieldSizeY
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Field size in y-direction in mm.
+  example: []
+  syntax:
+    content: public double FieldSizeY { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property FieldSizeY As Double
+  overload: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FieldSizeY*
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.html#VMS_TPS_Common_Model_Types_ImagingBeamSetupParameters__ctor_VMS_TPS_Common_Model_Types_ImagingSetup_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: ImagingBeamSetupParameters
+  nameWithType: ImagingBeamSetupParameters.ImagingBeamSetupParameters
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.ImagingBeamSetupParameters
+  nameWithType.vb: ImagingBeamSetupParameters.New
+  fullName.vb: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.New
+  name.vb: New
+- uid: VMS.TPS.Common.Model.Types.ImagingSetup
+  commentId: T:VMS.TPS.Common.Model.Types.ImagingSetup
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ImagingSetup.html
+  name: ImagingSetup
+  nameWithType: ImagingSetup
+  fullName: VMS.TPS.Common.Model.Types.ImagingSetup
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.ImagingSetup*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.ImagingSetup
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.html#VMS_TPS_Common_Model_Types_ImagingBeamSetupParameters_ImagingSetup
+  name: ImagingSetup
+  nameWithType: ImagingBeamSetupParameters.ImagingSetup
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.ImagingSetup
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginX1*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginX1
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.html#VMS_TPS_Common_Model_Types_ImagingBeamSetupParameters_FitMarginX1
+  name: FitMarginX1
+  nameWithType: ImagingBeamSetupParameters.FitMarginX1
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginX1
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginX2*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginX2
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.html#VMS_TPS_Common_Model_Types_ImagingBeamSetupParameters_FitMarginX2
+  name: FitMarginX2
+  nameWithType: ImagingBeamSetupParameters.FitMarginX2
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginX2
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginY1*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginY1
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.html#VMS_TPS_Common_Model_Types_ImagingBeamSetupParameters_FitMarginY1
+  name: FitMarginY1
+  nameWithType: ImagingBeamSetupParameters.FitMarginY1
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginY1
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginY2*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginY2
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.html#VMS_TPS_Common_Model_Types_ImagingBeamSetupParameters_FitMarginY2
+  name: FitMarginY2
+  nameWithType: ImagingBeamSetupParameters.FitMarginY2
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FitMarginY2
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FieldSizeX*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FieldSizeX
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.html#VMS_TPS_Common_Model_Types_ImagingBeamSetupParameters_FieldSizeX
+  name: FieldSizeX
+  nameWithType: ImagingBeamSetupParameters.FieldSizeX
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FieldSizeX
+- uid: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FieldSizeY*
+  commentId: Overload:VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FieldSizeY
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.html#VMS_TPS_Common_Model_Types_ImagingBeamSetupParameters_FieldSizeY
+  name: FieldSizeY
+  nameWithType: ImagingBeamSetupParameters.FieldSizeY
+  fullName: VMS.TPS.Common.Model.Types.ImagingBeamSetupParameters.FieldSizeY

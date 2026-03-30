@@ -1,0 +1,975 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.API.ScriptEnvironment
+  commentId: T:VMS.TPS.Common.Model.API.ScriptEnvironment
+  id: ScriptEnvironment
+  parent: VMS.TPS.Common.Model.API
+  children:
+  - VMS.TPS.Common.Model.API.ScriptEnvironment.#ctor(System.String,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationScript},System.Action{System.Reflection.Assembly,System.Object,System.Windows.Window,System.Object})
+  - VMS.TPS.Common.Model.API.ScriptEnvironment.#ctor(System.String,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationScript},System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationPackage},System.Action{System.Reflection.Assembly,System.Object,System.Windows.Window,System.Object})
+  - VMS.TPS.Common.Model.API.ScriptEnvironment.ApiVersionInfo
+  - VMS.TPS.Common.Model.API.ScriptEnvironment.ApplicationName
+  - VMS.TPS.Common.Model.API.ScriptEnvironment.ExecuteScript(System.Reflection.Assembly,VMS.TPS.Common.Model.API.ScriptContext,System.Windows.Window)
+  - VMS.TPS.Common.Model.API.ScriptEnvironment.Packages
+  - VMS.TPS.Common.Model.API.ScriptEnvironment.Scripts
+  - VMS.TPS.Common.Model.API.ScriptEnvironment.VersionInfo
+  langs:
+  - csharp
+  - vb
+  name: ScriptEnvironment
+  nameWithType: ScriptEnvironment
+  fullName: VMS.TPS.Common.Model.API.ScriptEnvironment
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Contains the runtime information of the application environment for the script.
+  example: []
+  syntax:
+    content: public sealed class ScriptEnvironment
+    content.vb: Public NotInheritable Class ScriptEnvironment
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: VMS.TPS.Common.Model.API.ScriptEnvironment.#ctor(System.String,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationScript},System.Action{System.Reflection.Assembly,System.Object,System.Windows.Window,System.Object})
+  commentId: M:VMS.TPS.Common.Model.API.ScriptEnvironment.#ctor(System.String,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationScript},System.Action{System.Reflection.Assembly,System.Object,System.Windows.Window,System.Object})
+  id: '#ctor(System.String,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationScript},System.Action{System.Reflection.Assembly,System.Object,System.Windows.Window,System.Object})'
+  parent: VMS.TPS.Common.Model.API.ScriptEnvironment
+  langs:
+  - csharp
+  - vb
+  name: ScriptEnvironment(string, IEnumerable<IApplicationScript>, Action<Assembly, object, Window, object>)
+  nameWithType: ScriptEnvironment.ScriptEnvironment(string, IEnumerable<IApplicationScript>, Action<Assembly, object, Window, object>)
+  fullName: VMS.TPS.Common.Model.API.ScriptEnvironment.ScriptEnvironment(string, System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.IApplicationScript>, System.Action<System.Reflection.Assembly, object, System.Windows.Window, object>)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Provides scripts access to the application environment.
+
+    A ScriptEnvironment instance is given as an optional parameter in the Execute function of the script.
+
+    The script itself does not instantiate the ScriptEnvironment.
+  example: []
+  syntax:
+    content: >-
+      [Obsolete]
+
+      public ScriptEnvironment(string appName, IEnumerable<IApplicationScript> scripts, Action<Assembly, object, Window, object> scriptExecutionEngine)
+    parameters:
+    - id: appName
+      type: System.String
+      description: The application name.
+    - id: scripts
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationScript}
+      description: A list of all scripts known by the application.
+    - id: scriptExecutionEngine
+      type: System.Action{System.Reflection.Assembly,System.Object,System.Windows.Window,System.Object}
+      description: The execution engine for executing a script from another script.
+    content.vb: >-
+      <Obsolete>
+
+      Public Sub New(appName As String, scripts As IEnumerable(Of IApplicationScript), scriptExecutionEngine As Action(Of Assembly, Object, Window, Object))
+  overload: VMS.TPS.Common.Model.API.ScriptEnvironment.#ctor*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ScriptEnvironment.New(String, IEnumerable(Of IApplicationScript), Action(Of Assembly, Object, Window, Object))
+  fullName.vb: VMS.TPS.Common.Model.API.ScriptEnvironment.New(String, System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.IApplicationScript), System.Action(Of System.Reflection.Assembly, Object, System.Windows.Window, Object))
+  name.vb: New(String, IEnumerable(Of IApplicationScript), Action(Of Assembly, Object, Window, Object))
+- uid: VMS.TPS.Common.Model.API.ScriptEnvironment.#ctor(System.String,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationScript},System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationPackage},System.Action{System.Reflection.Assembly,System.Object,System.Windows.Window,System.Object})
+  commentId: M:VMS.TPS.Common.Model.API.ScriptEnvironment.#ctor(System.String,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationScript},System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationPackage},System.Action{System.Reflection.Assembly,System.Object,System.Windows.Window,System.Object})
+  id: '#ctor(System.String,System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationScript},System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationPackage},System.Action{System.Reflection.Assembly,System.Object,System.Windows.Window,System.Object})'
+  parent: VMS.TPS.Common.Model.API.ScriptEnvironment
+  langs:
+  - csharp
+  - vb
+  name: ScriptEnvironment(string, IEnumerable<IApplicationScript>, IEnumerable<IApplicationPackage>, Action<Assembly, object, Window, object>)
+  nameWithType: ScriptEnvironment.ScriptEnvironment(string, IEnumerable<IApplicationScript>, IEnumerable<IApplicationPackage>, Action<Assembly, object, Window, object>)
+  fullName: VMS.TPS.Common.Model.API.ScriptEnvironment.ScriptEnvironment(string, System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.IApplicationScript>, System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.IApplicationPackage>, System.Action<System.Reflection.Assembly, object, System.Windows.Window, object>)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Provides scripts access to the application environment.
+
+    A ScriptEnvironment instance is given as an optional parameter in the Execute function of the script.
+
+    The script itself does not instantiate the ScriptEnvironment.
+  example: []
+  syntax:
+    content: public ScriptEnvironment(string appName, IEnumerable<IApplicationScript> scripts, IEnumerable<IApplicationPackage> packages, Action<Assembly, object, Window, object> scriptExecutionEngine)
+    parameters:
+    - id: appName
+      type: System.String
+      description: The application name.
+    - id: scripts
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationScript}
+      description: A list of all scripts known by the application.
+    - id: packages
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationPackage}
+      description: A list of all packages known by the application.
+    - id: scriptExecutionEngine
+      type: System.Action{System.Reflection.Assembly,System.Object,System.Windows.Window,System.Object}
+      description: The execution engine for executing a script from another script.
+    content.vb: Public Sub New(appName As String, scripts As IEnumerable(Of IApplicationScript), packages As IEnumerable(Of IApplicationPackage), scriptExecutionEngine As Action(Of Assembly, Object, Window, Object))
+  overload: VMS.TPS.Common.Model.API.ScriptEnvironment.#ctor*
+  nameWithType.vb: ScriptEnvironment.New(String, IEnumerable(Of IApplicationScript), IEnumerable(Of IApplicationPackage), Action(Of Assembly, Object, Window, Object))
+  fullName.vb: VMS.TPS.Common.Model.API.ScriptEnvironment.New(String, System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.IApplicationScript), System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.IApplicationPackage), System.Action(Of System.Reflection.Assembly, Object, System.Windows.Window, Object))
+  name.vb: New(String, IEnumerable(Of IApplicationScript), IEnumerable(Of IApplicationPackage), Action(Of Assembly, Object, Window, Object))
+- uid: VMS.TPS.Common.Model.API.ScriptEnvironment.ExecuteScript(System.Reflection.Assembly,VMS.TPS.Common.Model.API.ScriptContext,System.Windows.Window)
+  commentId: M:VMS.TPS.Common.Model.API.ScriptEnvironment.ExecuteScript(System.Reflection.Assembly,VMS.TPS.Common.Model.API.ScriptContext,System.Windows.Window)
+  id: ExecuteScript(System.Reflection.Assembly,VMS.TPS.Common.Model.API.ScriptContext,System.Windows.Window)
+  parent: VMS.TPS.Common.Model.API.ScriptEnvironment
+  langs:
+  - csharp
+  - vb
+  name: ExecuteScript(Assembly, ScriptContext, Window)
+  nameWithType: ScriptEnvironment.ExecuteScript(Assembly, ScriptContext, Window)
+  fullName: VMS.TPS.Common.Model.API.ScriptEnvironment.ExecuteScript(System.Reflection.Assembly, VMS.TPS.Common.Model.API.ScriptContext, System.Windows.Window)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Executes an other script from script. This allows a script to be used for launching other scripts.
+
+    Without using this special method, the system would be unaware of the other script, and thus could not save the correct script logs.
+  example: []
+  syntax:
+    content: public void ExecuteScript(Assembly scriptAssembly, ScriptContext scriptContext, Window window)
+    parameters:
+    - id: scriptAssembly
+      type: System.Reflection.Assembly
+      description: The other script assembly. The assembly must have a location.
+    - id: scriptContext
+      type: VMS.TPS.Common.Model.API.ScriptContext
+      description: The script context that was passed to the executing script.
+    - id: window
+      type: System.Windows.Window
+      description: The script window. This is an optional parameter, can be null.
+    content.vb: Public Sub ExecuteScript(scriptAssembly As Assembly, scriptContext As ScriptContext, window As Window)
+  overload: VMS.TPS.Common.Model.API.ScriptEnvironment.ExecuteScript*
+- uid: VMS.TPS.Common.Model.API.ScriptEnvironment.ApplicationName
+  commentId: P:VMS.TPS.Common.Model.API.ScriptEnvironment.ApplicationName
+  id: ApplicationName
+  parent: VMS.TPS.Common.Model.API.ScriptEnvironment
+  langs:
+  - csharp
+  - vb
+  name: ApplicationName
+  nameWithType: ScriptEnvironment.ApplicationName
+  fullName: VMS.TPS.Common.Model.API.ScriptEnvironment.ApplicationName
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The name of the active application.
+  example: []
+  syntax:
+    content: public string ApplicationName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ApplicationName As String
+  overload: VMS.TPS.Common.Model.API.ScriptEnvironment.ApplicationName*
+- uid: VMS.TPS.Common.Model.API.ScriptEnvironment.VersionInfo
+  commentId: P:VMS.TPS.Common.Model.API.ScriptEnvironment.VersionInfo
+  id: VersionInfo
+  parent: VMS.TPS.Common.Model.API.ScriptEnvironment
+  langs:
+  - csharp
+  - vb
+  name: VersionInfo
+  nameWithType: ScriptEnvironment.VersionInfo
+  fullName: VMS.TPS.Common.Model.API.ScriptEnvironment.VersionInfo
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The version number of Eclipse.
+  example: []
+  syntax:
+    content: public string VersionInfo { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property VersionInfo As String
+  overload: VMS.TPS.Common.Model.API.ScriptEnvironment.VersionInfo*
+- uid: VMS.TPS.Common.Model.API.ScriptEnvironment.ApiVersionInfo
+  commentId: P:VMS.TPS.Common.Model.API.ScriptEnvironment.ApiVersionInfo
+  id: ApiVersionInfo
+  parent: VMS.TPS.Common.Model.API.ScriptEnvironment
+  langs:
+  - csharp
+  - vb
+  name: ApiVersionInfo
+  nameWithType: ScriptEnvironment.ApiVersionInfo
+  fullName: VMS.TPS.Common.Model.API.ScriptEnvironment.ApiVersionInfo
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The version number of Eclipse Scripting API.
+  example: []
+  syntax:
+    content: public string ApiVersionInfo { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ApiVersionInfo As String
+  overload: VMS.TPS.Common.Model.API.ScriptEnvironment.ApiVersionInfo*
+- uid: VMS.TPS.Common.Model.API.ScriptEnvironment.Scripts
+  commentId: P:VMS.TPS.Common.Model.API.ScriptEnvironment.Scripts
+  id: Scripts
+  parent: VMS.TPS.Common.Model.API.ScriptEnvironment
+  langs:
+  - csharp
+  - vb
+  name: Scripts
+  nameWithType: ScriptEnvironment.Scripts
+  fullName: VMS.TPS.Common.Model.API.ScriptEnvironment.Scripts
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Retrieves a list of all scripts known by the application.
+  example: []
+  syntax:
+    content: public IEnumerable<ApplicationScript> Scripts { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ApplicationScript}
+    content.vb: Public ReadOnly Property Scripts As IEnumerable(Of ApplicationScript)
+  overload: VMS.TPS.Common.Model.API.ScriptEnvironment.Scripts*
+- uid: VMS.TPS.Common.Model.API.ScriptEnvironment.Packages
+  commentId: P:VMS.TPS.Common.Model.API.ScriptEnvironment.Packages
+  id: Packages
+  parent: VMS.TPS.Common.Model.API.ScriptEnvironment
+  langs:
+  - csharp
+  - vb
+  name: Packages
+  nameWithType: ScriptEnvironment.Packages
+  fullName: VMS.TPS.Common.Model.API.ScriptEnvironment.Packages
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Retrieves a list of all packages known by the application.
+  example: []
+  syntax:
+    content: public IEnumerable<ApplicationPackage> Packages { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ApplicationPackage}
+    content.vb: Public ReadOnly Property Packages As IEnumerable(Of ApplicationPackage)
+  overload: VMS.TPS.Common.Model.API.ScriptEnvironment.Packages*
+references:
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.API.ScriptEnvironment.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptEnvironment.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptEnvironment.html#VMS_TPS_Common_Model_API_ScriptEnvironment__ctor_System_String_System_Collections_Generic_IEnumerable_VMS_TPS_Common_Model_IApplicationScript__System_Action_System_Reflection_Assembly_System_Object_System_Windows_Window_System_Object__
+  name: ScriptEnvironment
+  nameWithType: ScriptEnvironment.ScriptEnvironment
+  fullName: VMS.TPS.Common.Model.API.ScriptEnvironment.ScriptEnvironment
+  nameWithType.vb: ScriptEnvironment.New
+  fullName.vb: VMS.TPS.Common.Model.API.ScriptEnvironment.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationScript}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationScript}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IApplicationScript>
+  nameWithType: IEnumerable<IApplicationScript>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.IApplicationScript>
+  nameWithType.vb: IEnumerable(Of IApplicationScript)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.IApplicationScript)
+  name.vb: IEnumerable(Of IApplicationScript)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.IApplicationScript
+    name: IApplicationScript
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.IApplicationScript
+    name: IApplicationScript
+    isExternal: true
+  - name: )
+- uid: System.Action{System.Reflection.Assembly,System.Object,System.Windows.Window,System.Object}
+  commentId: T:System.Action{System.Reflection.Assembly,System.Object,System.Windows.Window,System.Object}
+  parent: System
+  definition: System.Action`4
+  href: https://learn.microsoft.com/dotnet/api/system.action-4
+  name: Action<Assembly, object, Window, object>
+  nameWithType: Action<Assembly, object, Window, object>
+  fullName: System.Action<System.Reflection.Assembly, object, System.Windows.Window, object>
+  nameWithType.vb: Action(Of Assembly, Object, Window, Object)
+  fullName.vb: System.Action(Of System.Reflection.Assembly, Object, System.Windows.Window, Object)
+  name.vb: Action(Of Assembly, Object, Window, Object)
+  spec.csharp:
+  - uid: System.Action`4
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-4
+  - name: <
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Window
+    name: Window
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`4
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-4
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Reflection.Assembly
+    name: Assembly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Window
+    name: Window
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Action`4
+  commentId: T:System.Action`4
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-4
+  name: Action<T1, T2, T3, T4>
+  nameWithType: Action<T1, T2, T3, T4>
+  fullName: System.Action<T1, T2, T3, T4>
+  nameWithType.vb: Action(Of T1, T2, T3, T4)
+  fullName.vb: System.Action(Of T1, T2, T3, T4)
+  name.vb: Action(Of T1, T2, T3, T4)
+  spec.csharp:
+  - uid: System.Action`4
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-4
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`4
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-4
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationPackage}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.IApplicationPackage}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IApplicationPackage>
+  nameWithType: IEnumerable<IApplicationPackage>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.IApplicationPackage>
+  nameWithType.vb: IEnumerable(Of IApplicationPackage)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.IApplicationPackage)
+  name.vb: IEnumerable(Of IApplicationPackage)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.IApplicationPackage
+    name: IApplicationPackage
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.IApplicationPackage
+    name: IApplicationPackage
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ScriptEnvironment.ExecuteScript*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptEnvironment.ExecuteScript
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptEnvironment.html#VMS_TPS_Common_Model_API_ScriptEnvironment_ExecuteScript_System_Reflection_Assembly_VMS_TPS_Common_Model_API_ScriptContext_System_Windows_Window_
+  name: ExecuteScript
+  nameWithType: ScriptEnvironment.ExecuteScript
+  fullName: VMS.TPS.Common.Model.API.ScriptEnvironment.ExecuteScript
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: VMS.TPS.Common.Model.API.ScriptContext
+  commentId: T:VMS.TPS.Common.Model.API.ScriptContext
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptContext.html
+  name: ScriptContext
+  nameWithType: ScriptContext
+  fullName: VMS.TPS.Common.Model.API.ScriptContext
+- uid: System.Windows.Window
+  commentId: '!:System.Windows.Window'
+  isExternal: true
+  name: Window
+  nameWithType: Window
+  fullName: System.Windows.Window
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: VMS.TPS.Common.Model.API.ScriptEnvironment.ApplicationName*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptEnvironment.ApplicationName
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptEnvironment.html#VMS_TPS_Common_Model_API_ScriptEnvironment_ApplicationName
+  name: ApplicationName
+  nameWithType: ScriptEnvironment.ApplicationName
+  fullName: VMS.TPS.Common.Model.API.ScriptEnvironment.ApplicationName
+- uid: VMS.TPS.Common.Model.API.ScriptEnvironment.VersionInfo*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptEnvironment.VersionInfo
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptEnvironment.html#VMS_TPS_Common_Model_API_ScriptEnvironment_VersionInfo
+  name: VersionInfo
+  nameWithType: ScriptEnvironment.VersionInfo
+  fullName: VMS.TPS.Common.Model.API.ScriptEnvironment.VersionInfo
+- uid: VMS.TPS.Common.Model.API.ScriptEnvironment.ApiVersionInfo*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptEnvironment.ApiVersionInfo
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptEnvironment.html#VMS_TPS_Common_Model_API_ScriptEnvironment_ApiVersionInfo
+  name: ApiVersionInfo
+  nameWithType: ScriptEnvironment.ApiVersionInfo
+  fullName: VMS.TPS.Common.Model.API.ScriptEnvironment.ApiVersionInfo
+- uid: VMS.TPS.Common.Model.API.ScriptEnvironment.Scripts*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptEnvironment.Scripts
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptEnvironment.html#VMS_TPS_Common_Model_API_ScriptEnvironment_Scripts
+  name: Scripts
+  nameWithType: ScriptEnvironment.Scripts
+  fullName: VMS.TPS.Common.Model.API.ScriptEnvironment.Scripts
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ApplicationScript}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ApplicationScript}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ApplicationScript>
+  nameWithType: IEnumerable<ApplicationScript>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.ApplicationScript>
+  nameWithType.vb: IEnumerable(Of ApplicationScript)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.ApplicationScript)
+  name.vb: IEnumerable(Of ApplicationScript)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.ApplicationScript
+    name: ApplicationScript
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApplicationScript.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.ApplicationScript
+    name: ApplicationScript
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApplicationScript.html
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ScriptEnvironment.Packages*
+  commentId: Overload:VMS.TPS.Common.Model.API.ScriptEnvironment.Packages
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ScriptEnvironment.html#VMS_TPS_Common_Model_API_ScriptEnvironment_Packages
+  name: Packages
+  nameWithType: ScriptEnvironment.Packages
+  fullName: VMS.TPS.Common.Model.API.ScriptEnvironment.Packages
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ApplicationPackage}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.API.ApplicationPackage}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ApplicationPackage>
+  nameWithType: IEnumerable<ApplicationPackage>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.API.ApplicationPackage>
+  nameWithType.vb: IEnumerable(Of ApplicationPackage)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.API.ApplicationPackage)
+  name.vb: IEnumerable(Of ApplicationPackage)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.API.ApplicationPackage
+    name: ApplicationPackage
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApplicationPackage.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.API.ApplicationPackage
+    name: ApplicationPackage
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApplicationPackage.html
+  - name: )

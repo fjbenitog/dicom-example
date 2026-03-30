@@ -1,0 +1,298 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.PatientOrientation
+  commentId: T:VMS.TPS.Common.Model.Types.PatientOrientation
+  id: PatientOrientation
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.PatientOrientation.FeetFirstDecubitusLeft
+  - VMS.TPS.Common.Model.Types.PatientOrientation.FeetFirstDecubitusRight
+  - VMS.TPS.Common.Model.Types.PatientOrientation.FeetFirstProne
+  - VMS.TPS.Common.Model.Types.PatientOrientation.FeetFirstSupine
+  - VMS.TPS.Common.Model.Types.PatientOrientation.HeadFirstDecubitusLeft
+  - VMS.TPS.Common.Model.Types.PatientOrientation.HeadFirstDecubitusRight
+  - VMS.TPS.Common.Model.Types.PatientOrientation.HeadFirstProne
+  - VMS.TPS.Common.Model.Types.PatientOrientation.HeadFirstSupine
+  - VMS.TPS.Common.Model.Types.PatientOrientation.NoOrientation
+  - VMS.TPS.Common.Model.Types.PatientOrientation.Sitting
+  langs:
+  - csharp
+  - vb
+  name: PatientOrientation
+  nameWithType: PatientOrientation
+  fullName: VMS.TPS.Common.Model.Types.PatientOrientation
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The enumeration of patient orientations.
+  example: []
+  syntax:
+    content: public enum PatientOrientation
+    content.vb: Public Enum PatientOrientation
+- uid: VMS.TPS.Common.Model.Types.PatientOrientation.NoOrientation
+  commentId: F:VMS.TPS.Common.Model.Types.PatientOrientation.NoOrientation
+  id: NoOrientation
+  parent: VMS.TPS.Common.Model.Types.PatientOrientation
+  langs:
+  - csharp
+  - vb
+  name: NoOrientation
+  nameWithType: PatientOrientation.NoOrientation
+  fullName: VMS.TPS.Common.Model.Types.PatientOrientation.NoOrientation
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: No orientation.
+  example: []
+  syntax:
+    content: NoOrientation = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.PatientOrientation
+- uid: VMS.TPS.Common.Model.Types.PatientOrientation.HeadFirstSupine
+  commentId: F:VMS.TPS.Common.Model.Types.PatientOrientation.HeadFirstSupine
+  id: HeadFirstSupine
+  parent: VMS.TPS.Common.Model.Types.PatientOrientation
+  langs:
+  - csharp
+  - vb
+  name: HeadFirstSupine
+  nameWithType: PatientOrientation.HeadFirstSupine
+  fullName: VMS.TPS.Common.Model.Types.PatientOrientation.HeadFirstSupine
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Head first - supine.
+  example: []
+  syntax:
+    content: HeadFirstSupine = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.PatientOrientation
+- uid: VMS.TPS.Common.Model.Types.PatientOrientation.HeadFirstProne
+  commentId: F:VMS.TPS.Common.Model.Types.PatientOrientation.HeadFirstProne
+  id: HeadFirstProne
+  parent: VMS.TPS.Common.Model.Types.PatientOrientation
+  langs:
+  - csharp
+  - vb
+  name: HeadFirstProne
+  nameWithType: PatientOrientation.HeadFirstProne
+  fullName: VMS.TPS.Common.Model.Types.PatientOrientation.HeadFirstProne
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Head first - prone.
+  example: []
+  syntax:
+    content: HeadFirstProne = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.PatientOrientation
+- uid: VMS.TPS.Common.Model.Types.PatientOrientation.HeadFirstDecubitusRight
+  commentId: F:VMS.TPS.Common.Model.Types.PatientOrientation.HeadFirstDecubitusRight
+  id: HeadFirstDecubitusRight
+  parent: VMS.TPS.Common.Model.Types.PatientOrientation
+  langs:
+  - csharp
+  - vb
+  name: HeadFirstDecubitusRight
+  nameWithType: PatientOrientation.HeadFirstDecubitusRight
+  fullName: VMS.TPS.Common.Model.Types.PatientOrientation.HeadFirstDecubitusRight
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Head first - decubitus right.
+  example: []
+  syntax:
+    content: HeadFirstDecubitusRight = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.PatientOrientation
+- uid: VMS.TPS.Common.Model.Types.PatientOrientation.HeadFirstDecubitusLeft
+  commentId: F:VMS.TPS.Common.Model.Types.PatientOrientation.HeadFirstDecubitusLeft
+  id: HeadFirstDecubitusLeft
+  parent: VMS.TPS.Common.Model.Types.PatientOrientation
+  langs:
+  - csharp
+  - vb
+  name: HeadFirstDecubitusLeft
+  nameWithType: PatientOrientation.HeadFirstDecubitusLeft
+  fullName: VMS.TPS.Common.Model.Types.PatientOrientation.HeadFirstDecubitusLeft
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Head first - decubitus left.
+  example: []
+  syntax:
+    content: HeadFirstDecubitusLeft = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.PatientOrientation
+- uid: VMS.TPS.Common.Model.Types.PatientOrientation.FeetFirstSupine
+  commentId: F:VMS.TPS.Common.Model.Types.PatientOrientation.FeetFirstSupine
+  id: FeetFirstSupine
+  parent: VMS.TPS.Common.Model.Types.PatientOrientation
+  langs:
+  - csharp
+  - vb
+  name: FeetFirstSupine
+  nameWithType: PatientOrientation.FeetFirstSupine
+  fullName: VMS.TPS.Common.Model.Types.PatientOrientation.FeetFirstSupine
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Feet first - supine.
+  example: []
+  syntax:
+    content: FeetFirstSupine = 5
+    return:
+      type: VMS.TPS.Common.Model.Types.PatientOrientation
+- uid: VMS.TPS.Common.Model.Types.PatientOrientation.FeetFirstProne
+  commentId: F:VMS.TPS.Common.Model.Types.PatientOrientation.FeetFirstProne
+  id: FeetFirstProne
+  parent: VMS.TPS.Common.Model.Types.PatientOrientation
+  langs:
+  - csharp
+  - vb
+  name: FeetFirstProne
+  nameWithType: PatientOrientation.FeetFirstProne
+  fullName: VMS.TPS.Common.Model.Types.PatientOrientation.FeetFirstProne
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Feet first - prone.
+  example: []
+  syntax:
+    content: FeetFirstProne = 6
+    return:
+      type: VMS.TPS.Common.Model.Types.PatientOrientation
+- uid: VMS.TPS.Common.Model.Types.PatientOrientation.FeetFirstDecubitusRight
+  commentId: F:VMS.TPS.Common.Model.Types.PatientOrientation.FeetFirstDecubitusRight
+  id: FeetFirstDecubitusRight
+  parent: VMS.TPS.Common.Model.Types.PatientOrientation
+  langs:
+  - csharp
+  - vb
+  name: FeetFirstDecubitusRight
+  nameWithType: PatientOrientation.FeetFirstDecubitusRight
+  fullName: VMS.TPS.Common.Model.Types.PatientOrientation.FeetFirstDecubitusRight
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Feet first - decubitus right.
+  example: []
+  syntax:
+    content: FeetFirstDecubitusRight = 7
+    return:
+      type: VMS.TPS.Common.Model.Types.PatientOrientation
+- uid: VMS.TPS.Common.Model.Types.PatientOrientation.FeetFirstDecubitusLeft
+  commentId: F:VMS.TPS.Common.Model.Types.PatientOrientation.FeetFirstDecubitusLeft
+  id: FeetFirstDecubitusLeft
+  parent: VMS.TPS.Common.Model.Types.PatientOrientation
+  langs:
+  - csharp
+  - vb
+  name: FeetFirstDecubitusLeft
+  nameWithType: PatientOrientation.FeetFirstDecubitusLeft
+  fullName: VMS.TPS.Common.Model.Types.PatientOrientation.FeetFirstDecubitusLeft
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Feet first - decubitus left.
+  example: []
+  syntax:
+    content: FeetFirstDecubitusLeft = 8
+    return:
+      type: VMS.TPS.Common.Model.Types.PatientOrientation
+- uid: VMS.TPS.Common.Model.Types.PatientOrientation.Sitting
+  commentId: F:VMS.TPS.Common.Model.Types.PatientOrientation.Sitting
+  id: Sitting
+  parent: VMS.TPS.Common.Model.Types.PatientOrientation
+  langs:
+  - csharp
+  - vb
+  name: Sitting
+  nameWithType: PatientOrientation.Sitting
+  fullName: VMS.TPS.Common.Model.Types.PatientOrientation.Sitting
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Sitting.
+  example: []
+  syntax:
+    content: Sitting = 9
+    return:
+      type: VMS.TPS.Common.Model.Types.PatientOrientation
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.PatientOrientation
+  commentId: T:VMS.TPS.Common.Model.Types.PatientOrientation
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.PatientOrientation.html
+  name: PatientOrientation
+  nameWithType: PatientOrientation
+  fullName: VMS.TPS.Common.Model.Types.PatientOrientation

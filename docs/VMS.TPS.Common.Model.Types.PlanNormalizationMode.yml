@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+  commentId: T:VMS.TPS.Common.Model.Types.PlanNormalizationMode
+  id: PlanNormalizationMode
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.PlanNormalizationMode.NoNormalization
+  - VMS.TPS.Common.Model.Types.PlanNormalizationMode.TargetDVH
+  - VMS.TPS.Common.Model.Types.PlanNormalizationMode.TargetMax
+  - VMS.TPS.Common.Model.Types.PlanNormalizationMode.TargetMean
+  - VMS.TPS.Common.Model.Types.PlanNormalizationMode.TargetMin
+  - VMS.TPS.Common.Model.Types.PlanNormalizationMode.UserDefined
+  langs:
+  - csharp
+  - vb
+  name: PlanNormalizationMode
+  nameWithType: PlanNormalizationMode
+  fullName: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Plan normalization options for SetPlanNormalization
+  example: []
+  syntax:
+    content: public enum PlanNormalizationMode
+    content.vb: Public Enum PlanNormalizationMode
+- uid: VMS.TPS.Common.Model.Types.PlanNormalizationMode.TargetMax
+  commentId: F:VMS.TPS.Common.Model.Types.PlanNormalizationMode.TargetMax
+  id: TargetMax
+  parent: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+  langs:
+  - csharp
+  - vb
+  name: TargetMax
+  nameWithType: PlanNormalizationMode.TargetMax
+  fullName: VMS.TPS.Common.Model.Types.PlanNormalizationMode.TargetMax
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The maximum dose value in the plan target volume is normalized to 100%.
+  example: []
+  syntax:
+    content: TargetMax = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+- uid: VMS.TPS.Common.Model.Types.PlanNormalizationMode.TargetMean
+  commentId: F:VMS.TPS.Common.Model.Types.PlanNormalizationMode.TargetMean
+  id: TargetMean
+  parent: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+  langs:
+  - csharp
+  - vb
+  name: TargetMean
+  nameWithType: PlanNormalizationMode.TargetMean
+  fullName: VMS.TPS.Common.Model.Types.PlanNormalizationMode.TargetMean
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The mean dose value in the plan target volume is normalized to 100%.
+  example: []
+  syntax:
+    content: TargetMean = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+- uid: VMS.TPS.Common.Model.Types.PlanNormalizationMode.TargetMin
+  commentId: F:VMS.TPS.Common.Model.Types.PlanNormalizationMode.TargetMin
+  id: TargetMin
+  parent: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+  langs:
+  - csharp
+  - vb
+  name: TargetMin
+  nameWithType: PlanNormalizationMode.TargetMin
+  fullName: VMS.TPS.Common.Model.Types.PlanNormalizationMode.TargetMin
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The minimum dose value in the plan target volume is normalized to 100%.
+  example: []
+  syntax:
+    content: TargetMin = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+- uid: VMS.TPS.Common.Model.Types.PlanNormalizationMode.TargetDVH
+  commentId: F:VMS.TPS.Common.Model.Types.PlanNormalizationMode.TargetDVH
+  id: TargetDVH
+  parent: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+  langs:
+  - csharp
+  - vb
+  name: TargetDVH
+  nameWithType: PlanNormalizationMode.TargetDVH
+  fullName: VMS.TPS.Common.Model.Types.PlanNormalizationMode.TargetDVH
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The dose in the user-defined amount of the plan target volume is normalized to the user-defined dose percentage.
+  example: []
+  syntax:
+    content: TargetDVH = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+- uid: VMS.TPS.Common.Model.Types.PlanNormalizationMode.NoNormalization
+  commentId: F:VMS.TPS.Common.Model.Types.PlanNormalizationMode.NoNormalization
+  id: NoNormalization
+  parent: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+  langs:
+  - csharp
+  - vb
+  name: NoNormalization
+  nameWithType: PlanNormalizationMode.NoNormalization
+  fullName: VMS.TPS.Common.Model.Types.PlanNormalizationMode.NoNormalization
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The plan is normalized according to the normalization type defined for the calculation model in use.
+  example: []
+  syntax:
+    content: NoNormalization = 4
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+- uid: VMS.TPS.Common.Model.Types.PlanNormalizationMode.UserDefined
+  commentId: F:VMS.TPS.Common.Model.Types.PlanNormalizationMode.UserDefined
+  id: UserDefined
+  parent: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+  langs:
+  - csharp
+  - vb
+  name: UserDefined
+  nameWithType: PlanNormalizationMode.UserDefined
+  fullName: VMS.TPS.Common.Model.Types.PlanNormalizationMode.UserDefined
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The plan is normalized according to the user-defined normalization value.
+  example: []
+  syntax:
+    content: UserDefined = 5
+    return:
+      type: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.PlanNormalizationMode
+  commentId: T:VMS.TPS.Common.Model.Types.PlanNormalizationMode
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.PlanNormalizationMode.html
+  name: PlanNormalizationMode
+  nameWithType: PlanNormalizationMode
+  fullName: VMS.TPS.Common.Model.Types.PlanNormalizationMode

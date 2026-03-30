@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.RangeShifterType
+  commentId: T:VMS.TPS.Common.Model.Types.RangeShifterType
+  id: RangeShifterType
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.RangeShifterType.Analog
+  - VMS.TPS.Common.Model.Types.RangeShifterType.Binary
+  langs:
+  - csharp
+  - vb
+  name: RangeShifterType
+  nameWithType: RangeShifterType
+  fullName: VMS.TPS.Common.Model.Types.RangeShifterType
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Type of the range shifter.
+  example: []
+  syntax:
+    content: public enum RangeShifterType
+    content.vb: Public Enum RangeShifterType
+- uid: VMS.TPS.Common.Model.Types.RangeShifterType.Analog
+  commentId: F:VMS.TPS.Common.Model.Types.RangeShifterType.Analog
+  id: Analog
+  parent: VMS.TPS.Common.Model.Types.RangeShifterType
+  langs:
+  - csharp
+  - vb
+  name: Analog
+  nameWithType: RangeShifterType.Analog
+  fullName: VMS.TPS.Common.Model.Types.RangeShifterType.Analog
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The thickness of the device varies. The device is composed of opposing sliding wedges, a water column, or a similar mechanism.
+  example: []
+  syntax:
+    content: Analog = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.RangeShifterType
+- uid: VMS.TPS.Common.Model.Types.RangeShifterType.Binary
+  commentId: F:VMS.TPS.Common.Model.Types.RangeShifterType.Binary
+  id: Binary
+  parent: VMS.TPS.Common.Model.Types.RangeShifterType
+  langs:
+  - csharp
+  - vb
+  name: Binary
+  nameWithType: RangeShifterType.Binary
+  fullName: VMS.TPS.Common.Model.Types.RangeShifterType.Binary
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The device is composed of materials with different thickness that can be moved in or out of the beam in various stepped combinations.
+  example: []
+  syntax:
+    content: Binary = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.RangeShifterType
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.Types.RangeShifterType
+  commentId: T:VMS.TPS.Common.Model.Types.RangeShifterType
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.RangeShifterType.html
+  name: RangeShifterType
+  nameWithType: RangeShifterType
+  fullName: VMS.TPS.Common.Model.Types.RangeShifterType

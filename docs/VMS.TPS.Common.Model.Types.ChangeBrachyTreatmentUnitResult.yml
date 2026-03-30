@@ -1,0 +1,240 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult
+  commentId: T:VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult
+  id: ChangeBrachyTreatmentUnitResult
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.Failed
+  - VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.FailedBecausePlanContainsSeedCollections
+  - VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.Success
+  - VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.SuccessButPdrDataMissing
+  langs:
+  - csharp
+  - vb
+  name: ChangeBrachyTreatmentUnitResult
+  nameWithType: ChangeBrachyTreatmentUnitResult
+  fullName: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult
+  type: Enum
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Return value for <xref href="VMS.TPS.Common.Model.API.BrachyPlanSetup?text=BrachyPlanSetup" data-throw-if-not-resolved="false"></xref> method <xref href="VMS.TPS.Common.Model.API.BrachyPlanSetup.ChangeTreatmentUnit(VMS.TPS.Common.Model.API.BrachyTreatmentUnit%2cSystem.Boolean%2cSystem.Collections.Generic.List%7bSystem.String%7d%40)?text=ChangeTreatmentUnit" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public enum ChangeBrachyTreatmentUnitResult
+    content.vb: Public Enum ChangeBrachyTreatmentUnitResult
+- uid: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.Success
+  commentId: F:VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.Success
+  id: Success
+  parent: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: ChangeBrachyTreatmentUnitResult.Success
+  fullName: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.Success
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Changing the brachy treatment unit succeeded.
+  example: []
+  syntax:
+    content: Success = 0
+    return:
+      type: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult
+- uid: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.SuccessButPdrDataMissing
+  commentId: F:VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.SuccessButPdrDataMissing
+  id: SuccessButPdrDataMissing
+  parent: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult
+  langs:
+  - csharp
+  - vb
+  name: SuccessButPdrDataMissing
+  nameWithType: ChangeBrachyTreatmentUnitResult.SuccessButPdrDataMissing
+  fullName: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.SuccessButPdrDataMissing
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Changing the brachy treatment unit succeeded, but the PDR (Pulse Dose Rate) data is missing from the plan.
+  example: []
+  syntax:
+    content: SuccessButPdrDataMissing = 1
+    return:
+      type: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult
+- uid: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.Failed
+  commentId: F:VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.Failed
+  id: Failed
+  parent: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult
+  langs:
+  - csharp
+  - vb
+  name: Failed
+  nameWithType: ChangeBrachyTreatmentUnitResult.Failed
+  fullName: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.Failed
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Changing the brachy treatment unit failed.
+  example: []
+  syntax:
+    content: Failed = 2
+    return:
+      type: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult
+- uid: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.FailedBecausePlanContainsSeedCollections
+  commentId: F:VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.FailedBecausePlanContainsSeedCollections
+  id: FailedBecausePlanContainsSeedCollections
+  parent: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult
+  langs:
+  - csharp
+  - vb
+  name: FailedBecausePlanContainsSeedCollections
+  nameWithType: ChangeBrachyTreatmentUnitResult.FailedBecausePlanContainsSeedCollections
+  fullName: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.FailedBecausePlanContainsSeedCollections
+  type: Field
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Brachy treatment unit could not be changed because the plan contains seed collection(s).
+  example: []
+  syntax:
+    content: FailedBecausePlanContainsSeedCollections = 3
+    return:
+      type: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult
+references:
+- uid: VMS.TPS.Common.Model.API.BrachyPlanSetup
+  commentId: T:VMS.TPS.Common.Model.API.BrachyPlanSetup
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.BrachyPlanSetup.html
+  name: BrachyPlanSetup
+  nameWithType: BrachyPlanSetup
+  fullName: VMS.TPS.Common.Model.API.BrachyPlanSetup
+- uid: VMS.TPS.Common.Model.API.BrachyPlanSetup.ChangeTreatmentUnit(VMS.TPS.Common.Model.API.BrachyTreatmentUnit,System.Boolean,System.Collections.Generic.List{System.String}@)
+  commentId: M:VMS.TPS.Common.Model.API.BrachyPlanSetup.ChangeTreatmentUnit(VMS.TPS.Common.Model.API.BrachyTreatmentUnit,System.Boolean,System.Collections.Generic.List{System.String}@)
+  isExternal: true
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult
+  commentId: T:VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult.html
+  name: ChangeBrachyTreatmentUnitResult
+  nameWithType: ChangeBrachyTreatmentUnitResult
+  fullName: VMS.TPS.Common.Model.Types.ChangeBrachyTreatmentUnitResult

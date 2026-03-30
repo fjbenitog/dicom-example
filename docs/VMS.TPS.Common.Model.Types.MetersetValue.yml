@@ -1,0 +1,543 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.MetersetValue
+  commentId: T:VMS.TPS.Common.Model.Types.MetersetValue
+  id: MetersetValue
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.MetersetValue.#ctor(System.Double,VMS.TPS.Common.Model.Types.DosimeterUnit)
+  - VMS.TPS.Common.Model.Types.MetersetValue.GetSchema
+  - VMS.TPS.Common.Model.Types.MetersetValue.ReadXml(System.Xml.XmlReader)
+  - VMS.TPS.Common.Model.Types.MetersetValue.Unit
+  - VMS.TPS.Common.Model.Types.MetersetValue.Value
+  - VMS.TPS.Common.Model.Types.MetersetValue.WriteXml(System.Xml.XmlWriter)
+  langs:
+  - csharp
+  - vb
+  name: MetersetValue
+  nameWithType: MetersetValue
+  fullName: VMS.TPS.Common.Model.Types.MetersetValue
+  type: Struct
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Represents a meterset value.
+  example: []
+  syntax:
+    content: 'public struct MetersetValue : IXmlSerializable'
+    content.vb: Public Structure MetersetValue Implements IXmlSerializable
+  implements:
+  - System.Xml.Serialization.IXmlSerializable
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.Types.MetersetValue.#ctor(System.Double,VMS.TPS.Common.Model.Types.DosimeterUnit)
+  commentId: M:VMS.TPS.Common.Model.Types.MetersetValue.#ctor(System.Double,VMS.TPS.Common.Model.Types.DosimeterUnit)
+  id: '#ctor(System.Double,VMS.TPS.Common.Model.Types.DosimeterUnit)'
+  parent: VMS.TPS.Common.Model.Types.MetersetValue
+  langs:
+  - csharp
+  - vb
+  name: MetersetValue(double, DosimeterUnit)
+  nameWithType: MetersetValue.MetersetValue(double, DosimeterUnit)
+  fullName: VMS.TPS.Common.Model.Types.MetersetValue.MetersetValue(double, VMS.TPS.Common.Model.Types.DosimeterUnit)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Constructs a MetersetValue.
+  example: []
+  syntax:
+    content: public MetersetValue(double value, DosimeterUnit unit)
+    parameters:
+    - id: value
+      type: System.Double
+      description: Value for this instance.
+    - id: unit
+      type: VMS.TPS.Common.Model.Types.DosimeterUnit
+      description: Unit for this instance.
+    content.vb: Public Sub New(value As Double, unit As DosimeterUnit)
+  overload: VMS.TPS.Common.Model.Types.MetersetValue.#ctor*
+  nameWithType.vb: MetersetValue.New(Double, DosimeterUnit)
+  fullName.vb: VMS.TPS.Common.Model.Types.MetersetValue.New(Double, VMS.TPS.Common.Model.Types.DosimeterUnit)
+  name.vb: New(Double, DosimeterUnit)
+- uid: VMS.TPS.Common.Model.Types.MetersetValue.GetSchema
+  commentId: M:VMS.TPS.Common.Model.Types.MetersetValue.GetSchema
+  id: GetSchema
+  parent: VMS.TPS.Common.Model.Types.MetersetValue
+  langs:
+  - csharp
+  - vb
+  name: GetSchema()
+  nameWithType: MetersetValue.GetSchema()
+  fullName: VMS.TPS.Common.Model.Types.MetersetValue.GetSchema()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: This member is internal to the Eclipse Scripting API.
+  example: []
+  syntax:
+    content: public XmlSchema GetSchema()
+    return:
+      type: System.Xml.Schema.XmlSchema
+      description: XmlSchema.
+    content.vb: Public Function GetSchema() As XmlSchema
+  overload: VMS.TPS.Common.Model.Types.MetersetValue.GetSchema*
+- uid: VMS.TPS.Common.Model.Types.MetersetValue.ReadXml(System.Xml.XmlReader)
+  commentId: M:VMS.TPS.Common.Model.Types.MetersetValue.ReadXml(System.Xml.XmlReader)
+  id: ReadXml(System.Xml.XmlReader)
+  parent: VMS.TPS.Common.Model.Types.MetersetValue
+  langs:
+  - csharp
+  - vb
+  name: ReadXml(XmlReader)
+  nameWithType: MetersetValue.ReadXml(XmlReader)
+  fullName: VMS.TPS.Common.Model.Types.MetersetValue.ReadXml(System.Xml.XmlReader)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: This member is internal to the Eclipse Scripting API.
+  example: []
+  syntax:
+    content: public void ReadXml(XmlReader reader)
+    parameters:
+    - id: reader
+      type: System.Xml.XmlReader
+      description: XmlReader.
+    content.vb: Public Sub ReadXml(reader As XmlReader)
+  overload: VMS.TPS.Common.Model.Types.MetersetValue.ReadXml*
+- uid: VMS.TPS.Common.Model.Types.MetersetValue.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.Types.MetersetValue.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.Types.MetersetValue
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  nameWithType: MetersetValue.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.Types.MetersetValue.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Serialization support.
+  example: []
+  syntax:
+    content: public void WriteXml(XmlWriter writer)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The System.Xml.XmlWriter stream to which the object is serialized.
+    content.vb: Public Sub WriteXml(writer As XmlWriter)
+  overload: VMS.TPS.Common.Model.Types.MetersetValue.WriteXml*
+- uid: VMS.TPS.Common.Model.Types.MetersetValue.Value
+  commentId: P:VMS.TPS.Common.Model.Types.MetersetValue.Value
+  id: Value
+  parent: VMS.TPS.Common.Model.Types.MetersetValue
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: MetersetValue.Value
+  fullName: VMS.TPS.Common.Model.Types.MetersetValue.Value
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The value of this instance.
+  example: []
+  syntax:
+    content: public double Value { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Value As Double
+  overload: VMS.TPS.Common.Model.Types.MetersetValue.Value*
+- uid: VMS.TPS.Common.Model.Types.MetersetValue.Unit
+  commentId: P:VMS.TPS.Common.Model.Types.MetersetValue.Unit
+  id: Unit
+  parent: VMS.TPS.Common.Model.Types.MetersetValue
+  langs:
+  - csharp
+  - vb
+  name: Unit
+  nameWithType: MetersetValue.Unit
+  fullName: VMS.TPS.Common.Model.Types.MetersetValue.Unit
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The unit of this instance.
+  example: []
+  syntax:
+    content: public DosimeterUnit Unit { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.DosimeterUnit
+    content.vb: Public ReadOnly Property Unit As DosimeterUnit
+  overload: VMS.TPS.Common.Model.Types.MetersetValue.Unit*
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.Xml.Serialization.IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  nameWithType: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.Types.MetersetValue.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.Types.MetersetValue.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.MetersetValue.html#VMS_TPS_Common_Model_Types_MetersetValue__ctor_System_Double_VMS_TPS_Common_Model_Types_DosimeterUnit_
+  name: MetersetValue
+  nameWithType: MetersetValue.MetersetValue
+  fullName: VMS.TPS.Common.Model.Types.MetersetValue.MetersetValue
+  nameWithType.vb: MetersetValue.New
+  fullName.vb: VMS.TPS.Common.Model.Types.MetersetValue.New
+  name.vb: New
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: VMS.TPS.Common.Model.Types.DosimeterUnit
+  commentId: T:VMS.TPS.Common.Model.Types.DosimeterUnit
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.DosimeterUnit.html
+  name: DosimeterUnit
+  nameWithType: DosimeterUnit
+  fullName: VMS.TPS.Common.Model.Types.DosimeterUnit
+- uid: VMS.TPS.Common.Model.Types.MetersetValue.GetSchema*
+  commentId: Overload:VMS.TPS.Common.Model.Types.MetersetValue.GetSchema
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.MetersetValue.html#VMS_TPS_Common_Model_Types_MetersetValue_GetSchema
+  name: GetSchema
+  nameWithType: MetersetValue.GetSchema
+  fullName: VMS.TPS.Common.Model.Types.MetersetValue.GetSchema
+- uid: System.Xml.Schema.XmlSchema
+  isExternal: true
+  name: XmlSchema
+  nameWithType: XmlSchema
+  fullName: System.Xml.Schema.XmlSchema
+- uid: VMS.TPS.Common.Model.Types.MetersetValue.ReadXml*
+  commentId: Overload:VMS.TPS.Common.Model.Types.MetersetValue.ReadXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.MetersetValue.html#VMS_TPS_Common_Model_Types_MetersetValue_ReadXml_System_Xml_XmlReader_
+  name: ReadXml
+  nameWithType: MetersetValue.ReadXml
+  fullName: VMS.TPS.Common.Model.Types.MetersetValue.ReadXml
+- uid: System.Xml.XmlReader
+  isExternal: true
+  name: XmlReader
+  nameWithType: XmlReader
+  fullName: System.Xml.XmlReader
+- uid: VMS.TPS.Common.Model.Types.MetersetValue.WriteXml*
+  commentId: Overload:VMS.TPS.Common.Model.Types.MetersetValue.WriteXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.MetersetValue.html#VMS_TPS_Common_Model_Types_MetersetValue_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml
+  nameWithType: MetersetValue.WriteXml
+  fullName: VMS.TPS.Common.Model.Types.MetersetValue.WriteXml
+- uid: System.Xml.XmlWriter
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: VMS.TPS.Common.Model.Types.MetersetValue.Value*
+  commentId: Overload:VMS.TPS.Common.Model.Types.MetersetValue.Value
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.MetersetValue.html#VMS_TPS_Common_Model_Types_MetersetValue_Value
+  name: Value
+  nameWithType: MetersetValue.Value
+  fullName: VMS.TPS.Common.Model.Types.MetersetValue.Value
+- uid: VMS.TPS.Common.Model.Types.MetersetValue.Unit*
+  commentId: Overload:VMS.TPS.Common.Model.Types.MetersetValue.Unit
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.MetersetValue.html#VMS_TPS_Common_Model_Types_MetersetValue_Unit
+  name: Unit
+  nameWithType: MetersetValue.Unit
+  fullName: VMS.TPS.Common.Model.Types.MetersetValue.Unit

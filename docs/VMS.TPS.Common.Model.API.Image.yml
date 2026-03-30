@@ -1,0 +1,2978 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.API.Image
+  commentId: T:VMS.TPS.Common.Model.API.Image
+  id: Image
+  parent: VMS.TPS.Common.Model.API
+  children:
+  - VMS.TPS.Common.Model.API.Image.ApprovalHistory
+  - VMS.TPS.Common.Model.API.Image.CalculateDectProtonStoppingPowers(VMS.TPS.Common.Model.API.Image,VMS.TPS.Common.Model.API.Image,System.Int32,System.Double[0:,0:])
+  - VMS.TPS.Common.Model.API.Image.CalibrationProtocolDateTime
+  - VMS.TPS.Common.Model.API.Image.CalibrationProtocolDescription
+  - VMS.TPS.Common.Model.API.Image.CalibrationProtocolId
+  - VMS.TPS.Common.Model.API.Image.CalibrationProtocolImageMatchWarning
+  - VMS.TPS.Common.Model.API.Image.CalibrationProtocolLastModifiedDateTime
+  - VMS.TPS.Common.Model.API.Image.CalibrationProtocolStatus
+  - VMS.TPS.Common.Model.API.Image.CalibrationProtocolUser
+  - VMS.TPS.Common.Model.API.Image.ContrastBolusAgentIngredientName
+  - VMS.TPS.Common.Model.API.Image.CreateNewStructureSet
+  - VMS.TPS.Common.Model.API.Image.CreationDateTime
+  - VMS.TPS.Common.Model.API.Image.DicomToUser(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.API.PlanSetup)
+  - VMS.TPS.Common.Model.API.Image.DisplayUnit
+  - VMS.TPS.Common.Model.API.Image.FOR
+  - VMS.TPS.Common.Model.API.Image.GetImageProfile(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector,System.Double[])
+  - VMS.TPS.Common.Model.API.Image.GetProtonStoppingPowerCurve(System.Collections.Generic.SortedList{System.Double,System.Double})
+  - VMS.TPS.Common.Model.API.Image.GetVoxels(System.Int32,System.Int32[0:,0:])
+  - VMS.TPS.Common.Model.API.Image.HasUserOrigin
+  - VMS.TPS.Common.Model.API.Image.Id
+  - VMS.TPS.Common.Model.API.Image.ImageType
+  - VMS.TPS.Common.Model.API.Image.ImagingDeviceId
+  - VMS.TPS.Common.Model.API.Image.ImagingOrientation
+  - VMS.TPS.Common.Model.API.Image.ImagingOrientationAsString
+  - VMS.TPS.Common.Model.API.Image.IsProcessed
+  - VMS.TPS.Common.Model.API.Image.Level
+  - VMS.TPS.Common.Model.API.Image.Modality
+  - VMS.TPS.Common.Model.API.Image.Origin
+  - VMS.TPS.Common.Model.API.Image.Series
+  - VMS.TPS.Common.Model.API.Image.UID
+  - VMS.TPS.Common.Model.API.Image.UserOrigin
+  - VMS.TPS.Common.Model.API.Image.UserOriginComments
+  - VMS.TPS.Common.Model.API.Image.UserToDicom(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.API.PlanSetup)
+  - VMS.TPS.Common.Model.API.Image.VoxelToDisplayValue(System.Int32)
+  - VMS.TPS.Common.Model.API.Image.Window
+  - VMS.TPS.Common.Model.API.Image.WriteXml(System.Xml.XmlWriter)
+  - VMS.TPS.Common.Model.API.Image.XDirection
+  - VMS.TPS.Common.Model.API.Image.XRes
+  - VMS.TPS.Common.Model.API.Image.XSize
+  - VMS.TPS.Common.Model.API.Image.YDirection
+  - VMS.TPS.Common.Model.API.Image.YRes
+  - VMS.TPS.Common.Model.API.Image.YSize
+  - VMS.TPS.Common.Model.API.Image.ZDirection
+  - VMS.TPS.Common.Model.API.Image.ZRes
+  - VMS.TPS.Common.Model.API.Image.ZSize
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: Image
+  fullName: VMS.TPS.Common.Model.API.Image
+  type: Class
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Represents a 2D or 3D image, which can be a DRR, a CT, MR, or other volumetric dataset.
+  example: []
+  syntax:
+    content: 'public class Image : ApiDataObject, IXmlSerializable'
+    content.vb: Public Class Image Inherits ApiDataObject Implements IXmlSerializable
+  inheritance:
+  - System.Object
+  - VMS.TPS.Common.Model.API.SerializableObject
+  - VMS.TPS.Common.Model.API.ApiDataObject
+  implements:
+  - System.Xml.Serialization.IXmlSerializable
+  inheritedMembers:
+  - VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  - VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  - VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  - VMS.TPS.Common.Model.API.ApiDataObject.Name
+  - VMS.TPS.Common.Model.API.ApiDataObject.Comment
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  - VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  - VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  - VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  - VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  - VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  - VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  - VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.API.Image.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.Image.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  nameWithType: Image.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.Image.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Converts an object into its XML representation.
+
+    For more information on how to serialize an object into an XML document, see <xref href="System.Xml.Serialization.XmlSerializer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override void WriteXml(XmlWriter writer)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The System.Xml.XmlWriter stream, to which the object is serialized.
+    content.vb: Public Overrides Sub WriteXml(writer As XmlWriter)
+  overridden: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+  overload: VMS.TPS.Common.Model.API.Image.WriteXml*
+- uid: VMS.TPS.Common.Model.API.Image.CalculateDectProtonStoppingPowers(VMS.TPS.Common.Model.API.Image,VMS.TPS.Common.Model.API.Image,System.Int32,System.Double[0:,0:])
+  commentId: M:VMS.TPS.Common.Model.API.Image.CalculateDectProtonStoppingPowers(VMS.TPS.Common.Model.API.Image,VMS.TPS.Common.Model.API.Image,System.Int32,System.Double[0:,0:])
+  id: CalculateDectProtonStoppingPowers(VMS.TPS.Common.Model.API.Image,VMS.TPS.Common.Model.API.Image,System.Int32,System.Double[0:,0:])
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: CalculateDectProtonStoppingPowers(Image, Image, int, double[,])
+  nameWithType: Image.CalculateDectProtonStoppingPowers(Image, Image, int, double[,])
+  fullName: VMS.TPS.Common.Model.API.Image.CalculateDectProtonStoppingPowers(VMS.TPS.Common.Model.API.Image, VMS.TPS.Common.Model.API.Image, int, double[,])
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Returns the voxel-wise DECT proton stopping powers of the given image plane calculated
+
+    from the current image and the rho and Z images. The image FOR, size, and resolution for the rho and Z images must conform with this image.
+  example: []
+  syntax:
+    content: public void CalculateDectProtonStoppingPowers(Image rhoImage, Image zImage, int planeIndex, double[,] preallocatedBuffer)
+    parameters:
+    - id: rhoImage
+      type: VMS.TPS.Common.Model.API.Image
+      description: A DECT relative electron density image. The electron density is interpreted from the image values as rho = 0.001 * (value + 1000).
+    - id: zImage
+      type: VMS.TPS.Common.Model.API.Image
+      description: A DECT effective atomic number image.
+    - id: planeIndex
+      type: System.Int32
+      description: Zero based index of the plane.
+    - id: preallocatedBuffer
+      type: System.Double[,]
+      description: >-
+        Pre-allocated buffer where the proton stopping power values
+                    are stored. The size of the buffer must conform with the X- and Y-size of this image.
+    content.vb: Public Sub CalculateDectProtonStoppingPowers(rhoImage As Image, zImage As Image, planeIndex As Integer, preallocatedBuffer As Double(,))
+  overload: VMS.TPS.Common.Model.API.Image.CalculateDectProtonStoppingPowers*
+  nameWithType.vb: Image.CalculateDectProtonStoppingPowers(Image, Image, Integer, Double(,))
+  fullName.vb: VMS.TPS.Common.Model.API.Image.CalculateDectProtonStoppingPowers(VMS.TPS.Common.Model.API.Image, VMS.TPS.Common.Model.API.Image, Integer, Double(,))
+  name.vb: CalculateDectProtonStoppingPowers(Image, Image, Integer, Double(,))
+- uid: VMS.TPS.Common.Model.API.Image.CreateNewStructureSet
+  commentId: M:VMS.TPS.Common.Model.API.Image.CreateNewStructureSet
+  id: CreateNewStructureSet
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: CreateNewStructureSet()
+  nameWithType: Image.CreateNewStructureSet()
+  fullName: VMS.TPS.Common.Model.API.Image.CreateNewStructureSet()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    [Availability of this method depends on your Eclipse Scripting API license] Creates a new structure set. If the image does not yet have a structure set,
+
+    the new structure set will be assigned directly to it. If the image already has
+
+    a structure set, a copy of this image is made, and the new structure set is assigned
+
+    to the copy. The image must be a 3D image.
+  example: []
+  syntax:
+    content: public StructureSet CreateNewStructureSet()
+    return:
+      type: VMS.TPS.Common.Model.API.StructureSet
+      description: New structure set.
+    content.vb: Public Function CreateNewStructureSet() As StructureSet
+  overload: VMS.TPS.Common.Model.API.Image.CreateNewStructureSet*
+- uid: VMS.TPS.Common.Model.API.Image.DicomToUser(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.API.PlanSetup)
+  commentId: M:VMS.TPS.Common.Model.API.Image.DicomToUser(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.API.PlanSetup)
+  id: DicomToUser(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.API.PlanSetup)
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: DicomToUser(VVector, PlanSetup)
+  nameWithType: Image.DicomToUser(VVector, PlanSetup)
+  fullName: VMS.TPS.Common.Model.API.Image.DicomToUser(VMS.TPS.Common.Model.Types.VVector, VMS.TPS.Common.Model.API.PlanSetup)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Converts DICOM coordinates to the planning coordinate system used in the Eclipse user interface.
+  example: []
+  syntax:
+    content: public VVector DicomToUser(VVector dicom, PlanSetup planSetup)
+    parameters:
+    - id: dicom
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: Coordinate value in DICOM coordinate system.
+    - id: planSetup
+      type: VMS.TPS.Common.Model.API.PlanSetup
+      description: Plan that defines the planning orientation or null.
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: The coordinate value in the planning coordinate system used in Eclipse user interface.
+    content.vb: Public Function DicomToUser(dicom As VVector, planSetup As PlanSetup) As VVector
+  overload: VMS.TPS.Common.Model.API.Image.DicomToUser*
+- uid: VMS.TPS.Common.Model.API.Image.GetImageProfile(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector,System.Double[])
+  commentId: M:VMS.TPS.Common.Model.API.Image.GetImageProfile(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector,System.Double[])
+  id: GetImageProfile(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.Types.VVector,System.Double[])
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: GetImageProfile(VVector, VVector, double[])
+  nameWithType: Image.GetImageProfile(VVector, VVector, double[])
+  fullName: VMS.TPS.Common.Model.API.Image.GetImageProfile(VMS.TPS.Common.Model.Types.VVector, VMS.TPS.Common.Model.Types.VVector, double[])
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Gets the image profile.
+  example: []
+  syntax:
+    content: public ImageProfile GetImageProfile(VVector start, VVector stop, double[] preallocatedBuffer)
+    parameters:
+    - id: start
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: Location of the first point of the profile.
+    - id: stop
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: Location of the last point of the profile.
+    - id: preallocatedBuffer
+      type: System.Double[]
+      description: >-
+        Preallocated buffer where the values are stored. The size of
+                    the buffer determines the number of values to return.
+    return:
+      type: VMS.TPS.Common.Model.Types.ImageProfile
+      description: The ImageProfile object holding the image pixel values along the line segment defined by start and stop parameters.
+    content.vb: Public Function GetImageProfile(start As VVector, [stop] As VVector, preallocatedBuffer As Double()) As ImageProfile
+  overload: VMS.TPS.Common.Model.API.Image.GetImageProfile*
+  nameWithType.vb: Image.GetImageProfile(VVector, VVector, Double())
+  fullName.vb: VMS.TPS.Common.Model.API.Image.GetImageProfile(VMS.TPS.Common.Model.Types.VVector, VMS.TPS.Common.Model.Types.VVector, Double())
+  name.vb: GetImageProfile(VVector, VVector, Double())
+- uid: VMS.TPS.Common.Model.API.Image.GetProtonStoppingPowerCurve(System.Collections.Generic.SortedList{System.Double,System.Double})
+  commentId: M:VMS.TPS.Common.Model.API.Image.GetProtonStoppingPowerCurve(System.Collections.Generic.SortedList{System.Double,System.Double})
+  id: GetProtonStoppingPowerCurve(System.Collections.Generic.SortedList{System.Double,System.Double})
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: GetProtonStoppingPowerCurve(SortedList<double, double>)
+  nameWithType: Image.GetProtonStoppingPowerCurve(SortedList<double, double>)
+  fullName: VMS.TPS.Common.Model.API.Image.GetProtonStoppingPowerCurve(System.Collections.Generic.SortedList<double, double>)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Returns the HU to proton stopping power curve associated with the image.
+  example: []
+  syntax:
+    content: public bool GetProtonStoppingPowerCurve(SortedList<double, double> protonStoppingPowerCurve)
+    parameters:
+    - id: protonStoppingPowerCurve
+      type: System.Collections.Generic.SortedList{System.Double,System.Double}
+      description: An empty list where the curve values will be stored.
+    return:
+      type: System.Boolean
+      description: True if the stopping power curve was succesfully found, false otherwise
+    content.vb: Public Function GetProtonStoppingPowerCurve(protonStoppingPowerCurve As SortedList(Of Double, Double)) As Boolean
+  overload: VMS.TPS.Common.Model.API.Image.GetProtonStoppingPowerCurve*
+  nameWithType.vb: Image.GetProtonStoppingPowerCurve(SortedList(Of Double, Double))
+  fullName.vb: VMS.TPS.Common.Model.API.Image.GetProtonStoppingPowerCurve(System.Collections.Generic.SortedList(Of Double, Double))
+  name.vb: GetProtonStoppingPowerCurve(SortedList(Of Double, Double))
+- uid: VMS.TPS.Common.Model.API.Image.GetVoxels(System.Int32,System.Int32[0:,0:])
+  commentId: M:VMS.TPS.Common.Model.API.Image.GetVoxels(System.Int32,System.Int32[0:,0:])
+  id: GetVoxels(System.Int32,System.Int32[0:,0:])
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: GetVoxels(int, int[,])
+  nameWithType: Image.GetVoxels(int, int[,])
+  fullName: VMS.TPS.Common.Model.API.Image.GetVoxels(int, int[,])
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Gets the voxels of the given image plane.
+  example: []
+  syntax:
+    content: public void GetVoxels(int planeIndex, int[,] preallocatedBuffer)
+    parameters:
+    - id: planeIndex
+      type: System.Int32
+      description: Zero based index of the plane.
+    - id: preallocatedBuffer
+      type: System.Int32[,]
+      description: >-
+        Preallocated buffer where the voxel values are stored. The size of
+                    the buffer must conform with the X- and Y-size of this image.
+    content.vb: Public Sub GetVoxels(planeIndex As Integer, preallocatedBuffer As Integer(,))
+  overload: VMS.TPS.Common.Model.API.Image.GetVoxels*
+  nameWithType.vb: Image.GetVoxels(Integer, Integer(,))
+  fullName.vb: VMS.TPS.Common.Model.API.Image.GetVoxels(Integer, Integer(,))
+  name.vb: GetVoxels(Integer, Integer(,))
+- uid: VMS.TPS.Common.Model.API.Image.UserToDicom(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.API.PlanSetup)
+  commentId: M:VMS.TPS.Common.Model.API.Image.UserToDicom(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.API.PlanSetup)
+  id: UserToDicom(VMS.TPS.Common.Model.Types.VVector,VMS.TPS.Common.Model.API.PlanSetup)
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: UserToDicom(VVector, PlanSetup)
+  nameWithType: Image.UserToDicom(VVector, PlanSetup)
+  fullName: VMS.TPS.Common.Model.API.Image.UserToDicom(VMS.TPS.Common.Model.Types.VVector, VMS.TPS.Common.Model.API.PlanSetup)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Converts a coordinate value from the planning coordinate system used in the Eclipse user interface to DICOM coordinates.
+  example: []
+  syntax:
+    content: public VVector UserToDicom(VVector user, PlanSetup planSetup)
+    parameters:
+    - id: user
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: Coordinate value in the planning coordinate system.
+    - id: planSetup
+      type: VMS.TPS.Common.Model.API.PlanSetup
+      description: Plan that defines the planning orientation or null.
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector
+      description: The coordinate value in DICOM coordinate system.
+    content.vb: Public Function UserToDicom(user As VVector, planSetup As PlanSetup) As VVector
+  overload: VMS.TPS.Common.Model.API.Image.UserToDicom*
+- uid: VMS.TPS.Common.Model.API.Image.VoxelToDisplayValue(System.Int32)
+  commentId: M:VMS.TPS.Common.Model.API.Image.VoxelToDisplayValue(System.Int32)
+  id: VoxelToDisplayValue(System.Int32)
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: VoxelToDisplayValue(int)
+  nameWithType: Image.VoxelToDisplayValue(int)
+  fullName: VMS.TPS.Common.Model.API.Image.VoxelToDisplayValue(int)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Converts the given raw voxel value to the corresponding value
+
+    in the user interface display unit, for example, HU, Bq/ml.
+  example: []
+  syntax:
+    content: public double VoxelToDisplayValue(int voxelValue)
+    parameters:
+    - id: voxelValue
+      type: System.Int32
+      description: Voxel value.
+    return:
+      type: System.Double
+      description: Value converted to user interface display unit.
+    content.vb: Public Function VoxelToDisplayValue(voxelValue As Integer) As Double
+  overload: VMS.TPS.Common.Model.API.Image.VoxelToDisplayValue*
+  nameWithType.vb: Image.VoxelToDisplayValue(Integer)
+  fullName.vb: VMS.TPS.Common.Model.API.Image.VoxelToDisplayValue(Integer)
+  name.vb: VoxelToDisplayValue(Integer)
+- uid: VMS.TPS.Common.Model.API.Image.Id
+  commentId: P:VMS.TPS.Common.Model.API.Image.Id
+  id: Id
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Image.Id
+  fullName: VMS.TPS.Common.Model.API.Image.Id
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: '[Availability of this property depends on your Eclipse Scripting API license] The identifier of the image.'
+  example: []
+  syntax:
+    content: public string Id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Id As String
+  overload: VMS.TPS.Common.Model.API.Image.Id*
+- uid: VMS.TPS.Common.Model.API.Image.ApprovalHistory
+  commentId: P:VMS.TPS.Common.Model.API.Image.ApprovalHistory
+  id: ApprovalHistory
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: ApprovalHistory
+  nameWithType: Image.ApprovalHistory
+  fullName: VMS.TPS.Common.Model.API.Image.ApprovalHistory
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Returns the approval history of the image.
+  example: []
+  syntax:
+    content: public IEnumerable<ImageApprovalHistoryEntry> ApprovalHistory { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry}
+    content.vb: Public ReadOnly Property ApprovalHistory As IEnumerable(Of ImageApprovalHistoryEntry)
+  overload: VMS.TPS.Common.Model.API.Image.ApprovalHistory*
+- uid: VMS.TPS.Common.Model.API.Image.CalibrationProtocolDateTime
+  commentId: P:VMS.TPS.Common.Model.API.Image.CalibrationProtocolDateTime
+  id: CalibrationProtocolDateTime
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: CalibrationProtocolDateTime
+  nameWithType: Image.CalibrationProtocolDateTime
+  fullName: VMS.TPS.Common.Model.API.Image.CalibrationProtocolDateTime
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Date the calibration protocol was selected for the image.
+  example: []
+  syntax:
+    content: public DateTime? CalibrationProtocolDateTime { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public ReadOnly Property CalibrationProtocolDateTime As Date?
+  overload: VMS.TPS.Common.Model.API.Image.CalibrationProtocolDateTime*
+- uid: VMS.TPS.Common.Model.API.Image.CalibrationProtocolDescription
+  commentId: P:VMS.TPS.Common.Model.API.Image.CalibrationProtocolDescription
+  id: CalibrationProtocolDescription
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: CalibrationProtocolDescription
+  nameWithType: Image.CalibrationProtocolDescription
+  fullName: VMS.TPS.Common.Model.API.Image.CalibrationProtocolDescription
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Description of the calibration protocol selected for the image.
+  example: []
+  syntax:
+    content: public string CalibrationProtocolDescription { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CalibrationProtocolDescription As String
+  overload: VMS.TPS.Common.Model.API.Image.CalibrationProtocolDescription*
+- uid: VMS.TPS.Common.Model.API.Image.CalibrationProtocolId
+  commentId: P:VMS.TPS.Common.Model.API.Image.CalibrationProtocolId
+  id: CalibrationProtocolId
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: CalibrationProtocolId
+  nameWithType: Image.CalibrationProtocolId
+  fullName: VMS.TPS.Common.Model.API.Image.CalibrationProtocolId
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Identification of the calibration protocol selected for the image.
+  example: []
+  syntax:
+    content: public string CalibrationProtocolId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CalibrationProtocolId As String
+  overload: VMS.TPS.Common.Model.API.Image.CalibrationProtocolId*
+- uid: VMS.TPS.Common.Model.API.Image.CalibrationProtocolImageMatchWarning
+  commentId: P:VMS.TPS.Common.Model.API.Image.CalibrationProtocolImageMatchWarning
+  id: CalibrationProtocolImageMatchWarning
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: CalibrationProtocolImageMatchWarning
+  nameWithType: Image.CalibrationProtocolImageMatchWarning
+  fullName: VMS.TPS.Common.Model.API.Image.CalibrationProtocolImageMatchWarning
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    Localized warning message if the calibration protocol does not
+
+    match with the image. If all matches empty string is returned.
+  example: []
+  syntax:
+    content: public string CalibrationProtocolImageMatchWarning { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CalibrationProtocolImageMatchWarning As String
+  overload: VMS.TPS.Common.Model.API.Image.CalibrationProtocolImageMatchWarning*
+- uid: VMS.TPS.Common.Model.API.Image.CalibrationProtocolLastModifiedDateTime
+  commentId: P:VMS.TPS.Common.Model.API.Image.CalibrationProtocolLastModifiedDateTime
+  id: CalibrationProtocolLastModifiedDateTime
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: CalibrationProtocolLastModifiedDateTime
+  nameWithType: Image.CalibrationProtocolLastModifiedDateTime
+  fullName: VMS.TPS.Common.Model.API.Image.CalibrationProtocolLastModifiedDateTime
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: When the calibration protocol was last modified.
+  example: []
+  syntax:
+    content: public DateTime? CalibrationProtocolLastModifiedDateTime { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public ReadOnly Property CalibrationProtocolLastModifiedDateTime As Date?
+  overload: VMS.TPS.Common.Model.API.Image.CalibrationProtocolLastModifiedDateTime*
+- uid: VMS.TPS.Common.Model.API.Image.CalibrationProtocolStatus
+  commentId: P:VMS.TPS.Common.Model.API.Image.CalibrationProtocolStatus
+  id: CalibrationProtocolStatus
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: CalibrationProtocolStatus
+  nameWithType: Image.CalibrationProtocolStatus
+  fullName: VMS.TPS.Common.Model.API.Image.CalibrationProtocolStatus
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Status of the calibration protocol selected for the image.
+  example: []
+  syntax:
+    content: public CalibrationProtocolStatus CalibrationProtocolStatus { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.CalibrationProtocolStatus
+    content.vb: Public ReadOnly Property CalibrationProtocolStatus As CalibrationProtocolStatus
+  overload: VMS.TPS.Common.Model.API.Image.CalibrationProtocolStatus*
+- uid: VMS.TPS.Common.Model.API.Image.CalibrationProtocolUser
+  commentId: P:VMS.TPS.Common.Model.API.Image.CalibrationProtocolUser
+  id: CalibrationProtocolUser
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: CalibrationProtocolUser
+  nameWithType: Image.CalibrationProtocolUser
+  fullName: VMS.TPS.Common.Model.API.Image.CalibrationProtocolUser
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: User selecting the calibration protocol for the image.
+  example: []
+  syntax:
+    content: public UserInfo CalibrationProtocolUser { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.UserInfo
+    content.vb: Public ReadOnly Property CalibrationProtocolUser As UserInfo
+  overload: VMS.TPS.Common.Model.API.Image.CalibrationProtocolUser*
+- uid: VMS.TPS.Common.Model.API.Image.ContrastBolusAgentIngredientName
+  commentId: P:VMS.TPS.Common.Model.API.Image.ContrastBolusAgentIngredientName
+  id: ContrastBolusAgentIngredientName
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: ContrastBolusAgentIngredientName
+  nameWithType: Image.ContrastBolusAgentIngredientName
+  fullName: VMS.TPS.Common.Model.API.Image.ContrastBolusAgentIngredientName
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The name of the contrast bolus agent ingredient that is used in the image. If the value has not been specified, returns null.
+  example: []
+  syntax:
+    content: public string ContrastBolusAgentIngredientName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ContrastBolusAgentIngredientName As String
+  overload: VMS.TPS.Common.Model.API.Image.ContrastBolusAgentIngredientName*
+- uid: VMS.TPS.Common.Model.API.Image.CreationDateTime
+  commentId: P:VMS.TPS.Common.Model.API.Image.CreationDateTime
+  id: CreationDateTime
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: CreationDateTime
+  nameWithType: Image.CreationDateTime
+  fullName: VMS.TPS.Common.Model.API.Image.CreationDateTime
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The date when this object was created.
+  example: []
+  syntax:
+    content: public DateTime? CreationDateTime { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public ReadOnly Property CreationDateTime As Date?
+  overload: VMS.TPS.Common.Model.API.Image.CreationDateTime*
+- uid: VMS.TPS.Common.Model.API.Image.DisplayUnit
+  commentId: P:VMS.TPS.Common.Model.API.Image.DisplayUnit
+  id: DisplayUnit
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: DisplayUnit
+  nameWithType: Image.DisplayUnit
+  fullName: VMS.TPS.Common.Model.API.Image.DisplayUnit
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The name of the display unit in which the voxels of the image are shown in the user interface.
+  example: []
+  syntax:
+    content: public string DisplayUnit { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property DisplayUnit As String
+  overload: VMS.TPS.Common.Model.API.Image.DisplayUnit*
+- uid: VMS.TPS.Common.Model.API.Image.FOR
+  commentId: P:VMS.TPS.Common.Model.API.Image.FOR
+  id: FOR
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: FOR
+  nameWithType: Image.FOR
+  fullName: VMS.TPS.Common.Model.API.Image.FOR
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The UID of the frame of reference.
+  example: []
+  syntax:
+    content: public string FOR { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property [FOR] As String
+  overload: VMS.TPS.Common.Model.API.Image.FOR*
+- uid: VMS.TPS.Common.Model.API.Image.HasUserOrigin
+  commentId: P:VMS.TPS.Common.Model.API.Image.HasUserOrigin
+  id: HasUserOrigin
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: HasUserOrigin
+  nameWithType: Image.HasUserOrigin
+  fullName: VMS.TPS.Common.Model.API.Image.HasUserOrigin
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Defines if a user origin has been specified for the image.
+  example: []
+  syntax:
+    content: public bool HasUserOrigin { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasUserOrigin As Boolean
+  overload: VMS.TPS.Common.Model.API.Image.HasUserOrigin*
+- uid: VMS.TPS.Common.Model.API.Image.ImageType
+  commentId: P:VMS.TPS.Common.Model.API.Image.ImageType
+  id: ImageType
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: ImageType
+  nameWithType: Image.ImageType
+  fullName: VMS.TPS.Common.Model.API.Image.ImageType
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The type of the image as indicated in the properties of the image slices.
+  example: []
+  syntax:
+    content: public string ImageType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ImageType As String
+  overload: VMS.TPS.Common.Model.API.Image.ImageType*
+- uid: VMS.TPS.Common.Model.API.Image.ImagingDeviceId
+  commentId: P:VMS.TPS.Common.Model.API.Image.ImagingDeviceId
+  id: ImagingDeviceId
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: ImagingDeviceId
+  nameWithType: Image.ImagingDeviceId
+  fullName: VMS.TPS.Common.Model.API.Image.ImagingDeviceId
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Identification of the device that is used to scan the images into the system.
+  example: []
+  syntax:
+    content: public string ImagingDeviceId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ImagingDeviceId As String
+  overload: VMS.TPS.Common.Model.API.Image.ImagingDeviceId*
+- uid: VMS.TPS.Common.Model.API.Image.ImagingOrientation
+  commentId: P:VMS.TPS.Common.Model.API.Image.ImagingOrientation
+  id: ImagingOrientation
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: ImagingOrientation
+  nameWithType: Image.ImagingOrientation
+  fullName: VMS.TPS.Common.Model.API.Image.ImagingOrientation
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The orientation of the patient.
+  example: []
+  syntax:
+    content: public PatientOrientation ImagingOrientation { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.PatientOrientation
+    content.vb: Public ReadOnly Property ImagingOrientation As PatientOrientation
+  overload: VMS.TPS.Common.Model.API.Image.ImagingOrientation*
+- uid: VMS.TPS.Common.Model.API.Image.ImagingOrientationAsString
+  commentId: P:VMS.TPS.Common.Model.API.Image.ImagingOrientationAsString
+  id: ImagingOrientationAsString
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: ImagingOrientationAsString
+  nameWithType: Image.ImagingOrientationAsString
+  fullName: VMS.TPS.Common.Model.API.Image.ImagingOrientationAsString
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The orientation of the patient as a string (localized)
+  example: []
+  syntax:
+    content: public string ImagingOrientationAsString { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ImagingOrientationAsString As String
+  overload: VMS.TPS.Common.Model.API.Image.ImagingOrientationAsString*
+- uid: VMS.TPS.Common.Model.API.Image.IsProcessed
+  commentId: P:VMS.TPS.Common.Model.API.Image.IsProcessed
+  id: IsProcessed
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: IsProcessed
+  nameWithType: Image.IsProcessed
+  fullName: VMS.TPS.Common.Model.API.Image.IsProcessed
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Returns the value true if an image processing filter is in use for the image.
+  example: []
+  syntax:
+    content: public bool IsProcessed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsProcessed As Boolean
+  overload: VMS.TPS.Common.Model.API.Image.IsProcessed*
+- uid: VMS.TPS.Common.Model.API.Image.Level
+  commentId: P:VMS.TPS.Common.Model.API.Image.Level
+  id: Level
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: Image.Level
+  fullName: VMS.TPS.Common.Model.API.Image.Level
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The level setting. The value is given in the internal voxel scale.
+  example: []
+  syntax:
+    content: public int Level { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Level As Integer
+  overload: VMS.TPS.Common.Model.API.Image.Level*
+- uid: VMS.TPS.Common.Model.API.Image.Modality
+  commentId: P:VMS.TPS.Common.Model.API.Image.Modality
+  id: Modality
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: Modality
+  nameWithType: Image.Modality
+  fullName: VMS.TPS.Common.Model.API.Image.Modality
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The modality of the image as indicated in the properties of the image slices.
+  example: []
+  syntax:
+    content: public SeriesModality Modality { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.SeriesModality
+    content.vb: Public ReadOnly Property Modality As SeriesModality
+  overload: VMS.TPS.Common.Model.API.Image.Modality*
+- uid: VMS.TPS.Common.Model.API.Image.Origin
+  commentId: P:VMS.TPS.Common.Model.API.Image.Origin
+  id: Origin
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: Origin
+  nameWithType: Image.Origin
+  fullName: VMS.TPS.Common.Model.API.Image.Origin
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    The origin of the image. In other words, the DICOM coordinates of the center point
+
+    of the upper-left hand corner voxel of the first image plane.
+
+    Supported only for volume images. For other types of images, the return
+
+    value is a vector of Double.NaNs.
+  example: []
+  syntax:
+    content: public VVector Origin { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector
+    content.vb: Public ReadOnly Property Origin As VVector
+  overload: VMS.TPS.Common.Model.API.Image.Origin*
+- uid: VMS.TPS.Common.Model.API.Image.Series
+  commentId: P:VMS.TPS.Common.Model.API.Image.Series
+  id: Series
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: Series
+  nameWithType: Image.Series
+  fullName: VMS.TPS.Common.Model.API.Image.Series
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Used for navigating to parent series.
+  example: []
+  syntax:
+    content: public Series Series { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.API.Series
+    content.vb: Public ReadOnly Property Series As Series
+  overload: VMS.TPS.Common.Model.API.Image.Series*
+- uid: VMS.TPS.Common.Model.API.Image.UID
+  commentId: P:VMS.TPS.Common.Model.API.Image.UID
+  id: UID
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: UID
+  nameWithType: Image.UID
+  fullName: VMS.TPS.Common.Model.API.Image.UID
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: Return UID of the first (and the only) slice in case of a 2D Image. Return null in case of a 3D Image.
+  example: []
+  syntax:
+    content: public string UID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property UID As String
+  overload: VMS.TPS.Common.Model.API.Image.UID*
+- uid: VMS.TPS.Common.Model.API.Image.UserOrigin
+  commentId: P:VMS.TPS.Common.Model.API.Image.UserOrigin
+  id: UserOrigin
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: UserOrigin
+  nameWithType: Image.UserOrigin
+  fullName: VMS.TPS.Common.Model.API.Image.UserOrigin
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The user origin in DICOM coordinates in millimeter.
+  example: []
+  syntax:
+    content: public VVector UserOrigin { get; set; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector
+    content.vb: Public Property UserOrigin As VVector
+  overload: VMS.TPS.Common.Model.API.Image.UserOrigin*
+- uid: VMS.TPS.Common.Model.API.Image.UserOriginComments
+  commentId: P:VMS.TPS.Common.Model.API.Image.UserOriginComments
+  id: UserOriginComments
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: UserOriginComments
+  nameWithType: Image.UserOriginComments
+  fullName: VMS.TPS.Common.Model.API.Image.UserOriginComments
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The text typed on the Origin tab in the Image Properties dialog box.
+  example: []
+  syntax:
+    content: public string UserOriginComments { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property UserOriginComments As String
+  overload: VMS.TPS.Common.Model.API.Image.UserOriginComments*
+- uid: VMS.TPS.Common.Model.API.Image.Window
+  commentId: P:VMS.TPS.Common.Model.API.Image.Window
+  id: Window
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: Window
+  nameWithType: Image.Window
+  fullName: VMS.TPS.Common.Model.API.Image.Window
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The window setting. The value is given in the internal voxel scale.
+  example: []
+  syntax:
+    content: public int Window { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Window As Integer
+  overload: VMS.TPS.Common.Model.API.Image.Window*
+- uid: VMS.TPS.Common.Model.API.Image.XDirection
+  commentId: P:VMS.TPS.Common.Model.API.Image.XDirection
+  id: XDirection
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: XDirection
+  nameWithType: Image.XDirection
+  fullName: VMS.TPS.Common.Model.API.Image.XDirection
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    The direction of the x-axis in the image.
+
+    Supported only for volume images. For other types of images, the return
+
+    value is a vector of Double.NaNs.
+  example: []
+  syntax:
+    content: public VVector XDirection { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector
+    content.vb: Public ReadOnly Property XDirection As VVector
+  overload: VMS.TPS.Common.Model.API.Image.XDirection*
+- uid: VMS.TPS.Common.Model.API.Image.XRes
+  commentId: P:VMS.TPS.Common.Model.API.Image.XRes
+  id: XRes
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: XRes
+  nameWithType: Image.XRes
+  fullName: VMS.TPS.Common.Model.API.Image.XRes
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The image resolution in X-direction in millimeters.
+  example: []
+  syntax:
+    content: public double XRes { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property XRes As Double
+  overload: VMS.TPS.Common.Model.API.Image.XRes*
+- uid: VMS.TPS.Common.Model.API.Image.XSize
+  commentId: P:VMS.TPS.Common.Model.API.Image.XSize
+  id: XSize
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: XSize
+  nameWithType: Image.XSize
+  fullName: VMS.TPS.Common.Model.API.Image.XSize
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The image size in X-direction in voxels.
+  example: []
+  syntax:
+    content: public int XSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property XSize As Integer
+  overload: VMS.TPS.Common.Model.API.Image.XSize*
+- uid: VMS.TPS.Common.Model.API.Image.YDirection
+  commentId: P:VMS.TPS.Common.Model.API.Image.YDirection
+  id: YDirection
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: YDirection
+  nameWithType: Image.YDirection
+  fullName: VMS.TPS.Common.Model.API.Image.YDirection
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    The direction of the y-axis in the image.
+
+    Supported only for volume images. For other types of images, the return
+
+    value is a vector of Double.NaNs.
+  example: []
+  syntax:
+    content: public VVector YDirection { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector
+    content.vb: Public ReadOnly Property YDirection As VVector
+  overload: VMS.TPS.Common.Model.API.Image.YDirection*
+- uid: VMS.TPS.Common.Model.API.Image.YRes
+  commentId: P:VMS.TPS.Common.Model.API.Image.YRes
+  id: YRes
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: YRes
+  nameWithType: Image.YRes
+  fullName: VMS.TPS.Common.Model.API.Image.YRes
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The image resolution in Y-direction in millimeters.
+  example: []
+  syntax:
+    content: public double YRes { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property YRes As Double
+  overload: VMS.TPS.Common.Model.API.Image.YRes*
+- uid: VMS.TPS.Common.Model.API.Image.YSize
+  commentId: P:VMS.TPS.Common.Model.API.Image.YSize
+  id: YSize
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: YSize
+  nameWithType: Image.YSize
+  fullName: VMS.TPS.Common.Model.API.Image.YSize
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The image size in Y-direction in voxels.
+  example: []
+  syntax:
+    content: public int YSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property YSize As Integer
+  overload: VMS.TPS.Common.Model.API.Image.YSize*
+- uid: VMS.TPS.Common.Model.API.Image.ZDirection
+  commentId: P:VMS.TPS.Common.Model.API.Image.ZDirection
+  id: ZDirection
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: ZDirection
+  nameWithType: Image.ZDirection
+  fullName: VMS.TPS.Common.Model.API.Image.ZDirection
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: >-
+    The direction of the z-axis in the image.
+
+    Supported only for volume images. For other types of images, the return
+
+    value is a vector of Double.NaNs.
+  example: []
+  syntax:
+    content: public VVector ZDirection { get; }
+    parameters: []
+    return:
+      type: VMS.TPS.Common.Model.Types.VVector
+    content.vb: Public ReadOnly Property ZDirection As VVector
+  overload: VMS.TPS.Common.Model.API.Image.ZDirection*
+- uid: VMS.TPS.Common.Model.API.Image.ZRes
+  commentId: P:VMS.TPS.Common.Model.API.Image.ZRes
+  id: ZRes
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: ZRes
+  nameWithType: Image.ZRes
+  fullName: VMS.TPS.Common.Model.API.Image.ZRes
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The image resolution in Z-direction in millimeters.
+  example: []
+  syntax:
+    content: public double ZRes { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property ZRes As Double
+  overload: VMS.TPS.Common.Model.API.Image.ZRes*
+- uid: VMS.TPS.Common.Model.API.Image.ZSize
+  commentId: P:VMS.TPS.Common.Model.API.Image.ZSize
+  id: ZSize
+  parent: VMS.TPS.Common.Model.API.Image
+  langs:
+  - csharp
+  - vb
+  name: ZSize
+  nameWithType: Image.ZSize
+  fullName: VMS.TPS.Common.Model.API.Image.ZSize
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.API
+  namespace: VMS.TPS.Common.Model.API
+  summary: The image size in Z-direction in voxels.
+  example: []
+  syntax:
+    content: public int ZSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ZSize As Integer
+  overload: VMS.TPS.Common.Model.API.Image.ZSize*
+references:
+- uid: VMS.TPS.Common.Model.API
+  commentId: N:VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.API
+  nameWithType: VMS.TPS.Common.Model.API
+  fullName: VMS.TPS.Common.Model.API
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.API
+    name: API
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: VMS.TPS.Common.Model.API.SerializableObject
+  commentId: T:VMS.TPS.Common.Model.API.SerializableObject
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html
+  name: SerializableObject
+  nameWithType: SerializableObject
+  fullName: VMS.TPS.Common.Model.API.SerializableObject
+- uid: VMS.TPS.Common.Model.API.ApiDataObject
+  commentId: T:VMS.TPS.Common.Model.API.ApiDataObject
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html
+  name: ApiDataObject
+  nameWithType: ApiDataObject
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject
+- uid: System.Xml.Serialization.IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  nameWithType: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.ToString
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  name: ToString()
+  nameWithType: ApiDataObject.ToString()
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.ToString()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+    name: ToString
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.ToString
+    name: ToString
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_ToString
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: ApiDataObject.Equals(object)
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.Equals(object)
+  nameWithType.vb: ApiDataObject.Equals(Object)
+  fullName.vb: VMS.TPS.Common.Model.API.ApiDataObject.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  name: GetHashCode()
+  nameWithType: ApiDataObject.GetHashCode()
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_GetHashCode
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.Name
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.Name
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Name
+  name: Name
+  nameWithType: ApiDataObject.Name
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.Name
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.Comment
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.Comment
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_Comment
+  name: Comment
+  nameWithType: ApiDataObject.Comment
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.Comment
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserName
+  name: HistoryUserName
+  nameWithType: ApiDataObject.HistoryUserName
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserName
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryUserDisplayName
+  name: HistoryUserDisplayName
+  nameWithType: ApiDataObject.HistoryUserDisplayName
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryUserDisplayName
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  commentId: P:VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_HistoryDateTime
+  name: HistoryDateTime
+  nameWithType: ApiDataObject.HistoryDateTime
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.HistoryDateTime
+- uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  name: GetSchema()
+  nameWithType: SerializableObject.GetSchema()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.GetSchema()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_GetSchema
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  name: ReadXml(XmlReader)
+  nameWithType: SerializableObject.ReadXml(XmlReader)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ReadXml(System.Xml.XmlReader)
+    name: ReadXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ReadXml_System_Xml_XmlReader_
+  - name: (
+  - uid: System.Xml.XmlReader
+    name: XmlReader
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  name: WriteXml(XmlWriter, string, object)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, object)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, object)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, Object)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, Object)
+  name.vb: WriteXml(XmlWriter, String, Object)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.Object)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_Object_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  name: WriteXml(XmlWriter, string, string)
+  nameWithType: SerializableObject.WriteXml(XmlWriter, string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, string, string)
+  nameWithType.vb: SerializableObject.WriteXml(XmlWriter, String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter, String, String)
+  name.vb: WriteXml(XmlWriter, String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(System.Xml.XmlWriter,System.String,System.String)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml_System_Xml_XmlWriter_System_String_System_String_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{{T1},{T2}})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  definition: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  name: StartSerialization(string, string)
+  nameWithType: SerializableObject.StartSerialization(string, string)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(string, string)
+  nameWithType.vb: SerializableObject.StartSerialization(String, String)
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(String, String)
+  name.vb: StartSerialization(String, String)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.StartSerialization(System.String,System.String)
+    name: StartSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_StartSerialization_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  name: EndSerialization()
+  nameWithType: SerializableObject.EndSerialization()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.EndSerialization
+    name: EndSerialization
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_EndSerialization
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+  parent: VMS.TPS.Common.Model.API.SerializableObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  name: ClearSerializationHistory()
+  nameWithType: SerializableObject.ClearSerializationHistory()
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory()
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.ClearSerializationHistory
+    name: ClearSerializationHistory
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_ClearSerializationHistory
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  name: WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  nameWithType: SerializableObject.WriteXml<T>(XmlWriter, string, IEnumerable<T>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T>(System.Xml.XmlWriter, string, System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T)(System.Xml.XmlWriter, String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteXml(Of T)(XmlWriter, String, IEnumerable(Of T))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``1(System.Xml.XmlWriter,System.String,System.Collections.Generic.IEnumerable{``0})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__1_System_Xml_XmlWriter_System_String_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  commentId: M:VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  name: WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  nameWithType: SerializableObject.WriteXml<T1, T2>(XmlWriter, string, IDictionary<T1, T2>)
+  fullName: VMS.TPS.Common.Model.API.SerializableObject.WriteXml<T1, T2>(System.Xml.XmlWriter, string, System.Collections.Generic.IDictionary<T1, T2>)
+  nameWithType.vb: SerializableObject.WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  fullName.vb: VMS.TPS.Common.Model.API.SerializableObject.WriteXml(Of T1, T2)(System.Xml.XmlWriter, String, System.Collections.Generic.IDictionary(Of T1, T2))
+  name.vb: WriteXml(Of T1, T2)(XmlWriter, String, IDictionary(Of T1, T2))
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.SerializableObject.WriteXml``2(System.Xml.XmlWriter,System.String,System.Collections.Generic.IDictionary{``0,``1})
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.SerializableObject.html#VMS_TPS_Common_Model_API_SerializableObject_WriteXml__2_System_Xml_XmlWriter_System_String_System_Collections_Generic_IDictionary___0___1__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  - name: )
+- uid: System.Xml.Serialization.XmlSerializer
+  commentId: T:System.Xml.Serialization.XmlSerializer
+  isExternal: true
+- uid: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.API.ApiDataObject
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml(XmlWriter)
+  nameWithType: ApiDataObject.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+  spec.csharp:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: VMS.TPS.Common.Model.API.ApiDataObject.WriteXml(System.Xml.XmlWriter)
+    name: WriteXml
+    isExternal: true
+    href: VMS.TPS.Common.Model.API.ApiDataObject.html#VMS_TPS_Common_Model_API_ApiDataObject_WriteXml_System_Xml_XmlWriter_
+  - name: (
+  - uid: System.Xml.XmlWriter
+    name: XmlWriter
+    isExternal: true
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Image.WriteXml*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.WriteXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml
+  nameWithType: Image.WriteXml
+  fullName: VMS.TPS.Common.Model.API.Image.WriteXml
+- uid: System.Xml.XmlWriter
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: VMS.TPS.Common.Model.API.Image.CalculateDectProtonStoppingPowers*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.CalculateDectProtonStoppingPowers
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_CalculateDectProtonStoppingPowers_VMS_TPS_Common_Model_API_Image_VMS_TPS_Common_Model_API_Image_System_Int32_System_Double_0
+  name: CalculateDectProtonStoppingPowers
+  nameWithType: Image.CalculateDectProtonStoppingPowers
+  fullName: VMS.TPS.Common.Model.API.Image.CalculateDectProtonStoppingPowers
+- uid: VMS.TPS.Common.Model.API.Image
+  commentId: T:VMS.TPS.Common.Model.API.Image
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html
+  name: Image
+  nameWithType: Image
+  fullName: VMS.TPS.Common.Model.API.Image
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double[,]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[,]
+  nameWithType: double[,]
+  fullName: double[,]
+  nameWithType.vb: Double(,)
+  fullName.vb: Double(,)
+  name.vb: Double(,)
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: ','
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Image.CreateNewStructureSet*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.CreateNewStructureSet
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_CreateNewStructureSet
+  name: CreateNewStructureSet
+  nameWithType: Image.CreateNewStructureSet
+  fullName: VMS.TPS.Common.Model.API.Image.CreateNewStructureSet
+- uid: VMS.TPS.Common.Model.API.StructureSet
+  commentId: T:VMS.TPS.Common.Model.API.StructureSet
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.StructureSet.html
+  name: StructureSet
+  nameWithType: StructureSet
+  fullName: VMS.TPS.Common.Model.API.StructureSet
+- uid: VMS.TPS.Common.Model.API.Image.DicomToUser*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.DicomToUser
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_DicomToUser_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_API_PlanSetup_
+  name: DicomToUser
+  nameWithType: Image.DicomToUser
+  fullName: VMS.TPS.Common.Model.API.Image.DicomToUser
+- uid: VMS.TPS.Common.Model.Types.VVector
+  commentId: T:VMS.TPS.Common.Model.Types.VVector
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.VVector.html
+  name: VVector
+  nameWithType: VVector
+  fullName: VMS.TPS.Common.Model.Types.VVector
+- uid: VMS.TPS.Common.Model.API.PlanSetup
+  commentId: T:VMS.TPS.Common.Model.API.PlanSetup
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.PlanSetup.html
+  name: PlanSetup
+  nameWithType: PlanSetup
+  fullName: VMS.TPS.Common.Model.API.PlanSetup
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: VMS.TPS.Common.Model.API.Image.GetImageProfile*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.GetImageProfile
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_GetImageProfile_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_Types_VVector_System_Double___
+  name: GetImageProfile
+  nameWithType: Image.GetImageProfile
+  fullName: VMS.TPS.Common.Model.API.Image.GetImageProfile
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.ImageProfile
+  commentId: T:VMS.TPS.Common.Model.Types.ImageProfile
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.ImageProfile.html
+  name: ImageProfile
+  nameWithType: ImageProfile
+  fullName: VMS.TPS.Common.Model.Types.ImageProfile
+- uid: VMS.TPS.Common.Model.API.Image.GetProtonStoppingPowerCurve*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.GetProtonStoppingPowerCurve
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_GetProtonStoppingPowerCurve_System_Collections_Generic_SortedList_System_Double_System_Double__
+  name: GetProtonStoppingPowerCurve
+  nameWithType: Image.GetProtonStoppingPowerCurve
+  fullName: VMS.TPS.Common.Model.API.Image.GetProtonStoppingPowerCurve
+- uid: System.Collections.Generic.SortedList{System.Double,System.Double}
+  commentId: T:System.Collections.Generic.SortedList{System.Double,System.Double}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.SortedList`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.sortedlist-2
+  name: SortedList<double, double>
+  nameWithType: SortedList<double, double>
+  fullName: System.Collections.Generic.SortedList<double, double>
+  nameWithType.vb: SortedList(Of Double, Double)
+  fullName.vb: System.Collections.Generic.SortedList(Of Double, Double)
+  name.vb: SortedList(Of Double, Double)
+  spec.csharp:
+  - uid: System.Collections.Generic.SortedList`2
+    name: SortedList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.sortedlist-2
+  - name: <
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.SortedList`2
+    name: SortedList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.sortedlist-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.SortedList`2
+  commentId: T:System.Collections.Generic.SortedList`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.sortedlist-2
+  name: SortedList<TKey, TValue>
+  nameWithType: SortedList<TKey, TValue>
+  fullName: System.Collections.Generic.SortedList<TKey, TValue>
+  nameWithType.vb: SortedList(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.SortedList(Of TKey, TValue)
+  name.vb: SortedList(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.SortedList`2
+    name: SortedList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.sortedlist-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.SortedList`2
+    name: SortedList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.sortedlist-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: VMS.TPS.Common.Model.API.Image.GetVoxels*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.GetVoxels
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_GetVoxels_System_Int32_System_Int32_0
+  name: GetVoxels
+  nameWithType: Image.GetVoxels
+  fullName: VMS.TPS.Common.Model.API.Image.GetVoxels
+- uid: System.Int32[,]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[,]
+  nameWithType: int[,]
+  fullName: int[,]
+  nameWithType.vb: Integer(,)
+  fullName.vb: Integer(,)
+  name.vb: Integer(,)
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ','
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: ','
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Image.UserToDicom*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.UserToDicom
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_UserToDicom_VMS_TPS_Common_Model_Types_VVector_VMS_TPS_Common_Model_API_PlanSetup_
+  name: UserToDicom
+  nameWithType: Image.UserToDicom
+  fullName: VMS.TPS.Common.Model.API.Image.UserToDicom
+- uid: VMS.TPS.Common.Model.API.Image.VoxelToDisplayValue*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.VoxelToDisplayValue
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_VoxelToDisplayValue_System_Int32_
+  name: VoxelToDisplayValue
+  nameWithType: Image.VoxelToDisplayValue
+  fullName: VMS.TPS.Common.Model.API.Image.VoxelToDisplayValue
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: VMS.TPS.Common.Model.API.Image.Id*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.Id
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_Id
+  name: Id
+  nameWithType: Image.Id
+  fullName: VMS.TPS.Common.Model.API.Image.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: VMS.TPS.Common.Model.API.Image.ApprovalHistory*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.ApprovalHistory
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_ApprovalHistory
+  name: ApprovalHistory
+  nameWithType: Image.ApprovalHistory
+  fullName: VMS.TPS.Common.Model.API.Image.ApprovalHistory
+- uid: System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry}
+  commentId: T:System.Collections.Generic.IEnumerable{VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ImageApprovalHistoryEntry>
+  nameWithType: IEnumerable<ImageApprovalHistoryEntry>
+  fullName: System.Collections.Generic.IEnumerable<VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry>
+  nameWithType.vb: IEnumerable(Of ImageApprovalHistoryEntry)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry)
+  name.vb: IEnumerable(Of ImageApprovalHistoryEntry)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry
+    name: ImageApprovalHistoryEntry
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.ImageApprovalHistoryEntry
+    name: ImageApprovalHistoryEntry
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Image.CalibrationProtocolDateTime*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.CalibrationProtocolDateTime
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_CalibrationProtocolDateTime
+  name: CalibrationProtocolDateTime
+  nameWithType: Image.CalibrationProtocolDateTime
+  fullName: VMS.TPS.Common.Model.API.Image.CalibrationProtocolDateTime
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: VMS.TPS.Common.Model.API.Image.CalibrationProtocolDescription*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.CalibrationProtocolDescription
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_CalibrationProtocolDescription
+  name: CalibrationProtocolDescription
+  nameWithType: Image.CalibrationProtocolDescription
+  fullName: VMS.TPS.Common.Model.API.Image.CalibrationProtocolDescription
+- uid: VMS.TPS.Common.Model.API.Image.CalibrationProtocolId*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.CalibrationProtocolId
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_CalibrationProtocolId
+  name: CalibrationProtocolId
+  nameWithType: Image.CalibrationProtocolId
+  fullName: VMS.TPS.Common.Model.API.Image.CalibrationProtocolId
+- uid: VMS.TPS.Common.Model.API.Image.CalibrationProtocolImageMatchWarning*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.CalibrationProtocolImageMatchWarning
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_CalibrationProtocolImageMatchWarning
+  name: CalibrationProtocolImageMatchWarning
+  nameWithType: Image.CalibrationProtocolImageMatchWarning
+  fullName: VMS.TPS.Common.Model.API.Image.CalibrationProtocolImageMatchWarning
+- uid: VMS.TPS.Common.Model.API.Image.CalibrationProtocolLastModifiedDateTime*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.CalibrationProtocolLastModifiedDateTime
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_CalibrationProtocolLastModifiedDateTime
+  name: CalibrationProtocolLastModifiedDateTime
+  nameWithType: Image.CalibrationProtocolLastModifiedDateTime
+  fullName: VMS.TPS.Common.Model.API.Image.CalibrationProtocolLastModifiedDateTime
+- uid: VMS.TPS.Common.Model.API.Image.CalibrationProtocolStatus*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.CalibrationProtocolStatus
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_CalibrationProtocolStatus
+  name: CalibrationProtocolStatus
+  nameWithType: Image.CalibrationProtocolStatus
+  fullName: VMS.TPS.Common.Model.API.Image.CalibrationProtocolStatus
+- uid: VMS.TPS.Common.Model.CalibrationProtocolStatus
+  commentId: '!:VMS.TPS.Common.Model.CalibrationProtocolStatus'
+  isExternal: true
+  name: CalibrationProtocolStatus
+  nameWithType: CalibrationProtocolStatus
+  fullName: VMS.TPS.Common.Model.CalibrationProtocolStatus
+- uid: VMS.TPS.Common.Model.API.Image.CalibrationProtocolUser*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.CalibrationProtocolUser
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_CalibrationProtocolUser
+  name: CalibrationProtocolUser
+  nameWithType: Image.CalibrationProtocolUser
+  fullName: VMS.TPS.Common.Model.API.Image.CalibrationProtocolUser
+- uid: VMS.TPS.Common.Model.UserInfo
+  commentId: '!:VMS.TPS.Common.Model.UserInfo'
+  isExternal: true
+  name: UserInfo
+  nameWithType: UserInfo
+  fullName: VMS.TPS.Common.Model.UserInfo
+- uid: VMS.TPS.Common.Model.API.Image.ContrastBolusAgentIngredientName*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.ContrastBolusAgentIngredientName
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_ContrastBolusAgentIngredientName
+  name: ContrastBolusAgentIngredientName
+  nameWithType: Image.ContrastBolusAgentIngredientName
+  fullName: VMS.TPS.Common.Model.API.Image.ContrastBolusAgentIngredientName
+- uid: VMS.TPS.Common.Model.API.Image.CreationDateTime*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.CreationDateTime
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_CreationDateTime
+  name: CreationDateTime
+  nameWithType: Image.CreationDateTime
+  fullName: VMS.TPS.Common.Model.API.Image.CreationDateTime
+- uid: VMS.TPS.Common.Model.API.Image.DisplayUnit*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.DisplayUnit
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_DisplayUnit
+  name: DisplayUnit
+  nameWithType: Image.DisplayUnit
+  fullName: VMS.TPS.Common.Model.API.Image.DisplayUnit
+- uid: VMS.TPS.Common.Model.API.Image.FOR*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.FOR
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_FOR
+  name: FOR
+  nameWithType: Image.FOR
+  fullName: VMS.TPS.Common.Model.API.Image.FOR
+- uid: VMS.TPS.Common.Model.API.Image.HasUserOrigin*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.HasUserOrigin
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_HasUserOrigin
+  name: HasUserOrigin
+  nameWithType: Image.HasUserOrigin
+  fullName: VMS.TPS.Common.Model.API.Image.HasUserOrigin
+- uid: VMS.TPS.Common.Model.API.Image.ImageType*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.ImageType
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_ImageType
+  name: ImageType
+  nameWithType: Image.ImageType
+  fullName: VMS.TPS.Common.Model.API.Image.ImageType
+- uid: VMS.TPS.Common.Model.API.Image.ImagingDeviceId*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.ImagingDeviceId
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_ImagingDeviceId
+  name: ImagingDeviceId
+  nameWithType: Image.ImagingDeviceId
+  fullName: VMS.TPS.Common.Model.API.Image.ImagingDeviceId
+- uid: VMS.TPS.Common.Model.API.Image.ImagingOrientation*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.ImagingOrientation
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_ImagingOrientation
+  name: ImagingOrientation
+  nameWithType: Image.ImagingOrientation
+  fullName: VMS.TPS.Common.Model.API.Image.ImagingOrientation
+- uid: VMS.TPS.Common.Model.Types.PatientOrientation
+  commentId: T:VMS.TPS.Common.Model.Types.PatientOrientation
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.PatientOrientation.html
+  name: PatientOrientation
+  nameWithType: PatientOrientation
+  fullName: VMS.TPS.Common.Model.Types.PatientOrientation
+- uid: VMS.TPS.Common.Model.API.Image.ImagingOrientationAsString*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.ImagingOrientationAsString
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_ImagingOrientationAsString
+  name: ImagingOrientationAsString
+  nameWithType: Image.ImagingOrientationAsString
+  fullName: VMS.TPS.Common.Model.API.Image.ImagingOrientationAsString
+- uid: VMS.TPS.Common.Model.API.Image.IsProcessed*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.IsProcessed
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_IsProcessed
+  name: IsProcessed
+  nameWithType: Image.IsProcessed
+  fullName: VMS.TPS.Common.Model.API.Image.IsProcessed
+- uid: VMS.TPS.Common.Model.API.Image.Level*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.Level
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_Level
+  name: Level
+  nameWithType: Image.Level
+  fullName: VMS.TPS.Common.Model.API.Image.Level
+- uid: VMS.TPS.Common.Model.API.Image.Modality*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.Modality
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_Modality
+  name: Modality
+  nameWithType: Image.Modality
+  fullName: VMS.TPS.Common.Model.API.Image.Modality
+- uid: VMS.TPS.Common.Model.Types.SeriesModality
+  commentId: T:VMS.TPS.Common.Model.Types.SeriesModality
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.SeriesModality.html
+  name: SeriesModality
+  nameWithType: SeriesModality
+  fullName: VMS.TPS.Common.Model.Types.SeriesModality
+- uid: VMS.TPS.Common.Model.API.Image.Origin*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.Origin
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_Origin
+  name: Origin
+  nameWithType: Image.Origin
+  fullName: VMS.TPS.Common.Model.API.Image.Origin
+- uid: VMS.TPS.Common.Model.API.Image.Series*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.Series
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_Series
+  name: Series
+  nameWithType: Image.Series
+  fullName: VMS.TPS.Common.Model.API.Image.Series
+- uid: VMS.TPS.Common.Model.API.Series
+  commentId: T:VMS.TPS.Common.Model.API.Series
+  parent: VMS.TPS.Common.Model.API
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Series.html
+  name: Series
+  nameWithType: Series
+  fullName: VMS.TPS.Common.Model.API.Series
+- uid: VMS.TPS.Common.Model.API.Image.UID*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.UID
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_UID
+  name: UID
+  nameWithType: Image.UID
+  fullName: VMS.TPS.Common.Model.API.Image.UID
+- uid: VMS.TPS.Common.Model.API.Image.UserOrigin*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.UserOrigin
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_UserOrigin
+  name: UserOrigin
+  nameWithType: Image.UserOrigin
+  fullName: VMS.TPS.Common.Model.API.Image.UserOrigin
+- uid: VMS.TPS.Common.Model.API.Image.UserOriginComments*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.UserOriginComments
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_UserOriginComments
+  name: UserOriginComments
+  nameWithType: Image.UserOriginComments
+  fullName: VMS.TPS.Common.Model.API.Image.UserOriginComments
+- uid: VMS.TPS.Common.Model.API.Image.Window*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.Window
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_Window
+  name: Window
+  nameWithType: Image.Window
+  fullName: VMS.TPS.Common.Model.API.Image.Window
+- uid: VMS.TPS.Common.Model.API.Image.XDirection*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.XDirection
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_XDirection
+  name: XDirection
+  nameWithType: Image.XDirection
+  fullName: VMS.TPS.Common.Model.API.Image.XDirection
+- uid: VMS.TPS.Common.Model.API.Image.XRes*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.XRes
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_XRes
+  name: XRes
+  nameWithType: Image.XRes
+  fullName: VMS.TPS.Common.Model.API.Image.XRes
+- uid: VMS.TPS.Common.Model.API.Image.XSize*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.XSize
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_XSize
+  name: XSize
+  nameWithType: Image.XSize
+  fullName: VMS.TPS.Common.Model.API.Image.XSize
+- uid: VMS.TPS.Common.Model.API.Image.YDirection*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.YDirection
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_YDirection
+  name: YDirection
+  nameWithType: Image.YDirection
+  fullName: VMS.TPS.Common.Model.API.Image.YDirection
+- uid: VMS.TPS.Common.Model.API.Image.YRes*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.YRes
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_YRes
+  name: YRes
+  nameWithType: Image.YRes
+  fullName: VMS.TPS.Common.Model.API.Image.YRes
+- uid: VMS.TPS.Common.Model.API.Image.YSize*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.YSize
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_YSize
+  name: YSize
+  nameWithType: Image.YSize
+  fullName: VMS.TPS.Common.Model.API.Image.YSize
+- uid: VMS.TPS.Common.Model.API.Image.ZDirection*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.ZDirection
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_ZDirection
+  name: ZDirection
+  nameWithType: Image.ZDirection
+  fullName: VMS.TPS.Common.Model.API.Image.ZDirection
+- uid: VMS.TPS.Common.Model.API.Image.ZRes*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.ZRes
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_ZRes
+  name: ZRes
+  nameWithType: Image.ZRes
+  fullName: VMS.TPS.Common.Model.API.Image.ZRes
+- uid: VMS.TPS.Common.Model.API.Image.ZSize*
+  commentId: Overload:VMS.TPS.Common.Model.API.Image.ZSize
+  isExternal: true
+  href: VMS.TPS.Common.Model.API.Image.html#VMS_TPS_Common_Model_API_Image_ZSize
+  name: ZSize
+  nameWithType: Image.ZSize
+  fullName: VMS.TPS.Common.Model.API.Image.ZSize

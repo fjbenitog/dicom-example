@@ -1,0 +1,918 @@
+### YamlMime:ManagedReference
+items:
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  commentId: T:VMS.TPS.Common.Model.Types.StructureCodeInfo
+  id: StructureCodeInfo
+  parent: VMS.TPS.Common.Model.Types
+  children:
+  - VMS.TPS.Common.Model.Types.StructureCodeInfo.#ctor(System.String,System.String)
+  - VMS.TPS.Common.Model.Types.StructureCodeInfo.Code
+  - VMS.TPS.Common.Model.Types.StructureCodeInfo.CodingScheme
+  - VMS.TPS.Common.Model.Types.StructureCodeInfo.Equals(System.Object)
+  - VMS.TPS.Common.Model.Types.StructureCodeInfo.Equals(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  - VMS.TPS.Common.Model.Types.StructureCodeInfo.GetHashCode
+  - VMS.TPS.Common.Model.Types.StructureCodeInfo.GetSchema
+  - VMS.TPS.Common.Model.Types.StructureCodeInfo.ReadXml(System.Xml.XmlReader)
+  - VMS.TPS.Common.Model.Types.StructureCodeInfo.ToString
+  - VMS.TPS.Common.Model.Types.StructureCodeInfo.WriteXml(System.Xml.XmlWriter)
+  - VMS.TPS.Common.Model.Types.StructureCodeInfo.op_Equality(VMS.TPS.Common.Model.Types.StructureCodeInfo,VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  - VMS.TPS.Common.Model.Types.StructureCodeInfo.op_Inequality(VMS.TPS.Common.Model.Types.StructureCodeInfo,VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  langs:
+  - csharp
+  - vb
+  name: StructureCodeInfo
+  nameWithType: StructureCodeInfo
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  type: Struct
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Represents structure code information.
+  example: []
+  syntax:
+    content: 'public struct StructureCodeInfo : IXmlSerializable, IEquatable<StructureCodeInfo>'
+    content.vb: Public Structure StructureCodeInfo Implements IXmlSerializable, IEquatable(Of StructureCodeInfo)
+  implements:
+  - System.Xml.Serialization.IXmlSerializable
+  - System.IEquatable{VMS.TPS.Common.Model.Types.StructureCodeInfo}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.#ctor(System.String,System.String)
+  commentId: M:VMS.TPS.Common.Model.Types.StructureCodeInfo.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  langs:
+  - csharp
+  - vb
+  name: StructureCodeInfo(string, string)
+  nameWithType: StructureCodeInfo.StructureCodeInfo(string, string)
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.StructureCodeInfo(string, string)
+  type: Constructor
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Constructs a StructureCodeInfo.
+  example: []
+  syntax:
+    content: public StructureCodeInfo(string codingScheme, string code)
+    parameters:
+    - id: codingScheme
+      type: System.String
+      description: The coding scheme of the structure code.
+    - id: code
+      type: System.String
+      description: The structure code as defined in the associated coding scheme.
+    content.vb: Public Sub New(codingScheme As String, code As String)
+  overload: VMS.TPS.Common.Model.Types.StructureCodeInfo.#ctor*
+  nameWithType.vb: StructureCodeInfo.New(String, String)
+  fullName.vb: VMS.TPS.Common.Model.Types.StructureCodeInfo.New(String, String)
+  name.vb: New(String, String)
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.ToString
+  commentId: M:VMS.TPS.Common.Model.Types.StructureCodeInfo.ToString
+  id: ToString
+  parent: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: StructureCodeInfo.ToString()
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.ToString()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: A string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: VMS.TPS.Common.Model.Types.StructureCodeInfo.ToString*
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.Equals(System.Object)
+  commentId: M:VMS.TPS.Common.Model.Types.StructureCodeInfo.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: StructureCodeInfo.Equals(object)
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.Equals(object)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Checks if this object is equal to another object.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The other object to compare.
+    return:
+      type: System.Boolean
+      description: True if this object equals to the other object. Otherwise false.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: VMS.TPS.Common.Model.Types.StructureCodeInfo.Equals*
+  nameWithType.vb: StructureCodeInfo.Equals(Object)
+  fullName.vb: VMS.TPS.Common.Model.Types.StructureCodeInfo.Equals(Object)
+  name.vb: Equals(Object)
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.GetHashCode
+  commentId: M:VMS.TPS.Common.Model.Types.StructureCodeInfo.GetHashCode
+  id: GetHashCode
+  parent: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: StructureCodeInfo.GetHashCode()
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.GetHashCode()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Returns the hash code for this instance. Overrides Object.GetHashCode.
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: The hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: VMS.TPS.Common.Model.Types.StructureCodeInfo.GetHashCode*
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.op_Equality(VMS.TPS.Common.Model.Types.StructureCodeInfo,VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  commentId: M:VMS.TPS.Common.Model.Types.StructureCodeInfo.op_Equality(VMS.TPS.Common.Model.Types.StructureCodeInfo,VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  id: op_Equality(VMS.TPS.Common.Model.Types.StructureCodeInfo,VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  parent: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  langs:
+  - csharp
+  - vb
+  name: operator ==(StructureCodeInfo, StructureCodeInfo)
+  nameWithType: StructureCodeInfo.operator ==(StructureCodeInfo, StructureCodeInfo)
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.operator ==(VMS.TPS.Common.Model.Types.StructureCodeInfo, VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Equality operator for StructureCodeInfo.
+  example: []
+  syntax:
+    content: public static bool operator ==(StructureCodeInfo left, StructureCodeInfo right)
+    parameters:
+    - id: left
+      type: VMS.TPS.Common.Model.Types.StructureCodeInfo
+      description: The first object to compare.
+    - id: right
+      type: VMS.TPS.Common.Model.Types.StructureCodeInfo
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: True if left is equal to right. Otherwise false.
+    content.vb: Public Shared Operator =(left As StructureCodeInfo, right As StructureCodeInfo) As Boolean
+  overload: VMS.TPS.Common.Model.Types.StructureCodeInfo.op_Equality*
+  nameWithType.vb: StructureCodeInfo.=(StructureCodeInfo, StructureCodeInfo)
+  fullName.vb: VMS.TPS.Common.Model.Types.StructureCodeInfo.=(VMS.TPS.Common.Model.Types.StructureCodeInfo, VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  name.vb: =(StructureCodeInfo, StructureCodeInfo)
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.op_Inequality(VMS.TPS.Common.Model.Types.StructureCodeInfo,VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  commentId: M:VMS.TPS.Common.Model.Types.StructureCodeInfo.op_Inequality(VMS.TPS.Common.Model.Types.StructureCodeInfo,VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  id: op_Inequality(VMS.TPS.Common.Model.Types.StructureCodeInfo,VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  parent: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  langs:
+  - csharp
+  - vb
+  name: operator !=(StructureCodeInfo, StructureCodeInfo)
+  nameWithType: StructureCodeInfo.operator !=(StructureCodeInfo, StructureCodeInfo)
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.operator !=(VMS.TPS.Common.Model.Types.StructureCodeInfo, VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  type: Operator
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Inequality operator for StructureCodeInfo.
+  example: []
+  syntax:
+    content: public static bool operator !=(StructureCodeInfo left, StructureCodeInfo right)
+    parameters:
+    - id: left
+      type: VMS.TPS.Common.Model.Types.StructureCodeInfo
+      description: The first object to compare.
+    - id: right
+      type: VMS.TPS.Common.Model.Types.StructureCodeInfo
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: True if left is not equal to right. Otherwise false.
+    content.vb: Public Shared Operator <>(left As StructureCodeInfo, right As StructureCodeInfo) As Boolean
+  overload: VMS.TPS.Common.Model.Types.StructureCodeInfo.op_Inequality*
+  nameWithType.vb: StructureCodeInfo.<>(StructureCodeInfo, StructureCodeInfo)
+  fullName.vb: VMS.TPS.Common.Model.Types.StructureCodeInfo.<>(VMS.TPS.Common.Model.Types.StructureCodeInfo, VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  name.vb: <>(StructureCodeInfo, StructureCodeInfo)
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.Equals(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  commentId: M:VMS.TPS.Common.Model.Types.StructureCodeInfo.Equals(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  id: Equals(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  parent: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  langs:
+  - csharp
+  - vb
+  name: Equals(StructureCodeInfo)
+  nameWithType: StructureCodeInfo.Equals(StructureCodeInfo)
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.Equals(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Indicates whether the current object is equal to another object of the same type.
+  example: []
+  syntax:
+    content: public bool Equals(StructureCodeInfo other)
+    parameters:
+    - id: other
+      type: VMS.TPS.Common.Model.Types.StructureCodeInfo
+      description: An object to compare with this object.
+    return:
+      type: System.Boolean
+      description: True if the current object is equal to the other object. Otherwise, false.
+    content.vb: Public Function Equals(other As StructureCodeInfo) As Boolean
+  overload: VMS.TPS.Common.Model.Types.StructureCodeInfo.Equals*
+  implements:
+  - System.IEquatable{VMS.TPS.Common.Model.Types.StructureCodeInfo}.Equals(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.GetSchema
+  commentId: M:VMS.TPS.Common.Model.Types.StructureCodeInfo.GetSchema
+  id: GetSchema
+  parent: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  langs:
+  - csharp
+  - vb
+  name: GetSchema()
+  nameWithType: StructureCodeInfo.GetSchema()
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.GetSchema()
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: This member is internal to the Eclipse Scripting API.
+  example: []
+  syntax:
+    content: public XmlSchema GetSchema()
+    return:
+      type: System.Xml.Schema.XmlSchema
+      description: XmlSchema.
+    content.vb: Public Function GetSchema() As XmlSchema
+  overload: VMS.TPS.Common.Model.Types.StructureCodeInfo.GetSchema*
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.ReadXml(System.Xml.XmlReader)
+  commentId: M:VMS.TPS.Common.Model.Types.StructureCodeInfo.ReadXml(System.Xml.XmlReader)
+  id: ReadXml(System.Xml.XmlReader)
+  parent: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  langs:
+  - csharp
+  - vb
+  name: ReadXml(XmlReader)
+  nameWithType: StructureCodeInfo.ReadXml(XmlReader)
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.ReadXml(System.Xml.XmlReader)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: This member is internal to the Eclipse Scripting API.
+  example: []
+  syntax:
+    content: public void ReadXml(XmlReader reader)
+    parameters:
+    - id: reader
+      type: System.Xml.XmlReader
+      description: The XmlReader stream from which the object is deserialized.
+    content.vb: Public Sub ReadXml(reader As XmlReader)
+  overload: VMS.TPS.Common.Model.Types.StructureCodeInfo.ReadXml*
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.WriteXml(System.Xml.XmlWriter)
+  commentId: M:VMS.TPS.Common.Model.Types.StructureCodeInfo.WriteXml(System.Xml.XmlWriter)
+  id: WriteXml(System.Xml.XmlWriter)
+  parent: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  langs:
+  - csharp
+  - vb
+  name: WriteXml(XmlWriter)
+  nameWithType: StructureCodeInfo.WriteXml(XmlWriter)
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.WriteXml(System.Xml.XmlWriter)
+  type: Method
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: Serialization support.
+  example: []
+  syntax:
+    content: public void WriteXml(XmlWriter writer)
+    parameters:
+    - id: writer
+      type: System.Xml.XmlWriter
+      description: The System.Xml.XmlWriter stream to which the object is serialized.
+    content.vb: Public Sub WriteXml(writer As XmlWriter)
+  overload: VMS.TPS.Common.Model.Types.StructureCodeInfo.WriteXml*
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.CodingScheme
+  commentId: P:VMS.TPS.Common.Model.Types.StructureCodeInfo.CodingScheme
+  id: CodingScheme
+  parent: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  langs:
+  - csharp
+  - vb
+  name: CodingScheme
+  nameWithType: StructureCodeInfo.CodingScheme
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.CodingScheme
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The coding scheme of the structure code.
+  example: []
+  syntax:
+    content: public string CodingScheme { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CodingScheme As String
+  overload: VMS.TPS.Common.Model.Types.StructureCodeInfo.CodingScheme*
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.Code
+  commentId: P:VMS.TPS.Common.Model.Types.StructureCodeInfo.Code
+  id: Code
+  parent: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  langs:
+  - csharp
+  - vb
+  name: Code
+  nameWithType: StructureCodeInfo.Code
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.Code
+  type: Property
+  assemblies:
+  - VMS.TPS.Common.Model.Types
+  namespace: VMS.TPS.Common.Model.Types
+  summary: The structure code as defined in the associated coding scheme.
+  example: []
+  syntax:
+    content: public string Code { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Code As String
+  overload: VMS.TPS.Common.Model.Types.StructureCodeInfo.Code*
+references:
+- uid: VMS.TPS.Common.Model.Types
+  commentId: N:VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.html
+  name: VMS.TPS.Common.Model.Types
+  nameWithType: VMS.TPS.Common.Model.Types
+  fullName: VMS.TPS.Common.Model.Types
+  spec.csharp:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+  spec.vb:
+  - uid: VMS
+    name: VMS
+    isExternal: true
+    href: VMS.html
+  - name: .
+  - uid: VMS.TPS
+    name: TPS
+    isExternal: true
+    href: VMS.TPS.html
+  - name: .
+  - uid: VMS.TPS.Common
+    name: Common
+    isExternal: true
+    href: VMS.TPS.Common.html
+  - name: .
+  - uid: VMS.TPS.Common.Model
+    name: Model
+    isExternal: true
+    href: VMS.TPS.Common.Model.html
+  - name: .
+  - uid: VMS.TPS.Common.Model.Types
+    name: Types
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.html
+- uid: System.Xml.Serialization.IXmlSerializable
+  isExternal: true
+  name: IXmlSerializable
+  nameWithType: IXmlSerializable
+  fullName: System.Xml.Serialization.IXmlSerializable
+- uid: System.IEquatable{VMS.TPS.Common.Model.Types.StructureCodeInfo}
+  commentId: T:System.IEquatable{VMS.TPS.Common.Model.Types.StructureCodeInfo}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<StructureCodeInfo>
+  nameWithType: IEquatable<StructureCodeInfo>
+  fullName: System.IEquatable<VMS.TPS.Common.Model.Types.StructureCodeInfo>
+  nameWithType.vb: IEquatable(Of StructureCodeInfo)
+  fullName.vb: System.IEquatable(Of VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  name.vb: IEquatable(Of StructureCodeInfo)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: VMS.TPS.Common.Model.Types.StructureCodeInfo
+    name: StructureCodeInfo
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.StructureCodeInfo
+    name: StructureCodeInfo
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.#ctor*
+  commentId: Overload:VMS.TPS.Common.Model.Types.StructureCodeInfo.#ctor
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html#VMS_TPS_Common_Model_Types_StructureCodeInfo__ctor_System_String_System_String_
+  name: StructureCodeInfo
+  nameWithType: StructureCodeInfo.StructureCodeInfo
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.StructureCodeInfo
+  nameWithType.vb: StructureCodeInfo.New
+  fullName.vb: VMS.TPS.Common.Model.Types.StructureCodeInfo.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.ToString*
+  commentId: Overload:VMS.TPS.Common.Model.Types.StructureCodeInfo.ToString
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html#VMS_TPS_Common_Model_Types_StructureCodeInfo_ToString
+  name: ToString
+  nameWithType: StructureCodeInfo.ToString
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.ToString
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.Equals*
+  commentId: Overload:VMS.TPS.Common.Model.Types.StructureCodeInfo.Equals
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html#VMS_TPS_Common_Model_Types_StructureCodeInfo_Equals_System_Object_
+  name: Equals
+  nameWithType: StructureCodeInfo.Equals
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.GetHashCode*
+  commentId: Overload:VMS.TPS.Common.Model.Types.StructureCodeInfo.GetHashCode
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html#VMS_TPS_Common_Model_Types_StructureCodeInfo_GetHashCode
+  name: GetHashCode
+  nameWithType: StructureCodeInfo.GetHashCode
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.op_Equality*
+  commentId: Overload:VMS.TPS.Common.Model.Types.StructureCodeInfo.op_Equality
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html#VMS_TPS_Common_Model_Types_StructureCodeInfo_op_Equality_VMS_TPS_Common_Model_Types_StructureCodeInfo_VMS_TPS_Common_Model_Types_StructureCodeInfo_
+  name: operator ==
+  nameWithType: StructureCodeInfo.operator ==
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.operator ==
+  nameWithType.vb: StructureCodeInfo.=
+  fullName.vb: VMS.TPS.Common.Model.Types.StructureCodeInfo.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.op_Equality*
+    name: ==
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html#VMS_TPS_Common_Model_Types_StructureCodeInfo_op_Equality_VMS_TPS_Common_Model_Types_StructureCodeInfo_VMS_TPS_Common_Model_Types_StructureCodeInfo_
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo
+  commentId: T:VMS.TPS.Common.Model.Types.StructureCodeInfo
+  parent: VMS.TPS.Common.Model.Types
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html
+  name: StructureCodeInfo
+  nameWithType: StructureCodeInfo
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.op_Inequality*
+  commentId: Overload:VMS.TPS.Common.Model.Types.StructureCodeInfo.op_Inequality
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html#VMS_TPS_Common_Model_Types_StructureCodeInfo_op_Inequality_VMS_TPS_Common_Model_Types_StructureCodeInfo_VMS_TPS_Common_Model_Types_StructureCodeInfo_
+  name: operator !=
+  nameWithType: StructureCodeInfo.operator !=
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.operator !=
+  nameWithType.vb: StructureCodeInfo.<>
+  fullName.vb: VMS.TPS.Common.Model.Types.StructureCodeInfo.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html#VMS_TPS_Common_Model_Types_StructureCodeInfo_op_Inequality_VMS_TPS_Common_Model_Types_StructureCodeInfo_VMS_TPS_Common_Model_Types_StructureCodeInfo_
+- uid: System.IEquatable{VMS.TPS.Common.Model.Types.StructureCodeInfo}.Equals(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  commentId: M:System.IEquatable{VMS.TPS.Common.Model.Types.StructureCodeInfo}.Equals(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  parent: System.IEquatable{VMS.TPS.Common.Model.Types.StructureCodeInfo}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(StructureCodeInfo)
+  nameWithType: IEquatable<StructureCodeInfo>.Equals(StructureCodeInfo)
+  fullName: System.IEquatable<VMS.TPS.Common.Model.Types.StructureCodeInfo>.Equals(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  nameWithType.vb: IEquatable(Of StructureCodeInfo).Equals(StructureCodeInfo)
+  fullName.vb: System.IEquatable(Of VMS.TPS.Common.Model.Types.StructureCodeInfo).Equals(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+  spec.csharp:
+  - uid: System.IEquatable{VMS.TPS.Common.Model.Types.StructureCodeInfo}.Equals(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.StructureCodeInfo
+    name: StructureCodeInfo
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{VMS.TPS.Common.Model.Types.StructureCodeInfo}.Equals(VMS.TPS.Common.Model.Types.StructureCodeInfo)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: VMS.TPS.Common.Model.Types.StructureCodeInfo
+    name: StructureCodeInfo
+    isExternal: true
+    href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.GetSchema*
+  commentId: Overload:VMS.TPS.Common.Model.Types.StructureCodeInfo.GetSchema
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html#VMS_TPS_Common_Model_Types_StructureCodeInfo_GetSchema
+  name: GetSchema
+  nameWithType: StructureCodeInfo.GetSchema
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.GetSchema
+- uid: System.Xml.Schema.XmlSchema
+  isExternal: true
+  name: XmlSchema
+  nameWithType: XmlSchema
+  fullName: System.Xml.Schema.XmlSchema
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.ReadXml*
+  commentId: Overload:VMS.TPS.Common.Model.Types.StructureCodeInfo.ReadXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html#VMS_TPS_Common_Model_Types_StructureCodeInfo_ReadXml_System_Xml_XmlReader_
+  name: ReadXml
+  nameWithType: StructureCodeInfo.ReadXml
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.ReadXml
+- uid: System.Xml.XmlReader
+  isExternal: true
+  name: XmlReader
+  nameWithType: XmlReader
+  fullName: System.Xml.XmlReader
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.WriteXml*
+  commentId: Overload:VMS.TPS.Common.Model.Types.StructureCodeInfo.WriteXml
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html#VMS_TPS_Common_Model_Types_StructureCodeInfo_WriteXml_System_Xml_XmlWriter_
+  name: WriteXml
+  nameWithType: StructureCodeInfo.WriteXml
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.WriteXml
+- uid: System.Xml.XmlWriter
+  isExternal: true
+  name: XmlWriter
+  nameWithType: XmlWriter
+  fullName: System.Xml.XmlWriter
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.CodingScheme*
+  commentId: Overload:VMS.TPS.Common.Model.Types.StructureCodeInfo.CodingScheme
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html#VMS_TPS_Common_Model_Types_StructureCodeInfo_CodingScheme
+  name: CodingScheme
+  nameWithType: StructureCodeInfo.CodingScheme
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.CodingScheme
+- uid: VMS.TPS.Common.Model.Types.StructureCodeInfo.Code*
+  commentId: Overload:VMS.TPS.Common.Model.Types.StructureCodeInfo.Code
+  isExternal: true
+  href: VMS.TPS.Common.Model.Types.StructureCodeInfo.html#VMS_TPS_Common_Model_Types_StructureCodeInfo_Code
+  name: Code
+  nameWithType: StructureCodeInfo.Code
+  fullName: VMS.TPS.Common.Model.Types.StructureCodeInfo.Code
