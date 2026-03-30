@@ -20,7 +20,7 @@ namespace Esavi.Common.API
             return new EsaviApplication(null, user);
         }
 
-        public EsaviApplication Create()
+        public static EsaviApplication Create()
         {
 
             using (Application app = Application.CreateApplication())
