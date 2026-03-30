@@ -19,8 +19,6 @@ namespace Javibenito.DICOM
         private const string LocalAeTitle = "EVILSCU";
         private const int LocalPort = 11112;
 
-        VMS.TPS.Common.Model.API.ScriptContext
-
         public static void Main()
         {
 
