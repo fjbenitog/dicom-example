@@ -42,10 +42,11 @@ jobs:
 
     - name: List Esavi bin contents
       run: |
-        echo "Release bin contents:"
-        dir ./src/Esavi/Esavi/bin/Release /s /b || echo "No Release bin found"
-        echo "Debug bin contents:"
-        dir ./src/Esavi/Esavi/bin/Debug /s /b || echo "No Debug bin found"
+        Write-Host "Release bin contents:"
+        Get-ChildItem -Path ./src/Esavi/Esavi/bin/Release -Recurse -File -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
+        Write-Host "Debug bin contents:"
+        Get-ChildItem -Path ./src/Esavi/Esavi/bin/Debug -Recurse -File -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
+      shell: pwsh
 
     - name: Upload Esavi DLL
       uses: actions/upload-artifact@v4
@@ -57,7 +58,7 @@ jobs:
 
     - name: Test
       run: |
-        dotnet test dicom-example.sln --verbosity normal --logger "trx;LogFileName=test-results.trx" --results-directory ./TestResults
+        dotnet test dicom-example.sln --logger "trx;LogFileName=test-results.trx" --results-directory ./TestResults
       env:
         DOTNET_CLI_TELEMETRY_OPTOUT: 1
 
