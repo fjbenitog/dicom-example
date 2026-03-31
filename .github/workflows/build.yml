@@ -57,29 +57,29 @@ jobs:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: '8.0.x'
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
 
-    - name: Build
-      run: dotnet build ./src/Esavi/Esavi.csproj --configuration Release  --verbosity quiet 
+      - name: Build
+        run: dotnet build ./src/Esavi/Esavi.csproj --configuration Release  --verbosity quiet 
 
-    - name: Install Nerdbank.GitVersioning
-      run: dotnet tool restore || dotnet tool install --local nbgv
+      - name: Install Nerdbank.GitVersioning
+        run: dotnet tool restore || dotnet tool install --local nbgv
 
-    - name: Set version from Git
-      run: dotnet nbgv cloud
+      - name: Set version from Git
+        run: dotnet nbgv cloud
 
-    - name: Download Esavi DLL Artifact
-      uses: actions/download-artifact@v4
-      with:
-        name: Esavi-*
+      - name: Download Esavi DLL Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: Esavi-*
 
-    - name: Rename Esavi DLL with version and commit
-      uses: ./.github/actions/upload-dll
-      with:
-        project: Esavi
+      - name: Rename Esavi DLL with version and commit
+        uses: ./.github/actions/upload-dll
+        with:
+          project: Esavi
