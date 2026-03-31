@@ -1,0 +1,10 @@
+# Nerdbank.GitVersioning configuration file
+# This will version your .NET assemblies based on Git history, similar to sbt-dynver for Scala.
+# See: https: //github.com/dotnet/Nerdbank.GitVersioning
+
+version: 1.0
+publicReleaseRefSpec: ^refs/heads/main$
+assemblyVersion: 1.0.0.0
+nugetPackageVersion: 1.0.0-alpha
+cloudBuild:
+  setVersionVariables: true
