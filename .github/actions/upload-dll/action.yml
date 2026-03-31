@@ -22,9 +22,10 @@ runs:
         $src = "./src/$project/bin/Release/net8.0-windows7.0/$project.dll"
         $dst = "./src/$project/bin/Release/net8.0-windows7.0/$project-$version-$commit.dll"
         if (Test-Path $src) { Move-Item $src $dst }
-        echo "::set-output name=dll_name::$($dst)"
+        echo "dll_path=$dst" >> $GITHUB_STATE
+        echo "dll_name=$project-$version-$commit.dll" >> $GITHUB_STATE
     - name: Upload Renamed DLL as Artifact
       uses: actions/upload-artifact@v4
       with:
         name: ${{ inputs.project }}-${{ steps.rename.outputs.dll_name }}
-        path: ${{ steps.rename.outputs.dll_name }}
+        path: ${{ steps.rename.outputs.dll_path }}
