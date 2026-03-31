@@ -21,33 +21,33 @@ jobs:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: '8.0.x'
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
 
-    - name: Restore dependencies
-      run: dotnet restore dicom-example.sln
+      - name: Restore dependencies
+        run: dotnet restore dicom-example.sln
 
-    - name: Build
-      run: dotnet build dicom-example.sln --configuration Release --no-restore
+      - name: Build
+        run: dotnet build dicom-example.sln --configuration Release --no-restore
 
-    - name: Test
-      run: |
-        dotnet test dicom-example.sln --logger "trx;LogFileName=test-results.trx" --results-directory ./TestResults
-      env:
-        DOTNET_CLI_TELEMETRY_OPTOUT: 1
+      - name: Test
+        run: |
+          dotnet test dicom-example.sln --logger "trx;LogFileName=test-results.trx" --results-directory ./TestResults
+        env:
+          DOTNET_CLI_TELEMETRY_OPTOUT: 1
 
-    - name: Publish Test Results to Summary
-      uses: dorny/test-reporter@v1
-      if: always()
-      with:
-        name: Test Results Report
-        path: ./TestResults/*.trx
-        reporter: dotnet-trx
+      - name: Publish Test Results to Summary
+        uses: dorny/test-reporter@v1
+        if: always()
+        with:
+          name: Test Results Report
+          path: ./TestResults/*.trx
+          reporter: dotnet-trx
 `
   publish-Esavi-dll:
     name: Publish EsaviDLL Artifact
