@@ -48,7 +48,7 @@ jobs:
           name: Test Results Report
           path: ./TestResults/*.trx
           reporter: dotnet-trx
-`
+
   publish-Esavi-dll:
     name: Publish EsaviDLL Artifact
     needs: [ build ]
