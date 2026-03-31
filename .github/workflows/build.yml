@@ -43,7 +43,7 @@ jobs:
     - name: List Esavi bin contents
       run: |
         Write-Host "Release bin contents:"
-        Get-ChildItem -Path ./src/Esavi/Esavi/bin/ -Recurse -File -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
+        Get-ChildItem -Path ./src/Esavi/bin/Release -Recurse -File -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
       shell: pwsh
 
     - name: Upload Esavi DLL
@@ -51,8 +51,7 @@ jobs:
       with:
         name: Esavi-DLL
         path: |
-          ./src/Esavi/Esavi/bin/Release/**/*.dll
-          ./src/Esavi/Esavi/bin/Debug/**/*.dll
+          ./src/Esavi/bin/Release/**/*.dll
 
     - name: Test
       run: |
