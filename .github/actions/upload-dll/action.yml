@@ -31,5 +31,5 @@ runs:
     - name: Upload Renamed DLL as Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: ${{ steps.rename.outputs.dll_version }}
+        name: ${{$project}}-${{ steps.rename.outputs.dll_version }}
         path: ${{ steps.rename.outputs.dll_path }}
