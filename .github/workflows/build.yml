@@ -12,6 +12,8 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
     - name: Checkout repository
@@ -29,6 +31,29 @@ jobs:
       run: dotnet build dicom-example.sln --configuration Release --no-restore
 
     - name: Test
-      run: dotnet test dicom-example.sln --verbosity normal
+      run: |
+        dotnet test dicom-example.sln --verbosity normal --logger "trx;LogFileName=test-results.trx" --results-directory ./TestResults
       env:
         DOTNET_CLI_TELEMETRY_OPTOUT: 1
+
+    - name: Upload Test Results
+          - name: Install ReportGenerator
+            run: dotnet tool install --global dotnet-reportgenerator-globaltool
+
+          - name: Generate HTML Test Report
+            run: |
+              reportgenerator -reports:./TestResults/*.trx -targetdir:./TestResults/html -reporttypes:Html
+            env:
+              PATH: $PATH:/home/runner/.dotnet/tools
+
+          - name: Upload HTML Test Report
+            uses: actions/upload-artifact@v4
+            with:
+              name: html-test-report
+              path: ./TestResults/html
+            if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-results
+        path: ./TestResults/*.trx
+      if: always()
