@@ -54,9 +54,7 @@ jobs:
 
     - name: Generate HTML Test Report
       run: |
-        reportgenerator -reports:./TestResults/*.trx -targetdir:./TestResults/html -reporttypes:Html
-      env:
-        PATH: $PATH:/home/runner/.dotnet/tools
+        dotnet reportgenerator -reports:./TestResults/*.trx -targetdir:./TestResults/html -reporttypes:Html
 
     - name: Upload HTML Test Report
       uses: actions/upload-artifact@v4
