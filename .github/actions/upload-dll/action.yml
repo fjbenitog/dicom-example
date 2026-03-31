@@ -8,6 +8,7 @@ inputs:
     description: 'Project name to upload (e.g., Esavi)'
     required: true
 
+runs:
   using: "composite"
   steps:
     - name: Rename DLL
