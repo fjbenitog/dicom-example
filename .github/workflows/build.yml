@@ -40,18 +40,21 @@ jobs:
     - name: Build
       run: dotnet build dicom-example.sln --configuration Release --no-restore
 
-    - name: List Esavi bin contents
+    - name: Rename Esavi DLL with version and commit
       run: |
-        Write-Host "Release bin contents:"
-        Get-ChildItem -Path ./src/Esavi/bin/Release -Recurse -File -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
+        $nbgv = dotnet nbgv get-version --format json | ConvertFrom-Json
+        $version = $nbgv.NuGetPackageVersion
+        $commit = $nbgv.GitCommitId
+        $src = "./src/Esavi/bin/Release/net8.0-windows7.0/Esavi.dll"
+        $dst = "./src/Esavi/bin/Release/net8.0-windows7.0/Esavi-$version-$commit.dll"
+        if (Test-Path $src) { Move-Item $src $dst }
       shell: pwsh
 
     - name: Upload Esavi DLL
       uses: actions/upload-artifact@v4
       with:
         name: Esavi-DLL
-        path: |
-          ./src/Esavi/bin/Release/**/*.dll
+        path: ./src/Esavi/bin/Release/net8.0-windows7.0/Esavi-*.dll
 
     - name: Test
       run: |
