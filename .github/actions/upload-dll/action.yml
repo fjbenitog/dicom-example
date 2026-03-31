@@ -20,7 +20,7 @@ runs:
       shell: pwsh
       run: |
         $project = '${{ inputs.project }}'
-        $version = dotnet nbgv get-version -v NuGetPackageVersion
+        $version = $(dotnet nbgv get-version -v NuGetPackageVersion)
         $src = "./src/$project/bin/Release/net8.0-windows7.0/$project.dll"
         $dst = "./src/$project/bin/Release/net8.0-windows7.0/$project-$version.dll"
         if (Test-Path $src) { Move-Item $src $dst }

@@ -50,7 +50,7 @@ jobs:
           reporter: dotnet-trx
 
   publish-Esavi-dll:
-    name: Publish EsaviDLL Artifact
+    name: Publish Esavi DLL Artifact
     needs: [ build ]
     runs-on: windows-latest
     env:
@@ -74,12 +74,7 @@ jobs:
       - name: Set version from Git
         run: dotnet nbgv cloud
 
-      - name: Download Esavi DLL Artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: Esavi-*
-
-      - name: Rename Esavi DLL with version and commit
+      - name: Upload Esavi DLL with version and commit
         uses: ./.github/actions/upload-dll
         with:
           project: Esavi
