@@ -1,0 +1,33 @@
+description: >
+runs:
+
+name: Upload DLL with version and commit
+
+description: >
+  Uploads the specified project DLL with the version and short commit SHA using Nerdbank.GitVersioning output.
+
+inputs:
+  project:
+    description: 'Project name to upload (e.g., Esavi)'
+    required: true
+
+
+  using: "composite"
+  steps:
+    - name: Rename DLL
+      id: rename
+      shell: pwsh
+      run: |
+        $project = '${{ inputs.project }}'
+        $nbgv = dotnet nbgv get-version --format json | ConvertFrom-Json
+        $version = $nbgv.NuGetPackageVersion
+        $commit = $nbgv.GitCommitId.Substring(0,8)
+        $src = "./src/$project/bin/Release/net8.0-windows7.0/$project.dll"
+        $dst = "./src/$project/bin/Release/net8.0-windows7.0/$project-$version-$commit.dll"
+        if (Test-Path $src) { Move-Item $src $dst }
+        echo "::set-output name=dll_name::$($dst)"
+    - name: Upload Renamed DLL as Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ inputs.project }}-${{ steps.rename.outputs.dll_name }}
+        path: ${{ steps.rename.outputs.dll_name }}
