@@ -41,7 +41,6 @@ jobs:
       with:
         name: Esavi-DLL
         path: ./src/Esavi/Esavi/bin/Release/**/*.dll
-      if: always()
 
     - name: Test
       run: |
