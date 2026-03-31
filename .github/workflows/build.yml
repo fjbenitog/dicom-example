@@ -51,22 +51,24 @@ jobs:
       env:
         DOTNET_CLI_TELEMETRY_OPTOUT: 1
 
+
+    - name: Install ReportGenerator
+      run: dotnet tool install --global dotnet-reportgenerator-globaltool
+
+    - name: Generate HTML Test Report
+      run: |
+        reportgenerator -reports:./TestResults/*.trx -targetdir:./TestResults/html -reporttypes:Html
+      env:
+        PATH: $PATH:/home/runner/.dotnet/tools
+
+    - name: Upload HTML Test Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: html-test-report
+        path: ./TestResults/html
+      if: always()
+      
     - name: Upload Test Results
-          - name: Install ReportGenerator
-            run: dotnet tool install --global dotnet-reportgenerator-globaltool
-
-          - name: Generate HTML Test Report
-            run: |
-              reportgenerator -reports:./TestResults/*.trx -targetdir:./TestResults/html -reporttypes:Html
-            env:
-              PATH: $PATH:/home/runner/.dotnet/tools
-
-          - name: Upload HTML Test Report
-            uses: actions/upload-artifact@v4
-            with:
-              name: html-test-report
-              path: ./TestResults/html
-            if: always()
       uses: actions/upload-artifact@v4
       with:
         name: test-results
