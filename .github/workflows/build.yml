@@ -40,7 +40,9 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Esavi-DLL
-        path: ./src/Esavi/Esavi/bin/Release/**/*.dll
+        path: |
+          ./src/Esavi/Esavi/bin/Release/**/*.dll
+          ./src/Esavi/Esavi/bin/Debug/**/*.dll
 
     - name: Test
       run: |
@@ -48,25 +50,10 @@ jobs:
       env:
         DOTNET_CLI_TELEMETRY_OPTOUT: 1
 
-
-    - name: Install ReportGenerator
-      run: dotnet tool install --local dotnet-reportgenerator-globaltool
-
-    - name: Generate HTML Test Report
-      run: |
-        dotnet tool restore
-        dotnet reportgenerator -reports:./TestResults/*.trx -targetdir:./TestResults/html -reporttypes:Html
-
-    - name: Upload HTML Test Report
-      uses: actions/upload-artifact@v4
-      with:
-        name: html-test-report
-        path: ./TestResults/html
+    - name: Publish Test Results to Summary
+      uses: dorny/test-reporter@v1
       if: always()
-      
-    - name: Upload Test Results
-      uses: actions/upload-artifact@v4
       with:
-        name: test-results
+        name: .NET Tests
         path: ./TestResults/*.trx
-      if: always()
+        reporter: dotnet-trx
