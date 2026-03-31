@@ -1,5 +1,3 @@
-description: >
-runs:
 name: Upload DLL with version and commit
 description: Uploads the specified project DLL with the version and short commit SHA using Nerdbank.GitVersioning output.
 
@@ -14,7 +12,7 @@ outputs:
   dll_version:
     description: 'Versioned DLL filename'
 
-
+runs:
   using: "composite"
   steps:
     - name: Rename DLL
