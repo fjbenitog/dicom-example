@@ -26,9 +26,8 @@ runs:
         $src = "./src/$project/bin/Release/net8.0-windows7.0/$project.dll"
         $dst = "./src/$project/bin/Release/net8.0-windows7.0/$project-$version-$commit.dll"
         if (Test-Path $src) { Move-Item $src $dst }
-        $dllFileName = [System.IO.Path]::GetFileName($dst)
         echo "dll_path=$dst" >> $env:GITHUB_OUTPUT
-        echo "dll_version=$dllFileName" >> $env:GITHUB_OUTPUT
+        echo "dll_version=$version-$commit" >> $env:GITHUB_OUTPUT
     - name: Upload Renamed DLL as Artifact
       uses: actions/upload-artifact@v4
       with:
