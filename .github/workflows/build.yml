@@ -50,10 +50,11 @@ jobs:
 
 
     - name: Install ReportGenerator
-      run: dotnet tool install --global dotnet-reportgenerator-globaltool
+      run: dotnet tool install --local dotnet-reportgenerator-globaltool
 
     - name: Generate HTML Test Report
       run: |
+        dotnet tool restore
         dotnet reportgenerator -reports:./TestResults/*.trx -targetdir:./TestResults/html -reporttypes:Html
 
     - name: Upload HTML Test Report
