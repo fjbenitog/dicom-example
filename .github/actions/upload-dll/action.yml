@@ -1,14 +1,20 @@
-name: Upload DLL with version and commit
-
 description: >
-  Uploads the specified project DLL with the version and short commit SHA using Nerdbank.GitVersioning output.
+runs:
+name: Upload DLL with version and commit
+description: Uploads the specified project DLL with the version and short commit SHA using Nerdbank.GitVersioning output.
 
 inputs:
   project:
     description: 'Project name to upload (e.g., Esavi)'
     required: true
 
-runs:
+outputs:
+  dll_path:
+    description: 'Path to the renamed DLL'
+  dll_version:
+    description: 'Versioned DLL filename'
+
+
   using: "composite"
   steps:
     - name: Rename DLL
@@ -22,10 +28,11 @@ runs:
         $src = "./src/$project/bin/Release/net8.0-windows7.0/$project.dll"
         $dst = "./src/$project/bin/Release/net8.0-windows7.0/$project-$version-$commit.dll"
         if (Test-Path $src) { Move-Item $src $dst }
-        echo "dll_path=$dst" >> $GITHUB_STATE
-        echo "dll_name=$project-$version-$commit.dll" >> $GITHUB_STATE
+        $dllFileName = [System.IO.Path]::GetFileName($dst)
+        echo "dll_path=$dst" >> $env:GITHUB_OUTPUT
+        echo "dll_version=$dllFileName" >> $env:GITHUB_OUTPUT
     - name: Upload Renamed DLL as Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: ${{ inputs.project }}-${{ steps.rename.outputs.dll_name }}
+        name: ${{ steps.rename.outputs.dll_version }}
         path: ${{ steps.rename.outputs.dll_path }}
